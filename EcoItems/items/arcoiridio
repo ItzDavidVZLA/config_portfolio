@@ -1,0 +1,55 @@
+base-damage: 8
+item:
+  item: bow hide_attributes
+  display-name: "&7Arco &8• &#FF5555&lI&#FF6464&lR&#FF7373&lI&#FF8181&lD&#FF9090&lI&#FF9F9F&lO &#FF5555💥"
+  lore:
+  - "&8Objeto especial"
+  - ""
+  - "&fCon este arco podrás disparar"
+  - "&fflechas de forma automática"
+  - "&fhaciendo &bclic izquierdo &fen"
+  - "&fel y también tendrás una"
+  - "&fprobabilidad de ganar &3+150" 
+  - "&3EXP &fde &3Arquería &fal matar mobs"
+  - ""
+  - " &c⚠ Este arco es incompatible"
+  - " &r &r &r &ccon &lInfinidad"
+  - ""
+  - "&e» mc.comugamers.com «"
+  craftable: false
+effects:
+- id: cancel_event
+  triggers:
+  - shoot_bow
+- args:
+    inherit_velocity: false
+    no_source: false
+    send_cooldown_message: false
+    price:
+      display: flechas
+      type: arrow
+      value: 1
+    cooldown: 0.5
+  id: shoot_arrow
+  triggers:
+  - alt_click
+
+- args:
+    multiplier: 1.05
+  id: damage_multiplier
+  filters:
+    entities:
+    - zombie
+    - skeleton
+    - creeper
+    - wither_skeleton
+    - wither
+    - piglin
+    - piglin_brute
+    - pigman
+    - zoglin
+    - spider
+    - cave_spider
+    - silverfish
+base-attack-speed: 4
+conditions: []

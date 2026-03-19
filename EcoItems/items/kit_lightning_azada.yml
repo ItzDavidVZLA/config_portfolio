@@ -1,0 +1,20 @@
+item: 
+  item: netherite_hoe efficiency:32 fortune:16 unbreaking:40 mending:40 hide_enchants
+  display-name: "&#00BCF5Azada &8◆ &#ffff00&lL&#ffff0b&lI&#ffff17&lG&#ffff22&lH&#ffff2d&lT&#ffff38&lN&#ffff44&lI&#ffff4f&lN&#ffff5a&lG &#ffff71🌾"
+  lore:
+  - "&8Objeto especial"
+  - ""
+  - "&r &8&l≡ &f&lENCANTAMIENTOS:"
+  - "&r &r &8◆ &fEficiencia 32"
+  - "&r &r &8◆ &fFortuna 16"
+  - "&r &r &8◆ &fDurabilidad 40"
+  - "&r &r &8◆ &fReparación 40"
+  - ""
+  - "&emc.comugamers.com"
+  craftable: false
+
+slot: mainhand
+effects: []
+      
+baseDamage: 6
+conditions: []

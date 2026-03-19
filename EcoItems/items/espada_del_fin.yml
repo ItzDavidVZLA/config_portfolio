@@ -1,0 +1,55 @@
+item: 
+  item: iron_sword unbreakable hide_unbreakable
+  display-name: "&#00BCF5Espada &8◆ &#8000FF&lF&#8F1FFF&lI&#9D3DFF&lN&#AC5CFF&l &#BA7AFF🗡"
+  lore:
+  - "&8Objeto especial"
+  - ""
+  - "&fPodrás infligir un &b15% &fde daño"
+  - "&fextra a &dSentinel ⏣ &fseguido de"
+  - "&fefectos especiales."
+  - ""
+  - "&emc.comugamers.com"
+  craftable: false
+  recipe: [ ]
+effects:
+- args:
+    multiplier: 1.15
+  id: damage_multiplier
+  filters:
+    entities:
+    - mythicmobs:sentinel
+  triggers:
+  - melee_attack
+
+- id: particle_animation
+  args:
+      particle: witch # The particle to spawn (https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html)
+      particle-amount: 1 # The amount of particles to spawn on each point
+      animation: ground_spiral # The ID of the animation
+      tick-multiplier: 1 # (Optional) increases the speed of the animation by some multiplier
+      entity: victim # (Optional) specifies the entity to have the animation activate around (player, victim, projectile)
+      use-eye-location: true # (Optional) Sets the entity location to be at eye level rather than ground level
+      particle_args: # Arguments for the animation
+          scalar: 1.618
+          distance-scalar: 0.5
+          duration: 20
+  triggers:
+    - melee_attack
+  filters:
+    entities:
+    - mythicmobs:sentinel
+
+
+- id: play_sound
+  args:
+    sound: ENTITY_ENDERMAN_TELEPORT
+    pitch: 1.2
+    volume: 10
+  filters:
+    entities:
+    - mythicmobs:sentinel
+  triggers:
+  - melee_attack
+
+baseDamage: 6
+conditions: []

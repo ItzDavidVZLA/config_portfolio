@@ -1,0 +1,48 @@
+item: 
+  item: crossbow unbreakable hide_unbreakable
+  display-name: "&#00BCF5Ballesta &8◆ &#45FF45&lP&#50FF50&lE&#5CFF5C&lS&#67FF67&lT&#73FF73&lI&#7EFF7E&lC&#8AFF8A&lI&#95FF95&lD&#A1FFA1&lA &#B8FFB8🏹"
+  lore:
+  - "&8Objeto especial"
+  - ""
+  - "&fPodrás infligir un &b5% &fde daño"
+  - "&fextra dependiendo del mob al"
+  - "&fque ataques."    
+  - ""
+  - " &8◆ &fArañas &8- &b5%"
+  - " &8◆ &fArañas de cueva &8- &b5%"
+  - " &8◆ &fSlimes &8- &b5%"
+  - ""
+  - "&emc.comugamers.com"
+  craftable: false
+  recipe: [ ]
+effects:
+
+- args:
+    multiplier: 1.05
+  id: damage_multiplier
+  filters:
+    entities:
+    - spider
+  triggers:
+  - bow_attack
+  
+- args:
+    multiplier: 1.05
+  id: damage_multiplier
+  filters:
+    entities:
+    - cave_spider
+  triggers:
+  - bow_attack
+
+- args:
+    multiplier: 1.05
+  id: damage_multiplier
+  filters:
+    entities:
+    - slime
+  triggers:
+  - bow_attack
+      
+baseDamage: 6
+conditions: []

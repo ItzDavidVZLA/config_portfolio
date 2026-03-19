@@ -1,0 +1,19 @@
+item:
+  item: netherite_pickaxe hide_attributes
+  display-name: "&7Pico &8• &#CA00FF&lA&#CE13FF&lM&#D226FF&lA&#D639FF&lT&#D94BFF&lI&#DD5EFF&lS&#E171FF&lT&#E584FF&lA &#CA00FF☄"
+  lore:
+  - '&8Objeto especial'
+  - ''
+  - '&fRecibirás el doble de experiencia'
+  - '&fal minar bloques'
+  - ''
+  - '&e» mc.comugamers.com «'
+  craftable: false
+  recipe: [ ]
+effects:
+- args:
+    multiplier: 2.3
+  id: xp_multiplier
+  triggers: []
+base-attack-speed: 1.8
+conditions: []

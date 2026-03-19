@@ -1,0 +1,12 @@
+#
+# EcoItems
+# by Auxilor
+#
+
+discover-recipes: true
+rarity:
+  default: common
+  blank-lore-line: true
+  display-default: true
+  enabled: false
+

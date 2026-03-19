@@ -1,0 +1,78 @@
+item: 
+  item: crossbow
+  display-name: "&#00BCF5Ballesta &8◆ &#594BFF&lN&#6254FF&lO&#6A5DFF&lC&#7367FF&lT&#7B70FF&lU&#8479FF&lR&#8C82FF&lN&#958BFF&lA &#A69EFF🏹"
+  lore:
+  - "&8Objeto especial"
+  - ""
+  - "&fPodrás infligir un &b10% &fde daño"
+  - "&fextra dependiendo del mob al"
+  - "&fque ataques durante la noche."    
+  - ""
+  - " &8◆ &fZombies &8- &b10%"
+  - " &8◆ &fEsqueletos &8- &b10%"
+  - " &8◆ &fCreepers &8- &b10%"
+  - " &8◆ &fArañas &8- &b10%"
+  - " &8◆ &fArañas de cueva &8- &b10%"
+  - " &8◆ &fSlimes &8- &b10%"
+  - ""
+  - "&emc.comugamers.com"
+  craftable: false
+  recipe: [ ]
+effects:
+
+- args:
+    multiplier: 1.10
+  id: damage_multiplier
+  filters:
+    entities:
+    - zombie
+  triggers:
+  - bow_attack
+
+- args:
+    multiplier: 1.10
+  id: damage_multiplier
+  filters:
+    entities:
+    - skeleton
+  triggers:
+  - bow_attack
+
+- args:
+    multiplier: 1.10
+  id: damage_multiplier
+  filters:
+    entities:
+    - creeper
+  triggers:
+  - bow_attack
+
+- args:
+    multiplier: 1.10
+  id: damage_multiplier
+  filters:
+    entities:
+    - spider
+  triggers:
+  - bow_attack
+  
+- args:
+    multiplier: 1.10
+  id: damage_multiplier
+  filters:
+    entities:
+    - cave_spider
+  triggers:
+  - bow_attack
+
+- args:
+    multiplier: 1.10
+  id: damage_multiplier
+  filters:
+    entities:
+    - slime
+  triggers:
+  - bow_attack
+      
+baseDamage: 6
+conditions: []

@@ -1,0 +1,9 @@
+item: 
+  item: crossbow power:7 unbreaking:4 looting:4 flame:2 mending:1 multishot:1 quick_charge:1 piercing:3
+  display-name: "&#00BCF5Ballesta &8◆ &#00AA00&lM&#00B300&lO&#00BD00&lB&#00C600&lD&#00D000&lR&#00D900&lO&#00E300&lP &#00F600🏹"
+  lore: []
+  craftable: false
+  recipe: [ ]
+effects: []
+baseDamage: 6
+conditions: []

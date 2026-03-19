@@ -1,0 +1,141 @@
+item: 
+  item: stone_sword unbreakable hide_unbreakable
+  display-name: "&#00BCF5Espada &8◆ &#FFC624&lI&#FFCA36&lN&#FFCE48&lF&#FFD259&lE&#FFD66B&lR&#FFDA7D&lN&#FFDA7D&lA&#FFDA7D&lL&#FFDA7D&l &#FFDA7D🗡"
+  lore:
+  - "&8Objeto especial"
+  - ""
+  - "&fPodrás infligir un &b15% &fde daño"
+  - "&fextra a &cBalrog 💀 &fy bosses del"
+  - "&finframundo seguido de efectos"
+  - "&fespeciales."
+  - ""
+  - "&emc.comugamers.com"
+  craftable: false
+  recipe: [ ]
+effects:
+- args:
+    multiplier: 1.15
+  id: damage_multiplier
+  filters:
+    entities:
+    - mythicmobs:balrog
+    - mythicmobs:abramelec
+    - mythicmobs:abraxas
+    - mythicmobs:abaddon
+  triggers:
+  - melee_attack
+
+- id: spawn_particle
+  args:
+    amount: 25
+    particle: angry_villager
+    chance: 100
+  triggers:
+    - melee_attack
+  filters:
+    entities:
+      - mythicmobs:balrog
+      - mythicmobs:abramelec
+      - mythicmobs:abraxas
+      - mythicmobs:abaddon
+  mutators:
+    - id: translate_location
+      args:
+        add_x: 0.0
+        add_y: 2.0
+        add_z: 0.0
+- id: spawn_particle
+  args:
+    amount: 25
+    particle: angry_villager
+    chance: 100
+  triggers:
+    - melee_attack
+  filters:
+    entities:
+      - mythicmobs:balrog
+      - mythicmobs:abramelec
+      - mythicmobs:abraxas
+      - mythicmobs:abaddon
+  mutators:
+    - id: translate_location
+      args:
+        add_x: 0.0
+        add_y: 2.0
+        add_z: 0.5
+- id: spawn_particle
+  args:
+    amount: 25
+    particle: angry_villager
+    chance: 100
+  triggers:
+    - melee_attack
+  filters:
+    entities:
+      - mythicmobs:balrog
+      - mythicmobs:abramelec
+      - mythicmobs:abraxas
+      - mythicmobs:abaddon
+  mutators:
+    - id: translate_location
+      args:
+        add_x: 0.5
+        add_y: 2.0
+        add_z: 0.0
+- id: spawn_particle
+  args:
+    amount: 25
+    particle: angry_villager
+    chance: 100
+  triggers:
+    - melee_attack
+  filters:
+    entities:
+      - mythicmobs:balrog
+      - mythicmobs:abramelec
+      - mythicmobs:abraxas
+      - mythicmobs:abaddon
+  mutators:
+    - id: translate_location
+      args:
+        add_x: 0.0
+        add_y: 2.0
+        add_z: -0.5
+- id: spawn_particle
+  args:
+    amount: 25
+    particle: angry_villager
+    chance: 100
+  triggers:
+    - melee_attack
+  filters:
+    entities:
+      - mythicmobs:balrog
+      - mythicmobs:abramelec
+      - mythicmobs:abraxas
+      - mythicmobs:abaddon
+  mutators:
+    - id: translate_location
+      args:
+        add_x: -0.5
+        add_y: 2.0
+        add_z: 0.0
+
+
+
+- id: play_sound
+  args:
+    sound: ENTITY_ZOMBIE_INFECT
+    pitch: 1.2
+    volume: 10
+  filters:
+    entities:
+    - mythicmobs:balrog
+    - mythicmobs:abramelec
+    - mythicmobs:abraxas
+    - mythicmobs:abaddon
+  triggers:
+  - melee_attack
+
+baseDamage: 6
+conditions: []

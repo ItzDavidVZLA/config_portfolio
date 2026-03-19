@@ -1,0 +1,9 @@
+item: 
+  item: shield unbreaking:3 mending:1
+  display-name: "&#00BCF5Escudo &8◆ &#00AA00&lM&#00B300&lO&#00BD00&lB&#00C600&lD&#00D000&lR&#00D900&lO&#00E300&lP &#00F600🛡"
+  lore: []
+  craftable: false
+  recipe: [ ]
+effects: []
+baseDamage: 6
+conditions: []

@@ -1,0 +1,48 @@
+item: 
+  item: iron_sword unbreakable hide_unbreakable
+  display-name: "&#00BCF5Espada &8◆ &#00A0FF&lE&#0BA4FF&lX&#16A9FF&lP&#21ADFF&lE&#2BB1FF&lR&#36B5FF&lI&#41BAFF&lM&#4CBEFF&lE&#57C2FF&lN&#62C6FF&lT&#6DCBFF&lA&#78CFFF&lD&#82D3FF&lO &#98DCFF🗡"
+  lore:
+  - "&8Objeto especial"
+  - ""
+  - "&fPodrás infligir un &b15% &fde daño"
+  - "&fextra dependiendo del mob al"
+  - "&fque ataques."    
+  - ""
+  - " &8◆ &fZombies &8- &b15%"
+  - " &8◆ &fEsqueletos &8- &b15%"
+  - " &8◆ &fCreepers &8- &b15%"
+  - ""
+  - "&emc.comugamers.com"
+  craftable: false
+  recipe: [ ]
+effects:
+
+- args:
+    multiplier: 1.15
+  id: damage_multiplier
+  filters:
+    entities:
+    - zombie
+  triggers:
+  - melee_attack
+ 
+- args:
+    multiplier: 1.15
+  id: damage_multiplier
+  filters:
+    entities:
+    - skeleton
+  triggers:
+  - melee_attack
+
+- args:
+    multiplier: 1.15
+  id: damage_multiplier
+  filters:
+    entities:
+    - creeper
+  triggers:
+  - melee_attack
+      
+baseDamage: 6
+conditions: []

@@ -1,0 +1,35 @@
+item: 
+  item: diamond_sword
+  display-name: "&7Espada &8• &#F5FF55&lD&#F7FF69&lU&#F9FF7C&lL&#FAFF90&lC&#FCFFA3&lE &#F5FF55❁"
+  lore:
+  - "&8Objeto especial"
+  - ""
+  - "&fCon esta espada podrás infligir"
+  - "&fun &b5% &fmás de daño a zombies"
+  - ""
+  - "&e» mc.comugamers.com «"
+  craftable: false
+  recipe: [ ]
+effects:
+- args:
+    multiplier: 1.05
+  id: damage_multiplier
+  filters:
+    entities:
+    - zombie
+  triggers:
+  - melee_attack
+  
+- id: spawn_particle
+  args:
+    particle: heart
+    amount: 10
+    speed: 0.1
+  filters:
+    entities:
+    - zombie
+  triggers:
+  - kill
+
+baseDamage: 6
+conditions: []

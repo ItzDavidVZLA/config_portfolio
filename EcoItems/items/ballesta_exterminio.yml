@@ -1,0 +1,38 @@
+item: 
+  item: crossbow unbreakable hide_unbreakable
+  display-name: "&#00BCF5Ballesta &8◆ &#2B2A44&lE&#2F2E4A&lX&#333250&lT&#383657&lE&#3C3A5D&lR&#403E63&lM&#444369&lI&#48476F&lN&#4C4B75&lI&#514F7C&lO &#595788🏹"
+  lore:
+  - "&8Objeto especial"
+  - ""
+  - "&fPodrás infligir un &b10% &fde daño"
+  - "&fextra dependiendo del mob al"
+  - "&fque ataques."    
+  - ""
+  - " &8◆ &fEsqueletos &8- &b10%"
+  - " &8◆ &fEsqueletos de wither &8- &b10%"
+  - ""
+  - "&emc.comugamers.com"
+  craftable: false
+  recipe: [ ]
+effects:
+
+- args:
+    multiplier: 1.10
+  id: damage_multiplier
+  filters:
+    entities:
+    - skeleton
+  triggers:
+  - bow_attack
+
+- args:
+    multiplier: 1.10
+  id: damage_multiplier
+  filters:
+    entities:
+    - wither_skeleton
+  triggers:
+  - bow_attack
+
+baseDamage: 6
+conditions: []

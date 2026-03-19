@@ -1,0 +1,19 @@
+item: 
+  item: netherite_shovel efficiency:24 unbreaking:30 mending:30 hide_enchants
+  display-name: "&#00BCF5Pala &8◆ &#00ff00&lR&#10ff10&lA&#20ff20&lF&#2fff2f&lA&#3fff3f&lL&#4fff4f&lE &#6eff6e⬤"
+  lore:
+  - "&8Objeto especial"
+  - ""
+  - "&r &8&l≡ &f&lENCANTAMIENTOS:"
+  - "&r &r &8◆ &fEficiencia 24"
+  - "&r &r &8◆ &fDurabilidad 30"
+  - "&r &r &8◆ &fReparación 30"
+  - ""
+  - "&emc.comugamers.com"
+  craftable: false
+
+slot: mainhand
+effects: []
+      
+baseDamage: 6
+conditions: []

@@ -1,0 +1,170 @@
+item: 
+  item: stick unbreakable hide_unbreakable
+  display-name: "&#00BCF5Bastón &8◆ &#FF3D3D&lV&#FF4646&lI&#FF4F4F&lT&#FF5959&lA&#FF6262&lL&#FF6B6B&lI&#FF7474&lD&#FF7D7D&lA&#FF8787&lD&#FF9090&l &#FF9999❤"
+  lore:
+  - "&8Objeto especial"
+  - ""
+  - "&fRecibirás todos los efectos de"
+  - "&festado al interactuar con este"
+  - "&fobjeto seguido de efectos"
+  - "&fespeciales."
+  - ""
+  - "&r &8&l≡ &f&lEFECTOS AL CONSUMIR:"
+  - "&r &r &8◆ &eAbsorción III &7- &f30 segundos."
+  - "&r &r &8◆ &eVelocidad III &7- &f30 segundos."
+  - "&r &r &8◆ &eFuerza III &7- &f30 segundos."
+  - "&r &r &8◆ &eRegeneración VIII &7- &f15 segundos."
+  - "&r &r &8◆ &eSalto III &7- &f30 segundos."
+  - "&r &r &8◆ &ePrisa minera III &7- &f30 segundos."
+  - "&r &r &8◆ &eVisión nocturna I &7- &f30 segundos."
+  - "&r &r &8◆ &eResistencia III &7- &f30 segundos."
+  - "&r &r &8◆ &eResistencia ígnea I &7- &f30 segundos."
+  - ""
+  - "&#C6FF04Cooldown de esta habilidad:"
+  - "&r &8&l» &f60 segundos."
+  - ""
+  - "&e» ¡Haz clic derecho para interactuar! «"
+  craftable: false
+  recipe: [ ]
+
+effects:
+  - id: potion_effect
+    args:
+      effect: strength
+      level: 3       # Regeneración III (0 = I, 1 = II, 2 = III)
+      duration: 300       # 600 ticks = 30 segundos
+      cooldown: 60        # segundos de cooldown
+      cooldown_group: boost_stick_strength
+      send_cooldown_message: true
+      cooldown_message: "&4&l« &cDebes esperar &n%seconds% segundos&r &cpara volver a usar este bastón. &4&l»"
+    triggers:
+      - alt_click
+
+  - id: potion_effect
+    args:
+      effect: regeneration
+      level: 8        # Regeneración III (0 = I, 1 = II, 2 = III)
+      duration: 300       # 600 ticks = 30 segundos
+      cooldown: 60        # segundos de cooldown
+      cooldown_group: boost_stick_regen
+      send_cooldown_message: true
+      cooldown_message: "&4&l« &cDebes esperar &n%seconds% segundos&r &cpara volver a usar este bastón. &4&l»"
+    triggers:
+      - alt_click
+
+  - id: potion_effect
+    args:
+      effect: speed
+      level: 3       # Velocidad III
+      duration: 600
+      cooldown: 60
+      cooldown_group: boost_stick_speed
+      send_cooldown_message: true
+      cooldown_message: "&4&l« &cDebes esperar &n%seconds% segundos&r &cpara volver a usar este bastón. &4&l»"
+    triggers:
+      - alt_click
+
+  - id: potion_effect
+    args:
+      effect: haste
+      level: 3       # Velocidad III
+      duration: 600
+      cooldown: 60
+      cooldown_group: boost_stick_haste
+      send_cooldown_message: true
+      cooldown_message: "&4&l« &cDebes esperar &n%seconds% segundos&r &cpara volver a usar este bastón. &4&l»"
+    triggers:
+      - alt_click
+
+  - id: potion_effect
+    args:
+      effect: resistance
+      level: 3       # Velocidad III
+      duration: 600
+      cooldown: 60
+      cooldown_group: boost_stick_resistance
+      send_cooldown_message: true
+      cooldown_message: "&4&l« &cDebes esperar &n%seconds% segundos&r &cpara volver a usar este bastón. &4&l»"
+    triggers:
+      - alt_click
+
+  - id: potion_effect
+    args:
+      effect: fire_resistance
+      level: 3       # Velocidad III
+      duration: 600
+      cooldown: 60
+      cooldown_group: boost_stick_fireresistance
+      send_cooldown_message: true
+      cooldown_message: "&4&l« &cDebes esperar &n%seconds% segundos&r &cpara volver a usar este bastón. &4&l»"
+    triggers:
+      - alt_click
+
+  - id: potion_effect
+    args:
+      effect: jump_boost
+      level: 3       # Velocidad III
+      duration: 600
+      cooldown: 60
+      cooldown_group: boost_stick_jump
+      send_cooldown_message: true
+      cooldown_message: "&4&l« &cDebes esperar &n%seconds% segundos&r &cpara volver a usar este bastón. &4&l»"
+    triggers:
+      - alt_click
+
+  - id: potion_effect
+    args:
+      effect: absorption
+      level: 3       # Velocidad III
+      duration: 600
+      cooldown: 60
+      cooldown_group: boost_stick_absorption
+      send_cooldown_message: true
+      cooldown_message: "&4&l« &cDebes esperar &n%seconds% segundos&r &cpara volver a usar este bastón. &4&l»"
+    triggers:
+      - alt_click
+
+  - id: potion_effect
+    args:
+      effect: night_vision
+      level: 3       # Velocidad III
+      duration: 600
+      cooldown: 60
+      cooldown_group: boost_stick_nightvision
+      send_cooldown_message: true
+      cooldown_message: "&4&l« &cDebes esperar &n%seconds% segundos&r &cpara volver a usar este bastón. &4&l»"
+    triggers:
+      - alt_click
+
+  - id: particle_animation
+    args:
+      particle: heart # The particle to spawn (https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html)
+      particle-amount: 1 # The amount of particles to spawn on each point
+      animation: ground_spiral # The ID of the animation
+      tick-multiplier: 1 # (Optional) increases the speed of the animation by some multiplier
+      entity: player # (Optional) specifies the entity to have the animation activate around (player, victim, projectile)
+      use-eye-location: false # (Optional) Sets the entity location to be at eye level rather than ground level
+      cooldown: 60
+      cooldown_group: boost_stick_animheart
+      cooldown_message: "&4&l« &cDebes esperar &n%seconds% segundos&r &cpara volver a usar este bastón. &4&l»"
+      particle_args: # Arguments for the animation
+          scalar: 1.233
+          distance-scalar: 0.00
+          duration: 300
+    triggers:
+      - alt_click
+
+  - id: send_message
+    args:
+      messages: # You can also specify a list of messages
+        - " "
+        - "&r &8&l≡ &f¡Has usado la habilidad del &#FF3D3DB&#FF4242a&#FF4747s&#FF4C4Ct&#FF5151ó&#FF5757n&#FF5C5C &#FF6161d&#FF6666e&#FF6B6B &#FF7070V&#FF7575i&#FF7A7At&#FF7F7Fa&#FF8585l&#FF8A8Ai&#FF8F8Fd&#FF9494a&#FF9999d&f! La habilidad estará disponible en los próximos &e&n60 segundos&r&f."
+        - " "
+      cooldown: 60
+      cooldown_group: boost_stick
+      send_cooldown_message: false
+    triggers:
+      - alt_click
+
+baseDamage: 6
+conditions: []

@@ -1,0 +1,48 @@
+item: 
+  item: stone_sword unbreakable hide_unbreakable
+  display-name: "&#00BCF5Espada &8◆ &#FF3131&lC&#FF3737&lA&#FF3E3E&lZ&#FF4444&lA&#FF4A4A&lD&#FF5151&lO&#FF5757&lR &#FF6464🗡"
+  lore:
+  - "&8Objeto especial"
+  - ""
+  - "&fPodrás infligir un &b5% &fde daño"
+  - "&fextra dependiendo del mob al"
+  - "&fque ataques."    
+  - ""
+  - " &8◆ &fZombies &8- &b5%"
+  - " &8◆ &fEsqueletos &8- &b5%"
+  - " &8◆ &fCreepers &8- &b5%"
+  - ""
+  - "&emc.comugamers.com"
+  craftable: false
+
+slot: mainhand
+effects:
+- args:
+    multiplier: 1.05
+  id: damage_multiplier
+  filters:
+    entities:
+    - zombie
+  triggers:
+  - melee_attack
+ 
+- args:
+    multiplier: 1.05
+  id: damage_multiplier
+  filters:
+    entities:
+    - skeleton
+  triggers:
+  - melee_attack
+
+- args:
+    multiplier: 1.05
+  id: damage_multiplier
+  filters:
+    entities:
+    - creeper
+  triggers:
+  - melee_attack
+      
+baseDamage: 6
+conditions: []

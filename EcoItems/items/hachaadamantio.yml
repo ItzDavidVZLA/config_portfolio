@@ -1,0 +1,79 @@
+item: 
+  item: diamond_axe
+  display-name: "&7Hacha &8• &#08AAFB&lA&#19B0FB&lD&#2BB6FC&lA&#3CBCFC&lM&#4EC2FC&lA&#5FC8FC&lN&#70CEFD&lT&#82D4FD&lI&#93DAFD&lO &#08AAFB❇"
+  lore:
+  - "&8Objeto especial"
+  - ""
+  - "&fCon esta hacha tendrás la"
+  - "&fprobabilidad del &b0.1% &fde recibir"
+  - "&3+1,000 EXP &fde &3Leñador &fy hacer"
+  - "&fdaño extra dependiendo del mob"
+  - "&fal que ataques"
+  - ""
+  - " &8◆ &fSlimes &8- &b5%"
+  - " &8◆ &fZombies &8- &b10%"
+  - " &8◆ &fEsqueletos &8- &b10%"
+  - " &8◆ &fEndermans &8- &b15%"
+  - " &8◆ &fEsqueleto de wither &8- &b15%"
+  - ""
+  - "&e» mc.comugamers.com «"
+  craftable: false
+  recipe: [ ]
+effects:
+- args:
+    multiplier: 1.05
+  id: damage_multiplier
+  filters:
+    entities:
+    - slime
+  triggers:
+  - melee_attack
+  
+- args:
+    multiplier: 1.10
+  id: damage_multiplier
+  filters:
+    entities:
+    - zombie
+  triggers:
+  - melee_attack
+ 
+- args:
+    multiplier: 1.10
+  id: damage_multiplier
+  filters:
+    entities:
+    - skeleton
+  triggers:
+  - melee_attack
+
+- args:
+    multiplier: 1.15
+  id: damage_multiplier
+  filters:
+    entities:
+    - enderman
+  triggers:
+  - melee_attack
+
+- args:
+    multiplier: 1.15
+  id: damage_multiplier
+  filters:
+    entities:
+    - wither_skeleton 
+  triggers:
+  - melee_attack
+
+- id: run_command
+  args:
+    chance: 0.1
+    command: "skills xp add %player% foraging 1000"
+  triggers:
+    - mine_block
+  filters:
+    entity_types:
+      - "#living"
+      
+baseDamage: 6
+conditions: []

@@ -1,0 +1,25 @@
+item: 
+  item: golden_sword unbreakable hide_unbreakable
+  display-name: "&#00BCF5Espada &8◆ &#FFC624&lV&#FFC82F&lE&#FFCB3A&lR&#FFCD45&lD&#FFD050&lU&#FFD25C&lG&#FFD567&lO &#FFDA7D🗡"
+  lore:
+  - "&8Objeto especial"
+  - ""
+  - "&fPodrás ganar &6+1⛁ monedas &fal"
+  - "&fmatar mobs."
+  - ""
+  - "&emc.comugamers.com"
+  craftable: false
+  recipe: [ ]
+effects:
+
+- id: give_money
+  args:
+    amount: 1
+  triggers:
+    - kill
+  filters:
+    entity_types:
+      - "ZOMBIE"
+
+baseDamage: 6
+conditions: []

@@ -1,0 +1,20 @@
+item: 
+  item: netherite_axe efficiency:40 fortune:20 unbreaking:50 mending:50 hide_enchants
+  display-name: "&#00BCF5Hacha &8◆ &&#ff0000&lR&#ff1010&lA&#ff1f1f&lP&#ff2f2f&lT&#ff3e3e&lO&#ff4e4e&lR &#ff6d6d🪓"
+  lore:
+  - "&8Objeto especial"
+  - ""
+  - "&r &8&l≡ &f&lENCANTAMIENTOS:"
+  - "&r &r &8◆ &fEficiencia 40"
+  - "&r &r &8◆ &fFortuna 20"
+  - "&r &r &8◆ &fDurabilidad 50"
+  - "&r &r &8◆ &fReparación 50"
+  - ""
+  - "&emc.comugamers.com"
+  craftable: false
+
+slot: mainhand
+effects: []
+      
+baseDamage: 6
+conditions: []

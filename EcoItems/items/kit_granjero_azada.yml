@@ -1,0 +1,9 @@
+item: 
+  item: iron_hoe efficiency:5 fortune:3 unbreaking:3
+  display-name: "&#00BCF5Espada &8◆ &#FFEE00&lG&#FDF010&lR&#FBF31F&lA&#F9F52F&lN&#F7F83F&lJ&#F5FA4F&lE&#F3FD5E&lR&#F1FF6E&lO &#F1FF6E🌾"
+  lore: []
+  craftable: false
+  recipe: [ ]
+effects: []
+baseDamage: 6
+conditions: []

@@ -1,0 +1,37 @@
+item:
+  item: mace
+  display-name: "&7Mazo &8• &#00C2B7&lE&#00CBBF&lS&#00D3C8&lC&#00DCD0&lA&#00E5D8&lN&#00EEE0&lD&#00F6E9&lI&#00FFF1&lO &#00C2B7⚡"
+  lore:
+  - "&8Objeto especial"
+  - ""
+  - "&fCon este mazo tendrás la"
+  - "&fprobabilidad de recibir"
+  - "&3+1,000 EXP &fde &3Combate &fy"
+  - "&flanzar rayos al mob que"
+  - "&fmates"
+  - ""
+  - "&e» mc.comugamers.com «"
+  craftable: false
+  recipe: [ ]
+
+effects:
+- id: smite
+  args:
+    damage: 100
+  triggers:
+    - kill
+  filters:
+    entity_types:
+      - "#living"
+
+- id: run_command
+  args:
+    command: "skills xp add %player% fighting 1000"
+  triggers:
+    - kill
+  filters:
+    entity_types:
+      - "#living"
+
+baseDamage: 10
+conditions: []

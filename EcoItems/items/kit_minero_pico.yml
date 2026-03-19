@@ -1,0 +1,11 @@
+item: 
+  item: netherite_pickaxe efficiency:10 fortune:6 unbreaking:4 mending:1
+  display-name: "&#00BCF5Pico &8◆ &#239ED5&lM&#30A6DA&lI&#3DADE0&lN&#4AB5E5&lE&#57BCEA&lR&#64C4EF&lO &#7ED3FA⛏"
+  lore: []
+  craftable: false
+
+slot: mainhand
+effects: []
+      
+baseDamage: 6
+conditions: []

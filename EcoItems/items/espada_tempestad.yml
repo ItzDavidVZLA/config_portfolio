@@ -1,0 +1,45 @@
+item: 
+  item: stone_sword unbreakable hide_unbreakable
+  display-name: "&#00BCF5Espada &8◆ &#00BEBE&lT&#11C4C4&lE&#21CACA&lM&#32D0D0&lP&#43D6D6&lE&#53DCDC&lS&#64E1E1&lT&#74E7E7&lA&#85EDED&lD&#96F3F3&l &#A6F9F9🗡"
+  lore:
+  - "&8Objeto especial"
+  - ""
+  - "&fPodrás infligir un &b15% &fde daño"
+  - "&fextra a &2Tempest ☢ &fseguido de"
+  - "&fefectos especiales."
+  - ""
+  - "&emc.comugamers.com"
+  craftable: false
+  recipe: [ ]
+effects:
+- args:
+    multiplier: 1.15
+  id: damage_multiplier
+  filters:
+    entities:
+    - mythicmobs:tempest
+  triggers:
+  - melee_attack
+
+- id: strike_lightning
+  args:
+    amount: 1
+  filters:
+    entities:
+    - mythicmobs:tempest
+  triggers:
+  - melee_attack
+
+- id: play_sound
+  args:
+    sound: ENTITY_ZOMBIE_ATTACK_WOODEN_DOOR
+    pitch: 1
+    volume: 1
+  filters:
+    entities:
+    - mythicmobs:tempest
+  triggers:
+  - melee_attack
+
+baseDamage: 6
+conditions: []

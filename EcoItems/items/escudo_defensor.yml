@@ -1,0 +1,15 @@
+item: 
+  item: shield unbreaking:1
+  display-name: "&#00BCF5Escudo &8◆ &#62FF2F&lD&#6AFF3A&lE&#73FF45&lF&#7BFF50&lE&#83FF5B&lN&#8CFF66&lS&#94FF71&lO&#9CFF7C&lR &#ADFF92⛨"
+  lore:
+  - "&8Objeto especial"
+  - ""
+  - "&fProtégete de los mobs durante"
+  - "&flas noches."
+  - ""
+  - "&emc.comugamers.com"
+  craftable: false
+  recipe: [ ]
+effects: []
+baseDamage: 6
+conditions: []

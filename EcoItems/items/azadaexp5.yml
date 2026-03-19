@@ -1,0 +1,17 @@
+item:
+    item: netherite_hoe hide_attributes unbreakable
+    display-name: "&#00FFFFAzada de agricultura &8◆ &fNivel 5"
+    lore:
+        - "&8Objeto especial"
+        - ""
+        - "&fCon esta azada recibirás un"
+        - "&e3.5x &fextra de EXP de &3Agricultura"
+        - ""
+        - "&emc.comugamers.com"
+    craftable: false
+    recipe: [ ]
+
+slot: mainhand
+
+effects: []
+conditions: [ ]

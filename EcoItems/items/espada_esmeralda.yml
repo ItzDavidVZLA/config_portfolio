@@ -1,0 +1,22 @@
+item: 
+  item: diamond_sword
+  display-name: "&#00BCF5Espada &8◆ &#3DFF44&lE&#47FF4C&lS&#51FF54&lM&#5BFF5C&lE&#65FF64&lR&#6FFF6C&lA&#78FF75&lL&#82FF7D&lD&#8CFF85&lA &#A0FF95🗡"
+  lore:
+  - "&8Objeto especial"
+  - ""
+  - "&fPodrás infligir mas daño que"
+  - "&fcon una espada de &bdiamante&f."    
+  - ""
+  - "&emc.comugamers.com"
+  craftable: false
+  recipe: [ ]
+effects:
+
+- args:
+    multiplier: 1.05
+  id: damage_multiplier
+  triggers:
+  - melee_attack
+      
+baseDamage: 6
+conditions: []

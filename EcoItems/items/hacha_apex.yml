@@ -1,0 +1,30 @@
+item: 
+  item: golden_axe unbreakable hide_unbreakable
+  display-name: "&#00BCF5Hacha &8◆ &#FFAA00&lA&#FFB218&lP&#FFBA2F&lE&#FFC247&lX&#FFC95F&l &#FFD176🪓"
+  lore:
+  - "&8Objeto especial"
+  - ""
+  - "&fPodrás infligir un &b25% &fde daño"
+  - "&fextra dependiendo del mob al"
+  - "&fque ataques seguido de efectos"
+  - "&fespeciales."
+  - ""
+  - "&r &8◆ &fGolems de hierro &8- &b25%"
+  - "&r &8◆ &fApex &8- &b25%"
+  - ""
+  - "&emc.comugamers.com"
+  craftable: false
+  recipe: [ ]
+effects:
+- args:
+    multiplier: 1.25
+  id: damage_multiplier
+  filters:
+    entities:
+    - mythicmobs:apex
+    - iron_golem
+  triggers:
+  - melee_attack
+
+baseDamage: 6
+conditions: []

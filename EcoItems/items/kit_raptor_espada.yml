@@ -1,0 +1,21 @@
+item: 
+  item: netherite_sword sharpness:50 looting:50 smite:50 unbreaking:50 mending:50 hide_enchants
+  display-name: "&#00BCF5Espada &8◆ &#ff0000&lR&#ff1010&lA&#ff1f1f&lP&#ff2f2f&lT&#ff3e3e&lO&#ff4e4e&lR &#ff6d6d🗡"
+  lore:
+  - "&8Objeto especial"
+  - ""
+  - "&r &8&l≡ &f&lENCANTAMIENTOS:"
+  - "&r &r &8◆ &fFilo 50"
+  - "&r &r &8◆ &fBotín 50"
+  - "&r &r &8◆ &fCastigo 50"
+  - "&r &r &8◆ &fDurabilidad 50"
+  - "&r &r &8◆ &fReparación 50"
+  - ""
+  - "&emc.comugamers.com"
+  craftable: false
+
+slot: mainhand
+effects: []
+      
+baseDamage: 6
+conditions: []

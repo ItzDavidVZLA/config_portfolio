@@ -1,0 +1,17 @@
+item:
+    item: diamond_hoe hide_attributes unbreakable
+    display-name: "&#00FF00Azada de agricultura &8◆ &fNivel 4"
+    lore:
+        - "&8Objeto especial"
+        - ""
+        - "&fCon esta azada recibirás un"
+        - "&e3.0x &fextra de EXP de &3Agricultura"
+        - ""
+        - "&emc.comugamers.com"
+    craftable: false
+    recipe: [ ]
+
+slot: mainhand
+
+effects: []
+conditions: [ ]

@@ -1,0 +1,44 @@
+item:
+  item: diamond_hoe hide_attributes # The item in-game: https://plugins.auxilor.io/all-plugins/the-item-lookup-system
+  display-name: "&9Azada intermedia de Agricultor" # The display name of the item
+  lore: # The item lore
+    - "&8Objeto especial"
+    - ""
+    - "&fLabrarás la tierra en un radio de 5x5"
+    - ""
+    - "&e» ¡Haz clic derecho para labrar! «"
+  craftable: false
+  recipe: [ ]
+
+# The slot the item has to be in to activate its effects.
+# The options for slot are mainhand, offhand, hands, helmet, chestplate,
+# leggings, boots, armor, any, a number from 0-40 (to specify an exact slot),
+# or a list of slots like "9, 10, 11, mainhand"
+# Use to choose weather this is a weapon, tool, armor piece, charm, etc.
+# If you don't specify this, it will default to mainhand.
+slot: mainhand
+
+base-damage: 0 # (Optional) The item base damage
+base-attack-speed: 1 # (Optional) The item base attack speed
+
+# (Optional) The rarity of the item
+rarity: rare
+
+# The effects of the item (i.e. the functionality)
+# See here: https://plugins.auxilor.io/effects/configuring-an-effect
+effects:
+- id: replace_near
+  args:
+    radius: 2 # The horizontal radius to replace
+    radius_y: 0 # The vertical radius to replace
+    replace_to: farmland # The block to replace to}
+    disable_on_sneak: false # If the effect should not activate while sneaking
+    whitelist: # (Optional) A list of blocks to replace
+      - grass_block
+      - dirt
+  triggers:
+    - alt_click
+  conditions:
+  - id: in_world
+    args:
+      world: oneblock_world

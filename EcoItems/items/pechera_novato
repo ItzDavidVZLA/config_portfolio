@@ -1,0 +1,31 @@
+item: 
+  item: iron_chestplate
+  display-name: "&#00BCF5Pechera &8◆ &#2FECFF&lN&#3BEEFF&lO&#48EFFF&lV&#54F1FF&lA&#61F3FF&lT&#6DF4FF&lO &#86F7FF🛡"
+  lore:
+  - "&8Objeto especial"
+  - ""
+  - "&fRecibirás el efecto de &#7F2FFFResistencia"
+  - "&fde &e&nnivel 1&f &fal equiparte esta pechera."
+  - ""
+  - "&emc.comugamers.com"
+  craftable: false
+  recipe:
+  - diamond
+  - stick
+  - ""
+  - ""
+  - ""
+  - ""
+  - ""
+  - ""
+  - ""
+effects:
+- id: permanent_potion_effect
+  args:
+    effect: resistance # The effect to give
+    level: 1 # The effect level to give
+
+
+
+baseDamage: 6
+conditions: []

@@ -1,0 +1,25 @@
+item: 
+  item: leather_chestplate unbreakable color:#64FF32
+  display-name: "&#00BCF5Pechera &8◆ &#00FF00&lT&#13FF13&lE&#27FF27&lM&#3AFF3A&lP&#4EFF4E&lE&#61FF61&lS&#75FF75&lT &#9CFF9C🛡"
+  lore:
+  - "&8Objeto especial"
+  - ""
+  - "&fPodrás aumentar y reducir el daño"
+  - "&finfligido y recibido de &2Tempest ☢"
+  - "&fy otros mobs."
+  - ""
+  - "&r &8◆ &fZombies &8- &b10% 🗡"
+  - "&r &8◆ &fTempest &8- &b10% 🗡"
+  - "&r &8◆ &fZombies &8- &b10% 🛡"
+  - "&r &8◆ &fEsqueletos &8- &b10% 🛡"
+  - ""
+  - "&emc.comugamers.com"
+  craftable: false
+  recipe: [ ]
+effects:
+- args:
+    level: 1
+    effect: NIGHT_VISION
+  id: permanent_potion_effect
+baseDamage: 6
+conditions: []

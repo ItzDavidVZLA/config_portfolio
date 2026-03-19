@@ -1,0 +1,17 @@
+item:
+    item: wooden_hoe hide_attributes unbreakable
+    display-name: "&#FF0000Azada de agricultura &8◆ &fNivel 1"
+    lore:
+        - "&8Objeto especial"
+        - ""
+        - "&fCon esta azada recibirás un"
+        - "&e1.5x &fextra de EXP de &3Agricultura"
+        - ""
+        - "&emc.comugamers.com"
+    craftable: false
+    recipe: [ ]
+
+slot: mainhand
+
+effects: []
+conditions: [ ]

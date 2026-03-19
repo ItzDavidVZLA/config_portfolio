@@ -1,0 +1,30 @@
+item:
+  item: diamond_axe max_damage:4096 item_name:"&#00BCF5Hacha &8◆ &#3DFF44&lE&#47FF4C&lS&#51FF54&lM&#5BFF5C&lE&#65FF64&lR&#6FFF6C&lA&#78FF75&lL&#82FF7D&lD&#8CFF85&lA &#A0FF95🪓"
+  lore: [ ]
+  craftable: false
+  recipe: [ ]
+
+tool:
+  # The default mining speed, if not overridden by any rules
+  mining-speed: 1.0
+
+  # The amount of durability to remove from the tool when it is used
+  damage-per-block: 1
+
+  # (Optional) Rules for the tool
+  # Blocks are lists of block names or block tags
+  # A list of block names is here: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+  # A list of block (Material) tags is here: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Tag.html
+  rules:
+    - blocks:
+        - "#mineable_axe" # Tags start with a #
+      speed: 15 # The mining speed for these blocks
+    - blocks:
+        - "oak_log"
+        - "spruce_log"
+        - "jungle_log"
+        - "birch_log"
+        - "dark_oak_log"
+        - "mangrove_log"
+      speed: 1
+      drops: false # (Optional) If the block should drop items when mined with this tool

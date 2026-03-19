@@ -1,0 +1,20 @@
+item: 
+  item: iron_pickaxe efficiency:2
+  display-name: "&#00BCF5Pico &8◆ &#FFC5ED&lC&#FFC9EE&lA&#FFCCEF&lL&#FFD0F0&lC&#FFD4F1&lI&#FFD7F3&lT&#FFDBF4&lA &#FFE2F6⛏"
+  lore:
+  - "&8Objeto especial"
+  - ""
+  - "&fRecibirás el efecto de &ePrisa minera"
+  - "&fde &e&nnivel 1&f &fal minar con este pico"
+  - ""
+  - "&emc.comugamers.com"
+  craftable: false
+  recipe: [ ]
+effects:
+- id: permanent_potion_effect
+  args:
+    effect: haste
+    level: 1
+      
+baseDamage: 6
+conditions: []

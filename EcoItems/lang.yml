@@ -1,0 +1,10 @@
+messages:
+  prefix: ""
+  no-permission: "&4&l» &cNo tienes permiso para ejecutar este comando"
+  not-player: "&cThis command must be run by a player"
+  invalid-command: "&cUnknown subcommand!"
+  reloaded: "Reloaded!"
+
+  invalid-player: "&cInvalid player!"
+  invalid-item: "&cInvalid item!"
+  give-success: "Gave &a%item%&r to &a%recipient%&f!"

@@ -1,0 +1,36 @@
+item: 
+  item: bow unbreakable hide_unbreakable
+  display-name: "&#00BCF5Arco &8◆ &#FFC624&lF&#FFC82C&lL&#FFCA34&lA&#FFCB3C&lM&#FFCD44&lE&#FFCF4C&lA&#FFD155&lN&#FFD35D&lT&#FFD565&lE &#FFD875🏹"
+  lore:
+  - "&8Objeto especial"
+  - ""
+  - "&fPodrás &6incinerar &fal mob que"
+  - "&fataques con este arco."    
+  - ""
+  - "&emc.comugamers.com"
+  craftable: false
+  recipe: [ ]
+
+slot: mainhand
+
+effects:
+
+- id: ignite
+  args:
+    damage_per_tick: 3 # The amount of damage to deal per fire tick
+    ticks: 300
+  filters:
+    entities:
+    - zombie
+    - skeleton
+    - creeper
+    - slime
+    - silverfish
+    - wither_skeleton
+    - spider
+    - cave_spider
+  triggers:
+    - bow_attack
+
+baseDamage: 6
+conditions: []

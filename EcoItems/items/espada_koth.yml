@@ -1,0 +1,17 @@
+item: 
+  item: netherite_sword sharpness:7 unbreaking:4 hide_enchants
+  display-name: "&#00BCF5Espada &8◆ &4&lKOTH &4🗡"
+  lore:
+  - "&8Objeto especial"
+  - ''
+  - "&r &8&l≡ &f&lENCANTAMIENTOS:"
+  - "&r &r &8◆ &fFilo 7"
+  - "&r &r &8◆ &fDurabilidad 4"
+  - ''
+  - "&emc.comugamers.com"
+  craftable: false
+
+slot: mainhand
+effects: []
+baseDamage: 6
+conditions: []

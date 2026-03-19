@@ -1,0 +1,20 @@
+item: 
+  item: stone_axe efficiency:2
+  display-name: "&#00BCF5Hacha &8◆ &#C8C8C8&lD&#CECECE&lI&#D4D4D4&lO&#DADADA&lR&#E0E0E0&lI&#E7E7E7&lT&#EDEDED&lA &#F9F9F9🪓"
+  lore:
+  - "&8Objeto especial"
+  - ""
+  - "&fRecibirás el efecto de &ePrisa minera"
+  - "&fde &e&nnivel 1&f &fal minar con esta hacha"
+  - ""
+  - "&emc.comugamers.com"
+  craftable: false
+  recipe: [ ]
+effects:
+- id: permanent_potion_effect
+  args:
+    effect: haste
+    level: 1
+      
+baseDamage: 6
+conditions: []
