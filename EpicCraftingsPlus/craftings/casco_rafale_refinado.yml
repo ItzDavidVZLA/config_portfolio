@@ -1,0 +1,41 @@
+item:
+  original:
+    ==: org.bukkit.inventory.ItemStack
+    v: 4189
+    type: NETHERITE_HELMET
+    meta:
+      ==: ItemMeta
+      meta-type: ARMOR
+      display-name: '{"text":"","extra":[{"text":"Casco ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#00BCF5"},{"text":"◆
+        ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"dark_gray"},{"text":"R","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#00FF00"},{"text":"A","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#10FF10"},{"text":"F","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#20FF20"},{"text":"A","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#2FFF2F"},{"text":"L","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#3FFF3F"},{"text":"E
+        ","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#4FFF4F"},{"text":"🛡","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#6EFF6E"}]}'
+      enchants:
+        minecraft:blast_protection: 30
+        minecraft:fire_protection: 30
+        minecraft:mending: 30
+        minecraft:projectile_protection: 30
+        minecraft:unbreaking: 30
+      attribute-modifiers:
+        minecraft:armor:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 3.0
+          slot: head
+          operation: 0
+          key: minecraft:c4fe3a77-a706-4090-882b-9278176f5f09
+      ItemFlags:
+      - HIDE_ENCHANTS
+      PublicBukkitValues: |-
+        {
+            "ecoarmor:advanced": 0,
+            "ecoarmor:effective-durability": 1024,
+            "ecoarmor:set": "kit_rafale_refinado",
+            "ecoarmor:tier": "kits_tradeables"
+        }
+priority: 1
+actions_when_crafted:
+- 'firework: colors:YELLOW,RED type:BALL fade:AQUA power:0'
+save_original_item: true
+category: rafale
+requires:
+- id:NETHERITE_HELMET;amount:4;name:&x&0&0&B&C&F&5Casco &8◆ &x&0&0&F&F&0&0&lR&x&1&0&F&F&1&0&lA&x&2&0&F&F&2&0&lF&x&2&F&F&F&2&F&lA&x&3&F&F&F&3&F&lL&x&4&F&F&F&4&F&lE
+  &x&6&E&F&F&6&E🛡;enchants:MENDING-30|UNBREAKING-30

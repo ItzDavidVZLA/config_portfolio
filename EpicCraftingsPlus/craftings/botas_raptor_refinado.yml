@@ -1,0 +1,41 @@
+item:
+  original:
+    ==: org.bukkit.inventory.ItemStack
+    v: 4189
+    type: NETHERITE_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: ARMOR
+      display-name: '{"text":"","extra":[{"text":"Botas ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#00BCF5"},{"text":"◆
+        ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"dark_gray"},{"text":"R","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#FF0000"},{"text":"A","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#FF1010"},{"text":"P","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#FF1F1F"},{"text":"T","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#FF2F2F"},{"text":"O","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#FF3E3E"},{"text":"R
+        ","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#FF4E4E"},{"text":"🛡","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF6D6D"}]}'
+      enchants:
+        minecraft:blast_protection: 50
+        minecraft:fire_protection: 50
+        minecraft:mending: 50
+        minecraft:projectile_protection: 50
+        minecraft:unbreaking: 50
+      attribute-modifiers:
+        minecraft:armor:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 3.0
+          slot: feet
+          operation: 0
+          key: minecraft:5eaf6028-ab60-4821-b7d6-1257d7b4decd
+      ItemFlags:
+      - HIDE_ENCHANTS
+      PublicBukkitValues: |-
+        {
+            "ecoarmor:advanced": 0,
+            "ecoarmor:effective-durability": 2048,
+            "ecoarmor:set": "kit_raptor_refinado",
+            "ecoarmor:tier": "kits_tradeables"
+        }
+priority: 1
+actions_when_crafted:
+- 'firework: colors:YELLOW,RED type:BALL fade:AQUA power:0'
+save_original_item: true
+category: raptor
+requires:
+- id:NETHERITE_BOOTS;amount:4;name:&x&0&0&B&C&F&5Botas &8◆ &x&F&F&0&0&0&0&lR&x&F&F&1&0&1&0&lA&x&F&F&1&F&1&F&lP&x&F&F&2&F&2&F&lT&x&F&F&3&E&3&E&lO&x&F&F&4&E&4&E&lR
+  &x&F&F&6&D&6&D🛡;enchants:MENDING-50|UNBREAKING-50

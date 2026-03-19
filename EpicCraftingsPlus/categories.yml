@@ -1,0 +1,97 @@
+Categories:
+  mirage:
+    permission: epiccraftingsplus.categories.others
+    actions:
+      permission_error:
+      - 'message: &cThis category will be unlocked while you progress...'
+      - 'playsound: BLOCK_NOTE_BLOCK_PLING;10;0.1'
+    item:
+      id: NETHERITE_SWORD
+      name: '#9000FFObjetos #9000FF&lM#9710FF&lI#9E20FF&lR#A52FFF&lA#AC3FFF&lG#B24FFF&lE'
+      lore:
+      - '&8Información'
+      - ''
+      - '&fAquí podras ver información'
+      - '&futil sobre las mejoras de'
+      - '&feste kit.'
+      - '&f'
+      - '&e» ¡Haz clic para ver! «'
+      item_flags:
+      - HIDE_ATTRIBUTES
+  hornet:
+    permission: epiccraftingsplus.categories.others
+    actions:
+      permission_error:
+      - 'message: &cThis category will be unlocked while you progress...'
+      - 'playsound: BLOCK_NOTE_BLOCK_PLING;10;0.1'
+    item:
+      id: NETHERITE_SWORD
+      name: '#0045FFObjetos #0045FF&lH#1051FF&lO#205CFF&lR#2F68FF&lN#3F73FF&lE#4F7FFF&lT'
+      lore:
+      - '&8Información'
+      - ''
+      - '&fAquí podras ver información'
+      - '&futil sobre las mejoras de'
+      - '&feste kit.'
+      - '&f'
+      - '&e» ¡Haz clic para ver! «'
+      item_flags:
+      - HIDE_ATTRIBUTES
+  rafale:
+    permission: epiccraftingsplus.categories.others
+    actions:
+      permission_error:
+      - 'message: &cThis category will be unlocked while you progress...'
+      - 'playsound: BLOCK_NOTE_BLOCK_PLING;10;0.1'
+    item:
+      id: NETHERITE_SWORD
+      name: '#00FF00Objetos #00FF00&lR#10FF10&lA#20FF20&lF#2FFF2F&lA#3FFF3F&lL#4FFF4F&lE'
+      lore:
+      - '&8Información'
+      - ''
+      - '&fAquí podras ver información'
+      - '&futil sobre las mejoras de'
+      - '&feste kit.'
+      - '&f'
+      - '&e» ¡Haz clic para ver! «'
+      item_flags:
+      - HIDE_ATTRIBUTES
+  lightning:
+    permission: epiccraftingsplus.categories.others
+    actions:
+      permission_error:
+      - 'message: &cThis category will be unlocked while you progress...'
+      - 'playsound: BLOCK_NOTE_BLOCK_PLING;10;0.1'
+    item:
+      id: NETHERITE_SWORD
+      name: '#FFFF00Objetos #FFFF00&lL#FFFF0B&lI#FFFF17&lG#FFFF22&lH#FFFF2D&lT#FFFF38&lN#FFFF44&lI#FFFF4F&lN#FFFF5A&lG'
+      lore:
+      - '&8Información'
+      - ''
+      - '&fAquí podras ver información'
+      - '&futil sobre las mejoras de'
+      - '&feste kit.'
+      - '&f'
+      - '&e» ¡Haz clic para ver! «'
+      item_flags:
+      - HIDE_ATTRIBUTES
+  raptor:
+    permission: epiccraftingsplus.categories.others
+    actions:
+      permission_error:
+      - 'message: &cThis category will be unlocked while you progress...'
+      - 'playsound: BLOCK_NOTE_BLOCK_PLING;10;0.1'
+    item:
+      id: NETHERITE_SWORD
+      name: '#FF0000Objetos #FF0000&lR#FF1010&lA#FF1F1F&lP#FF2F2F&lT#FF3E3E&lO#FF4E4E&lR'
+      lore:
+      - '&8Información'
+      - ''
+      - '&fAquí podras ver información'
+      - '&futil sobre las mejoras de'
+      - '&feste kit.'
+      - '&f'
+      - '&e» ¡Haz clic para ver! «'
+      item_flags:
+      - HIDE_ATTRIBUTES
+

@@ -1,0 +1,41 @@
+item:
+  original:
+    ==: org.bukkit.inventory.ItemStack
+    v: 4189
+    type: NETHERITE_LEGGINGS
+    meta:
+      ==: ItemMeta
+      meta-type: ARMOR
+      display-name: '{"text":"","extra":[{"text":"Pantalones ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#00BCF5"},{"text":"◆
+        ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"dark_gray"},{"text":"M","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#9000FF"},{"text":"I","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#9710FF"},{"text":"R","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#9E20FF"},{"text":"A","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#A52FFF"},{"text":"G","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#AC3FFF"},{"text":"E
+        ","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#B24FFF"},{"text":"🛡","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#C06EFF"}]}'
+      enchants:
+        minecraft:blast_protection: 10
+        minecraft:fire_protection: 10
+        minecraft:mending: 10
+        minecraft:projectile_protection: 10
+        minecraft:unbreaking: 10
+      attribute-modifiers:
+        minecraft:armor:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 6.0
+          slot: legs
+          operation: 0
+          key: minecraft:2c247184-964f-4597-abf2-d82be332a42d
+      ItemFlags:
+      - HIDE_ENCHANTS
+      PublicBukkitValues: |-
+        {
+            "ecoarmor:advanced": 0,
+            "ecoarmor:effective-durability": 2048,
+            "ecoarmor:set": "kit_mirage_refinado",
+            "ecoarmor:tier": "kits_tradeables"
+        }
+priority: 3
+actions_when_crafted:
+- 'firework: colors:YELLOW,RED type:BALL fade:AQUA power:0'
+save_original_item: true
+category: mirage
+requires:
+- id:NETHERITE_LEGGINGS;amount:4;name:&x&0&0&B&C&F&5Pantalones &8◆ &x&9&0&0&0&F&F&lM&x&9&7&1&0&F&F&lI&x&9&E&2&0&F&F&lR&x&A&5&2&F&F&F&lA&x&A&C&3&F&F&F&lG&x&B&2&4&F&F&F&lE
+  &x&C&0&6&E&F&F🛡;enchants:MENDING-10|UNBREAKING-10

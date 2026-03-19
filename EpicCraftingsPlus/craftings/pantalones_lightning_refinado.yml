@@ -1,0 +1,41 @@
+item:
+  original:
+    ==: org.bukkit.inventory.ItemStack
+    v: 4189
+    type: NETHERITE_LEGGINGS
+    meta:
+      ==: ItemMeta
+      meta-type: ARMOR
+      display-name: '{"text":"","extra":[{"text":"Pantalones ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#00BCF5"},{"text":"◆
+        ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"dark_gray"},{"text":"L","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#FFFF00"},{"text":"I","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#FFFF0B"},{"text":"G","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#FFFF17"},{"text":"H","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#FFFF22"},{"text":"T","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#FFFF2D"},{"text":"N","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#FFFF38"},{"text":"I","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#FFFF44"},{"text":"N","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#FFFF4F"},{"text":"G
+        ","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#FFFF5A"},{"text":"🛡","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FFFF71"}]}'
+      enchants:
+        minecraft:blast_protection: 40
+        minecraft:fire_protection: 40
+        minecraft:mending: 40
+        minecraft:projectile_protection: 40
+        minecraft:unbreaking: 40
+      attribute-modifiers:
+        minecraft:armor:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 6.0
+          slot: legs
+          operation: 0
+          key: minecraft:e7f1f65a-8b2b-434d-a924-b4f5d45cf219
+      ItemFlags:
+      - HIDE_ENCHANTS
+      PublicBukkitValues: |-
+        {
+            "ecoarmor:advanced": 0,
+            "ecoarmor:effective-durability": 2048,
+            "ecoarmor:set": "kit_lightning_refinado",
+            "ecoarmor:tier": "kits_tradeables"
+        }
+priority: 3
+actions_when_crafted:
+- 'firework: colors:YELLOW,RED type:BALL fade:AQUA power:0'
+save_original_item: true
+requires:
+- id:NETHERITE_LEGGINGS;amount:4;name:&x&0&0&B&C&F&5Pantalones &8◆ &x&F&F&F&F&0&0&lL&x&F&F&F&F&0&B&lI&x&F&F&F&F&1&7&lG&x&F&F&F&F&2&2&lH&x&F&F&F&F&2&D&lT&x&F&F&F&F&3&8&lN&x&F&F&F&F&4&4&lI&x&F&F&F&F&4&F&lN&x&F&F&F&F&5&A&lG
+  &x&F&F&F&F&7&1🛡;enchants:MENDING-40|UNBREAKING-40
+category: lightning

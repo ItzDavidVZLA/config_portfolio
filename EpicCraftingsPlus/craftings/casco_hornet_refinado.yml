@@ -1,0 +1,41 @@
+item:
+  original:
+    ==: org.bukkit.inventory.ItemStack
+    v: 4189
+    type: NETHERITE_HELMET
+    meta:
+      ==: ItemMeta
+      meta-type: ARMOR
+      display-name: '{"text":"","extra":[{"text":"Casco ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#00BCF5"},{"text":"◆
+        ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"dark_gray"},{"text":"H","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#0045FF"},{"text":"O","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#1051FF"},{"text":"R","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#205CFF"},{"text":"N","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#2F68FF"},{"text":"E","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#3F73FF"},{"text":"T
+        ","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#4F7FFF"},{"text":"🛡","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#6E96FF"}]}'
+      enchants:
+        minecraft:blast_protection: 20
+        minecraft:fire_protection: 20
+        minecraft:mending: 20
+        minecraft:projectile_protection: 20
+        minecraft:unbreaking: 20
+      attribute-modifiers:
+        minecraft:armor:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 3.0
+          slot: head
+          operation: 0
+          key: minecraft:c4feab62-4a05-4dae-8cfa-e005c36c7c9b
+      ItemFlags:
+      - HIDE_ENCHANTS
+      PublicBukkitValues: |-
+        {
+            "ecoarmor:advanced": 0,
+            "ecoarmor:effective-durability": 1024,
+            "ecoarmor:set": "kit_hornet_refinado",
+            "ecoarmor:tier": "kits_tradeables"
+        }
+priority: 1
+actions_when_crafted:
+- 'firework: colors:YELLOW,RED type:BALL fade:AQUA power:0'
+save_original_item: true
+category: hornet
+requires:
+- id:NETHERITE_HELMET;amount:4;name:&x&0&0&B&C&F&5Casco &8◆ &x&0&0&4&5&F&F&lH&x&1&0&5&1&F&F&lO&x&2&0&5&C&F&F&lR&x&2&F&6&8&F&F&lN&x&3&F&7&3&F&F&lE&x&4&F&7&F&F&F&lT
+  &x&6&E&9&6&F&F🛡;enchants:MENDING-20|UNBREAKING-20

@@ -1,0 +1,11 @@
+Places:
+  '1':
+    x: 1453
+    y: 83
+    z: 1490
+    world: spawn
+  '2':
+    x: -36
+    y: 62
+    z: 74
+    world: spawn

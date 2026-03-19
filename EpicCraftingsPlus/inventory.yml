@@ -1,0 +1,298 @@
+Inventories:
+  main:
+    slots: 27
+    title: '&8      &nRefinador de objetos'
+    '11':
+      type: category:mirage
+    '12':
+      type: category:hornet
+    '13':
+      type: category:rafale
+    '14':
+      type: category:lightning
+    '15':
+      type: category:raptor
+    0-10;16-26:
+      item:
+        id: BLACK_STAINED_GLASS_PANE
+        name: ' '
+  crafting_menu:
+    slots: 45
+    title: '&4&lCraft your Item'
+    0-9;11;17;18;20;26;27;29;35;36-44:
+      item:
+        id: BLACK_STAINED_GLASS_PANE
+        name: ' '
+    '36':
+      item:
+        id: ARROW
+        name: '#00c5fb◀ Página anterior'
+        lore:
+        - '&8Volver a la página previa'
+        - ''
+        - '&fRegresa al grupo anterior de mascotas.'
+        - ''
+        - '&e » ¡Haz clic para retroceder! «'
+      open_inventory: previous
+      not_show_on_blocked_craftings: true
+    '19':
+      type: final_crafting
+    '18':
+      type: previous_crafting
+      not_show_on_blocked_craftings: true
+    '20':
+      type: next_crafting
+      not_show_on_blocked_craftings: true
+    '41':
+      type: click_to_craft
+    '42':
+      type: craft_with_money
+    12-16;21-25;30-34:
+      type: required_item
+    '23':
+      type: no_required_items
+  category_mirage:
+    slots: 45
+    title: '&8  &nRefinador de objetos Mirage'
+    0-9;17;18;26;27;35;36-44:
+      item:
+        id: BLACK_STAINED_GLASS_PANE
+        name: ' '
+    '36':
+      item:
+        id: ARROW
+        name: '#00c5fb◀ Página anterior'
+        lore:
+        - '&8Volver a la página previa'
+        - ''
+        - '&fRegresa al grupo anterior de mascotas.'
+        - ''
+        - '&e » ¡Haz clic para retroceder! «'
+      open_inventory: main
+      not_show_on_blocked_inventories: true
+    '43':
+      type: previous_page
+    '44':
+      type: next_page
+    10-16;19-25;28-34:
+      type: preview_crafting
+  category_hornet:
+    slots: 45
+    title: '&8 &nRefinador de objetos Hornet'
+    0-9;17;18;26;27;35;36-44:
+      item:
+        id: BLACK_STAINED_GLASS_PANE
+        name: ' '
+    '36':
+      item:
+        id: ARROW
+        name: '#00c5fb◀ Página anterior'
+        lore:
+        - '&8Volver a la página previa'
+        - ''
+        - '&fRegresa al grupo anterior de mascotas.'
+        - ''
+        - '&e » ¡Haz clic para retroceder! «'
+      open_inventory: main
+      not_show_on_blocked_inventories: true
+    '43':
+      type: previous_page
+    '44':
+      type: next_page
+    10-16;19-25;28-34:
+      type: preview_crafting
+  category_rafale:
+    slots: 45
+    title: '&8  &nRefinador de objetos Rafale'
+    0-9;17;18;26;27;35;36-44:
+      item:
+        id: BLACK_STAINED_GLASS_PANE
+        name: ' '
+    '36':
+      item:
+        id: ARROW
+        name: '#00c5fb◀ Página anterior'
+        lore:
+        - '&8Volver a la página previa'
+        - ''
+        - '&fRegresa al grupo anterior de mascotas.'
+        - ''
+        - '&e » ¡Haz clic para retroceder! «'
+      open_inventory: main
+      not_show_on_blocked_inventories: true
+    '43':
+      type: previous_page
+    '44':
+      type: next_page
+    10-16;19-25;28-34:
+      type: preview_crafting
+  category_lightning:
+    slots: 45
+    title: '&8  &nRefinador de objetos Lightning'
+    0-9;17;18;26;27;35;36-44:
+      item:
+        id: BLACK_STAINED_GLASS_PANE
+        name: ' '
+    '36':
+      item:
+        id: ARROW
+        name: '#00c5fb◀ Página anterior'
+        lore:
+        - '&8Volver a la página previa'
+        - ''
+        - '&fRegresa al grupo anterior de mascotas.'
+        - ''
+        - '&e » ¡Haz clic para retroceder! «'
+      open_inventory: main
+      not_show_on_blocked_inventories: true
+    '43':
+      type: previous_page
+    '44':
+      type: next_page
+    10-16;19-25;28-34:
+      type: preview_crafting
+  category_raptor:
+    slots: 45
+    title: '&8  &nRefinador de objetos Raptor'
+    0-9;17;18;26;27;35;36-44:
+      item:
+        id: BLACK_STAINED_GLASS_PANE
+        name: ' '
+    '36':
+      item:
+        id: ARROW
+        name: '#00c5fb◀ Página anterior'
+        lore:
+        - '&8Volver a la página previa'
+        - ''
+        - '&fRegresa al grupo anterior de mascotas.'
+        - ''
+        - '&e » ¡Haz clic para retroceder! «'
+      open_inventory: main
+      not_show_on_blocked_inventories: true
+    '43':
+      type: previous_page
+    '44':
+      type: next_page
+    10-16;19-25;28-34:
+      type: preview_crafting
+
+
+  bypass_cooldown_menu:
+    slots: 27
+    title: '&4&lBypass Cooldown'
+    '13':
+      item:
+        id: HOPPER
+        name: '&a&lAre you sure?'
+        lore:
+        - '&7Are you sure you want to bypass the'
+        - '&ccooldown &7of: &a%crafting_name% &7?'
+        - '&7This will cost you: &2$%bypass_cost%'
+    '10':
+      type: bypass_cooldown_yes
+    '16':
+      type: bypass_cooldown_no
+CustomItems:
+  previous_page:
+    item:
+      id: ARROW
+      name: '#00c5fb◀ Página anterior'
+      lore:
+      - '&8Volver a la página previa'
+      - ''
+      - '&fRegresa al grupo anterior de mascotas.'
+      - ''
+      - '&e » ¡Haz clic para retroceder! «'
+  next_page:
+    item:
+      id: ARROW
+      name: '#00c5fb▶ Siguiente página'
+      lore:
+      - '&8Ir a la página siguiente'
+      - ''
+      - '&fNavega al siguiente grupo de mascotas.'
+      - ''
+      - '&e » ¡Haz clic para avanzar! «'
+  previous_crafting:
+    item:
+      id: RED_STAINED_GLASS_PANE
+      name: '#00c5fb◀ Página anterior'
+      lore:
+      - '&8Volver a la página previa'
+      - ''
+      - '&fRegresa al grupo anterior de mascotas.'
+      - ''
+      - '&e » ¡Haz clic para retroceder! «'
+  next_crafting:
+    item:
+      id: RED_STAINED_GLASS_PANE
+      name: '#00c5fb▶ Siguiente página'
+      lore:
+      - '&8Ir a la página siguiente'
+      - ''
+      - '&fNavega al siguiente grupo de mascotas.'
+      - ''
+      - '&e » ¡Haz clic para avanzar! «'
+  final_crafting:
+    cooldown_info_lore:
+    - ''
+    - '&9Cooldown: &7%time%'
+  preview_crafting:
+    name: '#00c5fb%name%'
+    cooldown_info_lore:
+    - ''
+    - '&9Cooldown: &7%time%'
+    in_cooldown_lore:
+    - ''
+    - '&8[&cThis craft is being created&8]'
+    - '&6You need to wait: &7%time%'
+    cooldown_ready_lore:
+    - ''
+    - '&8[&aThis craft is ready to be claimed!&8]'
+    - '&6&lCLICK TO GET IT!'
+    bypass_cooldown_lore:
+    - ''
+    - '&c&lRIGHT CLICK to bypass cooldown'
+  required_item:
+    status_lore:
+    - ''
+    - '#5FE2C5 ℹ Recursos necesarios'
+    - '&8  ◆ &fEstado: &e%current_items%/%total_items%'
+    no_items_status_color: '&c'
+    some_items_status_color: '&e'
+    all_items_status_color: '&a'
+    not_removed_lore:
+    - ''
+    - '&8[&7This item will NOT be removed!&8]'
+  no_required_items:
+    item:
+      id: BARRIER
+      name: '&cThis crafting doesn''t have required items'
+  click_to_craft:
+    item:
+      id: CRAFTING_TABLE
+      name: '#00c5fb⭐ Refinar'
+      lore:
+        - "&8Refinador de objetos"
+        - " "
+        - "&fEsta acción no es reversible."
+        - " "
+        - '&e » ¡Haz clic para refinar! «'
+    success_probability_lore:
+    - ''
+    - '&7Probability of Success: &c%chance%%'
+  craft_with_money:
+    item:
+      id: LIME_DYE
+      name: '&6&lCraft Using Money'
+      lore:
+      - '&7Click to craft for &a$%cost%&7.'
+  bypass_cooldown_yes:
+    item:
+      id: GREEN_TERRACOTTA
+      name: '&a&lYES'
+  bypass_cooldown_no:
+    item:
+      id: RED_TERRACOTTA
+      name: '&c&lNO'

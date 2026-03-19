@@ -1,0 +1,42 @@
+name: ItzDavidVZLA_
+craftings:
+  casco_mirage_refinado:
+    amount: 8
+  pechera_mirage_refinado:
+    amount: 18
+  pantalones_mirage_refinado:
+    amount: 2
+  botas_mirage_refinado:
+    amount: 2
+  casco_hornet_refinado:
+    amount: 1
+  pechera_hornet_refinado:
+    amount: 1
+  pantalones_hornet_refinado:
+    amount: 1
+  botas_hornet_refinado:
+    amount: 1
+  casco_rafale_refinado:
+    amount: 1
+  pechera_rafale_refinado:
+    amount: 1
+  pantalones_rafale_refinado:
+    amount: 1
+  botas_rafale_refinado:
+    amount: 1
+  casco_lightning_refinado:
+    amount: 1
+  pechera_lightning_refinado:
+    amount: 1
+  pantalones_lightning_refinado:
+    amount: 1
+  botas_lightning_refinado:
+    amount: 1
+  botas_raptor_refinado:
+    amount: 3
+  casco_raptor_refinado:
+    amount: 1
+  pantalones_raptor_refinado:
+    amount: 1
+  pechera_raptor_refinado:
+    amount: 1
