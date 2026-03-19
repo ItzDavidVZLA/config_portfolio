@@ -1,0 +1,251 @@
+# _ ________________ ________________ ________________ _
+#|_|________________|________________|________________|_|
+#| |   _____  ______  _       _    _ __   __ ______   | |
+#| |  |  __ \|  ___ \| |     | |  | |\ \ / /|  ___ \  | |
+#|_|  | |  | | |__ \/| |     | |  | | \ V / | |__ \/  |_|
+#| |  | |  | |  __|  | |     | |  | |  > <  |  __     | |
+#| |  | |__| | |___/\| |___/\| |__| | / . \ | |___/\  | |
+#|_|  |_____/|______/|______/\______//_/ \_\\______/  |_|
+#| |                                                  | |
+#| |          DeluxeAuctions - SedatTR#8666           | |
+#|_|________________ ________________ ________________|_|
+#|_|________________|________________|________________|_|
+# If you have any question or suggestion please contact to me.
+# If you are using this plugin, you are accepting Terms of Use.
+#
+# Discord Account: SedatTR#8666
+# Discord Server: https://discord.gg/nchk86TKMT
+# Plugin Wiki: https://sedattr.gitbook.io/deluxeauctions
+no_permission: '&4&l» &cNo tienes permiso para ejecutar este comando'
+converted: '&8[&aAuctions&8] &f%convert_type% &7converted! Took &a%convert_time%ms
+  &7to complete.'
+converting: '&8[&cAuctions&8] &7Database is currently converting.'
+reloaded: '&8[&aAuctions&8] &7Plugin successfully reloaded! Took &a%reload_time%ms
+  &7to complete.'
+only_console: '&8[&cAuctions&8] &7Only console can use this command!'
+loading: '&8[&cAuctions&8] &7Plugin is currently loading!'
+closed: '&8[&cAuctions&8] &7Plugin is temporarily closed!'
+locked: '&8[&aAuctions&8] &7Plugin is locked!'
+unlocked: '&8[&aAuctions&8] &7Plugin is unlocked!'
+refreshing: '&8[&cAuctions&8] &7Auction is currently refreshing!'
+
+player_usage:
+- '&8&l≡ &f&lAYUDA SUBASTAS:'
+- '&8▪ &b/%command_name% menu &8- &fAbre el panel de subastas'
+- '&8▪ &b/%command_name% auctions &8- &fAbre el menú de subastas'
+- '&8▪ &b/%command_name% view [jugador] &8- &fAbre el menú de subastas de un jugador'
+- '&8▪ &b/%command_name% sell [precio] (duración) (bin/normal) &8- &fVende un objeto a subastar'
+- '&8▪ &b/%command_name% bids &8- &fAbre el menú de ofertas'
+- '&8▪ &b/%command_name% manage &8- &fAbre el menú de gestión de subastas'
+admin_usage:
+- '&8[&4DeluxeAuctions&8] &4Admin Commands'
+- '&8- &c/%command_name% menu [player] (category): &fOpens auctions menu to player.'
+- '&8- &c/%command_name% cancel [auction uuid]: &fCancels player''s auction.'
+- '&8- &c/%command_name% lock: &fLocks plugin to close temporarily. (Type again to
+  unlock)'
+- '&8- &c/%command_name% convert [auctionmaster/zauctionhouse]: &fConverts auctions
+  from other plugins.'
+- '&8- &c/%command_name% reload: &fReloads plugin.'
+view_usage: '&4&l» &cUso correcto: /%command_name% view [jugador/uuid de la subasta]'
+sell_usage: '&4&l» &cUso correcto: /%command_name% sell [precio] (duración) (bin/normal)'
+admin_cancel_usage: '&4&l» &cUso correcto:/%command_name% cancel [uuid de la subasta'
+admin_convert_usage: '&4&l» &cUso correcto:/%command_name% convert [auctionmaster/zauctionhouse]'
+admin_menu_usage: '&4&l» &cUso correcto:/%command_name% menu [player] (category)'
+
+bought: '&8&l» &fCompraste &f%item_displayname% &fpor &6%auction_price% ⛁'
+sold: '&8&l» &b%buyer_displayname% &fcompró &f%item_displayname% &7for
+  &6%auction_price% ⛁'
+bid: '&8&l» &fSe ha realizado una oferta de &6%bid_price% ⛁ &fpor &f%item_displayname%'
+new_bid: '&8&l» &b%bidder_displayname% &fofertó &6%bid_price% ⛁ &fpor &f%item_displayname%&7!'
+outbid: '&8&l» &b%bidder_displayname% &fte desplazó de la subasta por &6%outbid_price%
+  ⛁ &fpor &f%item_displayname%'
+cancelled: '&8&l» &fCancelaste la subasta para este objeto: %item_displayname%'
+admin_cancelled: '&8[&aAuctions&8] &7You cancelled &f%player_displayname%''s &7auction!'
+ended_auction: '&8&l» &fLa subasta por %item_displayname% &fha terminado'
+
+created_normal_auction: '&8&l» &fHas iniciado una subasta en el modo &bNormal &fpara %item_displayname%'
+created_bin_auction: '&8&l» &fHas iniciado una subasta en el modo &bBIN &fpara %item_displayname%'
+normal_auction_broadcast: '&8&l» &b%player_displayname% &finició una subasta en el modo &bNormal &fpara %item_displayname%'
+bin_auction_broadcast: '&8&l» &b%player_displayname% &finició una subasta en el modo &bBIN &fpara %item_displayname%'
+
+seller_collected_item: '&8&l» &fSe te ha devuelto %item_displayname% de tu subasta expirada'
+seller_collected_money: '&8&l» &fRecogiste &6%auction_price% ⛁ &fpor vender &f%item_displayname% &fa &b%buyer_displayname%'
+buyer_collected_money: '&8&l» &fSe te ha devuelto &6%auction_price% ⛁ &fde una subasta en la que no ganaste'
+buyer_collected_item: '&8&l» &fReclamaste %item_displayname% &fde la subasta de &b%seller_displayname%'
+
+buyer_collected_moneys: '&8&l» &fSe te ha devuelto &6%total_money_amount% ⛁ &fde una subasta en la que no ganaste'
+buyer_collected_items: '&8&l» &fReclamaste &b%total_item_amount%x items
+  &fde subastas anteriores'
+seller_collected_items: '&8&l» &fSe te han devuelto &b%total_item_amount%x items
+  &fde subastas expiradas'
+seller_collected_moneys: '&8&l» &fReclamaste &6%total_money_amount% ⛁ &fde subastas vendidas'
+
+not_player: '&8[&cAuctions&8] &7Only players can use this command!'
+not_enough_money: '&4&l» &cNecesitas &c%required_money% ⛁ para comprar esto'
+no_auction: '&4&l» &cEste jugador no tiene subastas activas'
+no_permission_for_item: '&4&l» &cEste objeto se encuentra en lista negra o no se puede subastar'
+no_empty_slot: '&4&l» &cNo tienes espacio disponible para hacer esto'
+
+wrong_price: '&4&l» &cElige un precio real'
+wrong_duration: '&4&l» &cElige un duración real'
+wrong_auction: '&4&l» &cEsta subasta está mal'
+wrong_item: '&4&l» &cNo tienes ningún objeto en mano del que puedas subastar'
+wrong_type: '&4&l» &cDebes escribir un tipo de subasta: &nnormal&r&c o &nbin'
+
+blacklisted_item: '&4&l» &cEste objeto se encuentra en lista negra o no se puede subastar'
+unsellable_item: '&4&l» &cEste objeto se encuentra en lista negra o no se puede subastar'
+disabled_world: '&4&l» &cLas subastas están desactivadas en este mundo'
+laggy: '&4&l» &cLas subastas no están disponibles en este momento debido a que el servidor se encuentra lagueado'
+disabled_auction_type: '&8[&cAuctions&8] &f%auction_type% &7auctions are disabled!'
+auction_view_info: '&8&l» &fUUID: &b%auction_uuid%'
+
+purchase_cooldown: '&4&l» &cEspera &n%seconds_left% &r&csegundos para comprar este objeto'
+bid_cooldown: '&4&l» &cEspera &n%seconds_left% &r&csegundos para ofertar por este objeto'
+click_cooldown: '&4&l» &cEspera unos momentos para hacer esto...'
+command_cooldown: '&4&l» &cEspera unos momentos para hacer esto...'
+
+reached_bid_limit: '&4&l» &cHas alcanzado el límite de ofertas'
+reached_auction_limit: '&4&l» &cHas alcanzado el límite de subastas'
+reached_duration_limit: '&4&l» &cHas alcanzado el límite de duración (Máximo: &n%duration_limit%&r&c)'
+reached_price_limit: '&4&l» &cHas alcanzado el límite de precio (Máximo: &n%price_limit%&r&c)'
+
+input_lines:
+  chat:
+    text: '&8&l» &fTienes &b10 segundos &fpara escribir'
+    number: '&8&l» &fTienes &b10 segundos &fpara escribir'
+    too_slow: '&4&l» &cMuy lento, intentalo otra vez'
+  anvil:
+    text: '&8Ingresar texto'
+    number: '&8Escribir número'
+  sign:
+    text:
+    - ''
+    - ^^^^^^^^^^
+    - Ingresar texto
+    - ''
+    number:
+    - ''
+    - ^^^^^^^^^^
+    - Escribir número
+    - ''
+
+lores:
+  category_items:
+    selected:
+    - '%category_description%'
+    - '&a» Viendo categoría «'
+    not_selected:
+    - '%category_description%'
+    - '&e» ¡Haz clic para ver! «'
+    no_permission:
+    - '%category_description%'
+    - '&cYou don''t have enough permission!'
+  auction_items:
+    bin:
+      not_sold:
+        name: '%item_name%'
+        lore:
+        - '%item_lore%'
+        - ''
+        - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+        - ''
+        - '&8&l▶ &fVendedor: &a%seller_displayname%'
+        - '&8&l▶ &fPrecio: &6%auction_price% ⛁'
+        - ''
+        - '&8&l▶ &fTipo: &b%auction_type%'
+        - '&8&l▶ &fTiempo restante: &e%auction_time%'
+        - ''
+        - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      sold:
+        name: '%item_name%'
+        lore:
+        - '%item_lore%'
+        - ''
+        - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+        - ''
+        - '&8&l▶ &fVendedor: &a%seller_displayname%'
+        - '&8&l▶ &fPrecio: &6%auction_price% ⛁'
+        - ''
+        - '&8&l▶ &fTipo: &b%auction_type%'
+        - '&8&l▶ &fComprador: &d%buyer_displayname%'
+        - '&8&l▶ &fEstado: &aVendido'
+        - ''
+        - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      expired:
+        name: '%item_name%'
+        lore:
+        - '%item_lore%'
+        - ''
+        - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+        - ''
+        - '&8&l▶ &fVendedor: &a%seller_displayname%'
+        - '&8&l▶ &fPrecio: &6%auction_price% ⛁'
+        - ''
+        - '&8&l▶ &fTipo: &b%auction_type%'
+        - '&8&l▶ &fEstado: &cFinalizado'
+        - ''
+        - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+    
+    normal:
+      no_bids:
+        name: '%item_name%'
+        lore:
+        - '%item_lore%'
+        - ''
+        - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+        - ''
+        - '&8&l▶ &fVendedor: &a%seller_displayname%'
+        - '&8&l▶ &fPrecio inicial: &6%auction_price% ⛁'
+        - ''
+        - '&8&l▶ &fTipo: &b%auction_type%'
+        - '&8&l▶ &fTiempo restante: &e%auction_time%'
+        - ''
+        - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      bids:
+        name: '%item_name%'
+        lore:
+        - '%item_lore%'
+        - ''
+        - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+        - ''
+        - '&8&l▶ &fVendedor: &a%seller_displayname%'
+        - '&8&l▶ &fOfertas: &b%bid_amount%'
+        - ''
+        - '&8&l▶ &fMayor oferta: &6%bid_price% ⛁'
+        - '&8&l▶ &fPostor: &d%bidder_displayname%'
+        - ''
+        - '&8&l▶ &fTipo: &b%auction_type%'
+        - '&8&l▶ &fTiempo restante: &e%auction_time%'
+        - ''
+        - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      sold:
+        name: '%item_name%'
+        lore:
+        - '%item_lore%'
+        - ''
+        - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+        - ''
+        - '&8&l▶ &fVendedor: &a%seller_displayname%'
+        - '&8&l▶ &fOfertas: &b%bid_amount%'
+        - ''
+        - '&8&l▶ &fMayor oferta: &6%bid_price% ⛁'
+        - '&8&l▶ &fPostor: &d%bidder_displayname%'
+        - ''
+        - '&8&l▶ &fTipo: &b%auction_type%'
+        - '&8&l▶ &fEstado: &aVendido'
+        - ''
+        - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      expired:
+        name: '%item_name%'
+        lore:
+        - '%item_lore%'
+        - ''
+        - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+        - ''
+        - '&8&l▶ &fVendedor: &a%seller_displayname%'
+        - '&8&l▶ &fPrecio inicial: &6%auction_price% ⛁'
+        - ''
+        - '&8&l▶ &fTipo: &b%auction_type%'
+        - '&8&l▶ &fEstado: &cFinalizado'
+        - ''
+        - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'

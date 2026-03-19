@@ -1,0 +1,1333 @@
+# _ ________________ ________________ ________________ _
+#|_|________________|________________|________________|_|
+#| |   _____  ______  _       _    _ __   __ ______   | |
+#| |  |  __ \|  ___ \| |     | |  | |\ \ / /|  ___ \  | |
+#|_|  | |  | | |__ \/| |     | |  | | \ V / | |__ \/  |_|
+#| |  | |  | |  __|  | |     | |  | |  > <  |  __     | |
+#| |  | |__| | |___/\| |___/\| |__| | / . \ | |___/\  | |
+#|_|  |_____/|______/|______/\______//_/ \_\\______/  |_|
+#| |                                                  | |
+#| |          DeluxeAuctions - SedatTR#8666           | |
+#|_|________________ ________________ ________________|_|
+#|_|________________|________________|________________|_|
+# If you have any question or suggestion please contact to me.
+# If you are using this plugin, you are accepting Terms of Use.
+#
+# Discord Account: SedatTR#8666
+# Discord Server: https://discord.gg/nchk86TKMT
+# Plugin Wiki: https://sedattr.gitbook.io/deluxeauctions
+
+# DEFAULT ITEMS FOR MENUS
+default_items:
+  glass: # Menu Glasses
+    material: BLACK_STAINED_GLASS_PANE
+    data: 15
+    name: "&r"
+  close: # Close Items
+    material: RED_DYE
+    data: 0
+    name: "&3Cer&brar"
+    lore:
+    - "&8Botón"
+    - ""
+    - "&fSupongo que no todos tienen una"  
+    - "&ftecla de &bEscape &fen su teclado..."
+    - ""
+    - "&e» ¡Haz clic para cerrar! «"
+  go_back: # Go Back Items
+    material: ARROW
+    data: 0
+    name: "&3Vol&bver"
+    lore:
+      - "&8Botón"
+      - ""
+      - "&fVuelve al menú general de subastas"  
+      - ""
+      - "&e» ¡Haz clic para interactuar! «"
+
+main_menu:
+  title: "&8Panel de subastas"
+  size: 27
+  glass: [1,2,3,4,5,6,7,8,9,10,18,19,20,21,22,24,25,26]
+  close: 23
+  stats:
+    material: PAPER
+    data: 0
+    slot: 27
+    name: "&3Estadís&bticas"
+    lore:
+    - "&8Menú"
+    - ""
+    - "&fEn este menú podrás previsualizar"
+    - "&ftus estadísticas de las subastas"
+    - ""
+    - "&e» ¡Haz clic para ver! «"
+  browser:
+    material: GOLD_INGOT
+    data: 0
+    slot: 11
+    name: "&3Menú de &bsubastas"
+    lore:
+    - "&8Menú"
+    - ""
+    - "&fEn este menú podrás previsualizar"
+    - "&ftodas las subastas que estén en curso"
+    - ""
+    - "&e» ¡Haz clic para ver! «"
+  bids:
+    material: GOLDEN_CARROT
+    data: 0
+    slot: 13
+    name: "&3Previsualizar &bofertas"
+    lore:
+      no_bids:
+        - "&8Menú"
+        - ""
+        - "&fPrevisualiza y gestiona tus ofertas."
+        - "&r"
+        - "&cActualmente no tienes ninguna oferta"
+        - "&cpendiente, si quieres realizar una ve"
+        - "&cal menú de subastas"
+        - ""
+        - "&e» ¡Haz clic para ver! «"
+      bids:
+        - "&8Menú"
+        - ""
+        - "&fPrevisualiza y gestiona tus ofertas."
+        - ""
+        - "&fHas realizado &a%total_bid_amount% ofertas"
+        - "&factualmente."
+        - ""
+        - "&fTienes la oferta más alta de estas subastas"
+        - "&7(&a%top_bid_amount%&7/&a%total_bid_amount%&7)"
+        - ""
+        - "&e» ¡Haz clic para ver! «"
+      collectable_with_bids:
+        - "&8Menú"
+        - ""
+        - "&fPrevisualiza y gestiona tus ofertas."
+        - ""
+        - "&fHas realizado &a%total_bid_amount% ofertas"
+        - "&factualmente."
+        - ""
+        - "&fTienes la oferta más alta de estas subastas"
+        - "&7(&a%top_bid_amount%&7/&a%total_bid_amount%&7)"
+        - "&r"
+        - "&fTienes &b%collectable_item_amount% items &fpor reclamar"
+        - "&fTienes &6%collectable_money_amount% ⛁ &fpor reclamar"
+        - ""
+        - "&e» ¡Haz clic para ver! «"
+      collectable_without_bids:
+        - "&8Menú"
+        - "&r"
+        - "&fTienes &b%collectable_item_amount% items &fpor reclamar"
+        - "&fTienes &6%collectable_money_amount% ⛁ &fpor reclamar"
+        - "&r"
+        - "&e» ¡Haz clic para ver! «"
+  manage:
+    material: GOLDEN_APPLE
+    data: 0
+    slot: 15
+    name: "&3Gestionar &bsubastas"
+    lore:
+      without_auctions:
+      - "&8Menú"
+      - "&r"
+      - "&fPrevisualiza y gestiona tus ofertas."
+      - "&r"
+      - "&cActualmente no tienes ninguna subasta"
+      - "&cen curso, si quieres realizar una ve"
+      - "&cal menú de creación de subastas"
+      - "&r "
+      - "&e» ¡Haz clic para ver! «"
+
+      with_auctions:
+      - "&8Menú"
+      - "&r"
+      - "&fPrevisualiza y gestiona tus ofertas."
+      - "&r"
+      - "&fTienes un total de &b%total_auction_amount% &fsubastas pendientes."
+      - "&r"
+      - "&e» ¡Haz clic para ver! «"
+      collectable:
+      - "&8Menú"
+      - "&r"
+      - "&fPrevisualiza y gestiona tus ofertas."
+      - "&r"
+      - "&fTienes un total de &a%total_auction_amount% &fsubastas"
+      - "&fTienes &a%ended_auction_amount% &fsubastas terminadas."
+      - "&r"
+      - "&fTienes &b%collectable_item_amount% items &fpor reclamar"
+      - "&fTienes &6%collectable_money_amount% ⛁ &fpor reclamar"
+      - "&r"
+      - "&e» ¡Haz clic para ver! «"
+  create:
+    material: GOLDEN_HORSE_ARMOR
+    data: 0
+    slot: 17
+    name: "&3Crear &bsubasta"
+    lore:
+      - "&8Menú"
+      - ""
+      - "&fCrea tus propias subastas con los modos"
+      - "&bNormal &fy &bBIN &fpara que jugadores puedan"
+      - "&fcomprar tus objetos y subastar por ellos"
+      - ""
+      - "&e» ¡Haz clic para ver! «"
+
+auctions_menu:
+  title: "&8Página de subastas (%current_page%/%total_page%)"
+  size: 54
+  glass: [1,2,3,4,5,6,7,8,9,11,18,20,27,29,36,38,45,46,47,54]
+  close: 50
+  back: 49
+  category_list:
+    type: "pagination" # normal or pagination
+    pagination:
+      add_page_slots: false
+      slots: [ 10, 19, 28, 37 ]
+      fill_type: "page_glass" # all_glass, page_glass, empty
+    previous_page:
+      material: ARROW
+      data: 0
+      slot: 1
+      name: "&3Página &banterior"
+      lore:
+        - "&8Botón"
+        - ""
+        - "&fCliquea esta opción para volver"
+        - "&fa la página anterior"
+        - ""
+        - "&8• &fPágina: &b%current_page%&8/&b%total_page%"
+        - ""
+        - "&e» ¡Haz clic derecho para saltar! «"
+        - "&e» ¡Haz clic izquierdo para volver! «"
+    next_page:
+      material: ARROW
+      data: 0
+      slot: 46
+      name: "&3Página &bposterior"
+      lore:
+        - "&8Botón"
+        - ""
+        - "&fCliquea esta opción para volver"
+        - "&fa la página posterior"
+        - ""
+        - "&8• &fPágina: &b%current_page%&8/&b%total_page%"
+        - ""
+        - "&e» ¡Haz clic derecho para saltar! «"
+        - "&e» ¡Haz clic izquierdo para volver! «"
+  reset_settings:
+    material: ANVIL
+    data: 0
+    slot: 2
+    name: "&3Reiniciar &bbúsqueda"
+    flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    lore:
+      - "&8Botón"
+      - ""
+      - "&fReinicia tu busqueda del menú"
+      - "&fde subastas."
+      - ""
+      - "&e» ¡Haz clic para reiniciar! «"
+  search:
+    material: OAK_SIGN
+    data: 0
+    slot: 48
+    name: "&3Bus&bcar"
+    title: '&8Subastas: "%search%"'
+    enabled: true
+    flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    lore:
+      selected:
+        - "&8Búsqueda"
+        - ""
+        - "&fSe han encontrado &b%found_items% items."
+        - "&fBúsqueda: &b%searched%"
+        - ""
+        - "&e» ¡Haz clic izquierdo para editar la búsqueda! «"
+        - "&e» ¡Haz clic derecho para limpiar la búsqueda! «"
+      not_selected:
+        - "&8Botón"
+        - ""
+        - "&fBusca objetos por su nombre o ID"
+        - ""
+        - "&e» ¡Haz clic para buscar! «"
+  next_page:
+    material: ARROW
+    data: 0
+    slot: 54
+    name: "&3Página &bposterior"
+    lore:
+      - "&8Botón"
+      - ""
+      - "&fCliquea esta opción para ir a"
+      - "&fla página posterior"
+      - ""
+      - "&8• &fPágina: &b%current_page%&8/&b%total_page%"
+      - ""
+      - "&e» ¡Haz clic derecho para saltar! «"
+      - "&e» ¡Haz clic izquierdo para ir! «"
+  previous_page:
+    material: ARROW
+    data: 0
+    slot: 47
+    name: "&3Página &banterior"
+    lore:
+      - "&8Botón"
+      - ""
+      - "&fCliquea esta opción para ir a"
+      - "&fla página anterior"
+      - ""
+      - "&8• &fPágina: &b%current_page%&8/&b%total_page%"
+      - ""
+      - "&e» ¡Haz clic derecho para saltar! «"
+      - "&e» ¡Haz clic izquierdo para volver! «"
+  auction_sorter:
+    material: HOPPER
+    data: 0
+    slot: 51
+    name: "&3Filtrar &bpor estado"
+    # type ranking
+    types:
+      - HIGHEST_PRICE
+      - LOWEST_PRICE
+      - MOST_BIDS
+      - ALPHABETICAL
+      - ENDING_SOON
+      - RANDOM
+    lore:
+      highest_price:
+        - "&8Botón"
+        - ""
+        - "&b▶ Precio mas alto"
+        - "&7▶ Precio mas bajo"
+        - "&7▶ Mas oferta"
+        - "&7▶ Alfabético"
+        - "&7▶ Termina pronto"
+        - "&7▶ Aleatorio"
+        - ""
+        - "&e» ¡Haz clic para alternar filtro! «"
+      lowest_price:
+        - "&8Botón"
+        - ""
+        - "&7▶ Precio mas alto"
+        - "&b▶ Precio mas bajo"
+        - "&7▶ Mas oferta"
+        - "&7▶ Alfabético"
+        - "&7▶ Termina pronto"
+        - "&7▶ Aleatorio"
+        - ""
+        - "&e» ¡Haz clic para alternar filtro! «"
+      most_bids:
+        - "&8Botón"
+        - ""
+        - "&7▶ Precio mas alto"
+        - "&7▶ Precio mas bajo"
+        - "&b▶ Mas oferta"
+        - "&7▶ Alfabético"
+        - "&7▶ Termina pronto"
+        - "&7▶ Aleatorio"
+        - ""
+        - "&e» ¡Haz clic para alternar filtro! «"
+      alphabetical:
+        - "&8Botón"
+        - ""
+        - "&7▶ Precio mas alto"
+        - "&7▶ Precio mas bajo"
+        - "&7▶ Mas oferta"
+        - "&b▶ Alfabético"
+        - "&7▶ Termina pronto"
+        - "&7▶ Aleatorio"
+        - ""
+        - "&e» ¡Haz clic para alternar filtro! «"
+      ending_soon:
+        - "&8Botón"
+        - ""
+        - "&7▶ Precio mas alto"
+        - "&7▶ Precio mas bajo"
+        - "&7▶ Mas oferta"
+        - "&7▶ Alfabético"
+        - "&b▶ Termina pronto"
+        - "&7▶ Aleatorio"
+        - ""
+        - "&e» ¡Haz clic para alternar filtro! «"
+      random:
+        - "&8Botón"
+        - ""
+        - "&7▶ Precio mas alto"
+        - "&7▶ Precio mas bajo"
+        - "&7▶ Mas oferta"
+        - "&7▶ Alfabético"
+        - "&7▶ Termina pronto"
+        - "&b▶ Aleatorio"
+        - ""
+        - "&e» ¡Haz clic para alternar filtro! «"
+  auction_filter:
+    material: GOLD_INGOT
+    data: 0
+    slot: 52
+    name: "&3Filtrar &bsubasta"
+    # type ranking
+    types:
+      - ALL
+      - BIN
+      - NORMAL
+    lore:
+      all:
+        - "&8Botón"
+        - ""
+        - "&b▶ Mostrar todo"
+        - "&7▶ BIN"
+        - "&7▶ Normal"
+        - ""
+        - "&e» ¡Haz clic para alternar filtro! «"
+      bin:
+        - "&8Botón"
+        - ""
+        - "&7▶ Mostrar todo"
+        - "&b▶ BIN"
+        - "&7▶ Normal"
+        - ""
+        - "&e» ¡Haz clic para alternar filtro! «"
+      normal:
+        - "&8Botón"
+        - ""
+        - "&7▶ Mostrar todo"
+        - "&7▶ BIN"
+        - "&b▶ Normal"
+        - ""
+        - "&e» ¡Haz clic para alternar filtro! «"
+  categories:
+    material: ENDER_EYE
+    data: 0
+    slot: 53
+    name: "&3Categorías &bde subastas"
+    category:
+      selected: "&b▶ %category_name%"
+      not_selected: "&7▶ %category_name%"
+    lore:
+      - "&8Botón"
+      - ""
+      - "%category_list%"
+      - ""
+      - "&e» ¡Haz clic para alternar filtro! «"
+bin_auction_view_menu:
+  title: "&8Previsualización ➜ BIN"
+  size: 27
+  glass: [1,2,3,4,6,7,8,9,10,18,19,20,21,22,24,25,26,27]
+  close: 23
+  back: 22
+  example_item: 5
+  cancel_auction:
+    material: RED_TERRACOTTA
+    data: 14
+    slot: 14
+    name: "&cCancelar subasta"
+    lore:
+      - "&8Botón"
+      - ""
+      - "&fPuedes cancelar esta subasta"
+      - "&fsiempre y cuando no hayan"
+      - "&fcomprado este objeto"
+      - ""
+      - "&e» ¡Haz clic para cancelar! «"
+  collect_auction:
+    not_sold:
+      material: GOLD_NUGGET
+      data: 0
+      slot: 14
+      name: "&6Recoger subasta"
+      lore:
+        - "&8Botón"
+        - ""
+        - "&fNadie ha comprado este objeto"
+        - ""
+        - "&e» ¡Haz clic para recoger! «"
+    sold:
+      material: GOLD_NUGGET
+      data: 0
+      slot: 14
+      name: "&6Recoger subasta"
+      lore:
+        - "&8Botón"
+        - ""
+        - "&b%buyer_displayname% &fha comprado tu subasta"
+        - "&fpor &6%auction_price% ⛁"
+        - "&r"
+        - "&e» ¡Haz clic para recoger! «"
+  purchase_item:
+    enough_money:
+      material: GOLD_NUGGET
+      data: 0
+      slot: 14
+      name: "&aComprar subasta"
+      lore:
+        - "&8Botón"
+        - ""
+        - "&fPrecio: &6%auction_price% ⛁"
+        - ""
+        - "&e» ¡Haz clic para recoger! «"
+    not_enough_money:
+      material: POTATO_ITEM
+      data: 0
+      slot: 14
+      name: "&aComprar subasta"
+      lore:
+        - "&8Botón"
+        - "" 
+        - "&fPrecio: &6%auction_price% ⛁"
+        - "&r"
+        - "&cNo tienes suficientes monedas para comprar esto"
+
+normal_auction_view_menu:
+  title: "&8Previsualización ➜ Normal"
+  size: 27
+  glass: [1,2,3,4,6,7,8,9,10,18,19,20,21,22,24,25,26,27]
+  close: 23
+  back: 22
+  example_item: 5
+  buyer_collect_auction:
+    top_bidder:
+      material: GOLD_NUGGET
+      data: 0
+      slot: 12
+      name: "&aRecoger subasta"
+      lore:
+        - "&8Botón"
+        - ""
+        - "&fHas ganado esta subasta"
+        - "&r"
+        - "&e» ¡Haz clic para recoger! «"
+    not_top_bidder:
+      material: GOLD_NUGGET
+      data: 0
+      slot: 12
+      name: "&aRecoger subasta"
+      lore:
+        - "&8Botón"
+        - ""
+        - "&fNo has ganado esta subasta."
+        - "&r"
+        - "&e» ¡Haz clic para recoger lo que has ofertado! «"
+    not_bidder:
+      material: RED_TERRACOTTA
+      data: 14
+      slot: 12
+      name: "&aRecoger subasta"
+      lore:
+        - "&cNo has ofertado"
+  cancel_auction:
+    without_bids:
+      material: RED_TERRACOTTA
+      data: 14
+      slot: 12
+      name: "&cCancelar subasta"
+      lore:
+        - "&8Botón"
+        - ""
+        - "&fPuedes cancelar esta subasta"
+        - "&fsiempre y cuando no hayan"
+        - "&fofertado por este objeto"
+        - "&r"
+        - "&e» ¡Haz clic para cancelar! «"
+    with_bids:
+      material: RED_TERRACOTTA
+      data: 14
+      slot: 12
+      name: "&cCancelar subasta"
+      lore:
+        - "&8Botón"
+        - ""
+        - "&fPuedes cancelar esta subasta"
+        - "&fsiempre y cuando no hayan"
+        - "&7ofertado por este objeto"
+        - "&r"
+        - "&c» ¡No puedes cancelar esta subasta! «"
+  collect_auction:
+    not_sold:
+      material: GOLD_NUGGET
+      data: 0
+      slot: 12
+      name: "&6Recoger subasta"
+      lore:
+        - "&8Botón"
+        - ""
+        - "&fNadie ha comprado este objeto."
+        - "&r"
+        - "&e» ¡Haz clic para recoger! «"
+    sold:
+      material: GOLD_NUGGET
+      data: 0
+      slot: 12
+      name: "&6Recoger subasta"
+      lore:
+        - "&8Botón"
+        - ""
+        - "&b%buyer_displayname% &fha comprado tu subasta"
+        - "&fpor &6%auction_price% ⛁"
+        - "&r"
+        - "&e» ¡Haz clic para recoger! «"
+  bid_history:
+    without_bids:
+      material: PAPER
+      data: 0
+      slot: 16
+      name: "&bHistorial de ofertas"
+      lore:
+        - "&8Botón"
+        - ""
+        - "&fNo hay ofertas en esta subasta"
+        - "&r"
+        - "&e» ¡Sé el primero en ofertar! «"
+    with_bids:
+      material: PAPER
+      data: 0
+      slot: 16
+      maximum_bids: 5
+      name: "&bHistorial de ofertas"
+      lore:
+        - "&8Información"
+        - ""
+        - "&fTotal de ofertas: &b%total_bid_amount%"
+        - "%bid_descriptions%"
+      bid_description:
+        - "&r"
+        - "&fOferta: &6%bid_amount% ⛁"
+        - "&fDe: &a%bidder_username%"
+        - "&fHace: &b%bid_time%"
+  custom_bid:
+    enough_money:
+      material: GOLD_INGOT
+      data: 0
+      slot: 14
+      name: "&3Oferta &bpersonalizada"
+      lore:
+        - "&8Botón"
+        - ""
+        - "&fNecesitas al menos &6%minimum_bid_amount% ⛁ &fpara"
+        - "&fseguir siendo el jugador con la oferta mas alta"
+        - "&fde esta subasta"
+        - "&r"
+        - "&e» ¡Haz clic para editar esta oferta! «"
+    not_enough_money:
+      material: RED_DYE
+      data: 1
+      slot: 14
+      name: "&3Oferta &bpersonalizada"
+      lore:
+        - "&8Botón"
+        - ""
+        - "&fNecesitas al menos &6%minimum_bid_amount% ⛁ &fpara"
+        - "&fseguir siendo el jugador con la oferta mas alta"
+        - "&fde esta subasta"
+        - ""
+        - "&cNo tienes suficientes monedas para ofertar nuevamente"
+        - "&cpor esta subasta"
+        - ""
+        - "&e» mc.comugamers.com «"
+    top_bid:
+      material: LIME_DYE
+      data: 10
+      slot: 14
+      name: "&3Oferta &bpersonalizada"
+      lore:
+        - "&8Botón"
+        - ""
+        - "&fNecesitas al menos &6%minimum_bid_amount% ⛁ &fpara"
+        - "&fseguir siendo el jugador con la oferta mas alta"
+        - "&fde esta subasta"
+        - ""
+        - "&e⭐ Tienes la oferta mas alta de esta subasta"
+        - ""
+        - "&e» mc.comugamers.com «"
+  submit_bid:
+    enough_money:
+      material: GOLD_NUGGET
+      data: 0
+      slot: 12
+      name: "&aEmitir subasta"
+      lore:
+        - "&8Botón"
+        - ""
+        - "&fPrecio: &6%auction_price% ⛁"
+        - "&r"
+        - "&e» ¡Haz clic para ofertar! «"
+    not_enough_money:
+      material: POTATO_ITEM
+      data: 0
+      slot: 12
+      name: "&aEmitir subasta"
+      lore:
+        - "&8Botón"
+        - ""
+        - "&fPrecio: &6%auction_price% ⛁"
+        - "&r"
+        - "&cNo tienes suficientes monedas para ofertar nuevamente"
+        - "por esta subasta"
+        - ""
+        - "&e» mc.comugamers.com «"
+    top_bid:
+      material: GOLD_NUGGET
+      data: 0
+      slot: 12
+      name: "&aEmitir subasta"
+      lore:
+        - "&8Botón"
+        - ""
+        - "&fPrecio: &6%auction_price% ⛁"
+        - "&r"
+        - "&e⭐ Tienes la oferta mas alta de esta subasta"
+        - ""
+        - "&e» mc.comugamers.com «"
+
+normal_auction_create_menu:
+  title: "&8Crear subasta normal"
+  size: 27
+  glass: [1,2,3,4,6,7,8,9,10,18,19,20,21,22,25,26,27]
+  close: 23
+  back: 22
+  example_item:
+    without_item:
+      material: STONE_BUTTON
+      data: 0
+      slot: 5
+      name: "&e» ¡Selecciona un objeto de tu"
+      lore:
+        - "&einventario para subastar! «"
+    with_item:
+      slot: 5
+      name: "%item_name%"
+      lore:
+        - "&f%item_lore%"
+        - ""
+        - "&e» ¡Haz clic para recoger! «"
+  auction_duration:
+    material: CLOCK
+    data: 0
+    slot: 16
+    name: "&3Duración de &bsubasta"
+    lore:
+      - "&8Botón"
+      - ""
+      - "&fDefine por cuanto tiempo puede estar este"
+      - "&fobjeto a la venta durante una subasta"
+      - ""
+      - "&fLas ofertas aumentan automáticamente la"
+      - "&fduración de la subasta"
+      - "&r"
+      - "&8• &fDuración: &a%auction_time%"
+      - "&8• &fTarifa extra: &6%time_fee% ⛁"
+      - "&r"
+      - "&e» ¡Haz clic para editar la duración! «"
+  select_price:
+    material: IRON_INGOT
+    data: 0
+    slot: 14
+    name: "&3Precio &binicial"
+    lore:
+      - "&8Botón"
+      - ""
+      - "&fPrecio actual: &6%auction_price% ⛁"
+      - "&r"
+      - "&fEste es el precio mas bajo que puedes"
+      - "&fusar para comenzar la subasta"
+      - "&r"
+      - "&fTarifa: &6%price_fee% ⛁ &e(%price_fee_percent%%)"
+      - "&r"
+      - "&e» ¡Haz clic para cambiar precio! «"
+  switch_type:
+    material: GOLD_INGOT
+    data: 0
+    slot: 24
+    name: "&3Cambiar &ba BIN"
+    lore:
+      - "&8Botón"
+      - ""
+      - "&fJugadores podrán comprar esta"
+      - "&fsubasta al instante"
+      - "&r"
+      - "&7(BIN proviene de Buy It Now que en"
+      - "&7español significa &nComprar Ahora&r&7)"
+      - "&r"
+      - "&8• &fModo: &bNormal"
+      - "&r"
+      - "&e» ¡Haz clic para cambiar modo! «"
+  confirm_auction:
+    with_item:
+      material: LIME_TERRACOTTA
+      data: 5
+      slot: 12
+      name: "&3Crear &bsubasta"
+      lore:
+        - "&8Botón"
+        - ""
+        - "&fEste objeto será añadido al menú"
+        - "&fde subasta para que otros jugadores"
+        - "&fpuedan ofertar por el"
+        - "&r"
+        - "&8• &fObjeto: &f%item_displayname%"
+        - "&8• &fTiempo: &b%auction_time%"
+        - "&8• &fPrecio: &6%auction_price% ⛁"
+        - "&r"
+        - "&fTarifa de creación: &6%auction_fee% ⛁"
+        - ""
+        - "&e» ¡Haz clic para emitir subasta! «"
+    without_item:
+      material: RED_TERRACOTTA
+      data: 14
+      slot: 12
+      name: "&3Crear &bsubasta"
+      lore:
+        - "&8Botón"
+        - "&r"
+        - "&fNo has seleccionado ningún objeto"
+        - "&r"
+        - "&fCliquea un objeto de tu inventario"
+        - "&fpara subastarlo"
+        - "&r"
+        - "&e» ¡Haz clic para seleccionar! «"
+
+bin_auction_create_menu:
+  title: "&8Crear subasta BIN"
+  size: 27
+  glass: [1,2,3,4,6,7,8,9,10,18,19,20,21,22,25,26,27]
+  close: 23
+  back: 22
+  example_item:
+    without_item:
+      material: STONE_BUTTON
+      data: 0
+      slot: 5
+      name: "&e» ¡Selecciona un objeto de tu"
+      lore:
+        - "&einventario para subastar! «"
+    with_item:
+      slot: 5
+      name: "%item_name%"
+      lore:
+        - "&f%item_lore%"
+        - ""
+        - "&e» ¡Haz clic para recoger! «"
+  auction_duration:
+    material: CLOCK
+    data: 0
+    slot: 16
+    name: "&3Duración de &bsubasta"
+    lore:
+      - "&8Botón"
+      - ""
+      - "&fDefine por cuanto tiempo puede estar este"
+      - "&fobjeto a la venta durante una subasta"
+      - ""
+      - "&fLas ofertas aumentan automáticamente la"
+      - "&fduración de la subasta"
+      - "&r"
+      - "&8• &fDuración: &a%auction_time%"
+      - "&8• &fTarifa extra: &6%time_fee% ⛁"
+      - "&r"
+      - "&e» ¡Haz clic para editar la duración! «"
+  select_price:
+    material: IRON_INGOT
+    data: 0
+    slot: 14
+    name: "&3Precio &binicial"
+    lore:
+      - "&8Botón"
+      - ""
+      - "&fPrecio actual: &6%auction_price% ⛁"
+      - "&r"
+      - "&fEste es el precio mas bajo que puedes"
+      - "&fusar para comenzar la subasta"
+      - "&r"
+      - "&fTarifa: &6%price_fee% ⛁ &e(%price_fee_percent%%)"
+      - "&r"
+      - "&e» ¡Haz clic para cambiar precio! «"
+  switch_type:
+    material: GOLD_INGOT
+    data: 0
+    slot: 24
+    name: "&3Cambiar &ba Normal"
+    lore:
+      - "&8Botón"
+      - ""
+      - "&fJugadores podrán ofertar"
+      - "&fpor esta subasta"
+      - ""
+      - "&8• &fModo: &bBIN"
+      - "&r"
+      - "&e» ¡Haz clic para cambiar modo! «"
+  confirm_auction:
+    with_item:
+      material: LIME_TERRACOTTA
+      data: 5
+      slot: 12
+      name: "&3Crear &bsubasta"
+      lore:
+        - "&8Botón"
+        - ""
+        - "&fEste objeto será añadido al menú"
+        - "&fde subasta para que otros jugadores"
+        - "&fpuedan ofertar por el"
+        - "&r"
+        - "&8• &fObjeto: &f%item_displayname%"
+        - "&8• &fTiempo: &b%auction_time%"
+        - "&8• &fPrecio: &6%auction_price% ⛁"
+        - "&r"
+        - "&fTarifa de creación: &6%auction_fee% ⛁"
+        - ""
+        - "&e» ¡Haz clic para emitir subasta! «"
+    without_item:
+      material: RED_TERRACOTTA
+      data: 14
+      slot: 12
+      name: "&3Crear &bsubasta"
+      lore:
+        - "&8Botón"
+        - "&r"
+        - "&fNo has seleccionado ningún objeto"
+        - "&r"
+        - "&fCliquea un objeto de tu inventario"
+        - "&fpara subastarlo"
+        - "&r"
+        - "&e» ¡Haz clic para seleccionar! «"
+
+confirm_auction:
+  title: "&8Confirmar subasta"
+  size: 27
+  glass: [1,2,3,4,5,6,7,8,9,10,18,19,20,21,24,25,26,27]
+  close: 23
+  back: 22
+  example_item: 14
+  confirm:
+    material: LIME_TERRACOTTA
+    data: 5
+    slot: 12
+    name: "&aConfirmar"
+    lore:
+      - "&8Botón"
+      - ""
+      - "&fObjeto: &f%item_displayname%"
+      - "&fCosto de creación: &6%auction_fee% ⛁"
+      - "&r"
+      - "&e» ¡Haz clic para confirmar! «"
+  cancel:
+    material: RED_TERRACOTTA
+    data: 14
+    slot: 16
+    name: "&cCancelar"
+    lore:
+      - "&8Botón"
+      - ""
+      - "&fCancela esta subasta"
+      - "&r"
+      - "&e» ¡Haz clic para cancelar! «"
+
+confirm_purchase:
+  title: "&8Confirmar compra"
+  size: 27
+  glass: [1,2,3,4,5,6,7,8,9,10,18,19,20,21,22,24,25,26,27]
+  close: 23
+  example_item: 14
+  confirm:
+    material: LIME_TERRACOTTA
+    data: 5
+    slot: 12
+    name: "&aConfirmar"
+    lore:
+      - "&8Botón"
+      - "&r"
+      - "&fObjeto: &f%item_displayname%"
+      - "&fCosto de creación: &6%auction_fee% ⛁"
+      - "&r"
+      - "&e» ¡Haz clic para confirmar! «"
+  cancel:
+    material: RED_TERRACOTTA
+    data: 14
+    slot: 16
+    name: "&cCancelar"
+    lore:
+      - "&8Botón"
+      - ""
+      - "&fCancela esta subasta"
+      - "&r"
+      - "&e» ¡Haz clic para cancelar! «"
+
+confirm_bid:
+  title: "&8Confirmar oferta"
+  size: 27
+  glass: [1,2,3,4,5,6,7,8,9,10,18,19,20,21,22,24,25,26,27]
+  close: 23
+  example_item: 14
+  confirm:
+    material: LIME_TERRACOTTA
+    data: 5
+    slot: 12
+    name: "&aConfirm"
+    lore:
+      - "&8Botón"
+      - "&r"
+      - "&fObjeto: &f%item_displayname%"
+      - "&fCosto de creación: &6%bid_price% ⛁"
+      - "&r"
+      - "&e» ¡Haz clic para confirmar! «"
+  cancel:
+    material: RED_TERRACOTTA
+    data: 14
+    slot: 16
+    name: "&cCancelar"
+    lore:
+      - "&8Botón"
+      - ""
+      - "&fCancela esta subasta"
+      - "&r"
+      - "&e» ¡Haz clic para cancelar! «"
+
+manage_auctions:
+  title: "&8Gestionar subastas"
+  size: 45
+  glass: [1,2,3,4,5,6,7,8,9,10,18,19,27,28,36,37,38,43,44,45]
+  slots: [11,12,13,14,15,16,17,20,21,22,23,24,25,26,29,30,31,32,33,34,35]
+  close: 41
+  back: 40
+  pagination: false
+  claim_all:
+    without_claimable:
+      material: CAULDRON_ITEM
+      data: 0
+      slot: 42
+      name: "&3Reclamar &btodo"
+      lore:
+        - "&8Botón"
+        - ""
+        - "&fPodrás reclamar tus subastas terminadas"
+        - ""
+        - "&cNo tienes para por reclamar"
+        - ""
+        - "&e» mc.comugamers.com «"
+    with_claimable:
+      material: CAULDRON_ITEM
+      data: 0
+      slot: 42
+      name: "&3Reclamar &btodo"
+      lore:
+        - "&8Botón"
+        - ""
+        - "&fPodrás reclamar tus subastas terminadas"
+        - ""
+        - "&fTienes &b%claimable_items% items &fpor reclamar"
+        - "&fTienes &6%claimable_money% ⛁ &fpor reclamar"
+        - ""
+        - "&e» ¡Haz clic para reclamar todo! «"
+  create:
+    material: GOLDEN_HORSE_ARMOR
+    data: 0
+    slot: 43
+    name: "&3Crear &bsubasta"
+    lore:
+      - "&8Menú"
+      - ""
+      - "&fCrea tus propias subastas con los modos"
+      - "&bNormal &fy &bBIN &fpara que jugadores puedan"
+      - "&fcomprar tus objetos y subastar por ellos"
+      - ""
+      - "&e» ¡Haz clic para ver! «"
+  auction_sorter:
+    material: HOPPER
+    data: 0
+    slot: 39
+    name: "&3Filtrar &bpor estado"
+    types:
+      - HIGHEST_PRICE
+      - MOST_BIDS
+      - ENDING_SOON
+    lore:
+      highest_price:
+        - "&b▶ Precio mas alto"
+        - "&7▶ Mas oferta"
+        - "&7▶ Termina pronto"
+        - ""
+        - "&e» ¡Haz clic para alternar filtro! «"
+      most_bids:
+        - "&7▶ Precio mas alto"
+        - "&b▶ Mas oferta"
+        - "&7▶ Termina pronto"
+        - ""
+        - "&e» ¡Haz clic para alternar filtro! «"
+      ending_soon:
+        - "&7▶ Precio mas alto"
+        - "&7▶ Mas oferta"
+        - "&b▶ Termina pronto"
+        - ""
+        - "&e» ¡Haz clic para alternar filtro! «"
+  next_page:
+    material: ARROW
+    data: 0
+    slot: 45
+    name: "&3Página &bposterior"
+    lore:
+      - "&8Botón"
+      - ""
+      - "&fCliquea esta opción para ir a"
+      - "&fla página posterior"
+      - ""
+      - "&8• &fPágina: &b%current_page%&8/&b%total_page%"
+      - ""
+      - "&e» ¡Haz clic derecho para saltar! «"
+      - "&e» ¡Haz clic izquierdo para ir! «"
+  previous_page:
+    material: ARROW
+    data: 0
+    slot: 37
+    name: "&3Página &banterior"
+    lore:
+      - "&8Botón"
+      - ""
+      - "&fCliquea esta opción para ir a"
+      - "&fla página posterior"
+      - ""
+      - "&8• &fPágina: &b%current_page%&8/&b%total_page%"
+      - ""
+      - "&e» ¡Haz clic derecho para saltar! «"
+      - "&e» ¡Haz clic izquierdo para ir! «"
+
+view_bids:
+  title: "&8Previsualizando ofertas"
+  size: 45
+  glass: [1,2,3,4,5,6,7,8,9,10,18,19,27,28,36,37,38,39,43,44,45]
+  slots: [11,12,13,14,15,16,17,20,21,22,23,24,25,26,29,30,31,32,33,34,35]
+  close: 41
+  back: 40
+  pagination: false
+  claim_all:
+    without_claimable:
+      material: CAULDRON_ITEM
+      data: 0
+      slot: 42
+      name: "&3Reclamar &btodo"
+      lore:
+        - "&8Botón"
+        - ""
+        - "&fPodrás reclamar tus subastas terminadas"
+        - ""
+        - "&cNo tienes para por reclamar"
+        - ""
+        - "&e» mc.comugamers.com «"
+    with_claimable:
+      material: CAULDRON_ITEM
+      data: 0
+      slot: 42
+      name: "&3Reclamar &btodo"
+      lore:
+        - "&8Botón"
+        - ""
+        - "&fPodrás reclamar tus subastas terminadas"
+        - ""
+        - "&fTienes &b%claimable_items% items &fpor reclamar"
+        - "&fTienes &6%claimable_money% ⛁ &fpor reclamar"
+        - ""
+        - "&e» ¡Haz clic para reclamar todo! «"
+  next_page:
+    material: ARROW
+    data: 0
+    slot: 45
+    name: "&3Página &bposterior"
+    lore:
+      - "&8Botón"
+      - ""
+      - "&fCliquea esta opción para ir a"
+      - "&fla página posterior"
+      - ""
+      - "&8• &fPágina: &b%current_page%&8/&b%total_page%"
+      - ""
+      - "&e» ¡Haz clic derecho para saltar! «"
+      - "&e» ¡Haz clic izquierdo para ir! «"
+  previous_page:
+    material: ARROW
+    data: 0
+    slot: 37
+    name: "&3Página &banterior"
+    lore:
+      - "&8Botón"
+      - ""
+      - "&fCliquea esta opción para ir a"
+      - "&fla página posterior"
+      - ""
+      - "&8• &fPágina: &b%current_page%&8/&b%total_page%"
+      - ""
+      - "&e» ¡Haz clic derecho para saltar! «"
+      - "&e» ¡Haz clic izquierdo para ir! «"
+
+duration_menu:
+  title: "&8Duración de subasta"
+  size: 27
+  glass: [1,2,3,4,5,6,7,8,9,10,18,19,20,21,24,25,26,27]
+  close: 23
+  back: 22
+  custom_duration:
+    material: CLOCK
+    data: 0
+    slot: 17
+    name: "&3Duración &bpersonalizada"
+    lore:
+      - "&8Botón"
+      - ""
+      - "&fEspecifica por cuanto tiempo"
+      - "&fquieres que dure la subasta"
+      - "&r"
+      - "&e» ¡Haz clic derecho para ajustar minutos! «"
+      - "&e» ¡Haz clic izquierdo para ajustar horas! «"
+  durations:
+    1hour:
+      material: RED_TERRACOTTA
+      data: 14
+      slot: 11
+      duration: 3600 # seconds
+      name: "&c1 hora"
+      lore:
+        - "&8Botón"
+        - ""
+        - "&fTarifa extra: &6%duration_fee% ⛁"
+        - "&r"
+        - "&e» ¡Haz clic para escojer! «"
+    6hours:
+      material: PINK_TERRACOTTA
+      data: 6
+      slot: 12
+      duration: 21600 # seconds
+      name: "&c6 horas"
+      lore:
+        - "&8Botón"
+        - ""
+        - "&fTarifa extra: &6%duration_fee% ⛁"
+        - "&r"
+        - "&e» ¡Haz clic para escojer! «"
+    12hours:
+      material: ORANGE_TERRACOTTA
+      data: 1
+      slot: 13
+      duration: 43200 # seconds
+      name: "&612 horas"
+      lore:
+        - "&8Botón"
+        - ""
+        - "&fTarifa extra: &6%duration_fee% ⛁"
+        - "&r"
+        - "&e» ¡Haz clic para escojer! «"
+    1day:
+      material: YELLOW_TERRACOTTA
+      data: 4
+      slot: 14
+      duration: 86400 # seconds
+      name: "&e1 día"
+      lore:
+        - "&8Botón"
+        - ""
+        - "&fTarifa extra: &6%duration_fee% ⛁"
+        - "&r"
+        - "&e» ¡Haz clic para escojer! «"
+    2days:
+      material: LIME_TERRACOTTA
+      data: 5
+      slot: 15
+      duration: 172800 # seconds
+      name: "&a2 días"
+      lore:
+        - "&8Botón"
+        - ""
+        - "&fTarifa extra: &6%duration_fee% ⛁"
+        - "&r"
+        - "&e» ¡Haz clic para escojer! «"
+
+view_player_auctions:
+  title: "&8Subastas de %player_name%"
+  size: 45
+  glass: [1,2,3,4,5,6,7,8,9,10,18,19,27,28,36,37,38,39,40,42,43,44,45]
+  slots: [11,12,13,14,15,16,17,20,21,22,23,24,25,26,29,30,31,32,33,34,35]
+  close: 41
+  pagination: false
+  next_page:
+    material: ARROW
+    data: 0
+    slot: 45
+    name: "&3Página &bposterior"
+    lore:
+      - "&8Botón"
+      - ""
+      - "&fCliquea esta opción para ir a"
+      - "&fla página posterior"
+      - ""
+      - "&8• &fPágina: &b%current_page%&8/&b%total_page%"
+      - ""
+      - "&e» ¡Haz clic derecho para saltar! «"
+      - "&e» ¡Haz clic izquierdo para ir! «"
+  previous_page:
+    material: ARROW
+    data: 0
+    slot: 37
+    name: "&3Página &banterior"
+    lore:
+      - "&8Botón"
+      - ""
+      - "&fCliquea esta opción para ir a"
+      - "&fla página posterior"
+      - ""
+      - "&8• &fPágina: &b%current_page%&8/&b%total_page%"
+      - ""
+      - "&e» ¡Haz clic derecho para saltar! «"
+      - "&e» ¡Haz clic izquierdo para ir! «"
+
+shulker_view_menu:
+  title: "&8Previsualización"
+  size: 36
+  slots: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27]
+  glass: [28,29,30,33,34,35,36]
+  close: 32
+  back: 31
+
+stats_menu:
+  title: "&8Estadísticas"
+  size: 27
+  glass: [1,2,3,4,5,6,7,8,9,10,18,19,20,21,24,25,26,27]
+  back: 22
+  close: 23
+  buyer_stats:
+    material: PAPER
+    data: 0
+    slot: 12
+    name: "&3Estadísticas &bde comprador"
+    lore:
+      - "&8Información"
+      - ""
+      - " &8&l≡ &f&l%player_name%"
+      - "&r"
+      - " &8▪ &fSubastas ganadas: &b%won_auctions_amount%"
+      - " &8▪ &fSubastas perdidas: &b%lost_auctions_amount%"
+      - " &8▪ &fOfertas hechas: &b%total_bids_amount%"
+      - "&r"
+      - " &8▪ &fMas ofertas: &6%highest_bid% ⛁"
+      - " &8▪ &fMonedas gastadas: &6%spent_money_amount% ⛁"
+      - "&r"
+      - "&e» mc.comugamers.com «"
+  seller_stats:
+    material: PAPER
+    data: 0
+    slot: 16
+    name: "&3Estadísticas &bde vendedor"
+    lore:
+      - "&8Información"
+      - ""
+      - " &8&l≡ &f&l%player_name%"
+      - "&r"
+      - " &8▪ &fSubastas creadas: &b%created_auctions_amount%"
+      - " &8▪ &fSubastas completadas con ofertas: &b%completed_auctions_with_bids%"
+      - " &8▪ &fSubastas completadas sin ofertas: &b%completed_auctions_with_bids%"
+      - "&r"
+      - " &8▪ &fMonedas ganadas: &6%earned_money_amount% ⛁"
+      - " &8▪ &fMonedas gastadas en tarifas: &6%spent_money_on_fees% ⛁"
+      - "&r"
+      - "&e» mc.comugamers.com «"
