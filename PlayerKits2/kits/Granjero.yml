@@ -1,0 +1,460 @@
+cooldown: 2592000
+one_time: false
+auto_armor: false
+permission_required: true
+save_original_items: true
+display:
+  default:
+    id: IRON_HOE
+    name: '&7Kit &8[#FFEE00&lG#FDF010&lR#FBF31F&lA#F9F52F&lN#F7F83F&lJ#F5FA4F&lE#F3FD5E&lR#F1FF6E&lO
+      #F1FF6E☀&8]'
+    amount: 1
+    lore:
+    - '&8Kit'
+    - ''
+    - ' &fInformación:'
+    - ' &8● &fAdquiere este kit en la tienda'
+    - ''
+    - ' &fContenido:'
+    - ' &8● &fCasco de cuero'
+    - ' &8● &fPechera de cuero'
+    - ' &8● &fPantalones de cuero'
+    - ' &8● &fBotas de cuero'
+    - ' &8● &fAzada de netherita'
+    - ' &8● &fAzada de diamante'
+    - ' &8● &fAzada de hierro'
+    - ' &8● &fManzana &7(x64)'
+    - ' &8● &fZanahoria dorada &7(x64)'
+    - ' &8● &fTrigo &7(x576)'
+    - ' &8● &fZanahoria &7(x576)'
+    - ' &8● &fPatata &7(x576)'
+    - ''
+    - '&e» ¡Haz clic derecho para previsualizar! «'
+    - '&e» ¡Haz clic izquierdo para reclamar! «'
+  no_permission:
+    id: BARRIER
+    name: '&7Kit &8[#FFEE00&lG#FDF010&lR#FBF31F&lA#F9F52F&lN#F7F83F&lJ#F5FA4F&lE#F3FD5E&lR#F1FF6E&lO
+      #F1FF6E☀&8]'
+    amount: 1
+    lore:
+    - '&8Kit'
+    - ''
+    - ' &fInformación:'
+    - ' &8● &fAdquiere este kit en la tienda'
+    - ''
+    - ' &fContenido:'
+    - ' &8● &fCasco de cuero'
+    - ' &8● &fPechera de cuero'
+    - ' &8● &fPantalones de cuero'
+    - ' &8● &fBotas de cuero'
+    - ' &8● &fAzada de netherita'
+    - ' &8● &fAzada de diamante'
+    - ' &8● &fAzada de hierro'
+    - ' &8● &fManzana &7(x64)'
+    - ' &8● &fZanahoria dorada &7(x64)'
+    - ' &8● &fTrigo &7(x576)'
+    - ' &8● &fZanahoria &7(x576)'
+    - ' &8● &fPatata &7(x576)'
+    - ''
+    - '&c» Este kit está bloqueado «'
+  cooldown:
+    id: BARRIER
+    name: '&7Kit &8[#FFEE00&lG#FDF010&lR#FBF31F&lA#F9F52F&lN#F7F83F&lJ#F5FA4F&lE#F3FD5E&lR#F1FF6E&lO
+      #F1FF6E☀&8]'
+    amount: 1
+    lore:
+    - '&8Kit'
+    - ''
+    - ' &fInformación:'
+    - ' &8● &fAdquiere este kit en la tienda'
+    - ''
+    - ' &fContenido:'
+    - ' &8● &fCasco de cuero'
+    - ' &8● &fPechera de cuero'
+    - ' &8● &fPantalones de cuero'
+    - ' &8● &fBotas de cuero'
+    - ' &8● &fAzada de netherita'
+    - ' &8● &fAzada de diamante'
+    - ' &8● &fAzada de hierro'
+    - ' &8● &fManzana &7(x64)'
+    - ' &8● &fZanahoria dorada &7(x64)'
+    - ' &8● &fTrigo &7(x576)'
+    - ' &8● &fZanahoria &7(x576)'
+    - ' &8● &fPatata &7(x576)'
+    - ''
+    - '&c» Disponible en %time% «'
+    item_flags:
+    - HIDE_ATTRIBUTES
+clear_inventory: false
+allow_placeholders_on_original_items: false
+items:
+  '1':
+    original:
+      ==: org.bukkit.inventory.ItemStack
+      v: 4189
+      type: IRON_HOE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":"","extra":[{"text":"","extra":[{"text":"Espada ","color":"#00BCF5"},{"text":"◆
+          ","color":"dark_gray"},{"text":"G","bold":true,"color":"#FFEE00"},{"text":"R","bold":true,"color":"#FDF010"},{"text":"A","bold":true,"color":"#FBF31F"},{"text":"N","bold":true,"color":"#F9F52F"},{"text":"J","bold":true,"color":"#F7F83F"},{"text":"E","bold":true,"color":"#F5FA4F"},{"text":"R","bold":true,"color":"#F3FD5E"},{"text":"O
+          ","bold":true,"color":"#F1FF6E"},{"text":"🌾","color":"#F1FF6E"}]}],"italic":false}'
+        enchants:
+          minecraft:efficiency: 5
+          minecraft:fortune: 3
+          minecraft:unbreaking: 3
+        PublicBukkitValues: |-
+          {
+              "ecoitems:item": "kit_granjero_azada"
+          }
+    preview_slot: 0
+  '2':
+    original:
+      ==: org.bukkit.inventory.ItemStack
+      v: 4189
+      type: LEATHER_HELMET
+      meta:
+        ==: ItemMeta
+        meta-type: COLORABLE_ARMOR
+        display-name: '{"text":"","extra":[{"text":"Casco ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"gray"},{"text":"•
+          ","italic":false,"color":"dark_gray"},{"text":"G","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#FFEE00"},{"text":"R","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#FDF010"},{"text":"A","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#FBF31F"},{"text":"N","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#F9F52F"},{"text":"J","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#F7F83F"},{"text":"E","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#F5FA4F"},{"text":"R","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#F3FD5E"},{"text":"O","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#F1FF6E"}]}'
+        lore:
+        - '{"text":"","extra":[{"text":"V","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FBEC24"},{"text":"i","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FAED28"},{"text":"s","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FAEE2D"},{"text":"i","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F9EF31"},{"text":"ó","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F9F035"},{"text":"n","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F8F23A"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F7F33E"},{"text":"d","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F7F442"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F6F547"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F6F64B"},{"text":"G","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F5F750"},{"text":"r","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F5F854"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F4F958"},{"text":"n","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F3FB5D"},{"text":"j","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F3FC61"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F2FD65"},{"text":"r","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F2FE6A"},{"text":"o
+          I","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F1FF6E"}]}'
+        enchants:
+          minecraft:mending: 1
+          minecraft:protection: 3
+          minecraft:unbreaking: 3
+        PublicBukkitValues: |-
+          {
+              "advancedenchantments:ae_enchantment-visiongranjero": 1,
+              "advancedenchantments:slots": 1
+          }
+        trim:
+          material: minecraft:gold
+          pattern: minecraft:wayfinder
+        color:
+          ==: Color
+          ALPHA: 255
+          RED: 251
+          BLUE: 36
+          GREEN: 236
+    preview_slot: 1
+  '3':
+    original:
+      ==: org.bukkit.inventory.ItemStack
+      v: 4189
+      type: LEATHER_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: COLORABLE_ARMOR
+        display-name: '{"text":"","extra":[{"text":"Pechera ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"gray"},{"text":"•
+          ","italic":false,"color":"dark_gray"},{"text":"G","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#FFEE00"},{"text":"R","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#FDF010"},{"text":"A","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#FBF31F"},{"text":"N","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#F9F52F"},{"text":"J","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#F7F83F"},{"text":"E","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#F5FA4F"},{"text":"R","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#F3FD5E"},{"text":"O","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#F1FF6E"}]}'
+        lore:
+        - '{"text":"","extra":[{"text":"E","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FBEC24"},{"text":"f","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FBED28"},{"text":"i","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FAEE2B"},{"text":"c","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FAEF2F"},{"text":"i","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F9F032"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F9F136"},{"text":"n","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F8F139"},{"text":"c","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F8F23D"},{"text":"i","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F7F340"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F7F444"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F6F547"},{"text":"d","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F6F64B"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F5F74E"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F5F852"},{"text":"G","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F4F955"},{"text":"r","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F4FA59"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F3FA5C"},{"text":"n","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F3FB60"},{"text":"j","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F2FC63"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F2FD67"},{"text":"r","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F1FE6A"},{"text":"o
+          I","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F1FF6E"}]}'
+        enchants:
+          minecraft:mending: 1
+          minecraft:protection: 3
+          minecraft:unbreaking: 3
+        PublicBukkitValues: |-
+          {
+              "advancedenchantments:ae_enchantment-eficienciagranjero": 1,
+              "advancedenchantments:slots": 1
+          }
+        trim:
+          material: minecraft:gold
+          pattern: minecraft:wayfinder
+        color:
+          ==: Color
+          ALPHA: 255
+          RED: 251
+          BLUE: 36
+          GREEN: 236
+    preview_slot: 2
+  '4':
+    original:
+      ==: org.bukkit.inventory.ItemStack
+      v: 4189
+      type: LEATHER_LEGGINGS
+      meta:
+        ==: ItemMeta
+        meta-type: COLORABLE_ARMOR
+        display-name: '{"text":"","extra":[{"text":"Pantalones ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"gray"},{"text":"•
+          ","italic":false,"color":"dark_gray"},{"text":"G","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#FFEE00"},{"text":"R","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#FDF010"},{"text":"A","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#FBF31F"},{"text":"N","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#F9F52F"},{"text":"J","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#F7F83F"},{"text":"E","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#F5FA4F"},{"text":"R","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#F3FD5E"},{"text":"O","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#F1FF6E"}]}'
+        lore:
+        - '{"text":"","extra":[{"text":"S","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FBEC24"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FAED29"},{"text":"l","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FAEE2D"},{"text":"u","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F9F032"},{"text":"d","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F9F137"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F8F23B"},{"text":"d","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F7F340"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F7F444"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F6F649"},{"text":"G","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F5F74E"},{"text":"r","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F5F852"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F4F957"},{"text":"n","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F4FA5C"},{"text":"j","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F3FB60"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F2FD65"},{"text":"r","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F2FE69"},{"text":"o
+          I","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F1FF6E"}]}'
+        enchants:
+          minecraft:mending: 1
+          minecraft:protection: 3
+          minecraft:unbreaking: 3
+        PublicBukkitValues: |-
+          {
+              "advancedenchantments:ae_enchantment-saludgranjero": 1,
+              "advancedenchantments:slots": 1
+          }
+        trim:
+          material: minecraft:gold
+          pattern: minecraft:wayfinder
+        color:
+          ==: Color
+          ALPHA: 255
+          RED: 251
+          BLUE: 36
+          GREEN: 236
+    preview_slot: 3
+  '5':
+    original:
+      ==: org.bukkit.inventory.ItemStack
+      v: 4189
+      type: LEATHER_BOOTS
+      meta:
+        ==: ItemMeta
+        meta-type: COLORABLE_ARMOR
+        display-name: '{"text":"","extra":[{"text":"Botas ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"gray"},{"text":"•
+          ","italic":false,"color":"dark_gray"},{"text":"G","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#FFEE00"},{"text":"R","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#FDF010"},{"text":"A","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#FBF31F"},{"text":"N","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#F9F52F"},{"text":"J","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#F7F83F"},{"text":"E","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#F5FA4F"},{"text":"R","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#F3FD5E"},{"text":"O","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#F1FF6E"}]}'
+        lore:
+        - '{"text":"","extra":[{"text":"A","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FBEC24"},{"text":"g","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FAED28"},{"text":"i","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FAEE2C"},{"text":"l","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F9EF30"},{"text":"i","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F9F034"},{"text":"d","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F8F137"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F8F23B"},{"text":"d","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F7F33F"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F7F443"},{"text":"d","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F6F547"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F6F64B"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F5F74F"},{"text":"G","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F5F853"},{"text":"r","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F4F957"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F4FA5B"},{"text":"n","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F3FB5E"},{"text":"j","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F3FC62"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F2FD66"},{"text":"r","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F2FE6A"},{"text":"o
+          I","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F1FF6E"}]}'
+        enchants:
+          minecraft:mending: 1
+          minecraft:protection: 3
+          minecraft:unbreaking: 3
+        PublicBukkitValues: |-
+          {
+              "advancedenchantments:ae_enchantment-agilidadgranjero": 1,
+              "advancedenchantments:slots": 1
+          }
+        trim:
+          material: minecraft:gold
+          pattern: minecraft:wayfinder
+        color:
+          ==: Color
+          ALPHA: 255
+          RED: 251
+          BLUE: 36
+          GREEN: 236
+    preview_slot: 4
+  '6':
+    original:
+      ==: org.bukkit.inventory.ItemStack
+      v: 4189
+      type: GOLDEN_CARROT
+      amount: 64
+    preview_slot: 5
+  '7':
+    original:
+      ==: org.bukkit.inventory.ItemStack
+      v: 4189
+      type: APPLE
+      amount: 64
+    preview_slot: 6
+  '8':
+    original:
+      ==: org.bukkit.inventory.ItemStack
+      v: 4189
+      type: WHEAT_SEEDS
+      amount: 64
+    preview_slot: 9
+  '9':
+    original:
+      ==: org.bukkit.inventory.ItemStack
+      v: 4189
+      type: CARROT
+      amount: 64
+    preview_slot: 10
+  '10':
+    original:
+      ==: org.bukkit.inventory.ItemStack
+      v: 4189
+      type: POTATO
+      amount: 64
+    preview_slot: 11
+  '11':
+    original:
+      ==: org.bukkit.inventory.ItemStack
+      v: 4189
+      type: WHEAT_SEEDS
+      amount: 64
+    preview_slot: 12
+  '12':
+    original:
+      ==: org.bukkit.inventory.ItemStack
+      v: 4189
+      type: CARROT
+      amount: 64
+    preview_slot: 13
+  '13':
+    original:
+      ==: org.bukkit.inventory.ItemStack
+      v: 4189
+      type: POTATO
+      amount: 64
+    preview_slot: 14
+  '14':
+    original:
+      ==: org.bukkit.inventory.ItemStack
+      v: 4189
+      type: WHEAT_SEEDS
+      amount: 64
+    preview_slot: 15
+  '15':
+    original:
+      ==: org.bukkit.inventory.ItemStack
+      v: 4189
+      type: CARROT
+      amount: 64
+    preview_slot: 16
+  '16':
+    original:
+      ==: org.bukkit.inventory.ItemStack
+      v: 4189
+      type: POTATO
+      amount: 64
+    preview_slot: 17
+  '17':
+    original:
+      ==: org.bukkit.inventory.ItemStack
+      v: 4189
+      type: WHEAT_SEEDS
+      amount: 64
+    preview_slot: 18
+  '18':
+    original:
+      ==: org.bukkit.inventory.ItemStack
+      v: 4189
+      type: CARROT
+      amount: 64
+    preview_slot: 19
+  '19':
+    original:
+      ==: org.bukkit.inventory.ItemStack
+      v: 4189
+      type: POTATO
+      amount: 64
+    preview_slot: 20
+  '20':
+    original:
+      ==: org.bukkit.inventory.ItemStack
+      v: 4189
+      type: WHEAT_SEEDS
+      amount: 64
+    preview_slot: 21
+  '21':
+    original:
+      ==: org.bukkit.inventory.ItemStack
+      v: 4189
+      type: CARROT
+      amount: 64
+    preview_slot: 22
+  '22':
+    original:
+      ==: org.bukkit.inventory.ItemStack
+      v: 4189
+      type: POTATO
+      amount: 64
+    preview_slot: 23
+  '23':
+    original:
+      ==: org.bukkit.inventory.ItemStack
+      v: 4189
+      type: WHEAT_SEEDS
+      amount: 64
+    preview_slot: 24
+  '24':
+    original:
+      ==: org.bukkit.inventory.ItemStack
+      v: 4189
+      type: CARROT
+      amount: 64
+    preview_slot: 25
+  '25':
+    original:
+      ==: org.bukkit.inventory.ItemStack
+      v: 4189
+      type: POTATO
+      amount: 64
+    preview_slot: 26
+  '26':
+    original:
+      ==: org.bukkit.inventory.ItemStack
+      v: 4189
+      type: WHEAT_SEEDS
+      amount: 64
+    preview_slot: 27
+  '27':
+    original:
+      ==: org.bukkit.inventory.ItemStack
+      v: 4189
+      type: CARROT
+      amount: 64
+    preview_slot: 28
+  '28':
+    original:
+      ==: org.bukkit.inventory.ItemStack
+      v: 4189
+      type: POTATO
+      amount: 64
+    preview_slot: 29
+  '29':
+    original:
+      ==: org.bukkit.inventory.ItemStack
+      v: 4189
+      type: WHEAT_SEEDS
+      amount: 64
+    preview_slot: 30
+  '30':
+    original:
+      ==: org.bukkit.inventory.ItemStack
+      v: 4189
+      type: CARROT
+      amount: 64
+    preview_slot: 31
+  '31':
+    original:
+      ==: org.bukkit.inventory.ItemStack
+      v: 4189
+      type: POTATO
+      amount: 64
+    preview_slot: 32
+  '32':
+    original:
+      ==: org.bukkit.inventory.ItemStack
+      v: 4189
+      type: WHEAT_SEEDS
+      amount: 64
+    preview_slot: 33
+  '33':
+    original:
+      ==: org.bukkit.inventory.ItemStack
+      v: 4189
+      type: CARROT
+      amount: 64
+    preview_slot: 34
+  '34':
+    original:
+      ==: org.bukkit.inventory.ItemStack
+      v: 4189
+      type: POTATO
+      amount: 64
+    preview_slot: 35
+actions:
+  claim:
+    '1':
+      action: 'playsound: BLOCK_NOTE_BLOCK_PLING;10;2'
+      execute_before_items: false
+      count_as_item: false
+  error:
+    '1':
+      action: 'playsound: BLOCK_NOTE_BLOCK_PLING;10;0.1'
+      execute_before_items: false
+      count_as_item: false

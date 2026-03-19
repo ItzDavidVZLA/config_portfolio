@@ -1,0 +1,398 @@
+inventories:
+  main_inventory:
+    slots: 54
+    title: '&8Menú de kits'
+    45;46;47;48;49;50;51;52;53:
+      item:
+        id: BLACK_STAINED_GLASS_PANE
+        name: ' '
+        amount: 1
+    '11':
+      type: 'kit: Usuario'
+    '12':
+      type: 'kit: VIP'
+    '13':
+      type: 'kit: ELITE'
+    '14':
+      type: 'kit: ULTIMATE'
+    '15':
+      type: 'kit: ULTRA'
+    '48':
+      item:
+        id: ARROW
+        name: '&eVolver'
+        amount: 1
+      click_actions:
+      - 'console_command: dm open menu_principal %player%'
+    '49':
+      item:
+        id: RED_DYE
+        name: '&cCerrar'
+        amount: 1
+      click_actions:
+      - close_inventory
+    '50':
+      item:
+        id: HOPPER
+        name: '#00CBF5Filtrar'
+        amount: 1
+        lore:
+        - '&8Botón'
+        - ''
+        - '#00CBF5► Mostrar todo'
+        - '&7► Vips'
+        - '&7► Usuario'
+        - '&7► Premium'
+        - ''
+        - '&e» ¡Haz clic para interactuar! «'
+      open_inventory: premium_kits_inventory
+    '33':
+      type: 'kit: Minero'
+    '29':
+      type: 'kit: Mobdrop'
+    '31':
+      type: 'kit: Granjero'
+  premium_kits_inventory:
+    slots: 36
+    title: '&8Menú de kits'
+    27;28;29;30;31;32;33;34;35:
+      item:
+        id: BLACK_STAINED_GLASS_PANE
+        name: ' '
+        amount: 1
+    '10':
+      type: 'kit: VIP'
+    '12':
+      type: 'kit: ELITE'
+    '14':
+      type: 'kit: ULTIMATE'
+    '16':
+      type: 'kit: ULTRA'
+    '30':
+      item:
+        id: ARROW
+        name: '&eVolver'
+        amount: 1
+      click_actions:
+      - 'console_command: dm open menu_principal %player%'
+    '31':
+      item:
+        id: RED_DYE
+        name: '&cCerrar'
+        amount: 1
+      click_actions:
+      - close_inventory
+    '32':
+      item:
+        id: HOPPER
+        name: '#00CBF5Filtrar'
+        amount: 1
+        lore:
+        - '&8Botón'
+        - ''
+        - '&7► Mostrar todo'
+        - '#00CBF5► Vips'
+        - '&7► Usuario'
+        - '&7► Premium'
+        - ''
+        - '&e» ¡Haz clic para interactuar! «'
+      open_inventory: user_kits
+  user_kits:
+    slots: 54
+    title: '&8Menú de kits'
+    45;46;47;48;49;50;51;52;53:
+      item:
+        id: BLACK_STAINED_GLASS_PANE
+        name: ' '
+        amount: 1
+    '10':
+      type: 'kit: Usuario'
+    '11':
+      type: 'kit: rankup1'
+    '12':
+      type: 'kit: rankup2'
+    '13':
+      type: 'kit: rankup3'
+    '14':
+      type: 'kit: rankup4'
+    '15':
+      type: 'kit: rankup5'
+    '16':
+      type: 'kit: rankup6'
+    '19':
+      type: 'kit: rankup7'
+    '20':
+      type: 'kit: rankup8'
+    '21':
+      type: 'kit: rankup9'
+    '22':
+      type: 'kit: rankup10'
+    '23':
+      type: 'kit: rankup11'
+    '24':
+      type: 'kit: rankup12'
+    '25':
+      type: 'kit: rankup13'
+    '28':
+      type: 'kit: rankup14'
+    '29':
+      type: 'kit: rankup15'
+    '30':
+      type: 'kit: rankup16'
+    '31':
+      type: 'kit: rankup17'
+    '32':
+      type: 'kit: rankup18'
+    '33':
+      type: 'kit: rankup19'
+    '34':
+      type: 'kit: rankup20'
+    '48':
+      item:
+        id: ARROW
+        name: '&eVolver'
+        amount: 1
+      click_actions:
+      - 'console_command: dm open menu_principal %player%'
+    '49':
+      item:
+        id: RED_DYE
+        name: '&cCerrar'
+        amount: 1
+      click_actions:
+      - close_inventory
+    '50':
+      item:
+        id: ARROW
+        name: '&eAvanzar'
+        amount: 1
+      open_inventory: user_kits_2
+    '51':
+      item:
+        id: HOPPER
+        name: '#00CBF5Filtrar'
+        amount: 1
+        lore:
+        - '&8Botón'
+        - ''
+        - '&7► Mostrar todo'
+        - '&7► Vips'
+        - '#00CBF5► Usuario'
+        - '&7► Premium'
+        - ''
+        - '&e» ¡Haz clic para interactuar! «'
+      open_inventory: tebex_kits
+  user_kits_2:
+    slots: 54
+    title: '&8Menú de kits'
+    45;46;47;48;49;50;51;52;53:
+      item:
+        id: BLACK_STAINED_GLASS_PANE
+        name: ' '
+        amount: 1
+    '10':
+      type: 'kit: rankup21'
+    '11':
+      type: 'kit: rankup22'
+    '12':
+      type: 'kit: rankup23'
+    '13':
+      type: 'kit: rankup24'
+    '14':
+      type: 'kit: rankup25'
+    '15':
+      type: 'kit: rankup26'
+    '16':
+      type: 'kit: rankup27'
+    '19':
+      type: 'kit: rankup28'
+    '20':
+      type: 'kit: rankup29'
+    '21':
+      type: 'kit: rankup30'
+    '22':
+      type: 'kit: rankup31'
+    '23':
+      type: 'kit: rankup32'
+    '24':
+      type: 'kit: rankup33'
+    '25':
+      type: 'kit: rankup34'
+    '28':
+      type: 'kit: rankup35'
+    '29':
+      type: 'kit: rankup36'
+    '30':
+      type: 'kit: rankup37'
+    '31':
+      type: 'kit: rankup38'
+    '32':
+      type: 'kit: rankup39'
+    '33':
+      type: 'kit: rankup40'
+    '34':
+      type: 'kit: rankup41'
+    '48':
+      item:
+        id: ARROW
+        name: '&eVolver'
+        amount: 1
+      open_inventory: user_kits
+    '49':
+      item:
+        id: RED_DYE
+        name: '&cCerrar'
+        amount: 1
+      click_actions:
+      - close_inventory
+    '50':
+      item:
+        id: ARROW
+        name: '&eAvanzar'
+        amount: 1
+      open_inventory: user_kits_3
+    '51':
+      item:
+        id: HOPPER
+        name: '#00CBF5Filtrar'
+        amount: 1
+        lore:
+        - '&8Botón'
+        - ''
+        - '&7► Mostrar todo'
+        - '&7► Vips'
+        - '#00CBF5► Usuario'
+        - '&7► Premium'
+        - ''
+        - '&e» ¡Haz clic para interactuar! «'
+      open_inventory: tebex_kits
+  user_kits_3:
+    slots: 54
+    title: '&8Menú de kits'
+    45;46;47;48;49;50;51;52;53:
+      item:
+        id: BLACK_STAINED_GLASS_PANE
+        name: ' '
+        amount: 1
+    '10':
+      type: 'kit: rankup42'
+    '11':
+      type: 'kit: rankup43'
+    '12':
+      type: 'kit: rankup44'
+    '13':
+      type: 'kit: rankup45'
+    '14':
+      type: 'kit: rankup46'
+    '15':
+      type: 'kit: rankup47'
+    '16':
+      type: 'kit: rankup48'
+    '19':
+      type: 'kit: rankup49'
+    '20':
+      type: 'kit: rankup50'
+    '48':
+      item:
+        id: ARROW
+        name: '&eVolver'
+        amount: 1
+      open_inventory: user_kits_2
+    '49':
+      item:
+        id: RED_DYE
+        name: '&cCerrar'
+        amount: 1
+      click_actions:
+      - close_inventory
+    '50':
+      item:
+        id: HOPPER
+        name: '#00CBF5Filtrar'
+        amount: 1
+        lore:
+        - '&8Botón'
+        - ''
+        - '&7► Mostrar todo'
+        - '&7► Vips'
+        - '#00CBF5► Usuario'
+        - '&7► Premium'
+        - ''
+        - '&e» ¡Haz clic para interactuar! «'
+      open_inventory: tebex_kits
+  tebex_kits:
+    slots: 36
+    title: '&8Menú de kits'
+    27;28;29;30;31;32;33;34;35:
+      item:
+        id: BLACK_STAINED_GLASS_PANE
+        name: ' '
+        amount: 1
+    '16':
+      type: 'kit: Minero'
+    '13':
+      type: 'kit: Granjero'
+    '10':
+      type: 'kit: Mobdrop'
+    '30':
+      item:
+        id: ARROW
+        name: '&eVolver'
+        amount: 1
+      click_actions:
+      - 'console_command: dm open menu_principal %player%'
+    '31':
+      item:
+        id: RED_DYE
+        name: '&cCerrar'
+        amount: 1
+      click_actions:
+      - close_inventory
+    '32':
+      item:
+        id: HOPPER
+        name: '#00CBF5Filtrar'
+        amount: 1
+        lore:
+        - '&8Botón'
+        - ''
+        - '&7► Mostrar todo'
+        - '&7► Vips'
+        - '&7► Usuario'
+        - '#00CBF5► Premium'
+        - ''
+        - '&e» ¡Haz clic para interactuar! «'
+      open_inventory: main_inventory
+  preview_inventory:
+    slots: 54
+    title: '&8Previsualización del kit'
+    '45':
+      item:
+        id: ARROW
+        name: '&eVolver'
+        amount: 1
+      open_inventory: previous
+  buy_requirements_inventory:
+    slots: 27
+    title: '&4&lBuy Kit Requirements'
+    '13':
+      item:
+        id: BOOK
+        name: '&c&lRequirements'
+        amount: 1
+        lore:
+        - '%kit_requirements_message%'
+    '10':
+      item:
+        id: RED_STAINED_GLASS_PANE
+        name: '&cGo Back'
+        amount: 1
+        nbt:
+        - playerkits_buy|no
+    '16':
+      item:
+        id: GREEN_STAINED_GLASS_PANE
+        name: '&aBuy'
+        amount: 1
+        nbt:
+        - playerkits_buy|yes

@@ -1,0 +1,143 @@
+cooldown: 1800
+one_time: false
+auto_armor: true
+permission_required: false
+display:
+  default:
+    id: PLAYER_HEAD
+    name: '#00CBF5Kit &8◆ &7&lUSUARIO'
+    amount: 1
+    lore:
+    - '&8Kit'
+    - ''
+    - ' &fInformación:'
+    - ' &8● &fKit de inicio para todos los usuarios'
+    - ''
+    - ' &fContenido:'
+    - ' &8● &fEspada de piedra'
+    - ' &8● &fPico de piedra'
+    - ' &8● &fHacha de piedra'
+    - ' &8● &fPala de piedra'
+    - ' &8● &fCasco de malla'
+    - ' &8● &fPechera de malla'
+    - ' &8● &fPantalones de malla'
+    - ' &8● &fBotas de malla'
+    - ' &8● &fPapa cocida &7(x32)'
+    - ' &8● &fPan &7(x32)'
+    - ''
+    - '&e» ¡Haz clic derecho para previsualizar! «'
+    - '&e» ¡Haz clic izquierdo para reclamar! «'
+    item_flags:
+    - HIDE_ATTRIBUTES
+    skull_data:
+      texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTZjODQ0N2E4YjZiMGUwYzdlNzYyOWM2ODk4ZWM5Yzc0OWE3YTBhMmI0NTJiOWMzODUyYzc4NDdiYjRkYzUifX19
+      id: 69fc89d0-0cbb-4fee-86dd-364cd2628d48
+  no_permission:
+    id: BARRIER
+    name: '#00CBF5Kit &8◆ &7&lUSUARIO'
+    amount: 1
+    lore:
+    - '&8Kit'
+    - ''
+    - '&fUn usuario no tiene acceso a reclamar'
+    - '&fsu propio kit... ¿Es enserio?'
+    - ''
+    - '&e» mc.comugamers.com «'
+  cooldown:
+    id: PLAYER_HEAD
+    name: '#00CBF5Kit &8◆ &7&lUSUARIO'
+    amount: 1
+    lore:
+    - '&8Kit'
+    - ''
+    - ' &fInformación:'
+    - ' &8● &fKit de inicio para todos los usuarios'
+    - ''
+    - ' &fContenido:'
+    - ' &8● &fEspada de piedra'
+    - ' &8● &fPico de piedra'
+    - ' &8● &fHacha de piedra'
+    - ' &8● &fPala de piedra'
+    - ' &8● &fCasco de malla'
+    - ' &8● &fPechera de malla'
+    - ' &8● &fPantalones de malla'
+    - ' &8● &fBotas de malla'
+    - ' &8● &fPapa cocida &7(x32)'
+    - ' &8● &fPan &7(x32)'
+    - ''
+    - '&c» Disponible en %time% «'
+    item_flags:
+    - HIDE_ATTRIBUTES
+    skull_data:
+      texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTZjODQ0N2E4YjZiMGUwYzdlNzYyOWM2ODk4ZWM5Yzc0OWE3YTBhMmI0NTJiOWMzODUyYzc4NDdiYjRkYzUifX19
+      id: 69fc89d0-0cbb-4fee-86dd-364cd2628d48
+save_original_items: false
+items:
+  '1':
+    id: STONE_SWORD
+    amount: 1
+    name: '#00CBF5Espada &8◆ &7&lUSUARIO'
+    preview_slot: 0
+  '2':
+    id: STONE_PICKAXE
+    amount: 1
+    name: '#00CBF5Pico &8◆ &7&lUSUARIO'
+    preview_slot: 1
+  '3':
+    id: STONE_AXE
+    amount: 1
+    name: '#00CBF5Hacha &8◆ &7&lUSUARIO'
+    preview_slot: 2
+  '4':
+    id: STONE_HOE
+    amount: 1
+    name: '#00CBF5Azada &8◆ &7&lUSUARIO'
+    preview_slot: 3
+  '5':
+    id: STONE_SHOVEL
+    amount: 1
+    name: '#00CBF5Pala &8◆ &7&lUSUARIO'
+    preview_slot: 4
+  '6':
+    id: BAKED_POTATO
+    amount: 16
+    preview_slot: 5
+  '7':
+    id: BREAD
+    amount: 16
+    preview_slot: 6
+  '8':
+    id: CHAINMAIL_BOOTS
+    amount: 1
+    name: '#00CBF5Botas &8◆ &7&lUSUARIO'
+    preview_slot: 7
+  '9':
+    id: CHAINMAIL_LEGGINGS
+    amount: 1
+    name: '#00CBF5Pantalones &8◆ &7&lUSUARIO'
+    preview_slot: 8
+  '10':
+    id: CHAINMAIL_CHESTPLATE
+    amount: 1
+    name: '#00CBF5Pechera &8◆ &7&lUSUARIO'
+    preview_slot: 9
+  '11':
+    id: CHAINMAIL_HELMET
+    amount: 1
+    name: '#00CBF5Casco &8◆ &7&lUSUARIO'
+    preview_slot: 10
+actions:
+  claim:
+    '1':
+      action: 'playsound: BLOCK_NOTE_BLOCK_PLING;10;2'
+      execute_before_items: false
+      count_as_item: false
+    '2':
+      action: 'console_command: dsw sellwand %player% vara 1 1 100'
+      execute_before_items: false
+      count_as_item: false
+  error:
+    '1':
+      action: 'playsound: BLOCK_NOTE_BLOCK_PLING;10;0.1'
+      execute_before_items: false
+      count_as_item: false

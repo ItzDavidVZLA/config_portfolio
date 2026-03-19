@@ -1,0 +1,359 @@
+cooldown: 2592000
+one_time: false
+auto_armor: false
+permission_required: true
+save_original_items: true
+display:
+  default:
+    id: DIAMOND_SWORD
+    name: '&7Kit &8[#128471&lM#148E7A&lO#169882&lB#18A38B&lD#1AAD94&lR#1BB79C&lO#1DC1A5&lP
+      #21D6B6☠&8]'
+    amount: 1
+    lore:
+    - '&8Kit'
+    - ''
+    - ' &fInformación:'
+    - ' &8● &fAdquiere este kit en la tienda'
+    - ''
+    - ' &fContenido:'
+    - ' &8● &fEspada de netherita'
+    - ' &8● &fCasco de netherita'
+    - ' &8● &fPechera de netherita'
+    - ' &8● &fPantalones de netherita'
+    - ' &8● &fBotas de netherita'
+    - ' &8● &fManzana dorada &7(x32)'
+    - ' &8● &fManzana de oro encantada &7(x32)'
+    - ' &8● &fPoción'
+    - ' &8● &fEscudo'
+    - ''
+    - '&e» ¡Haz clic derecho para previsualizar! «'
+    - '&e» ¡Haz clic izquierdo para reclamar! «'
+  no_permission:
+    id: BARRIER
+    name: '&7Kit &8[#128471&lM#148E7A&lO#169882&lB#18A38B&lD#1AAD94&lR#1BB79C&lO#1DC1A5&lP
+      #21D6B6☠&8]'
+    amount: 1
+    lore:
+    - '&8Kit'
+    - ''
+    - ' &fInformación:'
+    - ' &8● &fAdquiere este kit en la tienda'
+    - ''
+    - ' &fContenido:'
+    - ' &8● &fEspada de netherita'
+    - ' &8● &fCasco de netherita'
+    - ' &8● &fPechera de netherita'
+    - ' &8● &fPantalones de netherita'
+    - ' &8● &fBotas de netherita'
+    - ' &8● &fManzana dorada &7(x32)'
+    - ' &8● &fManzana de oro encantada &7(x32)'
+    - ' &8● &fPoción'
+    - ' &8● &fEscudo'
+    - ''
+    - '&c» Este kit está bloqueado «'
+    skull_data:
+      texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmFkYzRhMDI0NzE4ZDQwMWVlYWU5ZTk1YjNjOTI3NjdmOTE2ZjMyM2M5ZTgzNjQ5YWQxNWM5MjY1ZWU1MDkyZiJ9fX0=
+      id: f6f5f0fa-b685-4dd6-a991-33dc8d019a2b
+  cooldown:
+    id: BARRIER
+    name: '&7Kit &8[#128471&lM#148E7A&lO#169882&lB#18A38B&lD#1AAD94&lR#1BB79C&lO#1DC1A5&lP
+      #21D6B6☠&8]'
+    amount: 1
+    lore:
+    - '&8Kit'
+    - ''
+    - ' &fInformación:'
+    - ' &8● &fAdquiere este kit en la tienda'
+    - ''
+    - ' &fContenido:'
+    - ' &8● &fEspada de netherita'
+    - ' &8● &fCasco de netherita'
+    - ' &8● &fPechera de netherita'
+    - ' &8● &fPantalones de netherita'
+    - ' &8● &fBotas de netherita'
+    - ' &8● &fManzana dorada &7(x32)'
+    - ' &8● &fManzana de oro encantada &7(x32)'
+    - ' &8● &fPoción'
+    - ' &8● &fEscudo'
+    - ''
+    - '&c» Disponible en %time% «'
+    item_flags:
+    - HIDE_ATTRIBUTES
+    skull_data:
+      texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTgwNTU3ZmU2M2YwNmI0YzcwZTJjNWViMmVmNmMwZDhkNWI1NWZkMDljYzVkZTNiY2I2NWY4MzJlMDVkNGMyZSJ9fX0=
+      id: a8dc403a-b19f-4dad-83b7-25c5eb4fbd72
+clear_inventory: false
+allow_placeholders_on_original_items: false
+items:
+  '1':
+    original:
+      ==: org.bukkit.inventory.ItemStack
+      v: 4189
+      type: NETHERITE_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":"","extra":[{"text":"","extra":[{"text":"Espada ","color":"#00BCF5"},{"text":"◆
+          ","color":"dark_gray"},{"text":"M","bold":true,"color":"dark_green"},{"text":"O","bold":true,"color":"#00B300"},{"text":"B","bold":true,"color":"#00BD00"},{"text":"D","bold":true,"color":"#00C600"},{"text":"R","bold":true,"color":"#00D000"},{"text":"O","bold":true,"color":"#00D900"},{"text":"P
+          ","bold":true,"color":"#00E300"},{"text":"🗡","color":"#00F600"}]}],"italic":false}'
+        enchants:
+          minecraft:bane_of_arthropods: 10
+          minecraft:fire_aspect: 2
+          minecraft:looting: 10
+          minecraft:mending: 1
+          minecraft:smite: 10
+          minecraft:unbreaking: 5
+        PublicBukkitValues: |-
+          {
+              "ecoitems:item": "kit_mobdrop_espada"
+          }
+    preview_slot: 0
+  '2':
+    original:
+      ==: org.bukkit.inventory.ItemStack
+      v: 4189
+      type: BOW
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":"","extra":[{"text":"","extra":[{"text":"Arco ","color":"#00BCF5"},{"text":"◆
+          ","color":"dark_gray"},{"text":"M","bold":true,"color":"dark_green"},{"text":"O","bold":true,"color":"#00B300"},{"text":"B","bold":true,"color":"#00BD00"},{"text":"D","bold":true,"color":"#00C600"},{"text":"R","bold":true,"color":"#00D000"},{"text":"O","bold":true,"color":"#00D900"},{"text":"P
+          ","bold":true,"color":"#00E300"},{"text":"🏹","color":"#00F600"}]}],"italic":false}'
+        enchants:
+          minecraft:flame: 2
+          minecraft:looting: 4
+          minecraft:mending: 1
+          minecraft:power: 7
+          minecraft:unbreaking: 4
+        PublicBukkitValues: |-
+          {
+              "ecoitems:item": "kit_mobdrop_arco"
+          }
+    preview_slot: 1
+  '3':
+    original:
+      ==: org.bukkit.inventory.ItemStack
+      v: 4189
+      type: CROSSBOW
+      meta:
+        ==: ItemMeta
+        meta-type: CROSSBOW
+        display-name: '{"text":"","extra":[{"text":"","extra":[{"text":"Ballesta ","color":"#00BCF5"},{"text":"◆
+          ","color":"dark_gray"},{"text":"M","bold":true,"color":"dark_green"},{"text":"O","bold":true,"color":"#00B300"},{"text":"B","bold":true,"color":"#00BD00"},{"text":"D","bold":true,"color":"#00C600"},{"text":"R","bold":true,"color":"#00D000"},{"text":"O","bold":true,"color":"#00D900"},{"text":"P
+          ","bold":true,"color":"#00E300"},{"text":"🏹","color":"#00F600"}]}],"italic":false}'
+        enchants:
+          minecraft:flame: 2
+          minecraft:looting: 4
+          minecraft:mending: 1
+          minecraft:multishot: 1
+          minecraft:piercing: 3
+          minecraft:power: 7
+          minecraft:quick_charge: 1
+          minecraft:unbreaking: 4
+        PublicBukkitValues: |-
+          {
+              "ecoitems:item": "kit_mobdrop_ballesta"
+          }
+    preview_slot: 2
+  '4':
+    original:
+      ==: org.bukkit.inventory.ItemStack
+      v: 4189
+      type: NETHERITE_HELMET
+      meta:
+        ==: ItemMeta
+        meta-type: ARMOR
+        display-name: '{"text":"","extra":[{"text":"Casco ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#00BCF5"},{"text":"◆
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"dark_gray"},{"text":"M","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#00AA00"},{"text":"O","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#00B300"},{"text":"B","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#00BD00"},{"text":"D","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#00C600"},{"text":"R","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#00D000"},{"text":"O","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#00D900"},{"text":"P
+          ","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#00E300"},{"text":"🛡","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#00F600"}]}'
+        enchants:
+          minecraft:blast_protection: 5
+          minecraft:fire_protection: 5
+          minecraft:mending: 1
+          minecraft:projectile_protection: 5
+          minecraft:protection: 6
+          minecraft:unbreaking: 4
+        attribute-modifiers:
+          minecraft:armor:
+          - ==: org.bukkit.attribute.AttributeModifier
+            amount: 3.0
+            slot: head
+            operation: 0
+            key: minecraft:5db5aa39-cbeb-4c6d-866b-9f662d5e132b
+        PublicBukkitValues: |-
+          {
+              "ecoarmor:advanced": 0,
+              "ecoarmor:effective-durability": 1024,
+              "ecoarmor:set": "kit_mobdrop",
+              "ecoarmor:tier": "kits_tradeables"
+          }
+        trim:
+          material: minecraft:emerald
+          pattern: minecraft:tide
+    preview_slot: 3
+  '5':
+    original:
+      ==: org.bukkit.inventory.ItemStack
+      v: 4189
+      type: NETHERITE_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: ARMOR
+        display-name: '{"text":"","extra":[{"text":"Pechera ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#00BCF5"},{"text":"◆
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"dark_gray"},{"text":"M","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#00AA00"},{"text":"O","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#00B300"},{"text":"B","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#00BD00"},{"text":"D","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#00C600"},{"text":"R","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#00D000"},{"text":"O","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#00D900"},{"text":"P
+          ","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#00E300"},{"text":"🛡","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#00F600"}]}'
+        enchants:
+          minecraft:blast_protection: 5
+          minecraft:fire_protection: 5
+          minecraft:mending: 1
+          minecraft:projectile_protection: 5
+          minecraft:protection: 6
+          minecraft:unbreaking: 4
+        attribute-modifiers:
+          minecraft:armor:
+          - ==: org.bukkit.attribute.AttributeModifier
+            amount: 8.0
+            slot: chest
+            operation: 0
+            key: minecraft:48c793bb-26df-4824-994e-c251dff9ea2a
+        PublicBukkitValues: |-
+          {
+              "ecoarmor:advanced": 0,
+              "ecoarmor:effective-durability": 2048,
+              "ecoarmor:set": "kit_mobdrop",
+              "ecoarmor:tier": "kits_tradeables"
+          }
+        trim:
+          material: minecraft:emerald
+          pattern: minecraft:tide
+    preview_slot: 4
+  '6':
+    original:
+      ==: org.bukkit.inventory.ItemStack
+      v: 4189
+      type: NETHERITE_LEGGINGS
+      meta:
+        ==: ItemMeta
+        meta-type: ARMOR
+        display-name: '{"text":"","extra":[{"text":"Pantalones ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#00BCF5"},{"text":"◆
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"dark_gray"},{"text":"M","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#00AA00"},{"text":"O","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#00B300"},{"text":"B","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#00BD00"},{"text":"D","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#00C600"},{"text":"R","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#00D000"},{"text":"O","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#00D900"},{"text":"P
+          ","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#00E300"},{"text":"🛡","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#00F600"}]}'
+        enchants:
+          minecraft:blast_protection: 5
+          minecraft:fire_protection: 5
+          minecraft:mending: 1
+          minecraft:projectile_protection: 5
+          minecraft:protection: 6
+          minecraft:unbreaking: 4
+        attribute-modifiers:
+          minecraft:armor:
+          - ==: org.bukkit.attribute.AttributeModifier
+            amount: 6.0
+            slot: legs
+            operation: 0
+            key: minecraft:b216fe26-0614-476b-900e-ce9fe8003624
+        PublicBukkitValues: |-
+          {
+              "ecoarmor:advanced": 0,
+              "ecoarmor:effective-durability": 2048,
+              "ecoarmor:set": "kit_mobdrop",
+              "ecoarmor:tier": "kits_tradeables"
+          }
+        trim:
+          material: minecraft:emerald
+          pattern: minecraft:tide
+    preview_slot: 5
+  '7':
+    original:
+      ==: org.bukkit.inventory.ItemStack
+      v: 4189
+      type: NETHERITE_BOOTS
+      meta:
+        ==: ItemMeta
+        meta-type: ARMOR
+        display-name: '{"text":"","extra":[{"text":"Botas ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#00BCF5"},{"text":"◆
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"dark_gray"},{"text":"M","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#00AA00"},{"text":"O","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#00B300"},{"text":"B","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#00BD00"},{"text":"D","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#00C600"},{"text":"R","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#00D000"},{"text":"O","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#00D900"},{"text":"P
+          ","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#00E300"},{"text":"🛡","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#00F600"}]}'
+        enchants:
+          minecraft:blast_protection: 5
+          minecraft:fire_protection: 5
+          minecraft:mending: 1
+          minecraft:projectile_protection: 5
+          minecraft:protection: 6
+          minecraft:unbreaking: 4
+        attribute-modifiers:
+          minecraft:armor:
+          - ==: org.bukkit.attribute.AttributeModifier
+            amount: 3.0
+            slot: feet
+            operation: 0
+            key: minecraft:a7a47626-0a76-447e-aaf7-aef7b95942e3
+        PublicBukkitValues: |-
+          {
+              "ecoarmor:advanced": 0,
+              "ecoarmor:effective-durability": 2048,
+              "ecoarmor:set": "kit_mobdrop",
+              "ecoarmor:tier": "kits_tradeables"
+          }
+        trim:
+          material: minecraft:emerald
+          pattern: minecraft:tide
+    preview_slot: 6
+  '8':
+    original:
+      ==: org.bukkit.inventory.ItemStack
+      v: 4189
+      type: SHIELD
+      meta:
+        ==: ItemMeta
+        meta-type: SHIELD
+        display-name: '{"text":"","extra":[{"text":"Escudo ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#00BCF5"},{"text":"◆
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"dark_gray"},{"text":"M","bold":true,"italic":false,"color":"dark_green"},{"text":"O","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#00B300"},{"text":"B","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#00BD00"},{"text":"D","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#00C600"},{"text":"R","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#00D000"},{"text":"O","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#00D900"},{"text":"P
+          ","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#00E300"},{"text":"🛡","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#00F600"}]}'
+        enchants:
+          minecraft:unbreaking: 3
+        base-color: BLACK
+        patterns:
+        - ==: Pattern
+          color: GREEN
+          pattern: minecraft:guster
+    preview_slot: 7
+  '9':
+    original:
+      ==: org.bukkit.inventory.ItemStack
+      v: 4189
+      type: GOLDEN_CARROT
+      amount: 64
+    preview_slot: 8
+  '10':
+    original:
+      ==: org.bukkit.inventory.ItemStack
+      v: 4189
+      type: ENCHANTED_GOLDEN_APPLE
+      amount: 32
+    preview_slot: 9
+  '11':
+    original:
+      ==: org.bukkit.inventory.ItemStack
+      v: 4189
+      type: COOKED_BEEF
+      amount: 64
+    preview_slot: 10
+  '12':
+    original:
+      ==: org.bukkit.inventory.ItemStack
+      v: 4189
+      type: ARROW
+      amount: 64
+    preview_slot: 11
+actions:
+  claim:
+    '1':
+      action: 'playsound: BLOCK_NOTE_BLOCK_PLING;10;2'
+      execute_before_items: false
+      count_as_item: false
+  error:
+    '1':
+      action: 'playsound: BLOCK_NOTE_BLOCK_PLING;10;0.1'
+      execute_before_items: false
+      count_as_item: false

@@ -1,0 +1,244 @@
+cooldown: 122400
+one_time: false
+auto_armor: true
+permission_required: true
+clear_inventory: false
+save_original_items: true
+allow_placeholders_on_original_items: false
+display:
+  default:
+    id: YELLOW_DYE
+    name: '#00CBF5Kit &8◆ #FFFF00&lNIVEL 11 #FFFF00✦'
+    amount: 1
+    lore:
+    - '&8Kit'
+    - ''
+    - ' &fInformación:'
+    - ' &8● &fKit exclusivo para rankup &8[#FFFF0011✦&8]'
+    - ''
+    - ' &fContenido:'
+    - ' &8● &fEspada de diamante'
+    - ' &8● &fPico de diamante'
+    - ' &8● &fHacha de diamante'
+    - ' &8● &fPala de diamante'
+    - ' &8● &fAzada de diamante'
+    - ' &8● &fCasco de diamante'
+    - ' &8● &fPechera de diamante'
+    - ' &8● &fPantalones de diamante'
+    - ' &8● &fBotas de diamante'
+    - ' &8● &fManzana dorada &7(x12)'
+    - ' &8● &fCarne cocida &7(x12)'
+    - ' &8● &fVara de venta'
+    - ''
+    - '&e» ¡Haz clic derecho para previsualizar! «'
+    - '&e» ¡Haz clic izquierdo para reclamar! «'
+    item_flags:
+    - HIDE_ATTRIBUTES
+  no_permission:
+    id: BARRIER
+    name: '#00CBF5Kit &8◆ #FFFF00&lNIVEL 11 #FFFF00✦'
+    amount: 1
+    lore:
+    - '&8Kit'
+    - ''
+    - ' &fInformación:'
+    - ' &8● &fKit exclusivo para rankup &8[#FFFF0011✦&8]'
+    - ''
+    - ' &fContenido:'
+    - ' &8● &fEspada de diamante'
+    - ' &8● &fPico de diamante'
+    - ' &8● &fHacha de diamante'
+    - ' &8● &fPala de diamante'
+    - ' &8● &fAzada de diamante'
+    - ' &8● &fCasco de diamante'
+    - ' &8● &fPechera de diamante'
+    - ' &8● &fPantalones de diamante'
+    - ' &8● &fBotas de diamante'
+    - ' &8● &fManzana dorada &7(x8)'
+    - ' &8● &fPan &7(x64)'
+    - ' &8● &fVara de venta'
+    - ''
+    - '&c» Este kit está bloqueado «'
+    item_flags:
+    - HIDE_ATTRIBUTES
+  cooldown:
+    id: BARRIER
+    name: '#00CBF5Kit &8◆ #FFFF00&lNIVEL 11 #FFFF00✦'
+    amount: 1
+    lore:
+    - '&8Kit'
+    - ''
+    - ' &fInformación:'
+    - ' &8● &fKit exclusivo para rankup &8[#FFFF0011✦&8]'
+    - ''
+    - ' &fContenido:'
+    - ' &8● &fEspada de diamante'
+    - ' &8● &fPico de diamante'
+    - ' &8● &fHacha de diamante'
+    - ' &8● &fPala de diamante'
+    - ' &8● &fAzada de diamante'
+    - ' &8● &fCasco de diamante'
+    - ' &8● &fPechera de diamante'
+    - ' &8● &fPantalones de diamante'
+    - ' &8● &fBotas de diamante'
+    - ' &8● &fManzana dorada &7(x8)'
+    - ' &8● &fPan &7(x64)'
+    - ' &8● &fVara de venta'
+    - ''
+    - '&c» Disponible en %time% «'
+    item_flags:
+    - HIDE_ATTRIBUTES
+items:
+  '1':
+    original:
+      ==: org.bukkit.inventory.ItemStack
+      v: 4189
+      type: DIAMOND_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":"","extra":[{"text":"Espada ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#00CBF5"},{"text":"◆
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"dark_gray"},{"text":"NIVEL
+          11 ","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#FFFF00"},{"text":"🗡","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FFFF00"}]}'
+        enchants:
+          minecraft:sharpness: 11
+          minecraft:unbreaking: 11
+  '2':
+    original:
+      ==: org.bukkit.inventory.ItemStack
+      v: 4189
+      type: DIAMOND_PICKAXE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":"","extra":[{"text":"Pico ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#00CBF5"},{"text":"◆
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"dark_gray"},{"text":"NIVEL
+          11 ","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#FFFF00"},{"text":"⛏","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FFFF00"}]}'
+        enchants:
+          minecraft:efficiency: 11
+          minecraft:unbreaking: 11
+  '3':
+    original:
+      ==: org.bukkit.inventory.ItemStack
+      v: 4189
+      type: DIAMOND_AXE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":"","extra":[{"text":"Hacha ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#00CBF5"},{"text":"◆
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"dark_gray"},{"text":"NIVEL
+          11 ","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#FFFF00"},{"text":"🪓","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FFFF00"}]}'
+        enchants:
+          minecraft:efficiency: 11
+          minecraft:unbreaking: 11
+  '4':
+    original:
+      ==: org.bukkit.inventory.ItemStack
+      v: 4189
+      type: DIAMOND_HOE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":"","extra":[{"text":"Azada ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#00CBF5"},{"text":"◆
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"dark_gray"},{"text":"NIVEL
+          11 ","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#FFFF00"},{"text":"🌾","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FFFF00"}]}'
+        enchants:
+          minecraft:efficiency: 11
+          minecraft:unbreaking: 11
+  '5':
+    original:
+      ==: org.bukkit.inventory.ItemStack
+      v: 4189
+      type: DIAMOND_SHOVEL
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":"","extra":[{"text":"Pala ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#00CBF5"},{"text":"◆
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"dark_gray"},{"text":"NIVEL
+          11 ","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#FFFF00"},{"text":"⬤","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FFFF00"}]}'
+        enchants:
+          minecraft:efficiency: 11
+          minecraft:unbreaking: 11
+  '6':
+    original:
+      ==: org.bukkit.inventory.ItemStack
+      v: 4189
+      type: BREAD
+      amount: 64
+  '7':
+    original:
+      ==: org.bukkit.inventory.ItemStack
+      v: 4189
+      type: GOLDEN_APPLE
+      amount: 8
+  '8':
+    original:
+      ==: org.bukkit.inventory.ItemStack
+      v: 4189
+      type: DIAMOND_BOOTS
+      meta:
+        ==: ItemMeta
+        meta-type: ARMOR
+        display-name: '{"text":"","extra":[{"text":"Botas ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#00CBF5"},{"text":"◆
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"dark_gray"},{"text":"NIVEL
+          11 ","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#FFFF00"},{"text":"🛡","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FFFF00"}]}'
+        enchants:
+          minecraft:protection: 11
+          minecraft:unbreaking: 6
+  '9':
+    original:
+      ==: org.bukkit.inventory.ItemStack
+      v: 4189
+      type: DIAMOND_LEGGINGS
+      meta:
+        ==: ItemMeta
+        meta-type: ARMOR
+        display-name: '{"text":"","extra":[{"text":"Pantalones ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#00CBF5"},{"text":"◆
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"dark_gray"},{"text":"NIVEL
+          11 ","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#FFFF00"},{"text":"🛡","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FFFF00"}]}'
+        enchants:
+          minecraft:protection: 11
+          minecraft:unbreaking: 6
+  '10':
+    original:
+      ==: org.bukkit.inventory.ItemStack
+      v: 4189
+      type: DIAMOND_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: ARMOR
+        display-name: '{"text":"","extra":[{"text":"Pechera ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#00CBF5"},{"text":"◆
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"dark_gray"},{"text":"NIVEL
+          11 ","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#FFFF00"},{"text":"🛡","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FFFF00"}]}'
+        enchants:
+          minecraft:protection: 11
+          minecraft:unbreaking: 6
+  '11':
+    original:
+      ==: org.bukkit.inventory.ItemStack
+      v: 4189
+      type: DIAMOND_HELMET
+      meta:
+        ==: ItemMeta
+        meta-type: ARMOR
+        display-name: '{"text":"","extra":[{"text":"Casco ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#00CBF5"},{"text":"◆
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"dark_gray"},{"text":"NIVEL
+          11 ","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#FFFF00"},{"text":"🛡","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FFFF00"}]}'
+        enchants:
+          minecraft:protection: 11
+          minecraft:unbreaking: 6
+actions:
+  claim:
+    '1':
+      action: 'playsound: BLOCK_NOTE_BLOCK_PLING;10;2'
+      execute_before_items: false
+      count_as_item: false
+    '2':
+      action: 'console_command: dsw sellwand %player% vara 1 1 100'
+      execute_before_items: false
+      count_as_item: false
+  error:
+    '1':
+      action: 'playsound: BLOCK_NOTE_BLOCK_PLING;10;0.1'
+      execute_before_items: false
+      count_as_item: false
