@@ -1,0 +1,7 @@
+Events:
+  cofremagico:
+    type: player_join
+    one_time: true
+    actions:
+      default:
+      - 'console_command: voidcadmin give default %player% 2 0'

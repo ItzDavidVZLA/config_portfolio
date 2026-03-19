@@ -1,0 +1,181 @@
+Events:
+  pvpvanilla-armaduras:
+    type: repetitive
+    repetitive_time: 20
+    conditions:
+    - '%player_world% == pvpvanilla'
+    - '%checkitem_mat:LEATHER_HELMET,inslot:39% == yes 
+    or %checkitem_mat:CHAINMAIL_HELMET,inslot:39% == yes
+    or %checkitem_mat:GOLDEN_HELMET,inslot:39% == yes
+    or %checkitem_mat:IRON_HELMET,inslot:39% == yes
+    or %checkitem_mat:NETHERITE_HELMET,inslot:39% == yes
+    or %checkitem_mat:LEATHER_CHESTPLATE,inslot:38% == yes 
+    or %checkitem_mat:CHAINMAIL_CHESTPLATE,inslot:38% == yes
+    or %checkitem_mat:GOLDEN_CHESTPLATE,inslot:38% == yes
+    or %checkitem_mat:IRON_CHESTPLATE,inslot:38% == yes
+    or %checkitem_mat:NETHERITE_CHESTPLATE,inslot:38% == yes
+    or %checkitem_mat:LEATHER_LEGGINGS,inslot:37% == yes 
+    or %checkitem_mat:CHAINMAIL_LEGGINGS,inslot:37% == yes
+    or %checkitem_mat:GOLDEN_LEGGINGS,inslot:37% == yes
+    or %checkitem_mat:IRON_LEGGINGS,inslot:37% == yes
+    or %checkitem_mat:NETHERITE_LEGGINGS,inslot:37% == yes
+    or %checkitem_mat:LEATHER_BOOTS,inslot:36% == yes 
+    or %checkitem_mat:CHAINMAIL_BOOTS,inslot:36% == yes
+    or %checkitem_mat:GOLDEN_BOOTS,inslot:36% == yes
+    or %checkitem_mat:IRON_BOOTS,inslot:36% == yes
+    or %checkitem_mat:NETHERITE_BOOTS,inslot:36% == yes'
+    actions:
+      default:
+      - 'console_command: spawn %player%'
+      - 'message: &4&l» &cDebes tener el inventario completamente &nvacío&r &cpara poder ir a esta región'
+  pvpvanilla-ench:
+    type: repetitive
+    repetitive_time: 20
+    conditions:
+    - '%player_world% == pvpvanilla'
+    - '%checkitem_mat:DIAMOND_HELMET,enchantments:PROTECTION=4,inslot:39% == yes or 
+    %checkitem_mat:DIAMOND_HELMET,enchantments:PROTECTION=5,inslot:39% == yes or 
+    %checkitem_mat:DIAMOND_HELMET,enchantments:UNBREAKING=4,inslot:39% == yes or 
+    %checkitem_mat:DIAMOND_HELMET,enchantments:UNBREAKING=5,inslot:39% == yes execute casco'
+    - '%checkitem_mat:DIAMOND_CHESTPLATE,enchantments:PROTECTION=4,inslot:38% == yes or 
+    %checkitem_mat:DIAMOND_CHESTPLATE,enchantments:PROTECTION=5,inslot:38% == yes or 
+    %checkitem_mat:DIAMOND_CHESTPLATE,enchantments:UNBREAKING=4,inslot:38% == yes or 
+    %checkitem_mat:DIAMOND_CHESTPLATE,enchantments:UNBREAKING=5,inslot:38% == yes execute pechera'
+    - '%checkitem_mat:DIAMOND_LEGGINGS,enchantments:PROTECTION=4,inslot:37% == yes or 
+    %checkitem_mat:DIAMOND_LEGGINGS,enchantments:PROTECTION=5,inslot:37% == yes or 
+    %checkitem_mat:DIAMOND_LEGGINGS,enchantments:UNBREAKING=4,inslot:37% == yes or 
+    %checkitem_mat:DIAMOND_LEGGINGS,enchantments:UNBREAKING=5,inslot:37% == yes execute pantalones'
+    - '%checkitem_mat:DIAMOND_BOOTS,enchantments:PROTECTION=4,inslot:36% == yes or 
+    %checkitem_mat:DIAMOND_BOOTS,enchantments:PROTECTION=5,inslot:36% == yes or 
+    %checkitem_mat:DIAMOND_BOOTS,enchantments:UNBREAKING=4,inslot:36% == yes or 
+    %checkitem_mat:DIAMOND_BOOTS,enchantments:UNBREAKING=5,inslot:36% == yes execute botas'
+    - '%checkitem_mat:DIAMOND_SWORD,enchantments:SHARPNESS=4% == yes or 
+    %checkitem_mat:DIAMOND_SWORD,enchantments:SHARPNESS=5% == yes or 
+    %checkitem_mat:DIAMOND_SWORD,enchantments:SHARPNESS=6% == yes or 
+    %checkitem_mat:DIAMOND_SWORD,enchantments:FIRE_ASPECT=1% == yes or
+    %checkitem_mat:DIAMOND_SWORD,enchantments:FIRE_ASPECT=2% == yes execute espada'
+    actions:
+      casco:
+      - 'console_command: spawn %player%'
+      - 'message: &4&l» &cDebes tener el inventario completamente &nvacío&r &cpara poder ir a esta región'
+      pechera:
+      - 'console_command: spawn %player%'
+      - 'message: &4&l» &cDebes tener el inventario completamente &nvacío&r &cpara poder ir a esta región'
+      pantalones:
+      - 'console_command: spawn %player%'
+      - 'message: &4&l» &cDebes tener el inventario completamente &nvacío&r &cpara poder ir a esta región'
+      botas:
+      - 'console_command: spawn %player%'
+      - 'message: &4&l» &cDebes tener el inventario completamente &nvacío&r &cpara poder ir a esta región'
+      espada:
+      - 'console_command: spawn %player%'
+      - 'message: &4&l» &cDebes tener el inventario completamente &nvacío&r &cpara poder ir a esta región'
+  pvpvanilla-kit:
+    type: item_interact
+    conditions:
+    - '%player_world% != pvpvanilla and %item% == DIAMOND_HELMET and %item_name% contains Vanilla execute casco'
+    - '%player_world% != pvpvanilla and %item% == DIAMOND_CHESTPLATE and %item_name% contains Vanilla execute pechera'
+    - '%player_world% != pvpvanilla and %item% == DIAMOND_LEGGINGS and %item_name% contains Vanilla execute pantalones'
+    - '%player_world% != pvpvanilla and %item% == DIAMOND_BOOTS and %item_name% contains Vanilla execute botas'
+    - '%player_world% != pvpvanilla and %item% == DIAMOND_SWORD and %item_name% contains Vanilla execute espada'
+    actions:
+      casco:
+      - 'cancel_event: true'
+      - 'message: &4&l» &cEste casco solo puede ser usado en warp &nVanilla'
+      pechera:
+      - 'cancel_event: true'
+      - 'message: &4&l» &cEsta pechera solo puede ser usada en warp &nVanilla'
+      pantalones:
+      - 'cancel_event: true'
+      - 'message: &4&l» &cEstos pantalones solo pueden ser usados en warp &nVanilla'
+      botas:
+      - 'cancel_event: true'
+      - 'message: &4&l» &cEstas botas solo pueden ser usadas en warp &nVanilla'
+      espada:
+      - 'cancel_event: true'
+      - 'message: &4&l» &cEsta espada solo puede ser usada en warp &nVanilla'
+  pvpvanilla-herramientas:
+    type: repetitive
+    repetitive_time: 20
+    conditions:
+    - '%player_world% == pvpvanilla'
+    - '%checkitem_mat:WOODEN_SWORD% == yes 
+    or %checkitem_mat:WOODEN_PICKAXE% == yes
+    or %checkitem_mat:WOODEN_AXE% == yes
+    or %checkitem_mat:WOODEN_SHOVEL% == yes
+    or %checkitem_mat:WOODEN_HOE% == yes
+    or %checkitem_mat:STONE_SWORD% == yes
+    or %checkitem_mat:STONE_PICKAXE% == yes
+    or %checkitem_mat:STONE_AXE% == yes
+    or %checkitem_mat:STONE_SHOVEL% == yes
+    or %checkitem_mat:STONE_HOE% == yes 
+    or %checkitem_mat:GOLDEN_SWORD% == yes
+    or %checkitem_mat:GOLDEN_PICKAXE% == yes
+    or %checkitem_mat:GOLDEN_AXE% == yes
+    or %checkitem_mat:GOLDEN_SHOVEL% == yes
+    or %checkitem_mat:GOLDEN_HOE% == yes 
+    or %checkitem_mat:IRON_SWORD% == yes
+    or %checkitem_mat:IRON_PICKAXE% == yes
+    or %checkitem_mat:IRON_AXE% == yes
+    or %checkitem_mat:IRON_SHOVEL% == yes
+    or %checkitem_mat:IRON_HOE% == yes
+    or %checkitem_mat:DIAMOND_PICKAXE% == yes
+    or %checkitem_mat:DIAMOND_AXE% == yes
+    or %checkitem_mat:DIAMOND_SHOVEL% == yes
+    or %checkitem_mat:DIAMOND_HOE% == yes
+    or %checkitem_mat:NETHERITE_SWORD% == yes
+    or %checkitem_mat:NETHERITE_PICKAXE% == yes
+    or %checkitem_mat:NETHERITE_AXE% == yes
+    or %checkitem_mat:NETHERITE_SHOVEL% == yes
+    or %checkitem_mat:NETHERITE_HOE% == yes'
+    actions:
+      default:
+      - 'console_command: spawn %player%'
+      - 'message: &4&l» &cDebes tener el inventario completamente &nvacío&r &cpara poder ir a esta región'
+  pvpvanilla-efectos:
+    type: player_teleport
+    conditions:
+    - '%to_world% == pvpvanilla'
+    actions:
+      default:
+      - 'remove_potion_effect: INCREASE_DAMAGE'
+      - 'remove_potion_effect: SPEED'
+      - 'remove_potion_effect: JUMP_BOOST'
+      - 'remove_potion_effect: HEALTH_BOOST'
+      - 'remove_potion_effect: ABSORPTION'
+      - 'remove_potion_effect: HASTE'
+      - 'remove_potion_effect: INVISIBILITY'
+  pvpvanilla-utilidades:
+    type: item_interact
+    conditions:
+    - '%player_world% == pvpvanilla'
+    - '%item% == GOLDEN_APPLE or 
+	%item% == ENCHANTED_GOLDEN_APPLE or 
+	%item% == GOLDEN_CARROT or 
+	%item% == POTION or 
+	%item% == SPLASH_POTION or 
+	%item% == LINGERING_POTION or 
+	%item% == ENDER_PEARL or 
+	%item% == FISHING_ROD or 
+	%item% == TRIDENT or 
+	%item% == MACE or 
+	%item% == TOTEM_OF_UNDYING or 
+	%item% == SNOWBALL or 
+	%item% == EGG or 
+	%item% == WIND_CHARGE or 
+	%item% == BOW or 
+	%item% == CROSSBOW or 
+	%item% == FIREWORK_ROCKET or 
+	%item% == SHIELD or 
+	%item% == ELYTRAS'
+    actions:
+      default:
+      - 'cancel_event: true'
+  pvpvanilla-kills:
+    type: player_kill
+    conditions:
+    - '%player_world% == pvpvanilla'
+    actions:
+      default:
+      - 'console_command: eheal %player%'
+      - 'playsound: ENTITY_ZOMBIE_VILLAGER_CURE;1;1'

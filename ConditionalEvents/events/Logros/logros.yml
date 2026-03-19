@@ -1,0 +1,207 @@
+Events:
+  logro1:
+    type: player_join
+    one_time: true
+    actions:
+      default:
+      - 'console_command: at sendAnimation %player% p:BOSSBAR NONE &8&l« &fLogro completado: &bUn nuevo comienzo &8&l»'
+      - 'console_command: lp user %player% permission set logros.ob.1 server=dev-oneblock'
+      - 'console_command: svar add logro_bronce 1 %player%'
+      - 'console_command: svar add estrellas_logros 1 %player%'
+      - 'playsound: UI_TOAST_CHALLENGE_COMPLETE;1;1'
+      - 'message: &8&l» &fLogro completado: &bUn nuevo comienzo'
+  logro2:
+    type: repetitive
+    repetitive_time: 1
+    one_time: true
+    conditions:
+    - '%servervariables_value_misiones_totales% == 1.0'
+    actions:
+      default:
+      - 'console_command: at sendAnimation %player% p:BOSSBAR NONE &8&l« &fLogro completado: &bPrimer trabajo &8&l»'
+      - 'console_command: lp user %player% permission set logros.ob.2 server=dev-oneblock'
+      - 'console_command: svar add logro_bronce 1 %player%'
+      - 'console_command: svar add estrellas_logros 1 %player%'
+      - 'playsound: UI_TOAST_CHALLENGE_COMPLETE;1;1'
+      - 'message: &8&l» &fLogro completado: &bPrimer trabajo'
+  logro3:
+    type: player_kill
+    one_time: true
+    conditions:
+    - '%statistic_player_kills% == 5'
+    actions:
+      default:
+      - 'console_command: at sendAnimation %player% p:BOSSBAR NONE &8&l« &fLogro completado: &bAsesino &8&l»'
+      - 'console_command: lp user %player% permission set logros.ob.3 server=dev-oneblock'
+      - 'console_command: svar add logro_plata 1 %player%'
+      - 'console_command: svar add estrellas_logros 2 %player%'
+      - 'playsound: UI_TOAST_CHALLENGE_COMPLETE;1;1'
+      - 'message: &8&l» &fLogro completado: &bAsesino'
+  logro4:
+    type: player_kill
+    one_time: true
+    conditions:
+    - '%victim% == ZOMBIE or %victim% == SKELETON or %victim% == CREEPER or %victim% == SPIDER or %victim% == ENDERMAN'
+    - '%statistic_mob_kills% == 5'
+    actions:
+      default:
+      - 'console_command: at sendAnimation %player% p:BOSSBAR NONE &8&l« &fLogro completado: &bCazador &8&l»'
+      - 'console_command: lp user %player% permission set logros.ob.4 server=dev-oneblock'
+      - 'console_command: svar add logro_plata 1 %player%'
+      - 'console_command: svar add estrellas_logros 2 %player%'
+      - 'playsound: UI_TOAST_CHALLENGE_COMPLETE;1;1'
+      - 'message: &8&l» &fLogro completado: &bCazador'
+  logro5:
+    type: repetitive
+    repetitive_time: 1
+    one_time: true
+    conditions:
+    - "%player_has_permission_logros.agricultura.papa% == yes"
+    - "%player_has_permission_logros.agricultura.trigo% == yes"
+    - "%player_has_permission_logros.agricultura.zanahoria% == yes"
+    actions:
+      default:
+      - 'console_command: at sendAnimation %player% p:BOSSBAR NONE &8&l« &fLogro completado: &bAgricultor experto &8&l»'
+      - 'console_command: lp user %player% permission set logros.ob.5 server=dev-oneblock'
+      - 'console_command: svar add logro_plata 1 %player%'
+      - 'console_command: svar add estrellas_logros 2 %player%'
+      - 'playsound: UI_TOAST_CHALLENGE_COMPLETE;1;1'
+      - 'message: &8&l» &fLogro completado: &bAgricultor experto'
+  # la config del logro 6 esta en la config del thesearch
+  logro7:
+    type: repetitive
+    repetitive_time: 1
+    one_time: true
+    conditions:
+    - '%codex_total_discoveries% == 23'
+    actions:
+      default:
+      - 'console_command: at sendAnimation %player% p:BOSSBAR NONE &8&l« &fLogro completado: &bMapeador &8&l»'
+      - 'console_command: lp user %player% permission set logros.ob.7 server=dev-oneblock'
+      - 'console_command: svar add logro_plata 1 %player%'
+      - 'console_command: svar add estrellas_logros 2 %player%'
+      - 'playsound: UI_TOAST_CHALLENGE_COMPLETE;1;1'
+      - 'message: &8&l» &fLogro completado: &bMapeador'
+  logro8:
+    type: repetitive
+    repetitive_time: 1
+    one_time: true
+    conditions:
+    - '%auraskills_farming% >= 90'
+    - '%auraskills_fighting% >= 90'
+    - '%auraskills_foraging% >= 90'
+    - '%auraskills_mining% >= 90'
+    - '%auraskills_fishing% >= 90'
+    - '%auraskills_agility% >= 90'
+    - '%auraskills_alchemy% >= 90'
+    - '%auraskills_defense% >= 90'
+    - '%auraskills_endurance% >= 90'
+    - '%auraskills_excavation% >= 90'
+    - '%auraskills_enchanting% >= 90'
+    - '%auraskills_sorcery% >= 90'
+    - '%auraskills_healing% >= 90'
+    - '%auraskills_archery% >= 90'
+    - '%auraskills_forging% >= 90'
+    actions:
+      default:
+      - 'console_command: at sendAnimation %player% p:BOSSBAR NONE &8&l« &fLogro completado: &bLate game &8&l»'
+      - 'console_command: lp user %player% permission set logros.ob.8 server=dev-oneblock'
+      - 'console_command: svar add logro_oro 1 %player%'
+      - 'console_command: svar add estrellas_logros 3 %player%'
+      - 'playsound: UI_TOAST_CHALLENGE_COMPLETE;1;1'
+      - 'message: &8&l» &fLogro completado: &bLate game'
+  logro9:
+    type: player_statistic
+    one_time: true
+    conditions:
+    - "%statistic_name% == MINE_BLOCK"
+    - "%block% == GOLD_ORE"
+    - "%new_value% == 10000"
+    actions:
+      default:
+      - 'console_command: at sendAnimation %player% p:BOSSBAR NONE &8&l« &fLogro completado: &bSaqueador español &8&l»'
+      - 'console_command: lp user %player% permission set logros.ob.9 server=dev-oneblock'
+      - 'console_command: svar add logro_plata 1 %player%'
+      - 'console_command: svar add estrellas_logros 2 %player%'
+      - 'playsound: UI_TOAST_CHALLENGE_COMPLETE;1;1'
+      - 'message: &8&l» &fLogro completado: &bSaqueador español'
+  logro10:
+    type: player_statistic
+    one_time: true
+    conditions:
+    - "%statistic_name% == MINE_BLOCK"
+    - "%block% == DIAMOND_ORE"
+    - "%new_value% == 5000"
+    actions:
+      default:
+      - 'console_command: at sendAnimation %player% p:BOSSBAR NONE &8&l« &fLogro completado: &bSaqueador de diamante &8&l»'
+      - 'console_command: lp user %player% permission set logros.ob.10 server=dev-oneblock'
+      - 'console_command: svar add logro_plata 1 %player%'
+      - 'console_command: svar add estrellas_logros 2 %player%'
+      - 'playsound: UI_TOAST_CHALLENGE_COMPLETE;1;1'
+      - 'message: &8&l» &fLogro completado: &bSaqueador de diamante'
+  # la config del logro 11, 12, 13, 14, 15 y 16 esta en la config del thesearch
+  logro11:
+    type: repetitive
+    repetitive_time: 1
+    one_time: true
+    conditions:
+    - "%pinataparty_vote% == 100"
+    actions:
+      default:
+      - 'console_command: at sendAnimation %player% p:BOSSBAR NONE &8&l« &fLogro completado: &bElector responsable &8&l»'
+      - 'console_command: lp user %player% permission set logros.ob.11 server=dev-oneblock'
+      - 'console_command: svar add logro_plata 1 %player%'
+      - 'console_command: svar add estrellas_logros 2 %player%'
+      - 'playsound: UI_TOAST_CHALLENGE_COMPLETE;1;1'
+      - 'message: &8&l» &fLogro completado: &bElector responsable'
+  logro12:
+    type: player_teleport
+    one_time: true
+    conditions:
+    #- "%player_world% == oneblock_world or "
+    - "%cause% == NETHER_PORTAL"
+    actions:
+      default:
+      - 'console_command: at sendAnimation %player% p:BOSSBAR NONE &8&l« &fLogro completado: &bViaje al nether &8&l»'
+      - 'console_command: lp user %player% permission set logros.ob.12 server=dev-oneblock'
+      - 'console_command: lp user %player% permission set essentials.warps.nether server=dev-oneblock'
+      - 'console_command: svar add logro_plata 1 %player%'
+      - 'console_command: svar add estrellas_logros 2 %player%'
+      - 'playsound: UI_TOAST_CHALLENGE_COMPLETE;1;1'
+      - 'message: &8&l» &fLogro completado: &bViaje al nether'
+  logro13:
+    type: repetitive
+    repetitive_time: 1
+    one_time: true
+    conditions:
+    - "%auction_bid% == 100000000000"
+    actions:
+      default:
+      - 'console_command: at sendAnimation %player% p:BOSSBAR NONE &8&l« &fLogro completado: &bMillonario con sobreprecio &8&l»'
+      - 'console_command: lp user %player% permission set logros.ob.13 server=dev-oneblock'
+      - 'console_command: svar add logro_oro 1 %player%'
+      - 'console_command: svar add estrellas_logros 3 %player%'
+      - 'playsound: UI_TOAST_CHALLENGE_COMPLETE;1;1'
+      - 'message: &8&l» &fLogro completado: &bMillonario con sobreprecio'
+      
+  logro12_noacceso_nether:
+    type: repetitive
+    repetitive_time: 1
+    conditions:
+    - '%player_has_permission_logros.ob.12% == no'
+    - '%player_world% == world_nether or %player_world% == obnether'
+    actions:
+      default:
+      - 'console_command: spawn %player%'
+      - 'message: &4&l» &cNo has desbloqueado el logro &nViaje al Nether&r &cy has sido enviado al spawn'
+  logro_noacceso_end:
+    type: repetitive
+    repetitive_time: 1
+    conditions:
+    - '%player_has_permission_essentials.warps.end% == no'
+    - '%player_world% == world_the_end or %player_world% == world_the_end2'
+    actions:
+      default:
+      - 'console_command: spawn %player%'
+      - 'message: &4&l» &cNo has llegado a &nPlata IV&r &cy has sido enviado al spawn'

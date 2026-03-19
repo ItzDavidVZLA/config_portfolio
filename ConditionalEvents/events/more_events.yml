@@ -1,0 +1,222 @@
+Events:
+  event8:
+    type: player_command
+    conditions:
+    - '%main_command% == /youtube'
+    - '%player% == Ajneb'
+    actions:
+      default:
+      - 'cancel_event: true'
+      - 'message: &7Check the Youtube: &b<link>'
+  event9:
+    type: player_command
+    cooldown: 15
+    prevent_cooldown_activation:
+    - error1
+    - error2
+    conditions:
+    - '%main_command% == /announce'
+    - '%args_length% == 0 execute error1'
+    - '%vault_eco_balance% < 500 execute error2'
+    - '%player% == Ajneb'
+    actions:
+      default:
+      - 'cancel_event: true'
+      - 'to_all: centered_message: &f&m                                                      '
+      - 'to_all: centered_message: &c&lAnnounce'
+      - 'to_all: centered_message: &e%player% &7is making an announcement:'
+      - 'to_all: centered_message:  '
+      - 'to_all: centered_message: &7%args_substring_1-100%'
+      - 'to_all: centered_message:  '
+      - 'to_all: centered_message: &f&m                                                      '
+      - 'console_command: eco take %player% 500'
+      error1:
+      - 'cancel_event: true'
+      - 'message: &cYou have to use &7/announce <message>&c.'
+      error2:
+      - 'cancel_event: true'
+      - 'message: &cYou need $500 to use this command.'
+      cooldown:
+      - 'cancel_event: true'
+      - 'message: &cYou must wait &7%time% &cbefore using this command again.'
+  tempestcommand:
+    type: item_interact
+    conditions:
+    - '%item% == ZOMBIE_SPAWN_EGG'
+    - '%item_name% == ⚡ Invocar a Tempest'
+    - '%action_type% == RIGHT_CLICK'
+    actions:
+      default:
+      - 'cancel_event: true'
+      - 'to_all: message: &8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - 'to_all: centered_message: '
+      - 'to_all: centered_message: &f&l¡UN BOSS HA SIDO INVOCADO!'
+      - 'to_all: centered_message: '
+      - 'to_all: centered_message: &2Tempest ☢'
+      - 'to_all: centered_message: &c500 ❤'
+      - 'to_all: centered_message: &c50 🗡'
+      - 'to_all: centered_message: '
+      - 'to_all: centered_message: &fAl matarlo recibirás las siguientes recompensas:'
+      - 'to_all: centered_message: &3+350 XP de Combate'
+      - 'to_all: centered_message: &b30 Cristales'
+      - 'to_all: centered_message: &b32 Fragmentos Antiguos'
+      - 'to_all: centered_message: '
+      - 'to_all: message: &8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+  balrogcommand:
+    type: item_interact
+    conditions:
+    - '%item% == WITHER_SKELETON_SPAWN_EGG'
+    - '%item_name% == ⚡ Invocar a Balrog'
+    - '%action_type% == RIGHT_CLICK'
+    actions:
+      default:
+      - 'cancel_event: true'
+      - 'to_all: message: &8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - 'to_all: centered_message: '
+      - 'to_all: centered_message: &f&l¡UN BOSS HA SIDO INVOCADO!'
+      - 'to_all: centered_message: '
+      - 'to_all: centered_message: &cBalrog 💀'
+      - 'to_all: centered_message: &c1,000 ❤'
+      - 'to_all: centered_message: &c100 🗡'
+      - 'to_all: centered_message: '
+      - 'to_all: centered_message: &fAl matarlo recibirás las siguientes recompensas:'
+      - 'to_all: centered_message: &3+500 XP de Combate'
+      - 'to_all: centered_message: &b60 Cristales'
+      - 'to_all: centered_message: &b32 Fragmentos Antiguos'
+      - 'to_all: centered_message: '
+      - 'to_all: message: &8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+  sentinelcommand:
+    type: item_interact
+    conditions:
+    - '%item% == ENDERMAN_SPAWN_EGG'
+    - '%item_name% == ⚡ Invocar a Sentinel'
+    - '%action_type% == RIGHT_CLICK'
+    actions:
+      default:
+      - 'cancel_event: true'
+      - 'to_all: message: &8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - 'to_all: centered_message: '
+      - 'to_all: centered_message: &f&l¡UN BOSS HA SIDO INVOCADO!'
+      - 'to_all: centered_message: '
+      - 'to_all: centered_message: &dSentinel ⏣'
+      - 'to_all: centered_message: &c2,500 ❤'
+      - 'to_all: centered_message: &c150 🗡'
+      - 'to_all: centered_message: '
+      - 'to_all: centered_message: &fAl matarlo recibirás las siguientes recompensas:'
+      - 'to_all: centered_message: &3+1,000 XP de Combate'
+      - 'to_all: centered_message: &b90 Cristales'
+      - 'to_all: centered_message: &b32 Fragmentos Antiguos'
+      - 'to_all: centered_message: '
+      - 'to_all: message: &8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+  apexcommand:
+    type: item_interact
+    conditions:
+    - '%item% == PANDA_SPAWN_EGG'
+    - '%item_name% == ⚡ Invocar a Apex'
+    - '%action_type% == RIGHT_CLICK'
+    actions:
+      default:
+      - 'cancel_event: true'
+      - 'to_all: message: &8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - 'to_all: centered_message: '
+      - 'to_all: centered_message: &f&l¡UN BOSS HA SIDO INVOCADO!'
+      - 'to_all: centered_message: '
+      - 'to_all: centered_message: &6Apex ᛃ'
+      - 'to_all: centered_message: &c5,000 ❤'
+      - 'to_all: centered_message: &c300 🗡'
+      - 'to_all: centered_message: '
+      - 'to_all: centered_message: &fAl matarlo recibirás las siguientes recompensas:'
+      - 'to_all: centered_message: &3+1,500 XP de Combate'
+      - 'to_all: centered_message: &b120 Cristales'
+      - 'to_all: centered_message: &b32 Fragmentos Antiguos'
+      - 'to_all: centered_message: '
+      - 'to_all: message: &8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+  evokercommand:
+    type: item_interact
+    conditions:
+    - '%item% == EVOKER_SPAWN_EGG'
+    - '%item_name% == ⚡ Invocar a Evoker'
+    - '%action_type% == RIGHT_CLICK'
+    actions:
+      default:
+      - 'cancel_event: true'
+      - 'to_all: message: &8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - 'to_all: centered_message: '
+      - 'to_all: centered_message: &f&l¡UN BOSS HA SIDO INVOCADO!'
+      - 'to_all: centered_message: '
+      - 'to_all: centered_message: &bEvoker 🔥'
+      - 'to_all: centered_message: &c5,000 ❤'
+      - 'to_all: centered_message: &c200 🗡'
+      - 'to_all: centered_message: '
+      - 'to_all: centered_message: &fAl matarlo recibirás las siguientes recompensas:'
+      - 'to_all: centered_message: &3+3,500 XP de Combate'
+      - 'to_all: centered_message: &b150 Cristales'
+      - 'to_all: centered_message: &b32 Fragmentos Antiguos'
+      - 'to_all: centered_message: '
+      - 'to_all: message: &8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+  abaddoncommand:
+    type: item_interact
+    conditions:
+    - '%item% == ENDERMITE_SPAWN_EGG'
+    - '%item_name% == ⚡ Invocar a Abaddon'
+    - '%action_type% == RIGHT_CLICK'
+    actions:
+      default:
+      - 'cancel_event: true'
+      - 'to_all: message: &8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - 'to_all: centered_message: '
+      - 'to_all: centered_message: &f&l¡UN BOSS HA SIDO INVOCADO!'
+      - 'to_all: centered_message: '
+      - 'to_all: centered_message: &cAbaddon 👹'
+      - 'to_all: centered_message: &c5,000 ❤'
+      - 'to_all: centered_message: &c450 🗡'
+      - 'to_all: centered_message: '
+      - 'to_all: centered_message: &fAl matarlo recibirás las siguientes recompensas:'
+      - 'to_all: centered_message: &3+3,500 XP de Combate'
+      - 'to_all: centered_message: &b150 Cristales'
+      - 'to_all: centered_message: '
+      - 'to_all: message: &8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+  abrameleccommand:
+    type: item_interact
+    conditions:
+    - '%item% == WITHER_SKELETON_SPAWN_EGG'
+    - '%item_name% == ⚡ Invocar a Abramelec'
+    - '%action_type% == RIGHT_CLICK'
+    actions:
+      default:
+      - 'cancel_event: true'
+      - 'to_all: message: &8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - 'to_all: centered_message: '
+      - 'to_all: centered_message: &f&l¡UN BOSS HA SIDO INVOCADO!'
+      - 'to_all: centered_message: '
+      - 'to_all: centered_message: &cAbramelec ⸸'
+      - 'to_all: centered_message: &c3,000 ❤'
+      - 'to_all: centered_message: &c650 🗡'
+      - 'to_all: centered_message: '
+      - 'to_all: centered_message: &fAl matarlo recibirás las siguientes recompensas:'
+      - 'to_all: centered_message: &3+3,500 XP de Combate'
+      - 'to_all: centered_message: &b150 Cristales'
+      - 'to_all: centered_message: '
+      - 'to_all: message: &8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+  abraxascommand:
+    type: item_interact
+    conditions:
+    - '%item% == STRIDER_SPAWN_EGG'
+    - '%item_name% == ⚡ Invocar a Abraxas'
+    - '%action_type% == RIGHT_CLICK'
+    actions:
+      default:
+      - 'cancel_event: true'
+      - 'to_all: message: &8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - 'to_all: centered_message: '
+      - 'to_all: centered_message: &f&l¡UN BOSS HA SIDO INVOCADO!'
+      - 'to_all: centered_message: '
+      - 'to_all: centered_message: &cAbraxas ☠'
+      - 'to_all: centered_message: &c6,000 ❤'
+      - 'to_all: centered_message: &c500 🗡'
+      - 'to_all: centered_message: '
+      - 'to_all: centered_message: &fAl matarlo recibirás las siguientes recompensas:'
+      - 'to_all: centered_message: &3+3,500 XP de Combate'
+      - 'to_all: centered_message: &b150 Cristales'
+      - 'to_all: centered_message: '
+      - 'to_all: message: &8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'

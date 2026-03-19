@@ -1,0 +1,102 @@
+Events:
+  pvpvanilla_diamantecascoench:
+    type: repetitive
+    repetitive_time: 20
+    conditions:
+    - '%player_world% == pvpvanilla'
+    - '%checkitem_mat:DIAMOND_HELMET,inslot:39% == yes'
+    - '%checkitem_enchantments:PROTECTION=4% == yes or %checkitem_enchantments:PROTECTION=5% == yes'
+    - '%checkitem_enchantments:DURABILITY=4% == yes or %checkitem_enchantments:DURABILITY=5% == yes'
+    actions:
+      default:
+      - 'console_command: spawn %player%'
+      - 'message: &4&l» &cNo puedes equipar armaduras ni objetos de netherite, cuero, malla, hierro u oro en esta región'
+  pvpvanilla_diamantepecheraench:
+    type: repetitive
+    repetitive_time: 20
+    conditions:
+    - '%player_world% == pvpvanilla'
+    - '%checkitem_mat:DIAMOND_CHESTPLATE,inslot:38% == yes'
+    - '%checkitem_enchantments:PROTECTION=4% == yes or %checkitem_enchantments:PROTECTION=5% == yes'
+    - '%checkitem_enchantments:DURABILITY=4% == yes or %checkitem_enchantments:DURABILITY=5% == yes'
+    actions:
+      default:
+      - 'console_command: spawn %player%'
+      - 'message: &4&l» &cNo puedes equipar armaduras ni objetos de netherite, cuero, malla, hierro u oro en esta región'
+  pvpvanilla_diamantepantalonesench:
+    type: repetitive
+    repetitive_time: 20
+    conditions:
+    - '%player_world% == pvpvanilla'
+    - '%checkitem_mat:DIAMOND_LEGGINGS,inslot:37% == yes'
+    - '%checkitem_enchantments:PROTECTION=4% == yes or %checkitem_enchantments:PROTECTION=5% == yes'
+    - '%checkitem_enchantments:DURABILITY=4% == yes or %checkitem_enchantments:DURABILITY=5% == yes'
+    actions:
+      default:
+      - 'console_command: spawn %player%'
+      - 'message: &4&l» &cNo puedes equipar armaduras ni objetos de netherite, cuero, malla, hierro u oro en esta región'
+  pvpvanilla_diamantebotasench:
+    type: repetitive
+    repetitive_time: 20
+    conditions:
+    - '%player_world% == pvpvanilla'
+    - '%checkitem_mat:DIAMOND_BOOTS,inslot:36% == yes'
+    - '%checkitem_enchantments:PROTECTION=4% == yes or %checkitem_enchantments:PROTECTION=5% == yes'
+    - '%checkitem_enchantments:DURABILITY=4% == yes or %checkitem_enchantments:DURABILITY=5% == yes'
+    actions:
+      default:
+      - 'console_command: spawn %player%'
+      - 'message: &4&l» &cNo puedes equipar armaduras ni objetos de netherite, cuero, malla, hierro u oro en esta región'
+  pvpvanilla_diamanteespadaench:
+    type: repetitive
+    repetitive_time: 20
+    conditions:
+    - '%player_world% == pvpvanilla'
+    - '%checkitem_mat:DIAMOND_SWORD% == yes'
+    - '%checkitem_enchantments:SHARPNESS=4% == yes or %checkitem_enchantments:SHARPNESS=5% == yes'
+    - '%checkitem_enchantments:DURABILITY=4% == yes or %checkitem_enchantments:DURABILITY=5% == yes'
+    - '%checkitem_enchantments:FIRE_ASPECT=1% == yes or %checkitem_enchantments:FIRE_ASPECT=2% == yes'
+    actions:
+      default:
+      - 'console_command: spawn %player%'
+      - 'message: &4&l» &cNo puedes equipar armaduras ni objetos de netherite, cuero, malla, hierro u oro en esta región'
+  pvpvanilla_diamantepicoench:
+    type: repetitive
+    repetitive_time: 20
+    conditions:
+    - '%player_world% == pvpvanilla'
+    - '%checkitem_mat:DIAMOND_PICKAXE% == yes'
+    actions:
+      default:
+      - 'console_command: spawn %player%'
+      - 'message: &4&l» &cNo puedes equipar armaduras ni objetos de netherite, cuero, malla, hierro u oro en esta región'
+  pvpvanilla_diamantepalaench:
+    type: repetitive
+    repetitive_time: 20
+    conditions:
+    - '%player_world% == pvpvanilla'
+    - '%checkitem_mat:DIAMOND_SHOVEL% == yes'
+    actions:
+      default:
+      - 'console_command: spawn %player%'
+      - 'message: &4&l» &cNo puedes equipar armaduras ni objetos de netherite, cuero, malla, hierro u oro en esta región'
+  pvpvanilla_diamanteazadaench:
+    type: repetitive
+    repetitive_time: 20
+    conditions:
+    - '%player_world% == pvpvanilla'
+    - '%checkitem_mat:DIAMOND_HOE% == yes'
+    actions:
+      default:
+      - 'console_command: spawn %player%'
+      - 'message: &4&l» &cNo puedes equipar armaduras ni objetos de netherite, cuero, malla, hierro u oro en esta región'
+  pvpvanilla_diamantehachaench:
+    type: repetitive
+    repetitive_time: 20
+    conditions:
+    - '%player_world% == pvpvanilla'
+    - '%checkitem_mat:DIAMOND_AXE% == yes'
+    actions:
+      default:
+      - 'console_command: spawn %player%'
+      - 'message: &4&l» &cNo puedes equipar armaduras ni objetos de netherite, cuero, malla, hierro u oro en esta región'

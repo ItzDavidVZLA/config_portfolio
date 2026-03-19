@@ -1,0 +1,15 @@
+Events:
+  slimerepairprueba:
+    type: player_command
+    conditions:
+    - '%command% startsWith /efix or %command% startsWith /erepair or %command% startsWith /fix or %command% startsWith /fix-hand or %command% startsWith /repair or %command% startsWith /repair-hand'
+    actions:
+      default:
+      - 'console_command: eco take %player% 5000'
+  slimerepairprueba2:
+    type: player_command
+    conditions:
+    - '%command% startsWith /fix-all or %command% startsWith /fixall or %command% startsWith /repair-all or %command% startsWith /repairall'
+    actions:
+      default:
+      - 'console_command: eco take %player% 50000'

@@ -1,0 +1,11 @@
+Events:
+  ob-beta:
+    type: repetitive
+    repetitive_time: 1
+    conditions:
+    - '%player_name% != ItzDavidVZLA_'
+    actions:
+      default:
+      - 'kick: &cFuiste expulsado de Oneblock 1.21 ya que no eres participante de
+        su fase beta'
+    enabled: false

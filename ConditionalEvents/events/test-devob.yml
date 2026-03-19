@@ -1,0 +1,173 @@
+Events:
+  test-devob:
+    type: player_join
+    one_time: true
+    conditions:
+    - '%player_name% == ItzDavidVZLA_'
+    actions:
+      default:
+      - 'console_command: lp group default permission set auraskills.skill.farming
+        server=dev-oneblock'
+      - 'console_command: lp group default permission set auraskills.skill.foraging
+        server=dev-oneblock'
+      - 'console_command: lp group default permission set auraskills.skill.mining
+        server=dev-oneblock'
+      - 'console_command: lp group default permission set auraskills.skill.fishing
+        server=dev-oneblock'
+      - 'console_command: lp group default permission set auraskills.skill.excavation
+        server=dev-oneblock'
+      - 'console_command: lp group default permission set auraskills.skill.archery
+        server=dev-oneblock'
+      - 'console_command: lp group default permission set auraskills.skill.defense
+        server=dev-oneblock'
+      - 'console_command: lp group default permission set auraskills.skill.fighting
+        server=dev-oneblock'
+      - 'console_command: lp group default permission set auraskills.skill.agility
+        server=dev-oneblock'
+      - 'console_command: lp group default permission set auraskills.skill.enchanting
+        server=dev-oneblock'
+      - 'console_command: lp group default permission set auraskills.skill.alchemy
+        server=dev-oneblock'
+      - 'console_command: lp group default permission set auraskills.skill.endurance
+        server=dev-oneblock'
+      - 'console_command: lp group default permission set auraskills.skill.healing
+        server=dev-oneblock'
+      - 'console_command: lp group default permission set auraskills.skill.forging
+        server=dev-oneblock'
+      - 'console_command: lp group default permission set auraskills.skill.sorcery
+        server=dev-oneblock'
+      - 'console_command: lp group default permission set auraskills.command.stats
+        server=dev-oneblock'
+      - 'console_command: lp group default permission set auraskills.command.skill
+        server=dev-oneblock'
+      - 'console_command: lp group default permission set axrw.default server=dev-oneblock'
+      - 'console_command: lp group vip permission set axrw.vip server=dev-oneblock'
+      - 'console_command: lp group elite permission set axrw.elite server=dev-oneblock'
+      - 'console_command: lp group ultimate permission set axrw.ultimate server=dev-oneblock'
+      - 'console_command: lp group ultra permission set axrw.ultra server=dev-oneblock'
+      - 'console_command: lp group default permission set axtrade.trade server=dev-oneblock'
+      - 'console_command: lp group default permission set axvaults.vault.1 server=dev-oneblock'
+      - 'console_command: lp group vip permission set axvaults.vault.2 server=dev-oneblock'
+      - 'console_command: lp group ultimate permission set axvaults.vault.3 server=dev-oneblock'
+      - 'console_command: lp group default permission set axvaults.rows.6 server=dev-oneblock'
+      - 'console_command: lp group default permission set aoneblock.phases server=dev-oneblock'
+      - 'console_command: lp group default permission set aoneblock.count server=dev-oneblock'
+      - 'console_command: lp group default permission set aoneblock.island server=dev-oneblock'
+      - 'console_command: lp group default permission set aoneblock.island.ban server=dev-oneblock'
+      - 'console_command: lp group default permission set aoneblock.island.create
+        server=dev-oneblock'
+      - 'console_command: lp group default permission set aoneblock.island.expel axvaults.rows.6
+        server=dev-oneblock'
+      - 'console_command: lp group default permission set aoneblock.island.home server=dev-oneblock'
+      - 'console_command: lp group default permission set aoneblock.island.homes server=dev-oneblock'
+      - 'console_command: lp group default permission set aoneblock.island.info server=dev-oneblock'
+      - 'console_command: lp group default permission set aoneblock.island.lock server=dev-oneblock'
+      - 'console_command: lp group default permission set aoneblock.island.name server=dev-oneblock'
+      - 'console_command: lp group default permission set aoneblock.island.near server=dev-oneblock'
+      - 'console_command: lp group default permission set aoneblock.island.reset server=dev-oneblock'
+      - 'console_command: lp group default permission set aoneblock.island.settings
+        server=dev-oneblock'
+      - 'console_command: lp group default permission set aoneblock.island.sethome
+        server=dev-oneblock'
+      - 'console_command: lp group default permission set aoneblock.island.spawn server=dev-oneblock'
+      - 'console_command: lp group default permission set aoneblock.island.team server=dev-oneblock'
+      - 'console_command: lp group default permission set aoneblock.island.team.accept
+        server=dev-oneblock'
+      - 'console_command: lp group default permission set aoneblock.island.team.coop
+        server=dev-oneblock'
+      - 'console_command: lp group default permission set aoneblock.island.invite
+        server=dev-oneblock'
+      - 'console_command: lp group default permission set aoneblock.island.kick server=dev-oneblock'
+      - 'console_command: lp group default permission set aoneblock.island.leave server=dev-oneblock'
+      - 'console_command: lp group default permission set aoneblock.island.promote
+        server=dev-oneblock'
+      - 'console_command: lp group default permission set aoneblock.island.reject
+        server=dev-oneblock'
+      - 'console_command: lp group default permission set aoneblock.island.setowner
+        server=dev-oneblock'
+      - 'console_command: lp group default permission set aoneblock.island.trust server=dev-oneblock'
+      - 'console_command: lp group default permission set aoneblock.respawn-block
+        server=dev-oneblock'
+      - 'console_command: lp group default permission set aoneblock.bank.user server=dev-oneblock'
+      - 'console_command: lp group default permission set aoneblock.bank.user.balance
+        server=dev-oneblock'
+      - 'console_command: lp group default permission set aoneblock.bank.user.statement
+        server=dev-oneblock'
+      - 'console_command: lp group default permission set aoneblock.bank.user.baltop
+        server=dev-oneblock'
+      - 'console_command: lp group default permission set aoneblock.chat.team-chat
+        server=dev-oneblock'
+      - 'console_command: lp group default permission set aoneblock.chat.island-chat
+        server=dev-oneblock'
+      - 'console_command: lp group default permission set aoneblock.intopten server=dev-oneblock'
+      - 'console_command: lp group default permission set aoneblock.island.level server=dev-oneblock'
+      - 'console_command: lp group default permission set aoneblock.island.top server=dev-oneblock'
+      - 'console_command: lp group default permission set aoneblock.island.value server=dev-oneblock'
+      - 'console_command: lp group default permission set aoneblock.likes server=dev-oneblock'
+      - 'console_command: lp group default permission set aoneblock.likes.top server=dev-oneblock'
+      - 'console_command: lp group default permission set aoneblock.likes.view server=dev-oneblock'
+      - 'console_command: lp group default permission set aoneblock.stone-generator
+        server=dev-oneblock'
+      - 'console_command: lp group default permission set aoneblock.stone-generator.active-generators.3
+        server=dev-oneblock'
+      - 'console_command: lp group default permission set aoneblock.visit server=dev-oneblock'
+      - 'console_command: lp group default permission set aoneblock.visit.configure
+        server=dev-oneblock'
+      - 'console_command: lp group default permission set aoneblock.island.warp server=dev-oneblock'
+      - 'console_command: lp group default permission set aoneblock.island.addwarp
+        server=dev-oneblock'
+      - 'console_command: lp group vip permission set deluxeauctions.vip server=dev-oneblock'
+      - 'console_command: lp group elite permission set deluxeauctions.elite server=dev-oneblock'
+      - 'console_command: lp group ultimate permission set deluxeauctions.ultimate
+        server=dev-oneblock'
+      - 'console_command: lp group ultra permission set deluxeauctions.ultra server=dev-oneblock'
+      - 'console_command: lp group default permission set ecobits.command.balance
+        server=dev-oneblock'
+      - 'console_command: lp group default permission set elevator.commands.help server=dev-oneblock'
+      - 'console_command: lp group default permission set elevator.commands.create
+        server=dev-oneblock'
+      - 'console_command: lp group default permission set elevator.commands.list server=dev-oneblock'
+      - 'console_command: lp group default permission set elevator.use server=dev-oneblock'
+      - 'console_command: lp group default permission set essentials.back server=dev-oneblock'
+      - 'console_command: lp group default permission set essentials.balance server=dev-oneblock'
+      - 'console_command: lp group default permission set essentials.balance.top server=dev-oneblock'
+      - 'console_command: lp group default permission set essentials.home server=dev-oneblock'
+      - 'console_command: lp group default permission set essentials.sethome server=dev-oneblock'
+      - 'console_command: lp group default permission set essentials.pay server=dev-oneblock'
+      - 'console_command: lp group default permission set essentials.tpa server=dev-oneblock'
+      - 'console_command: lp group default permission set essentials.tpaccept server=dev-oneblock'
+      - 'console_command: lp group default permission set essentials.tpacancel server=dev-oneblock'
+      - 'console_command: lp group default permission set essentials.tpdeny server=dev-oneblock'
+      - 'console_command: lp group default permission set essentials.warp server=dev-oneblock'
+      - 'console_command: lp group default permission set essentials.warps.pvp server=dev-oneblock'
+      - 'console_command: lp group default permission set essentials.warps.taberna
+        server=dev-oneblock'
+      - 'console_command: lp group default permission set essentials.warps.encantamientos
+        server=dev-oneblock'
+      - 'console_command: lp group default permission set essentials.warps.pesca server=dev-oneblock'
+      - 'console_command: lp group default permission set essentials.warps.cueva server=dev-oneblock'
+      - 'console_command: lp group default permission set essentials.warps.puerto
+        server=dev-oneblock'
+      - 'console_command: lp group default permission set essentials.warps.volcan
+        server=dev-oneblock'
+      - 'console_command: lp group default permission set essentials.warps.palacio
+        server=dev-oneblock'
+      - 'console_command: lp group default permission set essentials.warps.eventos
+        server=dev-oneblock'
+      - 'console_command: lp group default permission set essentials.spawn server=dev-oneblock'
+      - 'console_command: lp group default permission set gsit.sit.* server=dev-oneblock'
+      - 'console_command: lp group default permission set odailyquests.use server=dev-oneblock'
+      - 'console_command: lp group default permission set playerkits.kit.Usuario server=dev-oneblock'
+      - 'console_command: lp group vip permission set playerkits.kit.VIP server=dev-oneblock'
+      - 'console_command: lp group elite permission set playerkits.kit.ELITE server=dev-oneblock'
+      - 'console_command: lp group ultimate permission set playerkits.kit.ULTIMATE
+        server=dev-oneblock'
+      - 'console_command: lp group ultra permission set playerkits.kit.ULTRA server=dev-oneblock'
+      - 'console_command: lp group default permission set prisonranksx.ranks server=dev-oneblock'
+      - 'console_command: lp group default permission set prisonranksx.rankup server=dev-oneblock'
+      - 'console_command: lp group default permission set quests.command server=dev-oneblock'
+      - 'console_command: lp group default permission set quests.command.start server=dev-oneblock'
+      - 'console_command: lp group default permission set quests.command.cancel server=dev-oneblock'
+      - 'console_command: lp group default permission set quests.command server=dev-oneblock'
+      - 'console_command: lp group default permission set uclans.player server=dev-oneblock'
+    enabled: false

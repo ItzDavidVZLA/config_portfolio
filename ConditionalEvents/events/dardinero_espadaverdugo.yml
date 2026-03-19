@@ -1,0 +1,10 @@
+Events:
+  dardinero_espadaverdugo1:
+    type: player_kill
+    conditions:
+    - "%victim% == ZOMBIE or %victim% == SKELETON or %victim% == CREEPER or %victim% == ENDERMAN or %victim% == PIGMAN or %victim% == PIGLIN_BRUTE or %victim% == PIGLIN or %victim% == WITHER or %victim% == WITHER_SKELETON or "
+    - "%item% == GOLDEN_SWORD"
+    - "%item_name% == Espada ◆ VERDUGO 🗡"
+    actions:
+      default:
+      - "console_command: eco give %player% 1"

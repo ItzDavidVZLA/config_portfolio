@@ -1,0 +1,8 @@
+Events:
+  vetardogta3333:
+    type: player_join
+    conditions:
+    - '%player% == GoatLena_'
+    actions:
+      default:
+      - 'kick: PROHIBIDO PERUANOS EN MINECRAFT ❌👨🏿'

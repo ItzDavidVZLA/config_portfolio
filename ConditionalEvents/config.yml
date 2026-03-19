@@ -1,0 +1,448 @@
+Config:
+  update_notification: true
+  data_save_time: 5
+  debug_actions: true
+  register_commands:
+  - hello
+  - key
+  - keys
+  - llave
+  - llaves
+  - bctempest
+  - bcbalrog
+  - bcsentinel
+  - bcapex
+  - bcevoker
+  - bctempest2
+  - bcbalrog2
+  - bcsentinel2
+  - bcapex2
+  - bcevoker2
+  - tiktok
+  to_condition_groups:
+    group1:
+    - '%player_has_permission_conditionalevents.somepermission% == yes'
+  experimental:
+    variable_replacement: false
+Messages:
+  prefix: ''
+  commandReload: '&aConfig Reloaded.'
+  commandNoPermissions: '&4&l» &cNo tienes permiso para ejecutar este comando.'
+  commandResetError: '&cUse &7/ce reset <player> <event>/all'
+  eventDoesNotExists: '&cThat event doesn''t exists on the config.'
+  eventDataReset: '&aData reset for player &e%player% &aon event &e%event%&a!'
+  eventDataResetAll: '&aAll data reset for player &e%player%&a!'
+  eventDataResetForAllPlayers: '&aData reset for &eall players &aon event &e%event%&a!'
+  eventDataResetAllForAllPlayers: '&aAll player data reset.'
+  eventEnableError: '&cUse &7/ce enable <event>'
+  eventDisableError: '&cUse &7/ce disable <event>'
+  eventEnabled: '&aEvent &7%event% &aenabled.'
+  eventDisabled: '&aEvent &7%event% &adisabled.'
+  commandDebugError: '&cUse &7/ce debug <event>'
+  debugEnabled: '&aDebug now enabled for event &7%event%&a!'
+  debugDisabled: '&aDebug disabled for event &7%event%&a!'
+  debugEnabledPlayer: '&aDebug now enabled for event &7%event% &aand player &7%player%&a!'
+  debugDisabledPlayer: '&aDebug disabled for event &7%event% &aand player &7%player%&a!'
+  onlyPlayerCommand: '&cThis command can be only used by a player.'
+  playerDoesNotExists: '&cThat player doesn''t have any data.'
+  seconds: s
+  minutes: m
+  hours: h
+  days: d
+  placeholderAPICooldownReady: Ready!
+  placeholderAPICooldownNameError: No event with that name!
+  commandCallError: '&cUse &7/ce call <event> (optional)%variable1%=<value1>;%variableN%=<valueN>
+    (optional)player:<player>'
+  commandCallInvalidEvent: '&cYou can only execute a CALL event.'
+  commandCallCorrect: '&aEvent &7%event% &asuccessfully executed.'
+  commandCallCorrectPlayer: '&aEvent &7%event% &asuccessfully executed for player
+    &7%player%&a.'
+  commandCallFailed: '&cEvent &7%event% &ccould not be executed. Maybe a format error?'
+  playerNotOnline: '&cThat player is not online.'
+  commandItemError: '&cUse &7/ce item <save/remove> <name>'
+  savedItemDoesNotExists: '&cThat saved item doesn''t exists.'
+  savedItemRemoved: '&aItem &7%name% &aremoved.'
+  mustHaveItemInHand: '&cYou must have an item on your hand.'
+  savedItemAlreadyExists: '&cA saved item with that name already exists.'
+  savedItemAdded: '&aItem &7%name% &asaved.'
+  commandInterruptError: '&cUse &7/ce interrupt <event> (optional)<player>'
+  commandInterruptCorrect: '&aActions of event &7%event% &ainterrupted.'
+  commandInterruptCorrectPlayer: '&aActions of event &7%event% &ainterrupted for player
+    &7%player%&a.'
+Events:
+  event1:
+    type: player_join
+    conditions:
+    - '%player% == Ajneb'
+    actions:
+      default:
+      - 'to_all: message: &a&l[ALERT] &f&lAjneb joined the game!'
+  event2:
+    type: block_interact
+    one_time: true
+    conditions:
+    - '%block_x% == 20'
+    - '%block_y% == 60'
+    - '%block_z% == 20'
+    - '%block_world% == lobby'
+    - '%block% == STONE_BUTTON'
+    - '%action_type% == RIGHT_CLICK'
+    - '%player_has_permission_conditionalevents.event.event2% == no execute actions2'
+    - '%player% == Ajneb'
+    actions:
+      default:
+      - 'message: &aYou''ve received $500!'
+      - 'console_command: eco give %player% 500'
+      - 'playsound: ENTITY_PLAYER_LEVELUP;10;2'
+      actions2:
+      - 'message: &cYou need to have a rank to use this button.'
+      one_time:
+      - 'message: &cYou can claim this reward just once!'
+  event3:
+    type: player_attack
+    conditions:
+    - '%victim% == PLAYER'
+    - '%item% == DIAMOND_SWORD'
+    - '%item_name% == Super Sword'
+    - '%random_1_10% >= 8'
+    - '%player% == Ajneb'
+    actions:
+      default:
+      - 'message: &aYour diamond sword poison effect was activated! &6%target:player_name%
+        &ais now poisoned!'
+      - 'to_target: give_potion_effect: POISON;120;1'
+      - 'to_target: message: &cYou were poisoned by &e%player%&c!'
+  event4:
+    type: block_break
+    ignore_with_permission: conditionalevents.ignore.event4
+    conditions:
+    - '%block_world% == spawn'
+    - '%player% == Ajneb'
+    actions:
+      default:
+      - 'cancel_event: true'
+      - 'message: &cYou can''t break blocks on this world.'
+      - 'playsound: BLOCK_NOTE_BLOCK_PLING;10;0.1'
+  event5:
+    type: player_command
+    ignore_with_permission: conditionalevents.ignore.event5
+    conditions:
+    - '%main_command% equalsIgnoreCase //calc or %main_command% equalsIgnoreCase //solve
+      or %main_command% equalsIgnoreCase //eval'
+    actions:
+      default:
+      - 'cancel_event: true'
+  event6:
+    type: repetitive
+    repetitive_time: 10
+    conditions:
+    - '%player% == Ajneb'
+    - '%player_world% == plotworld'
+    - '%player_gamemode% != CREATIVE'
+    actions:
+      default:
+      - 'gamemode: CREATIVE'
+      - 'actionbar: &6Changing gamemode to creative.;100'
+  event7:
+    type: player_command
+    conditions:
+    - '%main_command% == /hello'
+    - '%player% == Ajneb'
+    actions:
+      default:
+      - 'cancel_event: true'
+      - 'message: &7You said hello to nearby players!'
+      - 'to_range: 10;false: message: &e%player% &7says you hello!'
+  netherpe:
+    type: player_teleport
+    conditions:
+    - '%cause% == NETHER_PORTAL or %cause% == END_PORTAL or %cause% == END_GATEWAY'
+    - '%player_world% == spawn'
+    actions:
+      default:
+      - 'cancel_event: true'
+  noacceso_nether:
+    type: repetitive
+    repetitive_time: 20
+    conditions:
+    - '%player_has_permission_logros.ob.12% == no'
+    - '%player_world% == world_nether or %player_world% == obnether'
+    actions:
+      default:
+      - 'console_command: spawn %player%'
+      - 'message: &4&l» &cNo has desbloqueado el logro &nViaje al Nether&r &cy has
+        sido enviado al spawn'
+  acceso_netherrr:
+    type: repetitive
+    repetitive_time: 1
+    one_time: true
+    conditions:
+    - '%player_world% == oneblock_world_nether'
+    actions:
+      default:
+      - 'console_command: lp user %player% permission set logros.ob.12 true server=oneblock21'
+  noacceso_end:
+    type: repetitive
+    repetitive_time: 1
+    conditions:
+    - '%player_has_permission_essentials.warps.end% == no'
+    - '%player_world% == world_the_end or %player_world% == world_the_end2'
+    actions:
+      default:
+      - 'console_command: spawn %player%'
+      - 'message: &4&l» &cNo has llegado a &nPlata IV&r &cy has sido enviado al spawn'
+  netherpvpnoescapar:
+    type: repetitive
+    repetitive_time: 1
+    conditions:
+    - '%player_y% <= 3'
+    - '%player_world% == obnether'
+    actions:
+      default:
+      - 'console_command: etp %player% 500.5 100 500.5 '
+  taberna_slots:
+    type: server_stop
+    actions:
+      default:
+      - 'console_command: svar reset tabernabebida1_stock *'
+      - 'console_command: svar reset tabernabebida2_stock *'
+      - 'console_command: svar reset tabernabebida3_stock *'
+      - 'console_command: svar reset tabernacomida1_stock *'
+      - 'console_command: svar reset tabernacomida2_stock *'
+      - 'console_command: svar reset tabernacomida3_stock *'
+      - 'console_command: svar reset tabernacomida4_stock *'
+      - 'console_command: svar reset tabernacomida5_stock *'
+  verllaves:
+    type: player_command
+    conditions:
+    - '%main_command% == /keys or %main_command% == /key or %main_command% == /llave
+      or %main_command% == /llaves'
+    actions:
+      default:
+      - 'cancel_event: true'
+      - 'message: &r &8&l≡ &f&lLLAVES:'
+      - 'message: &r &8◆ &fLlave Común &8» &b%excellentcrates_keys_excellentcrates_comun%'
+      - 'message: &r &8◆ &fLlave &aPoco Común &8» &b%excellentcrates_keys_excellentcrates_pococomun%'
+      - 'message: &r &8◆ &fLlave &9Rara &8» &b%excellentcrates_keys_excellentcrates_rara%'
+      - 'message: &r &8◆ &fLlave &5Épica &8» &b%excellentcrates_keys_excellentcrates_epica%'
+      - 'message: &r &8◆ &fLlave &6Legendaria &8» &b%excellentcrates_keys_excellentcrates_legendaria%'
+      - 'message: &r &8◆ &fLlave &4Koth &8» &b%excellentcrates_keys_excellentcrates_koth%'
+      - 'message: &r &8◆ &fLlave &3Voto &8» &b%excellentcrates_keys_excellentcrates_voto%'
+  menuendspawn:
+    type: player_command
+    conditions:
+    - '%main_command% equalsIgnoreCase /menu_end_teleport'
+    - '%player_world% != world_the_end2'
+    actions:
+      default:
+      - 'cancel_event: true'
+  menunetherspawn:
+    type: player_command
+    conditions:
+    - '%main_command% equalsIgnoreCase /holnether'
+    - '%player_world% != world_nether'
+    actions:
+      default:
+      - 'cancel_event: true'
+  bcbosses:
+    type: console_command
+    conditions:
+    - '%main_command% == bctempest execute tempest'
+    - '%main_command% == bcbalrog execute balrog'
+    - '%main_command% == bcsentinel execute sentinel'
+    - '%main_command% == bcapex execute apex'
+    - '%main_command% == bcevoker execute evoker'
+    actions:
+      tempest:
+      - 'cancel_event: true'
+      - 'to_all: message: &r '
+      - 'to_all: message: &r &8&l≡&r &f¡&2Tempest ☢ &faparecerá en &b10 segundos&f!'
+      - 'to_all: message: &r &8→ &f¡Ejecuta &6/warp boss &fpara participar!'
+      - 'to_all: message: &r '
+      - 'to_all: wait: 1'
+      - 'to_all: playsound: ENTITY_ZOMBIE_INFECT;10;2'
+      - 'to_all: wait_ticks: 10'
+      - 'to_all: playsound: ENTITY_ZOMBIE_INFECT;10;2'
+      - 'to_all: wait_ticks: 10'
+      - 'to_all: playsound: ENTITY_ZOMBIE_INFECT;10;2'
+      balrog:
+      - 'cancel_event: true'
+      - 'to_all: message: &r '
+      - 'to_all: message: &r &8&l≡&r &f¡&cBalrog 💀 &faparecerá en &b10 segundos&f!'
+      - 'to_all: message: &r &8→ &f¡Ejecuta &6/warp boss &fpara participar!'
+      - 'to_all: message: &r '
+      - 'to_all: wait: 1'
+      - 'to_all: playsound: ENTITY_ZOMBIE_INFECT;10;2'
+      - 'to_all: wait_ticks: 10'
+      - 'to_all: playsound: ENTITY_ZOMBIE_INFECT;10;2'
+      - 'to_all: wait_ticks: 10'
+      - 'to_all: playsound: ENTITY_ZOMBIE_INFECT;10;2'
+      sentinel:
+      - 'cancel_event: true'
+      - 'to_all: message: &r '
+      - 'to_all: message: &r &8&l≡&r &f¡&dSentinel ⏣ &faparecerá en &b10 segundos&f!'
+      - 'to_all: message: &r &8→ &f¡Ejecuta &6/warp boss &fpara participar!'
+      - 'to_all: message: &r '
+      - 'to_all: wait: 1'
+      - 'to_all: playsound: ENTITY_ZOMBIE_INFECT;10;2'
+      - 'to_all: wait_ticks: 10'
+      - 'to_all: playsound: ENTITY_ZOMBIE_INFECT;10;2'
+      - 'to_all: wait_ticks: 10'
+      - 'to_all: playsound: ENTITY_ZOMBIE_INFECT;10;2'
+      apex:
+      - 'cancel_event: true'
+      - 'to_all: message: &r '
+      - 'to_all: message: &r &8&l≡&r &f¡&6Apex ᛃ &faparecerá en &b10 segundos&f!'
+      - 'to_all: message: &r &8→ &f¡Ejecuta &6/warp boss &fpara participar!'
+      - 'to_all: message: &r '
+      - 'to_all: wait: 1'
+      - 'to_all: playsound: ENTITY_ZOMBIE_INFECT;10;2'
+      - 'to_all: wait_ticks: 10'
+      - 'to_all: playsound: ENTITY_ZOMBIE_INFECT;10;2'
+      - 'to_all: wait_ticks: 10'
+      - 'to_all: playsound: ENTITY_ZOMBIE_INFECT;10;2'
+      evoker:
+      - 'cancel_event: true'
+      - 'to_all: message: &r '
+      - 'to_all: message: &r &8&l≡&r &f¡&bEvoker 🔥 &faparecerá en &b10 segundos&f!'
+      - 'to_all: message: &r &8→ &f¡Ejecuta &6/warp boss &fpara participar!'
+      - 'to_all: message: &r '
+      - 'to_all: wait: 1'
+      - 'to_all: playsound: ENTITY_ZOMBIE_INFECT;10;2'
+      - 'to_all: wait_ticks: 10'
+      - 'to_all: playsound: ENTITY_ZOMBIE_INFECT;10;2'
+      - 'to_all: wait_ticks: 10'
+      - 'to_all: playsound: ENTITY_ZOMBIE_INFECT;10;2'
+  tiktokreward:
+    type: player_command
+    one_time: true
+    conditions:
+    - '%main_command% == /tiktok execute tiktokreward'
+    actions:
+      tiktokreward:
+      - 'cancel_event: true'
+      - 'to_all: message: &r '
+      - 'to_all: message: &r &8&l≡&r &f¡&b%player% &fha reclamado su &erecompensa
+        &fde &d&nbienvenida&f!'
+      - 'to_all: message: &r &8→ &f¡Ejecuta &a&n/tiktok&f &fpara recibir la tuya!'
+      - 'message: &r'
+      - 'message: &r &8» &fHas activado tu &erecompensa&f de &d&nbienvenida&f &fy
+        has recibido:'
+      - 'message: &r &8● &a&lVIP &7[7 días]'
+      - 'message: &r &8● &6150,000 ⛃'
+      - 'message: &r &8● &b1,250 cristales ❖'
+      - 'message: &r &8● &fLlave Común &7[x16]'
+      - 'message: &r &8● &fLlave &aPoco Común &7[x12]'
+      - 'message: &r &8● &fLlave &9Rara &7[x8]'
+      - 'message: &r &8● &fLlave &5Épica &7[x8]'
+      - 'message: &r &8● &fLlave &6Legendaria &7[x4]'
+      - 'message: &r '
+      - 'message: &r &e⭐ Disfruta tu estadía en el servidor ⭐'
+      - 'message: &r '
+      - 'to_all: message: &r '
+      - 'to_all: playsound: ENTITY_EXPERIENCE_ORB_PICKUP;10;1'
+      - 'to_all: wait_ticks: 5'
+      - 'to_all: playsound: ENTITY_EXPERIENCE_ORB_PICKUP;10;1'
+      - 'to_all: wait_ticks: 5'
+      - 'to_all: playsound: ENTITY_EXPERIENCE_ORB_PICKUP;10;1'
+      - 'to_all: wait_ticks: 5'
+      - 'to_all: playsound: ENTITY_EXPERIENCE_ORB_PICKUP;10;1'
+      - 'to_all: wait_ticks: 5'
+      - 'to_all: playsound: ENTITY_EXPERIENCE_ORB_PICKUP;10;1'
+      - 'console_command: lp user %player% parent addtemp vip 7d server=oneblock21'
+      - 'console_command: eco give %player% 150000'
+      - 'console_command: crystals give %player% 1250'
+      - 'console_command: crate key give %player% llave_comun 16'
+      - 'console_command: crate key give %player% llave_comun 16'
+      - 'console_command: crate key give %player% llave_pococomun 16'
+      - 'console_command: crate key give %player% llave_rara 16'
+      - 'console_command: crate key give %player% llave_epica 16'
+      - 'console_command: crate key give %player% llave_legendaria 16'
+      balrog:
+      - 'cancel_event: true'
+      - 'to_all: message: &r '
+      - 'to_all: message: &r &8&l≡&r &f¡&cBalrog 💀 &faparecerá en &b10 segundos&f!'
+      - 'to_all: message: &r &8→ &f¡Ejecuta &6/warp boss &fpara participar!'
+      - 'to_all: message: &r '
+      - 'to_all: wait: 1'
+      - 'to_all: playsound: ENTITY_ZOMBIE_INFECT;10;2'
+      - 'to_all: wait_ticks: 10'
+      - 'to_all: playsound: ENTITY_ZOMBIE_INFECT;10;2'
+      - 'to_all: wait_ticks: 10'
+      - 'to_all: playsound: ENTITY_ZOMBIE_INFECT;10;2'
+      sentinel:
+      - 'cancel_event: true'
+      - 'to_all: message: &r '
+      - 'to_all: message: &r &8&l≡&r &f¡&dSentinel ⏣ &faparecerá en &b10 segundos&f!'
+      - 'to_all: message: &r &8→ &f¡Ejecuta &6/warp boss &fpara participar!'
+      - 'to_all: message: &r '
+      - 'to_all: wait: 1'
+      - 'to_all: playsound: ENTITY_ZOMBIE_INFECT;10;2'
+      - 'to_all: wait_ticks: 10'
+      - 'to_all: playsound: ENTITY_ZOMBIE_INFECT;10;2'
+      - 'to_all: wait_ticks: 10'
+      - 'to_all: playsound: ENTITY_ZOMBIE_INFECT;10;2'
+      apex:
+      - 'cancel_event: true'
+      - 'to_all: message: &r '
+      - 'to_all: message: &r &8&l≡&r &f¡&6Apex ᛃ &faparecerá en &b10 segundos&f!'
+      - 'to_all: message: &r &8→ &f¡Ejecuta &6/warp boss &fpara participar!'
+      - 'to_all: message: &r '
+      - 'to_all: wait: 1'
+      - 'to_all: playsound: ENTITY_ZOMBIE_INFECT;10;2'
+      - 'to_all: wait_ticks: 10'
+      - 'to_all: playsound: ENTITY_ZOMBIE_INFECT;10;2'
+      - 'to_all: wait_ticks: 10'
+      - 'to_all: playsound: ENTITY_ZOMBIE_INFECT;10;2'
+      evoker:
+      - 'cancel_event: true'
+      - 'to_all: message: &r '
+      - 'to_all: message: &r &8&l≡&r &f¡&bEvoker 🔥 &faparecerá en &b10 segundos&f!'
+      - 'to_all: message: &r &8→ &f¡Ejecuta &6/warp boss &fpara participar!'
+      - 'to_all: message: &r '
+      - 'to_all: wait: 1'
+      - 'to_all: playsound: ENTITY_ZOMBIE_INFECT;10;2'
+      - 'to_all: wait_ticks: 10'
+      - 'to_all: playsound: ENTITY_ZOMBIE_INFECT;10;2'
+      - 'to_all: wait_ticks: 10'
+      - 'to_all: playsound: ENTITY_ZOMBIE_INFECT;10;2'
+  # bloquesrotos:
+  # type: block_break
+  # actions:
+  # default:
+  # - 'console_command: svar add eventocomunitario 1'
+  # - 'to_all: message: &r &8→ &f¡&b%player% &fha contribuido al &b&nevento comunitario&f!'
+  bloquesrotos:
+    type: block_break
+    conditions:
+    - '%block% == STONE'
+    - '%servervariables_globalvalue_eventocomunitario% < 15000'
+    actions:
+      default:
+      - 'console_command: svar add eventocomunitario 1'
+      - 'to_all: message: &r &8→ &f¡&b%player% &fha contribuido al &b&nevento comunitario&f!
+        &d(%servervariables_globalvalue_eventocomunitario%)'
+  matarvacas2:
+    type: player_kill
+    one_time: true
+    conditions:
+    - '%victim% == COW'
+    - '%servervariables_globalvalue_eventocomunitariovacas% == 60'
+    actions:
+      default:
+      - 'cancel_event: true'
+      - 'to_all: message: &r &8→ &f¡&b%player% &fha contribuido al &b&nevento comunitario&f!
+        &d(%servervariables_globalvalue_eventocomunitariovacas%)'
+
+
+
+
+
+
+# ejemplodamageboss:
+# type: player_attack
+# conditions:
+# - "%player_world% == spawn"
+# actions:
+# default:
+# - "set_damage: 200"

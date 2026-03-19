@@ -1,0 +1,49 @@
+Events:
+  recompensas1:
+    type: repetitive
+    repetitive_time: 432000
+    conditions:
+    - '%slipcorpvpstats_top_kills_1% == 12321'
+    actions:
+      default:
+      #- 'wait_ticks: 72000'
+      - 'console_command: ecobits give %player% cristales 3'
+      - 'console_command: ebc &b%player% &fes el jugador con mas &casesinatos &fy ha ganado &b3 cristales ❖'
+  recompensas2:
+    type: repetitive
+    repetitive_time: 432000
+    conditions:
+    - '%topmobkills% == 1'
+    actions:
+      default:
+      - 'wait_ticks: 72000'
+      - 'console_command: ecobits give %player% cristales 3'
+      - 'console_command: ebc &b%player% &fes el jugador con mas &amobs asesinados &fy ha ganado &b3 cristales ❖'
+  recompensas3:
+    type: repetitive
+    repetitive_time: 432000
+    conditions:
+    - '%topblocksbroken% == 1'
+    actions:
+      default:
+      - 'wait_ticks: 72000'
+      - 'console_command: ecobits give %player% cristales 3'
+      - 'console_command: ebc &b%player% &fes el jugador con mas &6bloques rotos &fy ha ganado &b3 cristales ❖' 
+  recompensas4:
+    type: repetitive
+    repetitive_time: 432000
+    conditions:
+    - '%tophorasjugadas% == 1'
+    actions:
+      default:
+      - 'wait_ticks: 72000'
+      - 'console_command: ecobits give %player% cristales 3'
+      - 'console_command: ebc &b%player% &fes el jugador con mas &bhoras jugadas &fy ha ganado &b3 cristales ❖'
+
+  recompensas_hora:
+    type: repetitive
+    repetitive_time: 72000
+    actions:
+      default:
+      - 'console_command: ecobits give %player% cristales 1'
+      - 'message: &8&l» &fHas jugado por &b1 hora &fy has recibido &b1 cristal ❖'

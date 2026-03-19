@@ -1,0 +1,91 @@
+Events:
+  pvpvanilla_goldenhelmet:
+    type: repetitive
+    repetitive_time: 20
+    conditions:
+    - '%player_world% == pvpvanilla'
+    - '%checkitem_mat:GOLDEN_HELMET,inslot:39% == yes'
+    actions:
+      default:
+      - 'console_command: spawn %player%'
+      - 'message: &4&l» &cNo puedes equipar armaduras ni objetos de netherite, cuero, malla, hierro u oro en esta región'
+  pvpvanilla_goldenchestplate:
+    type: repetitive
+    repetitive_time: 20
+    conditions:
+    - '%player_world% == pvpvanilla'
+    - '%checkitem_mat:GOLDEN_CHESTPLATE,inslot:38% == yes'
+    actions:
+      default:
+      - 'console_command: spawn %player%'
+      - 'message: &4&l» &cNo puedes equipar armaduras ni objetos de netherite, cuero, malla, hierro u oro en esta región'
+  pvpvanilla_goldenleggings:
+    type: repetitive
+    repetitive_time: 20
+    conditions:
+    - '%player_world% == pvpvanilla'
+    - '%checkitem_mat:GOLDEN_LEGGINGS,inslot:37% == yes'
+    actions:
+      default:
+      - 'console_command: spawn %player%'
+      - 'message: &4&l» &cNo puedes equipar armaduras ni objetos de netherite, cuero, malla, hierro u oro en esta región'
+  pvpvanilla_goldenboots:
+    type: repetitive
+    repetitive_time: 20
+    conditions:
+    - '%player_world% == pvpvanilla'
+    - '%checkitem_mat:GOLDEN_BOOTS,inslot:36% == yes'
+    actions:
+      default:
+      - 'console_command: spawn %player%'
+      - 'message: &4&l» &cNo puedes equipar armaduras ni objetos de netherite, cuero, malla, hierro u oro en esta región'
+  pvpvanilla_goldensword:
+    type: repetitive
+    repetitive_time: 20
+    conditions:
+    - '%player_world% == pvpvanilla'
+    - '%checkitem_mat:GOLDEN_SWORD% == yes'
+    actions:
+      default:
+      - 'console_command: spawn %player%'
+      - 'message: &4&l» &cNo puedes equipar armaduras ni objetos de netherite, cuero, malla, hierro u oro en esta región'
+  pvpvanilla_goldenpickaxe:
+    type: repetitive
+    repetitive_time: 20
+    conditions:
+    - '%player_world% == pvpvanilla'
+    - '%checkitem_mat:GOLDEN_PICKAXE% == yes'
+    actions:
+      default:
+      - 'console_command: spawn %player%'
+      - 'message: &4&l» &cNo puedes equipar armaduras ni objetos de netherite, cuero, malla, hierro u oro en esta región'
+  pvpvanilla_goldenshovel:
+    type: repetitive
+    repetitive_time: 20
+    conditions:
+    - '%player_world% == pvpvanilla'
+    - '%checkitem_mat:GOLDEN_SHOVEL% == yes'
+    actions:
+      default:
+      - 'console_command: spawn %player%'
+      - 'message: &4&l» &cNo puedes equipar armaduras ni objetos de netherite, cuero, malla, hierro u oro en esta región'
+  pvpvanilla_goldenhoe:
+    type: repetitive
+    repetitive_time: 20
+    conditions:
+    - '%player_world% == pvpvanilla'
+    - '%checkitem_mat:GOLDEN_HOE% == yes'
+    actions:
+      default:
+      - 'console_command: spawn %player%'
+      - 'message: &4&l» &cNo puedes equipar armaduras ni objetos de netherite, cuero, malla, hierro u oro en esta región'
+  pvpvanilla_goldenaxe:
+    type: repetitive
+    repetitive_time: 20
+    conditions:
+    - '%player_world% == pvpvanilla'
+    - '%checkitem_mat:GOLDEN_AXE% == yes'
+    actions:
+      default:
+      - 'console_command: spawn %player%'
+      - 'message: &4&l» &cNo puedes equipar armaduras ni objetos de netherite, cuero, malla, hierro u oro en esta región'

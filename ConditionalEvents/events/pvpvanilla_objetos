@@ -1,0 +1,66 @@
+Events:
+  pvpvanilla_efectos:
+    type: player_teleport
+    conditions:
+    - '%to_world% == pvpvanilla'
+    actions:
+      default:
+      - 'remove_potion_effect: INCREASE_DAMAGE'
+      - 'remove_potion_effect: SPEED'
+      - 'remove_potion_effect: JUMP_BOOST'
+      - 'remove_potion_effect: HEALTH_BOOST'
+      - 'remove_potion_effect: ABSORPTION'
+      - 'remove_potion_effect: HASTE'
+      - 'remove_potion_effect: INVISIBILITY'
+  pvpvanilla_comida:
+    type: item_interact
+    conditions:
+    - '%player_world% == pvpvanilla'
+    - '%item% == GOLDEN_APPLE or 
+	%item% == ENCHANTED_GOLDEN_APPLE or 
+	%item% == GOLDEN_CARROT or 
+	%item% == POTION or 
+	%item% == SPLASH_POTION or 
+	%item% == LINGERING_POTION or 
+	%item% == ENDER_PEARL or 
+	%item% == FISHING_ROD or 
+	%item% == TRIDENT or 
+	%item% == MACE or 
+	%item% == TOTEM_OF_UNDYING or 
+	%item% == SNOWBALL or 
+	%item% == EGG or 
+	%item% == WIND_CHARGE or 
+	%item% == BOW or 
+	%item% == CROSSBOW or 
+	%item% == FIREWORK_ROCKET or 
+	%item% == SHIELD or 
+	%item% == ELYTRAS'
+    actions:
+      default:
+      - 'cancel_event: true'
+  pvpvanilla_genialidad:
+    type: repetitive
+    repetitive_time: 20
+    conditions:
+    - '%player_world% == pvpvanilla'
+    - '%checkitem_mat:PLAYER_HEAD% == yes'
+    actions:
+      default:
+      - 'console_command: spawn %player%'
+  pvpvanilla_genialidad2:
+    type: repetitive
+    repetitive_time: 20
+    conditions:
+    - '%player_world% == pvpvanilla'
+    - '%checkitem_mat:TOTEM_OF_UNDYING% == yes'
+    actions:
+      default:
+      - 'console_command: spawn %player%'
+  pvpvanilla_genialidad3:
+    type: player_kill
+    conditions:
+    - '%player_world% == pvpvanilla'
+    actions:
+      default:
+      - 'console_command: eheal %player%'
+      - 'playsound: ENTITY_ZOMBIE_VILLAGER_CURE;1;1'

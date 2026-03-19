@@ -1,0 +1,97 @@
+Events:
+  zombieavanzado:
+    type: player_kill
+    conditions:
+    - '%victim% == ZOMBIE'
+    - '%victim_name% contains Zombie Avanzado'
+    actions:
+      default:
+      - 'console_command: svar add mm_zombieavanzado_kills 1 %player%'
+  tempest:
+    type: player_kill
+    conditions:
+    - '%victim% == ZOMBIE'
+    - '%victim_name% contains Tempest'
+    actions:
+      default:
+      - 'console_command: svar add mm_tempest_kills 1 %player%'
+  balrog:
+    type: player_kill
+    conditions:
+    - '%victim% == WITHER_SKELETON'
+    - '%victim_name% contains Balrog'
+    actions:
+      default:
+      - 'console_command: svar add mm_balrog_kills 1 %player%'
+  sentinel:
+    type: player_kill
+    conditions:
+    - '%victim% == ENDERMAN'
+    - '%victim_name% contains Sentinel'
+    actions:
+      default:
+      - 'console_command: svar add mm_sentinel_kills 1 %player%'
+  apex:
+    type: player_kill
+    conditions:
+    - '%victim% == IRON_GOLEM'
+    - '%victim_name% contains Apex'
+    actions:
+      default:
+      - 'console_command: svar add mm_apex_kills 1 %player%'
+  evoker:
+    type: player_kill
+    conditions:
+    - '%victim% == EVOKER'
+    - '%victim_name% contains Evoker'
+    actions:
+      default:
+      - 'console_command: svar add mm_evoker_kills 1 %player%'
+  abaddon:
+    type: player_kill
+    conditions:
+    - '%victim% == WITHER'
+    - '%victim_name% contains Abaddon'
+    actions:
+      default:
+      - 'console_command: svar add mm_abaddon_kills 1 %player%'
+  abramelec:
+    type: player_kill
+    conditions:
+    - '%victim% == WITHER_SKELETON'
+    - '%victim_name% contains Abramelec'
+    actions:
+      default:
+      - 'console_command: svar add mm_abramelec_kills 1 %player%'
+  abraxas:
+    type: player_kill
+    conditions:
+    - '%victim% == PIGLIN_BRUTE'
+    - '%victim_name% contains Abraxas'
+    actions:
+      default:
+      - 'console_command: svar add mm_abraxas_kills 1 %player%'
+  enderman_salvaje:
+    type: player_kill
+    conditions:
+    - '%victim% == Enderman'
+    - '%victim_name% contains Enderman Salvaje'
+    actions:
+      default:
+      - 'console_command: svar add mm_enderman_salvaje_kills 1 %player%'
+  endermite_membranoso:
+    type: player_kill
+    conditions:
+    - '%victim% == ENDERMITE'
+    - '%victim_name% contains Endermite Membranoso'
+    actions:
+      default:
+      - 'console_command: svar add mm_endermite_membranoso_kills 1 %player%'
+  sentey:
+    type: player_kill
+    conditions:
+    - '%victim% == ENDER_DRAGON'
+    - '%victim_name% contains Sentey'
+    actions:
+      default:
+      - 'console_command: svar add mm_sentey_kills 1 %player%'
