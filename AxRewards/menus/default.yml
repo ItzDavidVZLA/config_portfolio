@@ -1,0 +1,328 @@
+# DOCUMENTATION: https://docs.artillex-studios.com/axrewards.html
+# ITEM BUILDER: https://docs.artillex-studios.com/item-builder.html
+
+# ----- SETTINGS -----
+
+title: "&0Menú de &nRecompensas"
+# a gui can only have 1-6 rows
+rows: 4
+# valid values: CHEST, WORKBENCH, HOPPER, DISPENSER, BREWING
+type: CHEST
+
+open-commands:
+  - "rw"
+  - "reward"
+  - "rewards"
+
+# ----- ITEMS -----
+
+close:
+  slot: 31
+  material: "RED_DYE"
+  name: "&cCerrar"
+  lore: []
+fill1:
+  slot: 35
+  material: "BLACK_STAINED_GLASS_PANE"
+  name: ""
+  lore:
+    - " "
+fill2:
+  slot: 34
+  material: "BLACK_STAINED_GLASS_PANE"
+  name: ""
+  lore:
+    - " "
+fill3:
+  slot: 33
+  material: "BLACK_STAINED_GLASS_PANE"
+  name: ""
+  lore:
+    - " "
+fill4:
+  slot: 32
+  material: "BLACK_STAINED_GLASS_PANE"
+  name: ""
+  lore:
+    - " "
+fill5:
+  slot: 31
+  material: "BLACK_STAINED_GLASS_PANE"
+  name: ""
+  lore:
+    - " "
+fill6:
+  slot: 30
+  material: "BLACK_STAINED_GLASS_PANE"
+  name: ""
+  lore:
+    - " "
+fill7:
+  slot: 29
+  material: "BLACK_STAINED_GLASS_PANE"
+  name: ""
+  lore:
+    - " "
+fill8:
+  slot: 28
+  material: "BLACK_STAINED_GLASS_PANE"
+  name: "&r "
+  lore:
+    - " "
+fill9:
+  slot: 27
+  material: "BLACK_STAINED_GLASS_PANE"
+  name: "&r "
+  lore:
+    - " "
+   
+
+usuario:
+  slot: 11
+  # in seconds
+  # you can set it to -1 for it to never automatically refresh
+  cooldown: 604800
+  claim-commands:
+    - "excellentcrates key give %player% llave_comun 5"
+    - "excellentcrates key give %player% llave_rara 1"
+    - 'cstaff xp add %player% 500'
+    - "eco give %player% 1000000"
+  claimable:
+    material: "CHEST_MINECART"
+    name: "&#00CBF5Recompensas &8◆ &fUsuario"
+    lore:
+      - " "
+      - "&8&l ≡ &f&lRECOMPENSAS:"
+      - " &8 ◆ &fx5 Llave Común"
+      - " &8 ◆ &fx1 Llave Rara"
+      - " &8 ◆ &3+500 Experiencia Global"
+      - " &8 ◆ &6+1,000,000 ⛁"
+      - " "
+      - "&e» ¡Haz clic para reclamar! «"
+  unclaimable:
+    material: "MINECART"
+    name: "&#00CBF5Recompensas &8◆ &fUsuario"
+    lore:
+      - " "
+      - "&8&l ≡ &f&lRECOMPENSAS:"
+      - " &8 ◆ &fx5 Llave Común"
+      - " &8 ◆ &fx1 Llave Rara"
+      - " &8 ◆ &3+500 Experiencia Global"
+      - " &8 ◆ &6+1,000,000 ⛁"
+      - " "
+      - " &fCooldown:"
+      - " &8● &a%time%"
+      - " "
+      - "&c» Recompensa no disponible «"
+
+vip:
+  slot: 12
+  cooldown: 604800
+  permission: "axrw.vip"
+  claim-commands:
+    - "excellentcrates key give %player% llave_comun 6"
+    - "excellentcrates key give %player% llave_rara 3"
+    - 'cstaff xp add %player% 1000'
+    - "eco give %player% 1500000"
+  claimable:
+    material: "CHEST_MINECART"
+    name: "&#00CBF5Recompensas &8◆ &fVIP"
+    lore:
+      - " "
+      - "&8&l ≡ &f&lRECOMPENSAS:"
+      - " &8 ◆ &fx6 Llave Común"
+      - " &8 ◆ &fx3 Llave Rara"
+      - " &8 ◆ &3+1,000 Experiencia Global"
+      - " &8 ◆ &6+1,500,000 ⛁"
+      - " "
+      - "&e» ¡Haz clic para reclamar! «"
+  unclaimable:
+    material: "MINECART"
+    name: "&#00CBF5Recompensas &8◆ &fVIP"
+    lore:
+      - " "
+      - "&8&l ≡ &f&lRECOMPENSAS:"
+      - " &8 ◆ &fx6 Llave Común"
+      - " &8 ◆ &fx3 Llave Rara"
+      - " &8 ◆ &3+1,000 Experiencia Global"
+      - " &8 ◆ &6+1,500,000 ⛁"
+      - " "
+      - " &fCooldown:"
+      - " &8● &a%time%"
+      - " "
+      - "&c» Recompensa no disponible «"
+  no-permission:
+    material: "BARRIER"
+    name: "&#00CBF5Recompensas &8◆ &fVIP"
+    lore:
+      - " "
+      - "&8&l ≡ &f&lRECOMPENSAS:"
+      - " &8 ◆ &fx6 Llave Común"
+      - " &8 ◆ &fx3 Llave Rara"
+      - " &8 ◆ &3+1,000 Experiencia Global"
+      - " &8 ◆ &6+1,500,000 ⛁"
+      - " "
+      - "&c» No tienes permiso para reclamar «"
+
+elite:
+  slot: 13
+  cooldown: 604800
+  permission: "axrw.elite"
+  claim-commands:
+    - "excellentcrates key give %player% llave_comun 7"
+    - "excellentcrates key give %player% llave_rara 5"
+    - "excellentcrates key give %player% llave_epica 3"
+    - 'cstaff xp add %player% 1000'
+    - "eco give %player% 2000000"
+  claimable:
+    material: "CHEST_MINECART"
+    name: "&#00CBF5Recompensas &8◆ &fELITE"
+    lore:
+      - " "
+      - "&8&l ≡ &f&lRECOMPENSAS:"
+      - " &8 ◆ &fx7 Llave Común"
+      - " &8 ◆ &fx5 Llave Rara"
+      - " &8 ◆ &fx3 Llave Épica"
+      - " &8 ◆ &3+1,000 Experiencia Global"
+      - " &8 ◆ &6+2,000,000 ⛁"
+      - " "
+      - "&e» ¡Haz clic para reclamar! «"
+  unclaimable:
+    material: "MINECART"
+    name: "&#00CBF5Recompensas &8◆ &fELITE"
+    lore:
+      - " "
+      - "&8&l ≡ &f&lRECOMPENSAS:"
+      - " &8 ◆ &fx7 Llave Común"
+      - " &8 ◆ &fx5 Llave Rara"
+      - " &8 ◆ &fx3 Llave Épica"
+      - " &8 ◆ &3+1,000 Experiencia Global"
+      - " &8 ◆ &6+2,000,000 ⛁"
+      - " "
+      - " &fCooldown:"
+      - " &8● &a%time%"
+      - " "
+      - "&c» Recompensa no disponible «"
+  no-permission:
+    material: "BARRIER"
+    name: "&#00CBF5Recompensas &8◆ &fELITE"
+    lore:
+      - " "
+      - "&8&l ≡ &f&lRECOMPENSAS:"
+      - " &8 ◆ &fx7 Llave Común"
+      - " &8 ◆ &fx5 Llave Rara"
+      - " &8 ◆ &fx3 Llave Épica"
+      - " &8 ◆ &3+1,000 Experiencia Global"
+      - " &8 ◆ &6+2,000,000 ⛁"
+      - " "
+      - "&c» No tienes permiso para reclamar «"
+      
+ultimate:
+  slot: 14
+  cooldown: 604800
+  permission: "axrw.ultimate"
+  claim-commands:
+    - "excellentcrates key give %player% llave_comun 8"
+    - "excellentcrates key give %player% llave_rara 7"
+    - "excellentcrates key give %player% llave_epica 5"
+    - 'cstaff xp add %player% 1000'
+    - "eco give %player% 3000000"
+  claimable:
+    material: "CHEST_MINECART"
+    name: "&#00CBF5Recompensas &8◆ &fULTIMATE"
+    lore:
+      - " "
+      - "&8&l ≡ &f&lRECOMPENSAS:"
+      - " &8 ◆ &fx8 Llave Común"
+      - " &8 ◆ &fx7 Llave Rara"
+      - " &8 ◆ &fx5 Llave Épica"
+      - " &8 ◆ &3+1,000 Experiencia Global"
+      - " &8 ◆ &6+3,000,000 ⛁"
+      - " "
+      - "&e» ¡Haz clic para reclamar! «"
+  unclaimable:
+    material: "MINECART"
+    name: "&#00CBF5Recompensas &8◆ &fULTIMATE"
+    lore:
+      - " "
+      - "&8&l ≡ &f&lRECOMPENSAS:"
+      - " &8 ◆ &fx8 Llave Común"
+      - " &8 ◆ &fx7 Llave Rara"
+      - " &8 ◆ &fx5 Llave Épica"
+      - " &8 ◆ &3+1,000 Experiencia Global"
+      - " &8 ◆ &6+3,000,000 ⛁"
+      - " "
+      - " &fCooldown:"
+      - " &8● &a%time%"
+      - " "
+      - "&c» Recompensa no disponible «"
+  no-permission:
+    material: "BARRIER"
+    name: "&#00CBF5Recompensas &8◆ &fULTIMATE"
+    lore:
+      - " "
+      - "&8&l ≡ &f&lRECOMPENSAS:"
+      - " &8 ◆ &fx8 Llave Común"
+      - " &8 ◆ &fx7 Llave Rara"
+      - " &8 ◆ &fx5 Llave Épica"
+      - " &8 ◆ &3+1,000 Experiencia Global"
+      - " &8 ◆ &6+3,000,000 ⛁"
+      - " "
+      - "&c» No tienes permiso para reclamar «"
+      
+ultra:
+  slot: 15
+  cooldown: 604800
+  permission: "axrw.ultra"
+  claim-commands:
+    - "excellentcrates key give %player% llave_comun 10"
+    - "excellentcrates key give %player% llave_rara 10"
+    - "excellentcrates key give %player% llave_epica 7"
+    - "excellentcrates key give %player% llave_legendaria 1"
+    - 'cstaff xp add %player% 1000'
+    - "eco give %player% 4000000"
+  claimable:
+    material: "CHEST_MINECART"
+    name: "&#00CBF5Recompensas &8◆ &fULTRA"
+    lore:
+      - " "
+      - "&8&l ≡ &f&lRECOMPENSAS:"
+      - " &8 ◆ &fx10 Llave Común"
+      - " &8 ◆ &fx10 Llave Rara"
+      - " &8 ◆ &fx7 Llave Épica"
+      - " &8 ◆ &fx1 Llave Legendaria"
+      - " &8 ◆ &3+1,000 Experiencia Global"
+      - " &8 ◆ &6+4,000,000 ⛁"
+      - " "
+      - "&e» ¡Haz clic para reclamar! «"
+  unclaimable:
+    material: "MINECART"
+    name: "&#00CBF5Recompensas &8◆ &fULTRA"
+    lore:
+      - " "
+      - "&8&l ≡ &f&lRECOMPENSAS:"
+      - " &8 ◆ &fx10 Llave Común"
+      - " &8 ◆ &fx10 Llave Rara"
+      - " &8 ◆ &fx7 Llave Épica"
+      - " &8 ◆ &fx1 Llave Legendaria"
+      - " &8 ◆ &3+1,000 Experiencia Global"
+      - " &8 ◆ &6+4,000,000 ⛁"
+      - " "
+      - " &fCooldown:"
+      - " &8● &a%time%"
+      - " "
+      - "&c» Recompensa no disponible «"
+  no-permission:
+    material: "BARRIER"
+    name: "&#00CBF5Recompensas &8◆ &fULTRA"
+    lore:
+      - " "
+      - "&8&l ≡ &f&lRECOMPENSAS:"
+      - " &8 ◆ &fx10 Llave Común"
+      - " &8 ◆ &fx10 Llave Rara"
+      - " &8 ◆ &fx7 Llave Épica"
+      - " &8 ◆ &fx1 Llave Legendaria"
+      - " &8 ◆ &3+1,000 Experiencia Global"
+      - " &8 ◆ &6+4,000,000 ⛁"
+      - " "
+      - "&c» No tienes permiso para reclamar «"

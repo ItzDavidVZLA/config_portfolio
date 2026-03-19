@@ -1,0 +1,137 @@
+# DOCUMENTATION: https://docs.artillex-studios.com/axtrade.html
+# ITEM BUILDER: https://docs.artillex-studios.com/item-builder.html
+
+# ----- SETTINGS -----
+
+title: 'Tradeando con %player%'
+# a gui can have 1-6 rows
+rows: 6
+
+# ----- SLOTS -----
+
+# the slots where the items can be placed
+# make sure to not put decorative items or currency items in the these slots
+# the own-slots and partner-slots must have an equal amount of slots
+own-slots:
+- 9-12
+- 18-21
+- 27-30
+- 36-39
+- 45-48
+
+partner-slots:
+- 14-17
+- 23-26
+- 32-35
+- 41-44
+- 50-53
+
+# ----- ITEMS -----
+
+# items on your side
+own:
+  confirm-item:
+    slot: 0
+    accept:
+      material: RED_CONCRETE
+      name: '&#37aeffAceptar intercambio'
+      lore:
+      - '&8Botón'
+      - ''
+      - '&f¿Estas de acuerdo con este tradeo?'
+      - ''
+      - '&e» ¡Haz clic para confirmar! «'
+    cancel:
+      material: LIME_CONCRETE
+      name: '&#37aeffCancelar intercambio'
+      lore:
+      - '&8Botón'
+      - ''
+      - '&f¿Estas de acuerdo con este tradeo?'
+      - ''
+      - '&e» ¡Haz clic para confirmar! «'
+  # you can define as many currencies as you want, but make sure to copy them to the 'partner' section too!
+  currency1:
+    slot: 2
+    # you need Vault installed for this
+    currency: Vault
+    material: GOLD_NUGGET
+    name: '&#37aeffDinero'
+    lore:
+    - '&8Moneda'
+    - ''
+    - '&fCantidad: &6%amount%'
+    - ''
+    - '&e» ¡Haz clic para cambiar la cantidad! «'
+  currency2:
+    slot: 3
+    currency: Experience
+    material: EXPERIENCE_BOTTLE
+    name: '&#37aeffExperiencia'
+    lore:
+    - '&8Artilugio'
+    - ''
+    - '&fCantidad: &e%amount%'
+    - ''
+    - '&e» ¡Haz clic para cambiar la cantidad! «'
+
+# items on your trade partner's side
+partner:
+  confirm-item:
+    slot: 8
+    accept:
+      material: RED_CONCRETE
+      name: '&#37aeffEsperando a otro jugador...'
+      lore:
+      - '&8Confirmación'
+      - ''
+      - '&fEste jugador no ha confirmado el intercambio todavía'
+      - ''
+      - '&e» mc.comugamers.com «'
+    cancel:
+      material: LIME_CONCRETE
+      name: '&#37aeffEsperando a otro jugador...'
+      lore:
+      - '&8Confirmación'
+      - ''
+      - '&fEste jugador ha confirmado el intercambio'
+      - ''
+      - '&e» mc.comugamers.com «'
+  currency1:
+    slot: 6
+    currency: Vault
+    material: GOLD_NUGGET
+    name: '&#37aeffMonedas'
+    lore:
+    - '&8Moneda'
+    - ''
+    - '&fJugador: &b%player%'
+    - '&fCantidad: &6%amount%'
+    - ''
+    - '&e» ¡Haz clic para cambiar la cantidad! «'
+  currency2:
+    slot: 5
+    currency: Experience
+    material: EXPERIENCE_BOTTLE
+    name: '&#37aeffExperiencia'
+    lore:
+    - '&8Artilugio'
+    - ''
+    - '&fJugador: &b%player%'
+    - '&fCantidad: &e%amount%'
+    - ''
+    - '&e» ¡Haz clic para cambiar la cantidad! «'
+
+decoration-example:
+  slot:
+  - 4
+  - 13
+  - 22
+  - 31
+  - 40
+  - 49
+  material: LIGHT_BLUE_STAINED_GLASS_PANE
+  name: '&b@ᴄᴏᴍᴜɢᴀᴍᴇʀꜱ'
+
+# do not change this
+version: 1

@@ -1,0 +1,117 @@
+# DOCUMENTATION: https://docs.artillex-studios.com/axtrade.html
+
+player-help:
+- ' '
+- '&8&l≡ &f&lAYUDA COMANDOS:'
+- '&8• &b/axtrade <jugador> &8| &fEnvía una solicitud de intercambio'
+- '&8• &b/axtrade accept <jugador> &8| &fAcepta una solicitud de intercambio'
+- '&8• &b/axtrade deny <jugador> &8| &fDeniega una solicitud de intercambio'
+- ' '
+
+admin-help:
+- ' '
+- '&#00FFDD&lAxTrade &7»'
+- ' &7- &f/axtrade <player> &7| &#00FFDDSend trade request'
+- ' &7- &f/axtrade accept <player> &7| &#00FFDDAccept trade request'
+- ' &7- &f/axtrade deny <player> &7| &#00FFDDDeny trade request'
+- ' &7- &f/axtrade reload &7| &#00FFDDReload plugin'
+- ' &7- &f/axtrade force <player> &7| &#00FFDDForce start a trade'
+- ' '
+
+reload:
+  success: '&#33FF33Plugin successfully reloaded!'
+  failed: '&#FF3333Failed to reload the plugin! Something is wrong in the &f%file%&#FF3333 file, look in the console or use a yaml validator to fix the errors!'
+
+trade:
+  started: '&8&l» &fHas aceptado un tradeo con &b%player%'
+  completed: '&r &8&l≡ &f&lINTERCAMBIO COMPLETADO CON &b%player%&f&l:'
+  aborted: '&4&l» &cHas cancelado este tradeo con %player%'
+  blacklisted-item: '&4&l» &cEste objeto no se puede intercambiar'
+  inventory-full: '&#CCFFEEYou can''t put any more items in the gui, because your trade partner has no more empty slots.'
+  preview-info: '&#CCFFEEYou are opening the preview gui, this is meant for testing your configuration, clicking buttons will cause errors and might not work.'
+
+toggle:
+  enabled: '&8&l» &fHas &aactivado &flas solicitudes de tradeo'
+  disabled: '&8&l» &fHas &cdesactivado &flas solicitudes de tradeo'
+
+# summary after a successful trade
+summary:
+  get:
+    item: '&r &8&l» &r%item% &a+[x%amount%]'
+    currency: '&r &8&l» &a+%amount% &b(%currency%)'
+  give:
+    item: '&r &8&l» &r%item% &c-[x%amount%]'
+    currency: '&r &8&l» &c-%amount% &b(%currency%)'
+
+currency-editor:
+  success: '&8&l» &fValor cambiado con exito'
+  failed: '&4&l» &cValor incorrecto'
+  not-enough: '&4&l» &cNo tienes suficiente dinero para esto'
+
+request:
+  sent-sender: '&8&l» &fHas enviado una solicitud de tradeo a &b%player%'
+  sent-receiver:
+    info: '&8&l» &fHas recibido una solicitud de tradeo a &b%player%'
+    accept:
+      message: '&8 ◆ &fEjecuta &a/trade accept %player% &fsi deseas el tradeo'
+      hover: '&e» ¡Haz clic aquí para aceptar! «'
+    deny:
+      message: '&8 ◆ &fEjecuta &c/trade deny %player% &fsi no deseas el tradeo'
+      hover: '&e» ¡Haz clic aquí para denegar! «'
+  no-request: '&4&l» &cNo tienes solicitudes de intercambio activas de este jugador'
+  deny-sender: '&4&l» &cTu solicitud de intercambio ha sido cancelada por %player%'
+  deny-receiver: '&8&l» &fHas cancelado la solicitud de intercambio de &b%player%'
+  cant-trade-self: '&4&l» &cNo puedes enviarte una solicitud de intercambio a ti mismo'
+  already-in-trade: '&4&l» &cEste jugador está intercambiando con alguien mas'
+  already-sent: '&4&l» &cYa has enviado esta solicitud a este jugador'
+  too-far: '&4&l» &cEstas muy lejos de este jugador como para enviarle esta solicitud'
+  not-accepting: '&4&l» &cEste jugador no está aceptando solicitudes de intercambio'
+  disallowed-gamemode: '&#CCFFEEEither you or the other player is in a disallowed gamemode!'
+  same-ip: '&#CCFFEEYou can''t trade with an account that has the same ip as you!'
+  below-required-amount: '&#CCFFEEYou are required to trade at least &f%amount% %currency%&#CCFFEE!'
+  blacklisted-world: '&4&l» &cLos intercambios están desactivados en este mundo'
+  expired: '&4&l» &cTu solicitud de tradeo con %player% ha expirado'
+  disabled-trading: '&4&l» '
+
+# this must be 4 lines
+# note: currently the first line must be left empty
+currency-editor-sign:
+- ''
+- '-----------'
+- Introduce el valor
+- que desees
+
+# list of sounds: https://www.digminecraft.com/lists/sound_list_pc.php
+# set to "" to disable
+sounds:
+  # trade sounds
+  started: entity.player.levelup
+  completed: entity.player.levelup
+  aborted: block.anvil.destroy
+  # trade requests
+  deny: block.anvil.land
+  requested: entity.experience_bottle.throw
+  # gui sounds
+  accept: ui.button.click
+  countdown: ui.button.click
+  cancel: ui.button.click
+
+# can be used in the gui title as %own-status% and %partner-status%
+placeholders:
+  ready: Ready
+  waiting: Waiting
+
+commands:
+  invalid-value: '&#FF0000Invalid parameter: &#BB0000%value%'
+  invalid-command: '&#FF0000Invalid command or subcommand!'
+  missing-argument: '&#FF0000Missing argument! You must specify a value for &#BB0000%value%&#FF0000.'
+  no-permission: '&4&l» &cNo tienes permiso para hacer esto.'
+  out-of-range: '&#FF0000The &#BB0000%number% &#FF0000must be between &#BB0000%min% &#FF0000and &#BB0000%max%&#FF0000!'
+  player-only: '&#FF0000You must be a player to use this command!'
+  invalid-player: '&4&l» &cEse jugador no existe'
+  invalid-selector: '&#FF0000You can not use this selector in this command!'
+
+update-notifier: '&#00FF00[AxTrade] &fHay una actualización pendiente &7(&fversión: &#00FF00%latest%&7)'
+
+# do not change this
+version: '8'
