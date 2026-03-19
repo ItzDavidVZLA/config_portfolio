@@ -1,0 +1,39 @@
+tasks:
+  brewing:
+    type: "brewing"
+    amount: 12
+display:
+  name: "&3Alqui&bmia"
+  lore-normal:
+    - "&8Mision"
+    - ""
+    - " &fObjetivo:"
+    - " &8● &fElabora 12 pociones"
+    - ""
+    - " &fRecompensas:"
+    - " &8● &62,000 ⛁"
+    - " &8● &b6 ❖"
+    - ""
+    - " &c✘ Mision incompleta"
+  lore-started:
+    - ""
+    - " &fProgreso:"
+    - " &8● &a{brewing:progress}"
+  type: "POTION"
+rewards:
+  - "eco give {player} 2000"
+  - "ecobits give {player} cristales 6"
+placeholders:
+  description: "&fEncanta 12 objetos."
+  progress: " &8● &a{brewing:progress}"
+progress-placeholders:
+  '*': "&f{brewing:progress}&7/120 blocks broken"
+options:
+  category: "alquimia"
+  requires:
+    - "alquimia3"
+  repeatable: false
+  cooldown:
+    enabled: true
+    time: 1440
+  sort-order: 4

@@ -1,0 +1,42 @@
+tasks:
+  mining:
+    type: "blockbreak"
+    amount: 700
+    blocks:
+     - COBBLESTONE
+     - STONE
+display:
+  name: "&3Minero &bnovato"
+  lore-normal:
+    - "&8Mision"
+    - ""
+    - " &fObjetivo:"
+    - " &8● &fMina 700 bloques de piedra"
+    - ""
+    - " &fRecompensas:"
+    - " &8● &67,000 ⛁"
+    - " &8● &b9 ❖"
+    - ""
+    - " &c✘ Mision incompleta"
+  lore-started:
+    - ""
+    - " &fProgreso:"
+    - " &8● &a{mining:progress}"
+  type: "STONE"
+rewards:
+  - "eco give {player} 7000"
+  - "ecobits give {player} cristales 9"
+placeholders:
+  description: "&fMina 700 bloques de piedra."
+  progress: " &8● &a{mining:progress}"
+progress-placeholders:
+  '*': "&f{mining:progress}&7/30 blocks broken"
+options:
+  category: "mineria"
+  requires:
+    - "mineria6"
+  repeatable: false
+  cooldown:
+    enabled: true
+    time: 1440
+  sort-order: 7

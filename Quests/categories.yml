@@ -1,0 +1,70 @@
+# -----------------------------------------------------------
+#  Categories
+#  ----------
+#
+#  Categories are a way of grouping quests.
+#  When a player uses /quests, a menu of categories will be presented to them.
+#  When a player clicks on a category, a list of quests under that category will show.
+#  If categories are disabled, all quests will be shown under one big GUI.
+#  Players can access specific categories by command using /quests c [category].
+#  If a quest does not have a category, it will not be shown.
+# -----------------------------------------------------------
+categories:
+  cazador:
+    display:
+      name: "&3Caza&bdor"
+      lore:
+        - "&8Misiones"
+        - " "
+        - "&8▪ &fCategoría: &aCombate"
+        - "&8▪ &fMisiones: &a27"
+        - ""
+        - "&e» ¡Haz clic para ver menú!"
+      type: "DIAMOND_SWORD"
+  mineria:
+    display:
+      name: "&3Mine&bría"
+      lore:
+        - "&8Misiones"
+        - " "
+        - "&8▪ &fCategoría: &aMinería"
+        - "&8▪ &fMisiones: &a18"
+        - ""
+        - "&e» ¡Haz clic para ver menú!"
+      type: "DIAMOND_PICKAXE"
+  agricultura:
+    display:
+      name: "&3Agri&bcultura"
+      lore:
+        - "&8Misiones"
+        - " "
+        - "&8▪ &fCategoría: &aAgricultura"
+        - "&8▪ &fMisiones: &a27"
+        - ""
+        - "&e» ¡Haz clic para ver menú!"
+      type: "DIAMOND_HOE"
+  encantador:
+    display:
+      name: "&3Encan&btador"
+      lore:
+        - "&8Misiones"
+        - " "
+        - "&8▪ &fCategoría: &aEncantamientos"
+        - "&8▪ &fMisiones: &a10"
+        - ""
+        - "&e» ¡Haz clic para ver menú!"
+      type: "ENCHANTING_TABLE"
+  alquimia:
+    display:
+      name: "&3Alqui&bmia"
+      lore:
+        - "&8Misiones"
+        - " "
+        - "&8▪ &fCategoría: &aAlquimia"
+        - "&8▪ &fMisiones: &a10"
+        - ""
+        - "&e» ¡Haz clic para ver menú!"
+      type: "POTION"
+    # This category needs the permission "quests.category.permissionexample", because the category ID is 'permissionexample'.
+    # The permission for other categories is: "quests.category.<id>".
+    #permission-required: true

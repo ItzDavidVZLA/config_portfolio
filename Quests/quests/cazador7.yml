@@ -1,0 +1,40 @@
+tasks:
+  mobkilling:
+    type: "mobkilling"
+    amount: 35
+    mob: ZOMBIE
+display:
+  name: "&3Cazador de &bzombies"
+  lore-normal:
+    - "&8Mision"
+    - ""
+    - " &fObjetivo:"
+    - " &8● &fMata 35 zombies"
+    - ""
+    - " &fRecompensas:"
+    - " &8● &63,500 ⛁"
+    - " &8● &b9 ❖"
+    - ""
+    - " &c✘ Mision incompleta"
+  lore-started:
+    - ""
+    - " &fProgreso:"
+    - " &8● &a{mobkilling:progress}"
+  type: "ROTTEN_FLESH"
+rewards:
+  - "eco give {player} 3500"
+  - "ecobits give {player} cristales 9"
+placeholders:
+  description: "&fMata 35 zombies."
+  progress: " &8● &a{mobkilling:progress}"
+progress-placeholders:
+  '*': "&f{mobkilling:progress}&7/35 blocks broken"
+options:
+  category: "cazador"
+  requires:
+    - "cazador6"
+  repeatable: false
+  cooldown:
+    enabled: true
+    time: 1440
+  sort-order: 7

@@ -1,0 +1,41 @@
+tasks:
+  farming:
+    type: "farming"
+    amount: 80
+    blocks:
+     - WHEAT
+display:
+  name: "&3Agricultor &Bde Trigo"
+  lore-normal:
+    - "&8Mision"
+    - ""
+    - " &fObjetivo:"
+    - " &8● &fRompe 80 cultivos de trigo"
+    - ""
+    - " &fRecompensas:"
+    - " &8● &62,500 ⛁"
+    - " &8● &b6 ❖"
+    - ""
+    - " &c✘ Mision incompleta"
+  lore-started:
+    - ""
+    - " &fProgreso:"
+    - " &8● &a{farming:progress}"
+  type: "WHEAT"
+rewards:
+  - "eco give {player} 2500"
+  - "ecobits give {player} cristales 6"
+placeholders:
+  description: "&fRompe 80 semillas de trigo."
+  progress: " &8● &a{farming:progress}"
+progress-placeholders:
+  '*': "&f{farming:progress}&7/30 blocks broken"
+options:
+  category: "agricultura"
+  requires:
+    - "agricultura4"
+  repeatable: false
+  cooldown:
+    enabled: false
+    time: 1440
+  sort-order: 5
