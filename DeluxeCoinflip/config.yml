@@ -1,0 +1,299 @@
+# DeluxeCoinflip
+# Author: Zithium Studios
+# Copyright Zithium Studios D 2023. All rights reserved.
+#
+# Developer API
+#   https://github.com/itzsave/DeluxeCoinflipAPI
+
+# Should the plugin report stats to https://bstats.org/
+# All usage statistics are anonymous and has zero impact on performance.
+metrics: true
+
+storage:
+  # Types available:
+  # - SQLITE
+  type: SQLITE
+
+settings:
+  # Min/max must be between 0 and 9,223,372,036,854,775,808
+  minimum-bet: 1000
+  maximum-bet: 1000000000
+
+  # Aliases to the '/coinflip' command
+  command_aliases:
+    - cf
+
+  # Should we broadcast when a coinflip is created?
+  broadcast-coinflip-creation: false
+
+  # How much needs to be won to broadcast to everyone? Set to 0 to broadcast all winnings.
+  minimum-broadcast-winnings: 1000
+
+  tax:
+    enabled: true
+    rate: 5.0 # 5% tax
+
+  # Economy providers
+  #   If you are using custom provider (from our API),
+  #   ensure to add the section with the provider identifier
+  #   being the main key (e.g. VAULT).
+  providers:
+    # This economy provider will be used if the player does /cf create <amount>
+    # without specifying a currency provider after the amount to use if multiple
+    # providers are enabled.
+    default_provider: "VAULT"
+
+    # Vault Economy (requires Vault + economy plugin)
+    # https://dev.bukkit.org/projects/vault
+    VAULT:
+      enabled: true
+      display_currency_name: "Monedas"
+
+    # TokenEnchant Economy (requires TokenEnchant plugin)
+    # https://polymart.org/resource/155
+    TOKENENCHANT:
+      enabled: true
+      display_currency_name: "TokenEnchant"
+
+    # PlayerPoints Economy (requires PlayerPoints plugin)
+    # https://www.spigotmc.org/resources/playerpoints.80745/
+    PLAYERPOINTS:
+      enabled: false
+      display_currency_name: "PlayerPoints"
+
+    # TokenManager Economy (requires TokenManager plugin)
+    # https://www.spigotmc.org/resources/8610/
+    TOKENMANAGER:
+      enabled: true
+      display_currency_name: "TokenManager"
+
+    # ZithiumMobcoins integration (requires ZithiumMobcoins plugin)
+    # https://www.spigotmc.org/resources/113153/
+    ZITHIUMMOBCOINS:
+      enabled: true
+      display_currency_name: "Mobcoins"
+
+    # BeastTokens Economy (requires BeastTokens plugin)
+    # https://www.spigotmc.org/resources/20806/
+    BEASTTOKENS:
+      enabled: true
+      display_currency_name: "Tokens"
+
+    CUSTOM_CURRENCY:
+      # Should the custom currency be enabled.
+      enabled: false
+      display_currency_name: "Custom"
+      # This is used to check the balance of the user. BE SURE THIS DOES NOT FORMAT THE BALANCE
+      raw_balance_placeholder: '%vault_eco_balance%'
+      # These are the commands used to withdraw and deposit winnings to the user. They are ran by console.
+      commands:
+        withdraw: 'eco take {player} {amount}'
+        deposit: 'eco give {player} {amount}'
+
+
+coinflip-gui:
+  title: "Haciendo flipping..."
+  # There can only be two items here. Both must be present!
+  animation:
+    1:
+      material: YELLOW_STAINED_GLASS_PANE
+      display_name: '&r'
+    2:
+      material: GRAY_STAINED_GLASS_PANE
+      display_name: '&r'
+
+games-gui:
+  title: "Coinflip"
+  rows: 4
+
+  # You can add more items here
+  filler-items:
+    border:
+      material: GRAY_STAINED_GLASS_PANE
+      display_name: "&r"
+      slots: [ 27, 28, 29, 33, 34 ]
+    stats:
+      slot: 31
+      material: BOOK
+      display_name: "&#00c5fbEstadísticas"
+      lore:
+        - ""
+        - "&fPodrás previsualizar tus estadísticas"
+        - "&fsobre tus coinflips aquí."
+        - ""
+        - " &8◆ &fVictorias: &b{WINS}"
+        - " &8◆ &fDerrotas: &b{LOSSES}"
+        - " &8◆ &fGanancias: &a{PROFIT} ⛁"
+        - " &8◆ &fTotal perdido: &c{TOTAL_LOSSES} ⛁"
+        - " &8◆ &fVictorias: &b{TOTAL_GAMBLED}"
+        - " &8◆ &fPorcentaje de victorias: &b{WIN_PERCENTAGE}%"
+        - ""
+        - "&emc.comugamers.com"
+
+  # Items below here are fixed and ID should not be removed/changed.
+  create-new-game:
+    # Set false to disable the game builder gui
+    enabled: true
+    slot: 35
+    material: NETHER_STAR
+    display_name: "&#00c5fbCrear conflip"
+    lore:
+      - "&8Botón"
+      - ""
+      - "&fCrea tu apuesta y asigna cuanto"
+      - "&fdinero quieres apostar"
+      - ""
+      - "&e» ¡Haz clic para crear! «"
+  coinflip-game:
+    display_name: "&#00c5fb{PLAYER}"
+    material: PLAYER_HEAD
+    lore:
+      - "&8Apuesta"
+      - ""
+      - " &8◆ &fDinero apostado: &b{AMOUNT}"
+      - " &8◆ &fTipo de apuesta: &6Monedas ⛁"
+      - ""
+      - "&e» ¡Haz clic para apostar! «"
+  no-games:
+    slot: 13
+    material: BARRIER
+    display_name: "&cNo hay coinflips disponibles"
+    lore:
+      - "&8Información"
+      - ""
+      - "&fNo hay coinflips activos en este momento."
+      - ""
+      - "&emc.comugamers.com"
+  error-no-funds:
+    material: BARRIER
+    display_name: "&cFondos insuficientes"
+    lore:
+      - "&8Información"
+      - ""
+      - "&fNo tienes fondos suficientes para iniciar este conflip"
+      - ""
+      - "&emc.comugamers.com"
+  next-page:
+    slot: 32
+    material: PAPER
+    display_name: "&ePágina posterior"
+    lore: ""
+  previous-page:
+    slot: 30
+    material: PAPER
+    display_name: "&ePágina anterior"
+    lore: ""
+
+gamebuilder-gui:
+  title: "Creando coinflip"
+  rows: 4
+
+  filler-items:
+    border:
+      material: BLACK_STAINED_GLASS_PANE
+      display_name: "&r"
+      slots: [ 27, 28, 29, 30, 31, 32, 33, 34, 35 ]
+
+  amount-items:
+    plus_100:
+      slot: 14
+      material: PLAYER_HEAD
+      base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWZmMzE0MzFkNjQ1ODdmZjZlZjk4YzA2NzU4MTA2ODFmOGMxM2JmOTZmNTFkOWNiMDdlZDc4NTJiMmZmZDEifX19
+      display_name: '&a+100'
+      set_amount: '+100'
+    plus_500:
+      slot: 15
+      material: PLAYER_HEAD
+      base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWZmMzE0MzFkNjQ1ODdmZjZlZjk4YzA2NzU4MTA2ODFmOGMxM2JmOTZmNTFkOWNiMDdlZDc4NTJiMmZmZDEifX19
+      display_name: '&a+500'
+      set_amount: '+500'
+    plus_1000:
+      slot: 16
+      material: PLAYER_HEAD
+      base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWZmMzE0MzFkNjQ1ODdmZjZlZjk4YzA2NzU4MTA2ODFmOGMxM2JmOTZmNTFkOWNiMDdlZDc4NTJiMmZmZDEifX19
+      display_name: '&a+1,000'
+      set_amount: '+1000'
+    minus_1000:
+      slot: 10
+      material: PLAYER_HEAD
+      base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGU0YjhiOGQyMzYyYzg2NGUwNjIzMDE0ODdkOTRkMzI3MmE2YjU3MGFmYmY4MGMyYzViMTQ4Yzk1NDU3OWQ0NiJ9fX0=
+      display_name: '&c-1,000'
+      set_amount: '-1000'
+    minus_500:
+      slot: 11
+      material: PLAYER_HEAD
+      base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGU0YjhiOGQyMzYyYzg2NGUwNjIzMDE0ODdkOTRkMzI3MmE2YjU3MGFmYmY4MGMyYzViMTQ4Yzk1NDU3OWQ0NiJ9fX0=
+      display_name: '&c-500'
+      set_amount: '-500'
+    minus_100:
+      slot: 12
+      material: PLAYER_HEAD
+      base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGU0YjhiOGQyMzYyYzg2NGUwNjIzMDE0ODdkOTRkMzI3MmE2YjU3MGFmYmY4MGMyYzViMTQ4Yzk1NDU3OWQ0NiJ9fX0=
+      display_name: '&c-100'
+      set_amount: '-100'
+
+  currency-select:
+    slot: 13
+    material: OAK_SIGN
+    display_name: "&#00c5fbSelecciona tu tipo de moneda"
+    lore-header:
+      - "&8Botón"
+      - "&r"
+      - "&fCantidad a apostar: &b{BET_AMOUNT}"
+      - "&r"
+    currency_lore_selected: "&b{CURRENCY}"
+    currency_lore_unselected: "&8{CURRENCY}"
+    lore-footer:
+      - "&r"
+      - "&e» ¡Haz clic para cambiar opción! «"
+  custom-amount:
+    slot: 30
+    material: OAK_SIGN
+    display_name: "&#00c5fbSelecciona tu cantidad a apostar"
+    lore:
+      - "&8Botón"
+      - "&r"
+      - "&fHaz clic para seleccionar la cantidad"
+      - "&fque deseas apostar"
+      - ""
+      - "&e» ¡Haz clic para seleccionar! «"
+  create-game:
+    slot: 32
+    material: MAP
+    display_name: "&#00c5fbCrear coinflip"
+    lore:
+      - "&8Botón"
+      - "&r"
+      - "&fHaz clic para crear tu coinflip"
+      - ""
+      - "&e» ¡Haz clic para crear! «"
+  error-limits:
+    material: BARRIER
+    display_name: "&cCoinflip inválido"
+    lore:
+      - "&8Botón"
+      - "&r"
+      - "&fDebes seleccionar entre &b1,000 &fy &b1,000,000,000 monedas"
+      - "&fpara iniciar este coinflip"
+      - ""
+      - "&emc.comugamers.com"
+  error-game-exists:
+    material: BARRIER
+    display_name: "&cCoinflip inválido"
+    lore:
+      - "&8Botón"
+      - "&r"
+      - "&fDebes eliminar tu coinflip actual para"
+      - "&fcrear uno nuevo"
+      - ""
+      - "&emc.comugamers.com"
+  error-no-funds:
+    material: BARRIER
+    display_name: "&cCoinflip inválido"
+    lore:
+      - "&8Botón"
+      - "&r"
+      - "&fNo tienes suficientes fondos para"
+      - "&fcrear este coinflip"
+      - ""
+      - "&emc.comugamers.com"

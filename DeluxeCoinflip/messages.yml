@@ -1,0 +1,64 @@
+# DeluxeCoinflip Messages
+
+general:
+  prefix: "&r "
+  reload: "{PREFIX}&8&l» &f¡Configuración &arecargada&f!"
+  no-permission: "{PREFIX} &4&l» &fNo tienes permiso para ejecutar este comando."
+  help_default:
+    - " &8&l≡ &f&lAYUDA COMANDOS:"
+    - " &b/coinflip &8- &fAbre el menú de coinflip."
+    - " &b/coinflip toggle &8- &fAlterna los mensajes de coinflip."
+    - " &b/coinflip create <amount> [{PROVIDERS}] &8- &fCrea un coinflip con una cantidad específica."
+    - " &b/coinflip delete &8- &fElimina tu coinflip."
+    - ""
+  help_admin:
+    - " &6&lAdmin Commands"
+    - " &7&oOnly players with coinflip.admin can view admin commands.&r"
+    - ""
+    - " &6/coinflip reload &8- &7&oReload the configuration files."
+    - ""
+
+coinflip:
+  game_not_found: "{PREFIX}&4&l» &cNo tienes ningun coinflip activo."
+
+  toggle_broadcasts_on: "{PREFIX}&8&l» &fHas &aactivado &flos mensajes de coinflip."
+  toggle_broadcasts_off: "{PREFIX}&8&l» &fHas &cdesactivado &flos mensajes de coinflip."
+
+  created_coinflip: "{PREFIX}&8&l» &fHas creado un coinflip por &b{AMOUNT} ⛁ &7({CURRENCY})"
+  deleted_coinflip: "{PREFIX}&8&l» &fHas eliminado tu coinflip."
+
+  insufficient-funds: "{PREFIX}&4&l» &cNo tienes fondos suficientes para hacer esto."
+  minimum-amount: "{PREFIX}&4&l» &cNecesitas un mínimo de {MIN_BET} ⛁ para iniciar este coinflip"
+  maximum-amount: "{PREFIX}&4&l» &cNecesitas un máximo de {MAX_BET} ⛁ para iniciar este coinflip"
+  coinflip-active: "{PREFIX}&4&l» &cYa has creado tu coinflip."
+
+  game-unavailable: "{PREFIX}&4&l» &cEste coinflip ya no está disponible."
+  cant-coinflip-self: "{PREFIX}&4&l» &cNo puedes hacer esto."
+  player-challenged-you: "{PREFIX}&8&l» &b{OPPONENT} &faceptó tu coinflip."
+
+  enter-value: "{PREFIX}&4&l» &cIntroduce un valor entre {MIN_BET} and {MAX_BET}. Escribe 'cancel' para cancelar."
+  chat-cancelled: "{PREFIX}&8&l» &fHas cancelado esta acción."
+  invalid-currency: "{PREFIX}&4&l» &cSolo puedes usar estos tipos de divisas: {CURRENCY_TYPES}"
+  invalid-amount: "{PREFIX}&4&l» &c{INPUT} no es un número. Vuelve a intentarlo."
+
+  broadcast-coinflip: "&r &8&l≡ &b{WINNER} &fganó un coinflip ante &b{LOSER} &fy obtuvo &b{WINNINGS} &7({CURRENCY}) &7(-{TAX_DEDUCTION} {TAX_RATE}% Tax)"
+  broadcast-created-coinflip: "&r &8&l≡ &b{PLAYER} &fha creado un coinflip por &f{AMOUNT} &7({CURRENCY})"
+
+  summary-loss:
+    - ""
+    - "         &#00c5fb&lPERDISTE"
+    - " &7Intentalo para la próxima."
+    - ""
+    - " &8◆ &fCantidad apostada: &b{WINNINGS} ⛁"
+    - " &8◆ &fGanador: &b{WINNER}"
+    - " &8◆ &fPerdedor: &c{LOSER}"
+    - ""
+  summary-win:
+    - ""
+    - "         &#00c5fb&lGANASTE"
+    - "      &7¡Felicidades!"
+    - ""
+    - " &8◆ &fCantidad apostada: &b{WINNINGS} ⛁"
+    - " &8◆ &fGanador: &b{WINNER}"
+    - " &8◆ &fPerdedor: &c{LOSER}"
+    - ""
