@@ -1,0 +1,226 @@
+# For more information, check out the plugin manual or join us on Discord:
+# http://www.mythicmobs.net
+#  
+
+
+Retirese:
+  Cooldown: 20
+  Skills:
+  - message{m="&c⚠ Atención. &fHas sido lanzado"} @PlayersInRadius{r=20}
+  - potion{type=LEVITATION;lvl=10;duration=15} @PlayersInRadius{r=5}
+  - damage{a=30}
+  - blockwave{duration=40;radius=5;radiusY=5;velocity=10;shape=sphere} @selflocation
+  - effect:explosion @Self
+
+ReturnIfOutsideRegion:
+  Conditions:
+  - region{r=salonbatalla} false
+  Skills:
+  - teleport{l=291,128,234;world=spawn} @Self
+
+Alma2:
+  Cooldown: 40
+  Skills:
+  - projectile{onTick=Alma2-Tick;onHit=Alma2-Hit;v=8;i=1;hR=1;vR=1;hnp=true}
+Alma2-Tick:
+  Skills:
+  - projectile{bulletType=MOB;mob=AlmaHeridaFalsa;speed=0;hS=0.2;vS=0.2} @origin
+Alma2-Hit:
+  Skills:
+  - effect:explosion @Self
+  - damage{a=30}
+  - potion{type=SLOW;duration=250;lvl=3}
+  - potion{type=DARKNESS;duration=500;lvl=3}
+  - damage{a=30}
+
+
+
+
+
+
+Alma:
+  Skills:
+  - projectile{onTick=Alma-Tick;onHit=Alma-Hit;v=8;i=1;hR=1;vR=1;hnp=true}
+Alma-Tick:
+  Skills:
+  - projectile{bulletType=BLOCK;material=CONDUIT;speed=0;hS=0.2;vS=0.2} @origin
+Alma-Hit:
+  Skills:
+  - damage{a=15}
+  - potion{type=SLOW;duration=250;lvl=3}
+  - potion{type=DARKNESS;duration=500;lvl=3}
+  - damage{a=15}
+
+
+
+BolaHelada:
+  Skills:
+  - projectile{onTick=BolaHelada-Tick;onHit=BolaHelada-Hit;v=8;i=1;hR=1;vR=1;hnp=true}
+BolaHelada-Tick:
+  Skills:
+  - effect:particles{p=snowballpoof;amount=20;speed=0;hS=0.2;vS=0.2} @origin
+BolaHelada-Hit:
+  Skills:
+  - damage{a=15}
+  - potion{type=SLOW;duration=100;lvl=3}
+
+
+
+Veneno:
+  Cooldown: 10
+  Skills:
+  - message{m="&c⚠ Atención. &fCuidado ha soltado esporas y has sido envenenado"} @PlayersInRadius{r=10}
+  - potion{type=POISON;lvl=2;duration=100} @PlayersInRadius{r=10}
+  - effect:particles{p=happyVillager;amount=1000;hSpread=10;ySpread=1;speed=0;yOFfset=0.5}
+    @Self
+InvocarEnemigos:
+  Cooldown: 20
+  Skills:
+  - message{m="&c⚠ Atención. &fEl guardian esta invocando nuevas tropas"} @PlayersInRadius{r=20}
+  - effect:explosion @Self
+  - teleport{spreadh=7;spreadv=0} @target
+  - summon{mob=Tortuga1;amount=2;noise=10} @Self
+  - delay 50
+  - summon{mob=DefensorFatigadoAhogado;amount=3;noise=5} @Self
+  - delay 50
+  - summon{mob=Rana2;amount=3;noise=5} @Self
+
+InvocarCalamares:
+  Cooldown: 20
+  Skills:
+  - message{m="&c⚠ Atención. &fSe han duplicado. ¿Cual es el original?"} @PlayersInRadius{r=20}
+  - potion{type=blindness;lvl=7;duration=20} @PlayersInRadius{r=5}
+  - effect:explosion @Self
+  - teleport{spreadh=7;spreadv=0} @target
+  - summon{mob=FalsoLuxar;amount=2;noise=10} @Self
+  - delay 50
+  - summon{mob=FalsoLuxar;amount=3;noise=5} @Self
+
+
+Miedo:
+  Cooldown: 20
+  Skills:
+  - message{m="&c⚠ Atención. &fTu miedo ha aumentado. No cierres los ojos."} @PlayersInRadius{r=20}
+  - potion{type=SLOW;lvl=10;duration=100} @PlayersInRadius{r=10}
+  - potion{type=blindness;lvl=10;duration=100} @PlayersInRadius{r=10}
+  - effect:explosion @Self
+  - effect:lightning{repeat=20;repeatInterval=1} @PIR{r=5}
+Vida2:
+  Cooldown: 40
+  Skills:
+  - message{m="&c⚠ Atención. &fEl enemigo se ha curado"} @PlayersInRadius{r=20}
+  - healpercent{m=0.1} @self ~onTimer:100
+  - effect:particletornado{p=HEART;cp=largeexplode;mr=1;h=3;i=4;d=100;rs=1;sh=1;cs=0;ca=0;chs=0.1;cvs=0.1;cps=1;cyo=2} @self ~onTimer:100
+
+Cristal:
+  Cooldown: 20
+  Skills:
+  - message{m="&c⚠ Atención. &fEl enemigo ha encerrado a un jugador."} @PlayersInRadius{r=20}
+  - potion{type=SLOW;lvl=5;duration=65} @PlayersInRadius{r=10}
+  - teleport{spreadh=7;spreadv=0} @target
+  - potion{type=blindness;lvl=3;duration=65} @PlayersInRadius{r=10}
+  - effect:explosion @Self
+  - prison{material=AMETHYST_BLOCK;duration=100;breakable=false} @target
+  - Delay 200
+  - message{m="&c⚠ Atención. &fEl enemigo es muy rápido."} @PlayersInRadius{r=20}
+  - effect:particlesphere{particle=DRAGON_BREATH;amount=6000;radius=3} ~onTimer:400 @self
+  - effect:geyser{type=WATER;height=3;speed=10}
+  - teleport{spreadh=7;spreadv=0} @target
+  - Delay 90
+  - teleport{spreadh=7;spreadv=0} @target
+  - effect:particlesphere{particle=DRAGON_BREATH;amount=6000;radius=3} ~onTimer:400 @self
+  - effect:geyser{type=WATER;height=3;speed=10}
+  - Delay 90
+  - teleport{spreadh=7;spreadv=0} @target
+  - effect:particlesphere{particle=DRAGON_BREATH;amount=6000;radius=3} ~onTimer:400 @self
+  - effect:geyser{type=WATER;height=3;speed=10}
+  - Delay 90
+  - teleport{spreadh=7;spreadv=0} @target
+  - effect:particlesphere{particle=DRAGON_BREATH;amount=6000;radius=3} ~onTimer:400 @self
+  - effect:geyser{type=WATER;height=3;speed=10}
+Heal:
+  Cooldown: 35
+  Skills:
+  - message{m="&c⚠ Atención. &fEl enemigo se esta regenerando"} @PlayersInRadius{r=20}
+  - teleport{spreadh=7;spreadv=0} @target
+  - healpercent{m=0.2} @self ~onTimer:200
+  - effect:particletornado{p=HEART;cp=largeexplode;mr=1;h=3;i=4;d=100;rs=1;sh=1;cs=0;ca=0;chs=0.1;cvs=0.1;cps=1;cyo=2} @self ~onTimer:200
+
+Ahogado:
+  Cooldown: 15
+  Skills:
+  - message{m="&c⚠ Atención. &fCuidado en tus alrededores"} @PlayersInRadius{r=20}
+  - effect:particletornado{p=cloud;cp=largeexplode;mr=1;h=3;i=3;d=100;rs=1;sh=1;cs=0;ca=0;chs=0.1;cvs=0.1;cps=1;cyo=2} @self ~onTimer:100
+  - potion{type=POISON;lvl=3;duration=60} @PlayersInRadius{r=10}
+  - teleport{spreadh=7;spreadv=0} @target
+  - potion{type=blindness;lvl=3;duration=60} @PlayersInRadius{r=10}
+  - effect:explosion @Self
+  - delay 100
+  - teleport{spreadh=7;spreadv=0} @target
+  - potion{type=POISON;lvl=3;duration=60} @PlayersInRadius{r=10}
+  - potion{type=blindness;lvl=3;duration=60} @PlayersInRadius{r=10}
+  - effect:explosion @Self 
+
+
+IluminerSkill:
+  Cooldown: 20
+  Skills:
+  - message{m="&c⚠ Cuidado. &fAlgo va a ocurrir..."} @PlayersInRadius{r=20}
+  - delay 100
+  - potion{type=LEVITATION;lvl=50;duration=20} @PlayersInRadius{r=5}
+  - effect:explosion @Self
+  - blockwave{duration=40;radius=5;radiusY=5;velocity=10;shape=sphere} @selflocation
+
+
+GenerarArañas:
+  Cooldown: 20
+  Skills:
+  - prison{material=COBWEB;duration=100;breakable=false} @target
+  - potion{type=POISON;lvl=10;duration=60} @PlayersInRadius{r=10}
+  - potion{type=blindness;lvl=3;duration=60} @PlayersInRadius{r=10}
+  - message{m="&c⚠ Adelante mis pequeñas..."} @PlayersInRadius{r=20}
+  - summon{mob=ArañaHija;amount=2;noise=10} @Self
+  - delay 50
+  - summon{mob=ArañaHija;amount=3;noise=5} @Self
+  - delay 40
+  - summon{mob=ArañaHija;amount=2;noise=7} @Self
+
+
+
+
+LlamarPapa:
+  Cooldown: 20
+  Skills:
+  - message{m="&c⚠ Atención. &fAlgo esta ocurriendo..."} @PlayersInRadius{r=20}
+  - delay 100
+  - message{m="&c⚠ ¿Has matado a mi hijo?"} @PlayersInRadius{r=20}
+  - delay 100
+  - message{m="&c⚠ ¡No lo permitire!"} @PlayersInRadius{r=20}
+  - delay 100
+  - potion{type=LEVITATION;lvl=7;duration=20} @PlayersInRadius{r=5}
+  - effect:explosion @Self
+  - blockwave{duration=40;radius=5;radiusY=5;velocity=10;shape=sphere} @selflocation
+  - summon{mob=GranjeroPadre;amount=1;noise=10} @Self
+  - delay 50
+  - summon{mob=CalabazaMutante;amount=2;noise=10} @Self
+  - delay 50
+  - summon{mob=CalabazaMutante;amount=3;noise=5} @Self
+  - delay 40
+  - summon{mob=CalabazaMutante;amount=2;noise=7} @Self
+
+
+
+
+
+GenerarCalabzas:
+  Cooldown: 20
+  Skills:
+  - message{m="&c⚠ Atención. &fSe aproximan más enemigos"} @PlayersInRadius{r=20}
+  - potion{type=LEVITATION;lvl=7;duration=20} @PlayersInRadius{r=5}
+  - effect:explosion @Self
+  - blockwave{duration=40;radius=5;radiusY=5;velocity=10;shape=sphere} @selflocation
+  - summon{mob=CalabazaMutante;amount=2;noise=10} @Self
+  - delay 50
+  - summon{mob=CalabazaMutante;amount=3;noise=5} @Self
+  - delay 40
+  - summon{mob=CalabazaMutante;amount=2;noise=7} @Self

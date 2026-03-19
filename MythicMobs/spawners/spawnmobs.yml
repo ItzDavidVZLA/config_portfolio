@@ -1,0 +1,29 @@
+spawnmobs:
+  MobName: zombie_avanzado
+  World: spawn
+  X: 215
+  Y: 100
+  Z: -114
+  Yaw: 0.0
+  Pitch: 0.0
+  Radius: 10.0
+  RadiusY: 0.0
+  UseTimer: true
+  MaxMobs: '7'
+  MobLevel: '1'
+  MobsPerSpawn: 1
+  Cooldown: 5
+  Warmup: 0
+  ActivationRange: 32.0
+  ScalingRange: 25.0
+  LeashRange: 32.0
+  HealOnLeash: false
+  ResetThreatOnLeash: false
+  Breakable: false
+  CheckForPlayers: true
+  ShowFlames: false
+  Conditions:
+  - region{r=spawnmobs} true
+  SpawnConditions: []
+  ActiveMobs: 2
+  CooldownTimer: 2

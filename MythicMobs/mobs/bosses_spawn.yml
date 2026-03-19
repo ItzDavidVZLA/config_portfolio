@@ -1,0 +1,158 @@
+tempest:
+  Type: Zombie
+  Display: '&8[&7Nv. 50&8] &2Tempest ☢ &a<caster.hp{round=0}>&7/&a<caster.mhp{round=0}> &c❤'
+  Health: 5000
+  Damage: 10
+  Faction: spawnbosses
+  Options:
+    MovementSpeed: 0.35
+    AlwaysShowName: true
+    PreventOtherDrops: true
+    PreventSunburn: true
+  BossBar:
+    Enabled: true
+    Title: '&8[&7Nv. 50&8] &2Tempest ☢ &a<caster.hp{round=0}>&7/&a<caster.mhp{round=0}> &c❤'
+    Range: 20
+    Color: BLUE
+    Style: SOLID
+  AIGoalSelectors: 
+  - clear
+  - meleeattack 
+  - lookatplayers
+  AITargetSelectors:
+  - clear 
+  - players 
+  - attacker 
+  Equipment:
+  - leather_chestplate{color=100,255,50} CHESTPLATE
+  - chainmail_leggings LEGS
+  - diamond_boots FEET
+  - stone_sword HAND
+  Drops:
+  - command{c="eco give %player_name% 1000000"}
+  - command{c="ecobits give %player_name% cristales 200"}
+  #- command{c="svar add fragmentoantiguo 32 %player_name%"}
+  Skills:
+  - setname{n=<caster.name>;delay=2} @self ~onDamaged
+  - skill{s=tempest_campoenergetico}
+  - skill{s=tempest_antiveneno}
+  #- skill{s=tempest_campoenergetico_mensaje}
+  #- message{m=TIMER every tick (0.05 seconds)} @World ~onTimer:10000 <30%
+
+balrog:
+  Type: WITHER_SKELETON
+  Display: '&8[&7Nv. 50&8] &cBalrog 💀 &a<caster.hp{round=0}>&7/&a<caster.mhp{round=0}> &c❤'
+  Health: 10000
+  Damage: 20
+  Faction: spawnbosses
+  Options:
+    MovementSpeed: 0.25
+    AlwaysShowName: true
+    PreventOtherDrops: true
+    PreventSunburn: true
+  Equipment:
+  - leather_helmet{color=gray} HELMET
+  - leather_chestplate{color=gray} CHESTPLATE
+  - chainmail_leggings LEGS
+  - leather_boots{color=gray} FEET
+  - stone_sword HAND
+  Drops:
+  - command{c="eco give %player_name% 5000000"}
+  - command{c="ecobits give %player_name% cristales 500"}
+  #- command{c="svar add fragmentoantiguo 32 %player_name%"}
+  Skills:
+  - setname{n=<caster.name>;delay=2} @self ~onDamaged
+  - skill{s=balrog_espiritudegrenburr}
+  - skill{s=balrog_ondadechoque}
+  - skill{s=balrog_filomaestro}
+  #- damage{amount=10000;ignoreArmor=true} @target ~onAttack <15% 0.25
+  #- attributeModifier{attribute=GENERIC_ATTACK_DAMAGE;a=999999;dur=999999;op=ADD_NUMBER} @Mob ~onDamaged <30%
+
+sentinel:
+  Type: ENDERMAN
+  Display: '&8[&7Nv. 50&8] &dSentinel ⏣ &a<caster.hp{round=0}>&7/&a<caster.mhp{round=0}> &c❤'
+  Health: 25000
+  Damage: 30
+  Faction: spawnbosses
+  Options:
+    MovementSpeed: 0.35
+    AlwaysShowName: true
+    PreventOtherDrops: true
+    PreventSunburn: true
+    PreventTeleport: true
+  Drops:
+  - command{c="eco give %player_name% 25000000"}
+  - command{c="ecobits give %player_name% cristales 1000"}
+  #- command{c="svar add fragmentoantiguo 32 %player_name%"}
+  Skills:
+  - setname{n=<caster.name>;delay=2} @self ~onDamaged
+  #- potion{type=REGENERATION;duration=255255;amplifier=5} @self
+  #- potion{type=INCREASE_DAMAGE;duration=255255;amplifier=1} @self
+  #- potion{type=FIRE_RESISTANCE;duration=255255;amplifier=1} @self
+  - skill{s=sentinel_espiritudecharibasa}
+  - skill{s=sentinel_angelcaido}
+  - skill{s=sentinel_antiincendiaria}
+  - skill{s=sentinel_incubadora}
+  #- teleport{spreadh=5;spreadv=0} @target ~onTimer:100
+  #- skill{s=ReturnIfOutsideRegion} @Self ~onTimer:20
+apex:
+  Type: IRON_GOLEM
+  Display: '&8[&7Nv. 50&8] &6Apex ᛃ &a<caster.hp{round=0}>&7/&a<caster.mhp{round=0}> &c❤'
+  Health: 50000
+  Damage: 40
+  Faction: spawnbosses
+  Options:
+    MovementSpeed: 0.35
+    AlwaysShowName: true
+    PreventOtherDrops: true
+    PreventSunburn: true
+  Drops:
+  - command{c="eco give %player_name% 50000000"}
+  - command{c="ecobits give %player_name% cristales 2000"}
+  #- command{c="svar add fragmentoantiguo 32 %player_name%"}
+  Skills:
+  - setname{n=<caster.name>;delay=2} @self ~onDamaged
+  - potion{type=FIRE_RESISTANCE;duration=255255;level=1} @self
+  - skill{s=apex_espiritudetondenga}
+  - skill{s=apex_terremoto} <30% 0.1
+  - skill{s=apex_voila} 0.05
+  #- potion{type=INCREASE_DAMAGE;duration=255255;amplifier=2} @self
+  #- potion{type=FIRE_RESISTANCE;duration=255255;amplifier=1} @self
+  #- throw{velocity=10;velocityY=5} @target ~onDamaged
+mahopon:
+  Type: EVOKER
+  Display: '&8[&7Nv. 50&8] &bEvoker 🔥 &a<caster.hp{round=0}>&7/&a<caster.mhp{round=0}> &c❤'
+  Health: 50000
+  Damage: 50
+  Faction: spawnbosses
+  Options:
+    MovementSpeed: 0.25
+    KnockbackResistance: 10.0
+    AlwaysShowName: true
+    PreventOtherDrops: true
+    PreventSunburn: true
+  AIGoalSelectors:
+  - clear
+  - meleeattack
+  Drops:
+  - command{c="eco give %player_name% 100000000"}
+  - command{c="ecobits give %player_name% cristales 3000"}
+  #- command{c="svar add fragmentoantiguo 32 %player_name%"}
+  Skills:
+  - setname{n=<caster.name>;delay=2} @self ~onDamaged
+  - skill{s=evoker_danomagico}
+  - skill{s=evoker_espiritudemahopon} <10%
+  - skill{s=evoker_vitalidad}
+  - skill{s=evoker_armageddon_congelar} ~onTimer:600 0.5
+  #- skill{s=evoker_armageddon_bombardear} ~onTimer:600 0.5
+  - skill{s=evoker_incandescencia}
+  #- skill{s=evoker_esferadeestado}
+  #- potion{type=SLOW;duration=60} @target ~onDamaged ~onTimer:200
+  #- potion{type=WEAKNESS;duration=60} @target ~onDamaged ~onTimer:200
+  #- potion{type=POISON;duration=60} @target ~onDamaged ~onTimer:200
+  #- potion{type=DAMAGE_RESISTANCE;duration=60} @target ~onDamaged ~onTimer:200
+  #- potion{type=REGENERATION;duration=60,amplifier=3} @self ~onDamaged ~onTimer:200
+  #- potion{type=SPEED;duration=60,amplifier=2} @self ~onDamaged ~onTimer:200
+  #- potion{type=INCREASE_DAMAGE;duration=60,amplifier=2} @self ~onDamaged ~onTimer:200
+  #- potion{type=WITHER;duration=60} @target ~onDamaged ~onTimer:200
+  #- ignite{ticks=100} @target ~onDamaged ~onTimer:1200

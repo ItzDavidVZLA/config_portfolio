@@ -1,0 +1,110 @@
+Skills:
+  VelocidadDelViento:
+    Skills:
+      - potion{t=SPEED;d=600;l=1} @self
+
+  #Garra:
+    #Skills:
+      #- repeat{c=3;i=10;skill:
+          #- damage{d=30%;t=true} @LivingEntitiesInRadius{r=5}
+          #- push{p=2} @LivingEntitiesInRadius{r=5}
+        #}
+
+  AlientoVenenoso:
+    Skills:
+      - effect:particles{p=SPELL_MOB;a=100} @origin
+      - damage{d=10;t=true} @PlayersInRadius{r=5}
+      - potion{t=POISON;d=300;l=1} @PlayersInRadius{r=5}
+
+  Experiencia:
+    Skills:
+      - damage{d=15%;t=true} @PlayersInRadius{r=10}
+      
+  VelocidadDelViento:
+    Skills:
+      - potion{t=SPEED;d=600;l=1} @self
+
+  Laser:
+    Skills:
+      - effect:particles{p=REDSTONE;a=1;d=5;color=255,0,0} @PlayersInRadius{r=10}
+      - damage{d=50%;t=true} @PlayersInRadius{r=10}
+
+  AlientoHelado:
+    Skills:
+      - effect:particles{p=SNOW_SHOVEL;a=100} @origin
+      - potion{t=SLOW;d=100;l=2} @PlayersInRadius{r=5}
+      - potion{t=BLINDNESS;d=100;l=4} @PlayersInRadius{r=5}
+
+  FuerzaBruta:
+    Skills:
+      - damage{d=20%;t=true} @PlayersInRadius{r=10}
+  
+  PoderDeFuego:
+    Skills:
+      - effect:particles{p=FLAME;a=100} @origin
+      - potion{t=SLOW;d=100;l=2} @PlayersInRadius{r=5}
+      - ignite{d=100} @PlayersInRadius{r=5}
+
+  Armazon:
+    Skills:
+      - damage{d=-70%} @self
+
+  FiloEnMano:
+    Skills:
+      - damage{d=40%;t=true} @PlayersInRadius{r=5}
+
+  Trueno:
+    Skills:
+      - lightning{d=10} @PlayersInRadius{r=15}
+
+  Aleteo:
+    Skills:
+      - push{p=5} @PlayersInRadius{r=5}
+      
+  Sabiduria:
+    Skills:
+      - potion{t=POISON;d=200;l=1} @PlayersInRadius{r=5}
+      - potion{t=WEAKNESS;d=200;l=1} @PlayersInRadius{r=5}
+      - potion{t=SLOW;d=200;l=2} @PlayersInRadius{r=5}
+      - potion{t=BLINDNESS;d=200;l=1} @PlayersInRadius{r=5}
+
+  Vitalidad:
+    Skills:
+      - potion{t=REGENERATION;d=200;l=5} @self
+
+  Vigoroso:
+    Skills:
+      - potion{t=STRENGTH;d=200;l=4} @self
+
+  #EscudoEspectral:
+    #Skills:
+      #- chance{c=5}:
+          #- damage{d=0} @self
+          #- potion{t=RESISTANCE;d=200;l=5} @self
+         
+  FiloMaestro:
+    Skills:
+      - damage{d=35%;t=true} @PlayersInRadius{r=5}
+
+  ReyDelEnd:
+    Skills:
+      - potion{t=REGENERATION;d=200;l=5} @self
+      - potion{t=STRENGTH;d=200;l=4} @self
+      - potion{t=RESISTANCE;d=200;l=2} @self
+
+  AlientoMaestro:
+    Skills:
+      - effect:particles{p=FLAME;a=100} @origin
+      - potion{t=SLOW;d=200;l=2} @PlayersInRadius{r=10}
+      - potion{t=POISON;d=200;l=2} @PlayersInRadius{r=10}
+      - potion{t=WEAKNESS;d=200;l=2} @PlayersInRadius{r=10}
+      - ignite{d=200} @PlayersInRadius{r=10}
+
+  ControlDeAlmas:
+    Skills:
+      - summon{type=ENDERMAN;amount=3;radius=5} @origin
+
+  #Sentencia:
+    #Skills:
+      #- chance{c=50}:
+          #- damage{d=1000} @PlayersInRadius{r=5}

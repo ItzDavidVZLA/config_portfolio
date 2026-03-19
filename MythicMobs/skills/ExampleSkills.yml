@@ -1,0 +1,124 @@
+SmashAttack:
+  Cooldown: 8
+  Conditions:
+  - targetwithin{d=25}
+  Skills:
+  - message{cooldown=30;m="<mob.name><&co> Hahahah! I will crush you, fool!"} @PlayersInRadius{r=40}
+  - teleport @target
+  - effect:sound{s=mob.endermen.portal;volume=1.0;pitch=0.5}
+  - delay 10
+  - damage{amount=5;ignorearmor=true} @PlayersInRadius{r=5}
+  - throw{velocity=10;velocityY=5} @PlayersInRadius{r=5}
+  - effect:explosion @Self
+SummonSkeletons:
+  Cooldown: 15
+  Skills:
+  - message{m="<caster.name><&co> Arise, my minions!"} @PlayersInRadius{r=40}
+  - delay 20
+  - summon{mob=SkeletalMinion;amount=2;noise=5} @Self
+  - delay 20
+  - summon{mob=SkeletalMinion;amount=2;noise=5} @Self
+  - delay 20
+  - summon{mob=SkeletalMinion;amount=2;noise=5} @Self
+AngrySludgePoison:
+  Cooldown: 10
+  Skills:
+  - potion{type=POISON;lvl=2;duration=100} @PlayersInRadius{r=15}
+  - effect:particles{p=happyVillager;amount=1000;hSpread=15;ySpread=1;speed=0;yOffset=0.5}
+    @Self
+    
+Wither:
+  Cooldown: 20
+  Skills:
+  - message{m="<caster.name><&co> Testing"} @PlayersInRadius{r=40}
+  - potion{type=WITHER;lvl=2;duration=100} @PlayersInRadius{r=15}
+    @Self
+   
+Slow:
+  Cooldown: 20
+  Skills:
+  - teleport @target
+  - particle{p=campfire_cosy_smoke}
+  - message{m="<caster.name><&7o> Algo más lento... "} @PlayersInRadius{r=40}
+  - potion{type=SLOW;lvl=3;duration=100} @PlayersInRadius{r=15}    
+
+
+Geyser:
+  Skills:
+  - geyser{type=WATER;height=3;speed=10} @selflocation
+
+AquaPrision:
+  Skills:
+  - prison{material=BLUE_STAINED_GLASS;duration=200;breakable=false} @target
+
+  
+LanzadorAqua:
+  Skills:
+  - projectile{onTick=LanzadorAqua-Tick;onHit=LanzadorAqua-Hit;v=8;i=1;hR=1;vR=1;hnp=true}
+
+LanzadorAqua-Tick:
+  Skills:
+  - effect:particles{p=Dripping_Dripstone_Water;amount=20;speed=0;hS=0.2;vS=0.2} @origin
+
+LanzadorAqua-Hit:
+  Skills:
+  - damage{a=10}
+  - potion{type=SLOW;duration=100;lvl=2}
+
+
+LanzadorLava:
+  Skills:
+  - projectile{onTick=LanzadorLava-Tick;onHit=LanzadorLava-Hit;v=8;i=1;hR=1;vR=1;hnp=true}
+
+LanzadorLava-Tick:
+  Skills:
+  - effect:particles{p=flame;amount=20;speed=0;hS=0.2;vS=0.2} @origin
+
+LanzadorLava-Hit:
+  Skills:
+  - damage{a=10}
+  - setFire{duration=100} @target
+
+Geyser2:
+  Skills:
+  - geyser{type=LAVA;height=3;speed=10} @selflocation
+
+LavaPrision:
+  Skills:
+  - prison{material=RED_STAINED_GLASS;duration=200;breakable=false} @target
+
+
+
+
+Lanzador:
+  Skills:
+  - message{m="test"} @self
+  - shoot{type=FALLING_BLOCK;material=BLACK_STAINED_GLASS;velocity=1.5;damage=6;bounce=false} @target ~onAttack
+
+
+IceBolt:
+  Skills:
+  - projectile{onTick=IceBolt-Tick;onHit=IceBolt-Hit;v=8;i=1;hR=1;vR=1;hnp=true}
+IceBolt-Tick:
+  Skills:
+  - effect:particles{p=snowballpoof;amount=20;speed=0;hS=0.2;vS=0.2} @origin
+IceBolt-Hit:
+  Skills:
+  - damage{a=10}
+  - potion{type=SLOW;duration=100;lvl=2}
+
+Lanzador:
+  Skills:
+  - projectile{bulletType=BLOCK;material=CONDUIT;onHit=Lanzador-Hit;v=8;i=1;hR=1;vR=1;hnp=true}
+Lanzador-Hit:
+  Skills:
+  - damage{a=10}
+  - potion{type=SLOW;duration=100;lvl=2}
+  - potion{type=DARKNESS;duration=50;lvl=2}
+
+
+
+
+
+
+

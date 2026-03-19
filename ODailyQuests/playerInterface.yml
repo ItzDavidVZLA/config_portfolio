@@ -1,0 +1,101 @@
+# ======================================================
+# Here you can create your own player quests interface.
+#
+# Never delete a %variable% unless you know what you're doing.
+# %achieved% is replaced by the number of completed quests.
+# %drawIn% is replaced by the time remaining before the next quests draw.
+# ======================================================
+player_interface:
+  size: 36
+  inventory_name: "&0Misiones &ndiarias"
+  progress: "&e» Progreso: %progress%/%required% «"
+  status: ''
+  achieved: "&a» Completado «"
+  glowing_if_achieved: true
+  complete_get_type: "&e» ¡Haz clic para completar esta misión! «"
+  player_head:
+    enabled: true
+    slot: 33
+    item_name: "#00BCF5Panel de misiones"
+    item_description:
+      - "&8Información"
+      - ""
+      - "&fMisiones completadas: &b%achieved%&8/&b3"
+      - "&fPróximas misiones en: &b%drawIn%"
+      - ""
+      - "&emc.comugamers.com"
+  # ========================================================
+  # Available types : FILL, PLAYER_COMMAND, CONSOLE_COMMAND
+  # Placeholders : %player%
+  # More info on Wiki.
+  # ========================================================
+  quests: # set the position of quests items
+    1: 12
+    2: 14
+    3: 16
+  items:
+    0:
+      type: CONSOLE_COMMAND
+      item:
+        material: BLACK_STAINED_GLASS_PANE
+        name: " "
+        lore: []
+        slot: 28
+    1:
+      type: CONSOLE_COMMAND
+      item:
+        material: BLACK_STAINED_GLASS_PANE
+        name: " "
+        lore: []
+        slot: 29
+    2:
+      type: CONSOLE_COMMAND
+      item:
+        material: BLACK_STAINED_GLASS_PANE
+        name: " "
+        lore: []
+        slot: 30
+    3:
+      type: CLOSE
+      item:
+        material: RED_DYE
+        name: "&cCerrar"
+        lore: []
+        slot: 32
+    4:
+      type: CONSOLE_COMMAND
+      item:
+        material: ARROW
+        name: "&eVolver"
+        lore: []
+        slot: 31
+      commands:
+          - "dm open menu_principal %player%"
+    6:
+      type: CONSOLE_COMMAND
+      item:
+        material: BLACK_STAINED_GLASS_PANE
+        name: " "
+        lore: []
+        slot: 33
+    7:
+      type: CONSOLE_COMMAND
+      item:
+        material: BLACK_STAINED_GLASS_PANE
+        name: " "
+        lore: []
+        slot: 34
+    8:
+      type: CONSOLE_COMMAND
+      item:
+        material: BLACK_STAINED_GLASS_PANE
+        name: " "
+        lore: []
+        slot: 35
+    9:
+      type: CONSOLE_COMMAND
+      item:
+        material: BLACK_STAINED_GLASS_PANE
+        name: " "
+        lore: []
+        slot: 36

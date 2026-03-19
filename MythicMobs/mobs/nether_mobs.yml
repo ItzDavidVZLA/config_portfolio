@@ -1,0 +1,69 @@
+caballero_infernal:
+  Type: WITHER_SKELETON
+  Display: '&8[&7Nv. <caster.level>&8] &cCaballero Infernal &a<caster.hp{round=0}>&7/&a<caster.mhp{round=0}> &c❤'
+  Health: 250
+  Damage: 20
+  Faction: netherbosses
+  Equipment:
+  - leather_helmet{color=BLACK} HEAD
+  - IRON_SWORD HAND
+  Options:
+    MovementSpeed: 0.2
+    AlwaysShowName: true
+    PreventOtherDrops: true
+    PreventSunburn: true
+  Drops:
+  - command{c="sk xp add %player_name% fighting 200"} 
+  Skills:
+  - setname{n=<caster.name>;delay=2} @self ~onDamaged
+cerdo_erratico:
+  Type: PIGLIN
+  Display: '&8[&7Nv. <caster.level>&8] &cCerdo Errático &a<caster.hp{round=0}>&7/&a<caster.mhp{round=0}> &c❤'
+  Health: 250
+  Damage: 20
+  Faction: netherbosses
+  Equipment:
+  - NETHERITE_SWORD HAND
+  Options:
+    MovementSpeed: 0.2
+    AlwaysShowName: true
+    PreventOtherDrops: true
+    PreventSunburn: true
+  Drops:
+  - command{c="sk xp add %player_name% fighting 250"} 
+  Skills:
+  - setname{n=<caster.name>;delay=2} @self ~onDamaged
+aniquilador:
+  Type: PIGLIN_BRUTE
+  Display: '&8[&7Nv. <caster.level>&8] &cAniquilador &a<caster.hp{round=0}>&7/&a<caster.mhp{round=0}> &c❤'
+  Health: 300
+  Damage: 35
+  Faction: netherbosses
+  Equipment:
+  - NETHERITE_AXE HAND
+  Options:
+    MovementSpeed: 0.2
+    AlwaysShowName: true
+    PreventOtherDrops: true
+    PreventSunburn: true
+  Drops:
+  - command{c="sk xp add %player_name% fighting 250"} 
+  Skills:
+  - setname{n=<caster.name>;delay=2} @self ~onDamaged
+slime_infernal:
+  Type: MAGMA_CUBE
+  Display: '&8[&7Nv. <caster.level>&8] &cSlime Infernal &a<caster.hp{round=0}>&7/&a<caster.mhp{round=0}> &c❤'
+  Health: 150
+  Damage: 10
+  Faction: netherbosses
+  Equipment:
+  - NETHERITE_SWORD HAND
+  Options:
+    MovementSpeed: 0.2
+    AlwaysShowName: true
+    PreventOtherDrops: true
+    PreventSunburn: true
+  Drops:
+  - command{c="sk xp add %player_name% fighting 250"} 
+  Skills:
+  - setname{n=<caster.name>;delay=2} @self ~onDamaged

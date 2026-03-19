@@ -1,0 +1,28 @@
+enderman_salvaje:
+  Type: ENDERMAN
+  Display: '&8[&7Nv. <caster.level>&8] &cEnderman Salvaje &a<caster.hp{round=0}>&7/&a<caster.mhp{round=0}> &c❤'
+  Health: 500
+  Damage: 45
+  Options:
+    MovementSpeed: 0.2
+    AlwaysShowName: true
+    PreventOtherDrops: true
+    PreventSunburn: true
+  Drops:
+  - command{c="sk xp add %player_name% fighting 350"} 
+  Skills:
+  - setname{n=<caster.name>;delay=2} @self ~onDamaged
+endermite_membranoso:
+  Type: ENDERMITE
+  Display: '&8[&7Nv. <caster.level>&8] &cEndermite Membranoso &a<caster.hp{round=0}>&7/&a<caster.mhp{round=0}> &c❤'
+  Health: 100
+  Damage: 15
+  Options:
+    MovementSpeed: 0.2
+    AlwaysShowName: true
+    PreventOtherDrops: true
+    PreventSunburn: true
+  Drops:
+  - command{c="sk xp add %player_name% fighting 200"} 
+  Skills:
+  - setname{n=<caster.name>;delay=2} @self ~onDamaged

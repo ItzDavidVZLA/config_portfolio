@@ -1,0 +1,444 @@
+# ==============================================================
+#                       GLOBAL QUESTS FILE
+# ==============================================================
+# Quests must be numbered and increment from 1 to 1.
+# Please be attentive to the indentation and respect the scheme.
+# This could cause several bugs.
+# ==============================================================
+# AVAILABLE QUESTS TYPES :
+# https://ordwenplugins.gitbook.io/odailyquests/quests/quests-types
+# ==============================================================
+# AVAILABLE REWARDS TYPES :
+# https://ordwenplugins.gitbook.io/odailyquests/quests/rewards-types
+# ==============================================================
+# AVAILABLE PLUGIN PLACEHOLDERS FOR QUESTS DESCRIPTIONS :
+# %progress% is replaced by the progression of the quest.
+# %required% is replaced by the required amount to complete the quest.
+# ==============================================================
+# More tips available on Wiki :
+# https://ordwenplugins.gitbook.io/odailyquests/
+# Need help ? https://discord.gg/Q8sw5KFvqg
+# For more affected objects or types, please make suggestion.
+# ==============================================================
+quests:
+
+  # example quest that is using the BREAK quest type
+  
+  minero:
+    name: "#00BCF5Minero"
+    menu_item: COBBLESTONE
+    description:
+      - "&8Misión"
+      - ""
+      - "&fMina 128 bloques de piedra"
+      - ""
+      - " &fRecompensas:"
+      - " &8● &612,380 ⛁"
+      - " &8● &b5 ❖"
+    quest_type: BREAK
+    required_item: STONE
+    required_amount: 128
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "eco give %player% 12380"
+        - "ecobits give %player% cristales 5"
+        - "svar add misiones_totales 1.0 %player%"
+  minero2:
+    name: "#00BCF5Minero joven"
+    menu_item: COAL_ORE
+    description:
+      - "&8Misión"
+      - ""
+      - "&fMina 128 bloques de mena"
+      - "&fde carbón"
+      - ""
+      - " &fRecompensas:"
+      - " &8● &614,140 ⛁"
+      - " &8● &b5 ❖"
+    quest_type: BREAK
+    required_item: COAL_ORE
+    required_amount: 128
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "eco give %player% 14140"
+        - "ecobits give %player% cristales 5"
+        - "svar add misiones_totales 1.0 %player%"
+  minero3:
+    name: "#00BCF5Minero experimentado"
+    menu_item: IRON_ORE
+    description:
+      - "&8Misión"
+      - ""
+      - "&fMina 128 bloques de mena"
+      - "&fde hierro"
+      - ""
+      - " &fRecompensas:"
+      - " &8● &617,430 ⛁"
+      - " &8● &b5 ❖"
+    quest_type: BREAK
+    required_item: IRON_ORE
+    required_amount: 128
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "eco give %player% 17430"
+        - "ecobits give %player% cristales 5"
+        - "svar add misiones_totales 1.0 %player%"
+  minero4:
+    name: "#00BCF5Minero avanzado"
+    menu_item: GOLD_ORE
+    description:
+      - "&8Misión"
+      - ""
+      - "&fMina 128 bloques de mena"
+      - "&fde oro"
+      - ""
+      - " &fRecompensas:"
+      - " &8● &621,550 ⛁"
+      - " &8● &b5 ❖"
+    quest_type: BREAK
+    required_item: GOLD_ORE
+    required_amount: 128
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "eco give %player% 21550"
+        - "ecobits give %player% cristales 5"
+        - "svar add misiones_totales 1.0 %player%"
+  minero5:
+    name: "#00BCF5Minero experto"
+    menu_item: DIAMOND_ORE
+    description:
+      - "&8Misión"
+      - ""
+      - "&fMina 128 bloques de mena"
+      - "&fde diamante"
+      - ""
+      - " &fRecompensas:"
+      - " &8● &624,660 ⛁"
+      - " &8● &b5 ❖"
+    quest_type: BREAK
+    required_item: DIAMOND_ORE
+    required_amount: 128
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "eco give %player% 21550"
+        - "ecobits give %player% cristales 5"
+        - "svar add misiones_totales 1.0 %player%"
+  cazador:
+    name: "#00BCF5Cazador de zombies"
+    menu_item: ZOMBIE_HEAD
+    description:
+      - "&8Misión"
+      - ""
+      - "&fMata 20 zombies"
+      - ""
+      - " &fRecompensas:"
+      - " &8● &611,670 ⛁"
+      - " &8● &b5 ❖"
+    quest_type: KILL
+    required_entity: ZOMBIE
+    required_amount: 20
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "eco give %player% 11670"
+        - "ecobits give %player% cristales 5"
+        - "svar add misiones_totales 1.0 %player%"
+  cazador2:
+    name: "#00BCF5Cazador de esqueletos"
+    menu_item: SKELETON_SKULL
+    description:
+      - "&8Misión"
+      - ""
+      - "&fMata a 20 esqueletos"
+      - ""
+      - " &fRecompensas:"
+      - " &8● &612,440 ⛁"
+      - " &8● &b5 ❖"
+    quest_type: KILL
+    required_entity: SKELETON
+    required_amount: 20
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "eco give %player% 12440"
+        - "ecobits give %player% cristales 5"
+        - "svar add misiones_totales 1.0 %player%"
+  cazador3:
+    name: "#00BCF5Cazador de creepers"
+    menu_item: CREEPER_HEAD
+    description:
+      - "&8Misión"
+      - ""
+      - "&fMata a 20 creepers"
+      - ""
+      - " &fRecompensas:"
+      - " &8● &610,990 ⛁"
+      - " &8● &b5 ❖"
+    quest_type: KILL
+    required_entity: CREEPER
+    required_amount: 20
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "eco give %player% 10990"
+        - "ecobits give %player% cristales 5"
+        - "svar add misiones_totales 1.0 %player%"
+  cazador4:
+    name: "#00BCF5Cazador de endermans"
+    menu_item: ENDERMAN_SPAWN_EGG
+    description:
+      - "&8Misión"
+      - ""
+      - "&fMata a 20 endermans"
+      - ""
+      - " &fRecompensas:"
+      - " &8● &615,650 ⛁"
+      - " &8● &b5 ❖"
+    quest_type: KILL
+    required_entity: ENDERMAN
+    required_amount: 20
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "eco give %player% 15650"
+        - "ecobits give %player% cristales 5"
+        - "svar add misiones_totales 1.0 %player%"
+  cazador5:
+    name: "#00BCF5Cazador de withers"
+    menu_item: WITHER_SKELETON_SKULL
+    description:
+      - "&8Misión"
+      - ""
+      - "&fMata a 20 withers"
+      - ""
+      - " &fRecompensas:"
+      - " &8● &621,920 ⛁"
+      - " &8● &b5 ❖"
+    quest_type: KILL
+    required_entity: WITHER_SKELETON
+    required_amount: 20
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "eco give %player% 21920"
+        - "ecobits give %player% cristales 5"
+        - "svar add misiones_totales 1.0 %player%"
+  granjero:
+    name: "#00BCF5Granjero"
+    menu_item: WHEAT
+    description:
+      - "&8Misión"
+      - ""
+      - "&fRompe 64 cosechas"
+      - "&fde trigo"
+      - ""
+      - " &fRecompensas:"
+      - " &8● &65,110 ⛁"
+      - " &8● &b5 ❖"
+    quest_type: FARMING
+    required_item: WHEAT
+    required_amount: 64
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "eco give %player% 5110"
+        - "ecobits give %player% cristales 5"
+        - "svar add misiones_totales 1.0 %player%"
+  granjero2:
+    name: "#00BCF5Granjero joven"
+    menu_item: POTATO
+    description:
+      - "&8Misión"
+      - ""
+      - "&fRompe 64 cosechas"
+      - "&fde patata"
+      - ""
+      - " &fRecompensas:"
+      - " &8● &66,290 ⛁"
+      - " &8● &b5 ❖"
+    quest_type: FARMING
+    required_item: POTATO
+    required_amount: 64
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "eco give %player% 6290"
+        - "ecobits give %player% cristales 5"
+        - "svar add misiones_totales 1.0 %player%"
+  granjero3:
+    name: "#00BCF5Granjero experimentado"
+    menu_item: CARROT
+    description:
+      - "&8Misión"
+      - ""
+      - "&fRompe 64 cosechas"
+      - "&fde zanahoria"
+      - ""
+      - " &fRecompensas:"
+      - " &8● &67,490 ⛁"
+      - " &8● &b5 ❖"
+    quest_type: FARMING
+    required_item: POTATO
+    required_amount: 64
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "eco give %player% 7490"
+        - "ecobits give %player% cristales 5"
+        - "svar add misiones_totales 1.0 %player%"
+  granjero4:
+    name: "#00BCF5Granjero avanzado"
+    menu_item: SUGAR_CANE
+    description:
+      - "&8Misión"
+      - ""
+      - "&fRompe 64 cosechas"
+      - "&fde caña de azucar"
+      - ""
+      - " &fRecompensas:"
+      - " &8● &68,150 ⛁"
+      - " &8● &b5 ❖"
+    quest_type: FARMING
+    required_item: SUGAR_CANE
+    required_amount: 64
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "eco give %player% 8150"
+        - "ecobits give %player% cristales 5"
+        - "svar add misiones_totales 1.0 %player%"
+  granjero5:
+    name: "#00BCF5Granjero experto"
+    menu_item: PUMPKIN
+    description:
+      - "&8Misión"
+      - ""
+      - "&fRompe 64 cosechas"
+      - "&fde caña de azucar"
+      - ""
+      - " &fRecompensas:"
+      - " &8● &613,440 ⛁"
+      - " &8● &b5 ❖"
+    quest_type: FARMING
+    required_item: 
+      - PUMPKIN
+      - CARVED_PUMPKIN
+    required_amount: 64
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "eco give %player% 13440"
+        - "ecobits give %player% cristales 5"
+        - "svar add misiones_totales 1.0 %player%"
+  aldeano:
+    name: "#00BCF5Aldeano"
+    menu_item: VILLAGER_SPAWN_EGG
+    description:
+      - "&8Misión"
+      - ""
+      - "&fIntercambia objetos para obtener"
+      - "&f12 esmeraldas de un aldeano"
+      - ""
+      - " &fRecompensas:"
+      - " &8● &612,650 ⛁"
+      - " &8● &b5 ❖"
+    quest_type: VILLAGER_TRADE
+    required_item: EMERALD
+    required_amount: 12
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "eco give %player% 12650"
+        - "ecobits give %player% cristales 5"
+        - "svar add misiones_totales 1.0 %player%"
+  aldeano2:
+    name: "#00BCF5Aldeano joven"
+    menu_item: VILLAGER_SPAWN_EGG
+    description:
+      - "&8Misión"
+      - ""
+      - "&fIntercambia objetos para obtener"
+      - "&f16 zanahorias de un aldeano"
+      - ""
+      - " &fRecompensas:"
+      - " &8● &616,590 ⛁"
+      - " &8● &b5 ❖"
+    quest_type: VILLAGER_TRADE
+    required_item: CARROT
+    required_amount: 16
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "eco give %player% 16590"
+        - "ecobits give %player% cristales 5"
+        - "svar add misiones_totales 1.0 %player%"
+  aldeano3:
+    name: "#00BCF5Aldeano experimentado"
+    menu_item: VILLAGER_SPAWN_EGG
+    description:
+      - "&8Misión"
+      - ""
+      - "&fIntercambia objetos para obtener"
+      - "&fun hacha de hierro de un aldeano"
+      - ""
+      - " &fRecompensas:"
+      - " &8● &615,460 ⛁"
+      - " &8● &b5 ❖"
+    quest_type: VILLAGER_TRADE
+    required_item: IRON_AXE
+    required_amount: 1
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "eco give %player% 15460"
+        - "ecobits give %player% cristales 5"
+        - "svar add misiones_totales 1.0 %player%"
+  aldeano4:
+    name: "#00BCF5Aldeano avanzado"
+    menu_item: VILLAGER_SPAWN_EGG
+    description:
+      - "&8Misión"
+      - ""
+      - "&fIntercambia objetos para obtener"
+      - "&f2 pecheras de diamante de un"
+      - "&faldeano"
+      - ""
+      - " &fRecompensas:"
+      - " &8● &616,980 ⛁"
+      - " &8● &b5 ❖"
+    quest_type: VILLAGER_TRADE
+    required_item: DIAMOND_CHESTPLATE
+    required_amount: 2
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "eco give %player% 16980"
+        - "ecobits give %player% cristales 5"
+        - "svar add misiones_totales 1.0 %player%"
+  aldeano5:
+    name: "#00BCF5Aldeano experto"
+    menu_item: VILLAGER_SPAWN_EGG
+    description:
+      - "&8Misión"
+      - ""
+      - "&fIntercambia objetos para obtener"
+      - "&f6 libros encantados de un"
+      - "&faldeano"
+      - ""
+      - " &fRecompensas:"
+      - " &8● &615,150 ⛁"
+      - " &8● &b5 ❖"
+    quest_type: VILLAGER_TRADE
+    required_item: ENCHANTED_BOOK
+    required_amount: 6
+    reward:
+      reward_type: COMMAND
+      commands:
+        - "eco give %player% 15150"
+        - "ecobits give %player% cristales 5"
+        - "svar add misiones_totales 1.0 %player%"

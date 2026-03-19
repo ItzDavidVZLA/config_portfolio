@@ -1,0 +1,60 @@
+abaddon:
+  Type: WITHER
+  Display: '&8[&7Nv. 50&8] &cAbaddon 👹 &a<caster.hp{round=0}>&7/&a<caster.mhp{round=0}> &c❤'
+  Health: 20000
+  Damage: 50
+  Faction: netherbosses
+  Options:
+    MovementSpeed: 0.25
+    AlwaysShowName: true
+    PreventOtherDrops: true
+    PreventSunburn: true
+  Drops:
+  - command{c="eco give %player_name% 1000000"}
+  - command{c="ecobits give %player_name% cristales 200"}
+  #- command{c="svar add fragmentoantiguo 32 %player_name%"}
+  Skills:
+  - setname{n=<caster.name>;delay=2} @self ~onDamaged
+  - potion{type=DAMAGE_RESISTANCE;duration=255255;amplifier=1} @self
+  - summon{type=PIGLIN_BRUTE;amount=5;radius=3} @self ~onTimer:2000
+  - potion{type=INCREASE_DAMAGE;duration=60;amplifier=5} @self ~onTimer:1000
+  - potion{type=DARKNESS;duration=100;amplifier=1} @target ~onTimer:600
+abramelec:
+  Type: WITHER_SKELETON
+  Display: '&8[&7Nv. 50&8] &cAbramelec ⸸ &a<caster.hp{round=0}>&7/&a<caster.mhp{round=0}> &c❤'
+  Health: 20000
+  Damage: 30
+  Faction: netherbosses
+  Options:
+    MovementSpeed: 0.25
+    AlwaysShowName: true
+    PreventOtherDrops: true
+    PreventSunburn: true
+  Drops:
+  - command{c="sk xp add %player_name% fighting 350"} 
+  - command{c="ecobits give %player_name% cristales 150"}
+  Skills:
+  - setname{n=<caster.name>;delay=2} @self ~onDamaged
+  - shootfireball{yield=4;velocity=1;playsound=true;fo=true} @target ~onTimer:350
+  - arrowvolley{a=5;s=30;v=10;rd=200} @target ~onDamaged ~onTimer:300
+abraxas:
+  Type: PIGLIN_BRUTE
+  Display: '&8[&7Nv. 50&8] &cAbraxas ☠ &a<caster.hp{round=0}>&7/&a<caster.mhp{round=0}> &c❤'
+  Health: 10000
+  Damage: 10
+  Faction: netherbosses
+  Options:
+    MovementSpeed: 0.25
+    AlwaysShowName: true
+    PreventOtherDrops: true
+    PreventSunburn: true
+  Drops:
+  - command{c="sk xp add %player_name% fighting 350"} 
+  - command{c="ecobits give %player_name% cristales 150"}
+  Skills:
+  - setname{n=<caster.name>;delay=2} @self ~onDamaged
+  - summon{type=PIGLIN_BRUTE;amount=5;radius=3} @self ~onTimer:2000
+  - throw{velocity=10;velocityY=5} @target ~onDamaged ~onTimer:200
+  - potion{type=INCREASE_DAMAGE;duration=60;amplifier=2} @self ~onTimer:1000
+  - potion{type=SPEED;duration=60;amplifier=2} @self
+  - potion{type=LEVITATION;duration=100;amplifier=2} @target ~onTimer:600

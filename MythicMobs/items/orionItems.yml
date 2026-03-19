@@ -1,0 +1,1022 @@
+
+
+
+HuesoCorrompido:
+  Id: BONE
+  Data: 0
+  Display: '&6Hueso corrompido'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Hueso que ha quedado altamente'
+  - '&7corrompido. Ten cuidado'
+  - '&f&m                                           &r'
+  - '&7Tipo: Comerciable'
+  - '&f&m                                           &r'
+HuesoPetrificado:
+  Id: BONE
+  Data: 0
+  Display: '&eHueso petrificado'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Hueso que ha quedado abandonado'
+  - '&7en el desierto'
+  - '&f&m                                           &r'
+  - '&7Tipo: Comerciable'
+  - '&f&m                                           &r'
+
+
+PielEscarabajo:
+  Id: LIGHT_GRAY_DYE
+  Data: 0
+  Display: '&7Piel de escarabajo'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Curiosa piel bastante resistente'
+  - '&7Puede que alguien la necesite'
+  - '&f&m                                           &r'
+  - '&7Tipo: Comerciable'
+  - '&f&m                                           &r'
+PielEscorpion:
+  Id: BLACK_DYE
+  Data: 0
+  Display: '&8Piel de escorpión'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Piel dura de un escorpión'
+  - '&7Puede que alguien la necesite'
+  - '&f&m                                           &r'
+  - '&7Tipo: Comerciable'
+  - '&f&m                                           &r'
+
+BotasAlgaI:
+  Id: LEATHER_BOOTS
+  Display: '&aBotas de AlgasInertes'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Elaborada con los peces inertes'
+  - '&7unidos con las algas oscuras'
+  - '&7en los oceanos profundos'
+  - '&f&m                                           &r'
+  - '&7Tipo: Armadura'
+  - '&7Rareza: &3Rara'
+  - '&f&m                                           &r'
+  Options:
+    Color: 0,128,0
+PantalonesAlgaI:
+  Id: LEATHER_LEGGINGS
+  Display: '&aPantalones de AlgasInertes'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Elaborada con los peces inertes'
+  - '&7unidos con las algas oscuras'
+  - '&7en los oceanos profundos'
+  - '&f&m                                           &r'
+  - '&7Tipo: Armadura'
+  - '&7Rareza: &3Rara'
+  - '&f&m                                           &r'
+  Options:
+    Color: 0,128,0
+PetoAlgaI:
+  Id: LEATHER_CHESTPLATE
+  Display: '&aPeto de AlgasInertes'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Elaborada con los peces inertes'
+  - '&7unidos con las algas oscuras'
+  - '&7en los oceanos profundos'
+  - '&f&m                                           &r'
+  - '&7Tipo: Armadura'
+  - '&7Rareza: &3Rara'
+  - '&f&m                                           &r'
+  Options:
+    Color: 0,128,0
+CascoAlgaI:
+  Id: LEATHER_HELMET
+  Display: '&aCasco de AlgasInertes'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Elaborada con los peces inertes'
+  - '&7unidos con las algas oscuras'
+  - '&7en los oceanos profundos'
+  - '&f&m                                           &r'
+  - '&7Tipo: Armadura'
+  - '&7Rareza: &3Rara'
+  - '&f&m                                           &r'
+  Options:
+    Color: 0,128,0
+PicoAmatista1:
+  Id: DIAMOND_PICKAXE
+  Data: 0
+  Display: '&dPico de Amatista'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Pico extraordinario'
+  - '&7tanto para la minería como'
+  - '&7para el combate'
+  - '&7¿Para que lo usarás?'
+  - '&f&m                                           &r'
+  - '&7Tipo: Arma'
+  - '&7Rareza: &cMítica'
+  - '&f&m                                           &r'
+  Enchantments:
+  - DIG_SPEED:2
+  - DURABILITY:2
+BotasAraña:
+  Id: LEATHER_BOOTS
+  Display: '&fBotas de Araña'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Tejido por las araña reales'
+  - '&7bajo la oscuridad'
+  - '&f&m                                           &r'
+  - '&7Tipo: Armadura'
+  - '&7Rareza: &3Rara'
+  - '&f&m                                           &r'
+  Options:
+    Color: 255,255,255
+PantalonesAraña:
+  Id: LEATHER_LEGGINGS
+  Display: '&fPantalones de Araña'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Tejido por las araña reales'
+  - '&7bajo la oscuridad'
+  - '&f&m                                           &r'
+  - '&7Tipo: Armadura'
+  - '&7Rareza: &3Rara'
+  - '&f&m                                           &r'
+  Options:
+    Color: 255,255,255
+PetoAraña:
+  Id: LEATHER_CHESTPLATE
+  Display: '&fPeto de Araña'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Tejido por las araña reales'
+  - '&7bajo la oscuridad'
+  - '&f&m                                           &r'
+  - '&7Tipo: Armadura'
+  - '&7Rareza: &3Rara'
+  - '&f&m                                           &r'
+  Options:
+    Color: 255,255,255
+CascoAraña:
+  Id: LEATHER_HELMET
+  Display: '&fCasco de Araña'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Tejido por las araña reales'
+  - '&7bajo la oscuridad'
+  - '&f&m                                           &r'
+  - '&7Tipo: Armadura'
+  - '&7Rareza: &3Rara'
+  - '&f&m                                           &r'
+  Options:
+    Color: 255,255,255
+BotasPrismarina:
+  Id: LEATHER_BOOTS
+  Display: '&bBotas de Prismarina'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Forjado en las profundidades'
+  - '&7de los oceanos'
+  - '&f&m                                           &r'
+  - '&7Tipo: Armadura'
+  - '&7Rareza: &cMítica'
+  - '&f&m                                           &r'
+  Options:
+    Color: 0,255,255
+PantalonesPrismarina:
+  Id: LEATHER_LEGGINGS
+  Display: '&bPantalones de Prismarina'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Forjado en las profundidades'
+  - '&7de los oceanos'
+  - '&f&m                                           &r'
+  - '&7Tipo: Armadura'
+  - '&7Rareza: &cMítica'
+  - '&f&m                                           &r'
+  Options:
+    Color: 0,255,255
+PetoPrismarina:
+  Id: LEATHER_CHESTPLATE
+  Display: '&bPeto de Prismarina'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Forjado en las profundidades'
+  - '&7de los oceanos'
+  - '&f&m                                           &r'
+  - '&7Tipo: Armadura'
+  - '&7Rareza: &cMítica'
+  - '&f&m                                           &r'
+  Options:
+    Color: 0,255,255
+CascoPrismarina:
+  Id: LEATHER_HELMET
+  Display: '&bCasco de Prismarina'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Forjado en las profundidades'
+  - '&7de los oceanos'
+  - '&f&m                                           &r'
+  - '&7Tipo: Armadura'
+  - '&7Rareza: &cMítica'
+  - '&f&m                                           &r'
+  Options:
+    Color: 0,255,255
+BotasAmatista:
+  Id: LEATHER_BOOTS
+  Display: '&dBotas de Amatista'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Forjado en las profundidades'
+  - '&7de las cuevas cristalizadas'
+  - '&f&m                                           &r'
+  - '&7Tipo: Armadura'
+  - '&7Rareza: &cMítica'
+  - '&f&m                                           &r'
+  Options:
+    Color: 128,0,128
+PantalonesAmatista:
+  Id: LEATHER_LEGGINGS
+  Display: '&dPantalones de Amatista'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Forjado en las profundidades'
+  - '&7de las cuevas cristalizadas'
+  - '&f&m                                           &r'
+  - '&7Tipo: Armadura'
+  - '&7Rareza: &cMítica'
+  - '&f&m                                           &r'
+  Options:
+    Color: 128,0,128
+PetoAmatista:
+  Id: LEATHER_CHESTPLATE
+  Display: '&dPeto de Amatista'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Forjado en las profundidades'
+  - '&7de las cuevas cristalizadas'
+  - '&f&m                                           &r'
+  - '&7Tipo: Armadura'
+  - '&7Rareza: &cMítica'
+  - '&f&m                                           &r'
+  Options:
+    Color: 128,0,128
+CascoAmatista:
+  Id: LEATHER_HELMET
+  Display: '&dCasco de Amatista'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Forjado en las profundidades'
+  - '&7de las cuevas cristalizadas'
+  - '&f&m                                           &r'
+  - '&7Tipo: Armadura'
+  - '&7Rareza: &cMítica'
+  - '&f&m                                           &r'
+  Options:
+    Color: 128,0,128
+PlumaPreciosa:
+  Id: FEATHER
+  Data: 0
+  Display: '&7&lPluma'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Preciosa pluma de un ave'
+  - '&7encontrada a las afueras'
+  - '&f&m                                           &r'
+  - '&7Tipo: Comerciable'
+  - '&f&m                                           &r'
+  Enchantments:
+  - ARROW_DAMAGE:3
+  Hide:
+  - ENCHANTS
+CuerdaOscura:
+  Id: STRING
+  Data: 0
+  Display: '&8Cuerda Oscura'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Extraña cuerda que rodea'
+  - '&7las sombras'
+  - '&f&m                                           &r'
+  - '&7Tipo: Comerciable'
+  - '&f&m                                           &r'
+  Enchantments:
+  - ARROW_DAMAGE:3
+  Hide:
+  - ENCHANTS
+PlumaExtraviada:
+  Id: FEATHER
+  Data: 0
+  Display: '&7&lPluma Extraviada'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Hermosa pluma de un ave'
+  - '&7desconocida que fue encontrada'
+  - '&7a las afueras de la villa'
+  - '&f&m                                           &r'
+  - '&7Tipo: Comerciable'
+  - '&f&m                                           &r'
+  Enchantments:
+  - ARROW_DAMAGE:3
+  Hide:
+  - ENCHANTS
+NucleoEndurecido:
+  Id: IRON_NUGGET
+  Data: 0
+  Display: '&cnucleo'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Curioso nucleo intermolecular'
+  - '&7que fue forjado por Serrex'
+  - '&f&m                                           &r'
+  - '&7Tipo: Comerciable'
+  - '&f&m                                           &r'
+  Enchantments:
+  - ARROW_DAMAGE:3
+  Hide:
+  - ENCHANTS
+Retama:
+  Id: STICK
+  Data: 0
+  Display: '&cretama'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Rama dura encontrada a las'
+  - '&7a fueras de la villa'
+  - '&f&m                                           &r'
+  - '&7Tipo: Comerciable'
+  - '&f&m                                           &r'
+  Enchantments:
+  - ARROW_DAMAGE:3
+  Hide:
+  - ENCHANTS
+LingoteEndurecido:
+  Id: IRON_INGOT
+  Data: 0
+  Display: '&cLingote endurecido'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Forjado por Serrex en los'
+  - '&7paramos olvidados'
+  - '&f&m                                           &r'
+  - '&7Tipo: Comerciable'
+  - '&f&m                                           &r'
+  Enchantments:
+  - ARROW_DAMAGE:3
+  Hide:
+  - ENCHANTS
+MonedaPoseida:
+  Id: sunflower
+  Data: 0
+  Display: '&cmoneda'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Una extraña moneda que'
+  - '&7maldice a quien lo usa.'
+  - '&7¿Se usará para algo?'
+  - '&f&m                                           &r'
+  - '&7Tipo: Comerciable'
+  - '&f&m                                           &r'
+  Enchantments:
+  - ARROW_DAMAGE:3
+  Hide:
+  - ENCHANTS
+ArcoExtraño:
+  Id: BOW
+  Data: 0
+  Display: '&cArco'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Un curioso arco el cual'
+  - '&7maldice a quien lo usa.'
+  - '&7¿Se usará para algo?'
+  - '&f&m                                           &r'
+  - '&7Tipo: Arma'
+  - '&7Rareza: &3Rara'
+  - '&f&m                                           &r'
+  Enchantments:
+  - ARROW_DAMAGE:3
+  Hide:
+  - ENCHANTS
+EspadaCorroida:
+  Id: GOLD_SWORD
+  Data: 0
+  Display: '&7&lEspada'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Una espada algo débil que'
+  - '&7maldice a su portador'
+  - '&7¿Se usará para algo?'
+  - '&f&m                                           &r'
+  - '&7Tipo: Arma'
+  - '&7Rareza: &3Rara'
+  - '&f&m                                           &r'
+  Enchantments:
+  - DAMAGE_ALL:5
+  Hide:
+  - ENCHANTS
+FragmentoOxidado:
+  Id: GOLD_NUGGET
+  Data: 0
+  Display: '&eFragmento oxidado'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Fragmento aun más antiguo '
+  - '&7de una moneda.'
+  - '&f&m                                           &r'
+  - '&7Tipo: Comerciable'
+  - '&f&m                                           &r'
+EspadaOxidada:
+  Id: IRON_SWORD
+  Data: 0
+  Display: '&7&lEspada Oxidada'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Una fuerte espada que ha quedado'
+  - '&7oxidada en el desierto'
+  - '&f&m                                           &r'
+  - '&7Tipo: Arma'
+  - '&7Rareza: &3Rara'
+  - '&f&m                                           &r'
+  Enchantments:
+  - DAMAGE_ALL:7
+  Hide:
+  - ENCHANTS
+Guadaña2:
+  Id: IRON_HOE
+  Data: 0
+  Display: '&7&lCosechadora oxidada'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Herramienta usada para cultivar'
+  - '&7en el desierto'
+  - '&f&m                                           &r'
+  - '&7Tipo: Arma'
+  - '&7Rareza: &3Rara'
+  - '&f&m                                           &r'
+  Enchantments:
+  - DAMAGE_ALL:15
+  Hide:
+  - ENCHANTS
+PuntaHelada:
+  Id: PRISMARINE_SHARD
+  Data: 0
+  Display: '&b⌦ &f&lPunta Helada'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Una extraña punta brillante'
+  - '&7que puede congelar todo lo que toca'
+  - '&f&m                                           &r'
+  - '&7Tipo: Comerciable'
+  - '&f&m                                           &r'
+  Enchantments:
+  - PROTECTION_ENVIRONMENTAL:2
+  Hide:
+  - ENCHANTS
+Llave3:
+  Id: DISC_FRAGMENT_5
+  Data: 0
+  Display: '&b⌦ &3Tarjeta de Paso Nivel: 3'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Tarjeta que sirve para'
+  - '&7abrir una puerta'
+  - '&f&m                                           &r'
+  - '&7Tipo: LLave'
+  - '&7Nivel de Acceso: 3º'
+  - '&f&m                                           &r'
+Petohierro2:
+  Id: IRON_CHESTPLATE
+  Data: 0
+  Display: '&7&lPeto de Larion'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Forjado por Larion bajo las'
+  - '&7profundidades de los oceanos'
+  - '&f&m                                           &r'
+  - '&7Tipo: Armadura'
+  - '&7Rareza: &fPoco Común'
+  - '&f&m                                           &r'
+  Enchantments:
+  - PROTECTION_ENVIRONMENTAL:5
+  - DURABILITY:5
+Pantaloneshierro2:
+  Id: IRON_LEGGINGS
+  Data: 0
+  Display: '&7&lPantalones de Larion'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Forjado por Larion bajo las'
+  - '&7profundidades de los oceanos'
+  - '&f&m                                           &r'
+  - '&7Tipo: Armadura'
+  - '&7Rareza: &fPoco Común'
+  - '&f&m                                           &r'
+  Enchantments:
+  - PROTECTION_ENVIRONMENTAL:5
+  - DURABILITY:5
+Botashierro2:
+  Id: IRON_BOOTS
+  Data: 0
+  Display: '&7&lBotas de Larion'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Forjado por Larion bajo las'
+  - '&7profundidades de los oceanos'
+  - '&f&m                                           &r'
+  - '&7Tipo: Armadura'
+  - '&7Rareza: &fPoco Común'
+  - '&f&m                                           &r'
+  Enchantments:
+  - PROTECTION_ENVIRONMENTAL:5
+  - DURABILITY:5
+Cascohierro2:
+  Id: IRON_HELMET
+  Data: 0
+  Display: '&7&lCasco de Larion'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Forjado por Larion bajo las'
+  - '&7profundidades de los oceanos'
+  - '&f&m                                           &r'
+  - '&7Tipo: Armadura'
+  - '&7Rareza: &fPoco Común'
+  - '&f&m                                           &r'
+  Enchantments:
+  - PROTECTION_ENVIRONMENTAL:5
+  - DURABILITY:5
+Explorador:
+  Id: IRON_SWORD
+  Data: 0
+  Display: '&3Espada del explorador'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Forjado por Larion'
+  - '&7hace tiempo atras'
+  - '&7¡Esta reparada!'
+  - '&f&m                                           &r'
+  - '&7Tipo: Comerciable'
+  - '&7Rareza: &3Rara'
+  - '&f&m                                           &r'
+  Enchantments:
+  - DURABILITY:5
+  - DAMAGE_ALL:5
+CascoDiamante3:
+  Id: DIAMOND_HELMET
+  Data: 0
+  Display: '&3&lCasco de Lapislazuli'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Forjado por Larion tras su gran'
+  - '&7aventura en las profundidades'
+  - '&f&m                                           &r'
+  - '&7Tipo: Armadura'
+  - '&7Rareza: &3Rara'
+  - '&f&m                                           &r'
+  Enchantments:
+  - PROTECTION_ENVIRONMENTAL:4
+  - DURABILITY:4
+PetoDiamante3:
+  Id: DIAMOND_CHESTPLATE
+  Data: 0
+  Display: '&3&lPeto de Lapislazuli'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Forjado por Larion tras su gran'
+  - '&7aventura en las profundidades'
+  - '&f&m                                           &r'
+  - '&7Tipo: Armadura'
+  - '&7Rareza: &3Rara'
+  - '&f&m                                           &r'
+  Enchantments:
+  - PROTECTION_ENVIRONMENTAL:4
+  - DURABILITY:4
+PantalonesDiamante3:
+  Id: DIAMOND_LEGGINGS
+  Data: 0
+  Display: '&3&lPantalones de Lapislazuli'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Forjado por Larion tras su gran'
+  - '&7aventura en las profundidades'
+  - '&f&m                                           &r'
+  - '&7Tipo: Armadura'
+  - '&7Rareza: &3Rara'
+  - '&f&m                                           &r'
+  Enchantments:
+  - PROTECTION_ENVIRONMENTAL:4
+  - DURABILITY:4
+BotasDiamante3:
+  Id: DIAMOND_BOOTS
+  Data: 0
+  Display: '&3&lBotas de Lapislazuli'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Forjado por Larion tras su gran'
+  - '&7aventura en las profundidades'
+  - '&f&m                                           &r'
+  - '&7Tipo: Armadura'
+  - '&7Rareza: &3Rara'
+  - '&f&m                                           &r'
+  Enchantments:
+  - PROTECTION_ENVIRONMENTAL:4
+  - DURABILITY:4
+Tridente2:
+  Id: TRIDENT
+  Data: 0
+  Display: '&3&lTridente de las profundidas'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Arma creada por los antiguos'
+  - '&7protectores de los fondos'
+  - '&7oceanicos'
+  - '&f&m                                           &r'
+  - '&7Tipo: Arma'
+  - '&7Rareza: &6Épica'
+  - '&f&m                                           &r'
+  Enchantments:
+  - DAMAGE_ALL:7
+Tridente3:
+  Id: TRIDENT
+  Data: 0
+  Display: '&b☉ &3&lTridente infinito &b☉ '
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Una potente arma usada'
+  - '&7desde los confines del mundo'
+  - '&7acuatico con el fn de destronar'
+  - '&7al titan de los mares'
+  - '&f&m                                           &r'
+  - '&7Tipo: Arma'
+  - '&7Rareza: &cMítica'
+  - '&f&m                                           &r'
+  Enchantments:
+  - LOYALTY:10
+  - DAMAGE_ALL:10
+PezInerte:
+  Id: COD
+  Data: 0
+  Display: '&7Pez Inerte'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Un extraño pez el cual parece'
+  - '&7que ha quedado petrificado'
+  - '&7Atención, no es comestible.'
+  - '&f&m                                           &r'
+  - '&7Tipo: Comerciable'
+  - '&f&m                                           &r'
+AlgaOscura:
+  Id: KELP
+  Data: 0
+  Display: '&2Alga oscura'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Un alga curiosa que viene'
+  - '&7de las oscuras profundidades'
+  - '&f&m                                           &r'
+  - '&7Tipo: Comerciable'
+  - '&f&m                                           &r'
+Pico3:
+  Id: DIAMOND_PICKAXE
+  Data: 0
+  Display: '&f&lPico Endurecido'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Forjado por Larion tras su gran'
+  - '&7aventura en las minas de amatista'
+  - '&f&m                                           &r'
+  - '&7Tipo: Herramienta'
+  - '&7Rareza: &3Rara'
+  - '&f&m                                           &r'
+  Enchantments:
+  - DIG_SPEED:4
+  - DURABILITY:4
+CascoDiamante2:
+  Id: DIAMOND_HELMET
+  Data: 0
+  Display: '&7&lCasco de Larion'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Forjado por Larion tras su gran'
+  - '&7aventura en las minas de amatista'
+  - '&f&m                                           &r'
+  - '&7Tipo: Armadura'
+  - '&7Rareza: &fPoco Común'
+  - '&f&m                                           &r'
+  Enchantments:
+  - PROTECTION_ENVIRONMENTAL:3
+  - DURABILITY:3
+Llave2:
+  Id: DISC_FRAGMENT_5
+  Data: 0
+  Display: '&b⌦ &3Tarjeta de Paso Nivel: 2'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Tarjeta que sirve para'
+  - '&7abrir una puerta'
+  - '&f&m                                           &r'
+  - '&7Tipo: LLave'
+  - '&7Nivel de Acceso: 2º'
+  - '&f&m                                           &r'
+Ame:
+  Id: AMETHYST_SHARD
+  Data: 0
+  Display: '&b⌦ &5&lCristal Endurecido'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Cristal custodiado por fuertes'
+  - '&7almas cristalizadas'
+  - '&f&m                                           &r'
+  - '&7Tipo: Comerciable'
+  - '&f&m                                           &r'
+Llave1:
+  Id: DISC_FRAGMENT_5
+  Data: 0
+  Display: '&b⌦ &3Tarjeta de Paso Nivel: 1'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Tarjeta que sirve para'
+  - '&7abrir una puerta'
+  - '&f&m                                           &r'
+  - '&7Tipo: LLave'
+  - '&7Nivel de Acceso: 1º'
+  - '&f&m                                           &r'
+Pico2:
+  Id: DIAMOND_PICKAXE
+  Data: 0
+  Display: '&7&lPico de Larion'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Forjado por Larion tras la'
+  - '&7muerte de su maestro Serrex'
+  - '&f&m                                           &r'
+  - '&7Tipo: Herramineta'
+  - '&7Rareza: &fPoco Común'
+  - '&f&m                                           &r'
+  Enchantments:
+  - DIG_SPEED:2
+  - DURABILITY:2
+CascoDiamante:
+  Id: DIAMOND_HELMET
+  Data: 0
+  Display: '&7&lCasco de Larion'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Forjado por Larion tras la'
+  - '&7muerte de su maestro Serrex'
+  - '&f&m                                           &r'
+  - '&7Tipo: Armadura'
+  - '&7Rareza: &fPoco Común'
+  - '&f&m                                           &r'
+  Enchantments:
+  - PROTECTION_ENVIRONMENTAL:2
+  - DURABILITY:2
+Cascohierro:
+  Id: IRON_HELMET
+  Data: 0
+  Display: '&7Casco de Larion'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Forjado por Larion bajo las'
+  - '&7enseñanzas del herrero Serrex '
+  - '&7¿Seguirá vivo?'
+  - '&f&m                                           &r'
+  - '&7Tipo: Armadura'
+  - '&7Rareza: Común'
+  - '&f&m                                           &r'
+  Enchantments:
+  - PROTECTION_ENVIRONMENTAL:2
+  - DURABILITY:2
+Pico1:
+  Id: IRON_PICKAXE
+  Data: 0
+  Display: '&7Pico de Larion'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Forjado por Larion bajo las'
+  - '&7enseñanzas del herrero Serrex '
+  - '&7¿Seguirá vivo?'
+  - '&f&m                                           &r'
+  - '&7Tipo: Herramienta'
+  - '&7Rareza: Común'
+  - '&f&m                                           &r'
+  Enchantments:
+  - DIG_SPEED:2
+  - DURABILITY:2
+Tridente1:
+  Id: TRIDENT
+  Data: 0
+  Display: '&b&lTridente Hundido'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Tridente que quedo olvidado en el'
+  - '&7fondo de los mares que rodean la'
+  - '&7la aldea'
+  - '&f&m                                           &r'
+  - '&7Tipo: Arma'
+  - '&7Rareza: &3Raro'
+  - '&f&m                                           &r'
+  Enchantments:
+  - DAMAGE_ALL:5
+Guadaña:
+  Id: STONE_HOE
+  Data: 0
+  Display: '&7&lCosechadora'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Herramienta usada para cultivar'
+  - '&7aunque su anterior portador olvidó'
+  - '&7cual era su verdadero significado'
+  - '&f&m                                           &r'
+  - '&7Tipo: Arma'
+  - '&7Rareza: &fPoco Común'
+  - '&f&m                                           &r'
+  Enchantments:
+  - DAMAGE_ALL:10
+Calabaza:
+  Id: PUMPKIN
+  Data: 0
+  Display: '&6Calabaza encantada'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Guarda un intenso encantamiento'
+  - '&7en su interior.'
+  - '&f&m                                           &r'
+  - '&7Tipo: Comerciable'
+  - '&f&m                                           &r'
+FragmentoMuscle:
+  Id: IRON_NUGGET
+  Data: 0
+  Display: '&3Fragmento de Muscle'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Fragmento de un errante'
+  - '&7Quizas sirva para más adelante.'
+  - '&f&m                                           &r'
+  - '&7Tipo: Comerciable'
+  - '&f&m                                           &r'
+FragmentoInfectado:
+  Id: GOLD_NUGGET
+  Data: 0
+  Display: '&eFragmento Infectado'
+  Lore:
+  - '&f&m                                           &r'
+  - '&7Fragmento antiguo de una moneda.'
+  - '&7Quizas sirva para más adelante.'
+  - '&f&m                                           &r'
+  - '&7Tipo: Comerciable'
+  - '&f&m                                           &r'
+CascoRojo:
+  Id: LEATHER_HELMET
+  Display: '&a--'
+  Lore:
+  - '&6-----'
+  - '&6-----'
+  Options:
+    Color: 255,40,40
+PetoRojo:
+  Id: LEATHER_CHESTPLATE
+  Display: '&a--'
+  Lore:
+  - '&6-----'
+  - '&6-----'
+  Options:
+    Color: 255,40,40
+BotasRojo:
+  Id: LEATHER_BOOTS
+  Display: '&a--'
+  Lore:
+  - '&6-----'
+  - '&6-----'
+  Options:
+    Color: 255,40,40
+PantalonesRojo:
+  Id: LEATHER_LEGGINGS
+  Display: '&a--'
+  Lore:
+  - '&6-----'
+  - '&6-----'
+  Options:
+    Color: 255,40,40
+PetoGris:
+  Id: LEATHER_CHESTPLATE
+  Display: '&a--'
+  Lore:
+  - '&6-----'
+  - '&6-----'
+  Options:
+    Color: 90,86,86
+BotasGris:
+  Id: LEATHER_BOOTS
+  Display: '&a--'
+  Lore:
+  - '&6-----'
+  - '&6-----'
+  Options:
+    Color: 90,86,86
+PantalonesGris:
+  Id: LEATHER_LEGGINGS
+  Display: '&a--'
+  Lore:
+  - '&6-----'
+  - '&6-----'
+  Options:
+    Color: 90,86,86
+CascosGris:
+  Id: LEATHER_HELMET
+  Display: '&a--'
+  Lore:
+  - '&6-----'
+  - '&6-----'
+  Options:
+    Color: 90,86,86
+PetoPurpura:
+  Id: LEATHER_CHESTPLATE
+  Display: '&a--'
+  Lore:
+  - '&6-----'
+  - '&6-----'
+  Options:
+    Color: 87,35,100
+PantalonesPurpura:
+  Id: LEATHER_LEGGINGS
+  Display: '&a--'
+  Lore:
+  - '&6-----'
+  - '&6-----'
+  Options:
+    Color: 87,35,100
+BotasPurpura:
+  Id: LEATHER_BOOTS
+  Display: '&a--'
+  Lore:
+  - '&6-----'
+  - '&6-----'
+  Options:
+    Color: 87,35,100
+BotasVerde:
+  Id: LEATHER_BOOTS
+  Display: '&a--'
+  Lore:
+  - '&6-----'
+  - '&6-----'
+  Options:
+    Color: 0,128,0
+PantalonesVerde:
+  Id: LEATHER_LEGGINGS
+  Display: '&a--'
+  Lore:
+  - '&6-----'
+  - '&6-----'
+  Options:
+    Color: 0,128,0
+PetoVerde:
+  Id: LEATHER_CHESTPLATE
+  Display: '&a--'
+  Lore:
+  - '&6-----'
+  - '&6-----'
+  Options:
+    Color: 0,128,0
+CascosVerde:
+  Id: LEATHER_HELMET
+  Display: '&a--'
+  Lore:
+  - '&6-----'
+  - '&6-----'
+  Options:
+    Color: 0,128,0
+BotasVerde2:
+  Id: LEATHER_BOOTS
+  Display: '&a--'
+  Lore:
+  - '&6-----'
+  - '&6-----'
+  Enchantments:
+  - DEPTH_STRIDER:20
+  Options:
+    Color: 0,128,0
+testeoxd:
+  Id: LEATHER_BOOTS
+  Display: '&#084cfbB&#1256fbo&#1d61fbt&#276bfba&#3176fcs &#3c80fcd&#468bfce &#5095fcP&#5ba0fcr&#65aafci&#6fb4fcs&#79bffcm&#84c9fda&#8ed4fdr&#98defdi&#a3e9fdn&#adf3fda'
+  Lore:
+  - '&6-----'
+  - '&6-----'
+  Enchantments:
+  - DEPTH_STRIDER:20
+  Options:
+    Color: 0,128,0
+
+
+
+
+
+
+    
+    
+    
+    
+    

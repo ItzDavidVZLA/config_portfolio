@@ -1,0 +1,1170 @@
+#espiritus
+AlmaHeridaFalsa:
+  Type: ARMORSTAND
+  Display: '&8[&7Nv. 100&8] &8Alma dañada &a<caster.hp{round=0}>&7/&a<caster.mhp{round=0}> &c❤'
+  Health: 15
+  Damage: 12
+  Faction: bad 
+  Equipment:
+  - PLAYER_HEAD{skullTexture=eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjIxNzg2OWVjMjA1ZDE3MjdmYzRjNjA1NWJkODY4Yjc4ODZmMmM4YWQ5OGZhNzA0Y2I3NmUxMWJkZDgwMjg3OSJ9fX0=} HEAD
+  AIGoalSelectors: 
+  - clear
+  - meleeattack 
+  - lookatplayers
+  AITargetSelectors:
+  - clear 
+  - players 
+  - attacker 
+  Skills:
+   - effect:particletornado{p=ash;cp=largeexplode;mr=1;h=1;i=1;d=100;rs=0.5;sh=0.5;cs=0;ca=0;chs=0.1;cvs=0.1;cps=0;cyo=-1} @self ~onTimer:100
+   - potion{type=DARKNESS;duration=50;level=1} 
+   - potion{type=INVISIBILITY;duration=50000;level=3} @self ~onSpawn
+   - skill{s=Alma2} @target ~onTimer:100
+   - skill{s=Vida2} @self
+  Drops:
+  - snow 0.5
+  Options:
+    MovementSpeed: 0.1
+    Invisible: true
+    PreventSunburn: true
+    PreventRandomEquipment: true
+AlmaHerida:
+  Type: SKELETON
+  Display: '&8[&7Nv. 100&8] &8Alma dañada &a<caster.hp{round=0}>&7/&a<caster.mhp{round=0}> &c❤'
+  Health: 15
+  Damage: 10
+  Faction: bad 
+  Equipment:
+  - PLAYER_HEAD{skullTexture=eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjIxNzg2OWVjMjA1ZDE3MjdmYzRjNjA1NWJkODY4Yjc4ODZmMmM4YWQ5OGZhNzA0Y2I3NmUxMWJkZDgwMjg3OSJ9fX0=} HEAD
+  AIGoalSelectors: 
+  - clear
+  - meleeattack 
+  - lookatplayers
+  AITargetSelectors:
+  - clear 
+  - players 
+  - attacker 
+  Skills:
+   - effect:particletornado{p=smoke;cp=explode;mr=2;h=1;i=2;d=100;rs=1;sh=1;cs=0;ca=0;chs=0.1;cvs=0.1;cps=2;cyo=0.50} @self ~onTimer:100
+   - potion{type=DARKNESS;duration=50;level=1} 
+   - potion{type=INVISIBILITY;duration=50000;level=3} @self ~onSpawn
+   - skill{s=Alma} @target ~onTimer:100
+  Drops:
+  - snow 0.5
+  Options:
+    MovementSpeed: 0.1
+    PreventSunburn: true
+    PreventRandomEquipment: true
+AlmaHerrante:
+  Type: SKELETON
+  Display: '&8Alma Herrante'
+  Health: 555
+  Damage: 40
+  Faction: bad 
+  BossBar:
+    Enabled: true
+    Title: '&7&l---=== &8&lAlma Herrante &7&l===---'
+    Range: 10
+    Color: WHITE
+    Style: SOLID
+    PlayMusic: true
+  Equipment:
+  - PLAYER_HEAD{skullTexture=eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmQ0YzE0MmMzODJhNmJlMDBjYWVlZTlhMDIzMDZmMDY1NDRlNmU0NmI5NTNiY2M4Y2FjNjVlNWM4OWQ0NzkwYSJ9fX0=} HEAD
+  - PetoGris CHEST
+  AIGoalSelectors: 
+  - clear
+  - meleeattack 
+  - lookatplayers
+  AITargetSelectors:
+  - clear 
+  - players 
+  - attacker 
+  Skills:
+   - effect:particletornado{p=ash;cp=explode;mr=2;h=1.5;i=1;d=100;rs=1;sh=1;cs=0;ca=0;chs=0.1;cvs=0.1;cps=0;cyo=0} @self ~onTimer:100
+   - potion{type=BLINDNESS;duration=250;level=0} 
+   - potion{type=INVISIBILITY;duration=50000;level=3} @self ~onSpawn
+   - skill{s=Alma2} @target ~onTimer:100
+   - skill{s=Vida2} @self
+   - skill{s=Retirese} @self
+   - effect:bloodyScreen{d=25} @PIR{r=15} ~onTimer:20
+  Drops:
+  - snow 0.5
+  Options:
+    MovementSpeed: 0.2
+    PreventSunburn: true
+    PreventRandomEquipment: true
+
+
+AlmaHelada:
+  Type: SKELETON
+  Display: '&8Alma Helada'
+  Health: 10
+  Damage: 12
+  Faction: bad 
+  Equipment:
+  - PLAYER_HEAD{skullTexture=eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWQ2M2ZkM2Q1MGUyYWFiZGY4ZGE0NjNiOTM5YzU3YjI0ZDVmZDIwYjUxOWRmZGI5Y2U4NGU5NmIwZWUzMjM5YiJ9fX0=} HEAD
+  AIGoalSelectors: 
+  - clear
+  - meleeattack 
+  - lookatplayers
+  AITargetSelectors:
+  - clear 
+  - players 
+  - attacker 
+  Skills:
+   - effect:particletornado{p=sneeze;cp=explode;mr=2;h=1;i=2;d=100;rs=1;sh=1;cs=0;ca=0;chs=0.1;cvs=0.1;cps=2;cyo=0.50} @self ~onTimer:100
+   - potion{type=DARKNESS;duration=50;level=1} 
+   - potion{type=INVISIBILITY;duration=50000;level=3} @self ~onSpawn
+   - skill{s=BolaHelada} @target ~onTimer:100
+  Drops:
+  - snow 0.5
+  Options:
+    MovementSpeed: 0.1
+    PreventSunburn: true
+    PreventRandomEquipment: true
+Sombra3:
+  Type: SKELETON
+  Display: '&8Alma'
+  Health: 10
+  Damage: 12
+  Faction: bad 
+  Equipment:
+  - PLAYER_HEAD{skullOwner=skullOwner} HEAD
+  AIGoalSelectors: 
+  - clear
+  - meleeattack 
+  - lookatplayers
+  AITargetSelectors:
+  - clear 
+  - players 
+  - attacker 
+  Skills:
+   - effect:particletornado{p=wax_off;cp=largeexplode;mr=0.5;h=0.5;i=0.5;d=100;rs=1;sh=1;cs=0;ca=0;chs=0.1;cvs=0.1;cps=0;cyo=0} @self ~onTimer:100
+   - potion{type=DARKNESS;duration=50;level=1} 
+   - potion{type=INVISIBILITY;duration=50000;level=1} @self ~onSpawn
+  Drops:
+  - CuerdaOscura 0.5
+  Options:
+    MovementSpeed: 0.4
+    PreventSunburn: true
+    PreventRandomEquipment: true
+
+Sombra2:
+  Type: SILVERFISH
+  Display: '&8Sombra oscura'
+  Health: 10
+  Damage: 12
+  Faction: bad 
+  AIGoalSelectors: 
+  - clear
+  - meleeattack 
+  - lookatplayers
+  AITargetSelectors:
+  - clear 
+  - players 
+  - attacker 
+  Skills:
+   - effect:particlesphere{particle=nautilus;amount=150;radius=0.5} @self ~onTimer:10
+   - effect:particlesphere{particle=nautilus;amount=150;radius=1} @self ~onSpawn
+   - potion{type=DARKNESS;duration=50;level=1} 
+   - potion{type=INVISIBILITY;duration=50000;level=3} @self ~onSpawn
+  Drops:
+  - CuerdaOscura 0.5
+  Options:
+    MovementSpeed: 0.4
+    PreventSunburn: true
+    PreventRandomEquipment: true
+#Desierto:
+Escarabajo1:
+  Type: SILVERFISH
+  Display: '&8[&7Nv. 3&8] &7Escarabajo venenoso &a<caster.hp{round=0}>&7/&a<caster.mhp{round=0}> &c❤'
+  Skills:
+  - setname{n=<caster.name>;delay=2} @self ~onDamaged
+  Health: 150
+  Damage: 20
+  Faction: bad 
+  AIGoalSelectors: 
+  - clear
+  - meleeattack 
+  - lookatplayers
+  AITargetSelectors:
+  - clear 
+  - players 
+  - attacker 
+  Skills:
+   - effect:particles{particle=block;m=sand;amount=100;hS=1;vS=1} @self
+   - potion{type=POISON;duration=50;level=4}
+  Options:
+    CanMove: true
+    MovementSpeed: 0.3
+    AlwaysShowName: true
+    PreventSunburn: true
+    PreventRandomEquipment: true
+  Drops:
+   - PielEscarabajo 0.5
+Esqueleto4:
+  Type: SKELETON
+  Display: '&8[&7Nv. 10&8] &7Guardia del emperador &a<caster.hp{round=0}>&7/&a<caster.mhp{round=0}> &c❤'
+  Skills:
+  - setname{n=<caster.name>;delay=2} @self ~onDamaged
+  Health: 500
+  Damage: 150
+  Faction: bad 
+  AIGoalSelectors: 
+  - clear
+  - meleeattack 
+  - lookatplayers
+  AITargetSelectors:
+  - clear 
+  - players 
+  - attacker 
+  Equipment:
+  - IRON_CHESTPLATE CHEST
+  - IRON_LEGGINGS LEGS
+  - IRON_BOOTS FEET
+  - IRON_SWORD HAND
+  Drops:
+  - HuesoCorrompido 0.5
+  Options:
+    MovementSpeed: 0.3
+    AlwaysShowName: true
+    KnockbackResistance: 5
+    PreventRandomEquipment: true
+    PreventSunburn: true
+Esqueleto3:
+  Type: SKELETON
+  Display: '&8[&7Nv. 7&8] &7Alma herrante &a<caster.hp{round=0}>&7/&a<caster.mhp{round=0}> &c❤'
+  Skills:
+  - setname{n=<caster.name>;delay=2} @self ~onDamaged
+  Health: 300
+  Damage: 70
+  Faction: bad 
+  AIGoalSelectors: 
+  - clear
+  - meleeattack 
+  - lookatplayers
+  AITargetSelectors:
+  - clear 
+  - players 
+  - attacker 
+  Equipment:
+  - PetoGris CHEST
+  - PantalonesGris LEGS
+  - BotasRojo FEET
+  Drops:
+  - HuesoCorrompido 0.3
+  Options:
+    MovementSpeed: 0.4
+    PreventRandomEquipment: true
+    PreventSunburn: true
+Esqueleto2:
+  Type: SKELETON
+  Display: '&8[&7Nv. 4&8] &8Esqueleto abandonado &a<caster.hp{round=0}>&7/&a<caster.mhp{round=0}> &c❤'
+  Skills:
+  - setname{n=<caster.name>;delay=2} @self ~onDamaged
+  Health: 250
+  Damage: 60
+  Faction: bad 
+  AIGoalSelectors: 
+  - clear
+  - meleeattack 
+  - lookatplayers
+  AITargetSelectors:
+  - clear 
+  - players 
+  - attacker 
+  Equipment:
+  - PantalonesGris LEGS
+  - BotasGris FEET
+  Drops:
+  - HuesoPetrificado 0.5
+  Options:
+    MovementSpeed: 0.4
+    PreventRandomEquipment: true
+    PreventSunburn: true
+Esqueleto1:
+  Type: SKELETON
+  Display: '&8[&7Nv. 3&8] &8Esqueleto perdido &a<caster.hp{round=0}>&7/&a<caster.mhp{round=0}> &c❤'
+  Skills:
+  - setname{n=<caster.name>;delay=2} @self ~onDamaged
+  Health: 100
+  Damage: 50
+  Faction: bad 
+  AIGoalSelectors: 
+  - clear
+  - meleeattack 
+  - lookatplayers
+  AITargetSelectors:
+  - clear 
+  - players 
+  - attacker 
+  Equipment:
+  - BotasGris FEET
+  Drops:
+  - HuesoPetrificado 0.5
+  Options:
+    MovementSpeed: 0.4
+    PreventRandomEquipment: true
+    PreventSunburn: true
+    
+ArañaHija:
+  Type: CAVESPIDER
+  Display: '&8[&7Nv. 3&8] &7Araña hija &a<caster.hp{round=0}>&7/&a<caster.mhp{round=0}> &c❤'
+  Skills:
+  - setname{n=<caster.name>;delay=2} @self ~onDamaged
+  Health: 50
+  Damage: 10
+  Faction: bad 
+  AIGoalSelectors: 
+  - clear
+  - meleeattack 
+  - lookatplayers
+  AITargetSelectors:
+  - clear 
+  - players 
+  - attacker 
+  Skills:
+   - effect:particles{particle=block;m=sand;amount=100;hS=1;vS=1} @self
+   - attribute{attribute=SCALE;a=0.5;duration=999999} @self ~onSpawn
+   - potion{type=POISON;duration=50;level=3}
+  Options:
+    CanMove: true
+    AlwaysShowName: true
+    MovementSpeed: 0.3
+    PreventSunburn: true
+    PreventRandomEquipment: true
+  Drops:
+   - PielEscorpion 0.5
+ArañaMadre:
+  Type: CAVESPIDER
+  Health: 15000
+  Damage: 200
+  Display: '&8[&7Nv. 50&8] &3Madre Araña &a<caster.hp{round=0}>&7/&a<caster.mhp{round=0}> &c❤'
+  Faction: bad 
+  AIGoalSelectors: 
+  - clear
+  - meleeattack 
+  - lookatplayers
+  AITargetSelectors:
+  - clear 
+  - players 
+  - attacker 
+  Skills:
+   - effect:particles{particle=block;m=cobweb;amount=100;hS=1;vS=1} @self
+   - attribute{attribute=SCALE;a=3;duration=999999} @self ~onSpawn
+   - setname{n=<caster.name>;delay=2} @self ~onDamaged
+   - effect:particleorbital{r=2;points=16;t=100;i=1;vy=20;particle=Dust_Plume} @self ~onSpawn
+   - effect:particleorbital{r=2;points=16;t=100;i=1;vy=20;particle=Dust_Plume} @self 
+   - blockmask{material=COBWEB;r=1;duration=100} @self ~onTimer:20
+   - skill{s=GenerarArañas} @self 0.7
+   - effect:bloodyScreen{d=25} @PIR{r=15} ~onTimer:20
+
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.3
+    PreventSunburn: true
+    KnockbackResistance: 5
+    PreventRandomEquipment: true
+  Drops:
+  - diamond 1
+
+
+   # Duo del campesinado
+GranjeroHijo:
+  Type: ZOMBIEVILLAGER
+  Health: 500
+  Damage: 50
+  Display: '&8[&7Nv. 50&8] &7Hijo del Granjero &a<caster.hp{round=0}>&7/&a<caster.mhp{round=0}> &c❤'
+  Faction: bad 
+
+  AIGoalSelectors: 
+  - clear
+  - meleeattack 
+  - lookatplayers
+  AITargetSelectors:
+  - clear 
+  - players 
+  - attacker 
+  Skills:
+   - effect:particles{particle=block;m=sand;amount=100;hS=1;vS=1} @self
+   - setname{n=<caster.name>;delay=2} @self ~onDamaged
+   - attribute{attribute=SCALE;a=0.5;duration=999999} @self ~onSpawn
+   - skill{s=LlamarPapa} @self ~onDeath
+  Options:
+    MovementSpeed: 0.4
+    AlwaysShowName: true
+    PreventSunburn: true
+    PreventRandomEquipment: true
+  Equipment:
+  - Guadaña2 HAND
+  Drops:
+  - Guadaña2 0.5
+  - FragmentoOxidado 0.5
+GranjeroPadre:
+  Type: ZOMBIEVILLAGER
+  Health: 5000
+  Damage: 300
+  Display: '&8[&7Nv. 50&8] &fGranjero Padre &a<caster.hp{round=0}>&7/&a<caster.mhp{round=0}> &c❤'
+  Faction: bad 
+  BossBar:
+    Enabled: true
+    Title: '&7&l---=== &fGranjero Padre &a<caster.hp{round=0}>&7/&a<caster.mhp{round=0}> &c❤ &7===---'
+    Range: 30
+    Color: RED
+    Style: SOLID
+  AIGoalSelectors: 
+  - clear
+  - meleeattack 
+  - lookatplayers
+  AITargetSelectors:
+  - clear 
+  - players 
+  - attacker 
+  Skills:
+   - effect:particles{particle=block;m=grass;amount=100;hS=1;vS=1} @self
+   - attribute{attribute=SCALE;a=1.5;duration=999999} @self ~onSpawn
+   - setname{n=<caster.name>;delay=2} @self ~onDamaged
+   - effect:particleorbital{r=2;points=16;t=100;i=1;vy=20;particle=smoke} @self ~onSpawn
+   - effect:particleorbital{r=2;points=16;t=100;i=1;vy=20;particle=smoke} @self 
+   - skill{s=GenerarCalabzas} @self 0.5
+   - effect:bloodyScreen{d=25} @PIR{r=15} ~onTimer:20
+
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.2
+    PreventSunburn: true
+    KnockbackResistance: 5
+    PreventRandomEquipment: true
+  Equipment:
+  - Guadaña HAND
+  Drops:
+  - Guadaña 0.5
+CalabazaMutante:
+  Type: BABYZOMBIE
+  Display: '&7Calabza mutante'
+  Health: 100
+  Damage: 200
+  Faction: bad 
+  AIGoalSelectors: 
+  - clear
+  - meleeattack 
+  - lookatplayers
+  AITargetSelectors:
+  - clear 
+  - players 
+  - attacker 
+  Equipment:
+  - Calabaza HEAD
+  Damage: 3
+  Skills:
+   - effect:particles{particle=block;m=pumpkin;amount=100;hS=1;vS=1} @self
+  Options:
+    AlwaysShowName: true
+    Invisible: true
+    MovementSpeed: 0.4
+    PreventSunburn: true
+    PreventRandomEquipment: true
+  Drops:
+  - Calabaza 0.7
+  
+
+#Oceano:
+FalsoLuxar:
+  Type: GLOW_SQUID
+  Display: '&8[&7Nv. 100&8] &bLuxar &a<caster.hp{round=0}>&7/&a<caster.mhp{round=0}> &c❤'
+  Health: 20
+  Damage: 20
+  Faction: bad 
+  AIGoalSelectors: 
+  - clear
+  - meleeattack 
+  - lookatplayers
+  AITargetSelectors:
+  - clear 
+  - players 
+  - attacker 
+  Skills:
+   - effect:particles{particle=block;m=prismarine;amount=100;hS=1;vS=1} @self
+   - effect:particleorbital{r=2;points=16;t=100;i=1;vy=20;particle=NAUTILUS} @self ~onSpawn
+   - effect:particleorbital{r=2;points=16;t=100;i=1;vy=20;particle=NAUTILUS} @self 
+  Options:
+    AlwaysShowName: true
+    CanMove: true
+    MovementSpeed: 1
+    PreventSunburn: true
+    PreventRandomEquipment: true
+Luxar:
+  Type: GLOW_SQUID
+  Health: 3000
+  Damage: 200
+  Display: '&8[&7Nv. 100&8] &bLuxar &a<caster.hp{round=0}>&7/&a<caster.mhp{round=0}> &c❤'
+  BossBar:
+    Enabled: true
+    Title: '&3&l---=== &b&lLuxar&3===---'
+    Range: 30
+    Color: BLUE
+    Style: SOLID
+  Faction: bad 
+  AIGoalSelectors: 
+  - clear
+  - meleeattack 
+  - lookatplayers
+  - randomFly
+  AITargetSelectors:
+  - clear 
+  - players 
+  - attacker 
+  Skills:
+   - effect:particles{particle=block;m=prismarine;amount=100;hS=1;vS=1} @self
+   - effect:particleorbital{r=2;points=16;t=100;i=1;vy=20;particle=NAUTILUS} @self ~onSpawn
+   - effect:particleorbital{r=2;points=16;t=100;i=1;vy=20;particle=NAUTILUS} @self 
+   - potion{type=DOLPHINS_GRACE;duration=100000;level=8} @self 
+   - potion{type=DOLPHINS_GRACE;duration=100000;level=8} @self ~onSpawn
+   - skill{s=Heal} @self 0.1
+   - skill{s=Veneno} @self 0.5
+   - skill{s=InvocarCalamares} @self 0.3
+   - skill{s=InvocarEnemigos} @self 0.2
+   - effect:bloodyScreen{d=25} @PIR{r=30} ~onTimer:20
+  Drops:
+  - PuntaHelada
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 10
+    CanMove: true
+    PreventRandomEquipment: false
+    PreventSunburn: true
+Tortuga1:
+  Type: TURTLE
+  Display: '&8[&7Nv. 50&8] &7Tortuga Dañada &a<caster.hp{round=0}>&7/&a<caster.mhp{round=0}> &c❤'
+  Health: 100
+  Damage: 30
+  Faction: bad 
+  AIGoalSelectors: 
+  - clear
+  - meleeattack 
+  - lookatplayers
+  AITargetSelectors:
+  - clear 
+  - players 
+  - attacker 
+  Drops:
+  - AlgaOscura 1 0.5
+  - EXP5
+  Skills:
+   - effect:particles{particle=block;m=moss;amount=100;hS=1;vS=1} @self
+  Options:
+    AlwaysShowName: false
+    CanMove: true
+    MovementSpeed: 1
+    PreventSunburn: true
+    PreventRandomEquipment: true
+DefensorFatigadoAhogado:
+  Type: DROWNED
+  Display: '&8[&7Nv. 50&8] &fDefensor Ahogado &a<caster.hp{round=0}>&7/&a<caster.mhp{round=0}> &c❤'
+  Health: 100
+  Damage: 50
+  Faction: bad 
+  AIGoalSelectors: 
+  - clear
+  - meleeattack 
+  - lookatplayers
+  AITargetSelectors:
+  - clear 
+  - players 
+  - attacker 
+  Skills:
+   - effect:particles{particle=block;m=black_wool;amount=100;hS=1;vS=1} @self
+   - potion{type=DOLPHINS_GRACE;duration=100000;level=1} @self 
+   - potion{type=DOLPHINS_GRACE;duration=100000;level=1} @self ~onSpawn
+  Equipment:
+  - Cascohierro2 HEAD
+  - Petohierro2 CHEST
+  - Pantaloneshierro2 LEGS
+  - Botashierro2 FEET
+  - SHIELD HAND
+  - SHIELD OFFHAND
+  Drop:
+  - Cascohierro2 0.5
+  - Botashierro2 0.5
+  Options:
+    KnockbackResistance: 5
+    MovementSpeed: 0.20
+    PreventRandomEquipment: true
+    PreventSunburn: true
+DefensorFatigado:
+  Type: ZOMBIEVILLAGER
+  Display: '&fDefensor Fatigado'
+  Health: 50
+  Damage: 20
+  Faction: bad 
+  AIGoalSelectors: 
+  - clear
+  - meleeattack 
+  - lookatplayers
+  AITargetSelectors:
+  - clear 
+  - players 
+  - attacker 
+  Skills:
+   - effect:particles{particle=block;m=black_wool;amount=100;hS=1;vS=1} @self
+  Equipment:
+  - Cascohierro2 HEAD
+  - Petohierro2 CHEST
+  - Pantaloneshierro2 LEGS
+  - Botashierro2 FEET
+  - SHIELD HAND
+  - SHIELD OFFHAND
+  Drop:
+  - Cascohierro2 0.5
+  - Botashierro2 0.5
+  Options:
+    Profession: WEAPONSMITH
+    KnockbackResistance: 5
+    MovementSpeed: 0.15
+    PreventRandomEquipment: true
+    PreventSunburn: true
+Rana2:
+  Type: FROG
+  Display: '&7Sapo oculto'
+  Health: 15
+  Damage: 5
+  Faction: bad 
+  AIGoalSelectors: 
+  - clear
+  - meleeattack 
+  - lookatplayers
+  AITargetSelectors:
+  - clear 
+  - players 
+  - attacker 
+  Skills:
+   - effect:particles{particle=block;m=moss;amount=100;hS=1;vS=1} @self
+  Options:
+    AlwaysShowName: false
+    CanMove: true
+    MovementSpeed: 3
+    PreventSunburn: true
+    PreventRandomEquipment: true
+  Drops:
+  - AlgaOscura 1 0.5
+GuardianCorrupto2:
+  Type: GUARDIAN
+  Display: '&3&lFistred Magico'
+  Health: 20
+  Damage: 15
+  Faction: bad 
+  Drops:
+  - AlgaOscura 0.7
+  Skills:
+   - effect:particles{particle=block;m=prismarine;amount=100;hS=1;vS=1} @self
+   - effect:particletornado{p=reddust;color=#EE22CC;cp=largeexplode;mr=1;h=1;i=1;d=100;rs=1;sh=1;cs=0;ca=0;chs=0.1;cvs=0.1;cps=0;cyo=0} @self ~onTimer:100
+   - effect:particletornado{p=reddust;color=#EE22CC;cp=largeexplode;mr=1;h=1;i=1;d=100;rs=1;sh=1;cs=0;ca=0;chs=0.1;cvs=0.1;cps=0;cyo=0} @self ~onSpawn
+  Options:
+    MovementSpeed: 1
+    PreventRandomEquipment: false
+    PreventSunburn: true
+GuardianCorrupto1:
+  Type: GUARDIAN
+  Display: '&3&lFistred Paladin'
+  Health: 50
+  Damage: 10
+  Faction: bad 
+  AIGoalSelectors: 
+  - clear
+  - meleeattack 
+  - lookatplayers
+  AITargetSelectors:
+  - clear 
+  - players 
+  - attacker 
+  Drops:
+  - PezInerte 0.5
+  Skills:
+   - effect:particles{particle=block;m=prismarine;amount=100;hS=1;vS=1} @self
+  Options:
+    MovementSpeed: 0.1
+    PreventRandomEquipment: false
+    PreventSunburn: true
+MuscleAhogado:
+  Type: DROWNED
+  Display: '&2Muscle Ahogado'
+  Health: 50
+  Damage: 15
+  Faction: bad 
+  Drops:
+  - AlgaOscura 0.5
+  AIGoalSelectors: 
+  - clear
+  - meleeattack 
+  - lookatplayers
+  AITargetSelectors:
+  - clear 
+  - players 
+  - attacker 
+  Skills:
+   - effect:particles{particle=block;m=blue_wool;amount=100;hS=1;vS=1} @self
+   - potion{type=DOLPHINS_GRACE;duration=100000;level=8} @self 
+   - potion{type=DOLPHINS_GRACE;duration=100000;level=8} @self ~onSpawn
+  Equipment:
+  - CascosVerde HEAD
+  - BotasVerde2 FEET
+  Options:
+    MovementSpeed: 4
+    PreventRandomEquipment: true
+    PreventSunburn: true
+#Geoda:
+Saltador:
+  Type: ZOMBIE
+  Display: '&aInfectado profundo'
+  Health: 55
+  Damage: 5
+  Faction: bad 
+  AIGoalSelectors: 
+  - clear
+  - meleeattack 
+  - lookatplayers
+  AITargetSelectors:
+  - clear 
+  - players 
+  - attacker 
+  Skills:
+   - effect:particles{particle=block;m=blue_wool;amount=100;hS=1;vS=1} @self
+   - potion{type=JUMP;duration=100000;level=8} @self ~onSpawn
+   - potion{type=JUMP;duration=100000;level=8} @self 
+  Equipment:
+  - CascoVerde HEAD
+  - PetoVerde CHEST
+  - PantalonesVerde LEGS
+  - BotasVerde FEET
+  Options:
+    MovementSpeed: 0.3
+    MovementJump: 0.5
+    PreventRandomEquipment: false
+    PreventSunburn: true
+SombraArquera:
+  Type: SKELETON
+  Display: '&8Sombra Arquera'
+  Health: 2
+  Damage: 10
+  Faction: bad
+  Drops:
+  - CuerdaOscura 0.5
+  Equipment:
+  - BOW HAND
+  Skills:
+   - effect:particlesphere{particle=sculk_soul;amount=100;radius=1} @self ~onSpawn
+   - effect:particletornado{p=sculk_soul;cp=largeexplode;mr=1;h=1;i=1;d=100;rs=1;sh=1;cs=0;ca=0;chs=0.1;cvs=0.1;cps=0;cyo=0} @self ~onTimer:100
+
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.4
+    Invisible: true
+    PreventSunburn: true
+    PreventRandomEquipment: true
+Sombraold:
+  Type: BABYZOMBIE
+  Display: '&8Sombra oscura'
+  Health: 2
+  Damage: 10
+  Faction: bad 
+  AIGoalSelectors: 
+  - clear
+  - meleeattack 
+  - lookatplayers
+  AITargetSelectors:
+  - clear 
+  - players 
+  - attacker 
+  Skills:
+   - effect:particlesphere{particle=sculk_soul;amount=100;radius=1} @self ~onSpawn
+   - effect:particletornado{p=sculk_soul;cp=largeexplode;mr=1;h=1;i=1;d=100;rs=1;sh=1;cs=0;ca=0;chs=0.1;cvs=0.1;cps=0;cyo=0} @self ~onTimer:100
+  Drops:
+  - CuerdaOscura 0.5
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.4
+    Invisible: true
+    PreventSunburn: true
+    PreventRandomEquipment: true
+Minero3:
+  Type: ZOMBIEVILLAGER
+  Display: '&dMinero cristalizado'
+  Health: 55
+  Damage: 5
+  Faction: bad 
+  AIGoalSelectors: 
+  - clear
+  - meleeattack 
+  - lookatplayers
+  AITargetSelectors:
+  - clear 
+  - players 
+  - attacker 
+  Skills:
+   - effect:particles{particle=block;m=purple_wool;amount=100;hS=1;vS=1} @self
+  Equipment:
+  - CascoDiamante2 HEAD
+  - BotasGris FEET
+  - Pico3 HAND
+  Options:
+    Profession: TOOLSMITH
+    MovementSpeed: 0.3
+    PreventRandomEquipment: true
+    PreventSunburn: true
+AlmaCristalizada:
+  Type: ALLAY
+  Health: 150
+  Damage: 15
+  Display: '&dAlma Cristalizada'
+  Faction: bad 
+  AIGoalSelectors: 
+  - clear
+  - meleeattack 
+  - lookatplayers
+  AITargetSelectors:
+  - clear 
+  - players 
+  - attacker 
+  Skills:
+   - effect:particles{particle=block;m=amethyst;amount=100;hS=1;vS=1} @self
+   - effect:particleorbital{r=1;points=16;t=100;i=1;vy=20;particle=DRAGON_BREATH} @self ~onSpawn
+   - effect:particleorbital{r=1;points=16;t=100;i=1;vy=20;particle=DRAGON_BREATH} @self 
+   - skill{s=Miedo} @self 0.5
+   - skill{s=Vida2} @self 0.1
+   - effect:bloodyScreen{d=25} @PIR{r=15} ~onTimer:20
+   - fly{duration=100000} @trigger ~onInteract
+
+  Equipment:
+  - Ame HAND
+  - Ame OFFHAND
+  Drops:
+  - Ame
+  Options:
+    MovementSpeed: 0.5
+    PreventRandomEquipment: false
+    PreventSunburn: true
+CofreMaldito:
+  Type: BABYZOMBIE
+  Display: '&7Cofre Maldito'
+  Health: 5
+  Damage: 20
+  Faction: bad 
+  AIGoalSelectors: 
+  - clear
+  - meleeattack 
+  - lookatplayers
+  AITargetSelectors:
+  - clear 
+  - players 
+  - attacker 
+  Equipment:
+  - chest HEAD
+  Damage: 3
+  Skills:
+   - effect:particles{particle=block;m=chest;amount=100;hS=1;vS=1} @self
+  Options:
+    AlwaysShowName: true
+    CanMove: false
+    MovementSpeed: 0
+    Invisible: true
+    PreventSunburn: true
+    PreventRandomEquipment: true
+  Drops:
+  - Llave1 0.7
+Araña1:
+  Type: SPIDER
+  Display: '&7Araña Oscura'
+  Health: 50
+  Damage: 5
+  Faction: bad 
+  AIGoalSelectors: 
+  - clear
+  - meleeattack 
+  - lookatplayers
+  AITargetSelectors:
+  - clear 
+  - players 
+  - attacker 
+  Skills:
+   - effect:particles{particle=block;m=black_wool;amount=100;hS=1;vS=1} @self
+  Options:
+    CanMove: true
+    MovementSpeed: 0.3
+    PreventSunburn: true
+    PreventRandomEquipment: true
+  Drops:
+   - CuerdaOscura 0.5
+Iluminer:
+  Type: ZOMBIE
+  Health: 3650
+  Damage: 1000
+  Display: '&8[&7Nv. 50&8] &5Cristal Resonante &a<caster.hp{round=0}>&7/&a<caster.mhp{round=0}> &c❤'
+  BossBar:
+    Enabled: true
+    Title: '&d&l---=== &5&lCristal Resonante &d===---'
+    Range: 20
+    Color: PINK
+    Style: SOLID
+  Faction: bad 
+  AIGoalSelectors: 
+  - clear
+  - meleeattack 
+  - lookatplayers
+  AITargetSelectors:
+  - clear 
+  - players 
+  - attacker 
+  Skills:
+   - effect:particles{particle=block;m=amethyst;amount=100;hS=1;vS=1} @self
+   - effect:particleorbital{r=2;points=16;t=100;i=1;vy=20;particle=DRAGON_BREATH} @self ~onSpawn
+   - effect:particleorbital{r=2;points=16;t=100;i=1;vy=20;particle=DRAGON_BREATH} @self 
+   - skill{s=Heal} @self 0.5
+   - skill{s=IluminerSkill} @self 0.2
+   - skill{s=Cristal} @self 0.2
+   - effect:bloodyScreen{d=25} @PIR{r=15} ~onTimer:20
+  Equipment:
+  - AMETHYST_BLOCK HEAD
+  - Ame HAND
+  - PetoPurpura CHEST
+  - PantalonesPurpura LEGS
+  - BotasPurpura FEET
+  Drops:
+  - Ame
+  Options:
+    KnockbackResistance: 3
+    MovementSpeed: 0.3
+    PreventRandomEquipment: false
+    PreventSunburn: true
+#Spawn:
+Pajaro1:
+  Type: CHICKEN
+  Display: '&7Gallina Salvaje'
+  Health: 20
+  Damage: 5
+  Faction: bad 
+  AIGoalSelectors: 
+  - clear
+  - meleeattack 
+  - lookatplayers
+  AITargetSelectors:
+  - clear 
+  - players 
+  - attacker 
+  Skills:
+   - effect:particles{particle=block;m=white_wool;amount=100;hS=1;vS=1} @self
+  Options:
+    CanMove: true
+    MovementSpeed: 0.2
+    PreventSunburn: true
+    PreventRandomEquipment: true
+  Drops:
+  - PlumaExtraviada 0.5
+Moo:
+  Type: COW
+  Display: '&7Vaca Salvaje'
+  Health: 15
+  Damage: 2
+  Faction: bad 
+  AIGoalSelectors: 
+  - clear
+  - meleeattack 
+  - lookatplayers
+  AITargetSelectors:
+  - clear 
+  - players 
+  - attacker 
+  Skills:
+   - effect:particles{particle=block;m=brown_wool;amount=100;hS=1;vS=1} @self
+  Options:
+    AlwaysShowName: false
+    CanMove: true
+    MovementSpeed: 0.4
+    PreventSunburn: true
+    PreventRandomEquipment: true
+  Drops:
+  - beef 1
+Cerdo:
+  Type: PIG
+  Display: '&7Cerdo Salvaje'
+  Health: 10
+  Damage: 2
+  Faction: bad 
+  AIGoalSelectors: 
+  - clear
+  - meleeattack 
+  - lookatplayers
+  AITargetSelectors:
+  - clear 
+  - players 
+  - attacker 
+  Skills:
+   - effect:particles{particle=block;m=pink_wool;amount=100;hS=1;vS=1} @self
+  Options:
+    AlwaysShowName: false
+    CanMove: true
+    MovementSpeed: 0.4
+    PreventSunburn: true
+    PreventRandomEquipment: true
+  Drops:
+  - porkchop 1
+Minero2:
+  Type: ZOMBIEVILLAGER
+  Display: '&7Minero Corrompido'
+  Health: 50
+  Damage: 4
+  Faction: bad 
+  AIGoalSelectors: 
+  - clear
+  - meleeattack 
+  - lookatplayers
+  AITargetSelectors:
+  - clear 
+  - players 
+  - attacker 
+  Skills:
+   - effect:particles{particle=block;m=stone;amount=100;hS=1;vS=1} @self
+  Equipment:
+  - CascoDiamante HEAD
+  - Pico2 HAND
+  Drops:
+  - Pico2 0.3
+  - CascoDiamante 0.1
+  Options:
+    Profession: TOOLSMITH
+    MovementSpeed: 0.2
+    PreventRandomEquipment: true
+    PreventSunburn: true
+Minero1:
+  Type: ZOMBIEVILLAGER
+  Display: '&7Minero Olvidado'
+  Health: 25
+  Damage: 3
+  Faction: bad 
+  AIGoalSelectors: 
+  - clear
+  - meleeattack 
+  - lookatplayers
+  AITargetSelectors:
+  - clear 
+  - players 
+  - attacker 
+  Skills:
+   - effect:particles{particle=block;m=stone;amount=100;hS=1;vS=1} @self
+  Equipment:
+  - Cascohierro HEAD
+  - Pico1 HAND
+  Drops:
+  - Pico1 0.7
+  - Cascohierro 0.5
+  Options:
+    Profession: TOOLSMITH
+    MovementSpeed: 0.2
+    PreventRandomEquipment: true
+    PreventSunburn: true
+Ahogado:
+  Type: DROWNED
+  Health: 100
+  Display: '&7Aldeano ahogado'
+  Faction: bad 
+  AIGoalSelectors: 
+  - clear
+  - meleeattack 
+  - lookatplayers
+  AITargetSelectors:
+  - clear 
+  - players 
+  - attacker 
+  Skills:
+   - effect:particles{particle=block;m=prismarine;amount=100;hS=1;vS=1} @self
+   - effect:particleorbital{r=2;points=16;t=100;i=1;vy=20;particle=smoke} @self ~onSpawn
+   - effect:particleorbital{r=2;points=16;t=100;i=1;vy=20;particle=smoke} @self 
+   - effect:itemspray{item=kelp;amount=3;velocity=5;d=100} @self
+   - skill{s=Ahogado} @self 0.5
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.3
+    PreventSunburn: true
+    PreventRandomEquipment: true
+  Equipment:
+  - Tridente1 HAND
+  Drops:
+  - Tridente1 0.5
+Rana:
+  Type: FROG
+  Display: '&7Sapo Venenoso'
+  Health: 15
+  Damage: 5
+  Faction: bad 
+  AIGoalSelectors: 
+  - clear
+  - meleeattack 
+  - lookatplayers
+  AITargetSelectors:
+  - clear 
+  - players 
+  - attacker 
+  Skills:
+   - effect:particles{particle=block;m=moss;amount=100;hS=1;vS=1} @self
+  Options:
+    AlwaysShowName: false
+    CanMove: true
+    MovementSpeed: 3
+    PreventSunburn: true
+    PreventRandomEquipment: true
+  Drops:
+  - slime_ball 1 0.5
+
+
+Muscles:
+  Type: BABYZOMBIE
+  Display: '&7Muscles Olvidados'
+  Health: 15
+  Damage: 3
+  Faction: bad 
+  AIGoalSelectors: 
+  - clear
+  - meleeattack 
+  - lookatplayers
+  AITargetSelectors:
+  - clear 
+  - players 
+  - attacker 
+  Skills:
+   - effect:particles{particle=block;m=dirt;amount=100;hS=1;vS=1} @self
+   - teleport{spreadh=5;spreadv=0} @target
+   - potion{type=HUNGER;duration=100;level=1}
+  Equipment:
+  - BotasGris FEET
+  - CascosGris HEAD
+  Drops:
+  - FragmentoMuscle 0.7
+  Options:
+    MovementSpeed: 0.2
+    PreventRandomEquipment: false
+    PreventSunburn: true
+Infectados:
+  Type: ZOMBIE
+  Display: '&7Aldeano infectado'
+  Health: 30
+  Damage: 2
+  Faction: bad 
+  AIGoalSelectors: 
+  - clear
+  - meleeattack 
+  - lookatplayers
+  AITargetSelectors:
+  - clear 
+  - players 
+  - attacker 
+  Equipment:
+  - CascoRojo HEAD
+  - LEATHER_CHESTPLATE CHEST
+  - PantalonesRojo LEGS
+  - BotasGris FEET
+  - STONE_SWORD HAND
+  Drops:
+  - FragmentoInfectado 0.7
+  Options:
+    AlwaysShowName: true
+    PreventSunburn: true
+

@@ -1,0 +1,212 @@
+isla_zombie1:
+  Type: ZOMBIE
+  Display: '&8[&7Nv. 5&8] &cZombie &a<caster.hp{round=0}>&7/&a<caster.mhp{round=0}> &c❤'
+  Health: 40
+  Damage: 5
+  Equipment:
+  - LEATHER_HELMET HEAD
+  - LEATHER_CHESTPLATE CHEST
+  - LEATHER_LEGGINGS LEGS
+  - LEATHER_BOOTS FEET
+  - GOLDEN_SWORD HAND
+  Drops:
+  - ROTTEN_FLESH 2to4 0.5
+  - LEATHER 4to6 0.5
+  - cmd{c="eco give <trigger.name> 4120"} 1 100
+  LevelModifiers:
+  - health 5
+  - damage 0.5
+  Options:
+    MovementSpeed: 0.20
+isla_zombie2:
+  Type: ZOMBIE
+  Display: '&8[&7Nv. 10&8] &cZombie &a<caster.hp{round=0}>&7/&a<caster.mhp{round=0}> &c❤'
+  Health: 45
+  Damage: 7.5
+  Equipment:
+  - GOLDEN_HELMET HEAD
+  - GOLDEN_CHESTPLATE CHEST
+  - GOLDEN_LEGGINGS LEGS
+  - GOLDEN_BOOTS FEET
+  - GOLDEN_SWORD{enchants=SHARPNESS:1,DURABILITY:5,FIRE_ASPECT:1} HAND
+  Drops:
+  - ROTTEN_FLESH 2to4 0.5
+  - GOLD_INGOT 4to12 0.5
+  - cmd{c="eco give <trigger.name> 8090"} 1 100
+  LevelModifiers:
+  - health 5
+  - damage 0.5
+  Options:
+    MovementSpeed: 0.20
+isla_zombie3:
+  Type: ZOMBIE
+  Display: '&8[&7Nv. 15&8] &cZombie &a<caster.hp{round=0}>&7/&a<caster.mhp{round=0}> &c❤'
+  Health: 50
+  Damage: 9
+  Equipment:
+  - CHAINMAIL_HELMET HEAD
+  - CHAINMAIL_CHESTPLATE CHEST
+  - CHAINMAIL_LEGGINGS LEGS
+  - CHAINMAIL_BOOTS FEET
+  - IRON_SWORD HAND
+  Drops:
+  - ROTTEN_FLESH 4to6 0.5
+  - IRON_INGOT 4to12 0.5
+  - cmd{c="eco give <trigger.name> 12160"} 1 100
+  LevelModifiers:
+  - health 5
+  - damage 0.5
+  Options:
+    MovementSpeed: 0.20
+isla_zombie4:
+  Type: ZOMBIE
+  Display: '&8[&7Nv. 20&8] &cZombie &a<caster.hp{round=0}>&7/&a<caster.mhp{round=0}> &c❤'
+  Health: 55
+  Damage: 10.5
+  Equipment:
+  - IRON_HELMET HEAD
+  - IRON_CHESTPLATE{enchants=UNBREAKING:1} CHEST
+  - IRON_LEGGINGS LEGS
+  - IRON_BOOTS{enchants=UNBREAKING:1} FEET
+  - IRON_SWORD{enchants=SHARPNESS:2,DURABILITY:5,FIRE_ASPECT:1} HAND
+  - SHIELD{enchants=UNBREAKING:1}
+  Drops:
+  - ROTTEN_FLESH 4to6 0.5
+  - IRON_INGOT 6to12 0.5
+  - cmd{c="eco give <trigger.name> 16990"} 1 100
+  LevelModifiers:
+  - health 5
+  - damage 0.5
+  Options:
+    MovementSpeed: 0.20
+isla_zombie5:
+  Type: ZOMBIE
+  Display: '&8[&7Nv. 20&8] &cZombie &a<caster.hp{round=0}>&7/&a<caster.mhp{round=0}> &c❤'
+  Health: 60
+  Damage: 12
+  Equipment:
+  - DIAMOND_HELMET HEAD
+  - DIAMOND_CHESTPLATE CHEST
+  - DIAMOND_LEGGINGS LEGS
+  - DIAMOND_BOOTS FEET
+  - DIAMOND_SWORD{enchants=SHARPNESS:2,DURABILITY:5,FIRE_ASPECT:1} HAND
+  - SHIELD{enchants=UNBREAKING:1}
+  Drops:
+  - ROTTEN_FLESH 8to16 0.5
+  - DIAMOND 6to14 0.5
+  - cmd{c="eco give <trigger.name> 20650"} 1 100
+  LevelModifiers:
+  - health 5
+  - damage 0.5
+  Options:
+    MovementSpeed: 0.20
+isla_esqueleto1:
+  Type: SKELETON
+  Display: '&8[&7Nv. 5&8] &cEsqueleto &a<caster.hp{round=0}>&7/&a<caster.mhp{round=0}> &c❤'
+  Health: 40
+  Damage: 5
+  Equipment:
+  - LEATHER_HELMET HEAD
+  - LEATHER_CHESTPLATE CHEST
+  - LEATHER_LEGGINGS LEGS
+  - LEATHER_BOOTS FEET
+  - BOW{enchants=POWER:1} HAND
+  Drops:
+  - BONE 2to4 0.5
+  - BOW 1 0.5
+  - ARROW 1to4 0.5
+  - cmd{c="eco give <trigger.name> 4120"} 1 100
+  LevelModifiers:
+  - health 5
+  - damage 0.5
+  Options:
+    MovementSpeed: 0.20
+isla_esqueleto2:
+  Type: SKELETON
+  Display: '&8[&7Nv. 10&8] &cEsqueleto &a<caster.hp{round=0}>&7/&a<caster.mhp{round=0}> &c❤'
+  Health: 45
+  Damage: 7.5
+  Equipment:
+  - GOLDEN_HELMET HEAD
+  - GOLDEN_CHESTPLATE CHEST
+  - GOLDEN_LEGGINGS LEGS
+  - GOLDEN_BOOTS FEET
+  - BOW{enchants=POWER:1,DURABILITY:5} HAND
+  Drops:
+  - BONE 4to6 0.5
+  - BOW 1 0.5
+  - ARROW 2to6 0.5
+  - GOLD_INGOT 4to12 0.5
+  - cmd{c="eco give <trigger.name> 8090"} 1 100
+  LevelModifiers:
+  - health 5
+  - damage 0.5
+  Options:
+    MovementSpeed: 0.20
+isla_esqueleto3:
+  Type: SKELETON
+  Display: '&8[&7Nv. 15&8] &cEsqueleto &a<caster.hp{round=0}>&7/&a<caster.mhp{round=0}> &c❤'
+  Health: 50
+  Damage: 9
+  Equipment:
+  - CHAINMAIL_HELMET HEAD
+  - CHAINMAIL_CHESTPLATE CHEST
+  - CHAINMAIL_LEGGINGS LEGS
+  - CHAINMAIL_BOOTS FEET
+  - BOW{enchants=POWER:1,DURABILITY:5,FIRE_ASPECT:1} HAND
+  Drops:
+  - BONE 6to9 0.5
+  - BOW{enchants=POWER:2,DURABILITY:1} 1 0.5
+  - ARROW 4to8 0.5
+  - IRON_INGOT 4to12 0.5
+  - cmd{c="eco give <trigger.name> 12160"} 1 100
+  LevelModifiers:
+  - health 5
+  - damage 0.5
+  Options:
+    MovementSpeed: 0.20
+isla_esqueleto4:
+  Type: SKELETON
+  Display: '&8[&7Nv. 20&8] &cZombie &a<caster.hp{round=0}>&7/&a<caster.mhp{round=0}> &c❤'
+  Health: 55
+  Damage: 10.5
+  Equipment:
+  - IRON_HELMET HEAD
+  - IRON_CHESTPLATE{enchants=UNBREAKING:1} CHEST
+  - IRON_LEGGINGS LEGS
+  - IRON_BOOTS{enchants=UNBREAKING:1} FEET
+  - IRON_SWORD{enchants=SHARPNESS:2,DURABILITY:5,FIRE_ASPECT:1} HAND
+  - BOW{enchants=POWER:2,DURABILITY:5,FIRE_ASPECT:1} HAND
+  Drops:
+  - BONE 12to15 0.5
+  - BOW{enchants=POWER:3,DURABILITY:2,LOOTING:1} 1 0.5
+  - ARROW 6to12 0.5
+  - IRON_INGOT 6to14 0.5
+  - cmd{c="eco give <trigger.name> 16990"} 1 100
+  LevelModifiers:
+  - health 5
+  - damage 0.5
+  Options:
+    MovementSpeed: 0.20
+isla_esqueleto5:
+  Type: SKELETON
+  Display: '&8[&7Nv. 20&8] &cEsqueleto &a<caster.hp{round=0}>&7/&a<caster.mhp{round=0}> &c❤'
+  Health: 60
+  Damage: 12
+  Equipment:
+  - DIAMOND_HELMET HEAD
+  - DIAMOND_CHESTPLATE CHEST
+  - DIAMOND_LEGGINGS LEGS
+  - DIAMOND_BOOTS FEET
+  - BOW{enchants=POWER:3,DURABILITY:5,FIRE_ASPECT:2} HAND
+  Drops:
+  - BONE 15to18 0.5
+  - BOW{enchants=POWER:3,DURABILITY:2,LOOTING:2} 1 0.5
+  - ARROW 8to16 0.5
+  - DIAMOND 6to9 0.5
+  - cmd{c="eco give <trigger.name> 20650"} 1 100
+  LevelModifiers:
+  - health 5
+  - damage 0.5
+  Options:
+    MovementSpeed: 0.20

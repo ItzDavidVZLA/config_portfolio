@@ -1,0 +1,110 @@
+zombie_avanzado:
+  Type: ZOMBIE
+  Display: '&8[&7Nv. <caster.level>&8] &cZombie Avanzado &a<caster.hp{round=0}>&7/&a<caster.mhp{round=0}> &c❤'
+  Health: 100
+  Damage: 10
+  Equipment:
+  - CHAINMAIL_CHESTPLATE CHEST
+  - CHAINMAIL_LEGGINGS LEGS
+  - IRON_BOOTS FEET
+  - IRON_SWORD HAND
+  Options:
+    MovementSpeed: 0.2
+    AlwaysShowName: true
+    PreventOtherDrops: true
+    PreventSunburn: true
+  Drops:
+  - command{c="sk xp add %player_name% fighting 100"} 
+  Skills:
+  - setname{n=<caster.name>;delay=2} @self ~onDamaged
+
+
+agua_maligna:
+  Type: ZOMBIE
+  Display: '&8[&7Nv. <caster.level>&8] &bAgua Maligna &a<caster.hp{round=0}>&7/&a<caster.mhp{round=0}> &c❤'
+  Health: 40
+  Damage: 15
+  Options:
+    MovementSpeed: 0.2
+    AlwaysShowName: true
+    PreventOtherDrops: true
+    PreventSunburn: true
+  Drops:
+  - command{c="sk xp add %player_name% archery 120"}
+  Skills:
+  - potion{type=INVISIBILITY;duration=999999;level=1} @self ~onSpawn
+  - skill{s=Geyser} @Self ~onDamaged ~onTimer:5
+  - skill{s=LanzadorAqua} @target ~onTimer:100
+  - skill{s=AquaPrision} @Self ~onDamaged ~onTimer:1000
+  - effect:particles{p=Dripping_Dripstone_Water;amount=50;hSpread=5;ySpread=0;speed=0;yOFfset=0.5} @Self
+
+lava_maligna:
+  Type: ZOMBIE
+  Display: '&8[&7Nv. <caster.level>&8] &cLavaMaligna &a<caster.hp{round=0}>&7/&a<caster.mhp{round=0}> &c❤'
+  Health: 40
+  Damage: 15
+  Options:
+    MovementSpeed: 0.2
+    AlwaysShowName: true
+    PreventOtherDrops: true
+    PreventSunburn: true
+  Drops:
+  - command{c="sk xp add %player_name% archery 120"}
+  Skills:
+  - potion{type=INVISIBILITY;duration=999999;level=1} @self ~onSpawn
+  - skill{s=Geyser2} @Self ~onDamaged ~onTimer:5
+  - skill{s=LanzadorLava} @target ~onTimer:100
+  - skill{s=LavaPrision} @Self ~onDamaged ~onTimer:1000
+  - effect:particles{p=flame;amount=50;hSpread=5;ySpread=0;speed=0;yOFfset=0.5} @Self
+  - flames @self ~onTimer:5
+
+
+
+
+
+
+Hielito:
+  Type: ZOMBIE
+  Display: '&8[&7Nv. <caster.level>&8] &bHielito &a<caster.hp{round=0}>&7/&a<caster.mhp{round=0}> &c❤'
+  Health: 10
+  Damage: 5
+  Equipment:
+  - SNOW_BLOCK HEAD
+  Options:
+    MovementSpeed: 0.2
+    AlwaysShowName: true
+    PreventOtherDrops: true
+    PreventSunburn: true
+  Drops:
+  - command{c="sk xp add %player_name% archery 120"}
+  Skills:
+  - potion{type=INVISIBILITY;duration=999999;level=1} @self ~onSpawn
+  - skill{s=IceBolt} @target ~onTimer:100
+
+
+sombra:
+  Type: ZOMBIE
+  Display: '&8[&7Nv. <caster.level>&8] &8Sombra &a<caster.hp{round=0}>&7/&a<caster.mhp{round=0}> &c❤'
+  Health: 30
+  Damage: 10
+  Equipment:
+  Options:
+    MovementSpeed: 0.2
+    AlwaysShowName: true
+    PreventOtherDrops: true
+    PreventSunburn: true
+  Drops:
+  - command{c="sk xp add %player_name% archery 120"}
+  Skills:
+  - potion{type=INVISIBILITY;duration=999999;level=1} @self ~onSpawn
+  - particletornado{p=smoke;cp=largeexplode;mr=1;h=0.75;i=2;d=100;rs=1;sh=1;cs=0;ca=0;chs=0.1;cvs=0.1;cps=1;cyo=0} @self ~onTimer:10
+  - skill{s=Lanzador} @target ~onTimer:100
+
+
+
+
+
+
+
+
+

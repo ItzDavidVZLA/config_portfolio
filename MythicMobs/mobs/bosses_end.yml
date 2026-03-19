@@ -1,0 +1,20 @@
+sentey:
+  Type: ENDER_DRAGON
+  Display: '&8[&7Nv. 100&8] &dSentey ⚚ &a<caster.hp{round=0}>&7/&a<caster.mhp{round=0}> &c❤'
+  Health: 10000
+  Damage: 500
+  AIGoalSelectors:
+  - clear
+  #- meleeattack
+  Options:
+    MovementSpeed: 0.25
+    AlwaysShowName: true
+    PreventOtherDrops: true
+    PreventSunburn: true
+  Drops:
+  - command{c="sk xp add %player_name% fighting 350"} 
+  - command{c="ecobits give %player_name% cristales 300"}
+  Skills:
+  - setname{n=<caster.name>;delay=2} @self ~onDamaged
+  - heal{a=50} @self ~onTimer:600
+  #- enderDragonSetPhase{phase=DYING} @self ~onDamaged 0.2
