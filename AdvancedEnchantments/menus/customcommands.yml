@@ -1,0 +1,211 @@
+# Create customized commands.
+enchantment-info:
+  # Is this command enabled?
+  enabled: true
+  # Change the start of the command
+  # Use it in game: /<command> <enchantment>
+  command: /enchant
+  aliases:
+  - /enchantment
+  # Permission for command
+  # Set to "" to disable
+  permission: ''
+  inventory:
+    # Inventory size (9-18-27-36-45-54)
+    size: 9
+    # Inventory name
+    name: 'Información del encantamiento'
+    items:
+      # Slots start from 0
+      # This number defines the inventory slot.
+      '2':
+        type: STAINED_GLASS_PANE
+        id: 15
+        custom-model-data: 0
+        force-glow: false
+        name: ' '
+        lore: []
+        prefix-addon: ' &f* &7'
+      '3':
+        type: ENCHANTED_BOOK
+        id: 0
+        custom-model-data: 0
+        force-glow: false
+        name: '&fEncantamiento &8» &a%enchant%'
+        lore:
+        - ''
+        - ' &8&l≡ &f&lINFORMACIÓN:'
+        - '  &8◆ &e%enchant% &7- &f%max-lvl%'
+        - '  &8◆ &e%applies-to%'
+        - ''
+        - ' &8→ &f%desc%'
+        prefix-addon: ' &8→ &f'
+      '4':
+        type: STAINED_GLASS_PANE
+        id: 15
+        custom-model-data: 0
+        force-glow: false
+        name: ' '
+        lore: []
+        prefix-addon: ' &f* &7'
+      '5':
+        type: HOPPER
+        id: 0
+        custom-model-data: 0
+        force-glow: false
+        name: '&fAplicable para:'
+        lore:
+        - '&8⇢ &e%applies-to%'
+        prefix-addon: ' &f* &7'
+      '6':
+        type: STAINED_GLASS_PANE
+        id: 15
+        custom-model-data: 0
+        force-glow: false
+        name: ' '
+        lore: []
+        prefix-addon: ' &f* &7'
+enchantments:
+  # Is this command enabled?
+  enabled: true
+  # Change the command
+  # Use it in game: /<command>
+  command: /enchants
+  aliases:
+  - /enchantments
+  # Permission for command
+  # Set to "" to disable
+  permission: ''
+  mode:
+    # Modes: GROUPS, ALL
+    # If set to GROUPS, first group selection inventory will show up
+    # If set to ALL, first inventory will show all available enchants
+    currentMode: GROUPS
+  inventory:
+    # Inventory size (18-27-36-45-54)
+    size: 27
+    # Display page number with next/previous page item amounts?
+    display-page-number: true
+    # Inventory name
+    name: '&0Encantamientos'
+    items:
+      # Slots start from 0
+      # This number defines the inventory slot.
+      '11':
+        type: STAINED_GLASS_PANE
+        id: 5
+        custom-model-data: 0
+        force-glow: false
+        # What enchantment group list should it open?
+        group: COMUN
+        name: '&a&lENCANTAMIENTOS COMUNES'
+        lore:
+        - ''
+        - '&fPrevisualiza la lista de'
+        - '&fencantamientos de rareza'
+        - '&acomún.'
+        - ''
+        - '&e» ¡Haz clic para previsualizar! «'
+      '12':
+        type: STAINED_GLASS_PANE
+        id: 11
+        custom-model-data: 0
+        force-glow: false
+        group: RARO
+        name: '&b&lENCANTAMIENTOS RAROS'
+        lore:
+        - ''
+        - '&fPrevisualiza la lista de'
+        - '&fencantamientos de rareza'
+        - '&brara&f.'
+        - ''
+        - '&e» ¡Haz clic para previsualizar! «'
+      '14':
+        type: STAINED_GLASS_PANE
+        id: 2
+        custom-model-data: 0
+        force-glow: false
+        group: EPICO
+        name: '&5&lENCANTAMIENTOS ÉPICOS'
+        lore:
+        - ''
+        - '&fPrevisualiza la lista de'
+        - '&fencantamientos de rareza'
+        - '&dépica&f.'
+        - ''
+        - '&e» ¡Haz clic para previsualizar! «'
+      '15':
+        type: STAINED_GLASS_PANE
+        id: 1
+        custom-model-data: 0
+        force-glow: false
+        group: LEGENDARIO
+        name: '&6&lENCANTAMIENTOS LEGENDARIOS'
+        lore:
+        - ''
+        - '&fPrevisualiza la lista de'
+        - '&fencantamientos de rareza'
+        - '&6legendaria&f.'
+        - ''
+        - '&e» ¡Haz clic para previsualizar! «'
+      fill:
+        type: STAINED_GLASS_PANE
+        id: 15
+        custom-model-data: 0
+        force-glow: false
+        name: ' '
+        lore: []
+  group-enchantment-inventory:
+    name: '&0Encantamientos → %group%'
+    # Fills empty slots with this item
+    fill-item:
+      material: STAINED_GLASS_PANE
+      id: 15
+      custom-model-data: 0
+      name: ' '
+      lore: []
+    go-back-item:
+      # Show "Go Back" item?
+      enabled: true
+      slot: '%invSize% - 7'
+      item:
+        type: NETHER_STAR
+        id: 0
+        custom-model-data: 0
+      name: '&eVolver'
+      lore: []
+    previous-page:
+      material: STAINED_GLASS_PANE
+      id: 14
+      custom-model-data: 0
+      name: '&eVolver'
+      lore: []
+      slot: '%invSize% - 3'
+    next-page:
+      material: STAINED_GLASS_PANE
+      id: 5
+      custom-model-data: 0
+      name: '&eVolver'
+      lore: []
+      slot: '%invSize% - 2'
+    item:
+      type: ENCHANTED_BOOK
+      id: 0
+      custom-model-data: 0
+      force-glow: false
+      # What command should be run when player clicks on one of the enchantments?
+      # %max-lvl% - Displays max. level in numbers, %max-lvl-roman% - displays max. level in roman numerals
+      command: /enchant %enchantment%
+      name: '&fEncantamiento &8» &a%enchant%'
+      lore:
+      - ''
+      - ' &8&l≡ &f&lINFORMACIÓN:'
+      - '  &8◆ &e%enchant% &7- &f%max-lvl%'
+      - '  &8◆ &e%applies-to%'
+      - ''
+      - ' &8→ &f%desc%'
+      prefix-addon: ' &8→ &f'
+enchants:
+  group-enchantment-inventory:
+    item:
+      prefix-addon: ' &8⇢ &f'

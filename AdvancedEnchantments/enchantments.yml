@@ -1,0 +1,855 @@
+# << Example configuration >>
+# lastchance:    <-- Enchantment name
+#  display: "%group-color%Last Chance"    <-- Display in item lore
+#  description: "Has a chance to heal when on low hearts"    <-- Enchantment Description
+#  applies-to: "Chestplate"    <-- What applies to (display purposes)
+#  type: "DEFENSE"    <-- Enchantment type (controls when enchantment activates)
+#  group: "COMMON"    <-- Enchantment group (For enchanter and right-click random books)
+#  settings:
+#    required-enchants:
+#      - "springs:1" # Can require specific level
+#      - "gears"
+#    not-applyable-with:
+#      - "frozen"
+#  applies:    <-- List of items that it applies
+#    - ALL_CHESTPLATE    <-- Item(s) list
+#  levels:    < -- All Levels are under here
+#    1:     <-- Level indicator
+#      chance: 30    <-- Chance for enchantment to activate
+#      conditions: "%victim health% > 5 : %stop%"    <-- Condition (read more about it at Conditions)
+#      description: "Has the lowest chance to heal when on low hearts"    <-- Per level description (different description for each level - optional)
+#      effects:    <-- All enchantment effects
+#        - "ADD_HEALTH:2 %victim%"    <-- Effect(s) list
+
+#  Display (String) (No spaces or enchantment will break)
+#    Determines how will enchantment look in item lore
+
+#  Applies-to (String)
+#    Display used in Custom Enchantment books for %description% variable
+
+#  Group (Setting)
+#    INFO: Create enchantment groups in config.yml under enchanter configuration.
+#   Enchantment groups are used for enchanter, to sell specific type books. You can group them
+#   and add a group-wide color, then obtain it with variable %group-color% (shown in example enchantments below).
+
+#  Enchantment Types List: https://ae.advancedplugins.net/enchantments/creating-enchantments/type-list
+
+#  Applies (Material)
+#    Determines which items will have the effects
+#    The Latest Materials list: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+#    NOTICE: You can use "LEATHER_ARMOR, IRON_ARMOR, CHAIN_ARMOR, GOLD_ARMOR or DIAMOND_ARMOR" to
+#    instantly add availability for all specific armor type pieces.
+#    Use "ALL_ARMOR" to add all armor pieces.
+#    Use "ALL_HELMET" to add all helmets.
+#    Use "ALL_CHESTPLATE" to add all chestplates.
+#    Use "ALL_BOOTS" to add all boots.
+#    Use "ALL_SWORD" to add all swords.
+#    Use "ALL_PICKAXE" to add all pickaxes.
+#    Use "ALL_AXE" to add all axes.
+#    Use "ALL_EDIBLE" to add all foods.
+#    And so on, but make sure to use non-plural names of items!
+
+#  Levels (Numbers)
+#    Effects for each level, use as display in examples.
+
+#  Enchantment Effect List: https://ae.advancedplugins.net/enchantments/creating-enchantments/effect-list
+
+#        # You can use tags <random word>word1,word2,word3</random word>, it will get a random word from listed words.
+#        # You can use tags <random number>x-y</random number> while x < y, it will generate a random number between two given integers.
+#        # e.g.: "STEAL_MONEY:<random number>10000-50000</random number>"
+#        # Use <chance>x</chance> to set per-effect chance, x being a chance percentage.
+#        # e.g.: "POTION:SPEED:1:100 %attacker% <chance>25</chance>"
+
+#        # You also may use %victim% or %attacker% flag to give effects to different players (in ATTACK, BOW, DEATH, KILL_PLAYER and DEFENSE types).
+#        # Example usage: - "POTION:POISON:1:50 %attacker%', this will give Level 2 POISON potion effect to the player who attacked.
+#        # If none is provided, effects will be given to the player who had custom enchanted item.
+#        # You can add %combo% instead of numbers, to use number of combo's player has (eg. to limit combo number: "%combo% > 0 && %combo% < 5 : %continue%')
+#        # You can add %damage% instead of numbers, to use number of damage has been done (for ATTACK and DEFENSE)
+
+#  Area of effect: https://ae.advancedplugins.net/enchantments/radius-of-effect-enchantments
+#  Conditions:  https://ae.advancedplugins.net/enchantments/enchantment-conditions
+
+# Settings for enchantments
+# *** This is not a required configuration section and each enchantment doesn't need to have it ***
+#  settings:
+#    required-enchants:
+#      - "springs"
+#    not-applyable-with:
+#      - "frozen"
+#    removeable: false # Makes enchantment non-removeable with blackscrolls
+#    disable-in-enchanter: true # Players can no longer obtain enchantment from Enchanter
+
+#####################
+#                   #
+#      COMUNES      #
+#                   #
+#####################
+
+granjero:
+  display: '%group-color%Granjero'
+  description: "&fProbabilidad de cosechar en un radio 3x3."
+  applies-to: Azadas
+  type: MINING
+  group: COMUN
+  applies:
+    - ALL_HOE
+  levels:
+    '1':
+      settings:
+        whitelist:
+          - CROPS
+          - WHEAT
+          - CARROT
+          - CARROTS
+          - POTATO
+          - POTATOES
+          - BEETROOT
+          - BEETROOTS
+          - COCOA
+          - NETHER_WART
+          - NETHER_WARTS
+          - TORCHFLOWER
+          - PITCHER_CROP
+      effects:
+        - BREAK_BLOCK @Trench{r=3,it=true}
+planter:
+  display: '%group-color%Planter'
+  description: |-
+    &fProbabilidad de plantar semillas
+    &fen un radio 3x3 haciendo 
+    &bshift + clic izquierdo&f.
+  applies-to: Azadas
+  type: RIGHT_CLICK
+  settings:
+    showActionBar: true
+  group: COMUN
+  applies:
+    - ALL_HOE
+  levels:
+    '1':
+      conditions:
+        - '%player is sneaking% = true : %allow%'
+      effects:
+        - PLANT_SEEDS:1
+replanter:
+  display: '%group-color%Replanter'
+  description: |-
+    &fProbabilidad de replantar
+    &fla cosecha que hayas roto.
+  applies-to: Azadas
+  type: MINING
+  group: COMUN
+  applies:
+    - ALL_HOE
+  levels:
+    '1':
+      conditions:
+        - '%is crop% = false : %stop%'
+        - '%is fully grown% = false : %stop%'
+      effects:
+        - PLANT_SEEDS:0:%block drop type%
+fundidor:
+  display: '%group-color%Fundidor'
+  description: |-
+    &fProbabilidad de fundir las
+    &fmenas que hayas minado.
+  applies-to: Picos
+  type: MINING
+  group: COMUN
+  applies:
+    - ALL_PICKAXE
+    - ALL_SHOVEL
+  levels:
+    '1':
+      effects:
+        - SMELT
+carronero:
+  display: '%group-color%Carroñero'
+  description: |-
+    &fProbabilidad de ganar dinero
+    &fpor matar mobs.
+  applies-to: Espadas
+  type: ATTACK_MOB
+  group: COMUN
+  applies:
+    - ALL_SWORD
+  levels:
+    '1':
+      effects:
+        - ADD_MONEY:10
+    '2':
+      effects:
+        - ADD_MONEY:20
+    '3':
+      effects:
+        - ADD_MONEY:30
+
+#####################
+#                   #
+#       RAROS       #
+#                   #
+#####################
+
+blast:
+  display: '%group-color%Blast'
+  description: |-
+    &fProbabilidad de minar bloques
+    &fen un radio 3x3.
+  applies-to: Picos
+  type: MINING
+  group: RARO
+  applies:
+    - ALL_PICKAXE
+    - ALL_SHOVEL
+  settings:
+    not-applyable-with:
+      - 'taladro'
+  levels:
+    '1':
+      effects:
+        - BREAK_BLOCK @Trench{r=3}
+experiencia:
+  display: '%group-color%Experiencia'
+  description: |-
+    &fProbabilidad de obtener mas orbes
+    &fde experiencia al minar menas.
+  applies-to: Tools
+  type: MINING
+  group: RARO
+  applies:
+    - ALL_PICKAXE
+    - ALL_SPADE
+    - ALL_AXE
+  levels:
+    '1':
+      chance: 15
+      cooldown: 1
+      conditions:
+        - '%block type% contains ORE : %allow%'
+      effects:
+        - EXP:<random number>2-5</random number> @Block
+    '2':
+      chance: 30
+      cooldown: 2
+      conditions:
+        - '%block type% contains ORE : %allow%'
+      effects:
+        - EXP:<random number>2-5</random number>
+    '3':
+      chance: 45
+      cooldown: 3
+      conditions:
+        - '%block type% contains ORE : %allow%'
+      effects:
+        - EXP:<random number>2-5</random number> @Block
+    '4':
+      chance: 60
+      cooldown: 4
+      conditions:
+        - '%block type% contains ORE : %allow%'
+      effects:
+        - EXP:<random number>2-5</random number> @Block
+    '5':
+      chance: 75
+      cooldown: 5
+      conditions:
+        - '%block type% contains ORE : %allow%'
+      effects:
+        - EXP:<random number>2-5</random number> @Block
+prisa:
+  display: '%group-color%prisa'
+  description: |-
+    &fProbabilidad de recibir el efecto
+    &fde &ePrisa minera&f.
+  applies-to: Picos
+  type: HELD
+  group: RARO
+  applies:
+    - ALL_PICKAXE
+  levels:
+    '1':
+      effects:
+        - POTION:FAST_DIGGING:0
+    '2':
+      effects:
+        - POTION:FAST_DIGGING:1
+velocidad:
+  display: '%group-color%Velocidad'
+  description: |-
+    &fProbabilidad de recibir el efecto
+    &fde &bVelocidad&f.
+  applies-to: Botas
+  type: EFFECT_STATIC
+  group: RARO
+  applies:
+    - ALL_BOOTS
+  levels:
+    '1':
+      effects:
+        - POTION:SPEED:0
+    '2':
+      effects:
+        - POTION:SPEED:1
+    '3':
+      effects:
+        - POTION:SPEED:2
+salto:
+  display: '%group-color%Salto'
+  description: |-
+    &fProbabilidad de recibir el efecto
+    &fde &aSalto&f.
+  applies-to: Botas
+  type: EFFECT_STATIC
+  group: RARO
+  applies:
+    - ALL_BOOTS
+  levels:
+    '1':
+      effects:
+        - POTION:JUMP:0
+    '2':
+      effects:
+        - POTION:JUMP:1
+    '3':
+      effects:
+        - POTION:JUMP:2
+telepatia:
+  display: '%group-color%Telepatía'
+  description: |-
+    &fProbabilidad de que los bloques
+    &fque mines se traspasen a tu
+    &finventario.
+  applies-to: Picos, Hachas, Azadas, Palas
+  type: MINING
+  group: RARO
+  applies:
+    - ALL_TOOLS
+  levels:
+    '1':
+      effects:
+        - TP_DROPS
+enderslayer:
+  display: '%group-color%Ender Slayer'
+  description: |-
+    &fProbabilidad de que el daño a
+    &fdEndermans &fy &dEndermites 
+    &faumente en un &b10%&f.
+  applies-to: Espadas y Hachas
+  type: ATTACK_MOB
+  group: RARO 
+  applies:
+    - ALL_SWORD
+    - ALL_AXE
+  levels:
+    '1':
+      conditions:
+        - '%mob type% = ENDERMAN or %mob type% = ENDERMITE : %allow%'
+      effects:
+        - INCREASE_DAMAGE:<random number>15-45</random number> @Attacker
+    '2':
+      conditions:
+        - '%mob type% = ENDERMAN or %mob type% = ENDERMITE : %allow%'
+      effects:
+        - INCREASE_DAMAGE:<random number>25-55</random number> @Attacker
+    '3':
+      conditions:
+        - '%mob type% = ENDERMAN or %mob type% = ENDERMITE : %allow%'
+      effects:
+        - INCREASE_DAMAGE:<random number>35-65</random number> @Attacker
+    '4':
+      conditions:
+        - '%mob type% = ENDERMAN or %mob type% = ENDERMITE : %allow%'
+      effects:
+        - INCREASE_DAMAGE:<random number>45-75</random number> @Attacker
+netherslayer:
+  display: '%group-color%Nether Slayer'
+  description: |-
+    &fProbabilidad de que el daño a
+    &f6Blazes&f, &cPigmans &fy Ghasts 
+    &faumente en un &b10%&f.
+  applies-to: Espadas y Hachas
+  type: ATTACK_MOB
+  group: RARO
+  applies:
+    - ALL_SWORD
+    - ALL_AXE
+  levels:
+    '1':
+      conditions:
+        - '%mob type% = BLAZE or %mob type% = ZOMBIE_PIGMAN or %mob type% = PIG_ZOMBIE or %mob type% = GHAST : %allow%'
+      effects:
+        - INCREASE_DAMAGE:<random number>15-45</random number> @Attacker
+    '2':
+      conditions:
+        - '%mob type% = BLAZE or %mob type% = ZOMBIE_PIGMAN or %mob type% = PIG_ZOMBIE or %mob type% = GHAST : %allow%'
+      effects:
+        - INCREASE_DAMAGE:<random number>25-55</random number> @Attacker
+    '3':
+      conditions:
+        - '%mob type% = BLAZE or %mob type% = ZOMBIE_PIGMAN or %mob type% = PIG_ZOMBIE or %mob type% = GHAST : %allow%'
+      effects:
+        - INCREASE_DAMAGE:<random number>35-65</random number> @Attacker
+    '4':
+      conditions:
+        - '%mob type% = BLAZE or %mob type% = ZOMBIE_PIGMAN or %mob type% = PIG_ZOMBIE or %mob type% = GHAST : %allow%'
+      effects:
+        - INCREASE_DAMAGE:<random number>45-75</random number> @Attacker
+    '5':
+      conditions:
+        - '%mob type% = BLAZE or %mob type% = ZOMBIE_PIGMAN or %mob type% = PIG_ZOMBIE or %mob type% = GHAST : %allow%'
+      effects:
+        - INCREASE_DAMAGE:<random number>55-85</random number> @Attacker
+dragonslayer:
+  display: '%group-color%Dragon Slayer'
+  description: |-
+    &fProbabilidad de que el daño al
+    &fdEnder Dragon &faumente en un &b10%&f.
+  applies-to: Espadas y Hachas
+  type: ATTACK_MOB
+  group: RARO
+  applies:
+    - ALL_SWORD
+    - ALL_AXE
+  levels:
+    '1':
+      conditions:
+        - '%mob type% = ENDERDRAGON or %mob type% = ENDER_DRAGON : %allow%'
+      effects:
+        - INCREASE_DAMAGE:<random number>15-45</random number> @Attacker
+    '2':
+      conditions:
+        - '%mob type% = ENDERDRAGON or %mob type% = ENDER_DRAGON : %allow%'
+      effects:
+        - INCREASE_DAMAGE:<random number>25-55</random number> @Attacker
+    '3':
+      conditions:
+        - '%mob type% = ENDERDRAGON or %mob type% = ENDER_DRAGON : %allow%'
+      effects:
+        - INCREASE_DAMAGE:<random number>35-65</random number> @Attacker
+    '4':
+      conditions:
+        - '%mob type% = ENDERDRAGON or %mob type% = ENDER_DRAGON : %allow%'
+      effects:
+        - INCREASE_DAMAGE:<random number>45-75</random number> @Attacker
+vampiro:
+  display: '%group-color%Vampiro'
+  description: |-
+    &fProbabilidad de robar &b1-2 corazones
+    &fa un jugador en un &b3% &fal atacarlo.
+  applies-to: Espadas
+  type: ATTACK;ATTACK_MOB
+  group: RARO
+  applies:
+    - ALL_SWORD
+  levels:
+    '1':
+      chance: 3
+      effects:
+        - 'STEAL_HEALTH:<random number>1-2</random number> @Attacker'
+        - 'ADD_HEALTH:<random number>1-2</random number> @Victim'
+    '2':
+      chance: 6
+      effects:
+        - 'STEAL_HEALTH:<random number>1-2</random number> @Attacker'
+        - 'ADD_HEALTH:<random number>1-2</random number> @Victim'
+    '3':
+      chance: 9
+      effects:
+        - 'STEAL_HEALTH:<random number>1-2</random number> @Attacker'
+        - 'ADD_HEALTH:<random number>1-2</random number> @Victim'
+juggernaut:
+  display: '%group-color%Juggernaut'
+  description: |-
+    &fProbabilidad de que el daño por mobs
+    &fsea reducido en un &b3%&f.
+  applies-to: Armaduras
+  type: DEFENSE_MOB
+  group: RARO
+  applies:
+    - ALL_ARMOR
+  levels:
+    '1':
+      effects:
+        - DECREASE_DAMAGE:10 @Attacker
+    '2':
+      effects:
+        - DECREASE_DAMAGE:25 @Attacker
+    '3':
+      effects:
+        - DECREASE_DAMAGE:50 @Attacker
+maraton:
+  display: '%group-color%Maratón'
+  description: |-
+    &fProbabilidad de recibir &bVelocidad 3 
+    &fdurante &e7 segundos &fal tener poca vida
+    &fcuando un mob te haya hecho daño.
+  applies-to: Botas
+  type: DEFENSE_MOB
+  group: RARO
+  applies:
+    - ALL_BOOTS
+  levels:
+    '1':
+      chance: 3
+      effects:
+        - POTION:SPEED:2:140
+    '2':
+      chance: 6
+      effects:
+        - NEGATE_DAMAGE:10
+    '3':
+      chance: 9
+      effects:
+        - NEGATE_DAMAGE:15
+viudanegra:
+  display: '%group-color%Viuda Negra'
+  description: |-
+    &fProbabilidad de aumentar el daño a 
+    &faracnidos aumentará en un &b10%&f.
+  applies-to: Espadas y Hachas
+  type: ATTACK_MOB
+  group: RARO
+  applies:
+    - ALL_SWORD
+    - ALL_AXE
+  levels:
+    '1':
+      conditions:
+        - '%mob type% = SPIDER or %mob type% = CAVE_SPIDER : %allow%'
+      effects:
+        - 'INCREASE_DAMAGE:<random number>15-45</random number> @Attacker'
+    '2':
+      conditions:
+        - '%mob type% = SPIDER or %mob type% = CAVE_SPIDER : %allow%'
+      effects:
+        - 'INCREASE_DAMAGE:<random number>25-55</random number> @Attacker'
+    '3':
+      conditions:
+        - '%mob type% = SPIDER or %mob type% = CAVE_SPIDER : %allow%'
+      effects:
+        - 'INCREASE_DAMAGE:<random number>35-65</random number> @Attacker'
+
+
+
+
+
+####################
+#                  #
+#      ÉPICOS      #
+#                  #
+####################
+
+ninja:
+  display: '%group-color%Ninja'
+  description: |-
+    &fProbabilidad de obtener &bVelocidad &fy
+    &faumento de vida.
+  applies-to: Armadura
+  type: EFFECT_STATIC
+  group: EPICO
+  applies:
+    - ALL_ARMOR
+  levels:
+    '1':
+      effects:
+        - POTION:SPEED:0
+        - ADD_HEALTH:2
+    '2':
+      effects:
+        - POTION:SPEED:1
+        - ADD_HEALTH:4
+    '3':
+      effects:
+        - POTION:SPEED:1
+        - ADD_HEALTH:6
+rayos:
+  display: '%group-color%Rayos'
+  description: |-
+    &fProbabilidad de que caigan rayos
+    &fal jugador que te atacó.
+  applies-to: Armadura
+  type: DEFENSE
+  group: EPICO
+  applies:
+    - ALL_ARMOR
+  levels:
+    1:
+      chance: 5
+      cooldown: 10
+      effects:
+        - LIGHTNING:TRUE @Attacker
+    2:
+      chance: 10
+      cooldown: 10
+      effects:
+        - LIGHTNING:TRUE @Attacker
+    3:
+      chance: 15
+      cooldown: 8
+      effects:
+        - LIGHTNING:TRUE @Attacker
+    4:
+      chance: 20
+      cooldown: 8
+      effects:
+        - LIGHTNING:TRUE @Attacker
+    5:
+      chance: 25
+      cooldown: 6
+      effects:
+        - LIGHTNING:TRUE @Attacker
+campodefuerza:
+  display: '%group-color%Campo de Fuerza'
+  description: |- 
+    Probabilidad de que el jugador
+    que te atacó sea empujado.
+  applies-to: Armadura
+  type: DEFENSE
+  group: EPICO
+  applies:
+  - ALL_ARMOR
+  levels:
+    '1':
+      chance: 30
+      cooldown: 12
+      effects:
+      - PULL_AWAY:1.0 @Victim
+    '2':
+      chance: 36
+      cooldown: 12
+      effects:
+      - PULL_AWAY:1.5 @Victim
+    '3':
+      chance: 42
+      cooldown: 12
+      effects:
+      - PULL_AWAY:2.0 @Victim
+    '4':
+      chance: 48
+      cooldown: 13
+      effects:
+      - PULL_AWAY:2.5 @Victim
+    '5':
+      chance: 54
+      cooldown: 13
+      effects:
+      - PULL_AWAY:3.0 @Victim
+robodevida:
+  display: '%group-color%Robo de vida'
+  description: |-
+    Probabilidad de que le robes
+    vida al jugador que ataques.
+  applies-to: Espadas
+  type: ATTACK
+  group: EPICO
+  applies:
+  - ALL_SWORD
+  levels:
+    '1':
+      chance: 9
+      cooldown: 15
+      effects:
+      - STEAL_HEALTH:<random number>1-3</random number> @Attacker
+    '2':
+      chance: 13
+      cooldown: 15
+      effects:
+      - STEAL_HEALTH:<random number>2-4</random number> @Attacker
+    '3':
+      chance: 17
+      cooldown: 15
+      effects:
+      - STEAL_HEALTH:<random number>3-5</random number> @Attacker
+    '4':
+      chance: 21
+      cooldown: 15
+      effects:
+      - STEAL_HEALTH:<random number>4-6</random number> @Attacker
+    '5':
+      chance: 25
+      cooldown: 15
+      effects:
+      - STEAL_HEALTH:<random number>5-7</random number> @Attacker
+ejecucion:
+  display: '%group-color%Ejecución'
+  description: |-
+    Probabilidad de infligir más daño
+    cuando un jugador tiene poca vida.
+  applies-to: Espadas
+  type: ATTACK
+  group: EPICO
+  applies:
+  - ALL_SWORD
+  levels:
+    '1':
+      chance: 9
+      cooldown: 2
+      conditions:
+      - '%victim health% > 6 : %stop%'
+      effects:
+      - INCREASE_DAMAGE:<random number>10-50</random number> @Attacker
+    '2':
+      chance: 15
+      cooldown: 2
+      conditions:
+      - '%victim health% > 6 : %stop%'
+      effects:
+      - INCREASE_DAMAGE:<random number>10-50</random number> @Attacker
+    '3':
+      chance: 19
+      cooldown: 2
+      conditions:
+      - '%victim health% > 6 : %stop%'
+      effects:
+      - INCREASE_DAMAGE:<random number>10-50</random number> @Attacker
+    '4':
+      chance: 24
+      cooldown: 2
+      conditions:
+      - '%victim health% > 6 : %stop%'
+      effects:
+      - INCREASE_DAMAGE:<random number>10-50</random number> @Attacker
+    '5':
+      chance: 29
+      cooldown: 2
+      conditions:
+      - '%victim health% > 6 : %stop%'
+      effects:
+      - INCREASE_DAMAGE:<random number>10-50</random number> @Attacker
+    '6':
+      chance: 32
+      cooldown: 2
+      conditions:
+      - '%victim health% > 6 : %stop%'
+      effects:
+      - INCREASE_DAMAGE:<random number>10-50</random number> @Attacker
+    '7':
+      chance: 35
+      cooldown: 2
+      conditions:
+      - '%victim health% > 6 : %stop%'
+      effects:
+      - INCREASE_DAMAGE:<random number>10-50</random number> @Attacker
+venom:
+  display: '%group-color%Venom'
+  description: |-
+    &fProbabilidad de envenenar al 
+    &fjugador que hayas disparado.
+  applies-to: Bow
+  type: SHOOT
+  group: EPICO
+  applies:
+  - BOW
+  levels:
+    '1':
+      chance: 12
+      cooldown: 3
+      effects:
+      - POTION:POISON:0:100 @Victim
+    '2':
+      chance: 25
+      cooldown: 3
+      effects:
+      - POTION:POISON:0:200 @Victim
+    '3':
+      chance: 38
+      cooldown: 3
+      effects:
+      - POTION:POISON:1:100 @Victim
+
+#####################
+#                   #
+#    LEGENDARIOS    #
+#                   #
+#####################
+
+francotirador:
+  display: '%group-color%Francotirador'
+  description: |-
+    &fProbabilidad de que el daño por 
+    &farco se multiplique por &b3x&f.
+  applies-to: Arcos
+  type: SHOOT
+  group: LEGENDARIO
+  applies:
+    - BOW
+  levels:
+    '1':
+      effects:
+        - INCREASE_DAMAGE:<random number>100-150</random number> @Attacker
+        - PARTICLE_LINE:FLAME:10:10
+armablanca:
+  display: '%group-color%Arma Blanca'
+  description: |-
+    &fProbabilidad de que el daño por 
+    &fespada se multiplique por &b3x&f.
+  applies-to: Espadas
+  type: ATTACK
+  group: LEGENDARIO
+  applies:
+    - ALL_SWORD
+  levels:
+    '1':
+      effects:
+        - INCREASE_DAMAGE:<random number>100-150</random number> @Attacker	
+filodelenador:
+  display: '%group-color%Filo de Leñador'
+  description: |-
+    &fProbabilidad de que el daño por 
+    &fhacha se multiplique por &b3x&f.
+  applies-to: Hachas
+  type: ATTACK
+  group: LEGENDARIO
+  applies:
+    - ALL_AXE
+  levels:
+    '1':
+      effects:
+        - INCREASE_DAMAGE:<random number>100-150</random number> @Attacker	
+rabia:
+  display: '%group-color%Rabia'
+  description: |-
+    Probabilidad de que por cada golpe 
+    infligido que hagas se le reducirá
+    vida extra al enemigo.
+  applies-to: Espadas
+  type: ATTACK
+  group: LEGENDARIO
+  applies:
+  - ALL_SWORD
+  levels:
+    '1':
+      chance: 25
+      conditions:
+      - '%attacker combo% > 5 : %stop%'
+      cooldown: 10
+      effects:
+      - DO_HARM:%combo% @Victim
+      - BLOOD @Victim
+    '2':
+      chance: 30
+      conditions:
+      - '%attacker combo% > 5 : %stop%'
+      cooldown: 10
+      effects:
+      - DO_HARM:%combo% @Victim
+      - BLOOD @Victim
+    '3':
+      chance: 35
+      conditions:
+      - '%attacker combo% > 5 : %stop%'
+      cooldown: 10
+      effects:
+      - DO_HARM:%combo% @Victim
+      - BLOOD @Victim
+
+
+
+
+
+
+
+
+
+
+

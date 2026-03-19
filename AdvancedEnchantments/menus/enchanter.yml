@@ -1,0 +1,255 @@
+# Configuration for Enchanter
+#  Change commands how to access it in top of config.yml
+
+# set to "none" to disable
+open-sound: "ENDERDRAGON_WINGS"
+# In what worlds enchanter is disabled
+disabled-in-worlds:
+  - "pvpvanilla"
+messages:
+  sound: ENTITY_PLAYER_LEVELUP
+right-click-to-view-enchants: true
+go-back-item:
+  enabled: true
+  item:
+    type: NETHER_STAR
+    id: 0
+    custom-model-data: 0
+  name: '&eVolver'
+  lore: []
+# Should enchanter stay open after item is bought?
+keep-open: true
+# Enchanter inventory size
+# 9-18-27-36-45-54
+#
+# Placeholders:
+#  %group-enchant-count% - number of enchants in the group
+#  %price% - price
+#  %left% - remaining needed exp until player can purchase item
+# Economy:
+# exp, money, level, souls (works with items that are held when opening inventory), diamonds, gold (gold ingots), emeralds
+inventory:
+  size: 45
+  name: "&0Encantamientos &0y &nArtilugios"
+  settings:
+    # Which level books should enchanter give?
+    # "ALL" - gives all levels
+    # <number> - Gives specific level of enchant
+    enchanterBookLevel: "ALL"
+  items:
+    36-45:
+      item:
+        type: STAINED_GLASS_PANE
+        id: 7
+        custom-model-data: 0
+        force-glow: false
+      name: "&b@comugamers"
+      lore: [ ]
+    13:
+      item:
+        type: STAINED_GLASS_PANE
+        id: 7
+        custom-model-data: 0
+        force-glow: false
+      name: "&b@comugamers"
+      lore: [ ]
+    11:
+      item:
+        type: STAINED_GLASS_PANE
+        id: 5
+        custom-model-data: 0
+        force-glow: false
+      enchant-group: COMUN
+      price: money:100000
+      sound: ANVIL_LAND
+      name: '&aEncantamientos comúnes'
+      lore:
+      - ''
+      - '&fAdquiere encantamientos'
+      - '&fde rareza &acomún &fpor un'
+      - '&fvalor de &6%price% ⛁'
+      - ''
+      - '&e» ¡Haz click izquierdo para comprar! «'
+    12:
+      item:
+        type: STAINED_GLASS_PANE
+        id: 11
+        custom-model-data: 0
+        force-glow: false
+      enchant-group: RARO
+      price: money:500000
+      sound: ANVIL_LAND
+      name: '&bEncantamientos raros'
+      lore:
+      - ''
+      - '&fAdquiere encantamientos'
+      - '&fde rareza &brara &fpor un'
+      - '&fvalor de &6%price% ⛁'
+      - ''
+      - '&e» ¡Haz click izquierdo para comprar! «'
+    14:
+      item:
+        type: STAINED_GLASS_PANE
+        id: 2
+        custom-model-data: 0
+        force-glow: false
+      enchant-group: EPICO
+      price: money:2500000
+      sound: ANVIL_LAND
+      name: '&dEncantamientos épicos'
+      lore:
+      - ''
+      - '&fAdquiere encantamientos'
+      - '&fde rareza &dépica &fpor un'
+      - '&fvalor de &6%price% ⛁'
+      - ''
+      - '&e» ¡Haz click izquierdo para comprar! «'
+    15:
+      item:
+        type: STAINED_GLASS_PANE
+        id: 1
+        custom-model-data: 0
+        force-glow: false
+      enchant-group: LEGENDARIO
+      price: money:10000000
+      sound: ANVIL_LAND
+      name: '&6Encantamientos legendarios'
+      lore:
+      - ''
+      - '&fAdquiere encantamientos'
+      - '&fde rareza &6legendaria&f por'
+      - '&fun valor de &6%price% ⛁'
+      - ''
+      - '&e» ¡Haz click izquierdo para comprar! «'
+    19:
+      item:
+        type: ANVIL
+        id: 0
+        custom-model-data: 0
+        force-glow: false
+      sound: BLOCK_ANVIL_USE
+      player-command:
+        - "tinkerer"
+      name: "<gradient:#00CBF5:#00CBF5>Intercambio</gradient>"
+      lore:
+        - "&8Información"
+        - ""
+        - "&fIntercambia libros para obtener"
+        - "&fpolvo mágico y experiencia"
+        - ""
+        - "&e» ¡Haz clic para interactuar! «"
+    20:
+      item:
+        type: FIREBALL
+        id: 0
+        custom-model-data: 0
+        force-glow: false
+      sound: ENTITY_ARROW_HIT
+      name: "<gradient:#00CBF5:#00CBF5>Polvo misterioso</gradient>"
+      lore:
+        - "&8Información"
+        - ""
+        - "&fRecibirás un polvo misterioso"
+        - "&fen tu inventario de rareza"
+        - "aleatoria"
+        - ""
+        - "&e» ¡Ejecuta &l/mench &epara comprar! «"
+    21:
+      item:
+        type: SUGAR
+        id: 0
+        custom-model-data: 0
+        force-glow: false
+      sound: ENTITY_ARROW_HIT
+      name: "<gradient:#00CBF5:#00CBF5>Polvo mágico</gradient>"
+      lore:
+        - "&8Información"
+        - ""
+        - "&fRecibirás un polvo mágico"
+        - "&fen tu inventario de rareza"
+        - "&faleatoria"
+        - ""
+        - "&e» ¡Ejecuta &l/mench &epara comprar! «"
+    22:
+      item:
+        type: DYE
+        id: 15
+        custom-model-data: 0
+        force-glow: false
+      sound: ENTITY_ARROW_HIT
+      name: "<gradient:#00CBF5:#00CBF5>Pergamino negro</gradient>"
+      lore:
+        - "&8Información"
+        - ""
+        - "&fRecibirás un pergamino negro"
+        - "&fen tu inventario con una"
+        - "&fprobabilidad del &b100%"
+        - "&fde éxito"
+        - ""
+        - "&e» ¡Ejecuta &l/mench &epara comprar! «"
+    23:
+      item:
+        type: PAPER
+        id: 0
+        custom-model-data: 0
+        force-glow: false
+      sound: ENTITY_ARROW_HIT
+      name: "<gradient:#00CBF5:#00CBF5>Formulador de probabilidades</gradient>"
+      lore:
+        - "&8Información"
+        - ""
+        - "&fRecibirás un formulador de"
+        - "&fprobabilidades en tu inventario"
+        - "&fde rareza y porcentajes de éxito"
+        - "&fy destrucción aleatorios"
+        - ""
+        - "&e» ¡Ejecuta &l/mench &epara comprar! «"
+    24:
+      item:
+        type: EMERALD
+        id: 0
+        custom-model-data: 0
+        force-glow: false
+      sound: ENTITY_ARROW_HIT
+      name: "<gradient:#00CBF5:#00CBF5>Protección divina</gradient>"
+      lore:
+        - "&8Información"
+        - ""
+        - "&fRecibirás una protección"
+        - "&fdivina en tu inventario"
+        - ""
+        - "&e» ¡Ejecuta &l/mench &epara comprar! «"
+    25:
+      item:
+        type: ENDER_PORTAL_FRAME
+        id: 0
+        custom-model-data: 0
+        force-glow: false
+      sound: ENTITY_ARROW_HIT
+      player-command:
+        - "alchemist"
+      name: "<gradient:#00CBF5:#00CBF5>Alquimista</gradient>"
+      lore:
+        - "&8Información"
+        - ""
+        - "&fCombina polvos mágicos y libros"
+        - "&fpersonalizados"
+        - ""
+        - "&e» ¡Haz clic para interactuar! «"
+
+# Confirmation inventory for enchanter payments
+# Confirm or deny the transaction, acts like 2-step confirmation
+confirmation-inventory:
+  enabled: false
+  name: "&aConfirmation Inventory"
+  accept:
+    material: STAINED_GLASS_PANE
+    damage: 5
+    name: "&aAccept Transaction"
+    lore:
+      - "&7Click this to pay %price% with %paymentType%"
+  cancel:
+    material: STAINED_GLASS_PANE
+    damage: 14
+    name: "&cClick to cancel"
+    lore: [ ]
