@@ -1,0 +1,134 @@
+ 
+General:
+  #ANVIL CLANCREATE
+  anvil_clancreate:
+    opensound: BLOCK_SLIME_BLOCK_HIT
+    items:
+      left:
+        clicksound: ''
+        material: PAPER
+        texture: ''
+        amount: 1
+        glow: true
+      right:
+        clicksound: ''
+        material: IRON_DOOR
+        texture: ''
+        amount: 1
+        glow: true
+      output:
+        clicksound: ''
+        material: ARMOR_STAND
+        texture: ''
+        amount: 1
+        glow: true
+  #ANVIL CLANHOMECREATE
+  anvil_clanhomecreate:
+    opensound: BLOCK_SLIME_BLOCK_HIT
+    items:
+      left:
+        clicksound: ''
+        material: PAPER
+        texture: ''
+        amount: 1
+        glow: true
+      right:
+        clicksound: ''
+        material: IRON_DOOR
+        texture: ''
+        amount: 1
+        glow: true
+      output:
+        clicksound: ''
+        material: ''
+        texture: '%uclans_banner%'
+        amount: 1
+        glow: true
+  #ANVIL CHANGENICKNAME
+  anvil_changenickname:
+    opensound: BLOCK_SLIME_BLOCK_HIT
+    items:
+      left:
+        clicksound: ''
+        material: PAPER
+        texture: ''
+        amount: 1
+        glow: true
+      right:
+        clicksound: ''
+        material: RED_DYE
+        texture: ''
+        amount: 1
+        glow: false
+      output:
+        clicksound: ''
+        material: ''
+        texture: '%uclans_player_head%'
+        amount: 1
+        glow: true
+  #ANVIL CLANDISCORDCREATEWEBHOOK
+  anvil_clandiscordcreatewebhook:
+    opensound: BLOCK_SLIME_BLOCK_HIT
+    items:
+      left:
+        clicksound: ''
+        material: PAPER
+        texture: ''
+        amount: 1
+        glow: true
+      right:
+        clicksound: ''
+        material: RED_DYE
+        texture: ''
+        amount: 1
+        glow: false
+      output:
+        clicksound: ''
+        material: ''
+        texture: '%uclans_banner%'
+        amount: 1
+        glow: true
+  #ANVIL CLANMODTAG
+  anvil_clanmodtag:
+    opensound: BLOCK_SLIME_BLOCK_HIT
+    items:
+      left:
+        clicksound: ''
+        material: PAPER
+        texture: ''
+        amount: 1
+        glow: true
+      right:
+        clicksound: ''
+        material: RED_DYE
+        texture: ''
+        amount: 1
+        glow: false
+      output:
+        clicksound: ''
+        material: ''
+        texture: '%uclans_banner%'
+        amount: 1
+        glow: true
+  #ANVIL CLANDESC
+  anvil_clandesc:
+    opensound: BLOCK_SLIME_BLOCK_HIT
+    items:
+      left:
+        clicksound: ''
+        material: PAPER
+        texture: ''
+        amount: 1
+        glow: true
+      right:
+        clicksound: ''
+        material: IRON_DOOR
+        texture: ''
+        amount: 1
+        glow: true
+      output:
+        clicksound: ''
+        material: ''
+        texture: '%uclans_banner%'
+        amount: 1
+        glow: true

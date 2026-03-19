@@ -1,0 +1,12 @@
+Regions:
+  Campo_Agricola:
+    world: spawn
+    x1: -137
+    x2: 71
+    y1: 79
+    y2: 127
+    z1: 211
+    z2: 378
+    Global_Settings: false
+    Enabled: true
+    Require_Permission: false
