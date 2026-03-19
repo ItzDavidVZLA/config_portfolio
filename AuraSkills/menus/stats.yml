@@ -1,0 +1,111 @@
+title: '{{stats_title}}'
+size: 4
+fill:
+  enabled: false
+  material: black_stained_glass_pane
+items:
+  skull:
+    pos: 3,5
+    material: player_head
+    display_name: '<yellow>{player}'
+    lore:
+      - '{entries[\n]}'
+  back:
+    material: arrow
+    pos: 3,3
+    display_name: '&3Vol&bver'
+    lore:
+      - '&8Botón'
+      - ''
+      - '&fVuelve a la pagina anterior'
+      - ''
+      - '&e» ¡Haz clic para interactuar! «'
+  panel1:
+    pos: 3,6
+    material: black_stained_glass_pane
+    display_name: ''
+    lore: []
+  panel2:
+    pos: 3,7
+    material: black_stained_glass_pane
+    display_name: ''
+    lore: []
+  panel3:
+    pos: 3,8
+    material: black_stained_glass_pane
+    display_name: ''
+    lore: []
+  panel4:
+    pos: 3,0
+    material: black_stained_glass_pane
+    display_name: ''
+    lore: []
+  panel5:
+    pos: 3,1
+    material: black_stained_glass_pane
+    display_name: ''
+    lore: []
+  panel6:
+    pos: 3,2
+    material: black_stained_glass_pane
+    display_name: ''
+    lore: []
+  cerrar:
+    pos: 3,4
+    material: barrier
+    display_name: ''
+    lore: []
+templates:
+  stat:
+    contexts:
+      strength: {group: upper_left, order: 1, material: red_dye}
+      health: {group: upper_left, order: 2, material: orange_dye}
+      regeneration: {group: upper_left, order: 3, material: yellow_dye}
+      luck: {group: center, order: 0, material: green_dye}
+      crit_chance: {group: upper_right, order: 5, material: cyan_dye}
+      crit_damage: {group: upper_right, order: 6, material: blue_dye}
+      #wisdom: {group: upper_right, order: 2, material: blue_dye}
+      toughness: {group: upper_right, order: 7, material: purple_dye}
+      #speed: {group: lower, order: 5, material: white_dye}
+    groups:
+      upper_left:
+        start: 1,0
+        end: 1,3
+        align: right
+      upper_right:
+        start: 1,5
+        end: 1,8
+        align: left
+      lower:
+        start: 2,0
+        end: 2,8
+        align: center
+      center:
+        start: 1,4
+        end: 1,4
+        align: center
+    display_name: '{color}{stat}'
+    lore:
+      - text: '{stat_desc}'
+        wrap: false
+        style: '<gray>'
+      - ' '
+      - '&fNivel: {color}{level} <#d0d0d0>({traits[\n]})'
+      - ' '
+      - '&e» mc.comugamers.com «'
+components:
+  leveled_by:
+    context: Stat
+    lore:
+      - ' '
+      - text: '<1>{{skills}}: <2>{skills[, ]}'
+        wrap: false
+        styles:
+          1: '<gray>'
+          2: '<white>'
+formats:
+  player_stat_entry: '{color}{symbol} {stat} <white>{level}'
+  trait_entry: '<#d0d0d0>{trait}: {level}'
+  luck_trait_desc_chance: ''
+  luck_trait_desc_added: ''
+  luck_trait_desc_both: ''

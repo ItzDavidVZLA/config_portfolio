@@ -1,0 +1,118 @@
+# -----------------------------------
+# AuraSkills global message file
+#
+# This file defines formats and styles
+# common across all languages
+# -----------------------------------
+
+abilities:
+  alchemist:
+    lore: "<green>(+{duration})"
+action_bar:
+  idle: "{{action_bar.hp_display}}                 {{action_bar.mana_display}}"
+  hp_display: "<red>{hp}/{max_hp} ❤"
+  mana_display: "<aqua>{mana}/{max_mana} {{units.mana}}"
+  xp: "{{action_bar.hp_display}}  &3{xp_gained} {skill} {{units.xp}} &3({current_xp}/{level_xp} {{units.xp}})  {{action_bar.mana_display}}"
+  maxed: "{{action_bar.hp_display}}  &3{xp_gained} {skill} {{units.xp}} &3({{ui.maxed}})  {{action_bar.mana_display}}"
+  ability: "{message}"
+  boss_bar_xp: "<cyan>{xp_gained} {skill} {{units.xp}} <gray>({percent}%)"
+  boss_bar_maxed: "<cyan>{xp_gained} {skill} {{units.xp}} <gray>({{ui.maxed}})"
+  boss_bar_income: "<cyan>{xp_gained} {skill} {{units.xp}} <gray>({percent}%) <green>(+${income})"
+  boss_bar_income_maxed: "<cyan>{xp_gained} {skill} {{units.xp}} <gray>({{ui.maxed}}) <green>(+${income})"
+acf:
+  core:
+    info_message: "{message}"
+    help_format: "<aqua>{commandprefix}{command} <green>{parameters} <yellow>{separator} {description}"
+    help_detailed_command_format: "<aqua>{command} <green>{parameters} <yellow>{separator} {description}"
+    help_detailed_parameter_format: "<green>{syntaxorname}: <yellow>{description}"
+commands:
+  armor:
+    modifier:
+      add:
+        lore: "<gray>{stat}: {color}+{value}"
+        lore_subtract: "<gray>{stat}: {color}-{value}"
+      list:
+        entry: "  {color}{stat}<white> - {value}"
+    multiplier:
+      list:
+        entry: "  <aqua>{target}<white> - {value}"
+    requirement:
+      list:
+        entry: "  <dark_aqua>{skill} <white>- <aqua>{level}"
+      entry: "<aqua>{skill} {level}<gray>, "
+  item:
+    modifier:
+      add:
+        lore: "&8• <white>{stat}: {color}+{value}"
+        lore_subtract: "<gray>{stat}: {color}-{value}"
+      list:
+        entry: "  {color}{stat}<white> - {value}"
+    multiplier:
+      list:
+        entry: "  <aqua>{target}<white> - {value}"
+    requirement:
+      list:
+        entry: "  <dark_aqua>{skill} <white>- <aqua>{level}"
+      entry: "<aqua>{skill} {level}<gray>, "
+  preset:
+    load:
+      appended_entry: "<aqua>(+) <white>{file}"
+      merged_entry: "<yellow>(*) <white>{file}"
+      replaced_entry: "<red>(±) <white>{file}"
+      deleted_entry: "<dark_red>(-) <white>{file}"
+  top:
+    power_entry: "<white>{rank}. <aqua>{player} <white>- {level}"
+    skill_entry: "<white>{rank}. <aqua>{player} <white>- {level}"
+    average_entry: "<white>{rank}. <aqua>{player} <white>- {level}"
+leveler_format:
+  title: "<green>{{leveler.level_up}}"
+  subtitle: "<gold>{old} ➜ {new}"
+  chat: |-
+    <dark_gray>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+    <reset>  &b&l¡NIVEL DESBLOQUEADO!</bold> <dark_aqua>{skill} <dark_gray>{old}➜<dark_aqua>{new}
+    
+    <white>  {{leveler.rewards}}:{stat_level}<reset>
+    <dark_gray>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+  stat_level: "\n  &8● {color}+{num} {stat} {symbol}"
+  ability_unlock: "\n  &a¡Habilidad Desbloqueada! &6&l{ability} &7ha sido desbloqueada"
+  ability_level_up: "\n  &a¡Nuevo Nivel de Habilidad! &6&l{ability} &7es ahora nivel &6{level}"
+  mana_ability_unlock: "\n  &d¡Habilidad de Maná Desbloqueada! &9&l{mana_ability} &7se ha desbloqueado"
+  mana_ability_level_up: "\n  &d¡Nuevo Nivel de Habilidad de Maná! &9&l{mana_ability} &7es ahora nivel &6{level}"
+  money_reward: "\n  <green>${amount}"
+  desc_upgrade_value: "<dark_gray>{current}→<white>{next}"
+  desc_wrap: "<white>      "
+rewards:
+  item:
+    default_menu_message: "\n  {display_name}"
+    default_menu_message_multiple: "\n  {display_name} {amount}x"
+    default_chat_message: "\n  {display_name}"
+    default_chat_message_multiple: "\n  {display_name} {amount}x"
+stats:
+  strength:
+    color: "<dark_red>"
+    symbol: "⚔"
+  health:
+    color: "<red>"
+    symbol: "❤"
+  regeneration:
+    color: "<gold>"
+    symbol: '⚕'
+  luck:
+    color: "<dark_green>"
+    symbol: '☘'
+  wisdom:
+    color: "<blue>"
+    symbol: "✿"
+  toughness:
+    color: "<dark_purple>"
+    symbol: "✦"
+  crit_chance:
+    color: "<green>"
+    symbol: "⌘"
+  crit_damage:
+    color: "<dark_aqua>"
+    symbol: "⚡"
+  speed:
+    color: "<white>"
+    symbol: "➤"
+file_version: 2

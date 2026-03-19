@@ -1,0 +1,236 @@
+title: '{{skills_title}}'
+size: 6
+fill:
+  enabled: false
+  material: black_stained_glass_pane
+items:
+  your_skills:
+    pos: 5,0
+    material: diamond_axe
+    display_name: <aqua>{{your_skills}} - <gold>{player}
+    lore:
+    - text: '{{your_skills_desc}}'
+      wrap: false
+      style: <white>
+    - ' '
+    - text: '{{your_skills_hover}}'
+      wrap: false
+      style: <yellow>
+    - text: '{{your_skills_click}}'
+      wrap: false
+      style: <yellow>
+  close:
+    pos: 5,4
+    material: barrier
+    display_name: <red>{{close}}
+  stats:
+    pos: 5,3
+    material: player_head
+    display_name: <aqua>{{stats}}
+    lore:
+    - <gray>{{stats_desc}}
+    - ' '
+    - <yellow>{{stats_click}}
+  panel0:
+    pos: 5,0
+    material: black_stained_glass_pane
+    display_name: ' '
+  panel1:
+    pos: 5,1
+    material: black_stained_glass_pane
+    display_name: ' '
+  panel2:
+    pos: 5,2
+    material: black_stained_glass_pane
+    display_name: ' '
+  panel3:
+    pos: 5,6
+    material: black_stained_glass_pane
+    display_name: ' '
+  panel4:
+    pos: 5,7
+    material: black_stained_glass_pane
+    display_name: ' '
+  panel5:
+    pos: 5,8
+    material: black_stained_glass_pane
+    display_name: ' '
+  panel6:
+    pos: 5,5
+    material: diamond_axe
+    display_name: '&3¿Qué son las &bhabilidades?'
+    lore: 
+    - '&8Ayuda'
+    - ''
+    - '&fLas habilidades son destrezas que se le\n'
+    - '&fconceden al jugador con el fin de que\n'
+    - '&fpueda mejorar y progresar en el modo de\n'
+    - '&fjuego de acuerdo a lo que se &fofrezca de\n'
+    - '&fforma base en Minecraft'
+    - ''
+    - '&fCada habilidad tendrá una actividad distinta\n'
+    - '&fotorgando mejoras y beneficios adicionales\n'
+    - '&flogrando una experiencia agradable al\n'
+    - '&fusuario'
+    - ''
+    - '&e» mc.comugamers.com «'
+templates:
+  skill:
+    contexts:
+      archery:
+        group: second_row
+        order: 8
+        material: bow
+      fighting:
+        group: first_row
+        order: 2
+        material: stone_sword
+        flags:
+        - hide_attributes
+      mining:
+        group: first_row
+        order: 3
+        material: stone_pickaxe
+        flags:
+        - hide_attributes
+      farming:
+        group: first_row
+        order: 4
+        material: stone_hoe
+        flags:
+        - hide_attributes
+      foraging:
+        group: first_row
+        order: 5
+        material: stone_axe
+        flags:
+        - hide_attributes
+      fishing:
+        group: first_row
+        order: 6
+        material: fishing_rod
+      agility:
+        group: first_row
+        order: 7
+        material: chainmail_boots
+      alchemy:
+        group: first_row
+        order: 8
+        material: brewing_stand
+        flags:
+        - hide_potion_effects
+      defense:
+        group: second_row
+        order: 2
+        material: shield
+        flags:
+        - hide_attributes
+      endurance:
+        group: second_row
+        order: 3
+        material: golden_apple
+      excavation:
+        group: second_row
+        order: 4
+        material: stone_shovel
+        flags:
+        - hide_attributes
+      enchanting:
+        group: second_row
+        order: 5
+        material: enchanting_table
+      sorcery:
+        group: second_row
+        order: 6
+        material: blaze_rod
+      healing:
+        group: second_row
+        order: 7
+        material: splash_potion
+        potion_data:
+          type: instant_heal
+        flags:
+        - hide_potion_effects
+      forging:
+        group: third_row
+        order: 8
+        material: anvil
+    groups:
+      first_row:
+        start: 1,0
+        end: 1,8
+        align: center
+      second_row:
+        start: 2,0
+        end: 2,8
+        align: center
+      third_row:
+        start: 3,0
+        end: 3,8
+        align: center
+      fourth_row:
+        start: 5,0
+        end: 5,8
+        align: center
+    display_name: <aqua>{skill} <dark_aqua>{level}
+    lore:
+    - text: '{desc}'
+      wrap: false
+      style: <gray>
+    #- component: stats_leveled
+    #- component: ability_levels
+    #- component: mana_ability_info
+    - ' '
+    - component: progress
+    #- component: ability_levels
+    - component: max_level
+    #- component: skill_job_active
+    - ' '
+    - <yellow>{{skill_click}}
+components:
+  stats_leveled:
+    context: Skill
+    lore:
+    - ' '
+    - '<gray>{{stats_leveled}}: {entries[<gray>, ]}'
+  ability_levels:
+    context: Skill
+    lore:
+    - ' '
+    - '<gray>{{ability_levels}}: {entries[]}'
+  mana_ability_info:
+    context: Skill
+    lore:
+    - ' '
+    - <light_purple><bold>{{mana_ability}}</bold> <blue>{name} {level}
+    - '  {entries[\n  ](3)}'
+  progress:
+    context: Skill
+    lore:
+    - '<gray>{{progress_to_level}} &a{next_level} &7({current_xp}/{level_xp} {xp_unit})'
+  max_level:
+    context: Skill
+    lore:
+    - <gold>{{max_level}}
+  skill_job_active:
+    context: Skill
+    lore:
+    - ' '
+    - <dark_gray>▶ <green>{{active_job}}
+formats:
+  stat_leveled_entry: '{color}{stat}<gray>'
+  unlocked_ability_entry: \n  <gold>{name} {level} <dark_gray>({info})
+  locked_ability_entry: \n  <dark_gray><strikethrough>{name}
+  duration_entry: '<gray>{{duration}}: <green>{duration}s '
+  mana_cost_entry: '<gray>{{mana_cost}}: <aqua>{mana_cost} '
+  cooldown_entry: '<gray>{{cooldown}}: <yellow>{cooldown}s '
+  damage_entry: '<gray>{{damage}}: <red>{value} '
+  damage_per_mana_entry: '<gray>{{damage}}: <red>+{value}% / Mana '
+  max_mana_cost_entry: '<gray>{{max_mana_cost}}: <aqua>{mana_cost} '
+  attack_speed_entry: '<gray>{{attack_speed}}: <red>+{value}% '
+  bar_completed: <blue>■
+  bar_current: <green>■
+  bar_remaining: <gray>■
+options:
+  bar_length: 20
+file_version: 1

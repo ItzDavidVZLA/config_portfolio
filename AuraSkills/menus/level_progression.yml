@@ -1,0 +1,267 @@
+title: '{{level_progression_title}}'
+size: 6
+fill:
+  enabled: false
+  material: black_stained_glass_pane
+items:
+  back:
+    pos: 5,0
+    material: arrow
+    display_name: '&3Vol&bver'
+    lore:
+    - '&8Botón'
+    - ''
+    - '&fVuelve al menú anterior'
+    - ''
+    - '&e» ¡Haz clic para interactuar! «'
+  close:
+    pos: 5,1
+    material: barrier
+    display_name: '&3Cer&brar'
+    lore:
+    - '&8Botón'
+    - ''
+    - '&fCierra este menú'
+    - ''
+    - '&e» ¡Haz clic para interactuar! «'
+  next_page:
+    pos: 5,8
+    material: arrow
+    display_name: <gold>{{next_page}}
+    lore:
+    - '&8Botón'
+    - ''
+    - '&fAvanza a la pagina posterior'
+    - ''
+    - '&e» ¡Haz clic para interactuar! «'
+  previous_page:
+    pos: 5,7
+    material: arrow
+    display_name: <gold>{{previous_page}}
+    lore:
+    - '&8Botón'
+    - ''
+    - '&fVuelve a la pagina anterior'
+    - ''
+    - '&e» ¡Haz clic para interactuar! «'
+templates:
+  skill:
+    pos: 0,0
+    contexts:
+      farming:
+        material: stone_hoe
+        flags:
+        - hide_attributes
+      foraging:
+        material: stone_axe
+        flags:
+        - hide_attributes
+      mining:
+        material: stone_pickaxe
+        flags:
+        - hide_attributes
+      fishing:
+        material: fishing_rod
+      excavation:
+        material: stone_shovel
+        flags:
+        - hide_attributes
+      archery:
+        material: bow
+      defense:
+        material: chainmail_chestplate
+        flags:
+        - hide_attributes
+      fighting:
+        material: stone_sword
+        flags:
+        - hide_attributes
+      endurance:
+        material: golden_apple
+      agility:
+        material: feather
+      alchemy:
+        material: potion
+        potion_data:
+          type: regen
+        flags:
+        - hide_potion_effects
+      enchanting:
+        material: enchanting_table
+      sorcery:
+        material: blaze_rod
+      healing:
+        material: splash_potion
+        potion_data:
+          type: instant_heal
+        flags: hide_potion_effects
+      forging:
+        material: anvil
+    display_name: <aqua>{skill} <dark_aqua>{level}
+    lore:
+    - text: '{desc}'
+      wrap: false
+      style: <gray>
+    - ' '
+    - component: progress
+    - component: max_level
+    - ''
+    - '&e» mc.comugamers.com «'
+  unlocked:
+    material: lime_stained_glass_pane
+    display_name: '&b{{level}} &3{level}'
+    lore:
+    - '&8Nivel de habilidad'
+    - ' '
+    - component: rewards
+    - ' '
+    - <green>{{unlocked}}
+  in_progress:
+    material: yellow_stained_glass_pane
+    display_name: '&b{{level}} &3{level}'
+    lore:
+    - '&8Nivel de habilidad'
+    - ' '
+    - component: rewards
+    - ' '
+    - '&8▪ &fProgreso: &a{percent}% &7({current_xp}/{level_xp} {xp_unit})'
+    - ' '
+    - <yellow>{{in_progress}}
+  locked:
+    material: red_stained_glass_pane
+    display_name: '&b{{level}} &3{level}'
+    lore:
+    - '&8Nivel de habilidad'
+    - ' '
+    - component: rewards
+    - ' '
+    - <red>{{locked}}
+components:
+  stats_leveled:
+    context: Skill
+    lore:
+    - ''
+  ability_levels:
+    context: Skill
+    lore:
+    - ' '
+  mana_ability_info:
+    context: Skill
+    lore:
+    - ' '
+    - <light_purple><bold>{{mana_ability}}</bold> <blue>{name} {level}
+    - '  {entries[\n  ](3)}'
+  progress:
+    context: Skill
+    lore:
+    - '{{progress_to_level}} &a{next_level} &7({current_xp}/{level_xp} {xp_unit})'
+  max_level:
+    context: Skill
+    lore:
+    - <green>{{max_level}}
+  rewards:
+    context: Integer
+    lore:
+    - ' <gray>{{rewards}}: {entries[]}'
+  ability_unlock:
+    context: Integer
+    lore:
+    - ' '
+    - <gold>{name} <green><bold>{{ability_unlock}}
+    - text: '{desc}'
+      wrap: true
+      wrap_indent: '  '
+      style: <gray>
+  ability_level:
+    context: Integer
+    lore:
+    - ' '
+    - <gold>{name} {level}
+    - text: '{desc}'
+      wrap: true
+      wrap_indent: '  '
+      style: <gray>
+  mana_ability_unlock:
+    context: Integer
+    lore:
+    - ' '
+    - <blue>{name} <light_purple><bold>{{mana_ability_unlock}}
+    - text: '{desc}'
+      wrap: true
+      wrap_indent: '  '
+      styles:
+        0: <gray>
+        1: <yellow>
+  mana_ability_level:
+    context: Integer
+    lore:
+    - ' '
+    - <blue>{name} {level}
+    - text: '{desc}'
+      wrap: true
+      wrap_indent: '  '
+      styles:
+        0: <gray>
+        1: <yellow>
+  job_select:
+    lore:
+    - <yellow>{{job_select}}
+  job_active:
+    lore:
+    - <dark_gray>▶ <green>{{job_active}}
+    - ' '
+    - <gray>{{job_quit}}
+  job_limit:
+    lore:
+    - text: '{{job_limit}}'
+      wrap: true
+      style: <red>
+  job_cooldown:
+    lore:
+    - text: '{{job_cooldown}}'
+      wrap: true
+      style: <red>
+formats:
+  stat_leveled_entry: '{color}{stat}<gray>'
+  unlocked_ability_entry: \n  <gold>{name} {level} <dark_gray>({info})
+  locked_ability_entry: \n  <dark_gray><strikethrough>{name}
+  duration_entry: '<gray>{{duration}}: <green>{duration}s '
+  mana_cost_entry: '<gray>{{mana_cost}}: <aqua>{mana_cost} '
+  cooldown_entry: '<gray>{{cooldown}}: <yellow>{cooldown}s '
+  damage_entry: '<gray>{{damage}}: <red>{value} '
+  damage_per_mana_entry: '<gray>{{damage}}: <red>+{value}% / Mana '
+  max_mana_cost_entry: '<gray>{{max_mana_cost}}: <aqua>{mana_cost} '
+  attack_speed_entry: '<gray>{{attack_speed}}: <red>+{value}% '
+  stat_reward_entry: \n &8● {color}+{num} {symbol} {stat}
+  money_reward_entry: \n  <green>${amount}
+options:
+  use_level_as_amount: false
+  over_max_stack_amount: 1
+  items_per_page: 24
+  start_level: 1
+  track:
+  - 9
+  - 18
+  - 27
+  - 36
+  - 37
+  - 38
+  - 29
+  - 20
+  - 11
+  - 12
+  - 13
+  - 22
+  - 31
+  - 40
+  - 41
+  - 42
+  - 33
+  - 24
+  - 15
+  - 16
+  - 17
+  - 26
+  - 35
+  - 44
+file_version: 2
