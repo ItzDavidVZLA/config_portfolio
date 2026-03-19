@@ -1,0 +1,210 @@
+conditions: []
+effects: []
+advancedEffects: []
+sounds:
+  equip:
+    enabled: false
+    sound: ""
+    volume: 1
+    pitch: 1
+  advancedEquip:
+    enabled: false
+    sound: ""
+    volume: 1
+    pitch: 1
+  unequip:
+    enabled: false
+    sound: ""
+    volume: 1
+    pitch: 1
+advancedLore:
+  - ''
+  - "&r &8&l≡ &f&lENCANTAMIENTOS:"
+  - "&r &r &8◆ &fProtección 10"
+  - "&r &r &8◆ &fDurabilidad 10"
+  - "&r &r &8◆ &fReparación 10"
+  - ''
+  - "&#CFFF00Usando esta pieza de armadura recibirás:"
+  - "&r &8▌ &c❤ +2 corazones"
+  - ''
+  - '&emc.comugamers.com'
+shard:
+  item: prismarine_shard unbreaking:1 hide_enchants
+  name: "<GRADIENT:f12711>Advancement Shard:</GRADIENT:f5af19> &bHuntress"
+  lore:
+    - "&8Drop this onto &bHuntress Armor"
+    - "&8to make it <GRADIENT:f12711>Advanced</GRADIENT:f5af19>."
+  craftable: false
+  recipe:
+    - prismarine_shard
+    - ecoarmor:set_huntress_helmet
+    - prismarine_shard
+    - ecoarmor:set_huntress_chestplate
+    - nether_star
+    - ecoarmor:set_huntress_leggings
+    - prismarine_shard
+    - ecoarmor:set_huntress_boots
+    - prismarine_shard
+helmet:
+  item: netherite_helmet unbreaking:10 mending:10 hide_enchants
+  name: "&#00BCF5Casco &8◆ &#9000FF&lM&#9710FF&lI&#9E20FF&lR&#A52FFF&lA&#AC3FFF&lG&#B24FFF&lE &#C06EFF🛡"
+  advancedName: "<&#00BCF5Casco &8◆ &#9000FF&lM&#9710FF&lI&#9E20FF&lR&#A52FFF&lA&#AC3FFF&lG&#B24FFF&lE &#C06EFF🛡"
+  effectiveDurability: 1024
+  effects:
+    - id: bonus_health
+      args:
+        health: 4
+    - id: armor
+      args:
+        points: 22
+    - id: armor_toughness
+      args:
+        points: 5
+  advancedEffects: []
+  conditions: []
+  lore:
+    - '&8Objeto especial'
+    - ''
+    - "&r &8&l≡ &f&lENCANTAMIENTOS:"
+    - "&r &r &8◆ &fProtección 10"
+    - "&r &r &8◆ &fDurabilidad 10"
+    - "&r &r &8◆ &fReparación 10"
+    - ''
+    - "&#CFFF00Usando esta pieza de armadura recibirás:"
+    - "&r &8▌ &c❤ +2 corazones"
+    - ''
+    - '&emc.comugamers.com'
+  craftable: false
+  defaultTier: kits_tradeables
+  recipe:
+    - ecoitems:armor_core ? crossbow
+    - trident
+    - ecoitems:armor_core ? crossbow
+    - air
+    - iron_helmet
+    - air
+    - spectral_arrow
+    - enchanted_book power:5
+    - spectral_arrow
+chestplate:
+  item: netherite_chestplate unbreaking:10 mending:10 hide_enchants
+  name: "&#00BCF5Pechera &8◆ &#9000FF&lM&#9710FF&lI&#9E20FF&lR&#A52FFF&lA&#AC3FFF&lG&#B24FFF&lE &#C06EFF🛡"
+  advancedName: "&#00BCF5Pechera &8◆ &#9000FF&lM&#9710FF&lI&#9E20FF&lR&#A52FFF&lA&#AC3FFF&lG&#B24FFF&lE &#C06EFF🛡"
+  effectiveDurability: 2048
+  effects:
+    - id: bonus_health
+      args:
+        health: 4
+    - id: armor
+      args:
+        points: 22
+    - id: armor_toughness
+      args:
+        points: 5
+  conditions: []
+  lore:
+    - '&8Objeto especial'
+    - ''
+    - "&r &8&l≡ &f&lENCANTAMIENTOS:"
+    - "&r &r &8◆ &fProtección 10"
+    - "&r &r &8◆ &fDurabilidad 10"
+    - "&r &r &8◆ &fReparación 10"
+    - ''
+    - "&#CFFF00Usando esta pieza de armadura recibirás:"
+    - "&r &8▌ &c❤ +2 corazones"
+    - ''
+    - '&emc.comugamers.com'
+  craftable: true
+  defaultTier: kits_tradeables
+  recipe:
+    - ecoitems:armor_core ? crossbow
+    - trident
+    - ecoitems:armor_core ? crossbow
+    - air
+    - iron_chestplate
+    - air
+    - spectral_arrow
+    - enchanted_book power:5
+    - spectral_arrow
+leggings:
+  item: netherite_leggings unbreaking:10 mending:10 hide_enchants
+  name: "&#00BCF5Pantalones &8◆ &#9000FF&lM&#9710FF&lI&#9E20FF&lR&#A52FFF&lA&#AC3FFF&lG&#B24FFF&lE &#C06EFF🛡"
+  advancedName: "&#00BCF5Pantalones &8◆ &#9000FF&lM&#9710FF&lI&#9E20FF&lR&#A52FFF&lA&#AC3FFF&lG&#B24FFF&lE &#C06EFF🛡"
+  effectiveDurability: 2048
+  effects:
+    - id: bonus_health
+      args:
+        health: 4
+    - id: armor
+      args:
+        points: 22
+    - id: armor_toughness
+      args:
+        points: 5
+  advancedEffects: []
+  conditions: []
+  lore:
+    - '&8Objeto especial'
+    - ''
+    - "&r &8&l≡ &f&lENCANTAMIENTOS:"
+    - "&r &r &8◆ &fProtección 10"
+    - "&r &r &8◆ &fDurabilidad 10"
+    - "&r &r &8◆ &fReparación 10"
+    - ''
+    - "&#CFFF00Usando esta pieza de armadura recibirás:"
+    - "&r &8▌ &c❤ +2 corazones"
+    - ''
+    - '&emc.comugamers.com'
+  craftable: false
+  defaultTier: kits_tradeables
+  recipe:
+    - ecoitems:armor_core ? crossbow
+    - trident
+    - ecoitems:armor_core ? crossbow
+    - air
+    - iron_leggings
+    - air
+    - spectral_arrow
+    - enchanted_book power:5
+    - spectral_arrow
+boots:
+  item: netherite_boots unbreaking:10 mending:10 hide_enchants
+  name: "&#00BCF5Botas &8◆ &#9000FF&lM&#9710FF&lI&#9E20FF&lR&#A52FFF&lA&#AC3FFF&lG&#B24FFF&lE &#C06EFF🛡"
+  advancedName: "&#00BCF5Botas &8◆ &#9000FF&lM&#9710FF&lI&#9E20FF&lR&#A52FFF&lA&#AC3FFF&lG&#B24FFF&lE &#C06EFF🛡"
+  effectiveDurability: 2048
+  effects:
+    - id: bonus_health
+      args:
+        health: 4
+    - id: armor
+      args:
+        points: 22
+    - id: armor_toughness
+      args:
+        points: 5
+  advancedEffects: []
+  conditions: []
+  lore:
+    - '&8Objeto especial'
+    - ''
+    - "&r &8&l≡ &f&lENCANTAMIENTOS:"
+    - "&r &r &8◆ &fProtección 10"
+    - "&r &r &8◆ &fDurabilidad 10"
+    - "&r &r &8◆ &fReparación 10"
+    - ''
+    - "&#CFFF00Usando esta pieza de armadura recibirás:"
+    - "&r &8▌ &c❤ +2 corazones"
+    - ''
+    - '&emc.comugamers.com'
+  craftable: false
+  defaultTier: kits_tradeables
+  recipe:
+    - ecoitems:armor_core ? crossbow
+    - trident
+    - ecoitems:armor_core ? crossbow
+    - air
+    - iron_boots
+    - air
+    - spectral_arrow
+    - enchanted_book power:5
+    - spectral_arrow

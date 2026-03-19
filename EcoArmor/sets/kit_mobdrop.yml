@@ -1,0 +1,166 @@
+conditions: []
+effects:
+- id: damage_multiplier
+  args:
+    multiplier: 3.0
+  triggers:
+    - melee_attack
+    - bow_attack
+  filters:
+    entities:
+    - zombie
+    - skeleton
+    - spider
+    - enderman
+    - creeper
+    - ghast
+    - blaze
+    - wither_skeleton
+    - slime
+    - silverfish
+    - drowned
+    - stray
+    - zombie_horse
+    - zombie_villager
+    - vindicator
+    - pillager
+    - ravager
+    - vex
+    - phantom
+- id: damage_multiplier
+  args:
+    multiplier: 1.5
+  triggers:
+    - melee_attack
+    - bow_attack
+  filters:
+    entities:
+    - zombie
+advancedEffects: []
+sounds:
+  equip:
+    enabled: false
+    sound: ""
+    volume: 1
+    pitch: 1
+  advancedEquip:
+    enabled: false
+    sound: ""
+    volume: 1
+    pitch: 1
+  unequip:
+    enabled: false
+    sound: ""
+    volume: 1
+    pitch: 1
+advancedLore:
+  - ''
+  - "&r &8&l≡ &f&lENCANTAMIENTOS:"
+  - "&r &r &8◆ &fProtección 20"
+  - "&r &r &8◆ &fDurabilidad 20"
+  - "&r &r &8◆ &fReparación 20"
+  - ''
+  - "&#CFFF00Usando esta pieza de armadura recibirás:"
+  - "&r &8▌ &c❤ +3 corazones"
+  - ''
+  - '&emc.comugamers.com'
+shard:
+  item: prismarine_shard unbreaking:1 hide_enchants
+  name: "<GRADIENT:f12711>Advancement Shard:</GRADIENT:f5af19> &bHuntress"
+  lore:
+    - "&8Drop this onto &bHuntress Armor"
+    - "&8to make it <GRADIENT:f12711>Advanced</GRADIENT:f5af19>."
+  craftable: false
+  recipe:
+    - prismarine_shard
+    - ecoarmor:set_huntress_helmet
+    - prismarine_shard
+    - ecoarmor:set_huntress_chestplate
+    - nether_star
+    - ecoarmor:set_huntress_leggings
+    - prismarine_shard
+    - ecoarmor:set_huntress_boots
+    - prismarine_shard
+helmet:
+  item: netherite_helmet protection:6 projectile_protection:5 blast_protection:5 fire_protection:5 unbreaking:4 mending:1
+  name: "&#00BCF5Casco &8◆ &#00aa00&lM&#00b300&lO&#00bd00&lB&#00c600&lD&#00d000&lR&#00d900&lO&#00e300&lP &#00f600🛡"
+  advancedName: "&#00BCF5Casco &8◆ &4&lKOTH &4🛡"
+  effectiveDurability: 1024
+  effects: []
+  advancedEffects: []
+  conditions: []
+  lore: []
+  craftable: false
+  defaultTier: kits_tradeables
+  recipe:
+    - ecoitems:armor_core ? crossbow
+    - trident
+    - ecoitems:armor_core ? crossbow
+    - air
+    - iron_helmet
+    - air
+    - spectral_arrow
+    - enchanted_book power:5
+    - spectral_arrow
+chestplate:
+  item: netherite_chestplate protection:6 projectile_protection:5 blast_protection:5 fire_protection:5 unbreaking:4 mending:1
+  name: "&#00BCF5Pechera &8◆ &#00aa00&lM&#00b300&lO&#00bd00&lB&#00c600&lD&#00d000&lR&#00d900&lO&#00e300&lP &#00f600🛡"
+  advancedName: "&#00BCF5Pechera &8◆ &4&lKOTH &4🛡"
+  effectiveDurability: 2048
+  effects: []
+  conditions: []
+  lore: []
+  craftable: true
+  defaultTier: kits_tradeables
+  recipe:
+    - ecoitems:armor_core ? crossbow
+    - trident
+    - ecoitems:armor_core ? crossbow
+    - air
+    - iron_chestplate
+    - air
+    - spectral_arrow
+    - enchanted_book power:5
+    - spectral_arrow
+leggings:
+  item: netherite_leggings protection:6 projectile_protection:5 blast_protection:5 fire_protection:5 unbreaking:4 mending:1
+  name: "&#00BCF5Pantalones &8◆ &#00aa00&lM&#00b300&lO&#00bd00&lB&#00c600&lD&#00d000&lR&#00d900&lO&#00e300&lP &#00f600🛡"
+  advancedName: "&#00BCF5Pantalones &8◆ &4&lKOTH &4🛡"
+  effectiveDurability: 2048
+  effects: []
+  advancedEffects: []
+  conditions: []
+  lore: []
+  craftable: false
+  defaultTier: kits_tradeables
+  recipe:
+    - ecoitems:armor_core ? crossbow
+    - trident
+    - ecoitems:armor_core ? crossbow
+    - air
+    - iron_leggings
+    - air
+    - spectral_arrow
+    - enchanted_book power:5
+    - spectral_arrow
+boots:
+  item: netherite_boots protection:6 projectile_protection:5 blast_protection:5 fire_protection:5 unbreaking:4 mending:1
+  name: "&#00BCF5Botas &8◆ &#00aa00&lM&#00b300&lO&#00bd00&lB&#00c600&lD&#00d000&lR&#00d900&lO&#00e300&lP &#00f600🛡"
+  advancedName: "&#00BCF5Botas &8◆ &4&lKOTH &4🛡"
+  effectiveDurability: 2048
+  effects: []
+  advancedEffects: []
+  conditions: []
+  lore: []
+  craftable: false
+  defaultTier: kits_tradeables
+  recipe:
+    - ecoitems:armor_core ? crossbow
+    - trident
+    - ecoitems:armor_core ? crossbow
+    - air
+    - iron_boots
+    - air
+    - spectral_arrow
+    - enchanted_book power:5
+    - spectral_arrow

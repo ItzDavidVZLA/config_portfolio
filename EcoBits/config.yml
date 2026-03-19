@@ -1,0 +1,35 @@
+#
+# EcoBits
+# by Auxilor
+#
+
+# Want to use these currencies in other plugins?
+# Use the price system and the name of the currency as the ID,
+# read more here: https://plugins.auxilor.io/all-plugins/prices
+
+# Placeholders:
+# %ecobits_<id>% - The balance of a certain currency
+# %ecobits_<id>_commas% - The balance with commas of a certain currency
+# %ecobits_<id>_formatted% - The formatted balance of a certain currency
+# %ecobits_<id>_max% - The max balance of a certain currency
+# %ecobits_<id>_default% - The default balance of a certain currency
+# %ecobits_<id>_name% - The display name of a certain currency
+# %ecobits_top_<currency>_<place>_<name/amount>% - The name or balance of the player in a leaderboard position
+# %ecobits_top_<currency>_<place>_<name/amount>_<formatted/raw>% - The name or raw/formatted balance of the player in a leaderboard position
+
+server-id: "main" # Server ID for local currencies over MySQL/MongoDB.
+
+cache-expire-after: 300 # Leaderboard cache expire time in seconds.
+
+currencies:
+  - id: cristales # The ID of the currency.
+    name: "&bCristales ❖" # The name of the currency.
+    default: 0 # The default balance.
+    max: -1 # The maximum balance, set to -1 if no max.
+    payable: false # If players should be able to use /ecobits pay to pay other players
+    decimal: true # If decimal amounts are allowed rather than just integer amounts
+    vault: false # If this currency should be registered with vault (Only one currency can be registered with vault, requires server restart)
+    local: false # If this currency should not sync between servers
+    commands: # A list of commands dedicated to this currency (for easier paying, checking balance, etc)
+      - crystals
+      - cristales

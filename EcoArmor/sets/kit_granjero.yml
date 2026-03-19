@@ -1,0 +1,160 @@
+conditions: []
+effects: []
+advancedEffects: []
+sounds:
+  equip:
+    enabled: false
+    sound: ""
+    volume: 1
+    pitch: 1
+  advancedEquip:
+    enabled: false
+    sound: ""
+    volume: 1
+    pitch: 1
+  unequip:
+    enabled: false
+    sound: ""
+    volume: 1
+    pitch: 1
+advancedLore: []
+shard:
+  item: []
+  name: []
+  lore: []
+  craftable: false
+  recipe: []
+helmet:
+  item: leather_helmet color:#FBEC24 hide_dye protection:3 unbreaking:3 mending:1
+  name: "&#00BCF5Casco &8◆ &#FFEE00&lG&#FDF010&lR&#FBF31F&lA&#F9F52F&lN&#F7F83F&lJ&#F5FA4F&lE&#F3FD5E&lR&#F1FF6E&lO &#F1FF6E🛡"
+  advancedName: "<GRADIENT:f12711>Advanced</GRADIENT:f5af19>&4 Slayer Helmet"
+  effectiveDurability: 768
+  effects:
+
+  - id: permanent_potion_effect
+    args:
+      effect: night_vision # The effect to give
+      level: 1
+  advancedEffects: []
+  conditions: []
+  lore: []
+  craftable: false
+  defaultTier: default
+  recipe:
+    - air
+    - netherite_helmet
+    - air
+    - ecoitems:boss_core ? heart_of_the_sea
+    - air
+    - ecoitems:boss_core ? heart_of_the_sea
+    - obsidian
+    - ecoitems:armor_core ? nether_star
+    - obsidian
+chestplate:
+  item: leather_chestplate color:#FBEC24 hide_dye protection:3 unbreaking:3 mending:1
+  leatherColor: "#8F00EE"
+  name: "&#00BCF5Pechera &8◆ &#FFEE00&lG&#FDF010&lR&#FBF31F&lA&#F9F52F&lN&#F7F83F&lJ&#F5FA4F&lE&#F3FD5E&lR&#F1FF6E&lO &#F1FF6E🛡"
+  advancedName: []
+  effectiveDurability: 1024
+  effects:
+  - id: permanent_potion_effect
+    args:
+      effect: regeneration # The effect to give
+      level: 3
+
+  advancedEffects: []
+  conditions: []
+  lore: []
+  craftable: false
+  defaultTier: default
+  recipe:
+    - air
+    - netherite_chestplate
+    - air
+    - ecoitems:boss_core ? heart_of_the_sea
+    - air
+    - ecoitems:boss_core ? heart_of_the_sea
+    - obsidian
+    - ecoitems:armor_core ? nether_star
+    - obsidian
+elytra:
+  item: elytra
+  name: "&4Slayer Elytra"
+  advancedName: "<GRADIENT:f12711>Advanced</GRADIENT:f5af19> &4Slayer Elytra"
+  effectiveDurability: 1024
+  effects: []
+  advancedEffects: []
+  conditions: []
+  lore:
+    - "&4&lSLAYER SET BONUS"
+    - "&8» &4Deal 50% more damage to bosses"
+    - "&8» &4Take 10% less damage"
+    - "&8&oRequires full set to be worn"
+    - ''
+    - "&fTier: %tier%"
+    - "&8&oUpgrade with an Upgrade Crystal"
+  craftable: false
+  defaultTier: default
+  recipe:
+    - air
+    - elytra
+    - air
+    - ecoitems:boss_core ? heart_of_the_sea
+    - air
+    - ecoitems:boss_core ? heart_of_the_sea
+    - obsidian
+    - ecoitems:armor_core ? nether_star
+    - obsidian
+leggings:
+  item: leather_leggings color:#FBEC24 hide_dye protection:3 unbreaking:3 mending:1
+  name: "&#00BCF5Pantalones &8◆ &#FFEE00&lG&#FDF010&lR&#FBF31F&lA&#F9F52F&lN&#F7F83F&lJ&#F5FA4F&lE&#F3FD5E&lR&#F1FF6E&lO &#F1FF6E🛡"
+  advancedName: "<GRADIENT:f12711>Advanced</GRADIENT:f5af19>&4 Slayer Leggings"
+  effectiveDurability: 1024
+  effects:
+  - id: permanent_potion_effect
+    args:
+      effect: haste # The effect to give
+      level: 1
+
+  advancedEffects: []
+  conditions: []
+  lore: []
+  craftable: true
+  defaultTier: default
+  recipe:
+    - air
+    - netherite_leggings
+    - air
+    - ecoitems:boss_core ? heart_of_the_sea
+    - air
+    - ecoitems:boss_core ? heart_of_the_sea
+    - obsidian
+    - ecoitems:armor_core ? nether_star
+    - obsidian
+boots:
+  item: leather_boots color:#FBEC24 hide_dye protection:3 unbreaking:3 mending:1
+  leatherColor: "#8F00EE"
+  name: "&#00BCF5Botas &8◆ &#FFEE00&lG&#FDF010&lR&#FBF31F&lA&#F9F52F&lN&#F7F83F&lJ&#F5FA4F&lE&#F3FD5E&lR&#F1FF6E&lO &#F1FF6E🛡"
+  advancedName: []
+  effectiveDurability: 1024
+  effects:
+  - id: permanent_potion_effect
+    args:
+      effect: speed # The effect to give
+      level: 1
+
+  advancedEffects: []
+  conditions: []
+  lore: []
+  craftable: false
+  defaultTier: default
+  recipe:
+    - air
+    - netherite_chestplate
+    - air
+    - ecoitems:boss_core ? heart_of_the_sea
+    - air
+    - ecoitems:boss_core ? heart_of_the_sea
+    - obsidian
+    - ecoitems:armor_core ? nether_star
+    - obsidian
