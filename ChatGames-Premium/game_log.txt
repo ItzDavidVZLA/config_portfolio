@@ -1,0 +1,1945 @@
+Race Starting: MINE | Material: NETHERRACK | Amount: 16
+Game Starting: VARIABLE | Has Answer: true | Answer: 43
+Game Ending: VARIABLE | Has Winner: false | Answer: 43
+Game Starting: VARIABLE | Has Answer: true | Answer: 5
+Game Ending: VARIABLE | Has Winner: false | Answer: 5
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Trident
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Trident
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Note Block
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Note Block
+Game Starting: CLICKABLE | Has Answer: true | Answer: hp1sPGsNzwut
+Game Ending: CLICKABLE | Has Winner: false | Answer: hp1sPGsNzwut
+Race Starting: FISH | Material: BOWL | Amount: 1
+Race Starting: HUNT | Entity: PIG | Amount: 3
+Game Starting: SHOPPINGLIST | Has Answer: true | Answer: Sleigh, Christmas Cookies, Candy Cane
+Game Ending: SHOPPINGLIST | Has Winner: false | Answer: Sleigh, Christmas Cookies, Candy Cane
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Cauldron
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Cauldron
+Game Starting: UNREVERSE | Has Answer: true | Answer: Saddle
+Game Ending: UNREVERSE | Has Winner: false | Answer: Saddle
+Race Starting: CRAFT | Material: CRAFTING_TABLE | Amount: 4
+Game Starting: TRIVIA | Has Answer: true | Answer: •Netherite
+Game Ending: TRIVIA | Has Winner: false | Answer: •Netherite
+Game Starting: SHOPPINGLIST | Has Answer: true | Answer: Christmas Lights, Tinsel, Hot Cocoa
+Game Ending: SHOPPINGLIST | Has Winner: false | Answer: Christmas Lights, Tinsel, Hot Cocoa
+Race Starting: PLACE | Material: SAND | Amount: 16
+Game Starting: FILLOUT | Has Answer: true | Answer: Trident
+Game Ending: FILLOUT | Has Winner: false | Answer: Trident
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 17
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 17
+Race Starting: FISH | Material: SALMON | Amount: 1
+Game Starting: TRIVIA | Has Answer: true | Answer: •Netherite
+Game Ending: TRIVIA | Has Winner: false | Answer: •Netherite
+Game Starting: FILLOUT | Has Answer: true | Answer: Dispenser
+Game Ending: FILLOUT | Has Winner: false | Answer: Dispenser
+Race Starting: MINE | Material: NETHERRACK | Amount: 32
+Game Starting: REACTION | Has Answer: true | Answer: Spyglass
+Game Ending: REACTION | Has Winner: false | Answer: Spyglass
+Game Starting: MATH | Has Answer: true | Answer: 93
+Game Ending: MATH | Has Winner: false | Answer: 93
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Quartz
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Quartz
+Race Starting: CRAFT | Material: FURNACE | Amount: 4
+Game Starting: FILLOUT | Has Answer: true | Answer: Lantern
+Game Ending: FILLOUT | Has Winner: false | Answer: Lantern
+Game Starting: RANDOM | Has Answer: true | Answer: 7Pt8O277
+Game Ending: RANDOM | Has Winner: false | Answer: 7Pt8O277
+Game Starting: HOVERABLE | Has Answer: true | Answer: Piston
+Game Ending: HOVERABLE | Has Winner: false | Answer: Piston
+Game Starting: MATH | Has Answer: true | Answer: 4
+Game Ending: MATH | Has Winner: false | Answer: 4
+Game Starting: FILLOUT | Has Answer: true | Answer: Arrow
+Game Ending: FILLOUT | Has Winner: false | Answer: Arrow
+Game Starting: FILLOUT | Has Answer: true | Answer: Axolotl
+Game Ending: FILLOUT | Has Winner: false | Answer: Axolotl
+Game Starting: CLICKABLE | Has Answer: true | Answer: 92m6rzxTapcB
+Game Ending: CLICKABLE | Has Winner: false | Answer: 92m6rzxTapcB
+Game Starting: SHOPPINGLIST | Has Answer: true | Answer: Gingerbread Man, Snow Globe, Jingle Bells
+Game Ending: SHOPPINGLIST | Has Winner: false | Answer: Gingerbread Man, Snow Globe, Jingle Bells
+Game Starting: RANDOM | Has Answer: true | Answer: 722WJSgA
+Game Ending: RANDOM | Has Winner: false | Answer: 722WJSgA
+Race Starting: MINE | Material: SAND | Amount: 16
+Game Starting: FILLOUT | Has Answer: true | Answer: Soul Sand
+Game Ending: FILLOUT | Has Winner: false | Answer: Soul Sand
+Game Starting: VARIABLE | Has Answer: true | Answer: 5
+Game Ending: VARIABLE | Has Winner: false | Answer: 5
+Game Starting: CLICKABLE | Has Answer: true | Answer: NEKkyQGneTss
+Game Ending: CLICKABLE | Has Winner: false | Answer: NEKkyQGneTss
+Game Starting: HOVERABLE | Has Answer: true | Answer: Crossbow
+Game Ending: HOVERABLE | Has Winner: false | Answer: Crossbow
+Game Starting: FILLOUT | Has Answer: true | Answer: Obsidian
+Game Ending: FILLOUT | Has Winner: false | Answer: Obsidian
+Race Starting: FURNACE | Material: COOKED_BEEF | Amount: 3
+Game Starting: RANDOM | Has Answer: true | Answer: UmvjYzWy
+Game Ending: RANDOM | Has Winner: false | Answer: UmvjYzWy
+Game Starting: CLICKABLE | Has Answer: true | Answer: rSbyvlU92j1d
+Game Ending: CLICKABLE | Has Winner: false | Answer: rSbyvlU92j1d
+Race Starting: FISH | Material: SALMON | Amount: 1
+Race Starting: HUNT | Entity: COW | Amount: 3
+Race Starting: PLACE | Material: TORCH | Amount: 32
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 14
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 14
+Game Starting: REACTION | Has Answer: true | Answer: Dispenser
+Game Ending: REACTION | Has Winner: false | Answer: Dispenser
+Game Starting: HOVERABLE | Has Answer: true | Answer: Cow
+Game Ending: HOVERABLE | Has Winner: false | Answer: Cow
+Game Starting: VARIABLE | Has Answer: true | Answer: 9
+Game Ending: VARIABLE | Has Winner: false | Answer: 9
+Game Starting: FILLOUT | Has Answer: true | Answer: Feather
+Game Ending: FILLOUT | Has Winner: false | Answer: Feather
+Game Starting: UNREVERSE | Has Answer: true | Answer: Torch
+Game Ending: UNREVERSE | Has Winner: false | Answer: Torch
+Game Starting: VARIABLE | Has Answer: true | Answer: 74
+Game Ending: VARIABLE | Has Winner: false | Answer: 74
+Race Starting: EAT | Material: COOKED_BEEF | Amount: 1
+Game Starting: REACTION | Has Answer: true | Answer: Button
+Game Ending: REACTION | Has Winner: false | Answer: Button
+Game Starting: REACTION | Has Answer: true | Answer: Ancient Debris
+Game Ending: REACTION | Has Winner: false | Answer: Ancient Debris
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 3
+Game Ending: GUESS_THE_NUMBER | Has Winner: true | Winners: ItzDavidVZLA_(Time: 17.84s) | Answer: 3
+Race Starting: EAT | Material: COOKED_BEEF | Amount: 1
+Game Starting: RANDOM | Has Answer: true | Answer: twQa4kT0
+Game Ending: RANDOM | Has Winner: false | Answer: twQa4kT0
+Race Starting: PLACE | Material: TORCH | Amount: 32
+Game Starting: REACTION | Has Answer: true | Answer: Crying Obsidian
+Game Ending: REACTION | Has Winner: false | Answer: Crying Obsidian
+Race Starting: FURNACE | Material: IRON_INGOT | Amount: 6
+Game Starting: CLICKABLE | Has Answer: true | Answer: FnOe6YSZxa1k
+Game Ending: CLICKABLE | Has Winner: false | Answer: FnOe6YSZxa1k
+Game Starting: HOVERABLE | Has Answer: true | Answer: Cow
+Game Ending: HOVERABLE | Has Winner: true | Winners: ItzDavidVZLA_(Time: 7.69s) | Answer: Cow
+Game Starting: UNREVERSE | Has Answer: true | Answer: Gold
+Game Ending: UNREVERSE | Has Winner: false | Answer: Gold
+Race Starting: FURNACE | Material: COOKED_BEEF | Amount: 3
+Game Starting: FILLOUT | Has Answer: true | Answer: Mending
+Game Ending: FILLOUT | Has Winner: false | Answer: Mending
+Game Starting: HOVERABLE | Has Answer: true | Answer: Pickaxe
+Game Ending: HOVERABLE | Has Winner: false | Answer: Pickaxe
+Game Starting: SHOPPINGLIST | Has Answer: true | Answer: Mistletoe, Stocking, Snowman
+Game Ending: SHOPPINGLIST | Has Winner: false | Answer: Mistletoe, Stocking, Snowman
+Race Starting: FURNACE | Material: COOKED_BEEF | Amount: 9
+Race Starting: MINE | Material: STONE | Amount: 16
+Game Starting: HOVERABLE | Has Answer: true | Answer: End Portal
+Game Ending: HOVERABLE | Has Winner: false | Answer: End Portal
+Race Starting: MINE | Material: GRASS_BLOCK | Amount: 32
+Game Starting: RANDOM | Has Answer: true | Answer: zCZThUVx
+Game Ending: RANDOM | Has Winner: false | Answer: zCZThUVx
+Race Starting: FURNACE | Material: COOKED_COD | Amount: 6
+Game Starting: RANDOM | Has Answer: true | Answer: SJzSiB
+Game Ending: RANDOM | Has Winner: false | Answer: SJzSiB
+Game Starting: HOVERABLE | Has Answer: true | Answer: Button
+Game Ending: HOVERABLE | Has Winner: false | Answer: Button
+Game Starting: MATH | Has Answer: true | Answer: 115
+Game Ending: MATH | Has Winner: true | Winners: ItzDavidVZLA_(Time: 5.22s) | Answer: 115
+Game Starting: SHOPPINGLIST | Has Answer: true | Answer: Stocking, Reindeer, Sleigh
+Game Ending: SHOPPINGLIST | Has Winner: false | Answer: Stocking, Reindeer, Sleigh
+Game Starting: TRIVIA | Has Answer: true | Answer: •16
+Game Ending: TRIVIA | Has Winner: false | Answer: •16
+Game Starting: FILLOUT | Has Answer: true | Answer: Observer
+Game Ending: FILLOUT | Has Winner: false | Answer: Observer
+Game Starting: FILLOUT | Has Answer: true | Answer: Grindstone
+Game Ending: FILLOUT | Has Winner: false | Answer: Grindstone
+Game Starting: REACTION | Has Answer: true | Answer: Dispenser
+Game Ending: REACTION | Has Winner: false | Answer: Dispenser
+Game Starting: REACTION | Has Answer: true | Answer: Elytra
+Game Ending: REACTION | Has Winner: false | Answer: Elytra
+Race Starting: CRAFT | Material: CHEST | Amount: 8
+Game Starting: FILLOUT | Has Answer: true | Answer: Jukebox
+Game Ending: FILLOUT | Has Winner: false | Answer: Jukebox
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Leather
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Leather
+Race Starting: EAT | Material: COOKED_BEEF | Amount: 2
+Game Starting: RANDOM | Has Answer: true | Answer: L04zXmx
+Game Ending: RANDOM | Has Winner: false | Answer: L04zXmx
+Race Starting: PLACE | Material: NETHERRACK | Amount: 32
+Game Starting: VARIABLE | Has Answer: true | Answer: 64
+Game Ending: VARIABLE | Has Winner: false | Answer: 64
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 12
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 12
+Race Starting: CRAFT | Material: CHEST | Amount: 2
+Game Starting: CLICKABLE | Has Answer: true | Answer: 6A2TkN6Z2hqx
+Game Ending: CLICKABLE | Has Winner: false | Answer: 6A2TkN6Z2hqx
+Game Starting: REACTION | Has Answer: true | Answer: Observer
+Game Ending: REACTION | Has Winner: false | Answer: Observer
+Race Starting: FURNACE | Material: COOKED_BEEF | Amount: 6
+Game Starting: RANDOM | Has Answer: true | Answer: yKaFf7G4
+Game Ending: RANDOM | Has Winner: false | Answer: yKaFf7G4
+Race Starting: MINE | Material: STONE | Amount: 32
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 7
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 7
+Race Starting: FISH | Material: PUFFERFISH | Amount: 1
+Game Starting: RANDOM | Has Answer: true | Answer: MBH5CH
+Game Ending: RANDOM | Has Winner: false | Answer: MBH5CH
+Game Starting: HOVERABLE | Has Answer: true | Answer: Coal
+Game Ending: HOVERABLE | Has Winner: false | Answer: Coal
+Race Starting: EAT | Material: COOKED_CHICKEN | Amount: 1
+Race Starting: FISH | Material: PUFFERFISH | Amount: 1
+Race Starting: FURNACE | Material: COOKED_COD | Amount: 6
+Game Starting: FILLOUT | Has Answer: true | Answer: Prismarine
+Game Ending: FILLOUT | Has Winner: false | Answer: Prismarine
+Game Starting: SHOPPINGLIST | Has Answer: true | Answer: Christmas Tree, Ribbon, Gingerbread Man
+Game Ending: SHOPPINGLIST | Has Winner: false | Answer: Christmas Tree, Ribbon, Gingerbread Man
+Game Starting: FILLOUT | Has Answer: true | Answer: Biome
+Game Ending: FILLOUT | Has Winner: false | Answer: Biome
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 18
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 18
+Race Starting: EAT | Material: GOLDEN_APPLE | Amount: 1
+Game Starting: FILLOUT | Has Answer: true | Answer: Froglight
+Game Ending: FILLOUT | Has Winner: false | Answer: Froglight
+Game Starting: SHOPPINGLIST | Has Answer: true | Answer: Ornaments, Wreath, Snowman
+Game Ending: SHOPPINGLIST | Has Winner: false | Answer: Ornaments, Wreath, Snowman
+Race Starting: CRAFT | Material: CHEST | Amount: 8
+Race Starting: HUNT | Entity: ZOMBIE | Amount: 3
+Race Starting: HUNT | Entity: CREEPER | Amount: 5
+Game Starting: RANDOM | Has Answer: true | Answer: jzfksr
+Game Ending: RANDOM | Has Winner: false | Answer: jzfksr
+Race Starting: PLACE | Material: SAND | Amount: 16
+Game Starting: REACTION | Has Answer: true | Answer: Pufferfish
+Game Ending: REACTION | Has Winner: false | Answer: Pufferfish
+Game Starting: TRIVIA | Has Answer: true | Answer: •4
+Game Ending: TRIVIA | Has Winner: false | Answer: •4
+Race Starting: FURNACE | Material: GOLD_INGOT | Amount: 6
+Game Starting: FILLOUT | Has Answer: true | Answer: Mangrove
+Game Ending: FILLOUT | Has Winner: false | Answer: Mangrove
+Race Starting: EAT | Material: COOKED_BEEF | Amount: 2
+Race Starting: EAT | Material: COOKED_BEEF | Amount: 1
+Race Starting: HUNT | Entity: SHEEP | Amount: 5
+Game Starting: TRIVIA | Has Answer: true | Answer: •Charcoal
+Game Ending: TRIVIA | Has Winner: false | Answer: •Charcoal
+Game Starting: MATH | Has Answer: true | Answer: 112
+Game Ending: MATH | Has Winner: false | Answer: 112
+Race Starting: PLACE | Material: NETHERRACK | Amount: 32
+Race Starting: FURNACE | Material: COOKED_COD | Amount: 9
+Race Starting: FURNACE | Material: COOKED_COD | Amount: 9
+Race Starting: FURNACE | Material: IRON_INGOT | Amount: 6
+Race Starting: CRAFT | Material: CHEST | Amount: 8
+Game Starting: VARIABLE | Has Answer: true | Answer: 29
+Game Ending: VARIABLE | Has Winner: false | Answer: 29
+Game Starting: RANDOM | Has Answer: true | Answer: GD0Xu1j
+Game Ending: RANDOM | Has Winner: false | Answer: GD0Xu1j
+Game Starting: CLICKABLE | Has Answer: true | Answer: 6w4fLeRBxiAu
+Game Ending: CLICKABLE | Has Winner: false | Answer: 6w4fLeRBxiAu
+Game Starting: SHOPPINGLIST | Has Answer: true | Answer: Hot Cocoa, Snowman, Snow Globe
+Game Ending: SHOPPINGLIST | Has Winner: false | Answer: Hot Cocoa, Snowman, Snow Globe
+Race Starting: PLACE | Material: DIRT | Amount: 16
+Game Starting: FILLOUT | Has Answer: true | Answer: Prismarine
+Game Ending: FILLOUT | Has Winner: false | Answer: Prismarine
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 11
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 11
+Game Starting: FILLOUT | Has Answer: true | Answer: Composter
+Game Ending: FILLOUT | Has Winner: false | Answer: Composter
+Game Starting: MATH | Has Answer: true | Answer: 154
+Game Ending: MATH | Has Winner: false | Answer: 154
+Game Starting: UNREVERSE | Has Answer: true | Answer: Dispenser
+Game Ending: UNREVERSE | Has Winner: false | Answer: Dispenser
+Game Starting: VARIABLE | Has Answer: true | Answer: 37
+Game Ending: VARIABLE | Has Winner: false | Answer: 37
+Race Starting: HUNT | Entity: PIG | Amount: 3
+Game Starting: RANDOM | Has Answer: true | Answer: VNR770
+Game Ending: RANDOM | Has Winner: false | Answer: VNR770
+Race Starting: HUNT | Entity: CHICKEN | Amount: 5
+Game Starting: VARIABLE | Has Answer: true | Answer: 18
+Game Ending: VARIABLE | Has Winner: false | Answer: 18
+Game Starting: FILLOUT | Has Answer: true | Answer: Prismarine
+Game Ending: FILLOUT | Has Winner: false | Answer: Prismarine
+Game Starting: MATH | Has Answer: true | Answer: 3432
+Game Ending: MATH | Has Winner: false | Answer: 3432
+Game Starting: HOVERABLE | Has Answer: true | Answer: Ender Pearl
+Game Ending: HOVERABLE | Has Winner: false | Answer: Ender Pearl
+Race Starting: FURNACE | Material: COOKED_BEEF | Amount: 9
+Game Starting: MATH | Has Answer: true | Answer: 24
+Game Ending: MATH | Has Winner: false | Answer: 24
+Game Starting: UNREVERSE | Has Answer: true | Answer: Shroomlight
+Game Ending: UNREVERSE | Has Winner: false | Answer: Shroomlight
+Race Starting: MINE | Material: SAND | Amount: 16
+Game Starting: UNREVERSE | Has Answer: true | Answer: Prismarine
+Game Ending: UNREVERSE | Has Winner: false | Answer: Prismarine
+Game Starting: HOVERABLE | Has Answer: true | Answer: Skeleton
+Game Ending: HOVERABLE | Has Winner: false | Answer: Skeleton
+Game Starting: MATH | Has Answer: true | Answer: 72
+Game Ending: MATH | Has Winner: false | Answer: 72
+Race Starting: HUNT | Entity: CHICKEN | Amount: 3
+Game Starting: SHOPPINGLIST | Has Answer: true | Answer: Santa Hat, Sleigh, Gingerbread Man
+Game Ending: SHOPPINGLIST | Has Winner: false | Answer: Santa Hat, Sleigh, Gingerbread Man
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 6
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 6
+Game Starting: TRIVIA | Has Answer: true | Answer: •16
+Game Ending: TRIVIA | Has Winner: false | Answer: •16
+Game Starting: HOVERABLE | Has Answer: true | Answer: Sword
+Game Ending: HOVERABLE | Has Winner: false | Answer: Sword
+Game Starting: FILLOUT | Has Answer: true | Answer: Ender Pearl
+Game Ending: FILLOUT | Has Winner: false | Answer: Ender Pearl
+Game Starting: SHOPPINGLIST | Has Answer: true | Answer: Nutcracker, Jingle Bells, Christmas Lights
+Game Ending: SHOPPINGLIST | Has Winner: false | Answer: Nutcracker, Jingle Bells, Christmas Lights
+Game Starting: FILLOUT | Has Answer: true | Answer: Pigstep
+Game Ending: FILLOUT | Has Winner: false | Answer: Pigstep
+Game Starting: CLICKABLE | Has Answer: true | Answer: sRKzxwKXCHEB
+Game Ending: CLICKABLE | Has Winner: false | Answer: sRKzxwKXCHEB
+Game Starting: REACTION | Has Answer: true | Answer: Chorus
+Game Ending: REACTION | Has Winner: false | Answer: Chorus
+Race Starting: PLACE | Material: DIRT | Amount: 32
+Race Starting: CRAFT | Material: TORCH | Amount: 32
+Race Starting: PLACE | Material: COBBLESTONE | Amount: 32
+Race Starting: MINE | Material: NETHERRACK | Amount: 16
+Race Starting: PLACE | Material: SAND | Amount: 32
+Game Starting: RANDOM | Has Answer: true | Answer: 9QJnu2Pp
+Game Ending: RANDOM | Has Winner: false | Answer: 9QJnu2Pp
+Game Starting: RANDOM | Has Answer: true | Answer: J2y0Ad
+Game Ending: RANDOM | Has Winner: false | Answer: J2y0Ad
+Race Starting: MINE | Material: NETHERRACK | Amount: 16
+Game Starting: TRIVIA | Has Answer: true | Answer: •Bedrock
+Game Ending: TRIVIA | Has Winner: false | Answer: •Bedrock
+Game Starting: MATH | Has Answer: true | Answer: 81
+Game Ending: MATH | Has Winner: false | Answer: 81
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 8
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 8
+Game Starting: UNREVERSE | Has Answer: true | Answer: Hopper
+Game Ending: UNREVERSE | Has Winner: false | Answer: Hopper
+Game Starting: TRIVIA | Has Answer: true | Answer: •8
+Game Ending: TRIVIA | Has Winner: false | Answer: •8
+Game Starting: SHOPPINGLIST | Has Answer: true | Answer: Sleigh, Tinsel, Jingle Bells
+Game Ending: SHOPPINGLIST | Has Winner: false | Answer: Sleigh, Tinsel, Jingle Bells
+Game Starting: UNREVERSE | Has Answer: true | Answer: Saddle
+Game Ending: UNREVERSE | Has Winner: false | Answer: Saddle
+Game Starting: MATH | Has Answer: true | Answer: 102
+Game Ending: MATH | Has Winner: false | Answer: 102
+Race Starting: FISH | Material: SALMON | Amount: 3
+Race Starting: EAT | Material: GOLDEN_APPLE | Amount: 1
+Game Starting: UNREVERSE | Has Answer: true | Answer: Cow
+Game Ending: UNREVERSE | Has Winner: false | Answer: Cow
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Coal
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Coal
+Game Starting: MATH | Has Answer: true | Answer: 33
+Game Ending: MATH | Has Winner: false | Answer: 33
+Game Starting: HOVERABLE | Has Answer: true | Answer: Crafting
+Game Ending: HOVERABLE | Has Winner: false | Answer: Crafting
+Game Starting: TRIVIA | Has Answer: true | Answer: •Survival
+Game Ending: TRIVIA | Has Winner: false | Answer: •Survival
+Race Starting: EAT | Material: COOKED_BEEF | Amount: 2
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 5
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 5
+Game Starting: HOVERABLE | Has Answer: true | Answer: Enderman
+Game Ending: HOVERABLE | Has Winner: true | Winners: ItzDavidVZLA_(Time: 4.82s) | Answer: Enderman
+Race Starting: PLACE | Material: COBBLESTONE | Amount: 16
+Race Starting: MINE | Material: DIRT | Amount: 16
+Game Starting: CLICKABLE | Has Answer: true | Answer: owpkDssZdrUg
+Game Ending: CLICKABLE | Has Winner: false | Answer: owpkDssZdrUg
+Game Starting: VARIABLE | Has Answer: true | Answer: 54
+Game Ending: VARIABLE | Has Winner: false | Answer: 54
+Game Starting: VARIABLE | Has Answer: true | Answer: 53
+Game Ending: VARIABLE | Has Winner: false | Answer: 53
+Game Starting: HOVERABLE | Has Answer: true | Answer: Creeper
+Game Ending: HOVERABLE | Has Winner: false | Answer: Creeper
+Race Starting: MINE | Material: DIORITE | Amount: 16
+Game Starting: SHOPPINGLIST | Has Answer: true | Answer: Hot Cocoa, Tinsel, Mistletoe
+Game Ending: SHOPPINGLIST | Has Winner: false | Answer: Hot Cocoa, Tinsel, Mistletoe
+Game Starting: TRIVIA | Has Answer: true | Answer: •Warden
+Game Ending: TRIVIA | Has Winner: false | Answer: •Warden
+Game Starting: MATH | Has Answer: true | Answer: 6720
+Game Ending: MATH | Has Winner: false | Answer: 6720
+Game Starting: FILLOUT | Has Answer: true | Answer: Nether Wart
+Game Ending: FILLOUT | Has Winner: false | Answer: Nether Wart
+Game Starting: CLICKABLE | Has Answer: true | Answer: 7unnd5smPjYo
+Game Ending: CLICKABLE | Has Winner: false | Answer: 7unnd5smPjYo
+Game Starting: CLICKABLE | Has Answer: true | Answer: YTNISUf2e1s1
+Game Ending: CLICKABLE | Has Winner: false | Answer: YTNISUf2e1s1
+Game Starting: UNREVERSE | Has Answer: true | Answer: Glowstone
+Game Ending: UNREVERSE | Has Winner: true | Winners: ItzDavidVZLA_(Time: 6.68s) | Answer: Glowstone
+Race Starting: FURNACE | Material: GOLD_INGOT | Amount: 3
+Game Starting: TRIVIA | Has Answer: true | Answer: •Fish
+Game Ending: TRIVIA | Has Winner: false | Answer: •Fish
+Game Starting: TRIVIA | Has Answer: true | Answer: •Charcoal
+Game Ending: TRIVIA | Has Winner: false | Answer: •Charcoal
+Race Starting: PLACE | Material: NETHERRACK | Amount: 32
+Game Starting: FILLOUT | Has Answer: true | Answer: Nether Wart
+Game Ending: FILLOUT | Has Winner: false | Answer: Nether Wart
+Game Starting: HOVERABLE | Has Answer: true | Answer: Axolotl
+Game Ending: HOVERABLE | Has Winner: false | Answer: Axolotl
+Race Starting: EAT | Material: COOKED_CHICKEN | Amount: 1
+Race Starting: EAT | Material: GOLDEN_APPLE | Amount: 1
+Game Starting: TRIVIA | Has Answer: true | Answer: •Nether
+Game Ending: TRIVIA | Has Winner: false | Answer: •Nether
+Race Starting: FURNACE | Material: IRON_INGOT | Amount: 9
+Game Starting: TRIVIA | Has Answer: true | Answer: •Cookie
+Game Ending: TRIVIA | Has Winner: false | Answer: •Cookie
+Game Starting: VARIABLE | Has Answer: true | Answer: -16
+Game Ending: VARIABLE | Has Winner: false | Answer: -16
+Game Starting: UNREVERSE | Has Answer: true | Answer: Spyglass
+Game Ending: UNREVERSE | Has Winner: false | Answer: Spyglass
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Elytra
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Elytra
+Game Starting: SHOPPINGLIST | Has Answer: true | Answer: Reindeer, Snowman, Hot Cocoa
+Game Ending: SHOPPINGLIST | Has Winner: false | Answer: Reindeer, Snowman, Hot Cocoa
+Game Starting: MATH | Has Answer: true | Answer: 6035
+Game Ending: MATH | Has Winner: false | Answer: 6035
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Enderman
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Enderman
+Race Starting: FISH | Material: BOWL | Amount: 1
+Race Starting: CRAFT | Material: CRAFTING_TABLE | Amount: 4
+Game Starting: CLICKABLE | Has Answer: true | Answer: XbzHndmJLxiz
+Game Ending: CLICKABLE | Has Winner: false | Answer: XbzHndmJLxiz
+Race Starting: FURNACE | Material: COOKED_COD | Amount: 6
+Game Starting: CLICKABLE | Has Answer: true | Answer: quljjDq48o9c
+Game Ending: CLICKABLE | Has Winner: false | Answer: quljjDq48o9c
+Game Starting: UNREVERSE | Has Answer: true | Answer: Shovel
+Game Ending: UNREVERSE | Has Winner: false | Answer: Shovel
+Game Starting: CLICKABLE | Has Answer: true | Answer: FtwoFOLxOXUK
+Game Ending: CLICKABLE | Has Winner: false | Answer: FtwoFOLxOXUK
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Dropper
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Dropper
+Game Starting: TRIVIA | Has Answer: true | Answer: •4
+Game Ending: TRIVIA | Has Winner: false | Answer: •4
+Game Starting: VARIABLE | Has Answer: true | Answer: 0
+Game Ending: VARIABLE | Has Winner: false | Answer: 0
+Game Starting: UNREVERSE | Has Answer: true | Answer: Lodestone
+Game Ending: UNREVERSE | Has Winner: false | Answer: Lodestone
+Race Starting: CRAFT | Material: TORCH | Amount: 64
+Game Starting: SHOPPINGLIST | Has Answer: true | Answer: Mistletoe, Christmas Tree, Santa Hat
+Game Ending: SHOPPINGLIST | Has Winner: false | Answer: Mistletoe, Christmas Tree, Santa Hat
+Game Starting: CLICKABLE | Has Answer: true | Answer: gMiZqNrffw5Q
+Game Ending: CLICKABLE | Has Winner: false | Answer: gMiZqNrffw5Q
+Race Starting: PLACE | Material: NETHERRACK | Amount: 32
+Game Starting: UNREVERSE | Has Answer: true | Answer: Composter
+Game Ending: UNREVERSE | Has Winner: true | Winners: ItzDavidVZLA_(Time: 18.29s) | Answer: Composter
+Race Starting: EAT | Material: BAKED_POTATO | Amount: 1
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 1
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 1
+Game Starting: REACTION | Has Answer: true | Answer: Lapis
+Game Ending: REACTION | Has Winner: false | Answer: Lapis
+Race Starting: FURNACE | Material: COOKED_BEEF | Amount: 3
+Game Starting: SHOPPINGLIST | Has Answer: true | Answer: Ornaments, Stocking, Sleigh
+Game Ending: SHOPPINGLIST | Has Winner: false | Answer: Ornaments, Stocking, Sleigh
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Shroomlight
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Shroomlight
+Game Starting: CLICKABLE | Has Answer: true | Answer: 6EFwLo4W5IQj
+Game Ending: CLICKABLE | Has Winner: false | Answer: 6EFwLo4W5IQj
+Race Starting: HUNT | Entity: SKELETON | Amount: 5
+Game Starting: VARIABLE | Has Answer: true | Answer: 14
+Game Ending: VARIABLE | Has Winner: false | Answer: 14
+Race Starting: EAT | Material: BREAD | Amount: 1
+Game Starting: VARIABLE | Has Answer: true | Answer: 7
+Game Ending: VARIABLE | Has Winner: false | Answer: 7
+Game Starting: UNREVERSE | Has Answer: true | Answer: Sword
+Game Ending: UNREVERSE | Has Winner: false | Answer: Sword
+Game Starting: REACTION | Has Answer: true | Answer: Moss
+Game Ending: REACTION | Has Winner: false | Answer: Moss
+Game Starting: TRIVIA | Has Answer: true | Answer: •Apples
+Game Ending: TRIVIA | Has Winner: false | Answer: •Apples
+Game Starting: HOVERABLE | Has Answer: true | Answer: Chicken
+Game Ending: HOVERABLE | Has Winner: false | Answer: Chicken
+Race Starting: PLACE | Material: DIRT | Amount: 16
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 9
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 9
+Race Starting: EAT | Material: COOKED_CHICKEN | Amount: 2
+Game Starting: REACTION | Has Answer: true | Answer: Torch
+Game Ending: REACTION | Has Winner: false | Answer: Torch
+Race Starting: FISH | Material: COD | Amount: 1
+Race Starting: MINE | Material: NETHERRACK | Amount: 16
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Shovel
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Shovel
+Race Starting: EAT | Material: BREAD | Amount: 2
+Game Starting: UNREVERSE | Has Answer: true | Answer: Glass
+Game Ending: UNREVERSE | Has Winner: false | Answer: Glass
+Game Starting: RANDOM | Has Answer: true | Answer: PHJDu6
+Game Ending: RANDOM | Has Winner: false | Answer: PHJDu6
+Game Starting: REACTION | Has Answer: true | Answer: Glowsquid
+Game Ending: REACTION | Has Winner: false | Answer: Glowsquid
+Game Starting: VARIABLE | Has Answer: true | Answer: 14
+Game Ending: VARIABLE | Has Winner: false | Answer: 14
+Game Starting: UNREVERSE | Has Answer: true | Answer: Villager
+Game Ending: UNREVERSE | Has Winner: false | Answer: Villager
+Game Starting: FILLOUT | Has Answer: true | Answer: Obsidian
+Game Ending: FILLOUT | Has Winner: false | Answer: Obsidian
+Game Starting: HOVERABLE | Has Answer: true | Answer: Gold
+Game Ending: HOVERABLE | Has Winner: false | Answer: Gold
+Race Starting: HUNT | Entity: SKELETON | Amount: 3
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 19
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 19
+Game Starting: CLICKABLE | Has Answer: true | Answer: 2TZ21PH7oaAE
+Game Ending: CLICKABLE | Has Winner: false | Answer: 2TZ21PH7oaAE
+Race Starting: HUNT | Entity: SPIDER | Amount: 3
+Game Starting: VARIABLE | Has Answer: true | Answer: 58
+Game Ending: VARIABLE | Has Winner: false | Answer: 58
+Game Starting: SHOPPINGLIST | Has Answer: true | Answer: Jingle Bells, Santa Hat, Candy Cane
+Game Ending: SHOPPINGLIST | Has Winner: false | Answer: Jingle Bells, Santa Hat, Candy Cane
+Game Starting: SHOPPINGLIST | Has Answer: true | Answer: Wreath, Tinsel, Reindeer
+Game Ending: SHOPPINGLIST | Has Winner: false | Answer: Wreath, Tinsel, Reindeer
+Race Starting: PLACE | Material: TORCH | Amount: 16
+Game Starting: MATH | Has Answer: true | Answer: 117
+Game Ending: MATH | Has Winner: false | Answer: 117
+Game Starting: UNREVERSE | Has Answer: true | Answer: Glowstone
+Game Ending: UNREVERSE | Has Winner: false | Answer: Glowstone
+Race Starting: HUNT | Entity: ZOMBIE | Amount: 5
+Race Starting: HUNT | Entity: SPIDER | Amount: 3
+Game Starting: VARIABLE | Has Answer: true | Answer: -12
+Game Ending: VARIABLE | Has Winner: false | Answer: -12
+Game Starting: MATH | Has Answer: true | Answer: 49
+Game Ending: MATH | Has Winner: false | Answer: 49
+Game Starting: TRIVIA | Has Answer: true | Answer: •16
+Game Ending: TRIVIA | Has Winner: false | Answer: •16
+Game Starting: MATH | Has Answer: true | Answer: 141
+Game Ending: MATH | Has Winner: false | Answer: 141
+Game Starting: RANDOM | Has Answer: true | Answer: MVQ713i
+Game Ending: RANDOM | Has Winner: false | Answer: MVQ713i
+Game Starting: FILLOUT | Has Answer: true | Answer: Gold
+Game Ending: FILLOUT | Has Winner: false | Answer: Gold
+Game Starting: HOVERABLE | Has Answer: true | Answer: Sculk
+Game Ending: HOVERABLE | Has Winner: false | Answer: Sculk
+Game Starting: VARIABLE | Has Answer: true | Answer: 62
+Game Ending: VARIABLE | Has Winner: false | Answer: 62
+Game Starting: FILLOUT | Has Answer: true | Answer: Stonecutter
+Game Ending: FILLOUT | Has Winner: false | Answer: Stonecutter
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Nether Wart
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Nether Wart
+Game Starting: HOVERABLE | Has Answer: true | Answer: Axolotl
+Game Ending: HOVERABLE | Has Winner: false | Answer: Axolotl
+Game Starting: TRIVIA | Has Answer: true | Answer: •Loom
+Game Ending: TRIVIA | Has Winner: false | Answer: •Loom
+Race Starting: EAT | Material: COOKED_CHICKEN | Amount: 2
+Game Starting: UNREVERSE | Has Answer: true | Answer: Blaze Rod
+Game Ending: UNREVERSE | Has Winner: false | Answer: Blaze Rod
+Game Starting: MATH | Has Answer: true | Answer: 98
+Game Ending: MATH | Has Winner: false | Answer: 98
+Race Starting: MINE | Material: SAND | Amount: 16
+Race Starting: CRAFT | Material: CRAFTING_TABLE | Amount: 8
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 2
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 2
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 1
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 1
+Race Starting: CRAFT | Material: TORCH | Amount: 48
+Race Starting: CRAFT | Material: FURNACE | Amount: 2
+Race Starting: FISH | Material: PUFFERFISH | Amount: 1
+Game Starting: REACTION | Has Answer: true | Answer: Music Disc
+Game Ending: REACTION | Has Winner: false | Answer: Music Disc
+Race Starting: MINE | Material: GRASS_BLOCK | Amount: 32
+Game Starting: TRIVIA | Has Answer: true | Answer: •2011•2009
+Game Ending: TRIVIA | Has Winner: false | Answer: •2011•2009
+Game Starting: VARIABLE | Has Answer: true | Answer: -5
+Game Ending: VARIABLE | Has Winner: false | Answer: -5
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Dirt
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Dirt
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 8
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 8
+Game Starting: CLICKABLE | Has Answer: true | Answer: WK7TbLvQAyne
+Game Ending: CLICKABLE | Has Winner: false | Answer: WK7TbLvQAyne
+Game Starting: RANDOM | Has Answer: true | Answer: niiPpI
+Game Ending: RANDOM | Has Winner: false | Answer: niiPpI
+Game Starting: RANDOM | Has Answer: true | Answer: kHl1HXb
+Game Ending: RANDOM | Has Winner: false | Answer: kHl1HXb
+Race Starting: PLACE | Material: NETHERRACK | Amount: 16
+Game Starting: MATH | Has Answer: true | Answer: 38
+Game Ending: MATH | Has Winner: true | Winners: ItzDavidVZLA_(Time: 6.95s) | Answer: 38
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Gunpowder
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Gunpowder
+Race Starting: EAT | Material: BREAD | Amount: 1
+Game Starting: REACTION | Has Answer: true | Answer: Beacon
+Game Ending: REACTION | Has Winner: false | Answer: Beacon
+Game Starting: REACTION | Has Answer: true | Answer: Feather
+Game Ending: REACTION | Has Winner: false | Answer: Feather
+Game Starting: MATH | Has Answer: true | Answer: 39
+Game Ending: MATH | Has Winner: false | Answer: 39
+Game Starting: RANDOM | Has Answer: true | Answer: stQ6PT2h
+Game Ending: RANDOM | Has Winner: false | Answer: stQ6PT2h
+Game Starting: VARIABLE | Has Answer: true | Answer: 25
+Game Ending: VARIABLE | Has Winner: false | Answer: 25
+Game Starting: FILLOUT | Has Answer: true | Answer: Observer
+Game Ending: FILLOUT | Has Winner: false | Answer: Observer
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 15
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 15
+Race Starting: FURNACE | Material: COOKED_BEEF | Amount: 3
+Game Starting: HOVERABLE | Has Answer: true | Answer: Lodestone
+Game Ending: HOVERABLE | Has Winner: false | Answer: Lodestone
+Game Starting: VARIABLE | Has Answer: true | Answer: 13
+Game Ending: VARIABLE | Has Winner: false | Answer: 13
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Beacon
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Beacon
+Race Starting: HUNT | Entity: SHEEP | Amount: 3
+Game Starting: MATH | Has Answer: true | Answer: 105
+Game Ending: MATH | Has Winner: false | Answer: 105
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 7
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 7
+Race Starting: MINE | Material: STONE | Amount: 32
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 1
+Game Ending: GUESS_THE_NUMBER | Has Winner: true | Winners: ItzDavidVZLA_(Time: 18.93s) | Answer: 1
+Game Starting: FILLOUT | Has Answer: true | Answer: Shears
+Game Ending: FILLOUT | Has Winner: false | Answer: Shears
+Race Starting: CRAFT | Material: CHEST | Amount: 8
+Race Starting: PLACE | Material: SAND | Amount: 16
+Race Starting: EAT | Material: COOKED_CHICKEN | Amount: 2
+Race Starting: CRAFT | Material: CHEST | Amount: 8
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 9
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 9
+Race Starting: FURNACE | Material: COOKED_BEEF | Amount: 6
+Game Starting: RANDOM | Has Answer: true | Answer: 2HJ0Fcq
+Game Ending: RANDOM | Has Winner: false | Answer: 2HJ0Fcq
+Game Starting: MATH | Has Answer: true | Answer: 1312
+Game Ending: MATH | Has Winner: false | Answer: 1312
+Race Starting: FURNACE | Material: IRON_INGOT | Amount: 9
+Race Starting: EAT | Material: COOKED_CHICKEN | Amount: 1
+Race Starting: FURNACE | Material: GOLD_INGOT | Amount: 3
+Game Starting: CLICKABLE | Has Answer: true | Answer: 4HzONUoVeIBH
+Game Ending: CLICKABLE | Has Winner: false | Answer: 4HzONUoVeIBH
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 12
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 12
+Race Starting: EAT | Material: GOLDEN_APPLE | Amount: 1
+Race Starting: MINE | Material: NETHERRACK | Amount: 16
+Game Starting: HOVERABLE | Has Answer: true | Answer: Crying Obsidian
+Game Ending: HOVERABLE | Has Winner: false | Answer: Crying Obsidian
+Game Starting: MATH | Has Answer: true | Answer: 95
+Game Ending: MATH | Has Winner: false | Answer: 95
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 20
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 20
+Game Starting: UNREVERSE | Has Answer: true | Answer: Campfire
+Game Ending: UNREVERSE | Has Winner: false | Answer: Campfire
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Trident
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Trident
+Game Starting: TRIVIA | Has Answer: true | Answer: •Overworld
+Game Ending: TRIVIA | Has Winner: false | Answer: •Overworld
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Beehive
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Beehive
+Race Starting: CRAFT | Material: TORCH | Amount: 64
+Game Starting: RANDOM | Has Answer: true | Answer: QbZEyzPF
+Game Ending: RANDOM | Has Winner: false | Answer: QbZEyzPF
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Potion
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Potion
+Race Starting: PLACE | Material: COBBLESTONE | Amount: 16
+Race Starting: PLACE | Material: NETHERRACK | Amount: 16
+Game Starting: TRIVIA | Has Answer: true | Answer: •1.17
+Game Ending: TRIVIA | Has Winner: false | Answer: •1.17
+Race Starting: PLACE | Material: COBBLESTONE | Amount: 16
+Game Starting: UNREVERSE | Has Answer: true | Answer: Lapis
+Game Ending: UNREVERSE | Has Winner: false | Answer: Lapis
+Race Starting: FISH | Material: PUFFERFISH | Amount: 1
+Race Starting: HUNT | Entity: ZOMBIE | Amount: 5
+Race Starting: MINE | Material: GRAVEL | Amount: 16
+Game Starting: MATH | Has Answer: true | Answer: 76
+Game Ending: MATH | Has Winner: false | Answer: 76
+Race Starting: CRAFT | Material: FURNACE | Amount: 8
+Game Starting: REACTION | Has Answer: true | Answer: Glowstone
+Game Ending: REACTION | Has Winner: false | Answer: Glowstone
+Game Starting: UNREVERSE | Has Answer: true | Answer: Ingot
+Game Ending: UNREVERSE | Has Winner: false | Answer: Ingot
+Race Starting: CRAFT | Material: FURNACE | Amount: 8
+Race Starting: CRAFT | Material: CRAFTING_TABLE | Amount: 8
+Race Starting: MINE | Material: GRASS_BLOCK | Amount: 32
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 5
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 5
+Game Starting: REACTION | Has Answer: true | Answer: Shulker
+Game Ending: REACTION | Has Winner: false | Answer: Shulker
+Race Starting: FISH | Material: SALMON | Amount: 3
+Race Starting: MINE | Material: SAND | Amount: 32
+Game Starting: MATH | Has Answer: true | Answer: 113
+Game Ending: MATH | Has Winner: false | Answer: 113
+Game Starting: SHOPPINGLIST | Has Answer: true | Answer: Candy Cane, Wreath, Christmas Cookies
+Game Ending: SHOPPINGLIST | Has Winner: false | Answer: Candy Cane, Wreath, Christmas Cookies
+Game Starting: HOVERABLE | Has Answer: true | Answer: Elytra
+Game Ending: HOVERABLE | Has Winner: false | Answer: Elytra
+Race Starting: FISH | Material: PUFFERFISH | Amount: 1
+Race Starting: EAT | Material: COOKED_BEEF | Amount: 2
+Game Starting: MATH | Has Answer: true | Answer: 58
+Game Ending: MATH | Has Winner: false | Answer: 58
+Race Starting: CRAFT | Material: CHEST | Amount: 4
+Race Starting: MINE | Material: GRASS_BLOCK | Amount: 16
+Race Starting: EAT | Material: BAKED_POTATO | Amount: 2
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 1
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 1
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Cow
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Cow
+Race Starting: MINE | Material: DIORITE | Amount: 16
+Race Starting: FISH | Material: SALMON | Amount: 3
+Game Starting: UNREVERSE | Has Answer: true | Answer: Glass
+Game Ending: UNREVERSE | Has Winner: false | Answer: Glass
+Race Starting: MINE | Material: DIORITE | Amount: 16
+Race Starting: EAT | Material: GOLDEN_APPLE | Amount: 1
+Game Starting: UNREVERSE | Has Answer: true | Answer: Mangrove
+Game Ending: UNREVERSE | Has Winner: false | Answer: Mangrove
+Race Starting: MINE | Material: SAND | Amount: 16
+Game Starting: MATH | Has Answer: true | Answer: 660
+Game Ending: MATH | Has Winner: false | Answer: 660
+Game Starting: CLICKABLE | Has Answer: true | Answer: 4eGkosTQaeYq
+Game Ending: CLICKABLE | Has Winner: false | Answer: 4eGkosTQaeYq
+Game Starting: MATH | Has Answer: true | Answer: 2200
+Game Ending: MATH | Has Winner: false | Answer: 2200
+Race Starting: FURNACE | Material: COOKED_COD | Amount: 6
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 18
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 18
+Game Starting: RANDOM | Has Answer: true | Answer: WeYOCNQ
+Game Ending: RANDOM | Has Winner: false | Answer: WeYOCNQ
+Game Starting: RANDOM | Has Answer: true | Answer: q2ROfZ
+Game Ending: RANDOM | Has Winner: false | Answer: q2ROfZ
+Game Starting: REACTION | Has Answer: true | Answer: Loom
+Game Ending: REACTION | Has Winner: false | Answer: Loom
+Game Starting: FILLOUT | Has Answer: true | Answer: Tadpole
+Game Ending: FILLOUT | Has Winner: false | Answer: Tadpole
+Game Starting: MATH | Has Answer: true | Answer: 92
+Game Ending: MATH | Has Winner: false | Answer: 92
+Race Starting: FISH | Material: SALMON | Amount: 3
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Feather
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Feather
+Race Starting: FURNACE | Material: COOKED_BEEF | Amount: 6
+Race Starting: CRAFT | Material: TORCH | Amount: 48
+Race Starting: FISH | Material: SALMON | Amount: 1
+Game Starting: CLICKABLE | Has Answer: true | Answer: rJKT86EM5XHu
+Game Ending: CLICKABLE | Has Winner: false | Answer: rJKT86EM5XHu
+Race Starting: FURNACE | Material: GOLD_INGOT | Amount: 9
+Race Starting: FISH | Material: SALMON | Amount: 1
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 16
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 16
+Race Starting: FURNACE | Material: IRON_INGOT | Amount: 6
+Game Starting: CLICKABLE | Has Answer: true | Answer: ibUbaLH3EZlV
+Game Ending: CLICKABLE | Has Winner: false | Answer: ibUbaLH3EZlV
+Game Starting: SHOPPINGLIST | Has Answer: true | Answer: Candy Cane, Gingerbread Man, Mistletoe
+Game Ending: SHOPPINGLIST | Has Winner: false | Answer: Candy Cane, Gingerbread Man, Mistletoe
+Game Starting: TRIVIA | Has Answer: true | Answer: •Glass
+Game Ending: TRIVIA | Has Winner: false | Answer: •Glass
+Race Starting: FISH | Material: BOWL | Amount: 1
+Race Starting: FURNACE | Material: COOKED_COD | Amount: 3
+Game Starting: VARIABLE | Has Answer: true | Answer: 21
+Game Ending: VARIABLE | Has Winner: false | Answer: 21
+Game Starting: RANDOM | Has Answer: true | Answer: mgS9ys
+Game Ending: RANDOM | Has Winner: false | Answer: mgS9ys
+Race Starting: EAT | Material: COOKED_BEEF | Amount: 2
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Ancient Debris
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Ancient Debris
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 18
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 18
+Game Starting: CLICKABLE | Has Answer: true | Answer: 0N2oC35m08o1
+Game Ending: CLICKABLE | Has Winner: false | Answer: 0N2oC35m08o1
+Game Starting: CLICKABLE | Has Answer: true | Answer: AG7U85gs9XAX
+Game Ending: CLICKABLE | Has Winner: false | Answer: AG7U85gs9XAX
+Game Starting: RANDOM | Has Answer: true | Answer: 9uAdFy
+Game Ending: RANDOM | Has Winner: false | Answer: 9uAdFy
+Race Starting: FURNACE | Material: IRON_INGOT | Amount: 9
+Race Starting: EAT | Material: COOKED_BEEF | Amount: 1
+Game Starting: TRIVIA | Has Answer: true | Answer: •Axolotl
+Game Ending: TRIVIA | Has Winner: false | Answer: •Axolotl
+Race Starting: FISH | Material: BOWL | Amount: 1
+Game Starting: MATH | Has Answer: true | Answer: 48
+Game Ending: MATH | Has Winner: false | Answer: 48
+Game Starting: TRIVIA | Has Answer: true | Answer: •Spectator
+Game Ending: TRIVIA | Has Winner: false | Answer: •Spectator
+Race Starting: EAT | Material: COOKED_CHICKEN | Amount: 2
+Race Starting: FURNACE | Material: COOKED_BEEF | Amount: 3
+Game Starting: REACTION | Has Answer: true | Answer: Crying Obsidian
+Game Ending: REACTION | Has Winner: false | Answer: Crying Obsidian
+Race Starting: MINE | Material: STONE | Amount: 32
+Game Starting: VARIABLE | Has Answer: true | Answer: 1
+Game Ending: VARIABLE | Has Winner: false | Answer: 1
+Game Starting: HOVERABLE | Has Answer: true | Answer: Glass
+Game Ending: HOVERABLE | Has Winner: false | Answer: Glass
+Game Starting: HOVERABLE | Has Answer: true | Answer: Creeper
+Game Ending: HOVERABLE | Has Winner: false | Answer: Creeper
+Race Starting: FISH | Material: PUFFERFISH | Amount: 1
+Race Starting: EAT | Material: BREAD | Amount: 2
+Race Starting: FISH | Material: PUFFERFISH | Amount: 3
+Game Starting: HOVERABLE | Has Answer: true | Answer: Spyglass
+Game Ending: HOVERABLE | Has Winner: false | Answer: Spyglass
+Race Starting: CRAFT | Material: CRAFTING_TABLE | Amount: 8
+Race Starting: FISH | Material: PUFFERFISH | Amount: 1
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Composter
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Composter
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Terracotta
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Terracotta
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Moss
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Moss
+Game Starting: TRIVIA | Has Answer: true | Answer: •Pigstep
+Game Ending: TRIVIA | Has Winner: false | Answer: •Pigstep
+Race Starting: CRAFT | Material: FURNACE | Amount: 4
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Hopper
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Hopper
+Race Starting: FURNACE | Material: GOLD_INGOT | Amount: 9
+Race Starting: EAT | Material: BAKED_POTATO | Amount: 1
+Race Starting: PLACE | Material: COBBLESTONE | Amount: 16
+Race Starting: EAT | Material: GOLDEN_APPLE | Amount: 1
+Race Starting: MINE | Material: SAND | Amount: 16
+Race Starting: HUNT | Entity: CREEPER | Amount: 3
+Game Starting: REACTION | Has Answer: true | Answer: Composter
+Game Ending: REACTION | Has Winner: false | Answer: Composter
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 19
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 19
+Game Starting: UNREVERSE | Has Answer: true | Answer: Shroomlight
+Game Ending: UNREVERSE | Has Winner: false | Answer: Shroomlight
+Race Starting: PLACE | Material: NETHERRACK | Amount: 32
+Race Starting: FURNACE | Material: GOLD_INGOT | Amount: 6
+Race Starting: PLACE | Material: SAND | Amount: 16
+Race Starting: MINE | Material: NETHERRACK | Amount: 32
+Game Starting: UNREVERSE | Has Answer: true | Answer: Cow
+Game Ending: UNREVERSE | Has Winner: false | Answer: Cow
+Game Starting: FILLOUT | Has Answer: true | Answer: Sapling
+Game Ending: FILLOUT | Has Winner: false | Answer: Sapling
+Game Starting: VARIABLE | Has Answer: true | Answer: 14
+Game Ending: VARIABLE | Has Winner: false | Answer: 14
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Creeper
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Creeper
+Race Starting: PLACE | Material: DIRT | Amount: 16
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Hopper
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Hopper
+Game Starting: TRIVIA | Has Answer: true | Answer: •Fish
+Game Ending: TRIVIA | Has Winner: false | Answer: •Fish
+Game Starting: VARIABLE | Has Answer: true | Answer: -9
+Game Ending: VARIABLE | Has Winner: false | Answer: -9
+Game Starting: VARIABLE | Has Answer: true | Answer: 41
+Game Ending: VARIABLE | Has Winner: false | Answer: 41
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Ancient Debris
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Ancient Debris
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Saddle
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Saddle
+Game Starting: HOVERABLE | Has Answer: true | Answer: End Portal
+Game Ending: HOVERABLE | Has Winner: false | Answer: End Portal
+Game Starting: CLICKABLE | Has Answer: true | Answer: nqI8rrScptyb
+Game Ending: CLICKABLE | Has Winner: false | Answer: nqI8rrScptyb
+Race Starting: HUNT | Entity: CHICKEN | Amount: 3
+Game Starting: RANDOM | Has Answer: true | Answer: MiWLad
+Game Ending: RANDOM | Has Winner: false | Answer: MiWLad
+Game Starting: UNREVERSE | Has Answer: true | Answer: Crossbow
+Game Ending: UNREVERSE | Has Winner: false | Answer: Crossbow
+Game Starting: SHOPPINGLIST | Has Answer: true | Answer: Snow Globe, Jingle Bells, Poinsettia
+Game Ending: SHOPPINGLIST | Has Winner: false | Answer: Snow Globe, Jingle Bells, Poinsettia
+Game Starting: HOVERABLE | Has Answer: true | Answer: Copper
+Game Ending: HOVERABLE | Has Winner: false | Answer: Copper
+Game Starting: FILLOUT | Has Answer: true | Answer: Chorus
+Game Ending: FILLOUT | Has Winner: false | Answer: Chorus
+Game Starting: SHOPPINGLIST | Has Answer: true | Answer: Stocking, Mistletoe, Poinsettia
+Game Ending: SHOPPINGLIST | Has Winner: false | Answer: Stocking, Mistletoe, Poinsettia
+Game Starting: HOVERABLE | Has Answer: true | Answer: Crying Obsidian
+Game Ending: HOVERABLE | Has Winner: false | Answer: Crying Obsidian
+Game Starting: FILLOUT | Has Answer: true | Answer: Shovel
+Game Ending: FILLOUT | Has Winner: false | Answer: Shovel
+Game Starting: SHOPPINGLIST | Has Answer: true | Answer: Jingle Bells, Reindeer, Poinsettia
+Game Ending: SHOPPINGLIST | Has Winner: false | Answer: Jingle Bells, Reindeer, Poinsettia
+Race Starting: EAT | Material: COOKED_BEEF | Amount: 1
+Game Starting: MATH | Has Answer: true | Answer: 2405
+Game Ending: MATH | Has Winner: false | Answer: 2405
+Game Starting: HOVERABLE | Has Answer: true | Answer: Axolotl
+Game Ending: HOVERABLE | Has Winner: false | Answer: Axolotl
+Game Starting: HOVERABLE | Has Answer: true | Answer: Spyglass
+Game Ending: HOVERABLE | Has Winner: false | Answer: Spyglass
+Game Starting: RANDOM | Has Answer: true | Answer: aSKUfU
+Game Ending: RANDOM | Has Winner: false | Answer: aSKUfU
+Race Starting: PLACE | Material: TORCH | Amount: 16
+Game Starting: MATH | Has Answer: true | Answer: 89
+Game Ending: MATH | Has Winner: false | Answer: 89
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 14
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 14
+Race Starting: PLACE | Material: COBBLESTONE | Amount: 16
+Race Starting: HUNT | Entity: SKELETON | Amount: 3
+Game Starting: VARIABLE | Has Answer: true | Answer: 59
+Game Ending: VARIABLE | Has Winner: false | Answer: 59
+Game Starting: FILLOUT | Has Answer: true | Answer: End Portal
+Game Ending: FILLOUT | Has Winner: false | Answer: End Portal
+Game Starting: UNREVERSE | Has Answer: true | Answer: Pufferfish
+Game Ending: UNREVERSE | Has Winner: false | Answer: Pufferfish
+Game Starting: MATH | Has Answer: true | Answer: 119
+Game Ending: MATH | Has Winner: false | Answer: 119
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 11
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 11
+Race Starting: FISH | Material: PUFFERFISH | Amount: 3
+Game Starting: FILLOUT | Has Answer: true | Answer: Sheep
+Game Ending: FILLOUT | Has Winner: false | Answer: Sheep
+Game Starting: UNREVERSE | Has Answer: true | Answer: Pufferfish
+Game Ending: UNREVERSE | Has Winner: false | Answer: Pufferfish
+Game Starting: TRIVIA | Has Answer: true | Answer: •Bedrock
+Game Ending: TRIVIA | Has Winner: false | Answer: •Bedrock
+Game Starting: MATH | Has Answer: true | Answer: -79
+Game Ending: MATH | Has Winner: false | Answer: -79
+Race Starting: EAT | Material: GOLDEN_APPLE | Amount: 1
+Race Starting: FURNACE | Material: COOKED_COD | Amount: 3
+Game Starting: FILLOUT | Has Answer: true | Answer: Loom
+Game Ending: FILLOUT | Has Winner: false | Answer: Loom
+Game Starting: VARIABLE | Has Answer: true | Answer: 22
+Game Ending: VARIABLE | Has Winner: false | Answer: 22
+Game Starting: RANDOM | Has Answer: true | Answer: VXVV0Zo6
+Game Ending: RANDOM | Has Winner: false | Answer: VXVV0Zo6
+Race Starting: FURNACE | Material: COOKED_COD | Amount: 9
+Game Starting: TRIVIA | Has Answer: true | Answer: •Bedrock
+Game Ending: TRIVIA | Has Winner: false | Answer: •Bedrock
+Game Starting: VARIABLE | Has Answer: true | Answer: 61
+Game Ending: VARIABLE | Has Winner: false | Answer: 61
+Race Starting: PLACE | Material: SAND | Amount: 16
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 17
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 17
+Game Starting: SHOPPINGLIST | Has Answer: true | Answer: Sleigh, Snowman, Wreath
+Game Ending: SHOPPINGLIST | Has Winner: false | Answer: Sleigh, Snowman, Wreath
+Game Starting: TRIVIA | Has Answer: true | Answer: •Fish
+Game Ending: TRIVIA | Has Winner: false | Answer: •Fish
+Game Starting: REACTION | Has Answer: true | Answer: Dispenser
+Game Ending: REACTION | Has Winner: false | Answer: Dispenser
+Game Starting: VARIABLE | Has Answer: true | Answer: 56
+Game Ending: VARIABLE | Has Winner: false | Answer: 56
+Race Starting: MINE | Material: DIRT | Amount: 16
+Race Starting: EAT | Material: COOKED_CHICKEN | Amount: 2
+Race Starting: EAT | Material: COOKED_CHICKEN | Amount: 2
+Game Starting: HOVERABLE | Has Answer: true | Answer: Ender Pearl
+Game Ending: HOVERABLE | Has Winner: false | Answer: Ender Pearl
+Race Starting: EAT | Material: GOLDEN_APPLE | Amount: 1
+Game Starting: REACTION | Has Answer: true | Answer: Note Block
+Game Ending: REACTION | Has Winner: true | Winners: ItzDavidVZLA_(Time: 7.39s) | Answer: Note Block
+Game Starting: SHOPPINGLIST | Has Answer: true | Answer: Christmas Lights, Jingle Bells, Reindeer
+Game Ending: SHOPPINGLIST | Has Winner: false | Answer: Christmas Lights, Jingle Bells, Reindeer
+Race Starting: FISH | Material: PUFFERFISH | Amount: 1
+Race Starting: CRAFT | Material: CHEST | Amount: 2
+Race Starting: FISH | Material: COD | Amount: 1
+Race Starting: FURNACE | Material: GOLD_INGOT | Amount: 9
+Race Starting: FISH | Material: BOWL | Amount: 1
+Race Starting: FISH | Material: BOWL | Amount: 1
+Race Starting: FISH | Material: PUFFERFISH | Amount: 1
+Race Starting: PLACE | Material: COBBLESTONE | Amount: 16
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 6
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 6
+Race Starting: CRAFT | Material: FURNACE | Amount: 2
+Game Starting: RANDOM | Has Answer: true | Answer: zgYdGtB
+Game Ending: RANDOM | Has Winner: false | Answer: zgYdGtB
+Race Starting: PLACE | Material: DIRT | Amount: 16
+Race Starting: CRAFT | Material: CHEST | Amount: 4
+Game Starting: HOVERABLE | Has Answer: true | Answer: Cow
+Game Ending: HOVERABLE | Has Winner: false | Answer: Cow
+Game Starting: RANDOM | Has Answer: true | Answer: dnHeiMKI
+Game Ending: RANDOM | Has Winner: false | Answer: dnHeiMKI
+Race Starting: EAT | Material: COOKED_BEEF | Amount: 2
+Game Starting: SHOPPINGLIST | Has Answer: true | Answer: Ribbon, Snow Globe, Hot Cocoa
+Game Ending: SHOPPINGLIST | Has Winner: false | Answer: Ribbon, Snow Globe, Hot Cocoa
+Race Starting: FISH | Material: SALMON | Amount: 3
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 11
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 11
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Crying Obsidian
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Crying Obsidian
+Game Starting: VARIABLE | Has Answer: true | Answer: 50
+Game Ending: VARIABLE | Has Winner: false | Answer: 50
+Game Starting: CLICKABLE | Has Answer: true | Answer: DSo97ISSpHk0
+Game Ending: CLICKABLE | Has Winner: false | Answer: DSo97ISSpHk0
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 2
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 2
+Race Starting: FISH | Material: PUFFERFISH | Amount: 1
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 16
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 16
+Game Starting: SHOPPINGLIST | Has Answer: true | Answer: Christmas Cookies, Gingerbread Man, Nutcracker
+Game Ending: SHOPPINGLIST | Has Winner: false | Answer: Christmas Cookies, Gingerbread Man, Nutcracker
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 19
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 19
+Race Starting: HUNT | Entity: CHICKEN | Amount: 5
+Race Starting: MINE | Material: GRASS_BLOCK | Amount: 32
+Game Starting: SHOPPINGLIST | Has Answer: true | Answer: Mistletoe, Santa Hat, Stocking
+Game Ending: SHOPPINGLIST | Has Winner: false | Answer: Mistletoe, Santa Hat, Stocking
+Game Starting: HOVERABLE | Has Answer: true | Answer: Potion
+Game Ending: HOVERABLE | Has Winner: false | Answer: Potion
+Game Starting: HOVERABLE | Has Answer: true | Answer: Lodestone
+Game Ending: HOVERABLE | Has Winner: false | Answer: Lodestone
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 7
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 7
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Trident
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Trident
+Game Starting: FILLOUT | Has Answer: true | Answer: Enderman
+Game Ending: FILLOUT | Has Winner: false | Answer: Enderman
+Game Starting: FILLOUT | Has Answer: true | Answer: Mushroom
+Game Ending: FILLOUT | Has Winner: false | Answer: Mushroom
+Race Starting: CRAFT | Material: CHEST | Amount: 8
+Game Starting: HOVERABLE | Has Answer: true | Answer: Quartz
+Game Ending: HOVERABLE | Has Winner: false | Answer: Quartz
+Game Starting: FILLOUT | Has Answer: true | Answer: Sculk
+Game Ending: FILLOUT | Has Winner: false | Answer: Sculk
+Race Starting: HUNT | Entity: SALMON | Amount: 3
+Race Starting: FISH | Material: PUFFERFISH | Amount: 3
+Game Starting: VARIABLE | Has Answer: true | Answer: 29
+Game Ending: VARIABLE | Has Winner: false | Answer: 29
+Game Starting: RANDOM | Has Answer: true | Answer: Ko5YRzX
+Game Ending: RANDOM | Has Winner: false | Answer: Ko5YRzX
+Race Starting: EAT | Material: COOKED_BEEF | Amount: 2
+Game Starting: FILLOUT | Has Answer: true | Answer: Shovel
+Game Ending: FILLOUT | Has Winner: true | Winners: ItzDavidVZLA_(Time: 5.97s) | Answer: Shovel
+Game Starting: FILLOUT | Has Answer: true | Answer: Campfire
+Game Ending: FILLOUT | Has Winner: false | Answer: Campfire
+Race Starting: MINE | Material: DIORITE | Amount: 32
+Game Starting: TRIVIA | Has Answer: true | Answer: •64
+Game Ending: TRIVIA | Has Winner: false | Answer: •64
+Game Starting: FILLOUT | Has Answer: true | Answer: Dropper
+Game Ending: FILLOUT | Has Winner: false | Answer: Dropper
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Nether
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Nether
+Game Starting: CLICKABLE | Has Answer: true | Answer: HPzi9mBHUMYg
+Game Ending: CLICKABLE | Has Winner: false | Answer: HPzi9mBHUMYg
+Race Starting: EAT | Material: BAKED_POTATO | Amount: 2
+Race Starting: EAT | Material: COOKED_BEEF | Amount: 2
+Race Starting: MINE | Material: STONE | Amount: 16
+Race Starting: PLACE | Material: NETHERRACK | Amount: 32
+Game Starting: UNREVERSE | Has Answer: true | Answer: Trident
+Game Ending: UNREVERSE | Has Winner: false | Answer: Trident
+Game Starting: RANDOM | Has Answer: true | Answer: cV8zPzes
+Game Ending: RANDOM | Has Winner: true | Winners: ItzDavidVZLA_(Time: 9.07s) | Answer: cV8zPzes
+Game Starting: UNREVERSE | Has Answer: true | Answer: Arrow
+Game Ending: UNREVERSE | Has Winner: false | Answer: Arrow
+Race Starting: FISH | Material: PUFFERFISH | Amount: 1
+Game Starting: REACTION | Has Answer: true | Answer: Mending
+Game Ending: REACTION | Has Winner: false | Answer: Mending
+Race Starting: PLACE | Material: NETHERRACK | Amount: 16
+Game Starting: REACTION | Has Answer: true | Answer: Observer
+Game Ending: REACTION | Has Winner: false | Answer: Observer
+Game Starting: TRIVIA | Has Answer: true | Answer: •Wither Rose
+Game Ending: TRIVIA | Has Winner: false | Answer: •Wither Rose
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 7
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 7
+Race Starting: MINE | Material: NETHERRACK | Amount: 32
+Game Starting: CLICKABLE | Has Answer: true | Answer: YW0dsF7ritIq
+Game Ending: CLICKABLE | Has Winner: false | Answer: YW0dsF7ritIq
+Game Starting: UNREVERSE | Has Answer: true | Answer: Clock
+Game Ending: UNREVERSE | Has Winner: false | Answer: Clock
+Game Starting: CLICKABLE | Has Answer: true | Answer: cOWAOUHmI0DP
+Game Ending: CLICKABLE | Has Winner: false | Answer: cOWAOUHmI0DP
+Game Starting: FILLOUT | Has Answer: true | Answer: Compass
+Game Ending: FILLOUT | Has Winner: false | Answer: Compass
+Game Starting: SHOPPINGLIST | Has Answer: true | Answer: Christmas Tree, Reindeer, Nutcracker
+Game Ending: SHOPPINGLIST | Has Winner: false | Answer: Christmas Tree, Reindeer, Nutcracker
+Race Starting: PLACE | Material: NETHERRACK | Amount: 32
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Copper
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Copper
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 9
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 9
+Race Starting: FISH | Material: SALMON | Amount: 1
+Race Starting: MINE | Material: DIORITE | Amount: 16
+Race Starting: FISH | Material: PUFFERFISH | Amount: 3
+Race Starting: CRAFT | Material: CHEST | Amount: 2
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Chorus
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Chorus
+Game Starting: TRIVIA | Has Answer: true | Answer: •Charcoal
+Game Ending: TRIVIA | Has Winner: false | Answer: •Charcoal
+Game Starting: TRIVIA | Has Answer: true | Answer: •Survival
+Game Ending: TRIVIA | Has Winner: false | Answer: •Survival
+Game Starting: SHOPPINGLIST | Has Answer: true | Answer: Candy Cane, Wreath, Snow Globe
+Game Ending: SHOPPINGLIST | Has Winner: false | Answer: Candy Cane, Wreath, Snow Globe
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 14
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 14
+Game Starting: HOVERABLE | Has Answer: true | Answer: Crossbow
+Game Ending: HOVERABLE | Has Winner: false | Answer: Crossbow
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Nether
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Nether
+Game Starting: RANDOM | Has Answer: true | Answer: jphHIZr
+Game Ending: RANDOM | Has Winner: false | Answer: jphHIZr
+Game Starting: RANDOM | Has Answer: true | Answer: JNO8b3U9
+Game Ending: RANDOM | Has Winner: false | Answer: JNO8b3U9
+Race Starting: CRAFT | Material: FURNACE | Amount: 4
+Game Starting: CLICKABLE | Has Answer: true | Answer: IhN0Jnbhqfbr
+Game Ending: CLICKABLE | Has Winner: false | Answer: IhN0Jnbhqfbr
+Race Starting: CRAFT | Material: CRAFTING_TABLE | Amount: 4
+Game Starting: SHOPPINGLIST | Has Answer: true | Answer: Gingerbread Man, Ribbon, Wreath
+Game Ending: SHOPPINGLIST | Has Winner: false | Answer: Gingerbread Man, Ribbon, Wreath
+Game Starting: RANDOM | Has Answer: true | Answer: 0aUm2e
+Game Ending: RANDOM | Has Winner: false | Answer: 0aUm2e
+Game Starting: FILLOUT | Has Answer: true | Answer: Elytra
+Game Ending: FILLOUT | Has Winner: false | Answer: Elytra
+Game Starting: MATH | Has Answer: true | Answer: 115
+Game Ending: MATH | Has Winner: false | Answer: 115
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Villager
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Villager
+Game Starting: MATH | Has Answer: true | Answer: 1323
+Game Ending: MATH | Has Winner: false | Answer: 1323
+Game Starting: RANDOM | Has Answer: true | Answer: PI0nB3E3
+Game Ending: RANDOM | Has Winner: false | Answer: PI0nB3E3
+Race Starting: CRAFT | Material: CHEST | Amount: 2
+Race Starting: FURNACE | Material: IRON_INGOT | Amount: 3
+Game Starting: REACTION | Has Answer: true | Answer: Shears
+Game Ending: REACTION | Has Winner: false | Answer: Shears
+Race Starting: PLACE | Material: NETHERRACK | Amount: 32
+Game Starting: CLICKABLE | Has Answer: true | Answer: 9an6bwsuTcZX
+Game Ending: CLICKABLE | Has Winner: false | Answer: 9an6bwsuTcZX
+Game Starting: SHOPPINGLIST | Has Answer: true | Answer: Candy Cane, Santa Hat, Ornaments
+Game Ending: SHOPPINGLIST | Has Winner: false | Answer: Candy Cane, Santa Hat, Ornaments
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 15
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 15
+Game Starting: FILLOUT | Has Answer: true | Answer: Hopper
+Game Ending: FILLOUT | Has Winner: true | Winners: ItzDavidVZLA_(Time: 3.92s) | Answer: Hopper
+Game Starting: SHOPPINGLIST | Has Answer: true | Answer: Tinsel, Ornaments, Gingerbread Man
+Game Ending: SHOPPINGLIST | Has Winner: false | Answer: Tinsel, Ornaments, Gingerbread Man
+Race Starting: CRAFT | Material: FURNACE | Amount: 8
+Game Starting: HOVERABLE | Has Answer: true | Answer: Piston
+Game Ending: HOVERABLE | Has Winner: false | Answer: Piston
+Race Starting: MINE | Material: DIRT | Amount: 16
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 18
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 18
+Game Starting: MATH | Has Answer: true | Answer: 107
+Game Ending: MATH | Has Winner: false | Answer: 107
+Game Starting: MATH | Has Answer: true | Answer: 52
+Game Ending: MATH | Has Winner: false | Answer: 52
+Game Starting: FILLOUT | Has Answer: true | Answer: Lever
+Game Ending: FILLOUT | Has Winner: false | Answer: Lever
+Game Starting: TRIVIA | Has Answer: true | Answer: •Bone
+Game Ending: TRIVIA | Has Winner: false | Answer: •Bone
+Game Starting: CLICKABLE | Has Answer: true | Answer: rbg3YP5ODnZQ
+Game Ending: CLICKABLE | Has Winner: false | Answer: rbg3YP5ODnZQ
+Game Starting: HOVERABLE | Has Answer: true | Answer: Blaze Rod
+Game Ending: HOVERABLE | Has Winner: false | Answer: Blaze Rod
+Game Starting: TRIVIA | Has Answer: true | Answer: •Lapis•xp
+Game Ending: TRIVIA | Has Winner: false | Answer: •Lapis•xp
+Game Starting: FILLOUT | Has Answer: true | Answer: Spyglass
+Game Ending: FILLOUT | Has Winner: false | Answer: Spyglass
+Game Starting: MATH | Has Answer: true | Answer: 54
+Game Ending: MATH | Has Winner: true | Winners: ItzDavidVZLA_(Time: 2.37s) | Answer: 54
+Game Starting: SHOPPINGLIST | Has Answer: true | Answer: Poinsettia, Sleigh, Tinsel
+Game Ending: SHOPPINGLIST | Has Winner: false | Answer: Poinsettia, Sleigh, Tinsel
+Game Starting: UNREVERSE | Has Answer: true | Answer: Lodestone
+Game Ending: UNREVERSE | Has Winner: false | Answer: Lodestone
+Race Starting: CRAFT | Material: CRAFTING_TABLE | Amount: 4
+Race Starting: CRAFT | Material: CRAFTING_TABLE | Amount: 4
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Moss
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Moss
+Game Starting: HOVERABLE | Has Answer: true | Answer: Copper
+Game Ending: HOVERABLE | Has Winner: false | Answer: Copper
+Game Starting: TRIVIA | Has Answer: true | Answer: •1.17
+Game Ending: TRIVIA | Has Winner: false | Answer: •1.17
+Game Starting: TRIVIA | Has Answer: true | Answer: •Creative
+Game Ending: TRIVIA | Has Winner: false | Answer: •Creative
+Race Starting: PLACE | Material: SAND | Amount: 16
+Game Starting: REACTION | Has Answer: true | Answer: Tadpole
+Game Ending: REACTION | Has Winner: false | Answer: Tadpole
+Race Starting: FISH | Material: SALMON | Amount: 3
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: End Portal
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: End Portal
+Game Starting: REACTION | Has Answer: true | Answer: Terracotta
+Game Ending: REACTION | Has Winner: false | Answer: Terracotta
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Creeper
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Creeper
+Game Starting: REACTION | Has Answer: true | Answer: Sculk
+Game Ending: REACTION | Has Winner: false | Answer: Sculk
+Race Starting: FURNACE | Material: IRON_INGOT | Amount: 9
+Game Starting: VARIABLE | Has Answer: true | Answer: 37
+Game Ending: VARIABLE | Has Winner: false | Answer: 37
+Game Starting: REACTION | Has Answer: true | Answer: Pickaxe
+Game Ending: REACTION | Has Winner: false | Answer: Pickaxe
+Game Starting: MATH | Has Answer: true | Answer: 145
+Game Ending: MATH | Has Winner: false | Answer: 145
+Game Starting: TRIVIA | Has Answer: true | Answer: •Adventure
+Game Ending: TRIVIA | Has Winner: false | Answer: •Adventure
+Game Starting: RANDOM | Has Answer: true | Answer: bLhrN4
+Game Ending: RANDOM | Has Winner: false | Answer: bLhrN4
+Game Starting: HOVERABLE | Has Answer: true | Answer: Sapling
+Game Ending: HOVERABLE | Has Winner: false | Answer: Sapling
+Game Starting: REACTION | Has Answer: true | Answer: Villager
+Game Ending: REACTION | Has Winner: false | Answer: Villager
+Game Starting: SHOPPINGLIST | Has Answer: true | Answer: Hot Cocoa, Christmas Lights, Stocking
+Game Ending: SHOPPINGLIST | Has Winner: false | Answer: Hot Cocoa, Christmas Lights, Stocking
+Game Starting: VARIABLE | Has Answer: true | Answer: 53
+Game Ending: VARIABLE | Has Winner: false | Answer: 53
+Game Starting: VARIABLE | Has Answer: true | Answer: 32
+Game Ending: VARIABLE | Has Winner: false | Answer: 32
+Race Starting: EAT | Material: BAKED_POTATO | Amount: 2
+Game Starting: RANDOM | Has Answer: true | Answer: Sm9Q7pcW
+Game Ending: RANDOM | Has Winner: false | Answer: Sm9Q7pcW
+Game Starting: MATH | Has Answer: true | Answer: 145
+Game Ending: MATH | Has Winner: false | Answer: 145
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Quartz
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Quartz
+Race Starting: EAT | Material: COOKED_CHICKEN | Amount: 1
+Game Starting: CLICKABLE | Has Answer: true | Answer: SB1EobyZzwzg
+Game Ending: CLICKABLE | Has Winner: false | Answer: SB1EobyZzwzg
+Race Starting: FURNACE | Material: COOKED_BEEF | Amount: 9
+Game Starting: CLICKABLE | Has Answer: true | Answer: Lt337nyscGDw
+Game Ending: CLICKABLE | Has Winner: true | Winners: ItzDavidVZLA_(Time: 6.57s) | Answer: Lt337nyscGDw
+Game Starting: FILLOUT | Has Answer: true | Answer: Beacon
+Game Ending: FILLOUT | Has Winner: false | Answer: Beacon
+Race Starting: MINE | Material: GRASS_BLOCK | Amount: 16
+Game Starting: MATH | Has Answer: true | Answer: 119
+Game Ending: MATH | Has Winner: false | Answer: 119
+Race Starting: FISH | Material: COD | Amount: 1
+Race Starting: HUNT | Entity: CREEPER | Amount: 3
+Game Starting: FILLOUT | Has Answer: true | Answer: End Portal
+Game Ending: FILLOUT | Has Winner: false | Answer: End Portal
+Race Starting: EAT | Material: COOKED_BEEF | Amount: 1
+Race Starting: MINE | Material: STONE | Amount: 32
+Race Starting: EAT | Material: BAKED_POTATO | Amount: 1
+Game Starting: FILLOUT | Has Answer: true | Answer: Enderman
+Game Ending: FILLOUT | Has Winner: false | Answer: Enderman
+Race Starting: EAT | Material: BAKED_POTATO | Amount: 2
+Race Starting: FURNACE | Material: IRON_INGOT | Amount: 6
+Game Starting: HOVERABLE | Has Answer: true | Answer: Leather
+Game Ending: HOVERABLE | Has Winner: false | Answer: Leather
+Race Starting: PLACE | Material: DIRT | Amount: 16
+Game Starting: TRIVIA | Has Answer: true | Answer: •Survival
+Game Ending: TRIVIA | Has Winner: false | Answer: •Survival
+Race Starting: HUNT | Entity: SKELETON | Amount: 5
+Game Starting: HOVERABLE | Has Answer: true | Answer: Tadpole
+Game Ending: HOVERABLE | Has Winner: false | Answer: Tadpole
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Axolotl
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Axolotl
+Game Starting: CLICKABLE | Has Answer: true | Answer: xhdg45ihsRbr
+Game Ending: CLICKABLE | Has Winner: false | Answer: xhdg45ihsRbr
+Race Starting: MINE | Material: GRASS_BLOCK | Amount: 16
+Race Starting: EAT | Material: BREAD | Amount: 1
+Race Starting: PLACE | Material: DIRT | Amount: 32
+Race Starting: EAT | Material: BREAD | Amount: 1
+Race Starting: FISH | Material: PUFFERFISH | Amount: 3
+Race Starting: CRAFT | Material: CHEST | Amount: 2
+Game Starting: CLICKABLE | Has Answer: true | Answer: xAMQlsdJ5KMg
+Game Ending: CLICKABLE | Has Winner: false | Answer: xAMQlsdJ5KMg
+Game Starting: CLICKABLE | Has Answer: true | Answer: WlytKRBb2n1x
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 1
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 1
+Race Starting: MINE | Material: NETHERRACK | Amount: 16
+Game Starting: CLICKABLE | Has Answer: true | Answer: BmahF8fv3CLo
+Game Ending: CLICKABLE | Has Winner: false | Answer: BmahF8fv3CLo
+Game Starting: UNREVERSE | Has Answer: true | Answer: Zombie
+Game Ending: UNREVERSE | Has Winner: false | Answer: Zombie
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 2
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 2
+Game Starting: FILLOUT | Has Answer: true | Answer: Saddle
+Game Ending: FILLOUT | Has Winner: false | Answer: Saddle
+Race Starting: FISH | Material: BOWL | Amount: 1
+Game Starting: RANDOM | Has Answer: true | Answer: dJ50oJdZ
+Game Ending: RANDOM | Has Winner: true | Winners: ItzDavidVZLA_(Time: 7.76s) | Answer: dJ50oJdZ
+Game Starting: MATH | Has Answer: true | Answer: 8536
+Game Ending: MATH | Has Winner: false | Answer: 8536
+Game Starting: CLICKABLE | Has Answer: true | Answer: kNIY6ybDVl8g
+Game Ending: CLICKABLE | Has Winner: false | Answer: kNIY6ybDVl8g
+Race Starting: PLACE | Material: NETHERRACK | Amount: 16
+Game Starting: FILLOUT | Has Answer: true | Answer: Gunpowder
+Game Ending: FILLOUT | Has Winner: false | Answer: Gunpowder
+Race Starting: EAT | Material: GOLDEN_APPLE | Amount: 1
+Game Starting: FILLOUT | Has Answer: true | Answer: Lapis
+Game Ending: FILLOUT | Has Winner: false | Answer: Lapis
+Game Starting: HOVERABLE | Has Answer: true | Answer: Honeycomb
+Game Ending: HOVERABLE | Has Winner: false | Answer: Honeycomb
+Game Starting: REACTION | Has Answer: true | Answer: Lapis
+Game Ending: REACTION | Has Winner: false | Answer: Lapis
+Game Starting: UNREVERSE | Has Answer: true | Answer: Chest
+Game Ending: UNREVERSE | Has Winner: false | Answer: Chest
+Game Starting: TRIVIA | Has Answer: true | Answer: •Axolotl
+Game Ending: TRIVIA | Has Winner: false | Answer: •Axolotl
+Game Starting: RANDOM | Has Answer: true | Answer: HweLjLqf
+Game Ending: RANDOM | Has Winner: false | Answer: HweLjLqf
+Game Starting: RANDOM | Has Answer: true | Answer: HcgVMqL
+Game Ending: RANDOM | Has Winner: false | Answer: HcgVMqL
+Race Starting: MINE | Material: STONE | Amount: 32
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Furnace
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Furnace
+Game Starting: RANDOM | Has Answer: true | Answer: 3kRWE9En
+Game Ending: RANDOM | Has Winner: false | Answer: 3kRWE9En
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 5
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 5
+Game Starting: VARIABLE | Has Answer: true | Answer: 58
+Game Ending: VARIABLE | Has Winner: false | Answer: 58
+Race Starting: HUNT | Entity: SKELETON | Amount: 3
+Race Starting: HUNT | Entity: PIG | Amount: 5
+Race Starting: HUNT | Entity: SHEEP | Amount: 5
+Race Starting: HUNT | Entity: COW | Amount: 5
+Race Starting: HUNT | Entity: CHICKEN | Amount: 3
+Race Starting: HUNT | Entity: SHEEP | Amount: 5
+Race Starting: HUNT | Entity: SHEEP | Amount: 3
+Race Starting: HUNT | Entity: SALMON | Amount: 5
+Game Starting: VARIABLE | Has Answer: true | Answer: -66
+Game Starting: VARIABLE | Has Answer: true | Answer: -30
+Game Starting: VARIABLE | Has Answer: true | Answer: 17
+Game Starting: VARIABLE | Has Answer: true | Answer: -83
+Game Starting: VARIABLE | Has Answer: true | Answer: -88
+Game Starting: VARIABLE | Has Answer: true | Answer: -96
+Game Starting: VARIABLE | Has Answer: true | Answer: 3
+Game Ending: VARIABLE | Has Winner: true | Winners: ItzDavidVZLA_(Time: 12.09s) | Answer: 3
+Race Starting: CRAFT | Material: CRAFTING_TABLE | Amount: 4
+Race Starting: HUNT | Entity: SPIDER | Amount: 3
+Game Starting: FILLOUT | Has Answer: true | Answer: Clock
+Game Ending: FILLOUT | Has Winner: false | Answer: Clock
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Campfire
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Campfire
+Game Starting: HOVERABLE | Has Answer: true | Answer: Dispenser
+Game Ending: HOVERABLE | Has Winner: false | Answer: Dispenser
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Button
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Button
+Game Starting: FILLOUT | Has Answer: true | Answer: Beacon
+Game Ending: FILLOUT | Has Winner: false | Answer: Beacon
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 6
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 6
+Game Starting: SHOPPINGLIST | Has Answer: true | Answer: Ribbon, Poinsettia, Jingle Bells
+Game Ending: SHOPPINGLIST | Has Winner: false | Answer: Ribbon, Poinsettia, Jingle Bells
+Game Starting: SHOPPINGLIST | Has Answer: true | Answer: Jingle Bells, Candy Cane, Snowman
+Game Ending: SHOPPINGLIST | Has Winner: false | Answer: Jingle Bells, Candy Cane, Snowman
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Beehive
+Game Ending: UNSCRAMBLE | Has Winner: true | Winners: ItzDavidVZLA_(Time: 16.1s) | Answer: Beehive
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Honeycomb
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Sculk
+Game Ending: UNSCRAMBLE | Has Winner: true | Winners: ItzDavidVZLA_(Time: 12.88s) | Answer: Sculk
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Creeper
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Creeper
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Quartz
+Game Ending: UNSCRAMBLE | Has Winner: true | Winners: ItzDavidVZLA_(Time: 22.97s) | Answer: Quartz
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Shulker
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Shulker
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Minecart
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Minecart
+Game Starting: UNREVERSE | Has Answer: true | Answer: Lantern
+Game Ending: UNREVERSE | Has Winner: true | Winners: ItzDavidVZLA_(Time: 8.03s) | Answer: Lantern
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 9
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 9
+Game Starting: FILLOUT | Has Answer: true | Answer: Note Block
+Game Ending: FILLOUT | Has Winner: false | Answer: Note Block
+Game Starting: UNREVERSE | Has Answer: true | Answer: End
+Game Ending: UNREVERSE | Has Winner: false | Answer: End
+Game Starting: CLICKABLE | Has Answer: true | Answer: QSugYOgxnKs4
+Game Ending: CLICKABLE | Has Winner: true | Winners: ItzDavidVZLA_(Time: 16.07s) | Answer: QSugYOgxnKs4
+Race Starting: HUNT | Entity: CREEPER | Amount: 3
+Race Starting: HUNT | Entity: SPIDER | Amount: 5
+Game Starting: FILLOUT | Has Answer: true | Answer: Trident
+Game Ending: FILLOUT | Has Winner: false | Answer: Trident
+Race Starting: FURNACE | Material: IRON_INGOT | Amount: 9
+Race Starting: HUNT | Entity: SKELETON | Amount: 5
+Race Ending: HUNT | Has Winner: Yes | Winners: ItzDavidVZLA_(Time: 23.06s) | Entity: SKELETON | Amount: 5
+Race Starting: HUNT | Entity: SALMON | Amount: 3
+Race Starting: HUNT | Entity: ZOMBIE | Amount: 5
+Race Starting: HUNT | Entity: CREEPER | Amount: 5
+Race Starting: HUNT | Entity: CREEPER | Amount: 5
+Race Starting: HUNT | Entity: SPIDER | Amount: 3
+Race Starting: HUNT | Entity: ZOMBIE | Amount: 5
+Race Starting: HUNT | Entity: SKELETON | Amount: 5
+Race Ending: HUNT | Has Winner: Yes | Winners: ItzDavidVZLA_(Time: 16.04s) | Entity: SKELETON | Amount: 5
+Race Starting: HUNT | Entity: CREEPER | Amount: 3
+Race Starting: HUNT | Entity: PIG | Amount: 3
+Race Starting: HUNT | Entity: COW | Amount: 5
+Race Starting: HUNT | Entity: CREEPER | Amount: 3
+Race Starting: HUNT | Entity: SHEEP | Amount: 3
+Race Starting: HUNT | Entity: CREEPER | Amount: 3
+Race Starting: HUNT | Entity: COW | Amount: 5
+Race Starting: HUNT | Entity: CHICKEN | Amount: 3
+Race Starting: HUNT | Entity: SPIDER | Amount: 5
+Race Starting: HUNT | Entity: SHEEP | Amount: 5
+Race Starting: HUNT | Entity: SPIDER | Amount: 5
+Race Starting: HUNT | Entity: ZOMBIE | Amount: 3
+Race Starting: HUNT | Entity: SPIDER | Amount: 5
+Race Starting: HUNT | Entity: CHICKEN | Amount: 3
+Race Starting: HUNT | Entity: ZOMBIE | Amount: 5
+Race Ending: HUNT | Has Winner: Yes | Winners: ItzDavidVZLA_(Time: 14.14s) | Entity: ZOMBIE | Amount: 5
+Race Starting: HUNT | Entity: PIG | Amount: 5
+Race Starting: HUNT | Entity: CREEPER | Amount: 5
+Race Ending: HUNT | Has Winner: Yes | Winners: ItzDavidVZLA_(Time: 12.86s) | Entity: CREEPER | Amount: 5
+Race Starting: HUNT | Entity: SPIDER | Amount: 5
+Race Ending: HUNT | Has Winner: Yes | Winners: ItzDavidVZLA_(Time: 13.22s) | Entity: SPIDER | Amount: 5
+Race Starting: MINE | Material: NETHERRACK | Amount: 32
+Race Ending: MINE | Has Winner: Yes | Winners: ItzDavidVZLA_(Time: 30.67s) | Material: NETHERRACK | Amount: 32
+Race Starting: MINE | Material: GRAVEL | Amount: 16
+Race Starting: MINE | Material: STONE | Amount: 32
+Race Starting: MINE | Material: NETHERRACK | Amount: 32
+Race Ending: MINE | Has Winner: Yes | Winners: ItzDavidVZLA_(Time: 31.16s) | Material: NETHERRACK | Amount: 32
+Race Starting: MINE | Material: STONE | Amount: 16
+Race Starting: MINE | Material: GRASS_BLOCK | Amount: 16
+Race Starting: MINE | Material: DIRT | Amount: 32
+Race Starting: MINE | Material: GRASS_BLOCK | Amount: 16
+Race Starting: MINE | Material: DIRT | Amount: 32
+Race Starting: MINE | Material: DIRT | Amount: 16
+Race Starting: MINE | Material: DIRT | Amount: 32
+Race Starting: MINE | Material: SAND | Amount: 32
+Race Starting: MINE | Material: GRAVEL | Amount: 16
+Race Starting: MINE | Material: SAND | Amount: 16
+Race Starting: MINE | Material: DIORITE | Amount: 16
+Race Starting: MINE | Material: GRAVEL | Amount: 16
+Race Starting: MINE | Material: GRAVEL | Amount: 16
+Race Starting: MINE | Material: GRASS_BLOCK | Amount: 16
+Race Starting: MINE | Material: STONE | Amount: 32
+Race Starting: MINE | Material: GRASS_BLOCK | Amount: 32
+Race Starting: MINE | Material: DIRT | Amount: 32
+Race Starting: MINE | Material: GRASS_BLOCK | Amount: 16
+Race Starting: MINE | Material: DIRT | Amount: 32
+Race Starting: MINE | Material: DIORITE | Amount: 16
+Race Starting: MINE | Material: NETHERRACK | Amount: 32
+Race Starting: MINE | Material: NETHERRACK | Amount: 16
+Race Ending: MINE | Has Winner: Yes | Winners: ItzDavidVZLA_(Time: 4.72s) | Material: NETHERRACK | Amount: 16
+Race Starting: MINE | Material: STONE | Amount: 32
+Race Starting: MINE | Material: GRASS_BLOCK | Amount: 32
+Race Starting: FURNACE | Material: IRON_INGOT | Amount: 6
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Sword
+Game Ending: UNSCRAMBLE | Has Winner: true | Winners: ItzDavidVZLA_(Time: 2.1s) | Answer: Sword
+Race Starting: HUNT | Entity: SKELETON | Amount: 3
+Game Starting: UNREVERSE | Has Answer: true | Answer: Shears
+Game Ending: UNREVERSE | Has Winner: false | Answer: Shears
+Game Starting: RANDOM | Has Answer: true | Answer: ZgPvcJs
+Game Ending: RANDOM | Has Winner: false | Answer: ZgPvcJs
+Game Starting: RANDOM | Has Answer: true | Answer: uOxbMYwD
+Game Ending: RANDOM | Has Winner: false | Answer: uOxbMYwD
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Iron
+Game Ending: UNSCRAMBLE | Has Winner: true | Winners: ItzDavidVZLA_(Time: 1.81s) | Answer: Iron
+Race Starting: CRAFT | Material: FURNACE | Amount: 2
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Pig
+Game Ending: UNSCRAMBLE | Has Winner: true | Winners: ItzDavidVZLA_(Time: 1.8s) | Answer: Pig
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Moss
+Game Ending: UNSCRAMBLE | Has Winner: true | Winners: ItzDavidVZLA_(Time: 1.7s) | Answer: Moss
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Button
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Chest
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Feather
+Game Ending: UNSCRAMBLE | Has Winner: true | Winners: ItzDavidVZLA_(Time: 3.46s) | Answer: Feather
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Torch
+Game Ending: UNSCRAMBLE | Has Winner: true | Winners: ItzDavidVZLA_(Time: 4.4s) | Answer: Torch
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Shulker
+Game Ending: UNSCRAMBLE | Has Winner: true | Winners: ItzDavidVZLA_(Time: 1.99s) | Answer: Shulker
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: String
+Game Ending: UNSCRAMBLE | Has Winner: true | Winners: ItzDavidVZLA_(Time: 2.71s) | Answer: String
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Arrow
+Game Ending: UNSCRAMBLE | Has Winner: true | Winners: ItzDavidVZLA_(Time: 1.73s) | Answer: Arrow
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Creeper
+Game Ending: UNSCRAMBLE | Has Winner: true | Winners: ItzDavidVZLA_(Time: 1.76s) | Answer: Creeper
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Crying Obsidian
+Game Ending: UNSCRAMBLE | Has Winner: true | Winners: ItzDavidVZLA_(Time: 6.59s) | Answer: Crying Obsidian
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Shovel
+Game Ending: UNSCRAMBLE | Has Winner: true | Winners: ItzDavidVZLA_(Time: 2.47s) | Answer: Shovel
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Crafting
+Game Ending: UNSCRAMBLE | Has Winner: true | Winners: ItzDavidVZLA_(Time: 2.44s) | Answer: Crafting
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Gunpowder
+Game Ending: UNSCRAMBLE | Has Winner: true | Winners: ItzDavidVZLA_(Time: 2.71s) | Answer: Gunpowder
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Mushroom
+Game Ending: UNSCRAMBLE | Has Winner: true | Winners: ItzDavidVZLA_(Time: 2.5s) | Answer: Mushroom
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Creeper
+Game Ending: UNSCRAMBLE | Has Winner: true | Winners: ItzDavidVZLA_(Time: 2.41s) | Answer: Creeper
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Trident
+Game Ending: UNSCRAMBLE | Has Winner: true | Winners: ItzDavidVZLA_(Time: 13.15s) | Answer: Trident
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Glass
+Game Ending: UNSCRAMBLE | Has Winner: true | Winners: ItzDavidVZLA_(Time: 7.86s) | Answer: Glass
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Leather
+Game Ending: UNSCRAMBLE | Has Winner: true | Winners: ItzDavidVZLA_(Time: 3.7s) | Answer: Leather
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Potion
+Game Ending: UNSCRAMBLE | Has Winner: true | Winners: ItzDavidVZLA_(Time: 4.84s) | Answer: Potion
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Salmon
+Game Ending: UNSCRAMBLE | Has Winner: true | Winners: ItzDavidVZLA_(Time: 12.37s) | Answer: Salmon
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Potion
+Game Ending: UNSCRAMBLE | Has Winner: true | Winners: ItzDavidVZLA_(Time: 7.57s) | Answer: Potion
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Chest
+Game Ending: UNSCRAMBLE | Has Winner: true | Winners: ItzDavidVZLA_(Time: 1.8s) | Answer: Chest
+Game Starting: TRIVIA | Has Answer: true | Answer: •24
+Game Ending: TRIVIA | Has Winner: false | Answer: •24
+Game Starting: FILLOUT | Has Answer: true | Answer: Composter
+Game Ending: FILLOUT | Has Winner: true | Winners: ItzDavidVZLA_(Time: 9.32s) | Answer: Composter
+Game Starting: TRIVIA | Has Answer: true | Answer: •Bedrock
+Game Ending: TRIVIA | Has Winner: true | Winners: ItzDavidVZLA_(Time: 4.44s) | Answer: Bedrock
+Game Starting: TRIVIA | Has Answer: true | Answer: •Wither
+Game Ending: TRIVIA | Has Winner: true | Winners: ItzDavidVZLA_(Time: 5.41s) | Answer: Wither
+Game Starting: TRIVIA | Has Answer: true | Answer: •Adventure•Aventura
+Game Ending: TRIVIA | Has Winner: true | Winners: ItzDavidVZLA_(Time: 2.9s) | Answer: Aventura
+Game Starting: TRIVIA | Has Answer: true | Answer: •Java
+Game Starting: TRIVIA | Has Answer: true | Answer: •Survival•Supervivencia
+Game Ending: TRIVIA | Has Winner: true | Winners: ItzDavidVZLA_(Time: 2.77s) | Answer: Survival
+Game Starting: TRIVIA | Has Answer: true | Answer: •Netherite•Netherita
+Game Ending: TRIVIA | Has Winner: true | Winners: ItzDavidVZLA_(Time: 2.8s) | Answer: Netherita
+Game Starting: TRIVIA | Has Answer: true | Answer: •Bedrock
+Game Ending: TRIVIA | Has Winner: true | Winners: ItzDavidVZLA_(Time: 2.31s) | Answer: Bedrock
+Game Starting: TRIVIA | Has Answer: true | Answer: •Bedrock
+Game Starting: TRIVIA | Has Answer: true | Answer: •Notch
+Game Starting: TRIVIA | Has Answer: true | Answer: •Creativo•Creative
+Game Starting: TRIVIA | Has Answer: true | Answer: •Spectator•Espectador
+Game Starting: TRIVIA | Has Answer: true | Answer: •2011•2009
+Game Starting: TRIVIA | Has Answer: true | Answer: •Wither
+Game Starting: TRIVIA | Has Answer: true | Answer: •Java
+Game Starting: TRIVIA | Has Answer: true | Answer: •Adventure•Aventura
+Game Starting: TRIVIA | Has Answer: true | Answer: •2011•2009
+Game Starting: TRIVIA | Has Answer: true | Answer: •Survival•Supervivencia
+Game Starting: TRIVIA | Has Answer: true | Answer: •Wither
+Game Starting: TRIVIA | Has Answer: true | Answer: •Creativo•Creative
+Game Starting: TRIVIA | Has Answer: true | Answer: •Adventure•Aventura
+Game Starting: TRIVIA | Has Answer: true | Answer: •Spectator•Espectador
+Game Starting: TRIVIA | Has Answer: true | Answer: •Java
+Game Starting: TRIVIA | Has Answer: true | Answer: •Netherite•Netherita
+Game Starting: TRIVIA | Has Answer: true | Answer: •Survival•Supervivencia
+Game Starting: TRIVIA | Has Answer: true | Answer: •Wither
+Game Starting: TRIVIA | Has Answer: true | Answer: •2011•2009
+Game Starting: TRIVIA | Has Answer: true | Answer: •Spectator•Espectador
+Game Starting: TRIVIA | Has Answer: true | Answer: •Java
+Game Starting: TRIVIA | Has Answer: true | Answer: •Wither
+Game Starting: TRIVIA | Has Answer: true | Answer: •Wither
+Game Starting: TRIVIA | Has Answer: true | Answer: •Nether Star•Estrella del Nether
+Game Starting: TRIVIA | Has Answer: true | Answer: •Java
+Game Starting: TRIVIA | Has Answer: true | Answer: •Bedrock
+Game Ending: TRIVIA | Has Winner: true | Winners: ItzDavidVZLA_(Time: 0.91s) | Answer: Bedrock
+Game Starting: RANDOM | Has Answer: true | Answer: jLKnHdv
+Game Ending: RANDOM | Has Winner: false | Answer: jLKnHdv
+Game Starting: VARIABLE | Has Answer: true | Answer: -79
+Game Ending: VARIABLE | Has Winner: false | Answer: -79
+Race Starting: PLACE | Material: TORCH | Amount: 32
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 9
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 9
+Race Starting: EAT | Material: COOKED_CHICKEN | Amount: 2
+Race Starting: CRAFT | Material: FURNACE | Amount: 8
+Race Starting: PLACE | Material: DIRT | Amount: 16
+Game Starting: TRIVIA | Has Answer: true | Answer: •Wither
+Game Ending: TRIVIA | Has Winner: true | Winners: ItzDavidVZLA_(Time: 4.27s) | Answer: Wither
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Ender chest
+Game Ending: UNSCRAMBLE | Has Winner: true | Winners: ItzDavidVZLA_(Time: 11.7s) | Answer: Ender chest
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 18
+Game Ending: GUESS_THE_NUMBER | Has Winner: true | Winners: ItzDavidVZLA_(Time: 17.67s) | Answer: 18
+Game Starting: REACTION | Has Answer: true | Answer: Soul sand
+Game Ending: REACTION | Has Winner: true | Winners: ItzDavidVZLA_(Time: 5.36s) | Answer: Soul sand
+Game Starting: RANDOM | Has Answer: true | Answer: IIKKNQp
+Game Ending: RANDOM | Has Winner: true | Winners: ItzDavidVZLA_(Time: 4.15s) | Answer: IIKKNQp
+Game Starting: MATH | Has Answer: true | Answer: 780
+Game Ending: MATH | Has Winner: true | Winners: ItzDavidVZLA_(Time: 5.04s) | Answer: 780
+Game Starting: VARIABLE | Has Answer: true | Answer: -95
+Game Ending: VARIABLE | Has Winner: false | Answer: -95
+Game Starting: TRIVIA | Has Answer: true | Answer: •Survival•Supervivencia
+Game Ending: TRIVIA | Has Winner: true | Winners: ItzDavidVZLA_(Time: 3.58s) | Answer: Survival
+Game Starting: TRIVIA | Has Answer: true | Answer: •Survival•Supervivencia
+Game Ending: TRIVIA | Has Winner: false | Answer: •Survival•Supervivencia
+Race Starting: PLACE | Material: DIRT | Amount: 16
+Race Starting: FISH | Material: SALMON | Amount: 1
+Race Starting: CRAFT | Material: FURNACE | Amount: 8
+Race Starting: FURNACE | Material: IRON_INGOT | Amount: 3
+Race Starting: EAT | Material: BAKED_POTATO | Amount: 1
+Race Starting: CRAFT | Material: CHEST | Amount: 8
+Race Starting: FURNACE | Material: COOKED_BEEF | Amount: 6
+Race Starting: PLACE | Material: COBBLESTONE | Amount: 32
+Race Starting: MINE | Material: DIRT | Amount: 32
+Race Starting: HUNT | Entity: SALMON | Amount: 5
+Race Starting: CRAFT | Material: TORCH | Amount: 64
+Race Starting: MINE | Material: STONE | Amount: 16
+Game Starting: REACTION | Has Answer: true | Answer: Botón
+Game Ending: REACTION | Has Winner: false | Answer: Botón
+Race Starting: MINE | Material: GRASS_BLOCK | Amount: 32
+Game Starting: RANDOM | Has Answer: true | Answer: TSfP7lJ
+Game Ending: RANDOM | Has Winner: false | Answer: TSfP7lJ
+Game Starting: REACTION | Has Answer: true | Answer: Soul sand
+Game Ending: REACTION | Has Winner: false | Answer: Soul sand
+Race Starting: HUNT | Entity: COW | Amount: 3
+Game Starting: RANDOM | Has Answer: true | Answer: 95Qz8wh
+Game Ending: RANDOM | Has Winner: false | Answer: 95Qz8wh
+Game Starting: VARIABLE | Has Answer: true | Answer: -117
+Game Ending: VARIABLE | Has Winner: false | Answer: -117
+Race Starting: FURNACE | Material: GOLD_INGOT | Amount: 3
+Game Starting: VARIABLE | Has Answer: true | Answer: -82
+Game Ending: VARIABLE | Has Winner: false | Answer: -82
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 8
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 8
+Race Starting: HUNT | Entity: COW | Amount: 5
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Compás
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Compás
+Race Starting: CRAFT | Material: FURNACE | Amount: 2
+Game Starting: HOVERABLE | Has Answer: true | Answer: Gunpowder
+Game Ending: HOVERABLE | Has Winner: false | Answer: Gunpowder
+Game Starting: REACTION | Has Answer: true | Answer: Grindstone
+Game Ending: REACTION | Has Winner: false | Answer: Grindstone
+Game Starting: HOVERABLE | Has Answer: true | Answer: Nether Wwrt
+Game Ending: HOVERABLE | Has Winner: false | Answer: Nether Wwrt
+Game Starting: CLICKABLE | Has Answer: true | Answer: Lq6P5lUZIJCR
+Game Ending: CLICKABLE | Has Winner: false | Answer: Lq6P5lUZIJCR
+Game Starting: HOVERABLE | Has Answer: true | Answer: Cuarzo
+Game Ending: HOVERABLE | Has Winner: false | Answer: Cuarzo
+Game Starting: REACTION | Has Answer: true | Answer: Dispensador
+Game Ending: REACTION | Has Winner: false | Answer: Dispensador
+Game Starting: UNREVERSE | Has Answer: true | Answer: Shulker
+Game Ending: UNREVERSE | Has Winner: false | Answer: Shulker
+Game Starting: HOVERABLE | Has Answer: true | Answer: Aldeano
+Game Ending: HOVERABLE | Has Winner: false | Answer: Aldeano
+Game Starting: HOVERABLE | Has Answer: true | Answer: Ender pearl
+Game Ending: HOVERABLE | Has Winner: false | Answer: Ender pearl
+Game Starting: TRIVIA | Has Answer: true | Answer: •Wither
+Game Ending: TRIVIA | Has Winner: false | Answer: •Wither
+Race Starting: CRAFT | Material: CHEST | Amount: 4
+Game Starting: HOVERABLE | Has Answer: true | Answer: Creeper
+Game Ending: HOVERABLE | Has Winner: false | Answer: Creeper
+Game Starting: UNREVERSE | Has Answer: true | Answer: Reloj
+Game Ending: UNREVERSE | Has Winner: false | Answer: Reloj
+Race Starting: MINE | Material: DIRT | Amount: 16
+Race Starting: CRAFT | Material: CHEST | Amount: 2
+Game Starting: FILLOUT | Has Answer: true | Answer: Tridente
+Game Ending: FILLOUT | Has Winner: false | Answer: Tridente
+Game Starting: VARIABLE | Has Answer: true | Answer: -30
+Game Ending: VARIABLE | Has Winner: false | Answer: -30
+Game Starting: RANDOM | Has Answer: true | Answer: TrN4u2
+Game Ending: RANDOM | Has Winner: false | Answer: TrN4u2
+Game Starting: REACTION | Has Answer: true | Answer: Pluma
+Game Ending: REACTION | Has Winner: true | Winners: ItzDavidVZLA_(Time: 10.6s) | Answer: Pluma
+Race Starting: PLACE | Material: SAND | Amount: 16
+Game Starting: REACTION | Has Answer: true | Answer: Enderman
+Game Ending: REACTION | Has Winner: false | Answer: Enderman
+Game Starting: UNREVERSE | Has Answer: true | Answer: Cuarzo
+Game Ending: UNREVERSE | Has Winner: false | Answer: Cuarzo
+Game Starting: REACTION | Has Answer: true | Answer: Linterna
+Game Ending: REACTION | Has Winner: false | Answer: Linterna
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Obsidiana
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Obsidiana
+Game Starting: REACTION | Has Answer: true | Answer: Elytra
+Game Ending: REACTION | Has Winner: false | Answer: Elytra
+Race Starting: FISH | Material: SALMON | Amount: 1
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Nether
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Nether
+Race Starting: PLACE | Material: NETHERRACK | Amount: 16
+Game Starting: MATH | Has Answer: true | Answer: 94
+Game Ending: MATH | Has Winner: false | Answer: 94
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 5
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 5
+Game Starting: MATH | Has Answer: true | Answer: 130
+Game Ending: MATH | Has Winner: false | Answer: 130
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: End
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: End
+Game Starting: TRIVIA | Has Answer: true | Answer: •Spectator•Espectador
+Game Ending: TRIVIA | Has Winner: false | Answer: •Spectator•Espectador
+Game Starting: UNREVERSE | Has Answer: true | Answer: Pistón
+Game Ending: UNREVERSE | Has Winner: false | Answer: Pistón
+Game Starting: MATH | Has Answer: true | Answer: 106
+Game Ending: MATH | Has Winner: false | Answer: 106
+Race Starting: HUNT | Entity: CREEPER | Amount: 3
+Race Starting: MINE | Material: NETHERRACK | Amount: 32
+Game Starting: REACTION | Has Answer: true | Answer: Montura
+Game Ending: REACTION | Has Winner: false | Answer: Montura
+Game Starting: MATH | Has Answer: true | Answer: 109
+Game Ending: MATH | Has Winner: false | Answer: 109
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 12
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 12
+Game Starting: UNREVERSE | Has Answer: true | Answer: Reloj
+Game Ending: UNREVERSE | Has Winner: false | Answer: Reloj
+Game Starting: TRIVIA | Has Answer: true | Answer: •Adventure•Aventura
+Game Ending: TRIVIA | Has Winner: false | Answer: •Adventure•Aventura
+Game Starting: FILLOUT | Has Answer: true | Answer: Cobre
+Game Ending: FILLOUT | Has Winner: false | Answer: Cobre
+Race Starting: HUNT | Entity: ZOMBIE | Amount: 5
+Game Starting: UNREVERSE | Has Answer: true | Answer: Vaca
+Game Ending: UNREVERSE | Has Winner: false | Answer: Vaca
+Race Starting: MINE | Material: SAND | Amount: 32
+Game Starting: TRIVIA | Has Answer: true | Answer: •Wither
+Game Ending: TRIVIA | Has Winner: false | Answer: •Wither
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 8
+Game Ending: GUESS_THE_NUMBER | Has Winner: true | Winners: ItzDavidVZLA_(Time: 6.6s) | Answer: 8
+Game Starting: TRIVIA | Has Answer: true | Answer: •Java
+Game Ending: TRIVIA | Has Winner: false | Answer: •Java
+Race Starting: HUNT | Entity: SKELETON | Amount: 5
+Game Starting: UNREVERSE | Has Answer: true | Answer: Pico
+Game Ending: UNREVERSE | Has Winner: false | Answer: Pico
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 13
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 13
+Game Starting: FILLOUT | Has Answer: true | Answer: Glowstone
+Game Ending: FILLOUT | Has Winner: true | Winners: ItzDavidVZLA_(Time: 4.41s) | Answer: Glowstone
+Game Starting: MATH | Has Answer: true | Answer: 68
+Game Ending: MATH | Has Winner: true | Winners: ItzDavidVZLA_(Time: 6.96s) | Answer: 68
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 3
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 3
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Pico
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Pico
+Game Starting: TRIVIA | Has Answer: true | Answer: •2011•2009
+Game Ending: TRIVIA | Has Winner: false | Answer: •2011•2009
+Race Starting: HUNT | Entity: ZOMBIE | Amount: 5
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 13
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 13
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 9
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 9
+Race Starting: CRAFT | Material: TORCH | Amount: 48
+Race Starting: MINE | Material: GRAVEL | Amount: 16
+Race Starting: FISH | Material: BOWL | Amount: 1
+Game Starting: FILLOUT | Has Answer: true | Answer: Esqueleto
+Game Ending: FILLOUT | Has Winner: false | Answer: Esqueleto
+Game Starting: REACTION | Has Answer: true | Answer: Ender chest
+Game Ending: REACTION | Has Winner: false | Answer: Ender chest
+Race Starting: FURNACE | Material: COOKED_BEEF | Amount: 6
+Race Starting: CRAFT | Material: CRAFTING_TABLE | Amount: 12
+Game Starting: TRIVIA | Has Answer: true | Answer: •Bedrock
+Game Ending: TRIVIA | Has Winner: false | Answer: •Bedrock
+Race Starting: FISH | Material: BOWL | Amount: 1
+Race Starting: MINE | Material: NETHERRACK | Amount: 32
+Game Starting: TRIVIA | Has Answer: true | Answer: •2011•2009
+Game Ending: TRIVIA | Has Winner: false | Answer: •2011•2009
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Redstone
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Redstone
+Game Starting: MATH | Has Answer: true | Answer: 52
+Game Ending: MATH | Has Winner: false | Answer: 52
+Race Starting: HUNT | Entity: CREEPER | Amount: 3
+Race Starting: CRAFT | Material: CRAFTING_TABLE | Amount: 12
+Game Starting: MATH | Has Answer: true | Answer: 128
+Game Ending: MATH | Has Winner: false | Answer: 128
+Game Starting: FILLOUT | Has Answer: true | Answer: Beacon
+Game Ending: FILLOUT | Has Winner: false | Answer: Beacon
+Game Starting: UNREVERSE | Has Answer: true | Answer: Amatista
+Game Ending: UNREVERSE | Has Winner: false | Answer: Amatista
+Race Starting: FISH | Material: PUFFERFISH | Amount: 3
+Race Starting: MINE | Material: DIORITE | Amount: 32
+Game Starting: REACTION | Has Answer: true | Answer: Caldero
+Game Ending: REACTION | Has Winner: false | Answer: Caldero
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 3
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 3
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 5
+Game Ending: GUESS_THE_NUMBER | Has Winner: true | Winners: ItzDavidVZLA_(Time: 4.63s) | Answer: 5
+Game Starting: UNREVERSE | Has Answer: true | Answer: Reloj
+Game Ending: UNREVERSE | Has Winner: false | Answer: Reloj
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Gunpowder
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Gunpowder
+Game Starting: UNREVERSE | Has Answer: true | Answer: Caballo
+Game Ending: UNREVERSE | Has Winner: false | Answer: Caballo
+Game Starting: UNREVERSE | Has Answer: true | Answer: Conejo
+Game Ending: UNREVERSE | Has Winner: true | Winners: ItzDavidVZLA_(Time: 5.16s) | Answer: Conejo
+Game Starting: FILLOUT | Has Answer: true | Answer: Composter
+Game Ending: FILLOUT | Has Winner: false | Answer: Composter
+Game Starting: UNREVERSE | Has Answer: true | Answer: Carbón
+Game Ending: UNREVERSE | Has Winner: false | Answer: Carbón
+Game Starting: FILLOUT | Has Answer: true | Answer: Vara de blaze
+Game Ending: FILLOUT | Has Winner: false | Answer: Vara de blaze
+Race Starting: FURNACE | Material: GOLD_INGOT | Amount: 6
+Game Starting: REACTION | Has Answer: true | Answer: Obsidiana
+Game Ending: REACTION | Has Winner: false | Answer: Obsidiana
+Game Starting: MATH | Has Answer: true | Answer: 149
+Game Ending: MATH | Has Winner: false | Answer: 149
+Game Starting: TRIVIA | Has Answer: true | Answer: •Spectator•Espectador
+Game Ending: TRIVIA | Has Winner: false | Answer: •Spectator•Espectador
+Game Starting: FILLOUT | Has Answer: true | Answer: Oveja
+Game Ending: FILLOUT | Has Winner: false | Answer: Oveja
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 10
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 10
+Race Starting: CRAFT | Material: FURNACE | Amount: 8
+Game Starting: TRIVIA | Has Answer: true | Answer: •Spectator•Espectador
+Game Ending: TRIVIA | Has Winner: false | Answer: •Spectator•Espectador
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 6
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 6
+Game Starting: UNREVERSE | Has Answer: true | Answer: Dropper
+Game Ending: UNREVERSE | Has Winner: false | Answer: Dropper
+Game Starting: MATH | Has Answer: true | Answer: 87
+Game Ending: MATH | Has Winner: false | Answer: 87
+Race Starting: MINE | Material: DIRT | Amount: 32
+Race Starting: CRAFT | Material: FURNACE | Amount: 2
+Game Starting: REACTION | Has Answer: true | Answer: Hilo
+Game Ending: REACTION | Has Winner: false | Answer: Hilo
+Game Starting: FILLOUT | Has Answer: true | Answer: Gunpowder
+Game Ending: FILLOUT | Has Winner: false | Answer: Gunpowder
+Race Starting: FISH | Material: SALMON | Amount: 1
+Race Starting: CRAFT | Material: FURNACE | Amount: 8
+Race Starting: FISH | Material: BOWL | Amount: 1
+Game Starting: MATH | Has Answer: true | Answer: 15
+Game Ending: MATH | Has Winner: false | Answer: 15
+Game Starting: UNREVERSE | Has Answer: true | Answer: Ancient debris
+Game Ending: UNREVERSE | Has Winner: false | Answer: Ancient debris
+Race Starting: HUNT | Entity: CHICKEN | Amount: 5
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 10
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 10
+Race Starting: FISH | Material: BOWL | Amount: 1
+Race Starting: FURNACE | Material: GOLD_INGOT | Amount: 9
+Race Starting: MINE | Material: GRAVEL | Amount: 32
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 5
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 5
+Game Starting: REACTION | Has Answer: true | Answer: Aldeano
+Game Ending: REACTION | Has Winner: false | Answer: Aldeano
+Game Starting: UNREVERSE | Has Answer: true | Answer: Glowstone
+Game Ending: UNREVERSE | Has Winner: false | Answer: Glowstone
+Game Starting: FILLOUT | Has Answer: true | Answer: Vidrio
+Game Ending: FILLOUT | Has Winner: false | Answer: Vidrio
+Game Starting: FILLOUT | Has Answer: true | Answer: Hopper
+Game Ending: FILLOUT | Has Winner: false | Answer: Hopper
+Race Starting: FISH | Material: BOWL | Amount: 1
+Game Starting: FILLOUT | Has Answer: true | Answer: Conejo
+Game Ending: FILLOUT | Has Winner: true | Winners: ItzDavidVZLA_(Time: 5.04s) | Answer: Conejo
+Race Starting: HUNT | Entity: PIG | Amount: 3
+Race Starting: FISH | Material: COD | Amount: 1
+Game Starting: TRIVIA | Has Answer: true | Answer: •Survival•Supervivencia
+Game Ending: TRIVIA | Has Winner: false | Answer: •Survival•Supervivencia
+Race Starting: FISH | Material: SALMON | Amount: 3
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Zombie
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Zombie
+Game Starting: MATH | Has Answer: true | Answer: 60
+Game Ending: MATH | Has Winner: true | Winners: ItzDavidVZLA_(Time: 8.21s) | Answer: 60
+Race Starting: FISH | Material: PUFFERFISH | Amount: 3
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Creeper
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Creeper
+Race Starting: HUNT | Entity: PIG | Amount: 5
+Race Starting: FISH | Material: SALMON | Amount: 3
+Race Starting: MINE | Material: SAND | Amount: 16
+Game Starting: MATH | Has Answer: true | Answer: -45
+Game Ending: MATH | Has Winner: false | Answer: -45
+Race Starting: HUNT | Entity: ZOMBIE | Amount: 5
+Game Starting: MATH | Has Answer: true | Answer: 132
+Game Ending: MATH | Has Winner: false | Answer: 132
+Race Starting: MINE | Material: SAND | Amount: 32
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Pala
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Pala
+Game Starting: REACTION | Has Answer: true | Answer: Compás
+Game Ending: REACTION | Has Winner: false | Answer: Compás
+Game Starting: MATH | Has Answer: true | Answer: 38
+Game Ending: MATH | Has Winner: false | Answer: 38
+Game Starting: TRIVIA | Has Answer: true | Answer: •Netherite•Netherita
+Game Ending: TRIVIA | Has Winner: false | Answer: •Netherite•Netherita
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 16
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 16
+Race Starting: FURNACE | Material: COOKED_BEEF | Amount: 6
+Race Starting: CRAFT | Material: FURNACE | Amount: 2
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 5
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 5
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 5
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 5
+Race Starting: MINE | Material: NETHERRACK | Amount: 32
+Race Starting: HUNT | Entity: COW | Amount: 5
+Race Starting: MINE | Material: DIORITE | Amount: 32
+Game Starting: UNREVERSE | Has Answer: true | Answer: Espada
+Game Ending: UNREVERSE | Has Winner: true | Winners: ItzDavidVZLA_(Time: 4.75s) | Answer: Espada
+Game Starting: MATH | Has Answer: true | Answer: 6480
+Game Ending: MATH | Has Winner: false | Answer: 6480
+Game Starting: FILLOUT | Has Answer: true | Answer: Soul sand
+Game Ending: FILLOUT | Has Winner: true | Winners: ItzDavidVZLA_(Time: 11.28s) | Answer: Soul sand
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Soul sand
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Soul sand
+Game Starting: FILLOUT | Has Answer: true | Answer: End
+Game Ending: FILLOUT | Has Winner: false | Answer: End
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 4
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 4
+Game Starting: UNREVERSE | Has Answer: true | Answer: Hilo
+Game Ending: UNREVERSE | Has Winner: false | Answer: Hilo
+Game Starting: TRIVIA | Has Answer: true | Answer: •2011•2009
+Game Ending: TRIVIA | Has Winner: true | Winners: ItzDavidVZLA_(Time: 2.49s) | Answer: 2009
+Race Starting: FURNACE | Material: GOLD_INGOT | Amount: 6
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Netherite
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Netherite
+Game Starting: FILLOUT | Has Answer: true | Answer: Diamante
+Game Ending: FILLOUT | Has Winner: false | Answer: Diamante
+Race Starting: FISH | Material: BOWL | Amount: 1
+Game Starting: TRIVIA | Has Answer: true | Answer: •Notch
+Game Ending: TRIVIA | Has Winner: false | Answer: •Notch
+Game Starting: REACTION | Has Answer: true | Answer: Oro
+Game Ending: REACTION | Has Winner: false | Answer: Oro
+Game Starting: REACTION | Has Answer: true | Answer: Dispensador
+Game Ending: REACTION | Has Winner: false | Answer: Dispensador
+Race Starting: HUNT | Entity: PIG | Amount: 5
+Game Starting: MATH | Has Answer: true | Answer: 71
+Game Ending: MATH | Has Winner: false | Answer: 71
+Game Starting: MATH | Has Answer: true | Answer: 82
+Game Ending: MATH | Has Winner: false | Answer: 82
+Game Starting: TRIVIA | Has Answer: true | Answer: •Survival•Supervivencia
+Game Ending: TRIVIA | Has Winner: false | Answer: •Survival•Supervivencia
+Game Starting: UNREVERSE | Has Answer: true | Answer: Pico
+Game Ending: UNREVERSE | Has Winner: false | Answer: Pico
+Game Starting: REACTION | Has Answer: true | Answer: Beacon
+Game Ending: REACTION | Has Winner: false | Answer: Beacon
+Race Starting: HUNT | Entity: CREEPER | Amount: 5
+Game Starting: UNREVERSE | Has Answer: true | Answer: Beacon
+Game Ending: UNREVERSE | Has Winner: false | Answer: Beacon
+Game Starting: MATH | Has Answer: true | Answer: 3550
+Game Ending: MATH | Has Winner: false | Answer: 3550
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Composter
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Composter
+Race Starting: HUNT | Entity: PIG | Amount: 3
+Game Starting: TRIVIA | Has Answer: true | Answer: •Java
+Game Ending: TRIVIA | Has Winner: false | Answer: •Java
+Game Starting: UNREVERSE | Has Answer: true | Answer: Shulker
+Game Ending: UNREVERSE | Has Winner: false | Answer: Shulker
+Race Starting: FURNACE | Material: COOKED_BEEF | Amount: 6
+Game Starting: UNREVERSE | Has Answer: true | Answer: Esqueleto
+Game Ending: UNREVERSE | Has Winner: true | Winners: ItzDavidVZLA_(Time: 3.58s) | Answer: Esqueleto
+Race Starting: FURNACE | Material: COOKED_COD | Amount: 6
+Race Starting: MINE | Material: NETHERRACK | Amount: 16
+Game Starting: FILLOUT | Has Answer: true | Answer: Zombie
+Game Ending: FILLOUT | Has Winner: false | Answer: Zombie
+Game Starting: FILLOUT | Has Answer: true | Answer: Oveja
+Game Ending: FILLOUT | Has Winner: false | Answer: Oveja
+Race Starting: CRAFT | Material: FURNACE | Amount: 4
+Race Starting: FURNACE | Material: COOKED_COD | Amount: 9
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 12
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 12
+Game Starting: REACTION | Has Answer: true | Answer: Pluma
+Game Ending: REACTION | Has Winner: false | Answer: Pluma
+Race Starting: MINE | Material: STONE | Amount: 32
+Game Starting: MATH | Has Answer: true | Answer: 19
+Game Ending: MATH | Has Winner: false | Answer: 19
+Game Starting: UNREVERSE | Has Answer: true | Answer: Cofre
+Game Ending: UNREVERSE | Has Winner: false | Answer: Cofre
+Game Starting: FILLOUT | Has Answer: true | Answer: Ajolote
+Game Ending: FILLOUT | Has Winner: false | Answer: Ajolote
+Race Starting: HUNT | Entity: SHEEP | Amount: 3
+Game Starting: TRIVIA | Has Answer: true | Answer: •Adventure•Aventura
+Game Ending: TRIVIA | Has Winner: false | Answer: •Adventure•Aventura
+Game Starting: MATH | Has Answer: true | Answer: 2562
+Game Ending: MATH | Has Winner: false | Answer: 2562
+Race Starting: MINE | Material: DIRT | Amount: 32
+Game Starting: UNREVERSE | Has Answer: true | Answer: Ajolote
+Game Ending: UNREVERSE | Has Winner: false | Answer: Ajolote
+Race Starting: CRAFT | Material: CRAFTING_TABLE | Amount: 4
+Race Starting: FISH | Material: BOWL | Amount: 1
+Race Starting: HUNT | Entity: CHICKEN | Amount: 3
+Game Starting: REACTION | Has Answer: true | Answer: Enderman
+Game Ending: REACTION | Has Winner: false | Answer: Enderman
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 3
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 3
+Race Starting: FISH | Material: BOWL | Amount: 1
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 12
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 12
+Race Starting: HUNT | Entity: CHICKEN | Amount: 5
+Game Starting: TRIVIA | Has Answer: true | Answer: •Notch
+Game Ending: TRIVIA | Has Winner: true | Winners: ItzDavidVZLA_(Time: 3.83s) | Answer: Notch
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 3
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 3
+Race Starting: FURNACE | Material: COOKED_COD | Amount: 9
+Game Starting: UNREVERSE | Has Answer: true | Answer: Amatista
+Game Ending: UNREVERSE | Has Winner: false | Answer: Amatista
+Game Starting: TRIVIA | Has Answer: true | Answer: •Wither
+Game Ending: TRIVIA | Has Winner: false | Answer: •Wither
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Horno
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Horno
+Race Starting: MINE | Material: GRAVEL | Amount: 16
+Game Starting: MATH | Has Answer: true | Answer: 3360
+Game Ending: MATH | Has Winner: false | Answer: 3360
+Game Starting: UNREVERSE | Has Answer: true | Answer: Ancient debris
+Game Ending: UNREVERSE | Has Winner: false | Answer: Ancient debris
+Race Starting: HUNT | Entity: CHICKEN | Amount: 5
+Game Starting: REACTION | Has Answer: true | Answer: Poción
+Game Ending: REACTION | Has Winner: false | Answer: Poción
+Race Starting: CRAFT | Material: TORCH | Amount: 32
+Game Starting: TRIVIA | Has Answer: true | Answer: •Wither
+Game Ending: TRIVIA | Has Winner: true | Winners: ItzDavidVZLA_(Time: 7.52s) | Answer: Wither
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 3
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 3
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Ancient debris
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Ancient debris
+Game Starting: TRIVIA | Has Answer: true | Answer: •Netherite•Netherita
+Game Ending: TRIVIA | Has Winner: false | Answer: •Netherite•Netherita
+Game Starting: UNREVERSE | Has Answer: true | Answer: Cobre
+Game Ending: UNREVERSE | Has Winner: false | Answer: Cobre
+Race Starting: HUNT | Entity: CHICKEN | Amount: 5
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Cofre
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Cofre
+Game Starting: REACTION | Has Answer: true | Answer: Linterna
+Game Ending: REACTION | Has Winner: false | Answer: Linterna
+Race Starting: FISH | Material: COD | Amount: 3
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 7
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 7
+Game Starting: FILLOUT | Has Answer: true | Answer: Dispensador
+Game Ending: FILLOUT | Has Winner: false | Answer: Dispensador
+Race Starting: FURNACE | Material: COOKED_COD | Amount: 9
+Race Starting: FISH | Material: SALMON | Amount: 1
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 5
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 5
+Game Starting: UNREVERSE | Has Answer: true | Answer: Caballo
+Game Ending: UNREVERSE | Has Winner: false | Answer: Caballo
+Game Starting: REACTION | Has Answer: true | Answer: Hilo
+Game Ending: REACTION | Has Winner: false | Answer: Hilo
+Game Starting: REACTION | Has Answer: true | Answer: Vidrio
+Game Ending: REACTION | Has Winner: false | Answer: Vidrio
+Game Starting: REACTION | Has Answer: true | Answer: End portal
+Game Ending: REACTION | Has Winner: false | Answer: End portal
+Game Starting: MATH | Has Answer: true | Answer: 133
+Game Ending: MATH | Has Winner: false | Answer: 133
+Game Starting: TRIVIA | Has Answer: true | Answer: •Nether Star•Estrella del Nether
+Game Ending: TRIVIA | Has Winner: false | Answer: •Nether Star•Estrella del Nether
+Race Starting: FISH | Material: COD | Amount: 1
+Game Starting: FILLOUT | Has Answer: true | Answer: Catalejo
+Game Ending: FILLOUT | Has Winner: false | Answer: Catalejo
+Race Starting: CRAFT | Material: CRAFTING_TABLE | Amount: 8
+Race Starting: FURNACE | Material: IRON_INGOT | Amount: 9
+Game Starting: GUESS_THE_NUMBER | Has Answer: true | Answer: 3
+Game Ending: GUESS_THE_NUMBER | Has Winner: false | Answer: 3
+Game Starting: REACTION | Has Answer: true | Answer: Palanca
+Game Ending: REACTION | Has Winner: false | Answer: Palanca
+Race Starting: FISH | Material: BOWL | Amount: 1
+Race Starting: FURNACE | Material: COOKED_COD | Amount: 6
+Race Starting: HUNT | Entity: SHEEP | Amount: 3
+Game Starting: REACTION | Has Answer: true | Answer: Catalejo
+Game Ending: REACTION | Has Winner: false | Answer: Catalejo
+Game Starting: UNREVERSE | Has Answer: true | Answer: Reloj
+Game Ending: UNREVERSE | Has Winner: false | Answer: Reloj
+Game Starting: MATH | Has Answer: true | Answer: 142
+Game Ending: MATH | Has Winner: false | Answer: 142
+Game Starting: UNREVERSE | Has Answer: true | Answer: End
+Game Ending: UNREVERSE | Has Winner: false | Answer: End
+Race Starting: CRAFT | Material: CRAFTING_TABLE | Amount: 12
+Game Starting: FILLOUT | Has Answer: true | Answer: Creeper
+Game Ending: FILLOUT | Has Winner: false | Answer: Creeper
+Race Starting: CRAFT | Material: TORCH | Amount: 64
+Race Starting: MINE | Material: STONE | Amount: 32
+Game Starting: UNSCRAMBLE | Has Answer: true | Answer: Caldero
+Game Ending: UNSCRAMBLE | Has Winner: false | Answer: Caldero
+Game Starting: REACTION | Has Answer: true | Answer: Obsidiana
+Game Ending: REACTION | Has Winner: false | Answer: Obsidiana
+Game Starting: REACTION | Has Answer: true | Answer: Pollo
+Game Ending: REACTION | Has Winner: false | Answer: Pollo
+Game Starting: MATH | Has Answer: true | Answer: 50
+Game Ending: MATH | Has Winner: false | Answer: 50
+Game Starting: MATH | Has Answer: true | Answer: 1738
+Game Ending: MATH | Has Winner: false | Answer: 1738
+Game Starting: TRIVIA | Has Answer: true | Answer: •Survival•Supervivencia
+Game Ending: TRIVIA | Has Winner: true | Winners: ItzDavidVZLA_(Time: 7.06s) | Answer: Survival
+Game Starting: FILLOUT | Has Answer: true | Answer: Pala
+Race Starting: MINE | Material: DIORITE | Amount: 16
+Game Starting: FILLOUT | Has Answer: true | Answer: Obsidiana
+Game Ending: FILLOUT | Has Winner: false | Answer: Obsidiana
+Race Starting: MINE | Material: SAND | Amount: 32
+Race Starting: FISH | Material: COD | Amount: 1
+Game Starting: MATH | Has Answer: true | Answer: 455
+Game Ending: MATH | Has Winner: true | Winners: ItzDavidVZLA_(Time: 32.61s) | Answer: 455

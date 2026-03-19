@@ -1,0 +1,409 @@
+enable-races: true
+
+creative-enabled: true
+#Useful Links to add DATA:
+#
+#https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/EntityType.html
+#https://helpch.at/docs/1.8/index.html?org/bukkit/entity/EntityType.html
+#https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+#https://helpch.at/docs/1.8/org/bukkit/Material.html
+
+#IF THE IDs YOU ARE TRYING TO USE DO NOT WORK AND ARE FROM THE NEWEST ENUMS ON THE SPIGOT API TRY USING THE 1.8(LEGACY) IDS FOR THOSE ITEMS TO SEE IF IT FIXES.
+
+hunt:
+  enable: true
+
+  timeToComplete_seconds: 180
+  #__Leave the following 2 empty to disable them__
+  titleMessage: '&r '
+  subtitleMessage: '&r '
+
+  #Whether to count mobs that were spawned by spawner blocks or spawn eggs.
+  count-spawner-mobs: true
+
+  data:
+    #These values have to be valid minecraft mobs IDs (see Useful Links at the top of the file)
+    ZOMBIE:
+      3:
+        #THE SUM OF ALL CHANCES OF REWARDS YOU ADD CANNOT EXCEED 100%
+        rewards:
+          - reward_1
+      5:
+        rewards:
+          - reward_1
+
+    CREEPER:
+      3:
+        rewards:
+          - reward_1
+      5:
+        rewards:
+          - reward_1
+    SKELETON:
+      3:
+        rewards:
+          - reward_1
+      5:
+        rewards:
+          - reward_1
+      3:
+        rewards:
+          - reward_1
+      5:
+        rewards:
+          - reward_1
+    PIG:
+      3:
+        rewards:
+          - reward_1
+      5:
+        rewards:
+          - reward_1
+    SHEEP:
+      3:
+        rewards:
+          - reward_1
+      5:
+        rewards:
+          - reward_1
+    COW:
+      3:
+        rewards:
+          - reward_1
+      5:
+        rewards:
+          - reward_1
+    CHICKEN:
+      3:
+        rewards:
+          - reward_1
+      5:
+        rewards:
+          - reward_1
+    SALMON:
+      3:
+        rewards:
+          - reward_1
+      5:
+        rewards:
+          - reward_1
+
+mine:
+  enable: true
+
+  timeToComplete_seconds: 60
+  #__Leave the following 2 empty to disable them__
+  titleMessage: '&r '
+  subtitleMessage: '&r '
+
+  data:
+    #These values have to be valid minecraft material IDs (see Useful Links at the top of the file)
+    STONE:
+      16:
+        rewards:
+          - reward_1
+      32:
+        rewards:
+          - reward_1
+    DIRT:
+      16:
+        rewards:
+          - reward_1
+      32:
+        rewards:
+          - reward_1
+    GRASS_BLOCK:
+      16:
+        rewards:
+          - reward_1
+      32:
+        rewards:
+          - reward_1
+    SAND:
+      16:
+        rewards:
+          - reward_1
+      32:
+        rewards:
+          - reward_1
+    NETHERRACK:
+      16:
+        rewards:
+          - reward_1
+      32:
+        rewards:
+          - reward_1
+    GRAVEL:
+      16:
+        rewards:
+          - reward_1
+      32:
+        rewards:
+          - reward_1
+    DIORITE:
+      16:
+        rewards:
+          - reward_1
+      32:
+        rewards:
+          - reward_1
+
+place:
+  enable: false
+
+  timeToComplete_seconds: 60
+  #__Leave the following 2 empty to disable them__
+  titleMessage: '&r '
+  subtitleMessage: '&r '
+
+  data:
+    #These values have to be valid minecraft material IDs (see Useful Links at the top of the file)
+    COBBLESTONE:
+      16:
+        rewards:
+          - reward_1
+      32:
+        rewards:
+          - reward_1
+    DIRT:
+      16:
+        rewards:
+          - reward_1
+      32:
+        rewards:
+          - reward_1
+    SAND:
+      16:
+        rewards:
+          - reward_1
+      32:
+        rewards:
+          - reward_1
+    NETHERRACK:
+      16:
+        rewards:
+          - reward_1
+      32:
+        rewards:
+          - reward_1
+    TORCH:
+      16:
+        rewards:
+          - reward_1
+      32:
+        rewards:
+          - reward_1
+
+fish:
+  enable: true
+
+  timeToComplete_seconds: 120
+  #__Leave the following 2 empty to disable them__
+  titleMessage: '&r '
+  subtitleMessage: '&r '
+
+  data:
+    #These values have to be valid minecraft material IDs (see Useful Links at the top of the file)
+    COD:
+      1:
+        #THE SUM OF ALL CHANCES OF REWARDS YOU ADD CANNOT EXCEED 100%
+        rewards:
+          - reward_1
+      3:
+        #THE SUM OF ALL CHANCES OF REWARDS YOU ADD CANNOT EXCEED 100%
+        rewards:
+          - reward_1
+    SALMON:
+      1:
+        #THE SUM OF ALL CHANCES OF REWARDS YOU ADD CANNOT EXCEED 100%
+        rewards:
+          - reward_1
+      3:
+        #THE SUM OF ALL CHANCES OF REWARDS YOU ADD CANNOT EXCEED 100%
+        rewards:
+          - reward_1
+    PUFFERFISH:
+      1:
+        #THE SUM OF ALL CHANCES OF REWARDS YOU ADD CANNOT EXCEED 100%
+        rewards:
+          - reward_1
+      3:
+        #THE SUM OF ALL CHANCES OF REWARDS YOU ADD CANNOT EXCEED 100%
+        rewards:
+          - reward_1
+    BOWL:
+      1:
+        #THE SUM OF ALL CHANCES OF REWARDS YOU ADD CANNOT EXCEED 100%
+        rewards:
+          - reward_1
+
+eat:
+  enable: false
+
+  timeToComplete_seconds: 60
+  #__Leave the following 2 empty to disable them__
+  titleMessage: '&r '
+  subtitleMessage: '&r '
+
+  data:
+    #These values have to be valid minecraft material IDs (see Useful Links at the top of the file)
+    COOKED_BEEF:
+      1:
+        #THE SUM OF ALL CHANCES OF REWARDS YOU ADD CANNOT EXCEED 100%
+        rewards:
+          - reward_1
+      2:
+        #THE SUM OF ALL CHANCES OF REWARDS YOU ADD CANNOT EXCEED 100%
+        rewards:
+          - reward_1
+    COOKED_CHICKEN:
+      1:
+        rewards:
+          - reward_1
+      2:
+        rewards:
+          - reward_1
+    BAKED_POTATO:
+      1:
+        rewards:
+          - reward_1
+      2:
+        rewards:
+          - reward_1
+    BREAD:
+      1:
+        rewards:
+          - reward_1
+      2:
+        rewards:
+          - reward_1
+    GOLDEN_APPLE:
+      1:
+        rewards:
+          - reward_1
+
+craft:
+  enable: true
+
+  timeToComplete_seconds: 120
+  #__Leave the following 2 empty to disable them__
+  titleMessage: '&r '
+  subtitleMessage: '&r '
+
+  data:
+    #These values have to be valid minecraft material IDs (see Useful Links at the top of the file)
+    FURNACE:
+      2:
+        #THE SUM OF ALL CHANCES OF REWARDS YOU ADD CANNOT EXCEED 100%
+        rewards:
+          - reward_1
+      4:
+        #THE SUM OF ALL CHANCES OF REWARDS YOU ADD CANNOT EXCEED 100%
+        rewards:
+          - reward_1
+      8:
+        #THE SUM OF ALL CHANCES OF REWARDS YOU ADD CANNOT EXCEED 100%
+        rewards:
+          - reward_1
+    CHEST:
+      2:
+        #THE SUM OF ALL CHANCES OF REWARDS YOU ADD CANNOT EXCEED 100%
+        rewards:
+          - reward_1
+      4:
+        #THE SUM OF ALL CHANCES OF REWARDS YOU ADD CANNOT EXCEED 100%
+        rewards:
+          - reward_1
+      8:
+        #THE SUM OF ALL CHANCES OF REWARDS YOU ADD CANNOT EXCEED 100%
+        rewards:
+          - reward_1
+    CRAFTING_TABLE:
+      4:
+        #THE SUM OF ALL CHANCES OF REWARDS YOU ADD CANNOT EXCEED 100%
+        rewards:
+          - reward_1
+      8:
+        #THE SUM OF ALL CHANCES OF REWARDS YOU ADD CANNOT EXCEED 100%
+        rewards:
+          - reward_1
+      12:
+        #THE SUM OF ALL CHANCES OF REWARDS YOU ADD CANNOT EXCEED 100%
+        rewards:
+          - reward_1
+    TORCH:
+      32:
+        #THE SUM OF ALL CHANCES OF REWARDS YOU ADD CANNOT EXCEED 100%
+        rewards:
+          - reward_1
+      48:
+        #THE SUM OF ALL CHANCES OF REWARDS YOU ADD CANNOT EXCEED 100%
+        rewards:
+          - reward_1
+      64:
+        #THE SUM OF ALL CHANCES OF REWARDS YOU ADD CANNOT EXCEED 100%
+        rewards:
+          - reward_1
+
+furnace:
+  enable: true
+
+  timeToComplete_seconds: 150
+  #__Leave the following 2 empty to disable them__
+  titleMessage: '&r '
+  subtitleMessage: '&r '
+
+  data:
+    #These values have to be valid minecraft material IDs (see Useful Links at the top of the file)
+    GOLD_INGOT:
+      3:
+        #THE SUM OF ALL CHANCES OF REWARDS YOU ADD CANNOT EXCEED 100%
+        rewards:
+          - reward_1
+      6:
+        #THE SUM OF ALL CHANCES OF REWARDS YOU ADD CANNOT EXCEED 100%
+        rewards:
+          - reward_1
+      9:
+        #THE SUM OF ALL CHANCES OF REWARDS YOU ADD CANNOT EXCEED 100%
+        rewards:
+          - reward_1
+    IRON_INGOT:
+      3:
+        #THE SUM OF ALL CHANCES OF REWARDS YOU ADD CANNOT EXCEED 100%
+        rewards:
+          - reward_1
+      6:
+        #THE SUM OF ALL CHANCES OF REWARDS YOU ADD CANNOT EXCEED 100%
+        rewards:
+          - reward_1
+      9:
+        #THE SUM OF ALL CHANCES OF REWARDS YOU ADD CANNOT EXCEED 100%
+        rewards:
+          - reward_1
+    COOKED_BEEF:
+      3:
+        #THE SUM OF ALL CHANCES OF REWARDS YOU ADD CANNOT EXCEED 100%
+        rewards:
+          - reward_1
+      6:
+        #THE SUM OF ALL CHANCES OF REWARDS YOU ADD CANNOT EXCEED 100%
+        rewards:
+          - reward_1
+      9:
+        #THE SUM OF ALL CHANCES OF REWARDS YOU ADD CANNOT EXCEED 100%
+        rewards:
+          - reward_1
+    COOKED_COD:
+      3:
+        #THE SUM OF ALL CHANCES OF REWARDS YOU ADD CANNOT EXCEED 100%
+        rewards:
+          - reward_1
+      6:
+        #THE SUM OF ALL CHANCES OF REWARDS YOU ADD CANNOT EXCEED 100%
+        rewards:
+          - reward_1
+      9:
+        #THE SUM OF ALL CHANCES OF REWARDS YOU ADD CANNOT EXCEED 100%
+        rewards:
+          - reward_1
