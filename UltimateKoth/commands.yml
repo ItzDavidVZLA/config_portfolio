@@ -1,0 +1,205 @@
+Commands:
+  list:
+    koth:
+      help:
+        permission: ukoths.player.help
+        alias: ajuda
+        # Active currency amount charged to use the command. This options can be applied to all commands.
+        value: 0.0
+        # in seconds
+        cooldown: 0
+         # Title options can be applied to all commands. Clan placeholders can be applied to texts.
+        title:
+          on_help: ''
+          on_success: ''
+          on_error: ''
+         # Actionbar options can be applied to all commands. Clan placeholders can be applied to texts.
+        actionbar:
+          on_help: ''
+          on_success: ''
+          on_error: ''
+      cancel:
+        permission: ukoths.player.cancel
+        alias: cancelar
+        # Active currency amount charged to use the command. This options can be applied to all commands.
+        value: 0
+        # in seconds
+        cooldown: 0
+      stats:
+        permission: koths.player.stats
+        alias: status
+      events:
+        permission: koths.player.events
+        alias: eventos
+        subcommands:
+        - next
+        - all
+      info:
+        permission: koths.admin.info
+        alias: informacao
+      loots:
+        permission: koths.admin.loots
+        alias: saque
+      warp:
+        permission: ukoth.player.warp
+        alias: warp
+        subcommands:
+        - list
+        - go
+    ukoth:
+      help:
+        permission: ukoths.admin.help
+        alias: ajuda
+         # Title options can be applied to all commands. Clan placeholders can be applied to texts.
+        title:
+          on_help: ''
+          on_success: ''
+          on_error: ''
+         # Actionbar options can be applied to all commands. Clan placeholders can be applied to texts.
+        actionbar:
+          on_help: ''
+          on_success: ''
+          on_error: ''
+      start:
+        permission: ukoths.admin.start
+        alias: iniciar
+      stop:
+        permission: ukoths.admin.stop
+        alias: parar
+      tp:
+        permission: ukoths.admin.tp
+        alias: teleportar
+      reload:
+        permission: ukoths.admin.reload
+        alias: recarregar
+      wand:
+        permission: ukoths.admin.wand
+        alias: wand
+      create:
+        permission: ukoths.admin.create
+        alias: criar
+      move:
+        permission: ukoths.admin.move
+        alias: mover
+      delete:
+        permission: ukoths.admin.delete
+        alias: deletar
+      list:
+        permission: ukoths.admin.list
+        alias: listar
+      view:
+        permission: ukoths.admin.view
+        alias: ver
+      commands:
+        permission: ukoths.admin.commands
+        alias: comandos
+        subcommands:
+        - list
+        - add
+        - remove
+      loots:
+        permission: ukoths.admin.loots
+        alias: loot
+        subcommands:
+        - add
+        - list
+        - type
+        - chance
+      keys:
+        permission: ukoths.admin.keys
+        alias: keys
+        subcommands:
+        - listblocks
+        - toggle
+        - wand
+        - give
+        - blocktp
+      seticon:
+        permission: ukoths.admin.seticon
+        alias: seticone
+      proximity:
+        permission: ukoths.admin.proximity
+        alias: proximidade
+        subcommands:
+        - toggle
+        - setsize
+      scheduler:
+        permission: ukoths.admin.scheduler
+        alias: agendador
+        subcommands:
+        - create
+        - remove
+        - list
+        - minplayers
+      setcapture:
+        permission: ukoths.admin.setcapture
+        alias: setcapturador
+      maxtime:
+        permission: ukoths.admin.maxtime
+        alias: maxtime
+        subcommands:
+        - toggle
+        - setsize
+        - endaction
+      hologram:
+        permission: ukoths.admin.hologram
+        alias: holo
+        subcommands:
+        - create
+        - list
+        - delete
+        - tp
+        - movehere
+      stats:
+        permission: ukoths.admin.stats
+        alias: status
+        subcommands:
+        - list
+        - clearall
+        - remove
+        - add
+      extension:
+        permission: ukoths.admin.extension
+        alias: ext
+        subcommands:
+        - all
+        - list
+        - download
+        - update
+        - reload
+        - view
+      adminmode:
+        permission: ukoths.admin.adminmode
+        alias: adm
+      starter:
+        permission: ukoths.admin.starter
+        alias: starter
+        subcommands:
+        - toggle
+        - give
+      setpos:
+        permission: ukoth.admin.setpos
+        alias: setpos
+      setname:
+        permission: ukoth.admin.setname
+        alias: setname
+      warp:
+        permission: ukoth.admin.warp
+        alias: warp
+        subcommands:
+        - set
+        - remove
+        - teleport
+      settings:
+        permission: ukoth.admin.settings
+        alias: sett
+      mode:
+        permission: ukoth.admin.mode
+        alias: mode
+        subcommands:
+        - list
+        - set
+        - info
+      setcenter:
+        permission: ukoth.admin.setcenter
+        alias: setcenter

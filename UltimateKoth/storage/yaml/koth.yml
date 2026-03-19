@@ -1,0 +1,163 @@
+data:
+  8bac9667-63cf-4a12-a74c-d22f817af71e:
+    name: Titanic
+    loc1: titanic_map|814_0|124_0|-1161_0|0_0|0_0
+    loc2: titanic_map|808_0|119_0|-1155_0|0_0|0_0
+    commands: [
+      ]
+    capture_time: 180
+    loot_type: INV
+    loot_chance: 100
+    key_settings:
+      enabled: true
+      amount: '1'
+    proximity_settings:
+      size: '1'
+      type: BLOCKS
+    maxtime_settings:
+      enabled: false
+      size: '180'
+      end_action: END
+      border_color: RED
+    general_settings:
+      allow_without_group: true
+  7ed173a5-d4b1-4dc8-b6ba-727f1f3306f7:
+    name: Nether
+    color_name: <gradient:#cd2727:#d15f21><bold>Nether</bold></gradient>
+    loc1: world_nether|-33_0|182_0|10_0|0_0|0_0
+    loc2: world_nether|-27_0|177_0|4_0|0_0|0_0
+    center: world_nether|-30_0|255_0|7_0|0_0|0_0
+    commands: [
+      ]
+    capture_time: 180
+    loot_type: INV
+    loot_chance: 100
+    loot_max_amount: 100
+    loot_group: true
+    owner: SYSTEM
+    counter: 7
+    warp: ''
+    mode: KOTH
+    key_settings:
+      enabled: true
+      amount: '1'
+    proximity_settings:
+      size: '16'
+      type: ALLWORLDS
+    maxtime_settings:
+      enabled: true
+      size: '600'
+      end_action: END
+      border_color: RED
+    general_settings:
+      allow_without_group: true
+      auto_destroy: false
+      allow_player_warp: false
+      visible_to_players: true
+      stop_time_in_dispute: false
+      use_central_hologram: true
+  5655637b-ed3c-4374-82ad-4dc870696d42:
+    name: Vanilla
+    color_name: <gradient:#cd2727:#d15f21><bold>Vanilla</bold></gradient>
+    loc1: pvpvanilla|3_0|102_0|-3_0|0_0|0_0
+    loc2: pvpvanilla|-3_0|99_0|3_0|0_0|0_0
+    center: pvpvanilla|0_0|114_0|0_0|0_0|0_0
+    commands: [
+      ]
+    capture_time: 180
+    loot_type: INV
+    loot_chance: 100
+    loot_max_amount: 100
+    loot_group: true
+    owner: SYSTEM
+    counter: 4
+    warp: ''
+    mode: KOTH
+    key_settings:
+      enabled: true
+      amount: '1'
+    proximity_settings:
+      size: '16'
+      type: ALLWORLDS
+    maxtime_settings:
+      enabled: true
+      size: '600'
+      end_action: END
+      border_color: RED
+    general_settings:
+      allow_without_group: true
+      auto_destroy: false
+      allow_player_warp: false
+      visible_to_players: true
+      stop_time_in_dispute: false
+      use_central_hologram: true
+  71d57eef-9cb9-4e36-b679-3c7e2e22bdc8:
+    name: End
+    color_name: <gradient:#cd2727:#d15f21><bold>End</bold></gradient>
+    loc1: world_the_end2|13_0|141_0|-575_0|0_0|0_0
+    loc2: world_the_end2|19_0|138_0|-569_0|0_0|0_0
+    center: world_the_end2|16_0|138_0|-572_0|0_0|0_0
+    commands: [
+      ]
+    capture_time: 180
+    loot_type: INV
+    loot_chance: 100
+    loot_max_amount: 100
+    loot_group: true
+    owner: SYSTEM
+    counter: 1
+    warp: ''
+    mode: KOTH
+    key_settings:
+      enabled: true
+      amount: '1'
+    proximity_settings:
+      size: '16'
+      type: ALLWORLDS
+    maxtime_settings:
+      enabled: true
+      size: '600'
+      end_action: END
+      border_color: RED
+    general_settings:
+      allow_without_group: true
+      auto_destroy: false
+      allow_player_warp: false
+      visible_to_players: true
+      stop_time_in_dispute: false
+      use_central_hologram: true
+  6bf0ca0a-4034-4e58-a84a-6742c99b1f13:
+    name: PvP
+    color_name: <gradient:#cd2727:#d15f21><bold>PvP</bold></gradient>
+    loc1: spawn|9997_0|93_0|9915_0|0_0|0_0
+    loc2: spawn|10003_0|90_0|9921_0|0_0|0_0
+    center: spawn|10000_0|121_0|9918_0|0_0|0_0
+    commands: [
+      ]
+    capture_time: 180
+    loot_type: INV
+    loot_chance: 100
+    loot_max_amount: 100
+    loot_group: true
+    owner: SYSTEM
+    counter: 12
+    warp: ''
+    mode: KOTH
+    key_settings:
+      enabled: true
+      amount: '1'
+    proximity_settings:
+      size: '16'
+      type: ALLWORLDS
+    maxtime_settings:
+      enabled: true
+      size: '600'
+      end_action: END
+      border_color: RED
+    general_settings:
+      allow_without_group: true
+      auto_destroy: false
+      allow_player_warp: false
+      visible_to_players: true
+      stop_time_in_dispute: false
+      use_central_hologram: false

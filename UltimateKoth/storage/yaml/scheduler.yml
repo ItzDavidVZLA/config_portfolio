@@ -1,0 +1,65 @@
+data:
+  980f7916-4be6-4eae-8373-1c41f3221c7d:
+    koth_id: 6bf0ca0a-4034-4e58-a84a-6742c99b1f13
+    frequency: WEEKLY
+    month_day: 0
+    week_day: SATURDAY
+    hour: 1
+    minute: 0
+    min_players: 6
+  3d9c6220-7434-49f3-8a3b-e4852fba2bb6:
+    koth_id: 6bf0ca0a-4034-4e58-a84a-6742c99b1f13
+    frequency: WEEKLY
+    month_day: 0
+    week_day: SUNDAY
+    hour: 1
+    minute: 0
+    min_players: 6
+  f8d4a3fd-dc02-46f7-a159-7fbd026c2d30:
+    koth_id: 5655637b-ed3c-4374-82ad-4dc870696d42
+    frequency: WEEKLY
+    month_day: 0
+    week_day: SATURDAY
+    hour: 3
+    minute: 0
+    min_players: 6
+  a4c3b04e-d03e-4ad7-8ebc-5abf2e89f55f:
+    koth_id: 5655637b-ed3c-4374-82ad-4dc870696d42
+    frequency: WEEKLY
+    month_day: 0
+    week_day: SUNDAY
+    hour: 3
+    minute: 0
+    min_players: 6
+  fa3a97a4-dff8-4d2c-a8b7-1b5712398a08:
+    koth_id: 71d57eef-9cb9-4e36-b679-3c7e2e22bdc8
+    frequency: WEEKLY
+    month_day: 0
+    week_day: SATURDAY
+    hour: 20
+    minute: 0
+    min_players: 6
+  8ce498c3-3caa-463f-87d7-0ee4a4133b4d:
+    koth_id: 71d57eef-9cb9-4e36-b679-3c7e2e22bdc8
+    frequency: WEEKLY
+    month_day: 0
+    week_day: SUNDAY
+    hour: 20
+    minute: 0
+    min_players: 6
+  55ae7657-6784-4a0e-b192-2f65d2021d32:
+    koth_id: 7ed173a5-d4b1-4dc8-b6ba-727f1f3306f7
+    frequency: WEEKLY
+    month_day: 0
+    week_day: SATURDAY
+    hour: 22
+    minute: 0
+    min_players: 6
+  e1236a22-d6df-41fe-970a-6eabb0098478:
+    koth_id: 7ed173a5-d4b1-4dc8-b6ba-727f1f3306f7
+    frequency: WEEKLY
+    month_day: 0
+    week_day: SUNDAY
+    hour: 22
+    minute: 0
+    min_players: 6

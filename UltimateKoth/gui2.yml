@@ -1,0 +1,318 @@
+General:
+  admin_koth_loot_chance:
+    opensound: ''
+    # Make sure the item slot does not exceed the number of slots
+    rows: 5
+    items:
+      fill:
+        material: STAINED_GLASS_PANE:1
+        amount: 1
+        glow: false
+        slot: 0
+        # This option can be applied to all items
+        # This option will add the same item to multiple slots.
+        mimeslots:
+        - ALL
+        # This option can be applied to all items
+        # Add custom nbts
+        nbt:
+        - ExampleNbt:String
+        # This option can be applied to all items
+        # Add CustomModelData value.
+        model: 0
+      fill2:
+        material: STAINED_GLASS_PANE:14
+        amount: 1
+        glow: false
+        slot: 36
+        # This option can be applied to all items
+        # This option will add the same item to multiple slots.
+        mimeslots:
+        - 36
+        - 37
+        - 38
+        - 39
+        - 40
+        - 41
+        - 42
+        - 43
+        - 44
+        # This option can be applied to all items
+        # Add custom nbts
+        nbt:
+        - ExampleNbt:String
+        # This option can be applied to all items
+        # Add CustomModelData value.
+        model: 0
+      current:
+        clicksound: ''
+        material: HOPPER
+        glow: true
+        texture: ''
+        amount: 1
+        slot: 13
+      add:
+        clicksound: ''
+        material: DIAMOND
+        glow: true
+        texture: ''
+        amount: 1
+        slot: 20
+      remove:
+        clicksound: ''
+        material: REDSTONE
+        glow: true
+        texture: ''
+        amount: 1
+        slot: 24
+      back:
+        clicksound: ''
+        material: IRON_DOOR
+        glow: true
+        texture: ''
+        amount: 1
+        slot: 40
+  admin_koth_extension:
+    opensound: ''
+    # Make sure the item slot does not exceed the number of slots
+    rows: 4
+    # This option is only used for list menus with pagination
+    pagesize: 0
+    items:
+      fill:
+        material: ORANGE_STAINED_GLASS_PANE
+        amount: 1
+        glow: false
+        slot: 0
+        # This option can be applied to all items
+        # This option will add the same item to multiple slots.
+        mimeslots:
+        - ALL
+      fill2:
+        material: RED_STAINED_GLASS_PANE
+        amount: 1
+        glow: false
+        slot: 27
+        # This option can be applied to all items
+        # This option will add the same item to multiple slots.
+        mimeslots:
+        - 28
+        - 29
+        - 30
+        - 31
+        - 32
+        - 33
+        - 34
+        - 35
+      all:
+        clicksound: ''
+        material: DETECTOR_RAIL
+        glow: true
+        texture: ''
+        amount: 1
+        slot: 11
+      instaled:
+        clicksound: ''
+        material: POWERED_RAIL
+        glow: true
+        texture: ''
+        amount: 1
+        slot: 13
+      reload:
+        clicksound: ''
+        material: REDSTONE_BLOCK
+        glow: true
+        texture: ''
+        amount: 1
+        slot: 16
+      back:
+        clicksound: ''
+        material: IRON_DOOR
+        glow: true
+        texture: ''
+        amount: 1
+        slot: 35
+  admin_koth_extension_list:
+    opensound: ''
+    # Make sure the item slot does not exceed the number of slots
+    rows: 6
+    # This option is only used for list menus with pagination
+    pagesize: 45
+    items:
+      fill:
+        material: RED_STAINED_GLASS_PANE
+        amount: 1
+        glow: false
+        slot: 45
+        # This option can be applied to all items
+        # This option will add the same item to multiple slots.
+        mimeslots:
+        - 46
+        - 47
+        - 48
+        - 49
+        - 50
+        - 51
+        - 52
+        - 53
+        # This option can be applied to all items
+        # Add custom nbts
+        nbt:
+        - ExampleNbt:String
+        # This option can be applied to all items
+        # Add CustomModelData value.
+        model: 0
+      current_all:
+        clicksound: ''
+        material: RAIL
+        glow: true
+        texture: ''
+        amount: 1
+      current_instaled:
+        clicksound: ''
+        material: RAIL
+        glow: true
+        texture: ''
+        amount: 1
+      next:
+        clicksound: ''
+        material: ARROW
+        glow: true
+        texture: ''
+        amount: 1
+        slot: 51
+      prev:
+        clicksound: ''
+        material: ARROW
+        glow: true
+        texture: ''
+        amount: 1
+        slot: 47
+      back:
+        clicksound: ''
+        material: IRON_DOOR
+        glow: true
+        texture: ''
+        amount: 1
+        slot: 53
+  admin_koth_mode_list:
+    opensound: ''
+    # Make sure the item slot does not exceed the number of slots
+    rows: 6
+    # This option is only used for list menus with pagination
+    pagesize: 45
+    items:
+      fill:
+        material: RED_STAINED_GLASS_PANE
+        amount: 1
+        glow: false
+        slot: 45
+        # This option can be applied to all items
+        # This option will add the same item to multiple slots.
+        mimeslots:
+        - 46
+        - 47
+        - 48
+        - 49
+        - 50
+        - 51
+        - 52
+        - 53
+        # This option can be applied to all items
+        # Add custom nbts
+        nbt:
+        - ExampleNbt:String
+        # This option can be applied to all items
+        # Add CustomModelData value.
+        model: 0
+      current:
+        clicksound: ''
+        material: CHEST_MINECART
+        glow: true
+        texture: ''
+        amount: 1
+      enabled:
+        clicksound: ''
+        material: CHEST_MINECART
+        glow: true
+        texture: ''
+        amount: 1
+        slot: 49
+      next:
+        clicksound: ''
+        material: ARROW
+        glow: true
+        texture: ''
+        amount: 1
+        slot: 51
+      prev:
+        clicksound: ''
+        material: ARROW
+        glow: true
+        texture: ''
+        amount: 1
+        slot: 47
+      back:
+        clicksound: ''
+        material: IRON_DOOR
+        glow: true
+        texture: ''
+        amount: 1
+        slot: 53
+  admin_general_mode_list:
+    opensound: ''
+    # Make sure the item slot does not exceed the number of slots
+    rows: 6
+    # This option is only used for list menus with pagination
+    pagesize: 45
+    items:
+      fill:
+        material: RED_STAINED_GLASS_PANE
+        amount: 1
+        glow: false
+        slot: 45
+        # This option can be applied to all items
+        # This option will add the same item to multiple slots.
+        mimeslots:
+        - 46
+        - 47
+        - 48
+        - 49
+        - 50
+        - 51
+        - 52
+        - 53
+        # This option can be applied to all items
+        # Add custom nbts
+        nbt:
+        - ExampleNbt:String
+        # This option can be applied to all items
+        # Add CustomModelData value.
+        model: 0
+      current:
+        clicksound: ''
+        material: CHEST_MINECART
+        glow: true
+        texture: ''
+        amount: 1
+      next:
+        clicksound: ''
+        material: ARROW
+        glow: true
+        texture: ''
+        amount: 1
+        slot: 51
+      prev:
+        clicksound: ''
+        material: ARROW
+        glow: true
+        texture: ''
+        amount: 1
+        slot: 47
+      back:
+        clicksound: ''
+        material: IRON_DOOR
+        glow: true
+        texture: ''
+        amount: 1
+        slot: 53

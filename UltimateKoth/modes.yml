@@ -1,0 +1,8 @@
+ 
+Modes:
+  comum:
+    name: KOTH
+  percent:
+    registername: PercentageEvent
+    icon: PUMPKIN_PIE
+    description: Capture event with percentage.

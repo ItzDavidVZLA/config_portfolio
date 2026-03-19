@@ -1,0 +1,187 @@
+Plugin:
+  check_for_updates: true
+ 
+Config:
+  tag: <#e1b128><bold>U</bold><gradient:#cd2727:#d15f21><bold>Koth</bold></gradient> <gray>|
+   
+  gui:
+    # The gui menus work as of 1.8 but you can turn it off and just use text mode
+    enabled: true
+    # Permission to use gui
+    player_permission: ukoth.player.gui
+    # Permission to use gui
+    admin_permission: ukoth.admin.gui
+    # Open gui menu when commands have no arguments
+    open_gui_noargs: true
+    # Open gui menu when commands have no arguments
+    admin_open_gui_noargs: true
+  date_format_short: dd/MM/yyyy
+  # You can insert your own languages the /language/ folder following the Lang_ID.yml pattern.
+  # Default languages:
+  # EN - English
+  # ES - Spanish
+  # RU - Russian
+  language: ES
+  disabled_command_regions:
+  - disabled_region
+  disabled_command_worlds:
+  - disabled_world
+  # IN SECONDS
+  announce_update_delay: 2
+   
+  effects:
+    debugmarker: false
+   
+  holograms:
+    ajust_y: 5.0
+    # in seconds
+    task: 5
+    default_maxlines: 10
+    # If it contains worldguard regions here, the wand will only work within those regions. If it is empty it will ignore it
+    enabled_regions: [
+      ]
+    # If it contains world names here, the wand will only work within those regions. If it is empty it will ignore it
+    enabled_worlds: [
+      ]
+    koth_central:
+      default_enabled: true
+      ajust_y: 4.0
+   
+  command:
+    sort_alphabetically: true
+    max_results_per_page: 8
+   
+  # Download the current version at: {THIS_REPO}/ExtensionName/ExtensionName-latest.version.jar
+  # Find the current version in: {THIS_REPO}/ExtensionName/{THIS_VERSION_FILE}.yml
+  extensions:
+    autodownload_enabled: false
+    repo: https://raw.githubusercontent.com/UlrichBR/UKoth/main/extensions/
+    list: extensions.yml
+    version_file: version.yml
+   
+  money:
+    enabled: true
+    currency: $
+    # Compatible Economy Plugins:
+    #CLANBANK - by UlrichBR
+    # VAULT - by Sleaker
+    # PLAYERPOINTS - by Esophose
+    # TOKENENCHANT - by TeamVK
+    type: VAULT
+   
+  koth:
+    default_icon: ARMOR_STAND
+    default_capture_time: 60
+    proximity:
+      enabled: true
+      # blocks around location
+      default: 16
+    maxtime:
+      enabled: true
+      # blocks around location
+      default: 300
+     
+    starter:
+      default_enabled: true
+      item:
+        material: SLIME_BALL
+        glow: true
+        name: <#cd2727>Koth Starter
+        lore:
+        - ''
+        - ' <white>Koth: %ukoth_name%'
+        - ' <white>Coord: <white>World: <aqua>%ukoth_world%, <white>X: <aqua>%ukoth_coord_x%, <white>Y: <aqua>%ukoth_coord_y%, <white>Z: <aqua>%ukoth_coord_z%'
+        - ''
+        - ' <yellow>Click to start the event'
+        force_kothicon: true
+     
+    key:
+      default_icon: TRIPWIRE_HOOK
+      default_glow: true
+      default_enabled: true
+      acceptable_blocks:
+      - CHEST
+      hologram:
+        enabled: true
+        task: 30
+        ajust_y: 1.5
+        lines:
+        - <red><bold>Koth Loots</bold>
+        - <aqua>Use the KEY to open!
+      # If it contains worldguard regions here, the wand will only work within those regions. If it is empty it will ignore it
+      enabled_regions: [
+        ]
+      # If it contains world names here, the wand will only work within those regions. If it is empty it will ignore it
+      enabled_worlds: [
+        ]
+    disable_knockback: false
+    default_name: <gradient:#cd2727:#d15f21><bold>{name}</bold></gradient>
+    warp:
+      #in seconds
+      teleport_time: 3
+      bypass_time: ukoth.bypass.warp_teleport
+      custom_warp_message: <gray>- <yellow>Use <#d15f21>/koth warp go %ukoth_id%<yellow> to teleport or <click:run_command:"/koth warp go %ukoth_id%"><hover:show_text:"<red>Click to view."><red>[CLICK HERE]</red></hover></click><yellow>.
+      custom_warp_message_disabled: <red>Warp disabled!
+      default_allow_player_warp: true
+   
+  group:
+    default_allow_without_group: true
+   
+  scoreboard:
+    enabled: false
+    recover_boards: true
+    # This mode activates the legacy sidebar, which is sensitive to the number of characters and should only use common colors without hex and gradient in variables.
+    simple_mode: false
+   
+  scheduler:
+    # Timezone is the definition of times by locations and countries. you can choose which timezone best fits your schedule
+    # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+    timezone: Europe/Madrid
+    # If a permission is added here the administrator will need this permission to edit timezone.
+    edit_permission: ukoth.admin.timezone.edit
+    # New defaults can be added by following the list below
+    flags:
+      default: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjgwZDMyOTVkM2Q5YWJkNjI3NzZhYmNiOGRhNzU2ZjI5OGE1NDVmZWU5NDk4YzRmNjlhMWMyYzc4NTI0YzgyNCJ9fX0=
+      africa: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTYxYTFlYWNjMTA1MjRkMWY0NWYyM2IwZTQ4N2JiMmZjMzM5NDhkOTY3NmI0MThiMTlhM2RhMGIxMDlkMGUzYyJ9fX0=
+      america: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTI1MDRlY2Q2ZDBhNjFiMzJhNDE5ZjIwOGFmNzZlZWJiMTllOWJjNDBmODViMDZiZmFiZGJlNTFhZWQ0M2RlIn19fQ==
+      antarctica: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmRiYzRiMjRlMzE4OWFiNDE5YjI5NDBmMzBmOWU4YjE2OTZiMWU0NTVjZmNhOTc4Nzc0NjVhNGNiNzVjNDEzIn19fQ==
+      asia: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmRiMDU2MTNmZTBhZTBmODk2ZTFjOTkxMDVhNWQ5MmEyODYyNjZiOTFlZWIwMzE2ZDdjZTM0MjNlNWYwZDU1OSJ9fX0=
+      arctic: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2I2MmE4YzNiOTgxZTgwMDUwZTgzNWY3ZjE3NjJmZmRkNmY1MmQwOTgxYjUwOTJiYjUyYzRmZGU0MTg4YjBjYyJ9fX0=
+      atlantic: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjY2MDE0OTAwODkzY2ZlNWY4ZmU3ZGZhZjBiMzUwYTc3Y2Y2ZmM1NzI5Y2U4NWJhYWY0OWZmOTA1ZWZhYmM2YSJ9fX0=
+      australia: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2JhNTg2YTZmMDdhMDk5YTU4ODM4YTlmYmVkODQ1ZWNmNzgwZmMyYTM5MGY3YTQ2MjBhN2RjZjBhODVlNzVhNCJ9fX0=
+      brazil: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWE0NjQ3NWQ1ZGNjODE1ZjZjNWYyODU5ZWRiYjEwNjExZjNlODYxYzBlYjE0ZjA4ODE2MWIzYzBjY2IyYjBkOSJ9fX0=
+      canada: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjI0MWE2OTdmNmRmYjFjNTdjZGEzMjdiYWE2NzMyYTc4MjhjMzk4YmU0ZWJmZGJkMTY2YzIzMmJjYWUyYiJ9fX0=
+      chile: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjRhODVhMjU1MTAwMDQwOTYxNzI3OTE5ZDEzOWU3MzVkZTZmNmE3OTZkNGVhZTk5MmVkNDE0ZWRiYzVkYmI4YSJ9fX0=
+      europe: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmFmZWMzYzdmYWIyYTM3MjkwNWZhM2ZjMWZiMjI4ZTc4M2JiOTNhNTNlNmQzMmU0NWViZGI0YTAyMThmY2NhIn19fQ==
+      indian: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmY4OWU0NmYxZDU0NTRjOTY3Njc2ZWZiNDk3N2E4NGExOGQwMDg0MzI2Yzc2YzdiZmM0ZTc4NDNiYjFhOTAxIn19fQ==
+      mexico: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2E5NzFiZmNmMzNiNDM5ODIxYjRlNWYwYzg2Y2Q2MTQzNWNkM2UwYzgxOWUzNWRkOTc3NGVmMDM5OWYxMzJiIn19fQ==
+      us: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGNhYzk3NzRkYTEyMTcyNDg1MzJjZTE0N2Y3ODMxZjY3YTEyZmRjY2ExY2YwY2I0YjM4NDhkZTZiYzk0YjQifX19
+    # You can program it to send pre-alerts at a certain time before the event starts.
+    # Commands sent to console, koth placeholders can be used here in external format, identifier is {koth}
+    # time in minutes
+    pre_alerts:
+      #example
+      #      list:
+      #        exemple_koth:
+      #          time_before: 10
+      #          commands:
+      #          - broadcast <red>The koth <aqua>%ukoth_{exemple_koth}_name% <red>will start in <aqua>{time} minutes<red>!
+      list: ''
+   
+  wand:
+    # If it contains worldguard regions here, the wand will only work within those regions. If it is empty it will ignore it
+    enabled_regions: [
+      ]
+    # If it contains world names here, the wand will only work within those regions. If it is empty it will ignore it
+    enabled_worlds: [
+      ]
+   
+  blocks:
+    manager:
+      enabled: false
+      just_started: true
+      bypass_permission: ukoths.bypass.block_manager
+ 
+# DONT CHANGE THIS
+version:
+  generated: 1.9.7
