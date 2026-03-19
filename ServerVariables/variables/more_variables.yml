@@ -1,0 +1,75 @@
+variables:
+  remaining_lives:
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 3
+    limitations:
+      min_value: 0
+  mm_zombieavanzado_kills:
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  mm_tempest_kills:
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  mm_balrog_kills:
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  mm_sentinel_kills:
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  mm_apex_kills:
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  mm_evoker_kills:
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  mm_abaddon_kills:
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  mm_abramelec_kills:
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  mm_abraxas_kills:
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  mm_sentey_kills:
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  mm_cerdo_erratico_kills:
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  mm_caballero_infernal_kills:
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  mm_sentey_kills:
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  mm_enderman_salvaje_kills:
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  mm_endermite_membranoso_kills:
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  quest_agricultor_trigo_completado:
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  quest_cazador_completado:
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0

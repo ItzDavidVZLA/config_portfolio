@@ -1,0 +1,322 @@
+decoracion:
+  name: "Decoración"
+  size: 54
+  fillItem:
+    material: BLACK_STAINED_GLASS_PANE
+    name: " "
+  buttons:
+    goBack:
+      slot: 49
+    previousPage:
+      slot: 47
+    nextPage:
+      slot: 51
+  items:
+    1:
+      type: item
+      item:
+        material: oak_leaves
+        quantity: 1
+      buyPrice: 200
+      slot: 10
+    2:
+      type: item
+      item:
+        material: spruce_leaves
+        quantity: 1
+      buyPrice: 200
+      slot: 11
+    3:
+      type: item
+      item:
+        material: birch_leaves
+        quantity: 1
+      buyPrice: 200
+      slot: 12
+    4:
+      type: item
+      item:
+        material: jungle_leaves
+        quantity: 1
+      buyPrice: 200
+      slot: 13
+    5:
+      type: item
+      item:
+        material: acacia_leaves
+        quantity: 1
+      buyPrice: 200
+      slot: 14
+    6:
+      type: item
+      item:
+        material: dark_oak_leaves
+        quantity: 1
+      buyPrice: 200
+      slot: 15
+    7:
+      type: item
+      item:
+        material: azalea
+        quantity: 1
+      buyPrice: 100
+      slot: 16
+    8:
+      type: item
+      item:
+        material: flowering_azalea
+        quantity: 1
+      buyPrice: 100
+      slot: 19
+    9:
+      type: item
+      item:
+        material: poppy
+        quantity: 1
+      buyPrice: 50
+      slot: 20
+    10:
+      type: item
+      item:
+        material: dandelion
+        quantity: 1
+      buyPrice: 50
+      slot: 21
+    11:
+      type: item
+      item:
+        material: blue_orchid
+        quantity: 1
+      buyPrice: 50
+      slot: 22
+    12:
+      type: item
+      item:
+        material: allium
+        quantity: 1
+      buyPrice: 50
+      slot: 23
+    13:
+      type: item
+      item:
+        material: azure_bluet
+        quantity: 1
+      buyPrice: 50
+      slot: 24
+    14:
+      type: item
+      item:
+        material: red_tulip
+        quantity: 1
+      buyPrice: 50
+      slot: 25
+    15:
+      type: item
+      item:
+        material: orange_tulip
+        quantity: 1
+      buyPrice: 50
+      slot: 28
+    16:
+      type: item
+      item:
+        material: white_tulip
+        quantity: 1
+      buyPrice: 50
+      slot: 29
+    17:
+      type: item
+      item:
+        material: pink_tulip
+        quantity: 1
+      buyPrice: 50
+      slot: 30
+    18:
+      type: item
+      item:
+        material: oxeye_daisy
+        quantity: 1
+      buyPrice: 50
+      slot: 31
+    19:
+      type: item
+      item:
+        material: cornflower
+        quantity: 1
+      buyPrice: 50
+      slot: 32
+    20:
+      type: item
+      item:
+        material: lily_of_the_valley
+        quantity: 1
+      buyPrice: 50
+      slot: 33
+    21:
+      type: item
+      item:
+        material: tall_grass
+        quantity: 1
+      buyPrice: 50
+      slot: 34
+    22:
+      type: item
+      item:
+        material: large_fern
+        quantity: 1
+      buyPrice: 50
+      slot: 37
+    23:
+      type: item
+      item:
+        material: sunflower
+        quantity: 1
+      buyPrice: 50
+      slot: 38
+    24:
+      type: item
+      item:
+        material: lilac
+        quantity: 1
+      buyPrice: 50
+      slot: 39
+    25:
+      type: item
+      item:
+        material: rose_bush
+        quantity: 1
+      buyPrice: 50
+      slot: 40
+    26:
+      type: item
+      item:
+        material: peony
+        quantity: 1
+      buyPrice: 50
+      slot: 41
+    27:
+      type: item
+      item:
+        material: sea_pickle
+        quantity: 1
+      buyPrice: 50
+      slot: 42
+    28:
+      type: item
+      item:
+        material: flower_pot
+        quantity: 1
+      buyPrice: 100
+      slot: 43
+    29:
+      type: item
+      item:
+        material: bamboo
+        quantity: 1
+      buyPrice: 100
+      slot: 10
+      page: 2
+    30:
+      type: item
+      item:
+        material: warped_fungus
+        quantity: 1
+      buyPrice: 50
+      slot: 12
+      page: 2
+    31:
+      type: item
+      item:
+        material: wither_rose
+        quantity: 1
+      buyPrice: 150
+      slot: 11
+      page: 2
+    32:
+      type: item
+      item:
+        material: crimson_fungus
+        quantity: 1
+      buyPrice: 50
+      slot: 13
+      page: 2
+    33:
+      type: item
+      item:
+        material: big_dripleaf
+        quantity: 1
+      buyPrice: 50
+      slot: 14
+      page: 2
+    34:
+      type: item
+      item:
+        material: small_dripleaf
+        quantity: 1
+      buyPrice: 50
+      slot: 15
+      page: 2
+    35:
+      type: item
+      item:
+        material: spore_blossom
+        quantity: 1
+      buyPrice: 50
+      slot: 16
+      page: 2
+    36:
+      type: item
+      item:
+        material: pointed_dripstone
+        quantity: 1
+      buyPrice: 50
+      slot: 19
+      page: 2
+    37:
+      type: item
+      item:
+        material: mangrove_propagule
+        quantity: 1
+      buyPrice: 50
+      slot: 20
+      page: 2
+    38:
+      type: item
+      item:
+        material: torchflower
+        quantity: 1
+      buyPrice: 50
+      slot: 21
+      page: 2
+    39:
+      type: item
+      item:
+        material: pitcher_plant
+        quantity: 1
+      buyPrice: 50
+      slot: 22
+      page: 2
+    40:
+      type: item
+      item:
+        material: pink_petals
+        quantity: 1
+      buyPrice: 50
+      slot: 23
+      page: 2
+    41:
+      type: item
+      item:
+        material: open_eyeblossom
+        quantity: 1
+      buyPrice: 75
+      slot: 24
+      page: 2
+    42:
+      type: item
+      item:
+        material: closed_eyeblossom
+        quantity: 1
+      buyPrice: 75
+      slot: 25
+      page: 2

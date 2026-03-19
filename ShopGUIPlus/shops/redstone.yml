@@ -1,0 +1,121 @@
+redstone:
+  name: "Mecanismos y redstone"
+  size: 54
+  fillItem:
+    material: BLACK_STAINED_GLASS_PANE
+    name: " "
+  buttons:
+    goBack:
+      slot: 49
+    previousPage:
+      slot: 47
+    nextPage:
+      slot: 51
+  items:
+    1:
+      type: item
+      item:
+        material: redstone
+        quantity: 1
+      buyPrice: 16
+      sellPrice: 3
+      slot: 10
+    2:
+      type: item
+      item:
+        material: redstone_block
+        quantity: 1
+      buyPrice: 145
+      sellPrice: 30
+      slot: 11
+    3:
+      type: item
+      item:
+        material: repeater
+        quantity: 1
+      buyPrice: 37.5
+      slot: 12
+    4:
+      type: item
+      item:
+        material: comparator
+        quantity: 1
+      buyPrice: 37.5
+      slot: 13
+    5:
+      type: item
+      item:
+        material: redstone_torch
+        quantity: 1
+      buyPrice: 15
+      slot: 14
+    6:
+      type: item
+      item:
+        material: lever
+        quantity: 1
+      buyPrice: 15
+      slot: 15
+    7:
+      type: item
+      item:
+        material: tripwire_hook
+        quantity: 1
+      buyPrice: 18.75
+      slot: 16
+    8:
+      type: item
+      item:
+        material: redstone_lamp
+        quantity: 1
+      buyPrice: 20
+      slot: 19
+    9:
+      type: item
+      item:
+        material: daylight_detector
+        quantity: 1
+      buyPrice: 15
+      slot: 20
+    10:
+      type: item
+      item:
+        material: hopper
+        quantity: 1
+      buyPrice: 5000
+      slot: 21
+    11:
+      type: item
+      item:
+        material: dropper
+        quantity: 1
+      buyPrice: 37.5
+      slot: 22
+    12:
+      type: item
+      item:
+        material: observer
+        quantity: 1
+      buyPrice: 40
+      slot: 23
+    13:
+      type: item
+      item:
+        material: dispenser
+        quantity: 1
+      buyPrice: 37.5
+      slot: 24
+    14:
+      type: item
+      item:
+        material: sticky_piston
+        quantity: 1
+      buyPrice: 150
+      slot: 25
+    15:
+      type: item
+      item:
+        material: piston
+        quantity: 1
+      buyPrice: 125
+      slot: 28

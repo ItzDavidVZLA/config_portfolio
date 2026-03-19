@@ -1,0 +1,535 @@
+bloques:
+  name: "Bloques"
+  size: 54
+  fillItem:
+    material: BLACK_STAINED_GLASS_PANE
+    name: " "
+  buttons:
+    goBack:
+      slot: 49
+    previousPage:
+      slot: 47
+    nextPage:
+      slot: 51
+  items:
+    1:
+      type: item
+      item:
+        material: sand
+        quantity: 1
+      buyPrice: 10.5
+      sellPrice: 3.5
+      slot: 31
+    2:
+      type: item
+      item:
+        material: red_sand
+        quantity: 1
+      buyPrice: 12.5
+      sellPrice: 4
+      slot: 33
+    3:
+      type: item
+      item:
+        material: oak_log
+        quantity: 1
+      buyPrice: 15
+      sellPrice: 5.5
+      slot: 23
+    4:
+      type: item
+      item:
+        material: spruce_log
+        quantity: 1
+      buyPrice: 15
+      sellPrice: 5.5
+      slot: 24
+    5:
+      type: item
+      item:
+        material: birch_log
+        quantity: 1
+      buyPrice: 15
+      sellPrice: 5.5
+      slot: 25
+    6:
+      type: item
+      item:
+        material: jungle_log
+        quantity: 1
+      buyPrice: 15
+      sellPrice: 5.5
+      slot: 28
+    7:
+      type: item
+      item:
+        material: acacia_log
+        quantity: 1
+      buyPrice: 20
+      sellPrice: 8.5
+      slot: 29
+    8:
+      type: item
+      item:
+        material: dark_oak_log
+        quantity: 1
+      buyPrice: 20
+      sellPrice: 8.5
+      slot: 30
+    9:
+      type: item
+      item:
+        material: stone
+        quantity: 1
+      buyPrice: 5
+      sellPrice: 0.5
+      slot: 19
+    10:
+      type: item
+      item:
+        material: granite
+        quantity: 1
+      buyPrice: 5
+      sellPrice: 0.5
+      slot: 20
+    11:
+      type: item
+      item:
+        material: diorite
+        quantity: 1
+      buyPrice: 5
+      sellPrice: 0.5
+      slot: 21
+    12:
+      type: item
+      item:
+        material: andesite
+        quantity: 1
+      buyPrice: 5
+      sellPrice: 0.5
+      slot: 22
+    13:
+      type: item
+      item:
+        material: grass_block
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 5
+      slot: 10
+    14:
+      type: item
+      item:
+        material: dirt
+        quantity: 1
+      buyPrice: 5
+      sellPrice: 0.5
+      slot: 11
+    15:
+      type: item
+      item:
+        material: podzol
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 3.5
+      slot: 12
+    16:
+      type: item
+      item:
+        material: mycelium
+        quantity: 1
+      buyPrice: 15
+      sellPrice: 4.5
+      slot: 13
+    17:
+      type: item
+      item:
+        material: red_sandstone
+        quantity: 1
+      buyPrice: 22.50
+      sellPrice: 8
+      slot: 34
+    18:
+      type: item
+      item:
+        material: glowstone
+        quantity: 1
+      buyPrice: 50
+      sellPrice: 5
+      slot: 38
+    19:
+      type: item
+      item:
+        material: ice
+        quantity: 1
+      buyPrice: 35
+      sellPrice: 7.5
+      slot: 37
+    20:
+      type: item
+      item:
+        material: netherrack
+        quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 39
+    21:
+      type: item
+      item:
+        material: soul_sand
+        quantity: 1
+      buyPrice: 35
+      sellPrice: 15
+      slot: 40
+    22:
+      type: item
+      item:
+        material: end_stone
+        quantity: 1
+      buyPrice: 45
+      sellPrice: 20
+      slot: 43
+    23:
+      type: item
+      item:
+        material: obsidian
+        quantity: 1
+      buyPrice: 650
+      sellPrice: 150
+      slot: 41
+    24:
+      type: item
+      item:
+        material: clay
+        quantity: 1
+      buyPrice: 18.5
+      sellPrice: 8.5
+      slot: 14
+    25:
+      type: item
+      item:
+        material: gravel
+        quantity: 1
+      buyPrice: 15
+      sellPrice: 5
+      slot: 15
+    26:
+      type: item
+      item:
+        material: cobblestone
+        quantity: 1
+      buyPrice: 5
+      sellPrice: 0.5
+      slot: 16
+    27:
+      type: item
+      item:
+        material: sandstone
+        quantity: 1
+      buyPrice: 20
+      sellPrice: 5
+      slot: 32
+    28:
+      type: item
+      item:
+        material: crying_obsidian
+        quantity: 1
+      buyPrice: 700
+      sellPrice: 150
+      slot: 42
+    29:
+      type: item
+      item:
+        material: prismarine
+        quantity: 1
+      buyPrice: 50
+      sellPrice: 15
+      slot: 10
+      page: 2
+    30:
+      type: item
+      item:
+        material: dark_prismarine
+        quantity: 1
+      buyPrice: 50
+      sellPrice: 15
+      slot: 11
+      page: 2
+    31:
+      type: item
+      item:
+        material: prismarine_bricks
+        quantity: 1
+      buyPrice: 50
+      sellPrice: 15
+      slot: 12
+      page: 2
+    32:
+      type: item
+      item:
+        material: polished_andesite
+        quantity: 1
+      buyPrice: 15
+      sellPrice: 5
+      slot: 13
+      page: 2
+    33:
+      type: item
+      item:
+        material: polished_diorite
+        quantity: 1
+      buyPrice: 15
+      sellPrice: 5
+      slot: 14
+      page: 2
+    34:
+      type: item
+      item:
+        material: polished_granite
+        quantity: 1
+      buyPrice: 15
+      sellPrice: 5
+      slot: 15
+      page: 2
+    35:
+      type: item
+      item:
+        material: purpur_pillar
+        quantity: 1
+      buyPrice: 21
+      sellPrice: 2.5
+      slot: 16
+      page: 2
+    36:
+      type: item
+      item:
+        material: purpur_block
+        quantity: 1
+      buyPrice: 23
+      sellPrice: 4.5
+      slot: 19
+      page: 2
+    37:
+      type: item
+      item:
+        material: bone_block
+        quantity: 1
+      buyPrice: 33.5
+      sellPrice: 9
+      slot: 20
+      page: 2
+    38:
+      type: item
+      item:
+        material: magma_block
+        quantity: 1
+      buyPrice: 35.5
+      sellPrice: 13.5
+      slot: 21
+      page: 2
+    39:
+      type: item
+      item:
+        material: red_nether_bricks
+        quantity: 1
+      buyPrice: 65.5
+      sellPrice: 21.5
+      slot: 22
+      page: 2
+    40:
+      type: item
+      item:
+        material: smooth_stone
+        quantity: 1
+      buyPrice: 25.5
+      sellPrice: 2.5
+      slot: 23
+      page: 2
+    41:
+      type: item
+      item:
+        material: mushroom_stem
+        quantity: 1
+      buyPrice: 25.5
+      sellPrice: 2.5
+      slot: 24
+      page: 2
+    42:
+      type: item
+      item:
+        material: smooth_quartz
+        quantity: 1
+      buyPrice: 37.5
+      sellPrice: 9.5
+      slot: 25
+      page: 2
+    43:
+      type: item
+      item:
+        material: smooth_sandstone
+        quantity: 1
+      buyPrice: 25.5
+      sellPrice: 4.5
+      slot: 28
+      page: 2
+    44:
+      type: item
+      item:
+        material: honey_block
+        quantity: 1
+      buyPrice: 33
+      sellPrice: 3
+      slot: 29
+      page: 2
+    45:
+      type: item
+      item:
+        material: honeycomb_block
+        quantity: 1
+      buyPrice: 43
+      sellPrice: 4.5
+      slot: 30
+      page: 2
+    46:
+      type: item
+      item:
+        material: calcite
+        quantity: 1
+      buyPrice: 35.5
+      sellPrice: 6.5
+      slot: 31
+      page: 2
+    47:
+      type: item
+      item:
+        material: chiseled_deepslate
+        quantity: 1
+      buyPrice: 35.5
+      sellPrice: 6.5
+      slot: 32
+      page: 2
+    48:
+      type: item
+      item:
+        material: cobbled_deepslate
+        quantity: 1
+      buyPrice: 29
+      sellPrice: 3.5
+      slot: 33
+      page: 2
+    49:
+      type: item
+      item:
+        material: cracked_deepslate_bricks
+        quantity: 1
+      buyPrice: 27
+      sellPrice: 3.5
+      slot: 34
+      page: 2
+    50:
+      type: item
+      item:
+        material: cracked_deepslate_tiles
+        quantity: 1
+      buyPrice: 27
+      sellPrice: 3.5
+      slot: 37
+      page: 2
+    51:
+      type: item
+      item:
+        material: deepslate
+        quantity: 1
+      buyPrice: 35
+      sellPrice: 6.5
+      slot: 38
+      page: 2
+    52:
+      type: item
+      item:
+        material: deepslate_bricks
+        quantity: 1
+      buyPrice: 37
+      sellPrice: 9
+      slot: 39
+      page: 2
+    53:
+      type: item
+      item:
+        material: deepslate_tiles
+        quantity: 1
+      buyPrice: 45
+      sellPrice: 12
+      slot: 40
+      page: 2
+    54:
+      type: item
+      item:
+        material: dripstone_block
+        quantity: 1
+      buyPrice: 40
+      sellPrice: 15
+      slot: 41
+      page: 2
+    55:
+      type: item
+      item:
+        material: rooted_dirt
+        quantity: 1
+      buyPrice: 25
+      sellPrice: 3
+      slot: 42
+      page: 2
+    56:
+      type: item
+      item:
+        material: smooth_basalt
+        quantity: 1
+      buyPrice: 32
+      sellPrice: 6
+      slot: 43
+      page: 2
+    57:
+      type: item
+      item:
+        material: reinforcered_deepslate
+        quantity: 1
+      buyPrice: 45
+      sellPrice: 12.5
+      slot: 10
+      page: 3
+    58:
+      type: item
+      item:
+        material: sculk
+        quantity: 1
+      buyPrice: 85
+      sellPrice: 15.5
+      slot: 10
+      page: 3
+    59:
+      type: item
+      item:
+        material: sculk_catalyst
+        quantity: 1
+      buyPrice: 95
+      sellPrice: 25
+      slot: 11
+      page: 3
+    60:
+      type: item
+      item:
+        material: sculk_vein
+        quantity: 1
+      buyPrice: 90
+      sellPrice: 20
+      slot: 12
+      page: 3
+    61:
+      type: item
+      item:
+        material: sculk_sensor
+        quantity: 1
+      buyPrice: 80
+      sellPrice: 20
+      slot: 13
+      page: 3

@@ -1,0 +1,137 @@
+mobdrops:
+  name: "Mob drops"
+  size: 54
+  fillItem:
+    material: BLACK_STAINED_GLASS_PANE
+    name: " "
+  buttons:
+    goBack:
+      slot: 49
+    previousPage:
+      slot: 47
+    nextPage:
+      slot: 51
+  items:
+    1:
+      type: item
+      item:
+        material: ROTTEN_FLESH
+        quantity: 1
+      buyPrice: 9
+      sellPrice: 8.5
+      slot: 10
+    2:
+      type: item
+      item:
+        material: GUNPOWDER
+        quantity: 1
+      buyPrice: 62.5
+      slot: 11
+    3:
+      type: item
+      item:
+        material: ENDER_PEARL
+        quantity: 1
+      buyPrice: 37.5
+      sellPrice: 10
+      slot: 12
+    4:
+      type: item
+      item:
+        material: SPIDER_EYE
+        quantity: 1
+      buyPrice: 25
+      sellPrice: 5
+      slot: 13
+    5:
+      type: item
+      item:
+        material: STRING
+        quantity: 1
+      buyPrice: 4
+      sellPrice: 0.5
+      slot: 14
+    6:
+      type: item
+      item:
+        material: ARROW
+        quantity: 1
+      buyPrice: 750
+      slot: 15
+    7:
+      type: item
+      item:
+        material: BONE
+        quantity: 1
+      buyPrice: 12.5
+      sellPrice: 6.5
+      slot: 16
+    8:
+      type: item
+      item:
+        material: SLIME_BALL
+        quantity: 1
+      buyPrice: 50
+      slot: 19
+    9:
+      type: item
+      item:
+        material: BLAZE_ROD
+        quantity: 1
+      buyPrice: 62.5
+      sellPrice: 37.5
+      slot: 20
+    10:
+      type: item
+      item:
+        material: PRISMARINE_SHARD
+        quantity: 1
+      buyPrice: 7
+      sellPrice: 0.75
+      slot: 21
+    11:
+      type: item
+      item:
+        material: PRISMARINE_CRYSTALS
+        quantity: 1
+      buyPrice: 7
+      sellPrice: 0.75
+      slot: 22
+    12:
+      type: item
+      item:
+        material: GOLD_NUGGET
+        quantity: 1
+      buyPrice: 16
+      slot: 23
+    13:
+      type: item
+      item:
+        material: GHAST_TEAR
+        quantity: 1
+      buyPrice: 50
+      sellPrice: 8
+      slot: 24
+    14:
+      type: item
+      item:
+        material: PHANTOM_MEMBRANE
+        quantity: 1
+      buyPrice: 40
+      sellPrice: 16
+      slot: 25
+    15:
+      type: item
+      item:
+        material: SHULKER_SHELL
+        quantity: 1
+      buyPrice: 60
+      sellPrice: 10
+      slot: 28
+    16:
+      type: item
+      item:
+        material: TOTEM_OF_UNDYING
+        quantity: 1
+      buyPrice: 10000
+      slot: 29

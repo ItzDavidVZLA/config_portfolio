@@ -1,0 +1,1008 @@
+database:
+  # Database backend type, can be set to mysql or sqlite
+  type: sqlite
+  # MySQL database host
+  mySQLHost: localhost
+  # MySQL connection port number
+  mySQLPort: 3306
+  # MySQL database name
+  mySQLDatabase: db
+  # MySQL database user
+  mySQLUser: root
+  # MySQL user's password
+  mySQLPassword: ""
+  # MySQL table names
+  tableNames:
+    players: "players"
+
+# Types of economies which will be enabled and possible to use within shops.
+# Supported economies:
+#  - EXP (default Minecraft experience points)
+#  - EXP_LEVELS (default Minecraft experience levels; integer prices recommended, prices are rounded down)
+#  - VAULT (requires https://www.spigotmc.org/resources/vault.34315/)
+#  - GEMS_ECONOMY (requires https://www.spigotmc.org/resources/gemseconomy.19655/)
+#  - GRINGOTTS (requires https://www.spigotmc.org/resources/gringotts.42071/)
+#  - MYSQL_TOKENS (requires https://www.spigotmc.org/resources/mysql-tokens.7535/)
+#  - PLAYER_POINTS (requires https://www.spigotmc.org/resources/playerpoints.80745/)
+#  - TOKEN_ENCHANT (requires https://www.spigotmc.org/resources/tokenenchant.2287/)
+#  - TOKEN_MANAGER (requires https://www.spigotmc.org/resources/tokenmanager.8610/)
+#  - VOTING_PLUGIN (requires https://www.spigotmc.org/resources/votingplugin.15358/)
+#  - COINS_ENGINE (requires https://www.spigotmc.org/resources/coinsengine.84121/)
+# First position will be the default economy for all shops.
+economyTypes:
+  - VAULT
+# Name of the main GUI
+shopMenuName: "Tienda"
+# Size of the main GUI, valid values are 9, 18, 27, 36, 45 and 54
+shopMenuSize: 54
+# Choose an item to fill the empty slots of menu with
+shopMenuFillItem:
+  material: AIR
+  name: " "
+# Define whether selling all with middle mouse button is enabled
+enableSellAll: true
+# Define whether the buy GUI with option to select quantity is enabled
+enableBuyGUI: true
+# Define whether the sell GUI with option to select quantity is enabled
+enableSellGUI: true
+# Define whether sell all button in SellGUI is enabled (enableSellGUI has to be enabled too)
+enableSellGUISellAll: true
+# Define whether after closing/buying/selling the shop GUI should be opened again
+returnToShop: true
+# Define whether the quick buy/sell option should be enabled (amount selection gui will stay open until player closes it)
+quickBuySell: false
+# Define whether lines containing the %buy% placeholder should be hidden for unbuyable items
+hideBuyPriceForUnbuyable: true
+# Choose placeholder for the price when hideBuyPriceForUnbuyable is disabled
+buyPriceForUnsellablePlaceholder: "-"
+# Define whether lines containing the %sell% placeholder should be hidden for unsellable items
+hideSellPriceForUnsellable: true
+# Choose placeholder for the price when hideSellPriceForUnsellable is disabled
+sellPriceForUnsellablePlaceholder: "-"
+# Choose actions for mouse clicks inside shops
+# Supported click types: all from ClickType enum (https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/inventory/ClickType.html)
+# Supported actions: BUY, SELL, SELL_ALL, NONE
+clickActions:
+  LEFT: BUY
+  RIGHT: SELL
+  SHIFT_RIGHT: SELL_ALL
+  MIDDLE: SELL_ALL
+# Maximum amount of enchantments players can add to an item, set to -1 for no limit
+maxEnchantments: 3
+# Choose whether players should be able to buy enchantments only 1 level higher than current (eg. player has sword with Sharpness 1, they could buy only Sharpness 2)
+limitEnchantmentLevelDiff: false
+# Define whether the amount selection double click bug fix should be enabled
+enableAmountSelectionFix: true
+# Define whether players should be able to use sell all option to sell all their items (allowAllSellAllStackSizes = true) or only amount multiplied by the original stack size of the shop item (allowAllSellAllStackSizes = false)
+allowAllSellAllStackSizes: false
+# Define whether all prices should be rounded up, down, to the nearest whole number or not rounded (valid values are UP, DOWN, NEAREST and NONE)
+roundPrices: none
+# Define whether main menu (/shop command) should be disabled. The only way to access shops will be to use /shop <id> when you disable it.
+disableMainMenu: false
+# Choose if different messages should be sent when someone buy/sell items for $0 (MSG_ITEM_BOUGHTFREE, MSG_ITEM_SOLDFREE, MSG_ITEM_SOLDALLFREE)
+useDifferentMessagesForFreeItems: true
+# Choose if item names should have first letters of their names capitalized, for instance nether brick would become Nether Brick
+capitalizeItemNames: true
+# Choose the type of price modifiers. (BOTH (permission modifiers have higher priority than command-ones), COMMAND, PERMISSION)
+priceModifiersType: BOTH
+# Choose if the gui shall be closed after using the Sell All feature
+closeGuiAfterSellAll: false
+# Choose if bulk buy/sell guis should be opened immediately after clicking an item (enableBuyGUI and enableSellGUI have to be enabled as well and players need the bulk buy/sell permissions)
+openBulkGuiImmediately: false
+# Choose if players who have the shop opened by console with /shop [player] should be able to access all shops regardless of permissions they have
+sudoAllowAllShopsAccess: false
+# Choose which items stack size should be capped at 16 inside the amount selection GUI so players can't buy eg. oversized ender pearl stacks
+# Format is same as for regular items in shops yaml
+# Note: For potions, it checks for exact match first. If none is found and potion without type is set here, it is used
+itemStackSizeCappedAt:
+  1:
+    material: ENDER_PEARL
+    size: 16
+  2:
+    material: SNOWBALL
+    size: 16
+  3:
+    material: EGG
+    size: 16
+  4:
+    material: BUCKET
+    size: 1
+# Choose what gamemodes will prevent players from accessing shops. Valid values: ADVENTURE, CREATIVE, SPECTATOR, SURVIVAL
+disableShopsInGamemodes:
+  - ADVENTURE
+  - CREATIVE
+  - SPECTATOR
+# Choose in which worlds players won't be able to access the shop. Same list format as disableShopsInGamemodes
+disableShopsInWorlds: [ ]
+
+# Choose whether price modifiers should be displayed in percents instead of decimals (eg. 10% instead of 0.10), remember you will still have to use the decimal way in commands
+displayPriceModifiersInPercents: true
+
+# Choose whether the world-specific permission to access shops should be omitted when player has a shop opened with /shop [player] [shop name]
+disableSudoWorldPermissionCheck: false
+
+# Choose whether the shop-specific permission to access shops should be omitted when player has a shop opened with /shop [player] [shop name]
+disableSudoShopPermissionCheck: false
+
+# Choose whether the Enchantment Item Types are allowed to enchant items with unsafe enchants. (eg. Sticks with Sharpness 25)
+disableUnsafeEnchantmentCheck: false
+
+# Choose sounds for certain GUI actions. Full list is available at https://docs.brcdev.net/#/sounds
+sounds:
+  MAIN_MENU_OPEN: UI_BUTTON_CLICK
+  SHOP_OPEN: UI_BUTTON_CLICK
+  SHOP_SELECT_ITEM: UI_BUTTON_CLICK
+  SHOP_SWITCH_PAGE: ITEM_BOOK_PAGE_TURN
+  SELL_ITEM: ENTITY_EXPERIENCE_ORB_PICKUP
+  SELL_ALL_ITEM: ENTITY_EXPERIENCE_ORB_PICKUP
+  BUY_ITEM: ENTITY_EXPERIENCE_ORB_PICKUP
+
+# Choose predefined settings for all items (will be overriden when set explicitly for an item in shops yaml)
+defaultItemSettings:
+  # Choose whether item meta (name, lore etc.) should be compared when players attempt to sell an item
+  compareMeta: false
+  # Choose whether item meta should be removed from an item when it's purchased by a player from the shop
+  stripItemMeta: false
+  # Choose whether item model should be compared when players attempt to sell an item
+  compareModel: true
+  # Choose whether item damage/durability should be compared when players attempt to sell an item
+  compareDamage: false
+  # Choose whether item NBT data should be compared when players attempt to sell an item
+  compareNbt: false
+
+# Format of item lores in shops, %buy% will be replaced with the buy price and %sell% with sell price
+shopItemLoreFormat:
+  # This lore will be applied to items
+  item:
+    - "&8Objeto"
+    - "&r "
+    - "&fPrecio de compra: &a%buy% ⛁"
+    - "&fPrecio de venta: &c%sell% ⛁"
+    - "&r "
+    - "&e» ¡Haz clic izquierdo para comprar! «"
+    - "&e» ¡Haz clic derecho para vender! «"
+    - "&e» ¡Haz shift + clic derecho para vender todo! «"
+  # This lore will be applied to items in the buy GUI (when enableBuyGUI is set to true)
+  itemBuyGUI:
+    - "&8Objeto"
+    - "&r "
+    - "&fPrecio de compra: &a%buy% ⛁"
+    - "&r "
+    - "&e» mc.comugamers.com «"
+  # This lore will be applied to items in the sell GUI (when enableSellGUI is set to true)
+  itemSellGUI:
+    - "&8Objeto"
+    - "&r "
+    - "&fPrecio de venta: &c%sell% ⛁"
+    - "&r "
+    - "&e» mc.comugamers.com «"
+  # This lore will be applied to the sell all button in the sell GUI (when enableSellGUI and enableSellGUISellAll are set to true)
+  itemSellGUISellAll:
+    - "&8Objeto"
+    - "&r "
+    - "&fShift + clic derecho para vender todo por: &a%sell% ⛁"
+    - "&r "
+    - "&e» mc.comugamers.com «"
+  # This one to permissions
+  permission:
+    - "&7Precio de compra: &c%buy%"
+  # And this one to enchantments
+  enchantment:
+    - "&7Precio de compra: &c%buy%"
+  # And the last one to commands
+  command:
+    - "&7Precio de compra: &c%buy%"
+
+# Logging settings
+log:
+  # Define whether transactions will be logged to the console/main server log
+  toConsole: true
+  # Define whether transactions will be logged to a separate log
+  toFile: false
+  # Date format of transactions (http://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html)
+  formatDate: "yyyy/MM/dd HH:mm:ss"
+  # Log message for bought command
+  formatBuyCommand: "%player% bought %amount% x %command% command for %price% from %shop% shop"
+  # Log message for bought enchantment
+  formatBuyEnchantment: "%player% bought %enchantment% enchantment for %price% from %shop% shop"
+  # Log message for bought permission
+  formatBuyPermission: "%player% bought %permission% permission for %price% from %shop% shop"
+  # Log message for bought items
+  formatBuy: "%player% bought %amount% x %item% for %price% from %shop% shop"
+  # Log message for sold items
+  formatSell: "%player% sold %amount% x %item% for %price% to %shop% shop"
+  # Log message for sold all items
+  formatSellAll: "%player% sold all %amount% x %item% for %price% to %shop% shop"
+
+# Sell hand command settings
+sellHand:
+  # When set to true, players will be able to sell any quantity of the item (the price will be calculated from the base price)
+  allowAllQuantities: true
+  # When set to true, /sell hand will work same way as /sell handall does
+  sellsAllItems: false
+  # When set to true, free items (with sell price of $0) will be excluded from being sold using /sell hand and /sell handall
+  excludeFreeItems: true
+  # When set to true, items in armor slots will be excluded from being sold using /sell hand and /sell handall
+  excludeArmorSlots: true
+  # When set to true, items in the off-hand slot will be excluded from being sold using /sell hand and handall
+  excludeOffHand: false
+
+# Sell all command settings
+sellAll:
+  # When set to true, players will get a detailed summary with prices of each item stack sold
+  detailedSummary: false
+  # Choose if maximal sell price of an item across all shops should be chosen in sell all. Enabling this may affect sell command performance when having lots of shops/items
+  findMaxSellPrice: true
+  # When set to true, free items (with sell price of $0) will be excluded from being sold using /sell all
+  excludeFreeItems: true
+  # When set to true, items in armor slots will be excluded from being sold using /sell all
+  excludeArmorSlots: true
+  # When set to true, items in the off-hand slot will be excluded from being sold using /sell all
+  excludeOffHand: false
+
+buttons:
+  # "Go back button"
+  goBack:
+    item:
+      # Material name, full list can be found here: https://docs.brcdev.net/#/materials
+      material: ARROW
+      # Amount of the item
+      amount: 1
+      # (optional) Data value, for example 1 for WOOD:1 means spruce wood planks
+      damage: 0
+      # (optional) Custom name
+      name: "&3Vol&bver"
+      # (optional) Lore, can contain multiple lines
+      lore:
+    # Slot in each shop's GUI
+    slot: 40
+  # "Previous page" button
+  previousPage:
+    item:
+      material: ARROW
+      quantity: 1
+      name: "&3Página &banterior"
+    slot: 39
+  # "Next page" button
+  nextPage:
+    item:
+      material: ARROW
+      quantity: 1
+      name: "&3Página &bposterior"
+    slot: 41
+
+# Elements of the bulk buy GUI
+amountSelectionGUIBulkBuy:
+  # Size of the GUI, valid values are 9, 18, 27, 36, 45 and 54
+  size: 18
+  # Fill item
+  fillItem:
+    material: BLACK_STAINED_GLASS_PANE
+    name: " "
+  # Choose if buttons type should be replaced with the bought item's type
+  replaceButtonsType: true
+  # Buttons
+  buttons:
+    # "Buy 1 stack" button
+    buy1:
+      item:
+        material: CHEST
+        quantity: 1
+        name: "&3Comprar &b1 stack"
+        lore:
+          - "&8Objeto"
+          - "&r "
+          - "&fPrecio: &a%buy% ⛁"
+          - "&r "
+          - "&e» ¡Haz clic para comprar! «"
+      # Value indicated the amount of stacks
+      value: 1
+      slot: 0
+    # "Buy 2 stacks" button
+    buy2:
+      item:
+        material: CHEST
+        quantity: 2
+        name: "&3Comprar &b2 stacks"
+        lore:
+          - "&8Objeto"
+          - "&r "
+          - "&fPrecio: &a%buy% ⛁"
+          - "&r "
+          - "&e» ¡Haz clic para comprar! «"
+      value: 2
+      slot: 1
+    # "Buy 3 stacks" button
+    buy3:
+      item:
+        material: CHEST
+        quantity: 3
+        name: "&3Comprar &b3 stacks"
+        lore:
+          - "&8Objeto"
+          - "&r "
+          - "&fPrecio: &a%buy% ⛁"
+          - "&r "
+          - "&e» ¡Haz clic para comprar! «"
+      value: 3
+      slot: 2
+    # "Buy 4 stacks" button
+    buy4:
+      item:
+        material: CHEST
+        quantity: 4
+        name: "&3Comprar &b4 stacks"
+        lore:
+          - "&8Objeto"
+          - "&r "
+          - "&fPrecio: &a%buy% ⛁"
+          - "&r "
+          - "&e» ¡Haz clic para comprar! «"
+      value: 4
+      slot: 3
+    # "Buy 5 stacks" button
+    buy5:
+      item:
+        material: CHEST
+        quantity: 5
+        name: "&3Comprar &b5 stacks"
+        lore:
+          - "&8Objeto"
+          - "&r "
+          - "&fPrecio: &a%buy% ⛁"
+          - "&r "
+          - "&e» ¡Haz clic para comprar! «"
+      value: 5
+      slot: 4
+    # "Buy 6 stacks" button
+    buy6:
+      item:
+        material: CHEST
+        quantity: 6
+        name: "&3Comprar &b6 stacks"
+        lore:
+          - "&8Objeto"
+          - "&r "
+          - "&fPrecio: &a%buy% ⛁"
+          - "&r "
+          - "&e» ¡Haz clic para comprar! «"
+      value: 6
+      slot: 5
+    # "Buy 7 stacks" button
+    buy7:
+      item:
+        material: CHEST
+        quantity: 7
+        name: "&3Comprar &b7 stacks"
+        lore:
+          - "&8Objeto"
+          - "&r "
+          - "&fPrecio: &a%buy% ⛁"
+          - "&r "
+          - "&e» ¡Haz clic para comprar! «"
+      value: 7
+      slot: 6
+    # "Buy 8 stacks" button
+    buy8:
+      item:
+        material: CHEST
+        quantity: 8
+        name: "&3Comprar &b8 stacks"
+        lore:
+          - "&8Objeto"
+          - "&r "
+          - "&fPrecio: &a%buy% ⛁"
+          - "&r "
+          - "&e» ¡Haz clic para comprar! «"
+      value: 8
+      slot: 7
+    # "Buy 9 stacks" button
+    buy9:
+      item:
+        material: CHEST
+        quantity: 9
+        name: "&3Comprar &b9 stacks"
+        lore:
+          - "&8Objeto"
+          - "&r "
+          - "&fPrecio: &a%buy% ⛁"
+          - "&r "
+          - "&e» ¡Haz clic para comprar! «"
+      value: 9
+      slot: 8
+    # "Cancel" button
+    cancel:
+      item:
+        material: RED_STAINED_GLASS
+        quantity: 1
+        name: "&cCancelar"
+      slot: 13
+
+# Elements of the bulk buy GUI
+amountSelectionGUIBulkSell:
+  # Size of the GUI, valid values are 9, 18, 27, 36, 45 and 54
+  size: 18
+  # Fill item
+  fillItem:
+    material: BLACK_STAINED_GLASS_PANE
+    name: " "
+  # Choose if buttons type should be replaced with the sold item's type
+  replaceButtonsType: true
+  # Buttons
+  buttons:
+    # "Sell 1 stack" button
+    sell1:
+      item:
+        material: CHEST
+        quantity: 1
+        name: "&3Vender &b1 stack"
+        lore:
+          - "&8Objeto"
+          - "&r "
+          - "&fPrecio: &c%sell% ⛁"
+          - "&r "
+          - "&e» ¡Haz clic para vender! «"
+      # Value indicated the amount of stacks
+      value: 1
+      slot: 0
+    # "Sell 2 stacks" button
+    sell2:
+      item:
+        material: CHEST
+        quantity: 2
+        name: "&3Vender &b2 stacks"
+        lore:
+          - "&8Objeto"
+          - "&r "
+          - "&fPrecio: &c%sell% ⛁"
+          - "&r "
+          - "&e» ¡Haz clic para vender! «"
+      value: 2
+      slot: 1
+    # "Sell 3 stacks" button
+    sell3:
+      item:
+        material: CHEST
+        quantity: 3
+        name: "&3Vender &b3 stacks"
+        lore:
+          - "&8Objeto"
+          - "&r "
+          - "&fPrecio: &c%sell% ⛁"
+          - "&r "
+          - "&e» ¡Haz clic para vender! «"
+      value: 3
+      slot: 2
+    # "Sell 4 stacks" button
+    sell4:
+      item:
+        material: CHEST
+        quantity: 4
+        name: "&3Vender &b4 stacks"
+        lore:
+          - "&8Objeto"
+          - "&r "
+          - "&fPrecio: &c%sell% ⛁"
+          - "&r "
+          - "&e» ¡Haz clic para vender! «"
+      value: 4
+      slot: 3
+    # "Sell 5 stacks" button
+    sell5:
+      item:
+        material: CHEST
+        quantity: 5
+        name: "&3Vender &b5 stacks"
+        lore:
+          - "&8Objeto"
+          - "&r "
+          - "&fPrecio: &c%sell% ⛁"
+          - "&r "
+          - "&e» ¡Haz clic para vender! «"
+      value: 5
+      slot: 4
+    # "Sell 6 stacks" button
+    sell6:
+      item:
+        material: CHEST
+        quantity: 6
+        name: "&3Vender &b6 stacks"
+        lore:
+          - "&8Objeto"
+          - "&r "
+          - "&fPrecio: &c%sell% ⛁"
+          - "&r "
+          - "&e» ¡Haz clic para vender! «"
+      value: 6
+      slot: 5
+    # "Sell 7 stacks" button
+    sell7:
+      item:
+        material: CHEST
+        quantity: 7
+        name: "&3Vender &b7 stacks"
+        lore:
+          - "&8Objeto"
+          - "&r "
+          - "&fPrecio: &c%sell% ⛁"
+          - "&r "
+          - "&e» ¡Haz clic para vender! «"
+      value: 7
+      slot: 6
+    # "Sell 8 stacks" button
+    sell8:
+      item:
+        material: CHEST
+        quantity: 8
+        name: "&3Vender &b8 stacks"
+        lore:
+          - "&8Objeto"
+          - "&r "
+          - "&fPrecio: &c%sell% ⛁"
+          - "&r "
+          - "&e» ¡Haz clic para vender! «"
+      value: 8
+      slot: 7
+    # "Sell 9 stacks" button
+    sell9:
+      item:
+        material: CHEST
+        name: "&3Vender &b9 stacks"
+        lore:
+          - "&8Objeto"
+          - "&r "
+          - "&fPrecio: &c%sell% ⛁"
+          - "&r "
+          - "&e» ¡Haz clic para vender! «"
+      value: 9
+      slot: 8
+    # "Cancel" button
+    cancel:
+      item:
+        material: RED_STAINED_GLASS
+        quantity: 1
+        name: "&cCancelar"
+      slot: 13
+
+# Elements of the regular buy/sell GUI
+amountSelectionGUI:
+  # Size of the GUI, valid values are 9, 18, 27, 36, 45 and 54
+  size: 54
+  # Fill item
+  fillItem:
+    material: BLACK_STAINED_GLASS_PANE
+    name: " "
+  # Slot of the item being bought/sold
+  itemSlot: 22
+  # Buttons
+  buttons:
+    # "Set to 1" button
+    set1:
+      item:
+        material: RED_STAINED_GLASS_PANE
+        quantity: 1
+        name: "&cEstablecer a 1"
+      slot: 18
+    # "Remove 10" button
+    remove10:
+      item:
+        material: RED_STAINED_GLASS_PANE
+        quantity: 10
+        name: "&cRemover 10"
+      slot: 19
+    # "Remove 1" button
+    remove1:
+      item:
+        material: RED_STAINED_GLASS_PANE
+        quantity: 1
+        name: "&cRemover 1"
+      slot: 20
+    # "Add 1" button
+    add1:
+      item:
+        material: LIME_STAINED_GLASS_PANE
+        quantity: 1
+        name: "&aAñadir 1"
+      slot: 24
+    # "Add 10" button
+    add10:
+      item:
+        material: LIME_STAINED_GLASS_PANE
+        quantity: 10
+        name: "&aAñadir 10"
+      slot: 25
+    # "Set to 16" button
+    set16:
+      item:
+        material: LIME_STAINED_GLASS_PANE
+        quantity: 16
+        name: "&aEstablecer a 16"
+      slot: 26
+    # "Set to 64" button
+    set64:
+      item:
+        material: LIME_STAINED_GLASS_PANE
+        quantity: 64
+        name: "&aEstablecer a 64"
+      slot: 26
+    # "Confirm" button
+    confirm:
+      item:
+        material: LIME_STAINED_GLASS
+        quantity: 1
+        name: "&aConfirmar"
+      slot: 39
+    # "Sell all" button
+    sellAll:
+      item:
+        material: LIME_STAINED_GLASS
+        quantity: 1
+        name: "&aVender todo"
+      slot: 40
+    # "Buy more" button
+    buyMore:
+      item:
+        material: LIME_STAINED_GLASS
+        quantity: 64
+        name: "&aComprar más"
+      slot: 49
+    # "Sell more" button
+    sellMore:
+      item:
+        material: LIME_STAINED_GLASS
+        quantity: 64
+        name: "&a&lSell more"
+      slot: 49
+    # "Cancel" button
+    cancel:
+      item:
+        material: RED_STAINED_GLASS
+        quantity: 1
+        name: "&cCancelar"
+      slot: 41
+
+shopMenuItems:
+  # Has to be unique, value doesn't matter
+  shop1:
+    item:
+      material: POTION
+      quantity: 1
+      name: "&dAlquimia"
+      lore:
+        - "&8Tienda"
+        - "&r "
+        - "&fCompra comida de este menú"
+        - "&fsi detestas que tu barra de"
+        - "&fcomida se agote"
+        - "&r "
+        - "&e» ¡Haz clic para ver menú! «"
+    shop: "alquimia"
+    slot: 14
+  shop2:
+    item:
+      material: BREAD
+      quantity: 1
+      name: "&6Comida"
+      lore:
+        - "&8Tienda"
+        - "&r "
+        - "&fCompra comida de este menú"
+        - "&fsi detestas que tu barra de"
+        - "&fcomida se agote"
+        - "&r "
+        - "&e» ¡Haz clic para ver menú! «"
+    shop: "comida"
+    slot: 13
+  shop3:
+    item:
+      material: DIAMOND
+      quantity: 1
+      name: "&3Minerales"
+      lore:
+        - "&8Tienda"
+        - "&r "
+        - "&fAdquiere minerales de este"
+        - "&fmenú si lo ves necesario"
+        - "&r "
+        - "&e» ¡Haz clic para ver menú! «"
+    shop: "minerales"
+    slot: 15
+  shop5:
+    item:
+      material: ROTTEN_FLESH
+      quantity: 1
+      name: "&2Mob Drops"
+      lore:
+        - "&8Tienda"
+        - " "
+        - "&fAdquiere objetos de mobs"
+        - "&fhostiles en este menú"
+        - " "
+        - "&e» ¡Haz clic para ver menú! «"
+    shop: "mobdrops"
+    slot: 16
+  shop6:
+    item:
+      material: IRON_CHESTPLATE
+      quantity: 1
+      name: "&cArmamento"
+      lore:
+        - "&8Tienda"
+        - "&r "
+        - "&fAdquiere armamento para tener"
+        - "&fventaja sobre el enemigo"
+        - "&r "
+        - "&e» ¡Haz clic para ver menú! «"
+    shop: "armamento"
+    slot: 20
+  shop7:
+    item:
+      material: NETHERITE_AXE
+      quantity: 1
+      name: "&3Herramientas"
+      lore:
+        - "&8Tienda"
+        - "&r "
+        - "&fAdquiere herramientas de este"
+        - "&fmenú para modificar tu isla"
+        - "&r "
+        - "&e» ¡Haz clic para ver menú! «"
+    shop: "herramienta"
+    slot: 19
+  shop8:
+    item:
+      material: LIGHT_BLUE_GLAZED_TERRACOTTA
+      quantity: 1
+      name: "&bBloques 1.12"
+      lore:
+        - "&8Tienda"
+        - "&r "
+        - "&fAdquiere bloques de la 1.12"
+        - "&fpara tu isla"
+        - "&r "
+        - "&e» ¡Haz clic para ver menú! «"
+    shop: "bloques112"
+    slot: 22
+  shop9:
+    item:
+      material: LODESTONE
+      quantity: 1
+      name: "&cBloques 1.16"
+      lore:
+        - "&8Tienda"
+        - "&r "
+        - "&fAdquiere bloques de la 1.16"
+        - "&fpara tu isla"
+        - "&r "
+        - "&e» ¡Haz clic para ver menú! «"
+    shop: "bloques116"
+    slot: 23
+  shop10:
+    item:
+      material: cherry_leaves
+      quantity: 1
+      name: "&dBloques 1.20"
+      lore:
+        - "&8Tienda"
+        - "&r "
+        - "&fAdquiere bloques de la 1.20"
+        - "&fpara tu isla"
+        - "&r "
+        - "&e» ¡Haz clic para ver menú! «"
+    shop: "bloques120"
+    slot: 24
+  shop11:
+    item:
+      material: oak_log
+      quantity: 1
+      name: "&aBloques"
+      lore:
+        - "&8Tienda"
+        - "&r "
+        - "&fAdquiere mas de 59 bloques"
+        - "&fpara construir en tu isla"
+        - "&r "
+        - "&e» ¡Haz clic para ver menú! «"
+    shop: "bloques"
+    slot: 10
+  shop12:
+    item:
+      material: rose_bush
+      quantity: 1
+      name: "&bDecoración"
+      lore:
+        - "&8Tienda"
+        - "&r "
+        - "&fDecora tu isla con los objetos"
+        - "&fde este menú"
+        - "&r "
+        - "&e» ¡Haz clic para ver menú! «"
+    shop: "decoracion"
+    slot: 11
+  shop13:
+    item:
+      material: redstone
+      quantity: 1
+      name: "&cMecanismos y redstone"
+      lore:
+        - "&8Tienda"
+        - "&r "
+        - "&fCrea mecaniscos de redstone en tu"
+        - "&fisla con los objetos de este menú"
+        - "&r "
+        - "&e» ¡Haz clic para ver menú! «"
+    shop: "redstone"
+    slot: 12
+  shop14:
+    item:
+      material: globe_banner_pattern
+      quantity: 1
+      name: "&cC&6o&el&ao&br&9e&5s"
+      lore:
+        - "&8Tienda"
+        - "&r "
+        - "&fAdquiere mas de 60 bloques"
+        - "&fde &cc&6o&el&ao&br&9e&5s &fpara tu isla"
+        - "&r "
+        - "&e» ¡Haz clic para ver menú! «"
+    shop: "colores"
+    slot: 21
+  shop15:
+    item:
+      material: chiseled_tuff_bricks
+      quantity: 1
+      name: "&3Bloques 1.21"
+      lore:
+        - "&8Tienda"
+        - "&r "
+        - "&fAdquiere bloques de la 1.21"
+        - "&fpara tu isla"
+        - "&r "
+        - "&e» ¡Haz clic para ver menú! «"
+    shop: "bloques121"
+    slot: 25
+  shop16:
+    item:
+      material: netherite_ingot
+      quantity: 1
+      name: "&bCristales"
+      lore:
+        - "&8Tienda"
+        - "&r "
+        - "&fAdquiere objetos de este"
+        - "&fmenú mediante cristales"
+        - "&r "
+        - "&e» ¡Ejecuta &l/tc &epara ver menú! «"
+    slot: 28
+  shop17:
+    item:
+      material: barrel
+      quantity: 1
+      name: "&3Mochilas"
+      lore:
+        - "&8Tienda"
+        - "&r "
+        - "&fAdquiere mochilas mediante"
+        - "&feste menú"
+        - "&r "
+        - "&e» ¡Ejecuta &l/tm &epara ver menú! «"
+    slot: 29
+  shop18:
+    item:
+      material: beacon
+      quantity: 1
+      name: "&bMiscelaneo"
+      lore:
+        - "&8Tienda"
+        - "&r "
+        - "&fAdquiere objetos que no aparecen"
+        - "&fen otras categorías"
+        - "&r "
+        - "&e» ¡Haz clic para ver menú! «"
+    shop: "miscelaneo"
+    slot: 31
+  shop19:
+    item:
+      material: SMITHING_TABLE
+      quantity: 1
+      name: "&7Moldes"
+      lore:
+        - "&8Tienda"
+        - "&r "
+        - "&fAdquiere alrededor de 20 moldes"
+        - "&fpara decorar tu armadura mediante"
+        - "&feste menú"
+        - "&r "
+        - "&e» ¡Haz clic para ver menú! «"
+    shop: "moldes"
+    slot: 30
+
+  a:
+    item:
+      material: BLACK_STAINED_GLASS_PANE
+      quantity: 1
+      name: "&r "
+    slot: 45
+  b:
+    item:
+      material: BLACK_STAINED_GLASS_PANE
+      quantity: 1
+      name: "&r "
+    slot: 46
+  c:
+    item:
+      material: BLACK_STAINED_GLASS_PANE
+      quantity: 1
+      name: "&r "
+    slot: 47
+  d:
+    item:
+      material: BLACK_STAINED_GLASS_PANE
+      quantity: 1
+      name: "&r "
+    slot: 48
+  e:
+    item:
+      material: BLACK_STAINED_GLASS_PANE
+      quantity: 1
+      name: "&r "
+    slot: 49
+  f:
+    item:
+      material: BLACK_STAINED_GLASS_PANE
+      quantity: 1
+      name: "&r "
+    slot: 50
+  g:
+    item:
+      material: BLACK_STAINED_GLASS_PANE
+      quantity: 1
+      name: "&r "
+    slot: 51
+  h:
+    item:
+      material: BLACK_STAINED_GLASS_PANE
+      quantity: 1
+      name: "&r "
+    slot: 52
+  i:
+    item:
+      material: BLACK_STAINED_GLASS_PANE
+      quantity: 1
+      name: "&r "
+    slot: 53
+
+specialElements:
+  balance:
+    item:
+      material: GOLD_INGOT
+      quantity: 1
+      name: "&6&lYour balance"
+      lore:
+        - "&7%balance%"
+
+# Format numbers within your messages using these options.
+numberFormat:
+  # Change the character used for separating decimals in figures which may not be whole numbers
+  decimalSeparator: "."
+  # Change the character using for separating commas in figures which are larger numbers
+  groupingSeparator: ","
+  # Specify the minimum number of digits shown for integer numbers
+  minimumIntegerDigits: 1
+  # Specify the maximum number of digits shown for integer numbers
+  maximumIntegerDigits: 32
+  # Specify the minimum number of decimal places shown for fractional numbers
+  minimumFractionDigits: 0
+  # Specify the maximum number of decimal places shown for fractional numbers
+  maximumFractionDigits: 8
+  # Specify whether you would like the ending decimal digits to be removed when not applicable. This will change $100.00 to $100
+  hideFraction: true
+  shortScale:
+    # Specify whether you would like the number shown in messages to be converted in short-scale above a certain number. This will convert "1,000,000" to "1 million"
+    enableShortScaleNumbering: false
+    # Specify the limit at which short-scale number formatting will start from. Any number above this limit will be converted to short-scale number formatting
+    shortScaleLimit: 1000000
+    # Specify the maximum number of decimal place figures shown when showing the decimal part of the large, short-hand number. (Will truncate the figure to 2 d.p by default)
+    shortHandDecimalLimit: 2
+    # Specify the maximum number of digits shown in larger short-hand numbers. (Will truncate the figure to 32 digits by default)
+    shortHandNumberLimit: 32

@@ -1,0 +1,49 @@
+variables:
+  tempest_drop_carnedetempest:
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  tempest_drop_huesoastillado:
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  balrog_drop_huesodebalrog:
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  balrog_drop_costillacarbonizada:
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  sentinel_drop_plasmadesentinel:
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  sentinel_drop_materiaoscura:
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  apex_drop_aceroendurecido:
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  apex_drop_esenciadetaterazay:
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  apex_drop_corazondeapex:
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  mahopon_drop_almademago:
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  mahopon_drop_pieldemago:
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
+  mahopon_drop_remanentedeevoker:
+    variable_type: PLAYER
+    value_type: INTEGER
+    initial_value: 0
