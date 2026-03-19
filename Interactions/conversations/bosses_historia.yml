@@ -1,0 +1,171 @@
+name: Axel
+starts_with: []
+block_movement: false
+slow_effect: false
+save_conversation_progress: true
+start_conversation_radius: 0
+end_conversation_radius: 5
+requires_permission: false
+conversation:
+  conversation1:
+    dialogue:
+      dialogue1:
+        text:
+        - '&c[NPC] Axel: &f¿Huh? Vaya, ¿Eres un nuevo aventurero, o solo estás de pasantía?'
+        time: 4
+        conditional_dialogue:
+          conditional_dialogue1:
+            requires:
+            - '%interactions_has_dialogue_axel.conversation6.dialogue1% == true'
+            start_conversation: conversation6
+      dialogue2:
+        text:
+        - '&c[NPC] Axel: &f¿Qué te trae por acá?'
+        time: 4
+    options:
+      option1:
+        text: ¿Quién eres?
+        start_conversation: conversation2
+  conversation2:
+    dialogue:
+      dialogue1:
+        text:
+        - '&c[NPC] Axel: &fUh, eso suena grosero de tu parte. Creo que soy yo quien debería preguntartelo primero'
+        time: 4
+      dialogue2:
+        text:
+        - '&c[NPC] Axel: &fMi nombre es Axel, soy un Investigador de esta isla. Estoy al tanto de todo lo que pasa y acontece en este lugar, hasta el más mínimo detalle'
+        time: 4
+      dialogue3:
+        text:
+        - '&c[NPC] Axel: &fAhora, si no te molesta, ¿Puedes decirme tu nombre?'
+        time: 4
+    options:
+      option1:
+        text: Soy %player_name%
+        start_conversation: conversation3
+  conversation3:
+    dialogue:
+      dialogue1:
+        text:
+        - '&c[NPC] Axel: &fNombre interesante. Un gusto'
+        time: 4
+    options:
+      option1:
+        text: 'Y... ¿Qué es este lugar?'
+        start_conversation: conversation4
+  conversation4:
+    dialogue:
+      dialogue1:
+        text:
+        - '&c[NPC] Axel: &fLa gente lo llama el &bSalon de Batalla&f, pero yo lo llamaría de otra forma'
+        time: 4
+      dialogue2:
+        text:
+        - '&c[NPC] Axel: &fSegún la gente, en este lugar aparecen antiguos guerreros apodados &bBosses&f. Yo los llamaría &dseres corruptos'
+        time: 4
+    options:
+      option1:
+        text: ¿Seres corruptos?
+        start_conversation: conversation5
+  conversation5:
+    dialogue:
+      dialogue1:
+        text:
+        - '&c[NPC] Axel: &f¿Estás dispuesto a escuchar esta historia?'
+        time: 4
+    options:
+      option1:
+        text: Hmm...
+        start_conversation: conversation7
+      option2:
+        text: ¿No sería mejor que me la contaras después de enfrentarse a esos Bosses?
+        start_conversation: conversation6
+  conversation6:
+    dialogue:
+      dialogue1:
+        text:
+        - '&c[NPC] Axel: &fTienes razón, pero parece que alguien no sabe como manejar su sistema de diálogos'
+        time: 4
+    options:
+      option1:
+        text: Entiendo
+        start_conversation: conversation7
+  conversation7:
+    dialogue:
+      dialogue1:
+        text:
+        - '&c[NPC] Axel: &fLos &bBosses &ffueron en su tiempo, los mas grandes guerreros y protectores que pudieron haber existido. Eran considerados &eheroes'
+        time: 4
+      dialogue2:
+        text:
+        - '&c[NPC] Axel: &fEran 5: &2Tempest&f, el guerrero del escudo'
+        time: 4
+      dialogue3:
+        text:
+        - '&c[NPC] Axel: &cBarlog&f, el guerrero de la espada'
+        time: 4
+      dialogue4:
+        text:
+        - '&c[NPC] Axel: &dSentinel&f, el guerrero de la lanza y la carroza'
+        time: 4
+      dialogue5:
+        text:
+        - '&c[NPC] Axel: &6Apex&f, el guerrero de la fuerza bruta'
+        time: 4
+      dialogue6:
+        text:
+        - '&c[NPC] Axel: &bEvoker&f, el guerrero de la magia'
+        time: 4
+      dialogue7:
+        text:
+        - '&c[NPC] Axel: &fCada uno contaba con poderes únicos y diferentes, y los 5 se unían para garantizar la paz en nuestro mundo'
+        time: 4
+      dialogue8:
+        text:
+        - '&c[NPC] Axel: &fPero, un día ocurrió lo inesperado: Empezaron a corromperse'
+        time: 4
+      dialogue9:
+        text:
+        - '&c[NPC] Axel: &fCada vez, eran más los que se corrompían, actuaban por egoísmo y dejaron de proteger a la gente'
+        time: 4
+      dialogue10:
+        text:
+        - '&c[NPC] Axel: &fHasta que llegaron los &5Archienemigos &fy se apoderaron completamente de ellos'
+        time: 4
+      dialogue11:
+        text:
+        - '&c[NPC] Axel: &fLos 5 fueron arrastrados al inframundo, y volvieron en su forma mas deformada, tanto física como mental'
+        time: 4
+      dialogue12:
+        text:
+        - '&c[NPC] Axel: &fSin embargo, eligieron el peor punto de aparición: Un Volcan'
+        time: 4
+      dialogue13:
+        text:
+        - '&c[NPC] Axel: &fEstaban perdidos y no sabían como salir, hasta que los encontraron y sellaron rápido las posibles salidas que pudiesen agarrar'
+        time: 4
+      dialogue14:
+        text:
+        - '&c[NPC] Axel: &fSe taladró una de las paredes del Volcan e impusieron rápido barreras para evitar que escaparan'
+        time: 4
+    options:
+      option1:
+        text: ¿Que sucede si mueren o alguien los mata?
+        start_conversation: conversation8
+  conversation8:
+    dialogue:
+      dialogue1:
+        text:
+        - "&c[NPC] Axel: &fVuelven al inframundo a recargarse. Ya han adquirido una especie de 'inmortalidad' en ese estado"
+        time: 4
+    options:
+      option1:
+        text: Ya veo...
+        start_conversation: conversation9
+  conversation9:
+    dialogue:
+      dialogue1:
+        text:
+        - '&c[NPC] Axel: &fTen cuidado con ellos &b%player_name%&f. Son monstruos muy peligrosos de tratar. Si piensas enfrentarte, ocupa siempre el mejor equipamiento que puedas. Son letales ante cualquier cosa que se les presente'
+        time: 4

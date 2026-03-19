@@ -1,0 +1,139 @@
+name: Marco
+starts_with: []
+block_movement: false
+slow_effect: true
+save_conversation_progress: true
+start_conversation_radius: 0
+end_conversation_radius: 5
+requires_permission: false
+conversation:
+  conversation1:
+    dialogue:
+      dialogue1:
+        text:
+        - '&c[NPC] Marco: &fQuién eres y que haces acá. Este lugar es peligroso y lo mejor es que te vayas'
+        time: 4
+    options:
+      option1:
+        text: ¿Por que debería irme?
+        start_conversation: conversation2
+  conversation2:
+    dialogue:
+      dialogue1:
+        text:
+        - '&c[NPC] Marco: &fPorque este lugar no es apto para gente como tu, ahora largate antes de que te despedacen'
+        time: 4
+    options:
+      option1:
+        text: ¿Quién eres para darme ordenes?
+        start_conversation: conversation3
+  conversation3:
+    dialogue:
+      dialogue1:
+        text:
+        - '&c[NPC] Marco: &fPor lo visto no nos conocemos de nada. O quizás eres solo un principiante en esta región'
+        time: 4
+      dialogue2:
+        text:
+        - '&c[NPC] Marco: &fMi nombre es Marco, soy el vigilante de esta cueva'
+        time: 4
+      dialogue3:
+        text:
+        - '&c[NPC] Marco: &f¿Eh? ¿Que no traigo nada? No preguntes'
+        time: 4
+      dialogue4:
+        text:
+        - '&c[NPC] Marco: &fEsta cueva es habitada por &2no-muertos&f, asi que lo mejor es evitarlos o no entrar a esta cueva directamente'
+        time: 4
+    options:
+      option1:
+        text: ¿No-muertos?
+        start_conversation: conversation4
+  conversation4:
+    dialogue:
+      dialogue1:
+        text:
+        - '&c[NPC] Marco: &fEsto tiene su historia, ¿Estás dispuesto a escucharla?'
+        time: 4
+    options:
+      option1:
+        text: Cuentame
+        start_conversation: conversation5
+  conversation5:
+    dialogue:
+      dialogue1:
+        text:
+        - '&c[NPC] Marco: &fHace un tiempo, cuando descubrieron esta isla, vinieron geólogos a examinar la zona en busqueda de recursos'
+        time: 4
+      dialogue2:
+        text:
+        - '&c[NPC] Marco: &fQuerían comprobar si había recursos en las paredes de las montanas, por lo que empezaron a taladrar este lugar'
+        time: 4
+      dialogue3:
+        text:
+        - '&c[NPC] Marco: &fCuando taladraron, se encontraron con una sorpresa'
+        time: 4
+      dialogue4:
+        text:
+        - '&c[NPC] Marco: &fHabían muchos minerales en este lugar; los que están en paredes y pisos'
+        time: 4
+      dialogue5:
+        text:
+        - '&c[NPC] Marco: &fDebido a esto, se decidió reclutar a un grupo de 66 mineros para extraer todos los minerales posibles de este lugar'
+        time: 4
+      dialogue6:
+        text:
+        - '&c[NPC] Marco: &fSin embargo, la cueva no se pudo asegurar al 100% y la estructura empezó a debilitarse'
+        time: 4
+      dialogue7:
+        text:
+        - '&c[NPC] Marco: &fCuando la estructura cedió y no aguantó mas, tapó gran parte de la cueva'
+        time: 4
+      dialogue8:
+        text:
+        - '&c[NPC] Marco: &fSe intentó extraer las piedras que tapaban la entrada, pero era imposible'
+        time: 4
+      dialogue9:
+        text:
+        - '&c[NPC] Marco: &fCuando al fin lograron despejar la entrada, era tarde. Los mineros ya estaban muertos. Cuando se les hizo la autopsia, se determinó que murieron por asfixia y el impacto de las rocas encima de ellos'
+        time: 4
+      dialogue10:
+        text:
+        - '&c[NPC] Marco: &fSe hizo un entierro colectivo y el que manejaba la extracción fue encarcelado por abuso laboral'
+        time: 4
+      dialogue11:
+        text:
+        - '&c[NPC] Marco: &fTiempo después, cuando trabajadores autónomos decidieron entrar a este lugar, fueron espantados por una criatura'
+        time: 4
+      dialogue12:
+        text:
+        - '&c[NPC] Marco: &fNo eran fantasmas, no eran ilusiones. Era todo real'
+        time: 4
+      dialogue13:
+        text:
+        - '&c[NPC] Marco: &fLas almas de aquellos mineros se habían levantado y materializado, buscando atacar y ahuyentar a todo aquel se atreviera entrar a la mina'
+        time: 4
+      dialogue14:
+        text:
+        - '&c[NPC] Marco: &fDespués de eso, nadie más quizo entrar a la mina'
+        time: 4
+    options:
+      option1:
+        text: Increíble...
+        start_conversation: conversation6
+  conversation6:
+    dialogue:
+      dialogue1:
+        text:
+        - '&c[NPC] Marco: &fAhora que ya sabes la historia, si estás dispuesto a enfrentarte a esos espectros materiales de esos pobres trabajadores, asegurate de tenerlos bajo tu control'
+        time: 4
+    options:
+      option1:
+        text: ¿Qué pasa si muero?
+        start_conversation: conversation7
+  conversation7:
+    dialogue:
+      dialogue1:
+        text:
+        - '&c[NPC] Marco: &fHmm, quién sabe. Se dice que los que mueren a mano de ellos no vuelven mas al mundo exterior. O quizás sea un simple rumor'
+        time: 4

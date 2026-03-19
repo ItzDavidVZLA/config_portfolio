@@ -1,0 +1,312 @@
+# The list of mythicMob types assigned to the created spawners to which you wish to display the hologram or to enable the announce system is below.
+# To add more mythicMobs type to the list just copy another one and edit what you need. You can enable or disable every feature per mythicMob type.
+#If you don't need the default mobs you can delete them from the list.
+list-mobs-type:
+  tempest:
+    show-holo: true
+    offset-holo: #You can adjust the position of the hologram by editing the x,y,z offset.
+      x: 0.0
+      y: 2.5
+      z: 0.0
+    holo-head:
+      show-head: true
+      head-position: "FIRST" #Options available are FIRST and LAST, it will set the head position in the first or last line of the hologram.
+      head-texture-base64: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTUzM2Q0NTc5NWMxOGEzYzM5NDRiMjdkNzYzYmJmMGIwOTg4ZjUyNmQ2YjQ5Yzg3ZmE4ODRiZTEzYzY2NDFmYSJ9fX0="
+      #You can set the texture of the head, for this example I used this: https://minecraft-heads.com/custom-heads/head/65038-beef-boss-plushie and got the base64 of the texture's head by copying the "Value" from this web-site.
+      head-type: "ICON" #Options available are ICON, HEAD, SMALLHEAD
+    #Reward system that execute commands when the mob is killed based on the damage ranking system(adjust the minimum number of players in the ranking to enable the rewards by editing this property "reward-ranking-min-players" at the end of the config).
+    #You can execute multiple commands by subdividing each command with double ; like in the example. %player% is the local placeholder for the certain player who is in that rank. Set "" to disable a certain rank.
+    rewards:
+      enable: true
+      commands:
+        first-damager: "give %player% diamond 1;;say %player% received 1 &bDiamond&r for being the first damager!"
+        second-damager: "give %player% gold_ingot 1;;say %player% received 1 Gold Ingot for being the second damager!"
+        third-damager: "give %player% iron_ingot 1;;say %player% received 1 Iron Ingot for being the third damager!"
+    spawn-announce:
+      enable: true
+      worlds: # Choose in which world the announcement will be sent, insert in the list the word ALL to send the announcement in every world
+        - ALL
+        - world
+        - world_nether
+        - world_the_end
+      # Supported placeholders: %health%, %damage%, %armor%, %x%, %y%, %z% (coordinates), %world%, %mob% (mythicMob type which is the name). Set it to "" to disable only the message.
+      world-message: "\n&fA <#008bff>&l%mob%&r&f has been spawned!\n&fCome fight it at (<#008bff>%world%&f) <#008bff>%x%&fx <#008bff>%y%&fy <#008bff>%z%&fz !\n&r"
+      play-sound: true
+      permission: "mythicannouncer.notify.spawn.pig" #custom permission for each type of mob and each type of event, you can modify it to your liking. Set it to "" to disable.
+      discord:
+        enable: false # Enable the webhook for this type of mythicmob or disable it
+        webhookUrl: "" # The webhook URL to send notifications to discord channel.
+        minHealth: 100.0 # Minimum health of a mob to send a notification. This is to prevent spamming the channel with notifications for low health mobs.
+        # available placeholders:
+        #   %mob% - The name of the mob.
+        #   %health% - The health of the mob.
+        #   %damage% - The damage of the mob.
+        #   %armor% - The armor of the mob.
+        #   %world% - The world of the mob.
+        #   %x% - The x coordinate of the mob.
+        #   %y% - The y coordinate of the mob.
+        #   %z% - The z coordinate of the mob.
+        # In the discord text you can tag whoever you want, for example add these in the text: @everyone, @here, <@discord-specific-user-id>, <@&discord-specific-role-id>
+        discordMessage:
+          text: "%mob% has spawned. At coordinates: %x% %y% %z% in the world %world% with Health %health%, damage %damage%, and armor %armor%." # The text to send in the discord message. Set it to "" to disable it
+          embed: # The embed to send in the discord message.
+            enable: false # Whether to send an embed in the discord message. When disabled the default embed will be used.
+            title: "" # The title of the embed.
+            description: "" # The description of the embed.
+            color: "#008bff" # The color of the embed. Hex color code.
+            image: # The image of the embed.
+              enable: false # Whether to send an image in the embed.
+              url: "" # The URL of the image.
+            timestamp: true # Whether to show the timestamp in the embed.
+    kill-announce:
+      enable: true
+      worlds: # Choose in which world the announcement will be sent, insert in the list the word ALL to send the announcement in every world
+        - world
+        - world_nether
+        - world_the_end
+      # Supported placeholders: %health%, %damage%, %armor%, %killer%, %x%, %y%, %z% (coordinates), %world%, %mob% (mythicMob type which is the name). Set it to "" to disable only the message.
+      world-message: "\n<#008bff>&l%mob%&r&f has been killed by <#008bff>&l%killer%&r&f !\n&r"
+      play-sound: true
+      ranking-message-template: "&l%index%&r# <#008bff>&l%player%&r&f with <#008bff>&l%damage%&r&f damage." #set it to "" to disable, placeholders available in this message: %index% which is the rank, %player% which is the name of the player and %damage% which is the damage dealt to the mob by that player.
+      permission: "mythicannouncer.notify.death.pig"
+      discord:
+        enable: false
+        webhookUrl: ""
+        minHealth: 100.0
+        # This placeholder works in the kill announce.
+        #   %killer% - The killer who killed the mythicmob
+        # In the discord text you can tag whoever you want, for example add these in the text: @everyone, @here, <@discord-specific-user-id>, <@&discord-specific-role-id>
+        discordMessage:
+          text: "%mob% has died, killed by %killer%. At coordinates: %x% %y% %z% in the world %world%. It had: Health %health%, damage %damage%, and armor %armor%."
+          ranking-message-template: "%index%# %player% with %damage% damage." #set it to "" to disable, placeholders available in this message: %index% which is the rank, %player% which is the name of the player and %damage% which is the damage dealt to the mob by that player.
+          embed:
+            enable: false
+            title: ""
+            description: ""
+            color: "#008bff"
+            image:
+              enable: false
+              url: ""
+            timestamp: true
+    despawn-announce:
+      enable: true
+      worlds: # Choose in which world the announcement will be sent, insert in the list the word ALL to send the announcement in every world
+        - world
+        - world_nether
+        - world_the_end
+      # Supported placeholders: %health%, %damage%, %armor%, %x%, %y%, %z% (coordinates), %world%, %mob% (mythicMob type which is the name). Set it to "" to disable only the message.
+      world-message: "\n<#008bff>&l%mob%&r&f just disappeared !\n&r"
+      play-sound: true
+      permission: "mythicannouncer.notify.despawn.pig"
+      discord:
+        enable: false
+        webhookUrl: ""
+        minHealth: 100.0
+        # In the discord text you can tag whoever you want, for example add these in the text: @everyone, @here, <@discord-specific-user-id>, <@&discord-specific-role-id>
+        discordMessage:
+          text: "%mob% has despawned. At coordinates: %x% %y% %z% in the world %world%. It had: Health %health%, damage %damage%, and armor %armor%."
+          embed:
+            enable: false
+            title: ""
+            description: ""
+            color: "#008bff"
+            image:
+              enable: false
+              url: ""
+            timestamp: true
+  CAVE_SPIDER:
+    show-holo: true
+    offset-holo: #You can adjust the position of the hologram by editing the x,y,z offset.
+      x: 0.0
+      y: 2.5
+      z: 0.0
+    holo-head:
+      show-head: true
+      head-position: "FIRST"
+      head-texture-base64: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTUzM2Q0NTc5NWMxOGEzYzM5NDRiMjdkNzYzYmJmMGIwOTg4ZjUyNmQ2YjQ5Yzg3ZmE4ODRiZTEzYzY2NDFmYSJ9fX0="
+      head-type: "ICON"
+    rewards:
+      enable: true
+      commands:
+        first-damager: "egive %player_name% diamond 1"
+        second-damager: "egive %player_name% gold_ingot 1"
+        third-damager: "egive %player_name% iron_ingot 1"
+    spawn-announce:
+      enable: true
+      worlds: # Choose in which world the announcement will be sent, insert in the list the word ALL to send the announcement in every world
+        - world
+        - world_nether
+        - world_the_end
+      # Supported placeholders: %health%, %damage%, %armor%, %x%, %y%, %z% (coordinates), %world%, %mob% (mythicMob type which is the name). Set it to "" to disable only the message.
+      world-message: "\n&fA <#008bff>&l%mob%&r&f has been spawned!\n&fCome fight it at (<#008bff>%world%&f) <#008bff>%x%&fx <#008bff>%y%&fy <#008bff>%z%&fz !\n&r"
+      play-sound: true
+      permission: "mythicannouncer.notify.spawn.cave_spider"
+      discord:
+        enable: false
+        webhookUrl: ""
+        minHealth: 100.0
+        discordMessage:
+          text: ""
+          embed:
+            enable: false
+            title: ""
+            description: ""
+            color: "#008bff"
+            image:
+              enable: false
+              url: ""
+            timestamp: true
+    kill-announce:
+      enable: true
+      worlds: # Choose in which world the announcement will be sent, insert in the list the word ALL to send the announcement in every world
+        - world
+        - world_nether
+        - world_the_end
+      # Supported placeholders: %health%, %damage%, %armor%, %killer%, %x%, %y%, %z% (coordinates), %world%, %mob% (mythicMob type which is the name). Set it to "" to disable only the message.
+      world-message: "\n<#008bff>&l%mob%&r&f has been killed by <#008bff>&l%killer%&r&f !\n&r"
+      play-sound: true
+      ranking-message-template: "&l%index%&r# <#008bff>&l%player%&r&f with <#008bff>&l%damage%&r&f damage."
+      permission: "mythicannouncer.notify.death.cave_spider"
+      discord:
+        enable: false
+        webhookUrl: ""
+        minHealth: 100.0
+        discordMessage:
+          text: ""
+          ranking-message-template: "%index%# %player% with %damage% damage."
+          embed:
+            enable: false
+            title: ""
+            description: ""
+            color: "#008bff"
+            image:
+              enable: false
+              url: ""
+            timestamp: true
+    despawn-announce:
+      enable: true
+      worlds: # Choose in which world the announcement will be sent, insert in the list the word ALL to send the announcement in every world
+        - world
+        - world_nether
+        - world_the_end
+      # Supported placeholders: %health%, %damage%, %armor%, %x%, %y%, %z% (coordinates), %world%, %mob% (mythicMob type which is the name). Set it to "" to disable only the message.
+      world-message: "\n<#008bff>&l%mob%&r&f just disappeared !\n&r"
+      play-sound: true
+      permission: "mythicannouncer.notify.despawn.cave_spider"
+      discord:
+        enable: false
+        webhookUrl: ""
+        minHealth: 100.0
+        discordMessage:
+          text: ""
+          embed:
+            enable: false
+            title: ""
+            description: ""
+            color: "#008bff"
+            image:
+              enable: false
+              url: ""
+            timestamp: true
+  SkeletonKing:
+    show-holo: true
+    offset-holo: #You can adjust the position of the hologram by editing the x,y,z offset.
+      x: 0.0
+      y: 2.5
+      z: 0.0
+    holo-head:
+      show-head: true
+      head-position: "LAST"
+      head-texture-base64: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTUzM2Q0NTc5NWMxOGEzYzM5NDRiMjdkNzYzYmJmMGIwOTg4ZjUyNmQ2YjQ5Yzg3ZmE4ODRiZTEzYzY2NDFmYSJ9fX0="
+      head-type: "ICON"
+    rewards:
+      enable: false
+      commands:
+        first-damager: "give %player% diamond 1;;say %player% received 1 Diamond!"
+        second-damager: "give %player% gold_ingot 1;;say %player% received 1 Gold Ingot!"
+        third-damager: "give %player% iron_ingot 1;;say %player% received 1 Iron Ingot!"
+    spawn-announce:
+      enable: true
+      worlds: # Choose in which world the announcement will be sent, insert in the list the word ALL to send the announcement in every world
+        - world
+        - world_nether
+        - world_the_end
+      # Supported placeholders: %health%, %damage%, %armor%, %x%, %y%, %z% (coordinates), %world%, %mob% (mythicMob type which is the name). Set it to "" to disable only the message.
+      world-message: "\n&fA <#008bff>&l%mob%&r&f has been spawned!\n&fCome fight it at (<#008bff>%world%&f) <#008bff>%x%&fx <#008bff>%y%&fy <#008bff>%z%&fz !\n&r"
+      play-sound: true
+      permission: "mythicannouncer.notify.spawn.skeletonking"
+      discord:
+        enable: false
+        webhookUrl: ""
+        minHealth: 100.0
+        discordMessage:
+          text: ""
+          embed:
+            enable: false
+            title: ""
+            description: ""
+            color: "#008bff"
+            image:
+              enable: false
+              url: ""
+            timestamp: true
+    kill-announce:
+      enable: true
+      worlds: # Choose in which world the announcement will be sent, insert in the list the word ALL to send the announcement in every world
+        - world
+        - world_nether
+        - world_the_end
+      # Supported placeholders: %health%, %damage%, %armor%, %killer%, %x%, %y%, %z% (coordinates), %world%, %mob% (mythicMob type which is the name). Set it to "" to disable only the message.
+      world-message: "\n<#008bff>&l%mob%&r&f has been killed by <#008bff>&l%killer%&r&f !\n&r"
+      play-sound: true
+      ranking-message-template: "&l%index%&r# <#008bff>&l%player%&r&f with <#008bff>&l%damage%&r&f damage."
+      permission: "mythicannouncer.notify.death.skeletonking"
+      discord:
+        enable: false
+        webhookUrl: ""
+        minHealth: 100.0
+        discordMessage:
+          text: ""
+          ranking-message-template: "%index%# %player% with %damage% damage."
+          embed:
+            enable: false
+            title: ""
+            description: ""
+            color: "#008bff"
+            image:
+              enable: false
+              url: ""
+            timestamp: true
+    despawn-announce:
+      enable: true
+      worlds: # Choose in which world the announcement will be sent, insert in the list the word ALL to send the announcement in every world
+        - world
+        - world_nether
+        - world_the_end
+      # Supported placeholders: %health%, %damage%, %armor%, %x%, %y%, %z% (coordinates), %world%, %mob% (mythicMob type which is the name). Set it to "" to disable only the message.
+      world-message: "\n<#008bff>&l%mob%&r&f just disappeared !\n&r"
+      play-sound: true
+      permission: "mythicannouncer.notify.despawn.skeletonking"
+      discord:
+        enable: false
+        webhookUrl: ""
+        minHealth: 100.0
+        discordMessage:
+          text: ""
+          embed:
+            enable: false
+            title: ""
+            description: ""
+            color: "#008bff"
+            image:
+              enable: false
+              url: ""
+            timestamp: true
+  
+holo-message-mobtype: "<#008bff>&l%mt%"
+holo-message-spawning: "&7Spawning..."
+holo-message-spawn-in: "&7Spawn in &l%sec%&r&7 seconds" #use placeholder %sec% to show seconds, use placeholder %formatted_sec% to show the seconds formatted to HH:mm:SS
+papi-message-spawned: "<#099412>sᴘᴀᴡɴᴇᴅ"
+papi-message-spawning: "&7sᴘᴀᴡɴɪɴɢ..."
+top-ranking-players: 3 #Maximum number of players to show in the top ranking damage when a mythic mob is killed.
+reward-ranking-min-players: 3 #Minimum players in the ranking to activate the reward system configured in each mob. (In this case there must be at least 3 players that had hit the mob)
