@@ -1,0 +1,127 @@
+# DOCUMENTATION: https://docs.artillex-studios.com/axkoth.html
+
+help:
+- '&8&l» <gradient:#FF6600:#FF8800><b>AxKoth</b></gradient> &7» &#FFAA66Ayuda:'
+- '&8&l» '
+- '&8&l»   &7⋆ &f/axkoth wand &7| &#FFAA66Obtener herramienta de selección'
+- '&8&l»   &7⋆ &f/axkoth create <KOTH> <CAPTURE/SCORE> &7| &#FFAA66Crear koth'
+- '&8&l»   &7⋆ &f/axkoth delete <KOTH> &7| &#FFAA66Eliminar koth'
+- '&8&l»   &7⋆ &f/axkoth start <KOTH> &7| &#FFAA66Iniciar koth'
+- '&8&l»   &7⋆ &f/axkoth stop <KOTH> &7| &#FFAA66Detener koth'
+- '&8&l»   &7⋆ &f/axkoth stopall &7| &#FFAA66Detener todos los koths activos'
+- '&8&l»   &7⋆ &f/axkoth editor <KOTH> &7| &#FFAA66Abrir editor GUI'
+- '&8&l»   &7⋆ &f/axkoth schedulers &7| &#FFAA66Abrir editor de programador'
+- '&8&l»   &7⋆ &f/axkoth tp <KOTH> &7| &#FFAA66Teletransportarse al koth'
+- '&8&l»   &7⋆ &f/axkoth list &7| &#FFAA66Listar koths'
+- '&8&l»   &7⋆ &f/axkoth givestarter <KOTH> <player> [amount] &7| &#FFAA66Dar iniciador de koth al jugador'
+- '&8&l»   &7⋆ &f/axkoth reload &7| &#FFAA66Recargar configuración'
+- '&8&l»   &7⋆ &f/axkoth resetwins <player> &7| &#FFAA66Reiniciar victorias de koth del jugador'
+- '&8&l» '
+
+time:
+  second: s
+  minute: m
+  hour: h
+  day: d
+
+# this section will be ignored if you don't have a team plugin enabled
+teams:
+  team-format: '&8[&#FF6600%team%&8]&r'
+  # the next 2 settings will be used for the %player% placeholder in some messages
+  team-player: '%player% %team%'
+  # player without a team
+  player: '%player%'
+
+selection-wand:
+  material: GOLDEN_AXE
+  name: '&#FF6600&lVARITA DE SELECCIÓN'
+  lore:
+  - '&8&l» '
+  - '&8&l» &#FF6600ᴄʟɪᴄ ɪᴢǫᴜɪᴇʀᴅᴏ'
+  - '&8&l»  &7- &fSeleccionar posición #1'
+  - '&8&l» '
+  - '&8&l» &#FF6600ᴄʟɪᴄ ᴅᴇʀᴇᴄʜᴏ'
+  - '&8&l»  &7- &fSeleccionar posición #2'
+  - '&8&l» '
+
+selection:
+  pos1: '&8&l» &fSeleccionada &#FF6600POSICIÓN #1 &7- &#DDDDDD%location%'
+  pos2: '&8&l» &fSeleccionada &#FF6600POSICIÓN #2 &7- &#DDDDDD%location%'
+  no-selection: '&8&l» &#FF0000¡Debes seleccionar 2 esquinas con /axkoth wand para crear un koth!'
+
+created: '&8&l» &#00FF00¡Has creado el koth &f%koth%&#00FF00!'
+deleted: '&8&l» &#FF0000¡Has eliminado el koth &f%koth%&#FF0000!'
+does-not-exist: '&8&l» &#FF0000¡El koth &f%koth% &#FF0000NO existe!'
+already-exists: '&8&l» &#00FF00¡El koth &f%koth% &#00FF00YA existe!'
+redefined: '&8&l» &#00FF00¡Has redefinido el área del koth para el koth &f%koth%&#00FF00!'
+
+koth-start: '&8&l» &f¡Has iniciado el koth &e%koth%&f!'
+koth-stop: '&8&l» &f¡Has detenido el koth &e%koth%&f!'
+not-running: '&8&l» &f¡El koth &e%koth% &fno está activo!'
+
+list: '&8&l» &fLista de koths: &e%list%'
+
+teleport: '&8&l» &#00FF00¡Teletransportado al centro del koth &f%koth%&#00FF00!'
+
+reset-wins: '&8&l» &f¡Has reiniciado las victorias de &e%player%&f!'
+
+starter-given: '&8&l» &f¡Has dado &e%amount%x %koth% &finiciador de koth a &a%player%&f!'
+starter-got: '&8&l» &f¡Has obtenido &e%amount%x %koth% &finiciador de koth!'
+koth-start-with-starter: '&8&l» &f¡Has iniciado el koth &a%koth%&f!'
+starter-already-running: '&8&l» &f¡El koth &e%koth% &fya está &aactivo&f!'
+starter-not-enough-players: '&8&l» &f¡Debe haber al menos &e%amount% &fjugadores en línea para iniciar el koth &a%koth%&f!'
+
+info:
+- '&8&l» &#FF6600&l=== %name% ==='
+- '&8&l» &#FFAA66Ejecutándose: &f%active%%'
+- '&8&l» &#FFAA66Mundo: &f%world%'
+- '&8&l» &#FFAA66Ubicación: &f%x% / %y% / %z%'
+- '&8&l» &#FFAA66Próximo programado: &f%next_formatted%'
+- '&8&l» &#FFAA66Tiempo máximo: &f%maxTime_formatted%'
+- '&8&l» &#FFAA66Tiempo de victoria: &f%time_formatted%'
+
+capture-disallowed-actionbar:
+  # set to "" to disable
+  gamemode: '&8&l» &f¡Solo puedes capturar el koth en modo supervivencia!'
+  vanish: '&8&l» &f¡Solo puedes capturar el koth cuando no estés invisible!'
+
+placeholders:
+  not-active: '---'
+  not-found: Koth desconocido
+  no-hook: No hay ganchos de equipo cargados
+  not-in-team: '---'
+  no-capturer: '---'
+  infinity: ∞
+
+# set to "" to disable
+broadcasts:
+  start: '&8&l» &f¡El koth &e%displayName% &fha comenzado! &7(%timeLeft_formatted%)'
+  started-with-starter: '&8&l» &f¡El koth &e%displayName% &fha sido &ainiciado &fpor &d%starter%&f! &7(%timeLeft_formatted%)'
+  stop: '&8&l» &f¡El koth &e%displayName% &fha sido &cdetenido&f! &7(%timeTaken_formatted%)'
+  capture-start: '&8&l» &a%capturer% &fha comenzado a capturar el koth &e%displayName% &7(%timeLeft_formatted%)'
+  capture-status: '&8&l» &a%capturer% &festá capturando el koth &e%displayName% &7(%timeLeft_formatted%)'
+  capture-lost: '&8&l» &a%capturer% &fha perdido el control del koth &e%displayName% &7(%timeLeft_formatted%)'
+  captured: '&8&l» &a%capturer% &fha capturado el koth &e%displayName% &7(%timeTaken_formatted%)'
+  out-of-time: '&8&l» &f¡El koth &e%displayName% &fha terminado sin un ganador! &7(%timeTaken_formatted%)'
+
+reload:
+  success: '&8&l» &a¡Plugin recargado exitosamente!'
+  failed: '&8&l» &c¡Error al recargar el plugin! Algo está mal en el archivo &n%file%&c, revisa la consola o usa un validador yaml para corregir los errores!'
+
+editor:
+  open: '&8&l» &fNota: Tienes que usar &7/axkoth reload &fpara aplicar los cambios después de cerrar el editor!'
+
+commands:
+  invalid-value: '&8&l» &cParámetro inválido: %value%'
+  invalid-command: '&8&l» &c¡Comando o subcomando inválido!'
+  missing-argument: '&8&l» &c¡Argumento faltante! Debes especificar un valor para %value%.'
+  no-permission: '&8&l» &c¡No tienes permisos para acceder a este comando!'
+  out-of-range: '&8&l» &c¡El %number% debe estar entre %min% y %max%!'
+  player-only: '&8&l» &c¡Debes ser un jugador para usar este comando!'
+  invalid-player: '&8&l» &f¡El jugador &e%player% &fno puede ser encontrado!'
+  invalid-selector: '&8&l» &c¡No puedes usar este selector en este comando!'
+
+update-notifier: '&8&l» &#FFAAAA¡Hay una nueva versión de AxKoth disponible! &#DDDDDD(&#FFFFFFactual: &#FF0000%current% &#DDDDDD| &#FFFFFFúltima: &#00FF00%latest%&#DDDDDD)'
+
+# do not change
+version: 6
