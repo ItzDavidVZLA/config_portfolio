@@ -1,0 +1,70 @@
+update_notification: true
+prevent_creative: false
+max_distance_particle_display: 20
+objects_check_time: 4
+data_auto_save_time: 300
+fix_teleport: true
+ignore_cancelled_events: false
+mysql_database:
+  enabled: false
+  host: localhost
+  port: 3306
+  username: root
+  password: root
+  database: database
+  pool:
+    connectionTimeout: 5000
+  advanced:
+    verifyServerCertificate: false
+    useSSL: true
+    allowPublicKeyRetrieval: true
+blocked_gamemodes:
+- SPECTATOR
+- ADVENTURE
+default_values:
+  display_particles:
+    list_of_particles:
+      particle1:
+        particle: FLAME
+        speed: 0.01
+        offset_y: 0.8
+    enabled: true
+    speed: 5
+  default_actions:
+    find_chat_message:
+    - '{centered}&7&m                                                  '
+    - ''
+    - '{centered}&aYou have discovered a &e&lHidden Treasure&a! &7(&e%current%&8/&e%total%&7)'
+    - ''
+    - '{centered}&7&m                                                  '
+    find_title_message:
+      title: '&eHidden Treasure Found!'
+      subtitle: '&7(&b%current%&8/&b%total%&7)'
+      fadeIn: 20
+      stay: 40
+      fadeOut: 20
+    find_sound: BLOCK_NOTE_BLOCK_PLING;10;1.8
+    find_effects:
+    - 'firework: colors:RED,WHITE type:BALL offsetY:0.8 fade:GREEN'
+  last_actions:
+    find_chat_message:
+    - '{centered}&7&m                                                  '
+    - ''
+    - '{centered}&c&lCONGRATS!'
+    - '{centered}&aYou have discovered all the &e&lHidden Treasures'
+    - '{centered}&ain the lobby!'
+    - '{centered}&7Reward: &a$10.000'
+    - ''
+    - '{centered}&7&m                                                  '
+    find_title_message:
+      title: '&eAll Hidden Treasures Found!'
+      subtitle: '&aCongrats!'
+      fadeIn: 20
+      stay: 40
+      fadeOut: 20
+    find_sound: ENTITY_PLAYER_LEVELUP;10;1
+    find_effects:
+    - 'firework: colors:RED,WHITE type:BALL offsetY:0.8 fade:GREEN'
+    find_commands:
+    - eco give %player% 10000
+top_variables_update_time: 120

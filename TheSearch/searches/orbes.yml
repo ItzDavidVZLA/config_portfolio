@@ -1,0 +1,123 @@
+permission_required: false
+enabled: true
+default_actions:
+  find_chat_message:
+  - '&8&l» &fHas encontrado este orbe. &8(&b%current%&7/&b%total%&8)'
+  find_title_message:
+    title: ''
+    subtitle: ''
+    fadeIn: 20
+    stay: 40
+    fadeOut: 20
+  find_sound: BLOCK_NOTE_BLOCK_PLING;10;1.8
+  find_effects_are_random: false
+  find_effects: []
+last_actions:
+  find_chat_message:
+  - '&8&l» &fLogro completado: &bExplorador'
+  - ''
+  - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+  - ''
+  - '{centered}&b&l¡ORBES ENCONTRADOS!'
+  - ''
+  - '{centered}&fHas encontrado todos los orbes'
+  - '{centered}&fy recibiste las siguientes recompensas:'
+  - ''
+  - '{centered}&6500,000 ⛁'
+  - '{centered}#c0c0c0Medalla de Plata'
+  - '{centered}&bLogro de Explorador'
+  - ''
+  - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+  find_title_message:
+    title: ''
+    subtitle: ''
+    fadeIn: 20
+    stay: 40
+    fadeOut: 20
+  find_sound: UI_TOAST_CHALLENGE_COMPLETE;1;1
+  find_effects_are_random: false
+  find_effects:
+  - 'firework: colors:BLUE,AQUA type:BALL offsetY:0.8 fade:WHITE'
+  find_commands:
+  - eco give %player% 500000
+  - lp user %player% permission set logros.ob.6 server=dev-oneblock
+  - svar add logro_plata 1 %player%
+  - 'at sendAnimation %player% p:BOSSBAR NONE &8&l« &fLogro completado: &bExplorador
+    &8&l»'
+sound_clue:
+  delay: 111111111
+  volume: 1.5
+  sound_name: BLOCK_NOTE_BLOCK_PLING
+  pitch: 1.5
+display_particles:
+  enabled: true
+  speed: 5
+  list_of_particles:
+    particle1:
+      particle: REDSTONE;6521018
+      speed: 5.0
+      offset_y: '0.8'
+to_find:
+  '1':
+    type: 'block: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWE0NDBiZDdhZWYxOWRmYjE1ZDQ2OWZhNzg1MWQzMGE1NzdhOWJkM2MxZTgwZDJhYjJmODFiZjQ2OGI3NDNkMSJ9fX0='
+    location: -16.0;99.0;11.0;spawn
+  '2':
+    type: 'block: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWE0NDBiZDdhZWYxOWRmYjE1ZDQ2OWZhNzg1MWQzMGE1NzdhOWJkM2MxZTgwZDJhYjJmODFiZjQ2OGI3NDNkMSJ9fX0='
+    location: 37.0;98.0;23.0;spawn
+  '3':
+    type: 'block: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWE0NDBiZDdhZWYxOWRmYjE1ZDQ2OWZhNzg1MWQzMGE1NzdhOWJkM2MxZTgwZDJhYjJmODFiZjQ2OGI3NDNkMSJ9fX0='
+    location: 19.0;98.0;-16.0;spawn
+  '4':
+    type: 'block: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWE0NDBiZDdhZWYxOWRmYjE1ZDQ2OWZhNzg1MWQzMGE1NzdhOWJkM2MxZTgwZDJhYjJmODFiZjQ2OGI3NDNkMSJ9fX0='
+    location: 62.0;98.0;-19.0;spawn
+  '5':
+    type: 'block: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWE0NDBiZDdhZWYxOWRmYjE1ZDQ2OWZhNzg1MWQzMGE1NzdhOWJkM2MxZTgwZDJhYjJmODFiZjQ2OGI3NDNkMSJ9fX0='
+    location: 73.0;117.0;-59.0;spawn
+  '6':
+    type: 'block: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWE0NDBiZDdhZWYxOWRmYjE1ZDQ2OWZhNzg1MWQzMGE1NzdhOWJkM2MxZTgwZDJhYjJmODFiZjQ2OGI3NDNkMSJ9fX0='
+    location: -14.0;103.0;-50.0;spawn
+  '7':
+    type: 'block: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWE0NDBiZDdhZWYxOWRmYjE1ZDQ2OWZhNzg1MWQzMGE1NzdhOWJkM2MxZTgwZDJhYjJmODFiZjQ2OGI3NDNkMSJ9fX0='
+    location: -66.0;120.0;-55.0;spawn
+  '8':
+    type: 'block: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWE0NDBiZDdhZWYxOWRmYjE1ZDQ2OWZhNzg1MWQzMGE1NzdhOWJkM2MxZTgwZDJhYjJmODFiZjQ2OGI3NDNkMSJ9fX0='
+    location: -88.0;113.0;-25.0;spawn
+  '9':
+    type: 'block: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWE0NDBiZDdhZWYxOWRmYjE1ZDQ2OWZhNzg1MWQzMGE1NzdhOWJkM2MxZTgwZDJhYjJmODFiZjQ2OGI3NDNkMSJ9fX0='
+    location: -111.0;95.0;23.0;spawn
+  '10':
+    type: 'block: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWE0NDBiZDdhZWYxOWRmYjE1ZDQ2OWZhNzg1MWQzMGE1NzdhOWJkM2MxZTgwZDJhYjJmODFiZjQ2OGI3NDNkMSJ9fX0='
+    location: -86.0;95.0;53.0;spawn
+  '11':
+    type: 'block: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWE0NDBiZDdhZWYxOWRmYjE1ZDQ2OWZhNzg1MWQzMGE1NzdhOWJkM2MxZTgwZDJhYjJmODFiZjQ2OGI3NDNkMSJ9fX0='
+    location: 39.0;111.0;72.0;spawn
+  '12':
+    type: 'block: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWE0NDBiZDdhZWYxOWRmYjE1ZDQ2OWZhNzg1MWQzMGE1NzdhOWJkM2MxZTgwZDJhYjJmODFiZjQ2OGI3NDNkMSJ9fX0='
+    location: 126.0;98.0;35.0;spawn
+  '13':
+    type: 'block: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWE0NDBiZDdhZWYxOWRmYjE1ZDQ2OWZhNzg1MWQzMGE1NzdhOWJkM2MxZTgwZDJhYjJmODFiZjQ2OGI3NDNkMSJ9fX0='
+    location: 163.0;91.0;139.0;spawn
+  '14':
+    type: 'block: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWE0NDBiZDdhZWYxOWRmYjE1ZDQ2OWZhNzg1MWQzMGE1NzdhOWJkM2MxZTgwZDJhYjJmODFiZjQ2OGI3NDNkMSJ9fX0='
+    location: 327.0;112.0;274.0;spawn
+  '15':
+    type: 'block: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWE0NDBiZDdhZWYxOWRmYjE1ZDQ2OWZhNzg1MWQzMGE1NzdhOWJkM2MxZTgwZDJhYjJmODFiZjQ2OGI3NDNkMSJ9fX0='
+    location: 235.0;117.0;-126.0;spawn
+  '16':
+    type: 'block: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWE0NDBiZDdhZWYxOWRmYjE1ZDQ2OWZhNzg1MWQzMGE1NzdhOWJkM2MxZTgwZDJhYjJmODFiZjQ2OGI3NDNkMSJ9fX0='
+    location: 263.0;99.0;-82.0;spawn
+  '17':
+    type: 'block: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWE0NDBiZDdhZWYxOWRmYjE1ZDQ2OWZhNzg1MWQzMGE1NzdhOWJkM2MxZTgwZDJhYjJmODFiZjQ2OGI3NDNkMSJ9fX0='
+    location: -103.0;110.0;-77.0;spawn
+  '18':
+    type: 'block: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWE0NDBiZDdhZWYxOWRmYjE1ZDQ2OWZhNzg1MWQzMGE1NzdhOWJkM2MxZTgwZDJhYjJmODFiZjQ2OGI3NDNkMSJ9fX0='
+    location: -137.0;109.0;264.0;spawn
+  '19':
+    type: 'block: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWE0NDBiZDdhZWYxOWRmYjE1ZDQ2OWZhNzg1MWQzMGE1NzdhOWJkM2MxZTgwZDJhYjJmODFiZjQ2OGI3NDNkMSJ9fX0='
+    location: -256.0;122.0;288.0;spawn
+  '20':
+    type: 'block: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWE0NDBiZDdhZWYxOWRmYjE1ZDQ2OWZhNzg1MWQzMGE1NzdhOWJkM2MxZTgwZDJhYjJmODFiZjQ2OGI3NDNkMSJ9fX0='
+    location: 13.0;118.0;300.0;spawn
+  '21':
+    type: 'block: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWE0NDBiZDdhZWYxOWRmYjE1ZDQ2OWZhNzg1MWQzMGE1NzdhOWJkM2MxZTgwZDJhYjJmODFiZjQ2OGI3NDNkMSJ9fX0='
+    location: 115.0;103.0;170.0;spawn

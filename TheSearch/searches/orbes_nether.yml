@@ -1,0 +1,54 @@
+permission_required: false
+enabled: true
+default_actions:
+  find_chat_message:
+  - '{centered}&7&m                                                  '
+  - ''
+  - '{centered}&aYou have discovered a &e&lHidden Treasure&a! &7(&e%current%&8/&e%total%&7)'
+  - ''
+  - '{centered}&7&m                                                  '
+  find_title_message:
+    title: '&eHidden Treasure Found!'
+    subtitle: '&7(&b%current%&8/&b%total%&7)'
+    fadeIn: 20
+    stay: 40
+    fadeOut: 20
+  find_sound: BLOCK_NOTE_BLOCK_PLING;10;1.8
+  find_effects_are_random: false
+  find_effects:
+  - 'firework: colors:RED,WHITE type:BALL offsetY:0.8 fade:GREEN'
+last_actions:
+  find_chat_message:
+  - '{centered}&7&m                                                  '
+  - ''
+  - '{centered}&c&lCONGRATS!'
+  - '{centered}&aYou have discovered all the &e&lHidden Treasures'
+  - '{centered}&ain the lobby!'
+  - '{centered}&7Reward: &a$10.000'
+  - ''
+  - '{centered}&7&m                                                  '
+  find_title_message:
+    title: '&eAll Hidden Treasures Found!'
+    subtitle: '&aCongrats!'
+    fadeIn: 20
+    stay: 40
+    fadeOut: 20
+  find_sound: ENTITY_PLAYER_LEVELUP;10;1
+  find_effects_are_random: false
+  find_effects:
+  - 'firework: colors:RED,WHITE type:BALL offsetY:0.8 fade:GREEN'
+  find_commands:
+  - eco give %player% 10000
+sound_clue:
+  delay: 60
+  volume: 1.5
+  sound_name: BLOCK_NOTE_BLOCK_PLING
+  pitch: 1.5
+display_particles:
+  enabled: true
+  speed: 5
+  list_of_particles:
+    particle1:
+      particle: FLAME
+      speed: 0.01
+      offset_y: '0.8'
