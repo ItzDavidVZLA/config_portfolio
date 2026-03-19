@@ -1,0 +1,100 @@
+#Cooldown in seconds until a player can collect a new crateType of this type
+#THIS OVERRIDES THE SAME SETTING IN THE ENVOY'S CATEGORY! If you do NOT want to override it, remove it from here
+collect-cooldown: 0
+broadcast-collect: true
+
+display-name: Bronce
+block: CHEST
+
+required-interactions:
+  amount: 1
+  #In ticks. 1 second is 20 ticks! Set to 0 to disable!
+  cooldown: 0
+
+falling-block:
+  enabled: false
+  height: 10
+  block: end_rod
+  speed: -1
+
+firework:
+  enabled: false
+  #ff0000
+  color: '#e39036'
+  type: ball
+
+flare:
+  enabled: false
+  #In ticks, 20 ticks is 1 second
+  every: 200
+  firework:
+    #ff0000
+    color: '#ff0000'
+    type: ball
+
+rewards:
+- chance: 100.0
+  commands:
+  - eco give %player% 50000
+- chance: 100.0
+  commands:
+  - eco give %player% 100000
+- chance: 100.0
+  commands:
+  - eco give %player% 150000
+- chance: 100.0
+  commands:
+  - give %player% bread 12
+- chance: 80.0
+  commands:
+  - give %player% experiencebottle 8
+- chance: 65.0
+  commands:
+  - give %player% oak_planks 32
+- chance: 65.0
+  commands:
+  - give %player% cobblestone 32
+- chance: 40.0
+  commands:
+  - give %player% stone_sword 1 sharpness:3
+- chance: 60.0
+  commands:
+  - give %player% stone_pickaxe 1 efficiency:3 fortune:1
+- chance: 55.0
+  commands:
+  - give %player% stone_axe 1 efficiency:3 fortune:1
+- chance: 50.0
+  commands:
+  - give %player% iron_helmet 1 protection:2
+- chance: 45.0
+  commands:
+  - give %player% iron_chestplate 1 protection:2
+- chance: 50.0
+  commands:
+  - give %player% iron_leggings 1 protection:2
+- chance: 55.0
+  commands:
+  - give %player% iron_boots 1 protection:2
+- chance: 50.0
+  commands:
+  - give %player% chainmail_helmet 1 protection:3 unbreaking:2
+- chance: 45.0
+  commands:
+  - give %player% chainmail_chestplate 1 protection:3 unbreaking:2
+- chance: 50.0
+  commands:
+  - give %player% chainmail_leggings 1 protection:3 unbreaking:2
+- chance: 55.0
+  commands:
+  - give %player% chainmail_boots 1 protection:3 unbreaking:2
+hologram:
+  enabled: true
+  height: 2.5
+  lines:
+  - '&#D3785A&ka &fCaja de &#D3785AB&#CA7255r&#C16C50o&#B7654An&#AE5F45c&#A55940e &ka&r'
+  - ''
+  - '&fRareza:'
+  - '&e✯✰✰✰✰'
+  - ''
+  - '&e» ¡Haz clic para abrir! «'
+reward-amount: 1

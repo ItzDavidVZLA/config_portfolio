@@ -1,0 +1,166 @@
+#Cooldown in seconds until a player can collect a new crateType of this type
+#THIS OVERRIDES THE SAME SETTING IN THE ENVOY'S CATEGORY! If you do NOT want to override it, remove it from here
+collect-cooldown: 0
+broadcast-collect: true
+
+display-name: Diamante
+block: chest
+
+required-interactions:
+  amount: 1
+  #In ticks. 1 second is 20 ticks! Set to 0 to disable!
+  cooldown: 0
+
+firework:
+  enabled: false
+  #ff0000
+  color: '#ff0000'
+  type: ball
+
+falling-block:
+  enabled: false
+  height: 10
+  block: end_rod
+  speed: -1
+
+flare:
+  enabled: false
+  #In ticks, 20 ticks is 1 second
+  every: 200
+  firework:
+    #ff0000
+    color: '#ff0000'
+    type: ball
+
+rewards:
+- chance: 100.0
+  commands:
+  - eco give %player% 10000000
+- chance: 100.0
+  commands:
+  - eco give %player% 25000000
+- chance: 100.0
+  commands:
+  - eco give %player% 50000000
+- chance: 100.0
+  commands:
+  - give %player% cooked_pork 32
+- chance: 80.0
+  commands:
+  - give %player% experiencebottle 64
+- chance: 65.0
+  commands:
+  - give %player% oak_log 32
+- chance: 65.0
+  commands:
+  - give %player% cobblestone 256
+- chance: 40.0
+  commands:
+  - give %player% iron_sword 1 sharpness:3
+- chance: 60.0
+  commands:
+  - give %player% iron_pickaxe 1 efficiency:3 fortune:2
+- chance: 55.0
+  commands:
+  - give %player% iron_axe 1 efficiency:3 fortune:2
+- chance: 50.0
+  commands:
+  - give %player% iron_helmet 1 protection:3 unbreaking:2
+- chance: 45.0
+  commands:
+  - give %player% iron_chestplate 1 protection:3 unbreaking:2
+- chance: 50.0
+  commands:
+  - give %player% iron_leggings 1 protection:3 unbreaking:2
+- chance: 55.0
+  commands:
+  - give %player% iron_boots 1 protection:3 unbreaking:2
+- chance: 50.0
+  commands:
+  - give %player% diamond_helmet 1 protection:3 unbreaking:2
+- chance: 45.0
+  commands:
+  - give %player% diamond_chestplate 1 protection:3 unbreaking:2
+- chance: 50.0
+  commands:
+  - give %player% diamond_leggings 1 protection:3 unbreaking:2
+- chance: 55.0
+  commands:
+  - give %player% diamond_boots 1 protection:3 unbreaking:2
+- chance: 35.0
+  commands:
+  - give %player% enchantedbook 1 protection:3
+- chance: 30.0
+  commands:
+  - give %player% enchantedbook 1 protection:2
+- chance: 25.0
+  commands:
+  - give %player% enchantedbook 1 fortune:2
+- chance: 25.0
+  commands:
+  - give %player% enchantedbook 1 unbreaking:3
+- chance: 25.0
+  commands:
+  - give %player% enchantedbook 1 efficiency:3
+- chance: 45.0
+  commands:
+  - give %player% coal 48
+- chance: 45.0
+  commands:
+  - give %player% iron_ingot 24
+- chance: 45.0
+  commands:
+  - give %player% gold_ingot 24
+- chance: 10.0
+  commands:
+  - give %player% diamond_sword 1 sharpness:1 unbreaking:1
+- chance: 15.0
+  commands:
+  - give %player% diamond_pickaxe 1 efficiency:1 unbreaking:1
+- chance: 15.0
+  commands:
+  - give %player% diamond_axe 1 efficiency:1 unbreaking:1
+- chance: 25.0
+  commands:
+  - give %player% diamond_helmet 1 proteccion:2 unbreaking:1
+- chance: 30.0
+  commands:
+  - give %player% diamond_chestplate 1 proteccion:2 unbreaking:1
+- chance: 15.0
+  commands:
+  - give %player% diamond_leggings 1 proteccion:2 unbreaking:1
+- chance: 20.0
+  commands:
+  - give %player% diamond_boots 1 proteccion:2 unbreaking:1
+- chance: 10.0
+  commands:
+  - give %player% cooked_pork 12
+- chance: 30.0
+  commands:
+  - give %player% coal 24
+- chance: 15.0
+  commands:
+  - give %player% iron_ingot 32
+- chance: 10.0
+  commands:
+  - give %player% gold_ingot 24
+- chance: 10.0
+  commands:
+  - give %player% diamond 8
+- chance: 10.0
+  commands:
+  - give %player% emerald 8
+- chance: 10.0
+  commands:
+  - give %player% netherite_scrap 4
+hologram:
+  enabled: true
+  height: 2.5
+  lines:
+  - '&k&#51D1F6&ka &fCaja de &#51D1F6D&#60D6F7i&#6FDAF9a&#7EDFFAm&#8CE4FBa&#9BE9FCn&#AAEDFEt&#B9F2FFe &ka&r'
+  - ''
+  - '&fRareza:'
+  - '&e✯✯✯✯✰'
+  - ''
+  - '&e» ¡Haz clic para abrir! «'
+reward-amount: 1

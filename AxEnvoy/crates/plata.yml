@@ -1,0 +1,118 @@
+#Cooldown in seconds until a player can collect a new crateType of this type
+#THIS OVERRIDES THE SAME SETTING IN THE ENVOY'S CATEGORY! If you do NOT want to override it, remove it from here
+collect-cooldown: 0
+broadcast-collect: true
+
+display-name: Plata
+block: chest
+
+required-interactions:
+  amount: 1
+  #In ticks. 1 second is 20 ticks! Set to 0 to disable!
+  cooldown: 0
+
+firework:
+  enabled: false
+  #ff0000
+  color: '#e39036'
+  type: ball
+
+falling-block:
+  enabled: false
+  height: 10
+  block: end_rod
+  speed: -1
+
+flare:
+  enabled: false
+  #In ticks, 20 ticks is 1 second
+  every: 200
+  firework:
+    #ff0000
+    color: '#ff0000'
+    type: ball
+
+rewards:
+- chance: 100.0
+  commands:
+  - eco give %player% 200000
+- chance: 100.0
+  commands:
+  - eco give %player% 350000
+- chance: 100.0
+  commands:
+  - eco give %player% 500000
+- chance: 100.0
+  commands:
+  - give %player% bread 24
+- chance: 80.0
+  commands:
+  - give %player% experiencebottle 16
+- chance: 65.0
+  commands:
+  - give %player% oak_planks 64
+- chance: 65.0
+  commands:
+  - give %player% cobblestone 64
+- chance: 40.0
+  commands:
+  - give %player% iron_sword 1 sharpness:3
+- chance: 60.0
+  commands:
+  - give %player% iron_pickaxe 1 efficiency:3 fortune:2
+- chance: 55.0
+  commands:
+  - give %player% iron_axe 1 efficiency:3 fortune:2
+- chance: 50.0
+  commands:
+  - give %player% iron_helmet 1 protection:3 unbreaking:2
+- chance: 45.0
+  commands:
+  - give %player% iron_chestplate 1 protection:3 unbreaking:2
+- chance: 50.0
+  commands:
+  - give %player% iron_leggings 1 protection:3 unbreaking:2
+- chance: 55.0
+  commands:
+  - give %player% iron_boots 1 protection:3 unbreaking:2
+- chance: 50.0
+  commands:
+  - give %player% chainmail_helmet 1 protection:3 unbreaking:2
+- chance: 45.0
+  commands:
+  - give %player% chainmail_chestplate 1 protection:3 unbreaking:2
+- chance: 50.0
+  commands:
+  - give %player% chainmail_leggings 1 protection:3 unbreaking:2
+- chance: 55.0
+  commands:
+  - give %player% chainmail_boots 1 protection:3 unbreaking:2
+- chance: 35.0
+  commands:
+  - give %player% enchantedbook 1 protection:1
+- chance: 30.0
+  commands:
+  - give %player% enchantedbook 1 protection:2
+- chance: 25.0
+  commands:
+  - give %player% enchantedbook 1 fortune:1
+- chance: 45.0
+  commands:
+  - give %player% coal 12
+- chance: 45.0
+  commands:
+  - give %player% iron_ingot 8
+- chance: 45.0
+  commands:
+  - give %player% gold_ingot 8
+hologram:
+  enabled: true
+  height: 2.5
+  lines:
+  - '&k&#8A9597&ka &fCaja de &#8A9597P&#98A0A1l&#A5ABACa&#B3B5B6t&#C0C0C0a &ka&r'
+  - ''
+  - '&fRareza:'
+  - '&e✯✯✰✰✰'
+  - ''
+  - '&e» ¡Haz clic para abrir! «'
+reward-amount: 1

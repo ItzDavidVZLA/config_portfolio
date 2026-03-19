@@ -1,0 +1,48 @@
+messages:
+  prefix: '&r'
+  collect: ' &8&l» &b%player% &fha abierto una caja. Quedan &e%amount% &frestante(s).'
+  start:
+    one: ' &8&l» &fHa comenzado el evento de &b&nAir drops&f.'
+    multiple: ' &8&l» &fEl evento de &b&nAir drops&f ha comenzado. &e%amount% &fcajas han aparecido en &e&n/warp eventos'
+  flare-start:
+    one: ' &8&l» &b%player% &fHa comenzado el evento de &b&nAir drops&f.'
+    multiple: ' &8&l» &fEl evento de &b&nAir drops&f ha comenzado. &e%amount% &fcajas han aparecido en &e&n/warp eventos'
+  set-center: Set center to your location!
+  set-predefined: You added a predefined spawn to this envoy!
+  remove-predefined: You removed a predefined spawn from this envoy!
+  stopped: The envoy was forcefully stopped.
+  cooldown: ' &4&l» &cDebes esperar %cooldown% segundos para abrir esta caja'
+  ended: ' &8&l» &fEl evento de &b&nAir drops&r &fha terminado. El próximo evento será en &e&n1 hora&f.'
+  already-active: This event is already running!
+  flare-disabled: This envoy''s flare is disabled!
+  reload: 'Reloaded! Took: %time% ms!'
+  no-envoy-found: There is no loaded envoy named that!
+  alert: ' &8&l» &fHabrá un evento de &b&nAir drops&f aproximadamente &b%time%&f.'
+  not-enough-autostart: ' &4&l» &cNo hay jugadores suficientes para iniciar el evento de &nAir Drops'
+  crate-spawn-message: A crate spawned at %location%!
+  location-format: '%world% %x% %y% %z%'
+  start-time: ' &8&l» &fEl evento de &b&nAir Drops&r &finiciará dentro de &b%time%&f aproximadamente.'
+  toggle:
+    on: '&aYou have enabled the envoy collect messages!'
+    off: '&cYou have disabled the envoy collect messages!'
+  editor:
+    join: You have entered the editor!
+    leave: You have left the editor!
+  placeholder:
+    running: curso
+    not-running: '&cNot running'
+    remaining: '%remaining% cajas restantes'
+    remaining-time: '%time%'
+    until-next: '%time%'
+  time:
+    day: d
+    hour: h
+    minute: m
+    second: s
+  updatecheck:
+    message:
+    - <#00FF00>A new version of the plugin is available! <white><click:open_url:'https://modrinth.com/plugin/axenvoys/version/<version>'><u>Download it on <#00FF00>Modrinth!</u></click>
+    - '<gray>Changelog:'
+    - <changelog>
+    changelog-version: '<white><version>:'
+    changelog: <white><changelog-entry>
