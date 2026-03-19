@@ -1,0 +1,27 @@
+[20:10:00 INFO]: [thebestranks] Rank donkey has been loaded successfully!
+[20:10:00 INFO]: [PlaceholderAPI] Successfully registered expansion: thebestranks [2.0.3]
+[20:10:00 ERROR]: Error occurred while enabling thebestranks v2.0.3 (Is it up to date?)
+java.lang.LinkageError: loader constraint violation: loader 'kLib-0.0.8.jar' @51f41c61 wants to load interface kotlin.jvm.functions.Function0. A different interface with the same name was previously loaded by 'eco-6.69.1-all.jar' @1e559fc. (kotlin.jvm.functions.Function0 is in unnamed module of loader 'eco-6.69.1-all.jar' @1e559fc, parent loader java.net.URLClassLoader @759ebb3d)
+        at java.lang.ClassLoader.defineClass1(Native Method) ~[?:?]
+        at java.lang.ClassLoader.defineClass(ClassLoader.java:1012) ~[?:?]
+        at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150) ~[?:?]
+        at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:229) ~[paper-api-1.19.4-R0.1-SNAPSHOT.jar:?]
+        at java.lang.ClassLoader.loadClass(ClassLoader.java:587) ~[?:?]
+        at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:155) ~[paper-api-1.19.4-R0.1-SNAPSHOT.jar:?]
+        at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:150) ~[paper-api-1.19.4-R0.1-SNAPSHOT.jar:?]
+        at java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[?:?]
+        at com.zorbeytorunoglu.kLib.task.ExtensionsKt.repeatAsync(Extensions.kt:141) ~[kLib-0.0.8.jar:?]
+        at com.zorbeytorunoglu.thebestranks.TBR.onEnable(TBR.kt:50) ~[thebestranks.jar:?]
+        at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:279) ~[paper-api-1.19.4-R0.1-SNAPSHOT.jar:?]
+        at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:189) ~[paper-1.19.4.jar:git-Paper-527]
+        at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:104) ~[paper-1.19.4.jar:git-Paper-527]
+        at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:507) ~[paper-api-1.19.4-R0.1-SNAPSHOT.jar:?]
+        at org.bukkit.craftbukkit.v1_19_R3.CraftServer.enablePlugin(CraftServer.java:555) ~[paper-1.19.4.jar:git-Paper-527]
+        at org.bukkit.craftbukkit.v1_19_R3.CraftServer.enablePlugins(CraftServer.java:466) ~[paper-1.19.4.jar:git-Paper-527]
+        at net.minecraft.server.MinecraftServer.loadWorld0(MinecraftServer.java:638) ~[paper-1.19.4.jar:git-Paper-527]
+        at net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:437) ~[paper-1.19.4.jar:git-Paper-527]
+        at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:308) ~[paper-1.19.4.jar:git-Paper-527]
+        at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1104) ~[paper-1.19.4.jar:git-Paper-527]
+        at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:320) ~[paper-1.19.4.jar:git-Paper-527]
+        at java.lang.Thread.run(Thread.java:833) ~[?:?]
+[20:10:00 INFO]: [thebestranks] Disabling thebestranks v2.0.3
