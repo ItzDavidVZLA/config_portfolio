@@ -1,0 +1,287 @@
+Inventories:
+  main:
+    slots: 45
+    title: '&8Códice'
+    #'21':
+      #type: history
+      #item: BOOK
+      #name: '&7Category: %name%'
+      #lore:
+      #- '&eIn your adventures you''ll find some'
+      #- '&einteresting knowledge.'
+      #- ''
+      #- '&7Unlocked: %unlocked% &8[%progress_bar%&8] &8(&7%percentage%&8)'
+      #open_inventory: history_discoveries
+    '21':
+      type: regions
+      item: MAP
+      name: '%name%'
+      lore:
+      - '&8Categoría'
+      - ''
+      - '&fHistorial de lugares desbloqueados'
+      - ''
+      - '&8• &fDesbloqueado: %unlocked% &7(%percentage%)'
+      - ''
+      - '&e» ¡Haz clic para ver menú! «'
+      open_inventory: regions_discoveries
+    '23':
+      type: monsters
+      item: ROTTEN_FLESH
+      name: '%name%'
+      lore:
+      - '&8Categoría'
+      - ''
+      - '&fHistorial de mobs desbloqueados'
+      - ''
+      - '&8• &fDesbloqueado: %unlocked% &7(%percentage%)'
+      - ''
+      - '&e» ¡Haz clic para ver menú! «'
+      open_inventory: monsters_discoveries
+    '0;1;2;3;4;5;6;7;8;9;17;18;26;27;35;36;37;38;39;41;42;43;44':
+      item: BLACK_STAINED_GLASS_PANE
+      name: ' '
+    '40':
+      item: BARRIER
+      name: '&3Cer&brar'
+      open_inventory: close
+  history_discoveries:
+    slots: 54
+    title: 'Códice'
+    '11':
+      type: history;1
+      item: PAPER
+      name: '&3Descubierto: &b%name%'
+      lore:
+      - '%lore%'
+    '40':
+      item: ARROW
+      name: '&3Vol&bver'
+      open_inventory: main
+    0;1;2;3;4;5;6;7;8;9;17;18;26;27;35;36;37;38;39;41;42;43;44:
+      item: BLACK_STAINED_GLASS_PANE
+      name: ' '
+  regions_discoveries:
+    slots: 54
+    title: 'Códice'
+    '10':
+      type: regions;1
+      item: PAPER
+      name: '&3Descubierto: &b%name%'
+      lore:
+      - '%lore%'
+    '11':
+      type: regions;2
+      item: PAPER
+      name: '&3Descubierto: &b%name%'
+      lore:
+      - '%lore%'
+    '12':
+      type: regions;3
+      item: PAPER
+      name: '&3Descubierto: &b%name%'
+      lore:
+      - '%lore%'
+    '13':
+      type: regions;4
+      item: PAPER
+      name: '&3Descubierto: &b%name%'
+      lore:
+      - '%lore%'
+    '14':
+      type: regions;5
+      item: PAPER
+      name: '&3Descubierto: &b%name%'
+      lore:
+      - '%lore%'
+    '15':
+      type: regions;6
+      item: PAPER
+      name: '&3Descubierto: &b%name%'
+      lore:
+      - '%lore%'
+    '16':
+      type: regions;7
+      item: PAPER
+      name: '&3Descubierto: &b%name%'
+      lore:
+      - '%lore%'
+    '19':
+      type: regions;8
+      item: PAPER
+      name: '&3Descubierto: &b%name%'
+      lore:
+      - '%lore%'
+    '20':
+      type: regions;9
+      item: PAPER
+      name: '&3Descubierto: &b%name%'
+      lore:
+      - '%lore%'
+    '21':
+      type: regions;10
+      item: PAPER
+      name: '&3Descubierto: &b%name%'
+      lore:
+      - '%lore%'
+    '22':
+      type: regions;11
+      item: PAPER
+      name: '&3Descubierto: &b%name%'
+      lore:
+      - '%lore%'
+    '23':
+      type: regions;12
+      item: PAPER
+      name: '&3Descubierto: &b%name%'
+      lore:
+      - '%lore%'
+    '24':
+      type: regions;13
+      item: PAPER
+      name: '&3Descubierto: &b%name%'
+      lore:
+      - '%lore%'
+    '25':
+      type: regions;14
+      item: PAPER
+      name: '&3Descubierto: &b%name%'
+      lore:
+      - '%lore%'      
+    '28':
+      type: regions;15
+      item: PAPER
+      name: '&3Descubierto: &b%name%'
+      lore:
+      - '%lore%'
+    '29':
+      type: regions;16
+      item: PAPER
+      name: '&3Descubierto: &b%name%'
+      lore:
+      - '%lore%'
+    '30':
+      type: regions;17
+      item: PAPER
+      name: '&3Descubierto: &b%name%'
+      lore:
+      - '%lore%'
+    '31':
+      type: regions;18
+      item: PAPER
+      name: '&3Descubierto: &b%name%'
+      lore:
+      - '%lore%'
+    '32':
+      type: regions;19
+      item: PAPER
+      name: '&3Descubierto: &b%name%'
+      lore:
+      - '%lore%'
+    '33':
+      type: regions;20
+      item: PAPER
+      name: '&3Descubierto: &b%name%'
+      lore:
+      - '%lore%'
+    '34':
+      type: regions;21
+      item: PAPER
+      name: '&3Descubierto: &b%name%'
+      lore:
+      - '%lore%'
+    '37':
+      type: regions;22
+      item: PAPER
+      name: '&3Descubierto: &b%name%'
+      lore:
+      - '%lore%'
+    '38':
+      type: regions;23
+      item: PAPER
+      name: '&3Descubierto: &b%name%'
+      lore:
+      - '%lore%'
+    '49':
+      item: ARROW
+      name: '&3Vol&bver'
+      open_inventory: main
+    0;1;2;3;4;5;6;7;8;9;17;18;26;27;36;35;44;45;46;47;48;50;51;52;53:
+      item: BLACK_STAINED_GLASS_PANE
+      name: ' '
+  monsters_discoveries:
+    slots: 45
+    title: 'Códice'
+    '10':
+      type: monsters;1
+      item: PAPER
+      name: '&3Descubierto: &b%name%'
+      lore:
+      - '%lore%'
+    '11':
+      type: monsters;2
+      item: PAPER
+      name: '&3Descubierto: &b%name%'
+      lore:
+      - '%lore%'
+    '12':
+      type: monsters;3
+      item: PAPER
+      name: '&3Descubierto: &b%name%'
+      lore:
+      - '%lore%'
+    '13':
+      type: monsters;4
+      item: PAPER
+      name: '&3Descubierto: &b%name%'
+      lore:
+      - '%lore%'
+    '14':
+      type: monsters;5
+      item: PAPER
+      name: '&3Descubierto: &b%name%'
+      lore:
+      - '%lore%'
+    '15':
+      type: monsters;6
+      item: PAPER
+      name: '&3Descubierto: &b%name%'
+      lore:
+      - '%lore%'
+    '16':
+      type: monsters;7
+      item: PAPER
+      name: '&3Descubierto: &b%name%'
+      lore:
+      - '%lore%'
+    '19':
+      type: monsters;8
+      item: PAPER
+      name: '&3Descubierto: &b%name%'
+      lore:
+      - '%lore%'
+    '20':
+      type: monsters;9
+      item: PAPER
+      name: '&3Descubierto: &b%name%'
+      lore:
+      - '%lore%'
+    '21':
+      type: monsters;10
+      item: PAPER
+      name: '&3Descubierto: &b%name%'
+      lore:
+      - '%lore%'
+    '22':
+      type: monsters;11
+      item: PAPER
+      name: '&3Descubierto: &b%name%'
+      lore:
+      - '%lore%'
+    '40':
+      item: ARROW
+      name: '&3Vol&bver'
+      open_inventory: main
+    0;1;2;3;4;5;6;7;8;9;17;18;26;27;35;36;37;38;39;41;42;43;44:
+      item: BLACK_STAINED_GLASS_PANE
+      name: ' '

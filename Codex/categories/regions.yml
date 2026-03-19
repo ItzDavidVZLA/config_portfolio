@@ -1,0 +1,240 @@
+name: "&3Zo&bnas"
+discover_title:
+  title: "&3&lZONA DESCUBIERTA"
+  subtitle: "&e%name%"
+  fade_in: 20
+  stay: 60
+  fade_out: 20
+discover_message:
+- '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+- " "
+- " &3&lZONA DESCUBIERTA"
+- " &e%name%"
+- " "
+- " &e» Revisa tu códice mediante /codex «"
+- " "
+- '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+discover_sound:
+  name: BLOCK_GILDED_BLACKSTONE_STEP
+  volume: 10
+  pitch: 0.1
+discoveries:
+  1:
+    name: "Pozo Séptico\n \n &8⏵ &fMobs hostiles"
+    lore:
+    - "&8Zona"
+    - ""
+    - "&fLugar hostil. Se cree que habitan"
+    - "&fantiguos mineros jamas encontrados"
+    - ""
+    - "&e» mc.comugamers.com «"
+    discovered_on_region: spawnmobs
+  2:
+    name: "Laguna\n \n &8⏵ &fZona apta para la pesca\n &8⏵ &fAparición de peces continentales\n &8⏵ &fApto para eventos de pesca recurrentes"
+    lore:
+    - "&8Zona"
+    - ""
+    - "&fEstanque de agua destinado a la pesca."
+    - "&fOcurren eventos de pesca frecuentemente."
+    - ""
+    - "&e» mc.comugamers.com «"
+    discovered_on_region: pesca
+  3:
+    name: "Cajas\n \n &8⏵ &fZona de recompensas"
+    lore:
+    - "&8Zona"
+    - ""
+    - "&fCentro de reunion destinado a abrir cajas."
+    - ""
+    - "&e» mc.comugamers.com «"
+    discovered_on_region: cajas
+  4:
+    name: "Taberna\n \n &8⏵ &fPunto de reunión\n &8⏵ &fComida y bebidas personalizadas"
+    lore:
+    - "&8Zona"
+    - ""
+    - "&fCentro de reunion destinado a la interacción"
+    - "&fde jugadores"
+    - ""
+    - "&e» mc.comugamers.com «"
+    discovered_on_region: taberna
+  5:
+    name: "Palacio\n \n &8⏵ &fZona administrativa de un rey\n &8⏵ &fSu portal envía al jugador a un mundo desconocido"
+    lore:
+    - "&8Zona"
+    - ""
+    - "&fZona habitada y administrada por un rey"
+    - ""
+    - "&e» mc.comugamers.com «"
+    discovered_on_region: palacio
+  6:
+    name: "Puerto \n \n &8⏵ &fZona comercial"
+    lore:
+    - "&8Zona"
+    - ""
+    - "&fZona comercial dedicada a la importación"
+    - "&fy exportación de productos."
+    - ""
+    - "&e» mc.comugamers.com «"
+    discovered_on_region: puerto
+  7:
+    name: "Salón de Batalla \n \n &8⏵ &fLugar donde aparecen antiguas leyendas"
+    lore:
+    - "&8Zona"
+    - ""
+    - "&fLugar donde aparecen antiguas leyendas."
+    - ""
+    - "&e» mc.comugamers.com «"
+    discovered_on_region: salonbatalla
+  8:
+    name: "Pueblo Fantasma \n \n &8⏵ &fLugar abandonado\n &8⏵ &fUtilizado como almacén provisional"
+    lore:
+    - "&8Zona"
+    - ""
+    - "&fLugar abandonado. Utilizado como almacén provisional"
+    - ""
+    - "&e» mc.comugamers.com «"
+    discovered_on_region: pueblofantasma
+  9:
+    name: "Campo agrícola \n \n &8⏵ &fCampo fértil\n &8⏵ &fPrincipal exportador de recursos agrícolas"
+    lore:
+    - "&8Zona"
+    - ""
+    - "&fZona principal para la exportación de recursos agricolas"
+    - ""
+    - "&e» mc.comugamers.com «"
+    discovered_on_region: campoagricola
+  10:
+    name: "Subastas \n \n &8⏵ &fCasa de subastas"
+    lore:
+    - "&8Zona"
+    - ""
+    - "&fCasa de subastas"
+    - ""
+    - "&e» mc.comugamers.com «"
+    discovered_on_region: subastas
+  11:
+    name: "Arena del Inframundo \n \n &8⏵ &fPunto de aparición\n &8⏵ &fSpawneo de mobs del nether\n &8⏵ &fCuatro zonas alrededor por descubrir"
+    lore:
+    - "&8Zona"
+    - ""
+    - "&fZona destinada al farmeo de mobs del nether"
+    - ""
+    - "&e» mc.comugamers.com «"
+    discovered_on_region: pvenetherspawn
+  12:
+    name: "Bastión \n \n &8⏵ &fHogar de los aniquiladores\n &8⏵ &fLugar conocido por su alta hostilidad\n &8⏵ &fSe dan ataques en manada"
+    lore:
+    - "&8Zona"
+    - ""
+    - "&fAniquiladores saldrán del bastión para matarte"
+    - ""
+    - "&e» mc.comugamers.com «"
+    discovered_on_region: bastionnether
+  13:
+    name: "Ciudadela \n \n &8⏵ &fHogar de los Caballeros Infernales\n &8⏵ &fLugar conocido por su alta hostilidad\n &8⏵ &fNo recomendado para novatos"
+    lore:
+    - "&8Zona"
+    - ""
+    - "&fCaballeros Infernales aparecerán en la ciudadela"
+    - "&fpara matarte"
+    - ""
+    - "&e» mc.comugamers.com «"
+    discovered_on_region: ciudadelanether
+  14:
+    name: "Campamento \n \n &8⏵ &fHogar de los Cerdos Erráticos\n &8⏵ &fLugar conocido por su alta hostilidad\n &8⏵ &fSe dan ataques en manada"
+    lore:
+    - "&8Zona"
+    - ""
+    - "&fCerdos Erráticos aparecerán en el campamento"
+    - "&fpara matarte"
+    - ""
+    - "&e» mc.comugamers.com «"
+    discovered_on_region: campamentonether
+  15:
+    name: "Pantano \n \n &8⏵ &fHogar de los Slimes Infernales\n &8⏵ &fLugar conocido por su leve hostilidad\n &8⏵ &fIdeal para ganar experiencia de combate"
+    lore:
+    - "&8Zona"
+    - ""
+    - "&fSlimes Infernales aparecerán en el pantano"
+    - "&fpara matarte"
+    - ""
+    - "&e» mc.comugamers.com «"
+    discovered_on_region: pantanonether
+  16:
+    name: "Salón del Inframundo \n \n &8⏵ &fLugar donde aparecen demonios más poderosos del Nether"
+    lore:
+    - "&8Zona"
+    - ""
+    - "&fLugar donde aparecen los demonios mas poderosos del Nether"
+    - ""
+    - "&e» mc.comugamers.com «"
+    discovered_on_region: bossnether
+  17:
+    name: "Koth Nether \n \n &8⏵ &fZona de Combate\n &8⏵ &fLugar conocido por su alta hostilidad\n &8⏵ &fPosibilidad de capturar koths cada fin de semana"
+    lore:
+    - "&8Zona"
+    - ""
+    - "&fEn este lugar podrás dominar koths y"
+    - "&fluchar contra usuarios y clanes"
+    - ""
+    - "&e» mc.comugamers.com «"
+    discovered_on_region: spawnpvpnether
+  18:
+    name: "Nether \n \n &8⏵ &fMundo hostil\n &8⏵ &fAlberga mobs y bosses peligrosos\n &8⏵ &fDestinado al PvP y PvE"
+    lore:
+    - "&8Zona"
+    - ""
+    - "&fLugar destinado al PvP y PvE. Posee altos indices de hostilidad"
+    - ""
+    - "&e» mc.comugamers.com «"
+    discovered_on_region: spawnnetherpvp
+  19:
+    name: "End \n \n &8⏵ &fMundo hostil\n &8⏵ &fAlberga endermans peligrosos\n &8⏵ &fSe encuentra una entrada al fondo de la fortaleza"
+    lore:
+    - "&8Zona"
+    - ""
+    - "&fZona destinada al farmeo de mobs del end"
+    - ""
+    - "&e» mc.comugamers.com «"
+    discovered_on_region: endpve
+  20:
+    name: "Cueva del End \n \n &8⏵ &fLugar hostil\n &8⏵ &fMadriguera de Sentey\n &8⏵ &fEndermans peligrosos vigilan este sitio"
+    lore:
+    - "&8Zona"
+    - ""
+    - "&fZona destinada al farmeo de mobs del end."
+    - "&fSentey reposa en este sitio"
+    - ""
+    - "&e» mc.comugamers.com «"
+    discovered_on_region: endpvedragon
+  21:
+    name: "Koth End \n \n &8⏵ &fZona de Combate\n &8⏵ &fLugar conocido por su alta hostilidad\n &8⏵ &fPosibilidad de capturar koths cada fin de semana"
+    lore:
+    - "&8Zona"
+    - ""
+    - "&fEn este lugar podrás dominar koths y"
+    - "&fluchar contra usuarios y clanes"
+    - ""
+    - "&e» mc.comugamers.com «"
+    discovered_on_region: endkoth
+  22:
+    name: "PvP \n \n &8⏵ &fZona de Combate\n &8⏵ &fLugar conocido por su alta hostilidad\n &8⏵ &fPosibilidad de capturar koths cada fin de semana"
+    lore:
+    - "&8Zona"
+    - ""
+    - "&fEn este lugar podrás dominar koths y"
+    - "&fluchar contra usuarios y clanes"
+    - ""
+    - "&e» mc.comugamers.com «"
+    discovered_on_region: warppvpspawn
+  23:
+    name: "Eventos \n \n &8⏵ &fZona de Eventos\n &8⏵ &fDestinado a eventos de Piñata\n &8⏵ &fOcurren eventos cada semana"
+    lore:
+    - "&8Zona"
+    - ""
+    - "&fEn este lugar podrás participar de diversos"
+    - "&feventos relacionados al modo de juego"
+    - ""
+    - "&e» mc.comugamers.com «"
+    discovered_on_region: obeventos

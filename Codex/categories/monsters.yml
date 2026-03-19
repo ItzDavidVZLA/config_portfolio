@@ -1,0 +1,270 @@
+name: "#00CBF5Monstruos"
+discover_title:
+  title: "#00CBF5&lMOB DESCUBIERTO"
+  subtitle: "&e%name%"
+  fade_in: 20
+  stay: 60
+  fade_out: 20
+discover_message:
+- '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+- " "
+- " &3&lMOB DESCUBIERTO"
+- " &e%name%"
+- " "
+- " &e» Revisa tu códice mediante /codex «"
+- " "
+- '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+discover_sound:
+  name: BLOCK_GILDED_BLACKSTONE_STEP
+  volume: 10
+  pitch: 0.1
+discoveries:
+  1:
+    name: "Zombie Avanzado\n \n &8⏵ &fMob hostil\n &8⏵ &fArmamento básico\n &8⏵ &fLocalizado en Pozo Séptico"
+    lore:
+    - "&8Mob"
+    - ""
+    - "&7&oMe he enfrentado con uno de ellos. Es extraño,"
+    - "&7&oes como si varios de ellos notaran mi presencia."
+    - ""
+    - "&7&oEsas cosas no son normales, actuan de forma errática"
+    - "&7&oy tienen armamento que alguien normal no tendría, sin"
+    - "&7&oembargo no están protegidos en la cabeza. De ser cierto"
+    - "&7&oese rumor esta gente habrá sufrido un destino trágico."
+    - ""
+    - "&7&o- %player_name%"
+    - ""
+    - "&e» mc.comugamers.com «"
+    discovered_on_mob_kill:
+      type: ZOMBIE
+      name: "[Nv. 1] Zombie Avanzado"
+  2:
+    name: "Tempest\n \n &8⏵ &fMob hostil\n &8⏵ &fArmamento mediano\n &8⏵ &fLocalizado en Salón de Batalla"
+    lore:
+    - "&8Mob"
+    - ""
+    - "&7&oLuché contra esta bestia y... que bicho mas loco."
+    - ""
+    - "&7&oEsa cosa casi me mata, su equipamiento no es algo"
+    - "&7&oque llevaría un zombie común... ¿Como es que fue"
+    - "&7&ocapaz de hablarme? Espero tener pronto una"
+    - "&7&orespuesta."
+    - ""
+    - "&7&o- %player_name%"
+    - ""
+    - "&e» mc.comugamers.com «"
+    discovered_on_mob_kill:
+      type: ZOMBIE
+      name: "[Nv. 50] Tempest"
+  3:
+    name: "Balrog\n \n &8⏵ &fMob hostil\n &8⏵ &fArmamento mediano\n &8⏵ &fLocalizado en Salón de Batalla"
+    lore:
+    - "&8Mob"
+    - ""
+    - "&7&oSi lo anterior era un loco, este es peor."
+    - ""
+    - "&7&oAtaca con fuerza bruta, es errático y su piel"
+    - "&7&oparece estar chamuscada. Parece que no es el"
+    - "&7&oúnico monstruo en este mundo."
+    - ""
+    - "&7&o- %player_name%"
+    - ""
+    - "&e» mc.comugamers.com «"
+    discovered_on_mob_kill:
+      type: WITHER_SKELETON
+      name: "[Nv. 50] Balrog 💀"
+  4:
+    name: "Sentinel\n \n &8⏵ &fMob hostil\n &8⏵ &fSin armamento\n &8⏵ &fLocalizado en Salón de Batalla"
+    lore:
+    - "&8Mob"
+    - ""
+    - "&7&oHasta ahora es el ser mas mortifero que me"
+    - "&7&ohe enfrentado."
+    - ""
+    - "&7&oSu comportamiento no es normal. Ataca ni bien"
+    - "&7&osiente la presencia de un humano a su alrededor."
+    - "&7&oSu daño es mortifero, por lo que es mejor ser"
+    - "&7&ocauteloso."
+    - ""
+    - "&7&o- %player_name%"
+    - ""
+    - "&e» mc.comugamers.com «"
+    discovered_on_mob_kill:
+      type: ENDERMAN
+      name: "[Nv. 50] Sentinel ⏣"
+  5:
+    name: "Apex\n \n &8⏵ &fMob hostil\n &8⏵ &fSin armamento\n &8⏵ &fLocalizado en Salón de Batalla"
+    lore:
+    - "&8Mob"
+    - ""
+    - "&7&oHm, que golem mas extraño."
+    - ""
+    - "&7&oLos golems no suelen atacar humanos a menos que"
+    - "&7&oestos los provoquen. Sin embargo este es un golem"
+    - "&7&oespecial."
+    - ""
+    - "&7&oAtaca sin que alguien lo provoque, y es capaz de" 
+    - "&7&olanzar a un humano a una altura mucho mayor que"
+    - "&7&oun golem promedio infligiendo un daño casi letal."
+    - ""
+    - "&7&oTendré cuidado para la próxima."
+    - ""
+    - "&7&o- %player_name%"
+    - ""
+    - "&e» mc.comugamers.com «"
+    discovered_on_mob_kill:
+      type: IRON_GOLEM
+      name: "[Nv. 50] Apex ᛃ"
+  6:
+    name: "Evoker\n \n &8⏵ &fMob hostil\n &8⏵ &fSin armamento\n &8⏵ &fLocalizado en Salón de Batalla"
+    lore:
+    - "&8Mob"
+    - ""
+    - "&7&oJamas había enfrentado a un evoker con tanto poder."
+    - ""
+    - "&7&oNo solo se limita a invocar vexes, si no tambien"
+    - "&7&oa atacar cuerpo a cuerpo y debilitar al humano"
+    - "&7&omediante... ¿Hechizos?"
+    - ""
+    - "&7&oHay que tener cautela con este engrendo, su"
+    - "&7&oimpredecibilidad puede matar a cualquiera"
+    - ""
+    - "&7&o- %player_name%"
+    - ""
+    - "&e» mc.comugamers.com «"
+    discovered_on_mob_kill:
+      type: EVOKER
+      name: "[Nv. 50] Evoker 🔥"
+  7:
+    name: "Aniquilador\n \n &8⏵ &fMob hostil\n &8⏵ &fCon armamento\n &8⏵ &fLocalizado en Bastión"
+    lore:
+    - "&8Mob"
+    - ""
+    - "&7&oQue ser mas... interesante"
+    - ""
+    - "&7&oParece ser un cerdo antropomorfo, equipado con esa hacha"
+    - "&7&oen la mano..."
+    - ""
+    - "&7&oSu daño es letal... Lo más conveniente sería hacer daño"
+    - "&7&oa distancia"
+    - ""
+    - "&7&o- %player_name%"
+    - ""
+    - "&e» mc.comugamers.com «"
+    discovered_on_mob_kill:
+      type: PIGLIN_BRUTE
+      name: "[Nv. 1] Aniquilador"
+  8:
+    name: "Caballero Infernal\n \n &8⏵ &fMob hostil\n &8⏵ &fCon armamento\n &8⏵ &fLocalizado en Ciudadela"
+    lore:
+    - "&8Mob"
+    - ""
+    - "&7&oHace menos daño que los anteriores."
+    - ""
+    - "&7&oParece ser un esqueleto pero.. está quemado, y"
+    - "&7&opuede moverse."
+    - ""
+    - "&7&oNo parece estar muy equipado, solo lleva un casco"
+    - "&7&oen el craneo y una espada para defenderse"
+    - ""
+    - "&7&o- %player_name%"
+    - ""
+    - "&e» mc.comugamers.com «"
+    discovered_on_mob_kill:
+      type: WITHER_SKELETON
+      name: "[Nv. 1] Caballero Infernal"
+  9:
+    name: "Slime Infernal\n \n &8⏵ &fMob hostil\n &8⏵ &fSin armamento\n &8⏵ &fLocalizado en Pantano"
+    lore:
+    - "&8Mob"
+    - ""
+    - "&7&oHm, son inofensivos, o eso parece. Hacen daño pero,"
+    - "&7&ose mueven muy lento hacia mi"
+    - ""
+    - "&7&oNo son muy peligrosos, pero es mejor tener"
+    - "&7&oprecaución"
+    - ""
+    - "&7&o- %player_name%"
+    - ""
+    - "&e» mc.comugamers.com «"
+    discovered_on_mob_kill:
+      type: MAGMA_CUBE
+      name: "[Nv. 1] Slime Infernal"
+  10:
+    name: "Cerdo Errático\n \n &8⏵ &fMob hostil\n &8⏵ &fCon armamento\n &8⏵ &fLocalizado en Campamento"
+    lore:
+    - "&8Mob"
+    - ""
+    - "&7&oEs igual con los aniquiladores"
+    - ""
+    - "&7&oSon antropomorfos y están equipados con hachas,"
+    - "&7&osolo que esta vez parecen atacar de forma invidual"
+    - ""
+    - "&7&o- %player_name%"
+    - ""
+    - "&e» mc.comugamers.com «"
+    discovered_on_mob_kill:
+      type: PIGLIN
+      name: "[Nv. 1] Cerdo Errático"
+  11:
+    name: "Abaddon\n \n &8⏵ &fMob hostil\n &8⏵ &fSin armamento\n &8⏵ &fLocalizado en Coliseo del Inframundo"
+    lore:
+    - "&8Mob"
+    - ""
+    - "&7&oEs un demonio del inframundo"
+    - ""
+    - "&7&oEs capaz de cegar, invocar a sus subditos"
+    - "&7&oy hacerse mas fuerte cada vez que lo atacan"
+    - ""
+    - "&7&oEs recomendable hacer daño a larga y corta"
+    - "&7&odistancia, aunque será necesario usar una"
+    - "&7&opara dañarlo a corta distancia"
+    - ""
+    - "&7&o- %player_name%"
+    - ""
+    - "&e» mc.comugamers.com «"
+    discovered_on_mob_kill:
+      type: WITHER
+      name: "[Nv. 50] Abaddon 👹"
+  12:
+    name: "Abramelec\n \n &8⏵ &fMob hostil\n &8⏵ &fCon armamento\n &8⏵ &fLocalizado en Coliseo del Inframundo"
+    lore:
+    - "&8Mob"
+    - ""
+    - "&7&oEs otro demonio del inframundo"
+    - ""
+    - "&7&oEs capaz de lanzar una ronda de flechas y"
+    - "&7&obolas de fuego a quienes lo atacan... A"
+    - "&7&oveces hasta causa lentitud o ceguera"
+    - ""
+    - "&7&oDaños a mediano y largo alcance son"
+    - "&7&orecomendables"
+    - ""
+    - "&7&o- %player_name%"
+    - ""
+    - "&e» mc.comugamers.com «"
+    discovered_on_mob_kill:
+      type: WITHER_SKELETON
+      name: "[Nv. 50] Abramelec ⸸"
+  13:
+    name: "Abraxas\n \n &8⏵ &fMob hostil\n &8⏵ &fCon armamento\n &8⏵ &fLocalizado en Coliseo del Inframundo"
+    lore:
+    - "&8Mob"
+    - ""
+    - "&7&oEl último demonio del inframundo"
+    - ""
+    - "&7&oEs capaz de lanzar y levitar a quienes lo ataquen"
+    - "&7&ocomo tambien de invocar a sus subditos para acorralarlos"
+    - ""
+    - "&7&oTambien se mueve mas rápido y hace mas daño mientras"
+    - "&7&omas lo ataquen"
+    - ""
+    - "&7&oEs recomendable hacer daños a corto, mediano y largo"
+    - "&7&oalcance con varias personas a la vez"
+    - ""
+    - "&7&o- %player_name%"
+    - ""
+    - "&e» mc.comugamers.com «"
+    discovered_on_mob_kill:
+      type: PIGLIN_BRUTE
+      name: "[Nv. 50] Abraxas ☠"
