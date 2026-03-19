@@ -412,29 +412,6 @@ Events:
   # default:
   # - 'console_command: svar add eventocomunitario 1'
   # - 'to_all: message: &r &8→ &f¡&b%player% &fha contribuido al &b&nevento comunitario&f!'
-  bloquesrotos:
-    type: block_break
-    conditions:
-    - '%block% == STONE'
-    - '%servervariables_globalvalue_eventocomunitario% < 15000'
-    actions:
-      default:
-      - 'console_command: svar add eventocomunitario 1'
-      - 'to_all: message: &r &8→ &f¡&b%player% &fha contribuido al &b&nevento comunitario&f!
-        &d(%servervariables_globalvalue_eventocomunitario%)'
-  matarvacas2:
-    type: player_kill
-    one_time: true
-    conditions:
-    - '%victim% == COW'
-    - '%servervariables_globalvalue_eventocomunitariovacas% == 60'
-    actions:
-      default:
-      - 'cancel_event: true'
-      - 'to_all: message: &r &8→ &f¡&b%player% &fha contribuido al &b&nevento comunitario&f!
-        &d(%servervariables_globalvalue_eventocomunitariovacas%)'
-
-
 
 
 
