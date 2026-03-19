@@ -1,0 +1,591 @@
+##############################################################################################################
+#                                                                                                            #
+# ______     _                _____                 _           _                                            #
+# |  _  \   | |              /  __ \               | |         | |                                           #
+# | | | |___| |_   ___  _____| /  \/ ___  _ __ ___ | |__   __ _| |_                                          #
+# | | | / _ \ | | | \ \/ / _ \ |    / _ \| '_ ` _ \| '_ \ / _` | __|                                         #
+# | |/ /  __/ | |_| |>  <  __/ \__/\ (_) | | | | | | |_) | (_| | |_                                          #
+# |___/ \___|_|\__,_/_/\_\___|\____/\___/|_| |_| |_|_.__/ \__,_|\__|                                         #
+#------------------------------------------------------------------------------------------------------------#
+#                                                                                                            #
+# Thank you for purchasing DeluxeCombat - An ultimate powerful combat resource for every server              #
+#                                                                                                            #
+# This is one of the configuration files of the DeluxeCombat plugin.                                         #
+# Here, you can configure the messages. If you want to change all settings, switch to the config.yml         #
+#                                                                                                            #
+# The plugin supports following server versions: 1.8.x, 1.9.x, 1.10.x, 1.11.x, 1.12.x, 1.13.x, 1.14.x,       #
+#                                                1.15.x, 1.16.x, 1.17.x, 1.18.x, 1.19.x, 1.20.x, 1.21.x      #
+#                                                                                                            #
+# Any problems? Write me a private message on spigot! Spigot: www.spigotmc.org/members/199727/               #
+# To get quick support please also consider joining my discord server: discord.com/invite/zSkcTz3            #
+#                                                                                                            #
+# ~ timderspieler                                                                                            #
+#                                                                                                            #
+##############################################################################################################
+
+##############################################################################################################
+#                                                                                                            #
+# To disable a certain message, replace the value with "none" !                                              #
+#                                                                                                            #
+##############################################################################################################
+
+##############################################################################################################
+# Combatlogger                                                                                               #
+##############################################################################################################
+# All messages regarding combat logging                                                                      #
+##############################################################################################################
+combat-logger:
+  potion-disabled-during-combat: '&8&l» &f¡Esta poción se desactiva durante el combate!'
+  damage-to-from-entity: '&8&l» &fEstás en combate contra &3%entity%&f, no te desconectes.'
+  damage-to-enemy: '&8&l» &fEstás en combate contra &3%victim%&f, no te desconectes.'
+  damage-from-enemy: '&8&l» &b%damager% &festá en combate contigo, no te desconectes.'
+  disabled-command: '&8&l» &fNo puedes usar el comando &c%command% &fmientras estás en combate.'
+  leave-broadcast: '&8&l» &3%player% se fue mientras estaba en combate contra &3%damager%&f.'
+  leave-broadcast-entity: '&8&l» &3%player% se fue mientras estaba en combate contra &b%entity_name% &7(%entity%)'
+  items-broadcast: '&8&l» &fLos items de &3%player% &festán en: &7%x%, %y%, %z%'
+  combat-expired-player: '&8&l» &fYa no estás luchando contra &3%victim%&f.'
+  combat-expired: '&8&l» &fYa no estás en combate.'
+  you-cant-use-this-during-combat: '&8&l» &f¡No puedes usar &c%item% &fdurante el combate!'
+  deny-pvp-deny-enter: '&8&l» &f¡No puedes entrar a esta región en combate!'
+  display-time-bossbar: '&e&o%time%s &r&c&lModo de combate &r&e&o%time%s'
+  display-time-actionbar: ''
+  player-is-already-fighting: '&8&l» &3%victim% &festá en combate con otro jugador, no lo puedes golpear ahora.'
+  you-cant-do-that-during-combat: '&8&l» &fNo puedes hacer eso estando en combate.'
+  you-cant-sleep-during-combat: '&8&l» &fNo puedes dormir mientras estás en combate.'
+  building-disabled-during-combat: '&8&l» &fNo puedes construir mientras estás en combate.'
+  combat-enter-title: 'none'
+  combat-enter-subtitle: 'none'
+  combat-leave-title: 'none'
+  combat-leave-subtitle: 'none'
+  combat-leave-actionbar: 'none'
+  tagged-list-no-players-tagged: ' &fNo hay jugadores en combate.'
+  tagged-list:
+  - ' '
+  - ' &6&lTagged players'
+  - ' '
+  - ' %tagged_players%'
+  - ' '
+
+# DEATH-SIGN
+death-sign:
+  line1: 'R.I.P'
+  line2: '%player%'
+  line3: 'Muerto en'
+  line4: 'combate'
+
+##############################################################################################################
+# Death causes                                                                                               #
+##############################################################################################################
+# Here you can setup your own death messages.                                                                #
+# To use them, please enable the death messages option in the config menu ( /dc menu )                       #
+##############################################################################################################
+death-causes:
+  void: '&8&l» &3%player% &fha caído al vacío.'
+  void_player: '&8&l» &3%player% &fha sido arrojado al vacío por &3%killer%&f.'
+  shoot: '&8&l» &3%player% &fha sido disparado por &c%killer%&f.'
+  drown: '&8&l» &3%player% &fse ha ahogado.'
+  lava: '&8&l» &3%player% &fse bañó en lava.'
+  fall: '&8&l» &3%player% &fha caido desde muy alto.'
+  magic: '&8&l» &3%player% &fha muerto envenenado.'
+  magic_player: '&8&l» &3%player% &fha sido envenenado por &3%killer%&f.'
+  fire: '&8&l» &3%player% &fha muerto en llamas.'
+  explosion_player: '&8&l» &f3%player% &fha sido explotado por &3%killer%&f.'
+  none: '&8&l» &3%player% &fha muerto.'
+  sword_kill: '&8&l» &3%player% &fha sido asesinado por &3%killer% &fusando %item_name%&f.'
+  entity_kill: '&c%player% &ehas been killed by &c%entity_name%&e!'
+
+##############################################################################################################
+# Corpses                                                                                                    #
+##############################################################################################################
+# These are the random messages above the corpses. You can add as many you want.                             #
+##############################################################################################################
+corpses-messages:
+- '&c&o%player% &e&oTomó la L'
+- '&c&lR.I.P %player%'
+- '&eG3t R3kt &c%player%&e!'
+- '%player% está enterrado aquí!'
+- '&c%player% &eNo vi venir este!'
+
+##############################################################################################################
+# Point Ranking System                                                                                       #
+##############################################################################################################
+# If enabled, you can edit all messages regarding the point ranking system here                              #
+##############################################################################################################
+Points-Ranking-System:
+  unknown-input-stats: '&8&l» &fEntrada desconocida. Escoge una de estas estadísticas: KILLS, DEATHS, POINTS, COMBATLOGS'
+  not-loaded-atm: '&8&l» &f¡Estas estadísticas no están cargadas en este momento! Intenta nuevamente más tarde.'
+  disabled: '&8&l» &f¡El sistema de clasificación ha sido deshabilitado!'
+  reset: '&8&l» &f¡Tus estadísticas han sido borradas!'
+  reset-other: '&8&l» &f¡Las estadísticas de &3%player% &fhan sido eliminadas!'
+  add-kill: '&a&l+1 &r&7Asesinato'
+  add-death: '&c&l+1 &r&7Muerte'
+  add-points: '&a&l+%points% &r&7Puntos'
+  remove-points: '&c&l%points% &r&7Puntos'
+  your-rank: '&8&l» &fTu rango es: &a#%rank%&r&f. Calculado por %value%'
+  players-rank: '&8&l» &fEl rango de &3%player%&f es: &e#%rank%&r&f. Calculado por %value%'
+
+  # Ranking placeholder layout
+  ranking-placeholder-format: '&e%rank%. &b%player% &7- &e%amount%'
+
+  # Ranking sign layout
+  sign-layout:
+  - '#%rank%'
+  - ' '
+  - '&o%player%'
+  - '%amount% %value%'
+
+  # Message displayed when typing in /dc stats
+  pvp-stats:
+  - '&4&m#&c&m---------------------------------&4&m#'
+  - '             &cPvP Estadisticas                  '
+  - '                  &e%player%                   '
+  - ' '
+  - '&8- &cAseinatos: &e%kills%'
+  - '&8- &cMuertes: &e%deaths%'
+  - '&8- &cK/D: &e%kd%'
+  - '&8- &cRegistros de combate: &e%combatlogs%'
+  - '&8- &cPuntos: &e%points%'
+  - '&8- &cRacha: &e%streak%'
+  - '&8- &cRacha más alta: &e%highest_streak%'
+  - '&8- &cRango: &e#%rank% &7(%sort%)'
+  - '&4&m#&c&m---------------------------------&4&m#'
+
+  # Loading messages ( These messages appear when the plugin is loading
+  # your stats. To disable them set the value to "none"
+  loading-data: '&8&l» &fCargando datos...'
+  stats-loaded: '&8&l» &fTus estadísticas han sido cargadas.'
+
+##############################################################################################################
+# Bounty                                                                                                     #
+##############################################################################################################
+# Bounty messages                                                                                            #
+##############################################################################################################
+bounty:
+  bounty: 'Bounty'
+  someone: 'Someone'
+  created-message-list:
+  - ' '
+  - ' &6&lBounty'
+  - ' &fYou have successfully set a bounty on &e%target%&f.'
+  - ' '
+  - ' &fThe first player that kills this player will get &e%bounty%$&f.'
+  - ' &e%percentage%% &fof the bounty (&e%tax%$&f) were taken as tax.'
+  - ' '
+  bounty-on-you-message-list:
+  - ' '
+  - ' &6&lBounty'
+  - ' &c%initiator% &fhas set a bounty on you!'
+  - ' &fThe first player that kills you gets &e%bounty%$&f!'
+  - ' '
+  bounty-broadcast-message-list:
+  - ' '
+  - ' &6&lBounty Broadcast'
+  - ' &e%initiator% &fhas set a bounty on &c%target%&f!'
+  - ' &fThe first player that kills &c%target% &fgets &e%bounty%$&f!'
+  - ' '
+  bounty-list-message-list:
+  - ' '
+  - ' &6&lBounties'
+  - ' '
+  - ' &fCurrently active:'
+  bounty-help-message-list:
+  - ' '
+  - ' &6&lBounty'
+  - ' &f/%cmd% create &e- Create a bounty'
+  - ' &f/%cmd% list &e- List all bounties'
+  - ' &f/%cmd% expire (Player) &e- Expire the bounty of a player'
+  - ' &f/%cmd% compass &e- Point your compass to a bounty'
+  - ' '
+
+  bounty-list-message-entry: ' &e%target%&f, Bounty: &f$%bounty%&f, Initiator: &e%initiator%'
+
+  bounty-list-menu-title: 'Bounty List'
+  bounty-entry-item-title: '&6&o%target%'
+  bounty-entry-item-lore: '&fBounty: &e$%bounty%=&fInitiator: &e%initiator%=&fTime left: &e%time%'
+
+  bounty-compass-linked: '&eYour compass now points to &c%target%&e. Right-Click to update / to see, how far the bounty is away from you.'
+  bounty-no-compass-in-hand: '&eYou have no compass in your hand.'
+  bounty-is-customized: '&ePlease put an un-customized compass in your hand.'
+  bounty-too-many-compass: '&ePlease only put one compass in your hand.'
+  bounty-compass-cooldown: '&ePlease wait &c%time% &ebefore you update your compass again.'
+  bounty-compass-title: '&6&lBounty Tracker'
+  bounty-compass-lore: '&fTarget: &e%target%==&7&oRight-Click to update'
+  bounty-compass-update: '&eCompass updated. &c%target% &eis &c%blocks% &eblocks away from you!'
+
+  bounty-claimed-broadcast: '&e%player% &fhas claimed &e%target%''s &fbounty! (&e$%bounty%&f)'
+  bounty-claimed: '&eYou have claimed &c%target%''s &ebounty! You gained &a$%bounty%&e!'
+
+  no-bounty-on-target: '&eThere is no bounty on &c%target%&e!'
+  bounty-information-list:
+  - ' '
+  - ' &6&lBounty information'
+  - ' &eBounty on: &f%target%'
+  - ' &eBounty: &f$%bounty%'
+  - ' &eTime left: &f%time%'
+  - ' '
+
+  bounty-expired-broadcast: '&fThe bounty on &e%target% &fis expired.'
+  bounty-expired-initiator: '&fYour bounty on &e%target% &fis expired. You got &e$%bounty% &fback.'
+  bounty-expired-by-initiator: '&eYou paid &c$%amount% &eto expire the bounty &c%target%&e.'
+
+  bounty-successfully-removed: '&eYou successfully have removed the bounty on &a%target%&e!'
+
+  accept-item: '&aAccept'
+  accept-item-lore: '&7Click to create the bounty'
+
+  cancel-item: '&cCancel'
+  cancel-item-lore: '&7Click to abbord the bounty'
+
+  anonymous-item-on: '&eAnonymous: &aOn'
+  anonymous-item-on-lore: '&7This bounty will be set anonymous.=&7That means, nobody can see that=&7you are the initiator of it!'
+  anonymous-item-off: '&eAnonymous: &cOff'
+  anonymous-item-off-lore: '&7This bounty wont be set anonymous.=&7That means, everybody can see that=&7you are the initiator of it!'
+
+  target-item: '&eTarget: &b%target%'
+  target-item-lore: '&7Click to change the target.'
+
+  bounty-amount-item: '&eBounty: &b$%with_tax%'
+  bounty-amount-item-lore: '=&foriginal Bounty: &c%without_tax%=&f- Tax (&7%tax%&f): %tax_amount%= =&7Click to change bounty.'
+
+  type-in-targetname: '&ePlease type in the name of the target:'
+  type-in-bounty: '&ePlease type in a bounty value: &f(Min: $%min%, Max: $%max%)'
+  no-bounty-on-you: '&cThere is no bounty on you!'
+  already-bounty-on-target: '&eThere is already an active bounty set on that target!'
+  bounty-stack-added: '&eYou have added &f%value%$ &eto the active bounty of &f%target%&e! &eBounty now: &f%bounty%$'
+  cant-set-bounty-on-yourself: '&eYou cant set a bounty on &cyourself&e!'
+  target-not-able-to-fight: '&c%target% &eis not able to fight at the moment!'
+  target-immune-against-bounty: '&c%target% &eis immune against bounties! Bounty setup cancelled.'
+  setup-cancelled: '&eBounty setup cancelled.'
+  no-bounties-active: '&cThere are no active bounties at the moment.'
+
+##############################################################################################################
+# General                                                                                                    #
+##############################################################################################################
+# Here are some general messages of the plugin                                                               #
+##############################################################################################################
+general:
+
+  # General plugin messages
+  no-permission: '&4&l» &cNo tienes permiso para ejecutar este comando.'
+  help-message: '&8&l» &fEscribe &e/%cmd% help &fpara recibir ayuda.'
+  number-between: '&8&l» &fEliger un número entre &e%min% &fy &e%max%&f!'
+  not-a-number: '&8&l» &c%input% &fno es un número.'
+  you-cant-do-that-world: '&8&l» &fNo puedes hacer eso en este mundo.'
+  you-cant-do-that-region: '&8&l» &fNo puedes hacer eso en esta región.'
+  you-cant-do-that-right-now: '&8&l» &fNo puedes hacer eso en este momento.'
+  same-ip-detected: '&8&l» &fNo puedes obtener recompensas por asesinar a &3%victim%& &7(Misma IP)'
+  you-have-been-rescued: '&8You have been rescued!'
+  nothing-to-confirm: '&eYou have nothing to confirm.'
+  warning: '&c&lWarning!'
+  enabled: '&aactivado'
+  disabled: '&cdesactivado'
+
+  # Help list for your players
+  help-list:
+  - '&4&m#&c&m---------------------------------&4&m#'
+  - '                  &cDeluxeCombat               '
+  - ' '
+  - '&8- &c/%cmd% help &8> &7Muestra este mensaje'
+  - '&8- &c/tag [Player] &8> &7Muestra tu estado de combate'
+  - '&8- &c/pvpstats [Player] &8> &7Observa las estadisticas'
+  - '&8- &c/pvpstats reset &8> &7Reinicia tu estadisticas'
+  - '&8- &c/grace &8> &7Shows your grace status'
+  - '&8- &c/grace disable &8> &7Disables your grace'
+  - '&8- &c/sellhead&8> &7Vende la cabeza en tu mano'
+  - '&8- &c/%cmd% lb (Stats) &8> &7Muestra la tabla de clasificación de estadísticas'
+  - ' '
+  - '&8(): &Necesario&7, []: &cOpcional'
+  - '&4&m#&c&m---------------------------------&4&m#'
+
+  # Here you can configure the placeholder messages
+  placeholder-messages:
+    yes-message: '&aSi'
+    no-message: '&cNo'
+    question-message: '???'
+    pve: 'PvE'
+    pvp: 'PvP'
+
+  # Message when you land a headshot on a player
+  headshot-actionbar: '&a&oDisparo en la cabeza para %player%!'
+
+  # No Item in Hand
+  no-item-in-hand: '&8&l» &¡No tienes ningún item en la mano!'
+
+  # Login from another location deny message (Color codes don't work here!)
+  login-from-another-location-during-combat: '§cYou are not allowed to login from another location during combat!'
+
+  # Killer Drops
+  killer-drops-unlocked-in: '&eDrops unlock in: &c%time%s'
+  killer-drops-are-locked-next: '&eYour loot is protected for the next &a%time%s&e!'
+  killer-drops-are-unlocked: '&eYour loot is no longer protected and can now be picked up by everyone!'
+  victim-drops-unlocked-notification: '&eYour drops are now unlocked. You can pick them up again at &c%x%&e, &c%y%&e, &c%z%'
+
+  # PvP Interval
+  interval-ended-msg: '&eA PvP period has ended. PvP is now %status% &efrom &c%from% &eto &c%to%&e!'
+  interval-started-msg: '&eA PvP period has started! PvP is now %status% &efrom &a%from% &euntil &a%to%&e!'
+  pvp-enabled-title: '&8&l» &fEl PvP ha sido &aactivado&f.'
+  pvp-enabled-subtitle: '&8&l» &fAhora puedes luchar contra los demás.'
+  pvp-disabled-title: '&8&l» &fEl PvP ha sido &cdesactivado&f.'
+  pvp-disabled-subtitle: '&8&l» &f¡No puedes pelear ahora!'
+  interval-toggle-not-allowed: '&8&l» &fNo puedes togglear el pvp en este mundo.'
+  pvp-enabled-wrldgrd-info: '&8&l» &fEl PvP ha sido activado en este mundo, pero tu región actual lo no permite luchar.'
+
+  # Blacklisted Enchantment
+  blacklisted-enchantment-title: '&c&l!Cuidado!'
+  blacklisted-enchantment-subtitle: '&f¡Tu item tiene encantamientos prohibidos!'
+  blacklisted-enchantment-msg: '&8&l» &fEl item de tu mano contiene encantamientos prohibidos, ya no lo puedes usar.'
+
+  # StatTrak messages
+  stattrak:
+
+    help-list:
+    - ' '
+    - ' &6&lStatTrak'
+    - ' '
+    - ' &f/stattrak inspect &e- Inspect a StatTrak item'
+    - ' &f/stattrak register &e- Register a StatTrak for %cost%$'
+    - ' &f/stattrak changeOwner (Owner) &e- Change the owner'
+    - ' &f/stattrak reset &e- Reset the StatTrak on your item'
+    - ' '
+
+    inspect-message-list:
+    - ' '
+    - ' &6&lStatTrak'
+    - ' '
+    - ' &e- Item: &f%item%'
+    - ' &e- Kills: &f%kills%'
+    - ' &e- Owner: &f%owner%'
+    - ' '
+
+    title: '&6&lStatTrak'
+    subtitle: '&eKills: &f%kills%&e'
+
+    item-has-no-stattrak: '&eThis item has no StatTrak attached to it!'
+    item-stattrak-registered: '&eYou have successfully purchased a StatTrak for your item (Cost: &f%cost%$&e)!'
+    item-stattrak-already-registered: '&eThis item already has a StatTrak attached to it!'
+    item-not-allowed: '&eYou cannot attach a StatTrak to this item!'
+
+    change-owner: '&eYou successfully changed the owner to: &f%owner%&e!'
+    you-are-not-the-owner: '&eYou cant do that because you are not the owner of this StatTrak!'
+    reseted: '&eYou have successfully reset the StatTrak!'
+    actionbar-message: '&eStatTrak: &f%kills% Kills&e, Owner: &f%owner%'
+
+  # Ghostplayer messages
+  ghost-killed: '&c%attacker% &ehas killed the ghost of &c%victim%&e!'
+  ghost-name: '&6%victim% &e[&cOffline&e]'
+  ghost-invulnerable: '&ePlease wait &c%time% &euntil you can hit this ghost player!'
+
+  # Messages for the damage indicator
+  damage-indicator:
+    critical: '&c&lGolpe critico! &e&o(- %damage%)'
+    normal-damage: '&c&o- %damage%'
+
+  # Spawnpoint messages ( When a player is teleported to a spawnpoint )
+  spawnpoint-msg: '&eTeletransportado al spawnpoint: %spawnpoint%'
+  spawnpoint-title: '%spawnpoint%'
+  spawnpoint-subtitle: '&f&oBienvenido %player%!'
+
+  # Border interact messages
+  border-interact-title: '&e&lSTOP!'
+  border-interact-subtitle: '&7Dont interact with the barrier!'
+
+  # Item names
+  items:
+    chorus-fruit: 'Chorus Fruit'
+    chorus-fruit-plural: 'Chorus Fruits'
+    enderpearl: 'Enderpearl'
+    enderpearl-plural: 'Enderpearls'
+    totem-of-undying: 'Totem of Undying'
+    totem-of-undying-plural: 'Totems of Undying'
+    gold-apple: 'Golden Apple'
+    gold-apple-plural: 'Golden Apples'
+    god-apple: 'Enchanted Golden Apple'
+    god-apple-plural: 'Enchanted Golden Apples'
+    elytra: 'Elytra'
+    elytra-plural: 'Elytren'
+    trident: 'Trident'
+    trident-plural: 'Tridents'
+    tnt: 'TNT'
+    tnt-plural: 'TNT'
+    player-head: '&eDismembered head of: &c%victim%'
+
+  # Enderpearl / Elytra restrictions
+  enderpearls-block-invalid: '&8&l» &fPara evitar un problemas, no puedes tirar enderpearls en &c%block%'
+  enderpearls-not-enough-space: '&8&l» &fNo hay suficiente espacio entre los dos bloques que te intentas teletransportar.'
+  enderpearl-has-expired: '&8&l» &fTu enderpearl ha expirado, teletransporte cancelado.'
+  elytra-has-been-dropped: '&8&l» &fTu inventario está lleno. Tu elytra se ha caído.'
+
+  # Restrictions
+  please-wait-before: '&8&l» &fEspera &c%time% &fantes de volver a hacer eso.'
+  please-wait-item: '&8&l» &fEspera &c%time% &fantes de usar &c%item%&f.'
+  please-wait-actionbar: '&6&l%material% &r&f- (&e%time%s&f)'
+  disabled-item: '&8&l» &e%item_plural% &festá bloqueado aquí.'
+  combat-only: '&8&l» &e%item_plural% &fsolo se puede usar en combate.'
+  no-combat-only: '&8&l» &e%item_plural% &fno se puede usar en combate.'
+  command-warmup-actionbar: '&eCommand Warmup (&f%time%s&e) - &cDont move!'
+  command-warmup-cancelled: '&eCommand warmup &ccancelled&e. Dont move next time!'
+  npc-invulnerable: '&8&l» &fEspera &c%time% &fantes de hacer esto.'
+
+  # Grace system
+  grace-left: '&8&l» &3%player% está protegido durante &c%time% &fcontra todo tipo de daños.'
+  no-grace-active: '&8&l» &fNo tienes protección activa.'
+  grace-disabled: '&8&l» &fHas desactivado tu protección.'
+  grace-disabled-by-admin: '&8&l» &3%player% deshabilitó su protección.'
+  player-has-grace-active: '&8&l» &fEste jugador tiene una rotección activa.'
+  you-have-grace-active: '&8&l» &f¡Tienes una protección activa, espera &c%time% &fo escriba &e/grace disable&f.'
+  grace-you-cant-do-that: '&8&l» &fNo puedes hacer eso mientras tienes una protección activa.'
+  grace-disable-confirmation-needed: '&eUse &c/grace disable confirm &eto confirm that you want to toggle your pvp. Use &c/grace disable deny &eto cancel. You have &c%time% &eto decide.'
+  grace-disable-confirmation-information:
+  - ' '
+  - ' &6&lGrace Disable Confirmation'
+  - ' &fYou are about to disable your newbie protection!'
+  - ' '
+  - ' &f- Other players can kill you'
+  - ' &f- You can lose all your items'
+  - ' &f- The server does not refund your items'
+  - ' '
+  grace-disable-confirmation-subtitle: '&fPlease confirm that you want to disable your newbie protection!'
+  grace-disable-confirmation-expired: '&eThe newbie disable confirmation has expired.'
+  grace-disable-confirmation-denied: '&eYou have &cdenied &ethe newbie protection disable confirmation. Your protection is still &eenabled&e.'
+
+  # Anti Kill Abuse
+  anti-kill-abuse: '&8&l» &fHas matado a &3%victim% &f%amount% veces, puedes matarlo de nuevo en &c%time%&f.'
+  reached-kill-max: '&8&l» &fAlcanzaste la máxima cantidad de asesinatos contra &3%victim%&f.'
+  kill-but-no-reward: '&8&l» &fHas alcanzado el máximo de kills contra &3%victim%&f, no obtendrás recompensas.'
+
+  # Combat messages
+  flying-not-allowed-during-combat: '&8&l» &fNo puedes volar mientras estás en combate.'
+  potion-disabled: '&8&l» &fEsta poción está deshabilitada en el servidor.'
+  player-not-online: '&8&l» &fEste jugador no está en línea.!'
+  player-not-in-combat: '&8&l» &3%player% &fo está en combate'
+  player-in-combat: '&8&l» &3%player% &festá en combate.'
+  still-in-combat: '&8&l» &fAun estas en combate, No te desconectes.'
+  not-in-combat: '&8&l» &fYa no estás en combate.'
+  deny-gamemode: '&8&l» &fNo puedes golpear a otros jugadores mientras estás en creativo.'
+  no-teleport-behind-barrier: '&8&l» &fNo te puedes teletransportar detrás de la barrera.'
+
+  # Vault messages
+  vault-add-money-kill: '&8&l» &fGanaste &a%amount% %currency% &fpor matar a &3%victim%&f.'
+  vault-remove-money-death: '&8&l» &fPerdiste &c%amount% %currency% &fpor morir.'
+  vault-remove-money-lost-head: '&8&l» &fPerdiste &c%amount% %currency% &7porque perdiste la cabeza durante una pelea.'
+  vault-not-enough-money: '&8&l» &fNo tienes suficiente dinero.'
+
+  # Sellhead messages
+  sellhead-successfully-redeemed: '&8&l» &fCanjeaste la cabeza de &3%player%&f. Recibiste &a%amount% %currency%&f.'
+  sellhead-already-redeemed: '&8&l» &fYa canjeaste esta cabeza.'
+  sellhead-unknown-head: '&8&l» &fEsta cabeza ya se canjeó o no es válida.'
+  sellhead-lore: '&8▪ &fValor: &e%amount% %currency%=&f. Puedes venderla con &e/sellhead&f.'
+
+  # Healthbar messages
+  healthbar-bossbar-message: 'Salud de %player% &e(&c%health% ❤&e)'
+
+  # Deathback messages
+  cannot-teleport-to-death-location: '&8&l» &fTu ubicación de muerte fue eliminada o no tienes una.'
+  teleported-to-death-location: '&8&l» &fHas sido teletransportado a tu último lugar de muerte.'
+
+  # PVP Toggle Command messages
+  pvp-toggle-cmd-has-been-disabled: '&8&l» &fEste comando fue deshabilitado.'
+  pvp-toggle-enabled: '&8&l» &fHas &aactivado &ftu pvp.'
+  pvp-toggle-disabled: '&8&l» &fHas &cdesactivado &ftu pvp.'
+  pvp-still-disabled: '&8&l» &fTu pvp está &cdesactivado&f, actívalo con &e/togglepvp&f.'
+  player-has-pvp-disabled: '&8&l» &fTienes el pvp desactivado, tienes que activarlo para luchar.'
+  pvp-toggle-cmd-disabled-in-this-world: '&8&l» &fNo puedes usar este comando en este mundo.'
+  pvp-toggle-no-players-found: '&8&l» &fNo hay jugadores para luchar %filter%.'
+  pvp-toggle-list:
+  - ' '
+  - ' &6&lPvP Status &r&f(Filter: %filter%&r&f)'
+  - ' '
+  - ' %players_status%'
+  - ' '
+  pvp-toggle-confirmation-needed: '&8&l» &fUsa &e/togglepvp confirm &fpara confirmar que quieres activar el pvp. Usa &c/togglepvp deny &fpara cancelar.'
+  pvp-toggle-confirmation-information:
+  - ' '
+  - ' &6&lPvP Toggle Confirmation'
+  - ' &fYou are about to turn on your PvP!'
+  - ' '
+  - ' &f- Other players can kill you'
+  - ' &f- You can lose all your items'
+  - ' &f- The server does not refund your items'
+  - ' '
+  pvp-toggle-confirmation-title: '&c&lWarning!'
+  pvp-toggle-confirmation-subtitle: '&fPlease confirm that you want to toggle your PvP!'
+  pvp-toggle-confirmation-expired: '&eThe pvp toggle confirmation has expired.'
+  pvp-toggle-confirmation-denied: '&eYou have &cdenied &ethe pvp toggle confirmation. Your pvp is still &cdisabled&e.'
+
+  # Prevent lava / fire place in the range of a player that has a protection or pvp disabled
+  lava-fire-not-allowed: '&8&l» &fNo puedes colocar &c%type% &fporque tiene el pvp desactivado.'
+  fire: 'fuego'
+  lava: 'lava'
+
+  # Time formatting
+  time:
+    days: 'días'
+    day: 'día'
+    hours: 'horas'
+    hour: 'hora'
+    minutes: 'minutos'
+    minute: 'minuto'
+    seconds: 'segundos'
+    second: 'segundo'
+
+  # All messages from the kill recap system
+  # !!! Use '=' to seperate lore lines !!!
+  kill-recap:
+
+    # Message broadcasted in the chat
+    click-to-view-recap: '&8&l» &fHaz clic para ver el registro de esta pelea.'
+
+    inv-name: '&8Resumen de asesinatos'
+
+    no-recaps: '&cNo Killrecaps'
+
+    close: '&cCerrar'
+    close-lore: ''
+
+    exit: '&cSalida'
+    exit-lore: ''
+
+    back: '&cSalir'
+    back-lore: ''
+
+    list-recap: '&6%killer% &b&lvs. &r&c%victim%'
+    list-recap-lore: '&7Ver información sobre esta pelea=&7Date: %date%'
+
+    victim: '&fVíctima: &3%victim%'
+    victim-lore: '&fAsesinado por &3%killer%&f.'
+
+    killer-weapon: '&fArma: %item_name%'
+    killer-weapon-lore: ''
+
+    damage-dealt: '&fDaño infligido: &c%damage_dealt%'
+    damage-dealt-lore: ''
+
+    damage-taken: '&fDaño recibido: &c%damage_taken%'
+    damage-taken-lore: ''
+
+    killer: '&fAsesino: &3%killer%'
+    killer-lore: '&fAsesinó a &3%victim%= =&8▪ &fDaño recibido: &c%damage_taken%=&8▪ &fSalud: &d%hearts_left% ❤=&8▪ &fDaño infligido: &c%damage_dealt%'
+
+    potioneffects: '&fEfectos de poción'
+    potioneffects-lore: '&7La víctima fue dañada por= %potioneffects%'
+    potioneffect-lore: '&8▪ &5%potiontype%'
+
+    assistants: '&fAsistencia'
+    assistants-lore: '&FEstos jugadores han ayudado al asesino: %assistants%'
+    assistant-lore: '&8▪ &3%assistant_name%'
+
+    next_page: '&aSiguiente página'
+    next_page-lore: ''
+
+    previous_page: '&cPágina anterior'
+    previous_page-lore: ''
+
+    invalid-id: '&8&l» &fNo hay un registro con el id &c#%id%&f.'
+    player-not-recap: '&8&l» &3%player% &fno tiene combates recientes.'
+
+    fists: 'fists'
+
+##############################################################################################################
+# Have fun with DeluxeCombat on your server, you reached the end.                                            #
+# Love the resource? Consider to review it on the resource thread.                                           #
+##############################################################################################################
