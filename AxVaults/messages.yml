@@ -1,0 +1,138 @@
+# DOCUMENTATION: https://docs.artillex-studios.com/axvaults.html
+# ITEM BUILDER: https://docs.artillex-studios.com/item-builder.html
+
+guis:
+  selector:
+    title: Mochilas
+    item-owned:
+      # players can change the material if they have permission, this is the default value
+      material: BARREL
+      name: '&#00CBF5Mochila #%num%'
+      glow: false
+      lore:
+      - '&8Mochila'
+      - ' '
+      - '&fAquí podrás guardar los objetos'
+      - '&fque desees'
+      - ' '
+      - '&r &8◆ &fEspacios: &b%used%&8/&b%max%'
+      - ' '
+      - '&e» ¡Haz clic para abrir! «'
+      #- '&e» ¡Haz shift + clic izquierdo para cambiar item! «'
+    item-locked:
+      material: RED_STAINED_GLASS_PANE
+      name: '&#00CBF5Mochila #%num%'
+      glow: false
+      lore:
+      - '&8Mochila'
+      - ' '
+      - '&fAquí podrás guardar los objetos'
+      - '&fque desees'
+      - ' '
+      - '&r &8◆ &fEspacios: &b0&8/&b54'
+      - ''
+      - '&cEsta mochila se encuentra bloqueada'
+      - '&cpor lo que tendrás que desbloquearla'
+      - '&cmediante rankups o comprarla mediante'
+      - '&c&n/tm'
+      - ''
+      - '&cTodas las mochilas a partir del número'
+      - '&cocho se encuentran en fase experimental'
+      - '&cpor lo que no pueden ser desbloqueables'
+      - ' '
+      - '&emc.comugamers.com'
+  item-picker:
+    title: Item Picker
+  vault:
+    title: '&0Mochila #%num%'
+
+gui-items:
+  close:
+    material: BARRIER
+    name: '&cCerrar'
+  back:
+    material: BARRIER
+    name: '&eVolver'
+  previous-page:
+    material: ARROW
+    name: '&ePágina anterior'
+  next-page:
+    material: ARROW
+    name: '&ePágina posterior'
+
+help:
+- '&#55ff00&lAxVaults &7» &#AAFFAAHelp:'
+- ' '
+- '  &7⋆ &f/axvaultsadmin view <player> <vault> &7| &#AAFFAAOpen another player''s vault'
+- '  &7⋆ &f/axvaultsadmin forceopen <player> &7| &#AAFFAAOpen vault selector to player'
+- '  &7⋆ &f/axvaultsadmin set [number] &7| &#AAFFAAAdd vault to block'
+- '  &7⋆ &f/axvaultsadmin reload &7| &#AAFFAAReload configuration'
+- '  &7⋆ &f/axvaultsadmin delete <player> <vault> &7| &#AAFFAADelete vault of player'
+- '  &7⋆ &f/axvaultsadmin converter <plugin> &7| &#AAFFAAConvert from another plugin'
+- ' '
+
+# you can disable any messages by setting it to ""
+vault:
+  not-unlocked: '&r &4&l» &cNo tienes desbloqueada esta mochila.'
+  opened: ''
+  closed: ''
+
+reload:
+  success: '&#33FF33Plugin successfully reloaded!'
+  failed: '&#FF3333Failed to reload the plugin! Something is wrong in the &f%file%&#FF3333 file, look in the console or use a yaml validator to fix the errors!'
+
+set:
+  success: '&r &8&l» &fHas establecido con éxito este bloque a tu mochila.'
+  already: '&r &4&l» &cEste bloque ya está establecido en tu mochila.'
+  no-block: ''
+  removed: '&r &4&l» &cHas removido este bloque de tu mochila.'
+
+save:
+  manual: '&#00FF00Saved vaults manually in &f%time%ms&#00FF00! &#DDDDDD(this command is meant for testing and may cause unnecessary lag)'
+
+no-permission: '&r &4&l» &cNo tienes permiso para hacer esto.'
+force-open: '&#00FF00Opened vault selector for &f%player%&#55FF00!'
+force-open-vault: '&#00FF00Opening vault &f#%num% &#00FF00for &f%player%&#55FF00!'
+delete: '&fDeleted vault &#FF0000#%num% &fof &#FF0000&#FF0000%player%&f!'
+banned-item: '&r &4&l» &cNo puedes guardar estos objetos en tu mochila.'
+
+view:
+  open: '&#55FF00%player%&f''s &#55FF00#%num% &fvault opened!'
+  info: '&fVaults of &#55FF00%player%&f: &#AAFFAA%vaults%'
+  not-found: '&#FF0000Can''t find player or vault!'
+
+# you can disable sounds by setting the sections to ""
+# for example: open: ""
+# list of sounds: https://www.digminecraft.com/lists/sound_list_pc.php
+# format: <sound>|[volume]|[pitch] (volume and pitch is optional)
+sounds:
+  open: block.barrel.open|1.0|1.0
+  close: block.barrel.close|1.0|1.0
+  select-icon: block.barrel.close|1.0|1.0
+
+stats:
+- ' '
+- '&#55ff00&lAxVaults &#aaff55Server Stats &7»'
+- ' &7- &fLoaded players: &#55ff00%players%'
+- ' &7- &fLoaded vaults: &#55ff00%vaults%/%vaults2%'
+- ' &7- &fLast autosave length: &#55ff00%auto-save% ms'
+- ' &7- &fLast autosave saved: &#55ff00%saved-vaults% vaults'
+- ' '
+
+converter:
+  started: '&#55FF00The converter has started! Check the console for the current status!'
+
+commands:
+  invalid-value: '&#FF0000Invalid parameter: &#BB0000%value%'
+  invalid-command: '&#FF0000Invalid command or subcommand!'
+  missing-argument: '&#FF0000Missing argument! You must specify a value for &#BB0000%value%&#FF0000.'
+  no-permission: '&4&l» &cNo tienes permiso para ejecutar este comando'
+  out-of-range: '&#FF0000The &#BB0000%number% &#FF0000must be between &#BB0000%min% &#FF0000and &#BB0000%max%&#FF0000!'
+  player-only: '&#FF0000You must be a player to use this command!'
+  invalid-player: '&#FF0000The player &#BB0000%player% &#FF0000can not be found!'
+  invalid-selector: '&#FF0000You can not use this selector in this command!'
+
+update-notifier: '&e[AxVaults] &fHay una actualización pendiente &7(&fversión: &#00FF00%latest%&7)'
+
+# do not change this
+version: '10'
