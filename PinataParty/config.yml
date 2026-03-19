@@ -1,0 +1,700 @@
+#
+# Thank you for purchasing PinataParty and I hope you enjoy the plugin!
+# If you have any suggestions or need any help please comment in the discussions page!
+#
+# !!! Some settings can ONLY be changed with a full server restart NOT reload !!!
+#
+# Helpful links:
+# https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+# https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html
+# https://hub.spigotmc.org/javadocs/spigot/org/bukkit/boss/BarStyle.html
+# https://hub.spigotmc.org/javadocs/spigot/org/bukkit/boss/BarColor.html
+
+# Notifies players with the 'pinataparty.update-notify' permission node when
+# they join the server if a new update is available for download.
+# Requires /reload when changed.
+update-notify: true
+
+# Should we save the data.yml every so often to ensure no data loss on any crashes
+# RECOMMENDED
+save-task: true
+# Time in seconds (Default 1800 / 30 mins)
+# Recommended at least 300+
+save-timer: 1800
+
+# Should we send a message to all players online telling them to vote (ONLY if they haven't in the last 24 hours)
+# The edit-able message in further down in the config under "message"
+vote-reminder: true
+# Time in seconds (Default 10800 / 3 hours)
+# Recommended at least 3600+
+vote-reminder-timer: 10800
+# Sound to play to the player
+# NONE for no sound
+# SOUND:VOLUME:PITCH
+vote-reminder-sound: ENTITY_PLAYER_LEVELUP:1.15:1.35
+
+# Change this if you want to use the permissions for pinataparty.hitamount.(number)
+# When a player logs in and when the Pinata get summoned it will do a check for the player
+# to get their max hit amount from the permisions.
+#
+# If you don't want to use the permissions for max hit then leave this 1
+# else if you want to, put this number to be the max permission you will give to a player.
+max-player-hit-amount: 1
+
+# Enable/Disable PinataParty listening for votes!
+# Disable this if you are only interested in the commands/pinata
+# and use another plugin for registering votes.
+listen-for-votes: true
+
+# Only allow certain items to hit the Pinata.
+use-material-whitelist: false
+material-whitelist:
+- STICK
+- FISHING_ROD
+- CARROT_ON_A_STICK
+- WARPED_FUNGUS_ON_A_STICK
+- BAMBOO
+
+# Change how offline voting works here.
+offline-voting:
+   
+   # Enable offline voting?
+   enabled: true
+
+   # If offline voting is enabled what should we do with offline votes?
+   # Should we still send the player-vote commands when the player comes online?
+   queue-commands: true
+   # Should we increase the certain counters?
+   increase-pinata-vote: false
+
+# Played at the players location each time when they vote (Good feedback when tabbed)
+# Will only play once on login for offline voting so it isn't ear destroying and laggy
+vote-effects:
+
+   # NONE to disable
+   # NAME:AMOUNT;XSPREAD;YSPREAD:ZSPREAD:SPEED
+   particle: VILLAGER_HAPPY:50:0.50:0.90:0.50:0.05
+   
+   # NONE to disable
+   # SOUND:VOLUME:PITCH
+   sound: ENTITY_PLAYER_LEVELUP:1:1.25
+   
+# Enable/Disable the /vote command - Requires restart.
+# Set the output messages below in the message section
+vote-command: true
+
+# The amount of fireworks to summon on death.
+# Set to 0 to disable.
+fireworks-on-death-amount: 10
+
+# Restriction settings.
+restrict-to-only-recent-voters:
+
+   # Enable restriction to only recent voters?
+   enabled: false
+   
+   # Time in minutes that the player had need to have
+   # voted at least once to be able to hit the Pinata.
+   time-period: 1440
+
+# In-game messages.
+#
+# 1.16+ you can use hex colors by doing <#HEX> such
+# as "<#eb0578>Hello" will turn out to be a hot pink "Hello"
+#
+# Set to "" for no message!
+language:
+
+    no-permission: '&r &4&l» &cNo tienes permisos para ejecutar ese comando.'
+    spawn: '&r &8&l» &f¡La fiesta de la piñata &dacaba de empezar&f! No te la pierdas, &c&n/warp piñata'
+    die: '&r &8&l» &f¡La piñata ha sido &c&ndestruida&f, sigue &bvotando &fpara volver a &einiciar el evento&f!'
+    
+    pinata:
+    
+        teleport: '&r &8&l» &f¡La piñata &eha cambiado de ubicación&f, &bcorre y encuentrala&f!'
+        # Use <rainbow> to make it flashy!
+        name: '&7» &f&lPIÑATA! &7«'
+        hits-left: '&f¡&a%hit% hit%s%&f!'
+        # The name for the boss bar
+        # Use <rainbow> to make it flashy!
+        boss-bar: '¡Faltan &b%hit% golpe%s% &fpara destruír &ela piñata&f!'
+        countdown: '&f¡La fiesta de &ela piñata &finiciará en <rainbow>%time% &fsegundos! &c&n/warp piñata'
+        need-to-vote: '&cYou cannot hit the Pinata since you haven''t voted recently!'
+    
+    money-pool:
+    
+        check: '&eThe pinata pool is currently &6$%current% &e/ &6$%needed%'
+        not-enough: '&cYou don''t have enough money: you need $%more% more.'
+        put: '&eYou successfully put &6$%money%&e in the pool.'
+        cooldown:
+            pool: '&eThe pinata pool is &bregenerating&e, please wait &6%left%&e seconds!'
+            player: '&eThis command is on cooldown, please wait &6%left%&e seconds!'
+        invalid:
+            invalid: '&c%arg% is not a valid number.'
+            min-max: '&cMake sure you specify an amount between %min% and %max%.'
+
+    # The message for the reminder message send every x seconds
+    vote-reminder:
+    - "&8&l» &f¡No has votado recientemente! &f¡Utiliza &e/vote &fy consigue recompensas increíbles!"
+    
+    # The message for when someone does the /vote command
+    vote-command:
+    - " "
+    - "&8&l» &f&l¡VOTAR TE DARÁ RECOMPENSAS ESPECIALES! &7(Contra mas votos, mas recompensas)"
+    - " "
+    - "&8 • &fEnlace #1: <#c47dec>https://l.cgm.rs/40servidores-vote"
+    - "&8 • &fEnlace #2: <#c47dec>https://l.cgm.rs/minecraftservers-vote"
+    - "&8 • &fEnlace #3: <#c47dec>https://l.cgm.rs/minecraft-mp-vote"
+    - '&f'
+    - " &fVoteParty&7: <#7de8ec>%pinataparty_current_votes%/50"
+    - " "
+
+# Messages for the placeholders in case you want to change them.
+# Reminder for the placeholder format: %pinataparty_<a_key_below>%
+# e.g %pinataparty_votes_total%
+#
+# This is also just a nice list instead of visting the plugin's page
+# Formatting allowed!
+placeholders:
+
+   # PinataParty placeholders
+   votes_left: "%amount%"
+   votes_needed: "%amount%"
+   current_votes: "%amount%"
+   is_active: "%value%"
+   active_count: "%amount%"
+   
+   # PinataPool placeholders
+   money_left: "%amount%"
+   money_needed: "%amount%"
+   current_money: "%amount%"
+   
+   # Player placeholders
+   votes_total: "%amount%"
+   votes_queued: "%amount%"
+   votes_total_and_queued: "%amount%"
+   last_vote_time: "%time%"
+   next_vote_time: "%time%"
+   last_vote_time_formatted:
+      
+      # The format for the placeholder when there is a time
+      # Follows https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html
+      format: "MM:dd:yyyy HH:mm:ss"
+      # When the player has never voted before
+      never-voted: "&c¡Nunca has votado antes!"
+
+   next_vote_time_formatted:
+      
+      # The format for the placeholder when there is a time
+      # Follows https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html
+      format: "MM:dd:yyyy HH:mm:ss"
+      # When the player has never voted before
+      never-voted: "&c¡Nunca has votado antes!"
+
+   next_vote_time_countdown:
+      
+      # Only allows HH mm and ss
+      # When the player has voted and is now showing a countdown to the next time when they can (24 hours from last vote)
+      # Follows https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html
+      cooldown: "HH:mm:ss"
+      # When the player can vote or hasn't voted before
+      can-vote: "&f¡Vota por las recompensas! &b/vote"
+
+# When enabled, the pinata will summon every X votes.
+# Supports Votifier. Set votes-needed to 0 to disable.
+auto-summon:
+
+    # The amount of Pinatas to summon
+    amount: 1
+
+    # Votes needed for the pinata to be summoned
+    votes-needed: 100
+    
+    # The locations for the pinata to spawn, random.
+    # Set at the custom-locations section of the config!
+    spawn-locations:
+    - spawn
+
+# Location used by /pinataparty spawn <location>
+# as well as by the auto summon feature.
+# You can add as many locations as you wish.
+custom-locations:
+
+    # loc1 is the locations name
+    spawn:
+        world: spawn
+        x: 5000.5
+        y: 180.00000
+        z: 5000.5
+
+# [Integration possibilities] Commands sent when ...
+commands:
+
+    # ... the countdown starts
+    countdown-start: {}
+    
+    # ... the countdown ends, pretty much the same as the pinata spawn
+    countdown-end: {}
+    
+    # ... the pinata spawns
+    spawn: {}
+    
+    # ... the pinata is hit by a player
+    hit:
+        '1_itemvanilla_mineralblock':
+            chance: 2.0
+            command:
+            - 'egive %player% emeraldblock 1'
+            - 'tellraw %player% ["",{"text":" »","bold":true,"color":"dark_gray"},{"text":" Has recibido","color":"white"},{"text":" Bloque de esmeralda","color":"white"},{"text":" [x1]","color":"gray"}]'
+        '2_itemvanilla_mineralblock':
+            chance: 4.0
+            command:
+            - 'egive %player% diamondblock 1'
+            - 'tellraw %player% ["",{"text":" »","bold":true,"color":"dark_gray"},{"text":" Has recibido","color":"white"},{"text":" Bloque de diamante","color":"white"},{"text":" [x1]","color":"gray"}]'
+        '3_itemvanilla_mineralblock':
+            chance: 6.0
+            command:
+            - 'egive %player% lapisblock 1'
+            - 'tellraw %player% ["",{"text":" »","bold":true,"color":"dark_gray"},{"text":" Has recibido","color":"white"},{"text":" Bloque de lapis","color":"white"},{"text":" [x1]","color":"gray"}]'
+        '4_itemvanilla_mineralblock':
+            chance: 8.0
+            command:
+            - 'egive %player% goldblock 1'
+            - 'tellraw %player% ["",{"text":" »","bold":true,"color":"dark_gray"},{"text":" Has recibido","color":"white"},{"text":" Bloque de oro","color":"white"},{"text":" [x1]","color":"gray"}]'
+        '5_itemvanilla_mineralblock':
+            chance: 10.0
+            command:
+            - 'egive %player% ironblock 1'
+            - 'tellraw %player% ["",{"text":" »","bold":true,"color":"dark_gray"},{"text":" Has recibido","color":"white"},{"text":" Bloque de hierro","color":"white"},{"text":" [x1]","color":"gray"}]'
+        '6_itemvanilla_mineralblock':
+            chance: 12.0
+            command:
+            - 'egive %player% coalblock 1'
+            - 'tellraw %player% ["",{"text":" »","bold":true,"color":"dark_gray"},{"text":" Has recibido","color":"white"},{"text":" Bloque de carbón","color":"white"},{"text":" [x1]","color":"gray"}]'
+        '7_itemvanilla_wood':
+            chance: 15.0
+            command:
+            - 'egive %player% oakplank 8'
+            - 'tellraw %player% ["",{"text":" »","bold":true,"color":"dark_gray"},{"text":" Has recibido","color":"white"},{"text":" Madera de Roble","color":"white"},{"text":" [x1]","color":"gray"}]'
+        '8_itemvanilla_cobblestone':
+            chance: 15.5
+            command:
+            - 'egive %player% cobblestone 8'
+            - 'tellraw %player% ["",{"text":" »","bold":true,"color":"dark_gray"},{"text":" Has recibido","color":"white"},{"text":" Adoquín","color":"white"},{"text":" [x8]","color":"gray"}]'
+        '9_itemvanilla_dirt':
+            chance: 16.0
+            command:
+            - 'egive %player% dirt 6'
+            - 'tellraw %player% ["",{"text":" »","bold":true,"color":"dark_gray"},{"text":" Has recibido","color":"white"},{"text":" Tierra","color":"white"},{"text":" [x6]","color":"gray"}]'
+        '10_itemvanilla_chest':
+            chance: 16.1
+            command:
+            - 'egive %player% chest 1'
+            - 'tellraw %player% ["",{"text":" »","bold":true,"color":"dark_gray"},{"text":" Has recibido","color":"white"},{"text":" Cofre","color":"white"},{"text":" [x1]","color":"gray"}]'
+        '11_itemvanilla_experiencebottle':
+            chance: 8.1
+            command:
+            - 'egive %player% experienciebottle 4'
+            - 'tellraw %player% ["",{"text":" »","bold":true,"color":"dark_gray"},{"text":" Has recibido","color":"white"},{"text":" Botella de Experiencia","color":"yellow"},{"text":" [x4]","color":"gray"}]'
+        '12_itemvanilla_fishingrod':
+            chance: 1.0
+            command:
+            - 'egive %player% fishingrod 1'
+            - 'tellraw %player% ["",{"text":" »","bold":true,"color":"dark_gray"},{"text":" Has recibido","color":"white"},{"text":" Caña de pescar","color":"yellow"},{"text":" [x1]","color":"gray"}]'
+        '13_itemvanilla_enderchest':
+            chance: 0.5
+            command:
+            - 'egive %player% enderchest 4'
+            - 'tellraw %player% ["",{"text":" »","bold":true,"color":"dark_gray"},{"text":" Has recibido","color":"white"},{"text":" Enderchest","color":"yellow"},{"text":" [x1]","color":"gray"}]'
+        '14_itemvanilla_brewingstand':
+            chance: 0.6
+            command:
+            - 'egive %player% brewingstand 1'
+            - 'tellraw %player% ["",{"text":" »","bold":true,"color":"dark_gray"},{"text":" Has recibido","color":"white"},{"text":" Soporte para pociones","color":"yellow"},{"text":" [x1]","color":"gray"}]'
+
+        '1_llavecomun':
+            chance: 5.0
+            command:
+            - 'excellentcrates key give %player% llave_comun 3'
+        '2_llavecomun':
+            chance: 10.0
+            command:
+            - 'excellentcrates key give %player% llave_comun 2'
+        '3_llavecomun':
+            chance: 15.0
+            command:
+            - 'excellentcrates key give %player% llave_comun 1'
+
+        '4_llavepococomun':
+            chance: 5.0
+            command:
+            - 'excellentcrates key give %player% llave_pococomun 3'
+        '5_llavepococomun':
+            chance: 7.5
+            command:
+            - 'excellentcrates key give %player% llave_pococomun 2'
+        '6_llavepococomun':
+            chance: 10.0
+            command:
+            - 'excellentcrates key give %player% llave_pococomun 1'
+
+        '7_llaverara':
+            chance: 4.0
+            command:
+            - 'excellentcrates key give %player% llave_rara 3'
+        '8_llaverara':
+            chance: 6.0
+            command:
+            - 'excellentcrates key give %player% llave_rara 2'
+        '9_llaverara':
+            chance: 8.5
+            command:
+            - 'excellentcrates key give %player% llave_rara 1'
+
+        '10_llaveepica':
+            chance: 3.0
+            command:
+            - 'excellentcrates key give %player% llave_epica 2'
+        '11_llaveepica':
+            chance: 6.0
+            command:
+            - 'excellentcrates key give %player% llave_epica 1'
+
+        '12_llavelegendaria':
+            chance: 2.0
+            command:
+            - 'excellentcrates key give %player% llave_legendaria 2'
+        '13_llavelegendaria':
+            chance: 5.0
+            command:
+            - 'excellentcrates key give %player% llave_legendaria 1'
+
+        '14_llavevoto':
+            chance: 5.0
+            command:
+            - 'excellentcrates key give %player% llave_voto 3'
+        '15_llavevoto':
+            chance: 7.0
+            command:
+            - 'excellentcrates key give %player% llave_voto 2'
+        '16_llavevoto':
+            chance: 10.0
+            command:
+            - 'excellentcrates key give %player% llave_voto 1'
+
+
+        'carameloblanco_1':
+            chance: 30.0
+            command:
+            - 'tellraw %player% ["",{"text":" »","bold":true,"color":"dark_gray"},{"text":" Has recibido","color":"white"},{"text":" Caramelo Blanco","color":"white"},{"text":" [x1]","color":"gray"}]'
+            - 'svar add carameloblanco 1 %player%'
+        'carameloceleste_1':
+            chance: 25.0
+            command:
+            - 'tellraw %player% ["",{"text":" »","bold":true,"color":"dark_gray"},{"text":" Has recibido","color":"white"},{"text":" Caramelo Celeste","color":"aqua"},{"text":" [x1]","color":"gray"}]'
+            - 'svar add carameloceleste 1 %player%'
+        'carameloverde_1':
+            chance: 10.0
+            command:
+            - 'tellraw %player% ["",{"text":" »","bold":true,"color":"dark_gray"},{"text":" Has recibido","color":"white"},{"text":" Caramelo Verde","color":"green"},{"text":" [x1]","color":"gray"}]'
+            - 'svar add carameloverde 1 %player%'
+        'caramelonaranja_1':
+            chance: 8.5
+            command:
+            - 'tellraw %player% ["",{"text":" »","bold":true,"color":"dark_gray"},{"text":" Has recibido","color":"white"},{"text":" Caramelo Naranja","color":"gold"},{"text":" [x1]","color":"gray"}]'
+            - 'svar add caramelonaranja 1 %player%'
+        'caramelomorado_1':
+            chance: 4.5
+            command:
+            - 'tellraw %player% ["",{"text":" »","bold":true,"color":"dark_gray"},{"text":" Has recibido","color":"white"},{"text":" Caramelo Morado","color":"dark_purple"},{"text":" [x1]","color":"gray"}]'
+            - 'svar add caramelomorado 1 %player%'   
+        'caramelorojo_1':
+            chance: 3.5
+            command:
+            - 'tellraw %player% ["",{"text":" »","bold":true,"color":"dark_gray"},{"text":" Has recibido","color":"white"},{"text":" Caramelo Rojo","color":"red"},{"text":" [x1]","color":"gray"}]'
+            - 'svar add caramelorojo 1 %player%'   
+        'caramelonegro_1':
+            chance: 2.5
+            command:
+            - 'tellraw %player% ["",{"text":" »","bold":true,"color":"dark_gray"},{"text":" Has recibido","color":"white"},{"text":" Caramelo Negro","color":"dark_gray"},{"text":" [x1]","color":"gray"}]'
+            - 'svar add caramelonegro 1 %player%'      
+            
+    # ... the pinata finally dies
+    # These are ran per player unless "once: true"
+    die:
+        '1':
+            chance: 100.0
+            # When enabled, the command is only ran once and doesn't replace %player%.
+            command:
+            - 'excellentcrates key give %player% llave_comun 25'
+            - 'excellentcrates key give %player% llave_pococomun 20'
+            - 'excellentcrates key give %player% llave_rara 15'
+            - 'excellentcrates key give %player% llave_epica 5'
+            - 'excellentcrates key give %player% llave_legendaria 5'
+            - 'excellentcrates key give %player% llave_koth 5'
+            - 'excellentcrates key give %player% llave_voto 10'
+            
+    # ... a player votes (votifier)
+    player-vote:
+        '1':
+            chance: 100.0
+            command:
+            - 'excellentcrates key give %player% llave_voto 5'
+
+# Give players extra rewards for voting X times total or every X time!
+cumulative-rewards:
+    '1': # This will give the player a reward when they vote 25 times.
+        type: total # Total or Repeat, Total is when you hit a certain amount of times voted and repeat is everytime you vote x times.
+        amount: 25 # The amount of votes needed for this.
+        permission: "pinataparty.extrarewards" # Will only run if they have this permission, optional.
+        command: # The commands to run
+        - 'excellentcrates key give %player% llave_voto 1'
+    '2': # This will be the player a reward every 4 votes.
+        type: repeat
+        amount: 4
+        command:
+        - 'excellentcrates key give %player% llave_voto 1'
+    '3':
+        type: total
+        amount: 50
+        command:
+        - 'excellentcrates key give %player% llave_voto 1'
+
+# Pinata characteristics.
+pinata:
+
+    # Makes <rainbow> in the Pinata's name use hex colors
+    # and makes it completely smooth was changing colors.
+    # Only works on 1.16+
+    smooth-rainbow: true
+    
+    # The boss bar settings for the Pinata
+    boss-bar:
+       
+       # Should the Pinata have a boss bar?
+       enabled: true
+       
+       # Should the boss bar be shown to everyone or only to players in the same world?
+       global: true
+       
+       # The style for the boss bar (See top of config)
+       style: SEGMENTED_20
+       
+       # The color for the boss bar (See top of config)
+       # Can be RAINBOW to pick a random color each time it updates.
+       # If smooth rainbow is enabled it will pick the color closest to the current rainbow hex
+       color: RAINBOW
+       
+       # How often should the boss bar update in ticks?
+       update-rates:
+       
+           # The tick rate for updating the title (text) and the progress bar
+           title: 1
+           # The tick rate for updating the boss bars color only if the color is RAINBOW
+           color: 2
+
+    # The boss bar that shows for the countdown
+    countdown:
+    
+       # Should the Pinata have a countdown?
+       enabled: true
+       
+       # Should the boss bar be shown to everyone or only to players in the same world?
+       global: true
+       
+       # The style for the boss bar (See top of config)
+       style: SEGMENTED_20
+       
+       # The color for the boss bar (See top of config)
+       # Can be RAINBOW to pick a random color each time it updates.
+       # If smooth rainbow is enabled it will pick the color closest to the current rainbow hex
+       color: RAINBOW
+       
+       # The length of the countdown in ticks
+       length: 100
+
+       # The interval to play the count sound
+       count-interval: 20
+       
+       # The sounds to play for the countdown
+       sounds:
+       
+           # NONE to disable
+           # SOUND:VOLUME:PITCH
+           start: BLOCK_NOTE_BLOCK_BIT:0.5:1 # Sound to play at the start of the countdown
+           count: BLOCK_NOTE_BLOCK_BIT:0.5:0.8 # Sound to play every 1 second of the countdown
+           end: BLOCK_NOTE_BLOCK_PLING:1:0.8 # Sound to play at 0.0 seconds
+           
+       # How often should the boss bar update in ticks?
+       update-rates: 
+       
+           # The tick rate for updating the title (text) and the progress bar
+           title: 1
+           # The tick rate for updating the boss bars color only if the color is RAINBOW
+           color: 2
+           
+    # Number of hits before the pinata explodes.
+    health: 150
+    # If true it will get the above health and add it self for each player online
+    # e.g if there is 4 players online and the above is 20 it'll do 20 + (20 x 4) = 100 total health!
+    multiply-health-per-player-online: false
+    # Limit the max health the Pinata can be multiplied to. Set to -1 to disable.
+    max-multiplied-health: -1
+    
+    # Change the color of the Llama.
+    # Use "Random" to pick a random color each Pinata.
+    # Available color: Brown, Creamy, Gray & White
+    color: White
+    
+    # Set to false for the Pinata to NOT have its glowing effects
+    glowing: true
+    
+    # Set to false for the Pinata to NOT have its fancy particles
+    particles: true
+    # The style of particles to use for the Pinata.
+    # Use "Random" to pick a random style each Pinata.
+    # Available styles: Sparks, Salty, Firestorm & Waterworks
+    particles-style: Sparks
+    
+    # Set to false for the Pinata to NOT have its carpet
+    carpet: true
+    
+    # Set to false for the Pinata to NOT have its chest
+    chest: false
+    
+    # NONE to disable
+    # SOUND:VOLUME:PITCH
+    hit-sound: BLOCK_SAND_BREAK:1:1
+    
+    # Should the Pinata be allowed to move?
+    allow-movement: true
+    # Pinata's speed amplifier
+    # 1 is no difference.
+    speed-amplifier: 1.75
+    
+    # Should the Pinata use a better pathfinding method
+    # where it will actively move around instead of just
+    # standing there and moving once in a while like a 
+    # vanilla llama (Not possible in Spigot)
+    #
+    # !!! ONLY SET THIS TO TRUE IF YOU USE PAPERMC AND USING 1.13+ !!!
+    advanced-pathfinding:
+    
+        # Enabled or not
+        # Speed amplifier will not do anything if this is enabled due to the new speed below
+        enabled: false
+        
+        # Time in ticks to get a new path/location to move to
+        interval: 20
+        
+        # Max range it'll try to find a pathfind location to move to
+        range: 14.0
+        
+        # Max Y difference it'll do to find a location to move to
+        max-y: 4.0
+    
+    # Cooldown of when the pinata can be hit again in seconds
+    # If you want the cooldown to be PER player and not global
+    # then set the below setting to true
+    # set to 0 to disable
+    hit-cooldown: 0.4
+    hit-cooldown-per-player: true
+
+# Enable/disable/edit the pinata's abilities here.
+# Abilities make destroying the pinata more challenging!
+pinata-abilities:
+
+    # The pinata teleports a few blocks away.
+    teleport:
+        enabled: true
+        radius: 8.0
+        chance: 12.0
+        # 1.12 Sound: ENTITY_ENDERMEN_TELEPORT
+        # NONE to disable
+        # SOUND:VOLUME:PITCH
+        sound: ENTITY_ENDERMAN_TELEPORT:1:1
+        max-y: 6.0
+        # Keep empty to disable.
+        white-list:
+        - GRASS_BLOCK
+        - GRASS_PATH # <= 1.16
+        - DIRT_PATH # >= 1.17
+        - STONE
+        - DIRT
+        - SNOW
+        - ICE
+        
+    # The pinata knocks nearby players back.
+    knockback:
+        enabled: true
+        chance: 12.0
+        radius: 6.0
+        force: 1.35
+        # 1.12 Sound: ENTITY_ZOMBIE_ATTACK_DOOR_WOOD
+        # NONE to disable
+        # SOUND:VOLUME:PITCH
+        sound: ENTITY_ZOMBIE_ATTACK_WOODEN_DOOR:1:1
+        
+    # The pinata will shoot up into the air.
+    shoot-up:
+        enabled: true
+        chance: 8.0
+        force: 1.5
+        # NONE to disable
+        # SOUND:VOLUME:PITCH
+        sound: ENTITY_ARROW_SHOOT:1:1
+        
+    # The pinata will transform into a baby.
+    baby-transform:
+        enabled: true
+        chance: 8.0
+        # Time in seconds.
+        length-minimum: 2.0
+        length-maximum: 8.0
+        # NONE to disable
+        # SOUND:VOLUME:PITCH
+        transform-in-sound: ENTITY_CHICKEN_EGG:1:1.10
+        transform-out-sound: ENTITY_LLAMA_SWAG:1:0.90
+        
+    # The pinata will give speed and dolphins grace to nearby players.
+    speed-up:
+        enabled: true
+        chance: 6.0
+        # The level of speed/dolphin's grace.
+        level: 3
+        # The radius to give to players.
+        radius: 12.0
+        # Time in seconds.
+        length-minimum: 2.50
+        length-maximum: 5.0
+        # NONE to disable
+        # SOUND:VOLUME:PITCH
+        sound: ITEM_TRIDENT_RIPTIDE_1:1:1.25
+
+# When enabled, the pinata will summon after players put
+# $X in the pinata money pool using /pinatapool <amount>.
+money-pool:
+
+    # Money needed to auto-summon a pinata.
+    # Set to 0 to disable.
+    # Whole numbers only
+    money-needed: 10000.0
+    
+    command:
+    
+        # /pinatapool command cooldown
+        cooldown: 240
+        
+        # Min and max values of the money
+        # you can put in the pool.
+        min: 10.0
+        max: 10000.0
+    
+    # The cooldown, in seconds, of two
+    # consecutive pinata pool auto summons.
+    cooldown: 600
+    
+    # The locations for the pinata to spawn, random.
+    # Set at the custom-locations section of the config!
+    spawn-locations:
+    - spawn
