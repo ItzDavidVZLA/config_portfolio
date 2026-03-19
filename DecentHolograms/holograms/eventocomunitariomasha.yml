@@ -1,0 +1,40 @@
+location: spawn:0.509:107.533:20.549
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&3&lEVENTO COMUNITARIO'
+    height: 0.3
+  - content: '&r'
+    height: 0.3
+  - content: '&fRequisitos para completar:'
+    height: 0.3
+  - content: '&r'
+    height: 0.3
+  - content: '&650,000 bloques de madera talados 🪓'
+    height: 0.3
+  - content: '&7250,000 bloques de piedra minados ⛏'
+    height: 0.3
+  - content: '&f75,000 menas de hierro minados ⛏'
+    height: 0.3
+  - content: '&e75,000 menas de oro minadas ⛏'
+    height: 0.3
+  - content: '&a10,000 menas de esmeralda minadas ⛏'
+    height: 0.3
+  - content: '&75,000 esqueletos asesinados 🗡'
+    height: 0.3
+  - content: '&c1,000 arañas asesinadas 🗡'
+    height: 0.3
+  - content: '&e1,000 vacas asesinadas 🗡'
+    height: 0.3
+  - content: '&fmatar 700 veces a dota &f☠🗡'
+    height: 0.3
+  - content: '&r'
+    height: 0.3
+  - content: '&emc.comugamers.com'
+    height: 0.3
+  actions: {}

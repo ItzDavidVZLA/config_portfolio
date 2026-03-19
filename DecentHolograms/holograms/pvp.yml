@@ -1,0 +1,30 @@
+location: spawn:10000.500:103.500:10003.500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&c☠ Warp PvP ☠'
+    height: 0.3
+  - content: '&r'
+    height: 0.3
+  - content: '&fEn esta zona podrás entrar'
+    height: 0.3
+  - content: '&fen &ccombate &fcon otros jugadores'
+    height: 0.3
+  - content: '&fy dominar &ckoths'
+    height: 0.3
+  - content: '&r'
+    height: 0.3
+  - content: '&fPara más información acerca de los &ckoths&f,'
+    height: 0.3
+  - content: '&fejecuta el siguiente comando: &a/koths'
+    height: 0.3
+  - content: '&r'
+    height: 0.3
+  - content: '&c⚠ Si pierdes objetos, es tu responsabilidad ⚠'
+    height: 0.3
+  actions: {}

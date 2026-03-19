@@ -1,0 +1,44 @@
+location: spawn:3.500:100.000:91.500
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&3&lINFORMACIÓN DE PESCA'
+    height: 0.3
+  - content: '&r'
+    height: 0.3
+  - content: '&fProbabilidades de captura'
+    height: 0.3
+  - content: '&fsegun la rareza'
+    height: 0.3
+  - content: '&f'
+    height: 0.3
+  - content: '&6&lLEGENDARIO &8➡ &b0%'
+    height: 0.3
+  - content: '&5&lÉPICO &8➡ &b0%'
+    height: 0.3
+  - content: '&9&lRARO &8➡ &b5%'
+    height: 0.3
+  - content: '&a&lPOCO COMÚN &8➡ &b20%'
+    height: 0.3
+  - content: '&f&lCOMÚN &8➡ &b75%'
+    height: 0.3
+  - content: '&r'
+    height: 0.3
+  - content: '&fCarnadas recomendadas:'
+    height: 0.3
+  - content: '&f'
+    height: 0.3
+  - content: '&#DA6B00E&#DD6E00s&#DF7200t&#E27500r&#E57800e&#E77B00l&#EA7F00l&#ED8200a &#F28900d&#F48C00e &#FA9200M&#FC9600a&#FF9900r'
+    height: 0.3
+  - content: '&b(+5% en pescados legendarios)'
+    height: 0.3
+  - content: '&#5D432AC&#6B4E30a&#795835r&#87633Ba&#946D41c&#A27846o&#B0824Cl'
+    height: 0.3
+  - content: '&b(+5% en pescados épicos)'
+    height: 0.3
+  actions: {}
