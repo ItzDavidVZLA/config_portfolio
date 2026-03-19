@@ -1,0 +1,41 @@
+tasks:
+  farming:
+    type: "farming"
+    amount: 64
+    blocks:
+     - CARROTS
+display:
+  name: "&3Agricultor &Bde Zanahoria"
+  lore-normal:
+    - "&8Mision"
+    - ""
+    - " &fObjetivo:"
+    - " &8● &fRompe 64 cultivos de zanahoria"
+    - ""
+    - " &fRecompensas:"
+    - " &8● &62,000 ⛁"
+    - " &8● &b6 ❖"
+    - ""
+    - " &c✘ Mision incompleta"
+  lore-started:
+    - ""
+    - " &fProgreso:"
+    - " &8● &a{farming:progress}"
+  type: "CARROT"
+rewards:
+  - "eco give {player} 2000"
+  - "ecobits give {player} cristales 6"
+placeholders:
+  description: "&fRompe 64 semillas de papa."
+  progress: " &8● &a{farming:progress}"
+progress-placeholders:
+  '*': "&f{farming:progress}&7/30 blocks broken"
+options:
+  category: "agricultura"
+  requires:
+  - "agricultura21"
+  repeatable: false
+  cooldown:
+    enabled: false
+    time: 640
+  sort-order: 22

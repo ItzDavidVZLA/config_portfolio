@@ -1,0 +1,41 @@
+tasks:
+  farming:
+    type: "farming"
+    amount: 112
+    blocks:
+     - POTATOES
+display:
+  name: "&3Agricultor &Bde Papa"
+  lore-normal:
+    - "&8Mision"
+    - ""
+    - " &fObjetivo:"
+    - " &8● &fRompe 112 cultivos de papa"
+    - ""
+    - " &fRecompensas:"
+    - " &8● &63,500 ⛁"
+    - " &8● &b9 ❖"
+    - ""
+    - " &c✘ Mision incompleta"
+  lore-started:
+    - ""
+    - " &fProgreso:"
+    - " &8● &a{farming:progress}"
+  type: "POTATO"
+rewards:
+  - "eco give {player} 3500"
+  - "ecobits give {player} cristales 9"
+placeholders:
+  description: "&fRompe 112 semillas de papa."
+  progress: " &8● &a{farming:progress}"
+progress-placeholders:
+  '*': "&f{farming:progress}&7/30 blocks broken"
+options:
+  category: "agricultura"
+  requires:
+    - "agricultura15"
+  repeatable: false
+  cooldown:
+    enabled: false
+    time: 1440
+  sort-order: 16

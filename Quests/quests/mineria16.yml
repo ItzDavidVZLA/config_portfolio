@@ -1,0 +1,41 @@
+tasks:
+  mining:
+    type: "blockbreak"
+    amount: 700
+    blocks:
+     - COAL_ORE
+display:
+  name: "&3Minero &bamateur"
+  lore-normal:
+    - "&8Mision"
+    - ""
+    - " &fObjetivo:"
+    - " &8● &fMina 700 menas de carbon"
+    - ""
+    - " &fRecompensas:"
+    - " &8● &67,000 ⛁"
+    - " &8● &b9 ❖"
+    - ""
+    - " &c✘ Mision incompleta"
+  lore-started:
+    - ""
+    - " &fProgreso:"
+    - " &8● &a{mining:progress}"
+  type: "COAL_ORE"
+rewards:
+  - "eco give {player} 7000"
+  - "ecobits give {player} cristales 9"
+placeholders:
+  description: "&fMina 700 menas de carbon."
+  progress: " &8● &a{mining:progress}"
+progress-placeholders:
+  '*': "&f{mining:progress}&7/30 blocks broken"
+options:
+  category: "mineria"
+  requires:
+    - "mineria15"
+  repeatable: false
+  cooldown:
+    enabled: true
+    time: 1440
+  sort-order: 16

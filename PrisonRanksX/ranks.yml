@@ -1,0 +1,508 @@
+# ============================================================================================================================================================================
+# | Default ranks. The ranks don't have to be in alphanumeric order. You can put them in any order, and you can name them anything you want.                                 |
+# | Don't put anything under the first rank !EXCEPT FOR! display, nextrank, and cost. This is because the actions that will be executed is the rank that you will rankup to. |
+#                                 █████╗ ██╗  ██╗███████╗ █████╗ ██╗  ██╗  ████████╗██╗  ██╗███████╗   ██╗       ██╗██╗██╗  ██╗██╗
+#                                ██╔══██╗██║  ██║██╔════╝██╔══██╗██║ ██╔╝  ╚══██╔══╝██║  ██║██╔════╝   ██║  ██╗  ██║██║██║ ██╔╝██║
+#                                ██║  ╚═╝███████║█████╗  ██║  ╚═╝█████═╝      ██║   ███████║█████╗     ╚██╗████╗██╔╝██║█████═╝ ██║
+#                                ██║  ██╗██╔══██║██╔══╝  ██║  ██╗██╔═██╗      ██║   ██╔══██║██╔══╝      ████╔═████║ ██║██╔═██╗ ██║
+#                                ╚█████╔╝██║  ██║███████╗╚█████╔╝██║ ╚██╗     ██║   ██║  ██║███████╗    ╚██╔╝ ╚██╔╝ ██║██║ ╚██╗██║
+#                                 ╚════╝ ╚═╝  ╚═╝╚══════╝ ╚════╝ ╚═╝  ╚═╝     ╚═╝   ╚═╝  ╚═╝╚══════╝     ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝
+#                                                         https://github.com/TheGaming999/PrisonRanksX/wiki
+# ============================================================================================================================================================================
+Ranks:
+  default: # Rank path: default
+    'principiante': # Shouldn't put any actions here as stated above.
+      display: "&c✘"
+      nextrank: bronce1
+      cost: 0
+    'bronce1':
+      display: "&#A55940B&#AC5D44r&#B26247o&#B9664Bn&#BF6B4Fc&#C66F53e&#CC7456-&#D3785AI"
+      nextrank: bronce2
+      cost: 500.0
+      requirements:
+      # number requirement
+      - "%vault_eco_balance%>>500"
+      - "%statistic_minutes_played%>>15"
+      custom-requirement-message:
+      - "&4&l» &cNecesitas 500 ⛁ y 15 minutos de juego para subir de nivel"
+      executecmds:
+      - "[console] lp user %player% perm set playerkits.kit.bronce true server=dev-oneblock"
+      - "[console] excellentcrates key give %player% llave_comun 1"
+    'bronce2':
+      display: "&#A55940B&#AB5D43r&#B16147o&#B6654An&#BC694Dc&#C26C50e&#C87054-&#CD7457I&#D3785AI"
+      nextrank: bronce3
+      cost: 2000.0
+      requirements:
+      # number requirement
+      - "%vault_eco_balance%>>2000"
+      - "%statistic_hours_played%>>1"
+      #- "%vault_eco_balance%>>"
+      custom-requirement-message:
+      - "&4&l» &cNecesitas 2000 ⛁ y 60 minutos de juego para subir de nivel"
+      executecmds:
+      - "[console] excellentcrates key give %player% llave_comun 2"
+    'bronce3':
+      display: "&#A55940B&#A95B42r&#AC5E44o&#B06046n&#B46348c&#B7654Be&#BB684D-&#BF6A4FI&#C26D51I&#C66F53I"
+      nextrank: bronce4
+      cost: 6000.0
+      requirements:
+      # number requirement
+      - "%vault_eco_balance%>>6000"
+      - "%statistic_hours_played%>>2"
+      #- "%vault_eco_balance%>>"
+      custom-requirement-message:
+      - "&4&l» &cNecesitas 6000 ⛁ y 2 horas de juego para subir de nivel"
+      executecmds:
+      - "[console] excellentcrates key give %player% llave_comun 2"
+    'bronce4':
+      display: "&#A55940B&#A95C42r&#AD5F45o&#B16147n&#B6644Ac&#BA674Ce&#BE6A4E-&#C26C51I&#C66F53V"
+      nextrank: bronce5
+      cost: 12000.0
+      requirements:
+      # number requirement
+      - "%vault_eco_balance%>>12000"
+      - "%statistic_hours_played%>>4"
+      #- "%vault_eco_balance%>>"
+      custom-requirement-message:
+      - "&4&l» &cNecesitas 12000 ⛁ y 4 horas de juego para subir de nivel"
+      executecmds:
+      - "[console] excellentcrates key give %player% llave_comun 3"
+    'bronce5':
+      display: "&#A55940B&#AA5C43r&#AE5F45o&#B36248n&#B8664Bc&#BD694Ee&#C16C50-&#C66F53V"
+      nextrank: plata1
+      cost: 18000.0
+      requirements:
+      # number requirement
+      - "%vault_eco_balance%>>18000"
+      - "%statistic_hours_played%>>6"
+      #- "%vault_eco_balance%>>"
+      custom-requirement-message:
+      - "&4&l» &cNecesitas 18000 ⛁ y 6 horas de juego para subir de nivel"
+      executecmds:
+      - "[console] excellentcrates key give %player% llave_comun 3"
+      - "[console] excellentcrates key give %player% llave_pococomun 1"
+    'plata1':
+      display: "&#8A9597P&#939C9El&#9CA3A5a&#A5ABACt&#AEB2B2a&#B7B9B9-&#C0C0C0I"
+      nextrank: plata2
+      cost: 26000.0
+      requirements:
+      # number requirement
+      - "%vault_eco_balance%>>26000"
+      - "%statistic_hours_played%>>8"
+      - "%statistic_kill_entity:ZOMBIE%>>15"
+      #- "%vault_eco_balance%>>"
+      custom-requirement-message:
+      - "&4&l» &cNecesitas 26000 ⛁, 8 horas de juego y 15 zombies asesinados para subir de nivel"
+      executecmds:
+      - "[console] lp user %player% perm set playerkits.kit.plata true server=dev-oneblock"
+      - "[console] excellentcrates key give %player% llave_pococomun 1"
+    'plata2':
+      display: "&#8A9597P&#929B9Dl&#99A1A3a&#A1A7A9t&#A9AEAEa&#B1B4B4-&#B8BABAI&#C0C0C0I"
+      nextrank: plata3
+      cost: 34000.0
+      requirements:
+      # number requirement
+      - "%vault_eco_balance%>>34000"
+      - "%statistic_hours_played%>>12"
+      - "%pinataparty_votes_total%>>5"
+      #- "%vault_eco_balance%>>"
+      custom-requirement-message:
+      - "&4&l» &cNecesitas 34000 ⛁, 12 horas de juego y 5 votos para subir de nivel"
+      executecmds:
+      - "[console] excellentcrates key give %player% llave_comun 2"
+      - "[console] excellentcrates key give %player% llave_pococomun 1"
+      - "[console] lp user %player% perm set axvaults.vault.2 true server=dev-oneblock"
+    'plata3':
+      display: "&#8A9597P&#919A9Cl&#98A0A1a&#9EA5A6t&#A5ABACa&#ACB0B1-&#B3B5B6I&#B9BBBBI&#C0C0C0I"
+      nextrank: plata4
+      cost: 42000.0
+      requirements:
+      # number requirement
+      - "%vault_eco_balance%>>42000"
+      - "%statistic_hours_played%>>16"
+      #- "%vault_eco_balance%>>"
+      custom-requirement-message:
+      - "&4&l» &cNecesitas 42000 ⛁ y 16 horas de juego para subir de nivel"
+      executecmds:
+      - "[console] excellentcrates key give %player% llave_comun 2"
+      - "[console] excellentcrates key give %player% llave_pococomun 1"
+      - "[console] lp user %player% perm set essentials.warps.subastas true server=dev-oneblock"
+      - "[console] lp user %player% perm set essentials.warps.subasta true server=dev-oneblock"
+      - "[console] lp user %player% perm set essentials.warps.ah true server=dev-oneblock"
+      - "[console] lp user %player% perm set essentials.warps.auction true server=dev-oneblock"
+    'plata4':
+      display: "&#8A9597P&#929B9Dl&#99A1A3a&#A1A7A9t&#A9AEAEa&#B1B4B4-&#B8BABAI&#C0C0C0V"
+      nextrank: plata5
+      cost: 50000.0
+      requirements:
+      # number requirement
+      - "%vault_eco_balance%>>50000"
+      - "%statistic_hours_played%>>20"
+      - "%statistic_mine_block%>>750"
+      #- "%vault_eco_balance%>>"
+      custom-requirement-message:
+      - "&4&l» &cNecesitas 50000 ⛁, 20 horas de juego y 750 bloques minados para subir de nivel"
+      executecmds:
+      - "[console] lp user %player% permission set essentials.warps.end true server=dev-oneblock" #server=oneblock21"
+      - "[console] excellentcrates key give %player% llave_comun 3"
+      - "[console] excellentcrates key give %player% llave_pococomun 2"
+    'plata5':
+      display: "&#8A9597P&#939C9El&#9CA3A5a&#A5ABACt&#AEB2B2a&#B7B9B9-&#C0C0C0V"
+      nextrank: oro1
+      cost: 58000.0
+      requirements:
+      # number requirement
+      - "%vault_eco_balance%>>58000"
+      - "%statistic_hours_played%>>24"
+      - "%statistic_mob_kills%>>100"
+      #- "%vault_eco_balance%>>"
+      custom-requirement-message:
+      - "&4&l» &cNecesitas 58000 ⛁, 24 horas de juego y 100 mobs asesinados para subir de nivel"
+      executecmds:
+      - "[console] lp user %player% permission set essentials.invsee true server=dev-oneblock"
+      - "[console] excellentcrates key give %player% llave_pococomun 2"
+      - "[console] excellentcrates key give %player% llave_rara 1"
+    'oro1':
+      display: "&#EFB810O&#F2C123r&#F4CA36o&#F7D249-&#F9DB5CI"
+      nextrank: oro2
+      cost: 70000.0
+      requirements:
+      # number requirement
+      - "%vault_eco_balance%>>70000"
+      - "%statistic_hours_played%>>30"
+      - "%statistic_kill_entity:SKELETON%>>250"
+      #- "%vault_eco_balance%>>"
+      custom-requirement-message:
+      - "&4&l» &cNecesitas 70000 ⛁, 30 horas de juego y 250 esqueletos asesinados para subir de nivel"
+      executecmds:
+      - "[console] lp user %player% perm set playerkits.kit.Oro true server=dev-oneblock"
+      - "[console] excellentcrates key give %player% llave_pococomun 2"
+      - "[console] excellentcrates key give %player% llave_rara 1"
+    'oro2':
+      display: "&#EFB810O&#F1BF1Fr&#F3C62Eo&#F5CD3E-&#F7D44DI&#F9DB5CI"
+      nextrank: oro3
+      cost: 100000.0
+      requirements:
+      # number requirement
+      - "%vault_eco_balance%>>100000"
+      - "%statistic_hours_played%>>72"
+      - "%statistic_fish_caught%>>75"
+      #- "%vault_eco_balance%>>"
+      custom-requirement-message:
+      - "&4&l» &cNecesitas 100000 ⛁, 72 horas de juego y 75 peces capturados para subir de nivel"
+      executecmds:
+      - "[console] lp user %player% permission set essentials.condense true server=dev-oneblock"
+      - "[console] excellentcrates key give %player% llave_pococomun 3"
+      - "[console] excellentcrates key give %player% llave_rara 2"
+    'oro3':
+      display: "&#EFB810O&#F1BE1Dr&#F2C429o&#F4CA36-&#F6CF43I&#F7D54FI&#F9DB5CI"
+      nextrank: oro4
+      cost: 150000.0
+      requirements:
+      # number requirement
+      - "%vault_eco_balance%>>150000"
+      - "%statistic_hours_played%>>144"
+      - "%servervariables_value_mm_zombieavanzado_kills%>>60"
+      #- "%vault_eco_balance%>>"
+      custom-requirement-message:
+      - "&4&l» &cNecesitas 1500000 ⛁, 144 horas de juego y 60 zombies avanzados asesinados para subir de nivel"
+      executecmds:
+      - "[console] excellentcrates key give %player% llave_pococomun 3"
+      - "[console] excellentcrates key give %player% llave_rara 2"
+      - "[console] lp user %player% perm set essentials.warps.bosses true server=dev-oneblock"
+      - "[console] lp user %player% perm set essentials.warps.boss true server=dev-oneblock"
+    'oro4':
+      display: "&#EFB810O&#F1BF1Fr&#F3C62Eo&#F5CD3E-&#F7D44DI&#F9DB5CV"
+      nextrank: oro5
+      cost: 200000.0
+      requirements:
+      # number requirement
+      - "%vault_eco_balance%>>200000"
+      - "%statistic_hours_played%>>216"
+      - "%servervariables_value_quest_agricultor_trigo_completado%>>1"
+      #- "%vault_eco_balance%>>"
+      custom-requirement-message:
+      - "&4&l» &cNecesitas 200000 ⛁, 216 horas de juego y todas las misiones de agricultura completadas para subir de nivel"
+      executecmds:
+      - "[console] lp user %player% permission set essentials.enderchest true server=dev-oneblock"
+      - "[console] excellentcrates key give %player% llave_pococomun 4"
+      - "[console] excellentcrates key give %player% llave_rara 3"
+    'oro5':
+      display: "&#EFB810O&#F2C123r&#F4CA36o&#F7D249-&#F9DB5CV"
+      nextrank: diamante1
+      cost: 300000.0
+      requirements:
+      # number requirement
+      - "%vault_eco_balance%>>300000"
+      - "%statistic_hours_played%>>288"
+      - "%statistic_mine_block:gold_ore%>>350"
+      #- "%vault_eco_balance%>>"
+      custom-requirement-message:
+      - "&4&l» &cNecesitas 300000 ⛁, 288 horas de juego y 350 menas de oro minadas para subir de nivel"
+      executecmds:
+      - "[console] excellentcrates key give %player% llave_pococomun 4"
+      - "[console] excellentcrates key give %player% llave_rara 3"
+      - "[console] excellentcrates key give %player% llave_epica 1"
+    'diamante1':
+      display: "&#51D1F6D&#5DD5F7i&#68D8F8a&#74DCF9m&#7FE0FAa&#8BE3FBn&#96E7FCt&#A2EBFDe&#ADEEFE-&#B9F2FFI"
+      nextrank: diamante2
+      cost: 400000.0
+      requirements:
+      # number requirement
+      - "%vault_eco_balance%>>400000"
+      - "%statistic_hours_played%>>360"
+      - "%statistic_mine_block:diamond_ore%>>500"
+      #- "%vault_eco_balance%>>"
+      custom-requirement-message:
+      - "&4&l» &cNecesitas 400000 ⛁, 360 horas de juego y 500 menas de diamante minadas para subir de nivel"
+      executecmds:
+      - "[console] lp user %player% permission set playerkits.kit.Diamante true server=dev-oneblock"
+      - "[console] lp user %player% permission set essentials.enderchest true server=dev-oneblock"
+      - "[console] excellentcrates key give %player% llave_rara 2"
+      - "[console] excellentcrates key give %player% llave_epica 1"
+    'diamante2':
+      display: "&#51D1F6D&#5BD4F7i&#66D8F8a&#70DBF9m&#7BDEFAa&#85E2FBn&#8FE5FBt&#9AE8FCe&#A4EBFD-&#AFEFFEI&#B9F2FFI"
+      nextrank: diamante3
+      cost: 550000.0
+      requirements:
+      # number requirement
+      - "%vault_eco_balance%>>550000"
+      - "%statistic_hours_played%>>480"
+      - "%statistic_kill_entity:ENDERMAN%>>200"
+      #- "%vault_eco_balance%>>"
+      custom-requirement-message:
+      - "&4&l» &cNecesitas 550000 ⛁, 480 horas de juego y 200 endermans asesinados para subir de nivel"
+      executecmds:
+      - "[console] lp user %player% permission set essentials.jump true server=dev-oneblock"
+      - "[console] excellentcrates key give %player% llave_rara 3"
+      - "[console] excellentcrates key give %player% llave_epica 1"
+    'diamante3':
+      display: "&#51D1F6D&#5AD4F7i&#64D7F8a&#6DDAF8m&#77DDF9a&#80E0FAn&#8AE3FBt&#93E6FCe&#9DE9FD-&#A6ECFDI&#B0EFFEI&#B9F2FFI"
+      nextrank: diamante4
+      cost: 700000.0
+      requirements:
+      # number requirement
+      - "%vault_eco_balance%>>700000"
+      - "%statistic_hours_played%>>600"
+      - "%player_level%>>250"
+      #- "%vault_eco_balance%>>"
+      custom-requirement-message:
+      - "&4&l» &cNecesitas 700000 ⛁, 600 horas de juego y 250 niveles de experiencia para subir de nivel"
+      executecmds:
+      - "[console] excellentcrates key give %player% llave_rara 3"
+      - "[console] excellentcrates key give %player% llave_epica 1"
+      - "[console] lp user %player% permission set axvaults.vault.3 true server=dev-oneblock"
+      - "[console] lp user %player% permission set essentials.near true server=dev-oneblock"
+    'diamante4':
+      display: "&#51D1F6D&#5BD4F7i&#66D8F8a&#70DBF9m&#7BDEFAa&#85E2FBn&#8FE5FBt&#9AE8FCe&#A4EBFD-&#AFEFFEI&#B9F2FFV"
+      nextrank: diamante5
+      cost: 850000.0
+      requirements:
+      # number requirement
+      - "%vault_eco_balance%>>850000"
+      - "%statistic_hours_played%>>720"
+      - "%pinataparty_votes_total%>>90"
+      #- "%vault_eco_balance%>>"
+      custom-requirement-message:
+      - "&4&l» &cNecesitas 850000 ⛁, 720 horas de juego y 90 votos para subir de nivel"
+      executecmds:
+      - "[console] excellentcrates key give %player% llave_rara 4"
+      - "[console] excellentcrates key give %player% llave_epica 1"
+    'diamante5':
+      display: "&#51D1F6D&#5DD5F7i&#68D8F8a&#74DCF9m&#7FE0FAa&#8BE3FBn&#96E7FCt&#A2EBFDe&#ADEEFE-&#B9F2FFV"
+      nextrank: platino1
+      cost: 1000000.0
+      requirements:
+      # number requirement
+      - "%vault_eco_balance%>>1000000"
+      - "%statistic_hours_played%>>840"
+      - "%auraskills_farming%>>50"
+      - "%auraskills_fighting%>>50"
+      - "%auraskills_foraging%>>50"
+      - "%auraskills_mining%>>50"
+      - "%auraskills_fishing%>>50"
+      - "%auraskills_excavation%>>50"
+      - "%auraskills_archery%>>50"
+      - "%auraskills_defense%>>50"
+      - "%auraskills_agility%>>50"
+      - "%auraskills_alchemy%>>50"
+      - "%auraskills_enchanting%>>50"
+      - "%auraskills_endurance%>>50"
+      - "%auraskills_sorcery%>>50"
+      - "%auraskills_healing%>>50"
+      - "%auraskills_forging%>>50"
+      #- "%vault_eco_balance%>>"
+      custom-requirement-message:
+      - "&4&l» &cNecesitas 1000000 ⛁, 840 horas de juego y tus habilidades a nivel 50 o superior para subir de nivel"
+      executecmds:
+      - "[console] excellentcrates key give %player% llave_rara 4"
+      - "[console] excellentcrates key give %player% llave_epica 1"
+    'platino1':
+      display: "&#6688ADP&#6C8FB4l&#7395BBa&#799CC2t&#7FA3C9i&#85A9D0n&#8CB0D7o&#92B6DE-&#98BDE5I"
+      nextrank: platino2
+      cost: 1200000.0
+      requirements:
+      # number requirement
+      - "%vault_eco_balance%>>1200000"
+      - "%statistic_hours_played%>>960"
+      - "%codex_total_discoveries%>>10"
+      #- "%vault_eco_balance%>>"
+      custom-requirement-message:
+      - "&4&l» &cNecesitas 1200000 ⛁, 960 horas de juego y 10 zonas descubiertas para subir de nivel"
+      executecmds:
+      - "[console] lp user %player% perm set playerkits.kit.Platino true server=dev-oneblock"
+      - "[console] excellentcrates key give %player% llave_rara 5"
+      - "[console] excellentcrates key give %player% llave_epica 1"
+    'platino2':
+      display: "&#6688ADP&#6C8EB3l&#7194B9a&#779AC0t&#7CA0C6i&#82A5CCn&#87ABD2o&#8DB1D9-&#92B7DFI&#98BDE5I"
+      nextrank: platino3
+      cost: 1400000.0
+      requirements:
+      # number requirement
+      - "%vault_eco_balance%>>1400000"
+      - "%statistic_hours_played%>>1080"
+      - "%thesearch_total_found_objects_orbes%>>21"
+      #- "%vault_eco_balance%>>"
+      custom-requirement-message:
+      - "&4&l» &cNecesitas 1400000 ⛁, 1080 horas de juego y 21 orbes descubiertos para subir de nivel"
+      executecmds:
+      - "[console] excellentcrates key give %player% llave_rara 5"
+      - "[console] excellentcrates key give %player% llave_epica 1"
+    'platino3':
+      display: "&#6688ADP&#6B8DB3l&#7093B8a&#7598BEt&#7A9DC3i&#7FA3C9n&#84A8CFo&#89ADD4-&#8EB2DAI&#93B8DFI&#98BDE5I"
+      nextrank: platino4
+      cost: 1600000.0
+      requirements:
+      # number requirement
+      - "%vault_eco_balance%>>1600000"
+      - "%statistic_hours_played%>>1200"
+      - "%odailyquests_total%>>50"
+      #- "%vault_eco_balance%>>"
+      custom-requirement-message:
+      - "&4&l» &cNecesitas 1600000 ⛁, 1200 horas de juego y 50 misiones diarias completadas en total para subir de nivel"
+      executecmds:
+      - "[console] excellentcrates key give %player% llave_rara 6"
+      - "[console] excellentcrates key give %player% llave_epica 1"
+    'platino4':
+      display: "&#6688ADP&#6C8EB3l&#7194B9a&#779AC0t&#7CA0C6i&#82A5CCn&#87ABD2o&#8DB1D9-&#92B7DFI&#98BDE5V"
+      nextrank: platino5
+      cost: 1800000.0
+      requirements:
+      # number requirement
+      - "%vault_eco_balance%>>1800000"
+      - "%statistic_hours_played%>>1320"
+      - "%servervariables_value_quest_cazador_completado%>>1"
+      #- "%vault_eco_balance%>>"
+      custom-requirement-message:
+      - "&4&l» &cNecesitas 1800000 ⛁, 1320 horas de juego y todas las misiones de cazador completadas para subir de nivel"
+      executecmds:
+      - "[console] excellentcrates key give %player% llave_rara 6"
+      - "[console] excellentcrates key give %player% llave_epica 1"
+    'platino5':
+      display: "&#6688ADP&#6C8FB4l&#7395BBa&#799CC2t&#7FA3C9i&#85A9D0n&#8CB0D7o&#92B6DE-&#98BDE5V"
+      nextrank: titanio1
+      cost: 2000000.0
+      requirements:
+      # number requirement
+      - "%vault_eco_balance%>>2000000"
+      - "%statistic_hours_played%>>1440"
+      - "%servervariables_value_mm_cerdo_erratico_kills%>>600"
+      #- "%vault_eco_balance%>>"
+      custom-requirement-message:
+      - "&4&l» &cNecesitas 2000000 ⛁, 1440 horas de juego y 600 cerdos erraticos asesinados para subir de nivel"
+      executecmds:
+      - "[console] excellentcrates key give %player% llave_rara 7"
+      - "[console] excellentcrates key give %player% llave_epica 1"
+    'titanio1':
+      display: "&#FF00A2T&#FF13A9i&#FF26B0t&#FF39B7a&#FF4CBEn&#FF5EC4i&#FF71CBo&#FF84D2-&#FF97D9I"
+      nextrank: titanio2
+      cost: 2500000.0
+      requirements:
+      # number requirement
+      - "%vault_eco_balance%>>2500000"
+      - "%statistic_hours_played%>>1560"
+      - "%servervariables_value_mm_enderman_salvaje_kills%>>75"
+      #- "%vault_eco_balance%>>"
+      custom-requirement-message:
+      - "&4&l» &cNecesitas 2500000 ⛁, 1560 horas de juego y 75 endermans salvajes asesinados para subir de nivel"
+      executecmds:
+      - "[console] lp user %player% perm set playerkits.kit.Titanio true server=dev-oneblock"
+      - "[console] excellentcrates key give %player% llave_epica 1"
+      - "[console] kit give fragmentoepico %player%"
+    'titanio2':
+      display: "&#FF00A2T&#FF11A8i&#FF22AEt&#FF32B4a&#FF43BAn&#FF54C1i&#FF65C7o&#FF75CD-&#FF86D3I&#FF97D9I"
+      nextrank: titanio3
+      cost: 3000000.0
+      requirements:
+      # number requirement
+      - "%vault_eco_balance%>>3000000"
+      - "%statistic_hours_played%>>1680"
+      - "%servervariables_value_mm_sentey_kills%>>5"
+      #- "%vault_eco_balance%>>"
+      custom-requirement-message:
+      - "&4&l» &cNecesitas 3000000 ⛁, 1680 horas de juego y 6 senteys asesinados para subir de nivel"
+      executecmds:
+      - "[console] excellentcrates key give %player% llave_epica 2"
+      - "[console] kit give fragmentoepico %player%"
+      - "[console] kit give fragmentoepico %player%"
+    'titanio3':
+      display: "&#FF00A2T&#FF0FA8i&#FF1EADt&#FF2DB3a&#FF3CB8n&#FF4CBEi&#FF5BC3o&#FF6AC9-&#FF79CEI&#FF88D4I&#FF97D9I"
+      nextrank: titanio4
+      cost: 3500000.0
+      requirements:
+      # number requirement
+      - "%vault_eco_balance%>>3500000"
+      - "%statistic_hours_played%>>1800"
+      - "%statistic_kill_entity:BLAZE%>>500"
+      - "%statistic_kill_entity:WITHER_SKELETON%>>500"
+      - "%statistic_kill_entity:GHAST%>>500"
+      - "%statistic_kill_entity:MAGMA_CUBE%>>500"
+      - "%statistic_kill_entity:PIGLIN_BRUTE%>>500"
+      - "%statistic_kill_entity:PIGLIN%>>500"
+      - "%statistic_kill_entity:ENDERMAN%>>600"
+      - "%statistic_kill_entity:ENDERMITE%>>600"
+      #- "%vault_eco_balance%>>"
+      custom-requirement-message:
+      - "&4&l» &cNecesitas 3500000 ⛁, 1800 horas de juego, 600 mobs del end y 500 mobs del nether asesinados para subir de nivel"
+      executecmds:
+      - "[console] excellentcrates key give %player% llave_epica 2"
+      - "[console] kit give fragmentoepico %player%"
+      - "[console] kit give fragmentoepico %player%"
+    'titanio4':
+      display: "&#FF00A2T&#FF11A8i&#FF22AEt&#FF32B4a&#FF43BAn&#FF54C1i&#FF65C7o&#FF75CD-&#FF86D3I&#FF97D9V"
+      nextrank: titanio5
+      cost: 4000000.0
+      requirements:
+      # number requirement
+      - "%vault_eco_balance%>>4000000"
+      - "%statistic_hours_played%>>1920"
+      - "%statistic_mine_block:diamond_ore%>>6000"
+      - "%pinataparty_votes_total%>>300"
+      #- "%vault_eco_balance%>>"
+      custom-requirement-message:
+      - "&4&l» &cNecesitas 4000000 ⛁, 1920 horas de juego, 6000 menas de diamante minadas y 300 votos para subir de nivel"
+      executecmds:
+      - "[console] excellentcrates key give %player% llave_epica 3"
+      - "[console] kit give fragmentoepico %player%"
+      - "[console] kit give fragmentoepico %player%"
+      - "[console] kit give fragmentoepico %player%"
+      - "[console] kit give fragmentolegendario %player%"
+    'titanio5':
+      display: "&#FF00A2T&#FF13A9i&#FF26B0t&#FF39B7a&#FF4CBEn&#FF5EC4i&#FF71CBo&#FF84D2-&#FF97D9V"
+      nextrank: LASTRANK
+      cost: 4500000.0
+      requirements:
+      # number requirement
+      - "%vault_eco_balance%>>4500000"
+      - "%statistic_hours_played%>>2040"
+      - "%statistic_mine_block:lapis_ore%>>6000"
+      - "%statistic_item_enchanted%>>250"
+      #- "%vault_eco_balance%>>"
+      custom-requirement-message:
+      - "&4&l» &cNecesitas 4500000 ⛁, 2040 horas de juego, 6000 menas de lapis lazuli minadas y 250 objetos encantados para subir de nivel"
+      executecmds:
+      - "[console] excellentcrates key give %player% llave_epica 3"
+      - "[console] kit give fragmentoepico %player%"
+      - "[console] kit give fragmentoepico %player%"
+      - "[console] kit give fragmentoepico %player%"
+      - "[console] kit give fragmentolegendario %player%"

@@ -1,0 +1,40 @@
+tasks:
+  mobkilling:
+    type: "mobkilling"
+    amount: 45
+    mob: SKELETON
+display:
+  name: "&3Cazador de &besqueletos"
+  lore-normal:
+    - "&8Mision"
+    - ""
+    - " &fObjetivo:"
+    - " &8● &fMata 45 esqueletos"
+    - ""
+    - " &fRecompensas:"
+    - " &8● &64,500 ⛁"
+    - " &8● &b9 ❖"
+    - ""
+    - " &c✘ Mision incompleta"
+  lore-started:
+    - ""
+    - " &fProgreso:"
+    - " &8● &a{mobkilling:progress}"
+  type: "BONE"
+rewards:
+  - "eco give {player} 4500"
+  - "ecobits give {player} cristales 3"
+placeholders:
+  description: "&fMata 45 esqueletos."
+  progress: " &8● &a{mobkilling:progress}"
+progress-placeholders:
+  '*': "&f{mobkilling:progress}&7/45 blocks broken"
+options:
+  category: "cazador"
+  requires:
+    - "cazador17"
+  repeatable: false
+  cooldown:
+    enabled: true
+    time: 1445
+  sort-order: 18
