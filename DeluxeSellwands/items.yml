@@ -1,0 +1,588 @@
+#########################################################################################
+#                                                                                       #
+# DeluxeSellwands, a premium resource by Norska @ https://norska.dev                    #
+#                                                                                       #
+# Wiki: https://norska.dev/docs/welcome/                                                #
+# Support: https://norska.dev/discord/                                                  #
+#                                                                                       #
+# You are editing the items.yml file of DeluxeSellwands.                                #
+#                                                                                       #
+#########################################################################################
+
+#########################################################################################
+#                                                                                       #
+# NOTE: PLEASE READ BEFORE CONFIGURING!                                                 #
+#                                                                                       #
+# Please consult the wiki for any questions regarding the setup of this plugin, if you  #
+# still require help, open a ticket on my discord server!                               #
+#                                                                                       #
+#########################################################################################
+
+# Note: Custom Model Data is ONLY 1.14+, if you have a custom texture and want to use it simply match the material and the custom model data to the one in your resource pack. SET TO 0 TO DISABLE.   
+
+# [SELLWANDS] Placeholders for names and lores:
+# {0} = uses
+# {1} = multiplier
+# {2} = amount statistic (statistics feature needs to be enabled)
+# {3} = worth statistic (statistics feature needs to be enabled)
+# {4} = owner (sellwand binding feature needs to be enabled)
+
+# [CHARGERS] Placeholders for names and lores:
+# {0} = uses
+
+# [DISCHARGERS] Placeholders for names and lores:
+# None
+
+items:
+
+   sellwands:
+
+      vara:
+         settings:
+            # Note: How the item shows up in give commands, etc.
+            typeName: 'Sellwand'
+            # Note: Do not change the provider if you don't know what you're doing.
+            provider: 'VAULT'
+            
+         usable_item:
+            # Note: To use custom skulls use 'CUSTOM_SKULL-<URL>' 1.14.4+ ONLY
+            # Note: You can find custom skull URLs at https://minecraft-heads.com/custom-heads
+            material: 'STICK'
+            materialData: 0
+            customModelData: 0
+            name: "<GRADIENT:00CBF5>Vara de venta</GRADIENT:00CBF5>"
+            lore:
+            - "&8Objeto especial"
+            - ""
+            - " &8&l≡ &f&lINFORMACIÓN:"
+            - " &r &8◆ &fMultiplicador: &b{1}x"
+            - " &r &8◆ &fUsos: &b{0}"
+            - ""
+            - " &8&l≡ &f&lESTADÍSTICAS:"
+            - " &r &8◆ &fItems vendidos: &b{2}"
+            - " &r &8◆ &fDinero generado: &b{3} ⛁"
+            - ""
+            #- " &8&l≡ &f&lENCANTAMIENTOS:"
+            #- " &8◆ {ENCHANTMENTS}"
+            #- ""
+            - "&e» ¡Haz clic izquierdo para inspeccionar! «"
+            - "&e» ¡Haz clic derecho para vender! «"
+            itemFlags:
+            - 'HIDE_ATTRIBUTES'
+            - 'HIDE_ENCHANTS'
+            - 'HIDE_PLACED_ON'
+            glow: true
+            
+         unusable_item:
+            # Note: To use custom skulls use 'CUSTOM_SKULL-<URL>' 1.14.4+ ONLY
+            # Note: You can find custom skull URLs at https://minecraft-heads.com/custom-heads
+            material: 'STICK'
+            materialData: 0
+            customModelData: 0
+            name: "<GRADIENT:00CBF5>Vara de venta</GRADIENT:00CBF5>"
+            lore:
+            - "&8Objeto especial"
+            - ""
+            - " &c✘ Esta vara de venta no se podrá usar"
+            - "    &chasta que vuelva a ser cargada"
+            - ""
+            - " &8&l≡ &f&lINFORMACIÓN:"
+            - " &r &8◆ &fMultiplicador: &b{1}x"
+            - " &r &8◆ &fUsos: &b{0}"
+            - ""
+            - " &8&l≡ &f&lESTADÍSTICAS:"
+            - " &r &8◆ &fItems vendidos: &b{2}"
+            - " &r &8◆ &fDinero generado: &b{3} ⛁"
+            - ""
+            #- " &8&l≡ &f&lENCANTAMIENTOS:"
+            #- " &8◆ {ENCHANTMENTS}"
+            #- ""
+            - "&e» ¡Haz clic izquierdo para inspeccionar! «"
+            - "&e» ¡Haz clic derecho para vender! «"
+            itemFlags:
+            - 'HIDE_ATTRIBUTES'
+            - 'HIDE_ENCHANTS'
+            - 'HIDE_PLACED_ON'
+            glow: true
+      varanivel1:
+         settings:
+            # Note: How the item shows up in give commands, etc.
+            typeName: 'Sellwand'
+            # Note: Do not change the provider if you don't know what you're doing.
+            provider: 'VAULT'
+            
+         usable_item:
+            # Note: To use custom skulls use 'CUSTOM_SKULL-<URL>' 1.14.4+ ONLY
+            # Note: You can find custom skull URLs at https://minecraft-heads.com/custom-heads
+            material: 'STICK'
+            materialData: 0
+            customModelData: 0
+            name: "<GRADIENT:08FB11>Vara de venta</GRADIENT:08FB11> &8◆ &fNivel 1"
+            lore:
+            - "&8Objeto especial"
+            - ""
+            - " &8&l≡ &f&lINFORMACIÓN:"
+            - " &r &8◆ &fMultiplicador: &b{1}x"
+            - " &r &8◆ &fUsos: &b{0}"
+            - ""
+            - " &8&l≡ &f&lESTADÍSTICAS:"
+            - " &r &8◆ &fItems vendidos: &b{2}"
+            - " &r &8◆ &fDinero generado: &b{3} ⛁"
+            - ""
+            #- " &8&l≡ &f&lENCANTAMIENTOS:"
+            #- " &8◆ {ENCHANTMENTS}"
+            #- ""
+            - "&e» ¡Haz clic izquierdo para inspeccionar! «"
+            - "&e» ¡Haz clic derecho para vender! «"
+            itemFlags:
+            - 'HIDE_ATTRIBUTES'
+            - 'HIDE_ENCHANTS'
+            - 'HIDE_PLACED_ON'
+            glow: true
+            
+         unusable_item:
+            # Note: To use custom skulls use 'CUSTOM_SKULL-<URL>' 1.14.4+ ONLY
+            # Note: You can find custom skull URLs at https://minecraft-heads.com/custom-heads
+            material: 'STICK'
+            materialData: 0
+            customModelData: 0
+            name: "<GRADIENT:08FB11>Vara de venta</GRADIENT:08FB11> &8◆ &fNivel 1"
+            lore:
+            - "&8Objeto especial"
+            - ""
+            - " &c✘ Esta vara de venta no se podrá usar"
+            - "    &chasta que vuelva a ser cargada"
+            - ""
+            - " &8&l≡ &f&lINFORMACIÓN:"
+            - " &r &8◆ &fMultiplicador: &b{1}x"
+            - " &r &8◆ &fUsos: &b{0}"
+            - ""
+            - " &8&l≡ &f&lESTADÍSTICAS:"
+            - " &r &8◆ &fItems vendidos: &b{2}"
+            - " &r &8◆ &fDinero generado: &b{3} ⛁"
+            - ""
+            #- " &8&l≡ &f&lENCANTAMIENTOS:"
+            #- " &8◆ {ENCHANTMENTS}"
+            #- ""
+            - "&e» ¡Haz clic izquierdo para inspeccionar! «"
+            - "&e» ¡Haz clic derecho para vender! «"
+            - ""
+            - "&e» ¡Haz clic izquierdo para inspeccionar! «"
+            - "&e» ¡Haz clic derecho para vender! «"
+            itemFlags:
+            - 'HIDE_ATTRIBUTES'
+            - 'HIDE_ENCHANTS'
+            - 'HIDE_PLACED_ON'
+            glow: true
+      varanivel2:
+         settings:
+            # Note: How the item shows up in give commands, etc.
+            typeName: 'Sellwand'
+            # Note: Do not change the provider if you don't know what you're doing.
+            provider: 'VAULT'
+            
+         usable_item:
+            # Note: To use custom skulls use 'CUSTOM_SKULL-<URL>' 1.14.4+ ONLY
+            # Note: You can find custom skull URLs at https://minecraft-heads.com/custom-heads
+            material: 'STICK'
+            materialData: 0
+            customModelData: 0
+            name: "<GRADIENT:FBFA08>Vara de venta</GRADIENT:FBFA08> &8◆ &fNivel 2"
+            lore:
+            - "&8Objeto especial"
+            - ""
+            - " &8&l≡ &f&lINFORMACIÓN:"
+            - " &r &8◆ &fMultiplicador: &b{1}x"
+            - " &r &8◆ &fUsos: &b{0}"
+            - ""
+            - " &8&l≡ &f&lESTADÍSTICAS:"
+            - " &r &8◆ &fItems vendidos: &b{2}"
+            - " &r &8◆ &fDinero generado: &b{3} ⛁"
+            - ""
+            #- " &8&l≡ &f&lENCANTAMIENTOS:"
+            #- " &8◆ {ENCHANTMENTS}"
+            #- ""
+            - "&e» ¡Haz clic izquierdo para inspeccionar! «"
+            - "&e» ¡Haz clic derecho para vender! «"
+            itemFlags:
+            - 'HIDE_ATTRIBUTES'
+            - 'HIDE_ENCHANTS'
+            - 'HIDE_PLACED_ON'
+            glow: true
+            
+         unusable_item:
+            # Note: To use custom skulls use 'CUSTOM_SKULL-<URL>' 1.14.4+ ONLY
+            # Note: You can find custom skull URLs at https://minecraft-heads.com/custom-heads
+            material: 'STICK'
+            materialData: 0
+            customModelData: 0
+            name: "<GRADIENT:FBFA08>Vara de venta</GRADIENT:FBFA08> &8◆ &fNivel 2"
+            lore:
+            - "&8Objeto especial"
+            - ""
+            - " &c✘ Esta vara de venta no se podrá usar"
+            - "    &chasta que vuelva a ser cargada"
+            - ""
+            - " &8&l≡ &f&lINFORMACIÓN:"
+            - " &r &8◆ &fMultiplicador: &b{1}x"
+            - " &r &8◆ &fUsos: &b{0}"
+            - ""
+            - " &8&l≡ &f&lESTADÍSTICAS:"
+            - " &r &8◆ &fItems vendidos: &b{2}"
+            - " &r &8◆ &fDinero generado: &b{3} ⛁"
+            - ""
+            #- " &8&l≡ &f&lENCANTAMIENTOS:"
+            #- " &8◆ {ENCHANTMENTS}"
+            #- ""
+            - "&e» ¡Haz clic izquierdo para inspeccionar! «"
+            - "&e» ¡Haz clic derecho para vender! «"
+            itemFlags:
+            - 'HIDE_ATTRIBUTES'
+            - 'HIDE_ENCHANTS'
+            - 'HIDE_PLACED_ON'
+            glow: true
+      varanivel3:
+         settings:
+            # Note: How the item shows up in give commands, etc.
+            typeName: 'Sellwand'
+            # Note: Do not change the provider if you don't know what you're doing.
+            provider: 'VAULT'
+            
+         usable_item:
+            # Note: To use custom skulls use 'CUSTOM_SKULL-<URL>' 1.14.4+ ONLY
+            # Note: You can find custom skull URLs at https://minecraft-heads.com/custom-heads
+            material: 'STICK'
+            materialData: 0
+            customModelData: 0
+            name: "<GRADIENT:FB0808>Vara de venta</GRADIENT:FB0808> &8◆ &fNivel 3"
+            lore:
+            - "&8Objeto especial"
+            - ""
+            - " &8&l≡ &f&lINFORMACIÓN:"
+            - " &r &8◆ &fMultiplicador: &b{1}x"
+            - " &r &8◆ &fUsos: &b{0}"
+            - ""
+            - " &8&l≡ &f&lESTADÍSTICAS:"
+            - " &r &8◆ &fItems vendidos: &b{2}"
+            - " &r &8◆ &fDinero generado: &b{3} ⛁"
+            - ""
+            #- " &8&l≡ &f&lENCANTAMIENTOS:"
+            #- " &8◆ {ENCHANTMENTS}"
+            #- ""
+            - "&e» ¡Haz clic izquierdo para inspeccionar! «"
+            - "&e» ¡Haz clic derecho para vender! «"
+            itemFlags:
+            - 'HIDE_ATTRIBUTES'
+            - 'HIDE_ENCHANTS'
+            - 'HIDE_PLACED_ON'
+            glow: true
+            
+         unusable_item:
+            # Note: To use custom skulls use 'CUSTOM_SKULL-<URL>' 1.14.4+ ONLY
+            # Note: You can find custom skull URLs at https://minecraft-heads.com/custom-heads
+            material: 'STICK'
+            materialData: 0
+            customModelData: 0
+            name: "<GRADIENT:FB0808>Vara de venta</GRADIENT:FB0808> &8◆ &fNivel 3"
+            lore:
+            - "&8Objeto especial"
+            - ""
+            - " &c✘ Esta vara de venta no se podrá usar"
+            - "    &chasta que vuelva a ser cargada"
+            - ""
+            - " &8&l≡ &f&lINFORMACIÓN:"
+            - " &r &8◆ &fMultiplicador: &b{1}x"
+            - " &r &8◆ &fUsos: &b{0}"
+            - ""
+            - " &8&l≡ &f&lESTADÍSTICAS:"
+            - " &r &8◆ &fItems vendidos: &b{2}"
+            - " &r &8◆ &fDinero generado: &b{3} ⛁"
+            - ""
+            #- " &8&l≡ &f&lENCANTAMIENTOS:"
+            #- " &8◆ {ENCHANTMENTS}"
+            #- ""
+            - "&e» ¡Haz clic izquierdo para inspeccionar! «"
+            - "&e» ¡Haz clic derecho para vender! «"
+            itemFlags:
+            - 'HIDE_ATTRIBUTES'
+            - 'HIDE_ENCHANTS'
+            - 'HIDE_PLACED_ON'
+            glow: true
+      varanivel4:
+         settings:
+            # Note: How the item shows up in give commands, etc.
+            typeName: 'Sellwand'
+            # Note: Do not change the provider if you don't know what you're doing.
+            provider: 'VAULT'
+            
+         usable_item:
+            # Note: To use custom skulls use 'CUSTOM_SKULL-<URL>' 1.14.4+ ONLY
+            # Note: You can find custom skull URLs at https://minecraft-heads.com/custom-heads
+            material: 'STICK'
+            materialData: 0
+            customModelData: 0
+            name: "<GRADIENT:8B08FB>Vara de venta</GRADIENT:8B08FB> &8◆ &fNivel 4"
+            lore:
+            - "&8Objeto especial"
+            - ""
+            - " &8&l≡ &f&lINFORMACIÓN:"
+            - " &r &8◆ &fMultiplicador: &b{1}x"
+            - " &r &8◆ &fUsos: &b{0}"
+            - ""
+            - " &8&l≡ &f&lESTADÍSTICAS:"
+            - " &r &8◆ &fItems vendidos: &b{2}"
+            - " &r &8◆ &fDinero generado: &b{3} ⛁"
+            - ""
+            #- " &8&l≡ &f&lENCANTAMIENTOS:"
+            #- " &8◆ {ENCHANTMENTS}"
+            #- ""
+            - "&e» ¡Haz clic izquierdo para inspeccionar! «"
+            - "&e» ¡Haz clic derecho para vender! «"
+            itemFlags:
+            - 'HIDE_ATTRIBUTES'
+            - 'HIDE_ENCHANTS'
+            - 'HIDE_PLACED_ON'
+            glow: true
+            
+         unusable_item:
+            # Note: To use custom skulls use 'CUSTOM_SKULL-<URL>' 1.14.4+ ONLY
+            # Note: You can find custom skull URLs at https://minecraft-heads.com/custom-heads
+            material: 'STICK'
+            materialData: 0
+            customModelData: 0
+            name: "<GRADIENT:8B08FB>Vara de venta</GRADIENT:8B08FB> &8◆ &fNivel 1"
+            lore:
+            - "&8Objeto especial"
+            - ""
+            - " &c✘ Esta vara de venta no se podrá usar"
+            - "    &chasta que vuelva a ser cargada"
+            - ""
+            - " &8&l≡ &f&lINFORMACIÓN:"
+            - " &r &8◆ &fMultiplicador: &b{1}x"
+            - " &r &8◆ &fUsos: &b{0}"
+            - ""
+            - " &8&l≡ &f&lESTADÍSTICAS:"
+            - " &r &8◆ &fItems vendidos: &b{2}"
+            - " &r &8◆ &fDinero generado: &b{3} ⛁"
+            - ""
+            #- " &8&l≡ &f&lENCANTAMIENTOS:"
+            #- " &8◆ {ENCHANTMENTS}"
+            #- ""
+            - "&e» ¡Haz clic izquierdo para inspeccionar! «"
+            - "&e» ¡Haz clic derecho para vender! «"
+            itemFlags:
+            - 'HIDE_ATTRIBUTES'
+            - 'HIDE_ENCHANTS'
+            - 'HIDE_PLACED_ON'
+            glow: true
+          
+      sell_gauntlet:
+         settings:
+            # Note: How the item shows up in give commands, etc.
+            typeName: 'Sell Gauntlet'
+            # Note: Do not change the provider if you don't know what you're doing.
+            provider: 'VAULT'
+            
+         usable_item:
+            # Note: To use custom skulls use 'CUSTOM_SKULL-<URL>' 1.14.4+ ONLY
+            # Note: You can find custom skull URLs at https://minecraft-heads.com/custom-heads
+            material: 'CUSTOM_SKULL-4dd88b2f11ddcadbba490326a0b1ab4878d53dbbb255b70460473d2eabc0c682'
+            materialData: 0
+            customModelData: 0
+            name: '<GRADIENT:FCFF5F>Sell Gauntlet</GRADIENT:FF8A00> &7(&e{0}&7)'
+            lore:
+            - ''
+            - '<SOLID:fc036b>⭐ Special Item'
+            - ''
+            - '&9• &7Right-Click &f→ &eSell Container'
+            - '&9• &7Left-Click &f→ &eInspect Container'
+            - ''
+            - '{ENCHANTMENTS}'
+            - ''
+            - '&e&nUsable on:'
+            - '&6• &fAll chests'
+            - '&6• &fBarrels'
+            - '&7• &fHoppers'
+            - '&d• &fShulkers'
+            - ''
+            - '&e&nInformation:'
+            - '&6• &eMultiplier: &fx{1}'
+            - '&6• &eUses: &f{0}'
+            - ''
+            - '&e&nStatistics:'
+            - '&6• &eEarnings: &f{3}'
+            - '&6• &eItems Sold: &f{2}'
+            - ''
+            - '&eOwner: &f{4}'
+            itemFlags:
+            - 'HIDE_ATTRIBUTES'
+            - 'HIDE_ENCHANTS'
+            - 'HIDE_PLACED_ON'
+            glow: true
+            
+         unusable_item:
+            # Note: To use custom skulls use 'CUSTOM_SKULL-<URL>' 1.14.4+ ONLY
+            # Note: You can find custom skull URLs at https://minecraft-heads.com/custom-heads
+            material: 'CUSTOM_SKULL-4dd88b2f11ddcadbba490326a0b1ab4878d53dbbb255b70460473d2eabc0c682'
+            materialData: 0
+            customModelData: 0
+            name: '<GRADIENT:FCFF5F>Sell Gauntlet</GRADIENT:FF8A00> &7(&cNeeds Recharging&7)'
+            lore:
+            - ''
+            - '<SOLID:fc036b>⭐ Special Item'
+            - ''
+            - '&7[&c&l❌&7] &cThis sellwand cannot be used'
+            - '&cuntil it has been re-charged!'
+            - ''
+            - '{ENCHANTMENTS}'
+            - ''
+            - '&9• &7Right-Click &f→ &eSell Container'
+            - '&9• &7Left-Click &f→ &eInspect Container'
+            - ''
+            - '&e&nUsable on:'
+            - '&6• &fAll chests'
+            - '&6• &fBarrels'
+            - '&7• &fHoppers'
+            - '&d• &fShulkers'
+            - ''
+            - '&e&nInformation:'
+            - '&6• &eMultiplier: &fx{1}'
+            - '&6• &eUses: &f{0}'
+            - ''
+            - '&e&nStatistics:'
+            - '&6• &eEarnings: &f{3}'
+            - '&6• &eItems Sold: &f{2}'
+            - ''
+            - '&eOwner: &f{4}'
+            itemFlags:
+            - 'HIDE_ATTRIBUTES'
+            - 'HIDE_ENCHANTS'
+            - 'HIDE_PLACED_ON'
+            glow: true
+            
+   ###############################
+   ###############################
+   ###############################
+            
+   chargers:
+   
+      default:
+         settings:
+            # Note: How the item shows up in give commands, etc.
+            typeName: 'Charger'
+            
+         item:
+            # Note: To use custom skulls use 'CUSTOM_SKULL-<URL>' 1.14.4+ ONLY
+            # Note: You can find custom skull URLs at https://minecraft-heads.com/custom-heads
+            material: 'NETHER_STAR'
+            materialData: 0
+            customModelData: 0
+            name: '&eSellwand Charger &a&o⚡ &7(&a+{0} uses&7)'
+            lore:
+            - ''
+            - '&a• &7Uses &f→ &a+{0}'
+            - ''
+            - '&e&nInformation:'
+            - '&6• &7Right-Click on this item to replenish'
+            - '&7uses of a sellwand in your inventory!'
+            - ''
+            - '&4• &7This will not work on infinite-uses sellwands!'
+            - ''
+            itemFlags:
+            - 'HIDE_ATTRIBUTES'
+            - 'HIDE_ENCHANTS'
+            - 'HIDE_PLACED_ON'
+            
+   ###############################
+            
+      common:
+         settings:
+            # Note: How the item shows up in give commands, etc.
+            typeName: 'Common Charger'
+            
+         item:
+            # Note: To use custom skulls use 'CUSTOM_SKULL-<URL>' 1.14.4+ ONLY
+            # Note: You can find custom skull URLs at https://minecraft-heads.com/custom-heads
+            material: 'NETHER_STAR'
+            materialData: 0
+            customModelData: 0
+            name: '&eSellwand Charger &7(&a+{0} uses&7) &a&o⚡ &8┃ &aCommon Tier'
+            lore:
+            - ''
+            - '&a• &7Uses &f→ &a+{0}'
+            - ''
+            - '&e&nInformation:'
+            - '&6• &7Right-Click on this item to replenish'
+            - '&7uses of a sellwand in your inventory!'
+            - ''
+            - '&4• &7This will not work on infinite-uses sellwands!'
+            - ''
+            itemFlags:
+            - 'HIDE_ATTRIBUTES'
+            - 'HIDE_ENCHANTS'
+            - 'HIDE_PLACED_ON'
+            
+   ###############################            
+          
+      infinity_stone:
+         settings:
+            # Note: How the item shows up in give commands, etc.
+            typeName: 'Infinity Stone'
+            
+         item:
+            # Note: To use custom skulls use 'CUSTOM_SKULL-<URL>' 1.14.4+ ONLY
+            # Note: You can find custom skull URLs at https://minecraft-heads.com/custom-heads
+            material: 'CUSTOM_SKULL-92c2f6fa7ec530435c431572938b9feb959c42298e5554340263c65271'
+            materialData: 0
+            customModelData: 0
+            name: '<RAINBOW1>Infinity Stone</RAINBOW> &7(&a+{0} uses&7) &a&o⚡'
+            lore:
+            - ''
+            - '<SOLID:fc036b>⭐ Special Item'
+            - ''
+            - '&a• &7Uses &f→ &a+{0}'
+            - ''
+            - '&e&nInformation:'
+            - '&6• &7Right-Click on this item to replenish'
+            - '&7uses of a sellwand in your inventory!'
+            - ''
+            - '&4• &7This will not work on infinite-uses sellwands!'
+            - ''
+            itemFlags:
+            - 'HIDE_ATTRIBUTES'
+            - 'HIDE_ENCHANTS'
+            - 'HIDE_PLACED_ON'
+            
+   ###############################
+   ###############################
+   ###############################
+            
+   dischargers:
+   
+      default:
+         settings:
+            # Note: How the item shows up in give commands, etc.
+            typeName: 'Discharger'
+            # Note: What type of charger to create after using the discharger.
+            chargerType: 'default'
+            
+         item:
+            # Note: To use custom skulls use 'CUSTOM_SKULL-<URL>' 1.14.4+ ONLY
+            # Note: You can find custom skull URLs at https://minecraft-heads.com/custom-heads
+            material: 'CUSTOM_SKULL-74b662d3b529a187261cab86c6e56423bf876aa249d030faeaf34362f3447277'
+            materialData: 0
+            customModelData: 0
+            name: '<SOLID:ff931f>Sellwand Discharger &c&o⚡'
+            lore:
+            - ''
+            - '<SOLID:ff931f>&nInformation:'
+            - '&6• &7Right-Click on this item to discharge'
+            - '&7a sellwand from your inventory, and'
+            - '&7get a new charger!'
+            - ''
+            - '&4• &7This will not work on infinite-uses sellwands!'
+            - ''
+            itemFlags:
+            - 'HIDE_ATTRIBUTES'
+            - 'HIDE_ENCHANTS'
+            - 'HIDE_PLACED_ON'
