@@ -1,0 +1,761 @@
+menu_title: 'Menú de caramelos'
+open_command: 
+- menucarameloverde
+size: 54
+items:
+  'fill':
+    material: BLACK_STAINED_GLASS_PANE
+    slots:
+    - 53
+    - 52
+    - 51
+    - 50
+    - 49
+    - 48
+    - 47
+    - 46
+    - 45
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: " "
+    lore: " "
+  'madera':
+    material: COAL_BLOCK
+    amount: 32
+    slot: 10
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&fBloque de carbón &7[x32]"
+    lore:
+      - "&8Objeto"
+      - ""
+      - "&fCompra este objeto con los"
+      - "&fcaramelos ganados en el"
+      - "&fevento de &dPiñata Party"
+      - ""
+      - " &8◆ &fCosto: &b2 Caramelos Verdes ❁"
+      - ""
+      - "&e» ¡Haz clic para intercambiar! «"
+    click_requirement:
+      requirements:
+        stock:
+          type: javascript
+          expression: '%servervariables_value_carameloverde% >= 2'
+          deny_commands:
+          - '[message] &4&l» &cNo tienes suficientes caramelos &nverdes&r &cpara comprar este objeto'
+          - '[sound] ITEM_BREAK'
+    click_commands:
+      - '[message] &8&l» &fHas intercambiado &aCaramelos Verdes &7[x2] &fpor &fBloque de carbón &7[x32]'
+      - '[console] svar reduce carameloverde 2 %player_name%'
+      - '[console] egive %player_name% coalblock 32'
+  'piedra':
+    material: COBBLESTONE
+    amount: 32
+    slot: 11
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&fBloque de hierro &7[x16]"
+    lore:
+      - "&8Objeto"
+      - ""
+      - "&fCompra este objeto con los"
+      - "&fcaramelos ganados en el"
+      - "&fevento de &dPiñata Party"
+      - ""
+      - " &8◆ &fCosto: &b1 Caramelo Verde ❁"
+      - ""
+      - "&e» ¡Haz clic para intercambiar! «"
+    click_requirement:
+      requirements:
+        stock:
+          type: javascript
+          expression: '%servervariables_value_carameloverde% >= 1'
+          deny_commands:
+          - '[message] &4&l» &cNo tienes suficientes caramelos &nverdes&r &cpara comprar este objeto'
+          - '[sound] ITEM_BREAK'
+    click_commands:
+      - '[message] &8&l» &fHas intercambiado &aCaramelos Verdes &7[x1] &fpor &fBloque de hierro &7[x16]'
+      - '[console] svar reduce carameloverde 1 %player_name%'
+      - '[console] egive %player_name% ironblock 32'
+  'espada':
+    material: IRON_SWORD
+    slot: 12
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&fEspada de hierro"
+    lore:
+      - "&8Objeto"
+      - ""
+      - "&fCompra este objeto con los"
+      - "&fcaramelos ganados en el"
+      - "&fevento de &dPiñata Party"
+      - ""
+      - " &8&l≡ &f&lENCANTAMIENTOS:"
+      - " &8◆ &fFilo III"
+      - " &8◆ &fDurabilidad III"
+      - " &8◆ &fBotín II"
+      - ""
+      - " &8◆ &fCosto: &b6 &bCaramelos Verdes ❁"
+      - ""
+      - "&e» ¡Haz clic para intercambiar! «"
+    click_requirement:
+      requirements:
+        stock:
+          type: javascript
+          expression: '%servervariables_value_carameloverde% >= 6'
+          deny_commands:
+          - '[message] &4&l» &cNo tienes suficientes caramelos &nverdes&r &cpara comprar este objeto'
+          - '[sound] ITEM_BREAK'
+    click_commands:
+      - '[message] &8&l» &fHas intercambiado &aCaramelos Verdes &7[x6] &fpor Espada de hierro'
+      - '[console] svar reduce carameloverde 6 %player_name%'
+      - '[console] egive %player_name% ironsword 1 alldamage:3 durability:3 looting:2'
+  'pico':
+    material: DIAMOND_PICKAXE
+    slot: 13
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&fPico de diamante"
+    lore:
+      - "&8Objeto"
+      - ""
+      - "&fCompra este objeto con los"
+      - "&fcaramelos ganados en el"
+      - "&fevento de &dPiñata Party"
+      - ""
+      - " &8&l≡ &f&lENCANTAMIENTOS:"
+      - " &8◆ &fEficiencia III"
+      - " &8◆ &fDurabilidad III"
+      - " &8◆ &fFortuna II"
+      - ""
+      - " &8◆ &fCosto: &b6 Caramelos Celestes ❁"
+      - ""
+      - "&e» ¡Haz clic para intercambiar! «"
+    click_requirement:
+      requirements:
+        stock:
+          type: javascript
+          expression: '%servervariables_value_carameloverde% >= 6'
+          deny_commands:
+          - '[message] &4&l» &cNo tienes suficientes caramelos &nverdes&r &cpara comprar este objeto'
+          - '[sound] ITEM_BREAK'
+    click_commands:
+      - '[message] &8&l» &fHas intercambiado &aCaramelos Verdes &7[x6] &fpor Pico de diamante'
+      - '[console] svar reduce carameloverde 6 %player_name%'
+      - '[console] egive %player_name% diamondpickaxe 1 efficiency:3 durability:3 fortune:2'
+  'hacha':
+    material: IRON_AXE
+    slot: 14
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&fHacha de hierro"
+    lore:
+      - "&8Objeto"
+      - ""
+      - "&fCompra este objeto con los"
+      - "&fcaramelos ganados en el"
+      - "&fevento de &dPiñata Party"
+      - ""
+      - " &8&l≡ &f&lENCANTAMIENTOS:"
+      - " &8◆ &fEficiencia III"
+      - " &8◆ &fDurabilidad III"
+      - " &8◆ &fFortuna II"
+      - ""
+      - " &8◆ &fCosto: &b4 &bCaramelos Verdes ❁"
+      - ""
+      - "&e» ¡Haz clic para intercambiar! «"
+    click_requirement:
+      requirements:
+        stock:
+          type: javascript
+          expression: '%servervariables_value_carameloverde% >= 4'
+          deny_commands:
+          - '[message] &4&l» &cNo tienes suficientes caramelos &nverdes&r &cpara comprar este objeto'
+          - '[sound] ITEM_BREAK'
+    click_commands:
+      - '[message] &8&l» &fHas intercambiado &aCaramelos Verdes &7[x4] &fpor Hacha de hierro'
+      - '[console] svar reduce carameloverde 4 %player_name%'
+      - '[console] egive %player_name% ironaxe 1 efficiency:3 durability:3 fortune:2'
+  'casco':
+    material: DIAMOND_HELMET
+    slot: 15
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&fCasco de diamante"
+    lore:
+      - "&8Objeto"
+      - ""
+      - "&fCompra este objeto con los"
+      - "&fcaramelos ganados en el"
+      - "&fevento de &dPiñata Party"
+      - ""
+      - " &8&l≡ &f&lENCANTAMIENTOS:"
+      - " &8◆ &fProtección III"
+      - " &8◆ &fDurabilidad III"
+      - ""
+      - " &8◆ &fCosto: &b4 &bCaramelos Verdes ❁"
+      - ""
+      - "&e» ¡Haz clic para intercambiar! «"
+    click_requirement:
+      requirements:
+        stock:
+          type: javascript
+          expression: '%servervariables_value_carameloverde% >= 4'
+          deny_commands:
+          - '[message] &4&l» &cNo tienes suficientes caramelos &nverdes&r &cpara comprar este objeto'
+          - '[sound] ITEM_BREAK'
+    click_commands:
+      - '[message] &8&l» &fHas intercambiado &aCaramelos Verdes &7[x4] &fpor Casco de hierro'
+      - '[console] svar reduce carameloverde 4 %player_name%'
+      - '[console] egive %player_name% diamondhelmet 1 protection:3 durability:3'
+  'pechera':
+    material: IRON_CHESTPLATE
+    slot: 16
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&fPechera de hierro"
+    lore:
+      - "&8Objeto"
+      - ""
+      - "&fCompra este objeto con los"
+      - "&fcaramelos ganados en el"
+      - "&fevento de &dPiñata Party"
+      - ""
+      - " &8&l≡ &f&lENCANTAMIENTOS:"
+      - " &8◆ &fProtección III"
+      - " &8◆ &fDurabilidad III"
+      - ""
+      - " &8◆ &fCosto: &b4 &bCaramelos Verdes ❁"
+      - ""
+      - "&e» ¡Haz clic para intercambiar! «"
+    click_requirement:
+      requirements:
+        stock:
+          type: javascript
+          expression: '%servervariables_value_carameloverde% >= 4'
+          deny_commands:
+          - '[message] &4&l» &cNo tienes suficientes caramelos &nverdes&r &cpara comprar este objeto'
+          - '[sound] ITEM_BREAK'
+    click_commands:
+      - '[message] &8&l» &fHas intercambiado &aCaramelos Verdes &7[x4] &fpor Pechera de hierro'
+      - '[console] svar reduce carameloverde 4 %player_name%'
+      - '[console] egive %player_name% ironchestplate 1 protection:3 durability:3'
+  'pantalones':
+    material: IRON_LEGGINGS
+    slot: 19
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&fPantalones de hierro"
+    lore:
+      - "&8Objeto"
+      - ""
+      - "&fCompra este objeto con los"
+      - "&fcaramelos ganados en el"
+      - "&fevento de &dPiñata Party"
+      - ""
+      - " &8&l≡ &f&lENCANTAMIENTOS:"
+      - " &8◆ &fProtección III"
+      - " &8◆ &fDurabilidad III"
+      - ""
+      - " &8◆ &fCosto: &b4 &bCaramelos Verdes ❁"
+      - ""
+      - "&e» ¡Haz clic para intercambiar! «"
+    click_requirement:
+      requirements:
+        stock:
+          type: javascript
+          expression: '%servervariables_value_carameloverde% >= 4'
+          deny_commands:
+          - '[message] &4&l» &cNo tienes suficientes caramelos &nverdes&r &cpara comprar este objeto'
+          - '[sound] ITEM_BREAK'
+    click_commands:
+      - '[message] &8&l» &fHas intercambiado &aCaramelos Verdes &7[x4] &fpor Pantalones de hierro'
+      - '[console] svar reduce carameloverde 4 %player_name%'
+      - '[console] egive %player_name% ironleggings 1 protection:3 durability:3'
+  'botas':
+    material: DIAMOND_BOOTS
+    slot: 20
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&fBotas de hierro"
+    lore:
+      - "&8Objeto"
+      - ""
+      - "&fCompra este objeto con los"
+      - "&fcaramelos ganados en el"
+      - "&fevento de &dPiñata Party"
+      - ""
+      - " &8&l≡ &f&lENCANTAMIENTOS:"
+      - " &8◆ &fProtección III"
+      - " &8◆ &fDurabilidad III"
+      - " &8◆ &fCaída de pluma II"
+      - ""
+      - " &8◆ &fCosto: &b4 &bCaramelos Verdes ❁"
+      - ""
+      - "&e» ¡Haz clic para intercambiar! «"
+    click_requirement:
+      requirements:
+        stock:
+          type: javascript
+          expression: '%servervariables_value_carameloverde% >= 4'
+          deny_commands:
+          - '[message] &4&l» &cNo tienes suficientes caramelos &nverdes&r &cpara comprar este objeto'
+          - '[sound] ITEM_BREAK'
+    click_commands:
+      - '[message] &8&l» &fHas intercambiado &aCaramelos Verdes &7[x4] &fpor Botas de diamante'
+      - '[console] svar reduce carameloverde 4 %player_name%'
+      - '[console] egive %player_name% diamondboots 1 protection:3 durability:3 featherfalling:2'
+  'eficiencia2':
+    material: ENCHANTED_BOOK
+    slot: 23
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&eLibro encantado"
+    lore:
+      - "&8Objeto especial"
+      - ""
+      - "&fCompra este objeto con los"
+      - "&fcaramelos ganados en el"
+      - "&fevento de &dPiñata Party"
+      - ""
+      - " &8&l≡ &f&lENCANTAMIENTOS:"
+      - " &8◆ &fEficiencia III"
+      - ""
+      - " &8◆ &fCosto: &b3 &bCaramelos Verdes ❁"
+      - ""
+      - "&e» ¡Haz clic para intercambiar! «"
+    click_requirement:
+      requirements:
+        stock:
+          type: javascript
+          expression: '%servervariables_value_carameloverde% >= 3'
+          deny_commands:
+          - '[message] &4&l» &cNo tienes suficientes caramelos &nverdes&r &cpara comprar este objeto'
+          - '[sound] ITEM_BREAK'
+    click_commands:
+      - '[message] &8&l» &fHas intercambiado &aCaramelos Verdes &7[x3] &fpor &eLibro encantado'
+      - '[console] svar reduce carameloverde 3 %player_name%'
+      - '[console] egive %player_name% enchantedbook 1 efficiency:3'
+  'durabilidad2':
+    material: ENCHANTED_BOOK
+    slot: 24
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&eLibro encantado"
+    lore:
+      - "&8Objeto especial"
+      - ""
+      - "&fCompra este objeto con los"
+      - "&fcaramelos ganados en el"
+      - "&fevento de &dPiñata Party"
+      - ""
+      - " &8&l≡ &f&lENCANTAMIENTOS:"
+      - " &8◆ &fDurabilidad III"
+      - ""
+      - " &8◆ &fCosto: &b3 &bCaramelos Verdes ❁"
+      - ""
+      - "&e» ¡Haz clic para intercambiar! «"
+    click_requirement:
+      requirements:
+        stock:
+          type: javascript
+          expression: '%servervariables_value_carameloverde% >= 3'
+          deny_commands:
+          - '[message] &4&l» &cNo tienes suficientes caramelos &nverdes&r &cpara comprar este objeto'
+          - '[sound] ITEM_BREAK'
+    click_commands:
+      - '[message] &8&l» &fHas intercambiado &aCaramelos Verdes &7[x3] &fpor &eLibro encantado'
+      - '[console] svar reduce carameloverde 3 %player_name%'
+      - '[console] egive %player_name% enchantedbook 1 durability:3'
+  'fortuna2':
+    material: ENCHANTED_BOOK
+    slot: 25
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&eLibro encantado"
+    lore:
+      - "&8Objeto especial"
+      - ""
+      - "&fCompra este objeto con los"
+      - "&fcaramelos ganados en el"
+      - "&fevento de &dPiñata Party"
+      - ""
+      - " &8&l≡ &f&lENCANTAMIENTOS:"
+      - " &8◆ &fFortuna III"
+      - ""
+      - " &8◆ &fCosto: &b3 &bCaramelos Verdes ❁"
+      - ""
+      - "&e» ¡Haz clic para intercambiar! «"
+    click_requirement:
+      requirements:
+        stock:
+          type: javascript
+          expression: '%servervariables_value_carameloverde% >= 3'
+          deny_commands:
+          - '[message] &4&l» &cNo tienes suficientes caramelos &nverdes&r &cpara comprar este objeto'
+          - '[sound] ITEM_BREAK'
+    click_commands:
+      - '[message] &8&l» &fHas intercambiado &aCaramelos Verdes &7[x3] &fpor &eLibro encantado'
+      - '[console] svar reduce carameloverde 3 %player_name%'
+      - '[console] egive %player_name% enchantedbook 1 fortune:3'
+  'bistec':
+    material: COOKED_BEEF
+    amount: 64
+    slot: 28
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&fBistec &7[x64]"
+    lore:
+      - "&8Objeto"
+      - ""
+      - "&fCompra este objeto con los"
+      - "&fcaramelos ganados en el"
+      - "&fevento de &dPiñata Party"
+      - ""
+      - " &8◆ &fCosto: &b2 &bCaramelos Verdes ❁"
+      - ""
+      - "&e» ¡Haz clic para intercambiar! «"
+    click_requirement:
+      requirements:
+        stock:
+          type: javascript
+          expression: '%servervariables_value_carameloverde% >= 2'
+          deny_commands:
+          - '[message] &4&l» &cNo tienes suficientes caramelos &nverdes&r &cpara comprar este objeto'
+          - '[sound] ITEM_BREAK'
+    click_commands:
+      - '[message] &8&l» &fHas intercambiado &aCaramelos Verdes &7[x2] &fpor Bistec &7[x64]'
+      - '[console] svar reduce carameloverde 2 %player_name%'
+      - '[console] egive %player_name% cookedbeef 64'
+  'espadadulce':
+    material: DIAMOND_SWORD
+    amount: 1
+    slot: 34
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&7Espada &8• &#F5FF55&lD&#F7FF69&lU&#F9FF7C&lL&#FAFF90&lC&#FCFFA3&lE &#F5FF55❁"
+    lore:
+      - "&8Objeto"
+      - ""
+      - "&fCompra este objeto con los"
+      - "&fcaramelos ganados en el"
+      - "&fevento de &dPiñata Party"
+      - ""
+      - " &8◆ &fCosto: &b8 &bCaramelos Verdes ❁"
+      - ""
+      - "&e» ¡Haz clic para intercambiar! «"
+    click_requirement:
+      requirements:
+        stock:
+          type: javascript
+          expression: '%servervariables_value_carameloverde% >= 8'
+          deny_commands:
+          - '[message] &4&l» &cNo tienes suficientes caramelos &nverdes&r &cpara comprar este objeto'
+          - '[sound] ITEM_BREAK'
+    click_commands:
+      - '[message] &8&l» &fHas intercambiado &aCaramelos Verdes &7[x8] &fpor &7Espada &8• &#F5FF55&lD&#F7FF69&lU&#F9FF7C&lL&#FAFF90&lC&#FCFFA3&lE &#F5FF55❁'
+      - '[console] svar reduce carameloverde 8 %player_name%'
+      - '[console] serveritem give espadadulce 1 %player_name%'
+  'escudo':
+    material: SHIELD
+    slot: 21
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&fEscudo"
+    lore:
+      - "&8Objeto"
+      - ""
+      - "&fCompra este objeto con los"
+      - "&fcaramelos ganados en el"
+      - "&fevento de &dPiñata Party"
+      - ""
+      - " &8◆ &fCosto: &b2 &bCaramelos Verdes ❁"
+      - ""
+      - "&e» ¡Haz clic para intercambiar! «"
+    click_requirement:
+      requirements:
+        stock:
+          type: javascript
+          expression: '%servervariables_value_carameloverde% >= 2'
+          deny_commands:
+          - '[message] &4&l» &cNo tienes suficientes caramelos &nverdes&r &cpara comprar este objeto'
+          - '[sound] ITEM_BREAK'
+    click_commands:
+      - '[message] &8&l» &fHas intercambiado &aCaramelos Verdes &7[x2] &fpor Escudo'
+      - '[console] svar reduce carameloverde 2 %player_name%'
+      - '[console] egive %player_name% shield 1 protection:1 durability:1'
+  'cana':
+    material: FISHING_ROD
+    amount: 1
+    slot: 22
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&fCaña de pescar"
+    lore:
+      - "&8Objeto"
+      - ""
+      - "&fCompra este objeto con los"
+      - "&fcaramelos ganados en el"
+      - "&fevento de &dPiñata Party"
+      - ""
+      - " &8&l≡ &f&lENCANTAMIENTOS:"
+      - " &8◆ &fAtracción I"
+      - " &8◆ &fDurabilidad I"
+      - ""
+      - " &8◆ &fCosto: &b3 &bCaramelos Verdes ❁"
+      - ""
+      - "&e» ¡Haz clic para intercambiar! «"
+    click_requirement:
+      requirements:
+        stock:
+          type: javascript
+          expression: '%servervariables_value_carameloverde% >= 3'
+          deny_commands:
+          - '[message] &4&l» &cNo tienes suficientes caramelos &nverdes&r &cpara comprar este objeto'
+          - '[sound] ITEM_BREAK'
+    click_commands:
+      - '[message] &8&l» &fHas intercambiado &aCaramelos Verdes &7[x3] &fpor Balde de agua'
+      - '[console] svar reduce carameloverde 3 %player_name%'
+      - '[console] egive %player_name% fishingrod 1 lure:2 durability:2 looting:1'
+  'carbon':
+    material: COAL
+    amount: 48
+    slot: 29
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&fCarbón &7[x48]"
+    lore:
+      - "&8Objeto"
+      - ""
+      - "&fCompra este objeto con los"
+      - "&fcaramelos ganados en el"
+      - "&fevento de &dPiñata Party"
+      - ""
+      - " &8◆ &fCosto: &b4 &bCaramelos Verdes ❁"
+      - ""
+      - "&e» ¡Haz clic para intercambiar! «"
+    click_requirement:
+      requirements:
+        stock:
+          type: javascript
+          expression: '%servervariables_value_carameloverde% >= 4'
+          deny_commands:
+          - '[message] &4&l» &cNo tienes suficientes caramelos &nverdes&r &cpara comprar este objeto'
+          - '[sound] ITEM_BREAK'
+    click_commands:
+      - '[message] &8&l» &fHas intercambiado &aCaramelos Verdes &7[x4] &fpor Carbón &7[x48]'
+      - '[console] svar reduce carameloverde 4 %player_name%'
+      - '[console] egive %player_name% coal 48'
+  'hierro':
+    material: IRON_INGOT
+    amount: 24
+    slot: 30
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&fLingote de hierro &7[x24]"
+    lore:
+      - "&8Objeto"
+      - ""
+      - "&fCompra este objeto con los"
+      - "&fcaramelos ganados en el"
+      - "&fevento de &dPiñata Party"
+      - ""
+      - " &8◆ &fCosto: &b6 &bCaramelos Verdes ❁"
+      - ""
+      - "&e» ¡Haz clic para intercambiar! «"
+    click_requirement:
+      requirements:
+        stock:
+          type: javascript
+          expression: '%servervariables_value_carameloverde% >= 6'
+          deny_commands:
+          - '[message] &4&l» &cNo tienes suficientes caramelos &nverdes&r &cpara comprar este objeto'
+          - '[sound] ITEM_BREAK'
+    click_commands:
+      - '[message] &8&l» &fHas intercambiado &aCaramelos Verdes &7[x6] &fpor Lingote de hierro &7[x24]'
+      - '[console] svar reduce carameloverde 6 %player_name%'
+      - '[console] egive %player_name% iron_ingot 24'
+  'oro':
+    material: GOLD_INGOT
+    amount: 24
+    slot: 31
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&fLingote de oro &7[x24]"
+    lore:
+      - "&8Objeto"
+      - ""
+      - "&fCompra este objeto con los"
+      - "&fcaramelos ganados en el"
+      - "&fevento de &dPiñata Party"
+      - ""
+      - " &8◆ &fCosto: &b6 &bCaramelos Verdes ❁"
+      - ""
+      - "&e» ¡Haz clic para intercambiar! «"
+    click_requirement:
+      requirements:
+        stock:
+          type: javascript
+          expression: '%servervariables_value_carameloverde% >= 6'
+          deny_commands:
+          - '[message] &4&l» &cNo tienes suficientes caramelos &nverdes&r &cpara comprar este objeto'
+          - '[sound] ITEM_BREAK'
+    click_commands:
+      - '[message] &8&l» &fHas intercambiado &aCaramelos Verdes &7[x6] &fpor Lingote de oro &7[x24]'
+      - '[console] svar reduce carameloverde 6 %player_name%'
+      - '[console] egive %player_name% gold_ingot 24'
+  'lapis':
+    material: LAPIS_LAZULI
+    amount: 24
+    slot: 32
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&fLapislázuli &7[x24"
+    lore:
+      - "&8Objeto"
+      - ""
+      - "&fCompra este objeto con los"
+      - "&fcaramelos ganados en el"
+      - "&fevento de &dPiñata Party"
+      - ""
+      - " &8◆ &fCosto: &b3 &bCaramelos Verdes ❁"
+      - ""
+      - "&e» ¡Haz clic para intercambiar! «"
+    click_requirement:
+      requirements:
+        stock:
+          type: javascript
+          expression: '%servervariables_value_carameloverde% >= 3'
+          deny_commands:
+          - '[message] &4&l» &cNo tienes suficientes caramelos &nverdes&r &cpara comprar este objeto'
+          - '[sound] ITEM_BREAK'
+    click_commands:
+      - '[message] &8&l» &fHas intercambiado &aCaramelos Verdes &7[x3] &fpor Lapislázuli &7[x24]'
+      - '[console] svar reduce carameloverde 3 %player_name%'
+      - '[console] egive %player_name% lapislazuli 24'
+  'diamante':
+    material: DIAMOND
+    amount: 24
+    slot: 33
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&fDiamante &7[x24]"
+    lore:
+      - "&8Objeto"
+      - ""
+      - "&fCompra este objeto con los"
+      - "&fcaramelos ganados en el"
+      - "&fevento de &dPiñata Party"
+      - ""
+      - " &8◆ &fCosto: &b6 &bCaramelos Verdes ❁"
+      - ""
+      - "&e» ¡Haz clic para intercambiar! «"
+    click_requirement:
+      requirements:
+        stock:
+          type: javascript
+          expression: '%servervariables_value_carameloverde% >= 6'
+          deny_commands:
+          - '[message] &4&l» &cNo tienes suficientes caramelos &nverdes&r &cpara comprar este objeto'
+          - '[sound] ITEM_BREAK'
+    click_commands:
+      - '[message] &8&l» &fHas intercambiado &aCaramelos Verdes &7[x6] &fpor Diamante &7[x24]'
+      - '[console] svar reduce carameloverde 6 %player_name%'
+      - '[console] egive %player_name% diamond 24'
+  'cerrar':
+    material: RED_DYE
+    slot: 49
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&3Cer&brar"
+    lore:
+      - "&8Botón"
+      - ""
+      - "&fSupongo que no todos tienen una"
+      - "&ftecla de &bEscape &fen su teclado..."
+      - ""
+      - "&e» ¡Haz clic para cerrar! «"
+    click_commands:
+      - "[close]"
+  'volver':
+    material: ARROW
+    slot: 48
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&3Vol&bver"
+    lore:
+      - "&8Botón"
+      - ""
+      - "&fVuelve al menú principal"
+      - ""
+      - "&e» ¡Haz clic para volver! «"
+    click_commands:
+      - "[player] caramelos"
+  'info':
+    material: SPYGLASS
+    slot: 52
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&bCaramelos disponibles"
+    lore:
+      - "&8Información"
+      - ""
+      - " &8◆ &fCaramelos blancos disponibles: &b%servervariables_value_carameloblanco% ❁"
+      - " &8◆ &fCaramelos celestes disponibles: &b%servervariables_value_carameloceleste% ❁"
+      - " &8◆ &fCaramelos verdes disponibles: &a%servervariables_value_carameloverde% ❁"
+      - " &8◆ &fCaramelos naranjas disponibles: &6%servervariables_value_caramelonaranja% ❁"
+      - " &8◆ &fCaramelos morados disponibles: &5%servervariables_value_caramelomorado% ❁"
+      - " &8◆ &fCaramelos rojos disponibles: &c%servervariables_value_caramelorojo% ❁"
+      - " &8◆ &fCaramelos negros disponibles: &8%servervariables_value_caramelonegro% ❁"
+      - ""
+      - "&e» mc.comugamers.com «"

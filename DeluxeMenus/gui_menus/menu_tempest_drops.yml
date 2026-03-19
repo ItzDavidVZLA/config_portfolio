@@ -1,0 +1,116 @@
+menu_title: '&0Menú de &ndrops'
+open_command: 
+- tempestmenudrops
+size: 36
+items:
+  'fill':
+    material: BLACK_STAINED_GLASS_PANE
+    slots:
+    - 35
+    - 34
+    - 33
+    - 32
+    - 31
+    - 30
+    - 29
+    - 28
+    - 27
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&b@comugamers"
+    lore: " "
+  'carne_tempest':
+    material: ROTTEN_FLESH
+    slot: 12
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&#00FF00C&#0CFF0Ca&#17FF17r&#23FF23n&#2FFF2Fe &#46FF46d&#52FF52e &#69FF69T&#75FF75e&#80FF80m&#8CFF8Cp&#98FF98e&#A3FFA3s&#AFFFAFt"
+    lore:
+      - "&8Objeto especial"
+      - ""
+      - "&fVende la carne de tempest en"
+      - "&feste menú para ganar dinero."
+      - ""
+      - " &8◆ &fUnidad por objeto: &61,020 ⛁"
+      - ""
+      - "&e» ¡Haz clic para vender! «"
+    click_requirement:
+      requirements:
+        stock:
+          type: javascript
+          expression: '%servervariables_value_tempest_drop_carnedetempest% >= 1'
+          deny_commands:
+          - '[message] &4&l» &cNo tienes &ncarne de tempest&r &cpara vender.'
+          - '[sound] ITEM_BREAK'
+    click_commands:
+      - '[message] &8&l» &fHas vendido &#00FF00C&#0CFF0Ca&#17FF17r&#23FF23n&#2FFF2Fe &#46FF46d&#52FF52e &#69FF69T&#75FF75e&#80FF80m&#8CFF8Cp&#98FF98e&#A3FFA3s&#AFFFAFt &7[x1] &fpor &61,020 ⛁'
+      - '[console] svar reduce tempest_drop_carnedetempest 1 %player_name%'
+      - '[console] eco give %player_name% 1020'
+  'hueso_astillado':
+    material: BONE
+    slot: 14
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&#AAAAAAH&#AEAEAEu&#B2B2B2e&#B6B6B6s&#BBBBBBo &#C3C3C3a&#C7C7C7s&#CBCBCBt&#CFCFCFi&#D3D3D3l&#D8D8D8l&#DCDCDCa&#E0E0E0d&#E4E4E4o"
+    lore:
+      - "&8Objeto especial"
+      - ""
+      - "&fVende hueso astillado en"
+      - "&feste menú para ganar dinero."
+      - ""
+      - " &8◆ &fUnidad por objeto: &61,660 ⛁"
+      - ""
+      - "&e» ¡Haz clic para vender! «"
+    click_requirement:
+      requirements:
+        stock:
+          type: javascript
+          expression: '%servervariables_value_tempest_drop_huesoastillado% >= 1'
+          deny_commands:
+          - '[message] &4&l» &cNo tienes &nhueso astillado&r &cpara vender.'
+          - '[sound] ITEM_BREAK'
+    click_commands:
+      - '[message] &8&l» &fHas vendido &#AAAAAAH&#AEAEAEu&#B2B2B2e&#B6B6B6s&#BBBBBBo &#C3C3C3a&#C7C7C7s&#CBCBCBt&#CFCFCFi&#D3D3D3l&#D8D8D8l&#DCDCDCa&#E0E0E0d&#E4E4E4o &7[x1] &fpor &61,660 ⛁'
+      - '[console] svar reduce tempest_drop_huesoastillado 1 %player_name%'
+      - '[console] eco give %player_name% 1660'
+  'cerrar':
+    material: RED_DYE
+    slot: 31
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&cCerrar"
+    click_commands:
+      - "[close]"
+  'volver':
+    material: ARROW
+    slot: 30
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&eVolver"
+    click_commands:
+      - '[player] menubossesdrops'
+  'info':
+    material: SPYGLASS
+    slot: 34
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&#00BCF5Drops disponibles"
+    lore:
+      - "&8Información"
+      - ""
+      - " &8◆ &fCarne de tempest disponible: &b%servervariables_value_tempest_drop_carnedetempest%"
+      - " &8◆ &fHueso astillado disponible: &b%servervariables_value_tempest_drop_huesoastillado%"
+      - ""
+      - "&emc.comugamers.com"

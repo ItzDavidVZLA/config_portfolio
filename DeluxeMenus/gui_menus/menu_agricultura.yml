@@ -1,0 +1,103 @@
+menu_title: '&0Menú de &nAgricultura'
+open_command: 
+- admin_farmingmenu
+size: 36
+items:
+  'fill':
+    material: BLACK_STAINED_GLASS_PANE
+    slots:
+    - 27
+    - 28
+    - 29
+    - 30
+    - 31
+    - 32
+    - 33
+    - 34
+    - 35
+    - 36
+    #- 37
+    #- 38
+    #- 39
+    #- 40
+    #- 41
+    #- 42
+    #- 43
+    #- 44
+    #- 45
+    #- 46
+    #- 47
+    #- 48
+    #- 49
+    #- 50
+    #- 51
+    #- 52
+    #- 53
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: " "
+    lore: " "
+  'Grano_Trigo':
+    material: WHEAT
+    slot: 12
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&e☀ Vende tus granos &8◆ &fMenú"
+    lore:
+      - "&8Menú"
+      - ""
+      - "&fVende tus granos en este menú"
+      - "&fpara ganar dinero"
+      - ""
+      - " &8◆ &fUnidad por grano: &6110 ⛁"
+      - ""
+      - "&e» ¡Haz clic para ver! «"
+    click_commands:
+      - "[player] admin_sellfarmingmenu"
+  'Azadas':
+    material: IRON_HOE
+    slot: 14
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&6☀ Compra tus azadas &8◆ &fMenú"
+    lore:
+      - "&8Menú"
+      - ""
+      - "&fCompra tus azadas en este menú"
+      - "&fpara ganar experiencia de"
+      - "&3agricultura"
+      - ""
+      - "&e» ¡Haz clic para ver! «"
+    click_commands:
+      - "[player] admin_farminghoemenu"
+  'cerrar':
+    material: RED_DYE
+    slot: 31
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&cCerrar"
+    lore:
+    click_commands:
+      - "[close]"
+  'info':
+    material: SPYGLASS
+    slot: 34
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&#00CBF5Granos disponibles"
+    lore:
+      - "&8Información"
+      - ""
+      - " &8◆ &fGranos disponibles: &6%servervariables_value_granodetrigo% &6☀"
+      - ""
+      - "&emc.comugamers.com"

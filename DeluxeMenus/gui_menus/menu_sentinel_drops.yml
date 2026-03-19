@@ -1,0 +1,116 @@
+menu_title: '&0Menú de &ndrops'
+open_command: 
+- sentinelmenudrops
+size: 36
+items:
+  'fill':
+    material: BLACK_STAINED_GLASS_PANE
+    slots:
+    - 35
+    - 34
+    - 33
+    - 32
+    - 31
+    - 30
+    - 29
+    - 28
+    - 27
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&b@comugamers"
+    lore: " "
+  'plasma_sentinel':
+    material: MAGENTA_DYE
+    slot: 12
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&#8F00EEP&#9600EDl&#9C00EDa&#A300ECs&#A900EBm&#B000EBa&#B700EA &#BD00E9d&#C400E9e&#CA00E8 &#D100E8S&#D700E7e&#DE00E6n&#E500E6t&#EB00E5i&#F200E4n&#F800E4e&#FF00E3l"
+    lore:
+      - "&8Objeto especial"
+      - ""
+      - "&fVende la plasma de sentinel en"
+      - "&feste menú para ganar dinero."
+      - ""
+      - " &8◆ &fUnidad por objeto: &612,550 ⛁"
+      - ""
+      - "&e» ¡Haz clic para vender! «"
+    click_requirement:
+      requirements:
+        stock:
+          type: javascript
+          expression: '%servervariables_value_sentinel_drop_plasmadesentinel% >= 1'
+          deny_commands:
+          - '[message] &4&l» &cNo tienes &nplasma de sentinel&r &cpara vender.'
+          - '[sound] ITEM_BREAK'
+    click_commands:
+      - '[message] &8&l» &fHas vendido &#3C0064M&#3F0069a&#42006Ft&#450074e&#490079r&#4C007Fi&#4F0084a&#520089 &#55008Eo&#580094s&#5C0099c&#5F009Eu&#6200A4r&#6500A9a &7[x1] &fpor &612,550 ⛁'
+      - '[console] svar reduce sentinel_drop_plasmadesentinel 1 %player_name%'
+      - '[console] eco give %player_name% 12550'
+  'materia_oscura':
+    material: PURPLE_DYE
+    slot: 14
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&#3C0064M&#3F0069a&#42006Ft&#450074e&#490079r&#4C007Fi&#4F0084a&#520089 &#55008Eo&#580094s&#5C0099c&#5F009Eu&#6200A4r&#6500A9a"
+    lore:
+      - "&8Objeto especial"
+      - ""
+      - "&fVende materia oscura en"
+      - "&feste menú para ganar dinero."
+      - ""
+      - " &8◆ &fUnidad por objeto: &616,880 ⛁"
+      - ""
+      - "&e» ¡Haz clic para vender! «"
+    click_requirement:
+      requirements:
+        stock:
+          type: javascript
+          expression: '%servervariables_value_sentinel_drop_materiaoscura% >= 1'
+          deny_commands:
+          - '[message] &4&l» &cNo tienes &nmateria oscura&r &cpara vender.'
+          - '[sound] ITEM_BREAK'
+    click_commands:
+      - '[message] &8&l» &fHas vendido &#3C0064M&#3F0069a&#42006Ft&#450074e&#490079r&#4C007Fi&#4F0084a&#520089 &#55008Eo&#580094s&#5C0099c&#5F009Eu&#6200A4r&#6500A9a &7[x1] &fpor &616,880 ⛁'
+      - '[console] svar reduce sentinel_drop_materiaoscura 1 %player_name%'
+      - '[console] eco give %player_name% 16880'
+  'cerrar':
+    material: RED_DYE
+    slot: 31
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&cCerrar"
+    click_commands:
+      - "[close]"
+  'volver':
+    material: ARROW
+    slot: 30
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&eVolver"
+    click_commands:
+      - '[player] menubossesdrops'
+  'info':
+    material: SPYGLASS
+    slot: 34
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&#00BCF5Drops disponibles"
+    lore:
+      - "&8Información"
+      - ""
+      - " &8◆ &fPlasma de sentinel disponible: &b%servervariables_value_sentinel_drop_plasmadesentinel%"
+      - " &8◆ &fMateria oscura disponible: &b%servervariables_value_sentinel_drop_materiaoscura%"
+      - ""
+      - "&emc.comugamers.com"

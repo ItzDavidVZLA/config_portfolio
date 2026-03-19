@@ -1,0 +1,162 @@
+menu_title: '&0Menú de &nobjetos'
+open_command: 
+- mench3
+size: 36
+items:
+  'fill':
+    material: BLACK_STAINED_GLASS_PANE
+    slots:
+    - 27
+    - 28
+    - 29
+    - 30
+    - 31
+    - 32
+    - 33
+    - 34
+    - 35
+    - 13
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&b@comugamers"
+    lore: " "
+  'asesinatos':
+    material: SUGAR
+    slot: 11
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&#00CBF5Polvo misterioso"
+    lore:
+      - "&8Información"
+      - ""
+      - "&fAl cliquear esta opción recibirás"
+      - "&fun polvo misterioso de rareza"
+      - "&fcomún"
+      - ""
+      - "&r &8◆ &fPrecio: &b1,000 EXP"
+      - "&r &8◆ &fRareza: &a&lCOMÚN"
+      - ""
+      - "&e» ¡Haz clic para comprar! «"
+    click_requirement:
+      requirements:
+        dinero:
+          type: has exp
+          amount: 1000
+          deny_commands:
+            - '[message] &r &4&l» &cExperiencia insuficiente'
+    click_commands:
+      - '[console] serveritem give ae_magic1 1 %player_name%'
+      - '[console] exp take %player_name% 1000'
+  'tiempo_jugado':
+    material: SUGAR
+    slot: 12
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&#00CBF5Polvo misterioso"
+    lore:
+      - "&8Información"
+      - ""
+      - "&fAl cliquear esta opción recibirás"
+      - "&fun polvo misterioso de rareza"
+      - "&frara"
+      - ""
+      - "&r &8◆ &fPrecio: &b1,000 EXP"
+      - "&r &8◆ &fRareza: &b&lRARO"
+      - ""
+      - "&e» ¡Haz clic para comprar! «"
+    click_requirement:
+      requirements:
+        dinero:
+          type: has exp
+          amount: 1000
+          deny_commands:
+            - '[message] &r &4&l» &cExperiencia insuficiente'
+    click_commands:
+      - '[console] serveritem give ae_magic3 1 %player_name%'
+      - '[console] exp take %player_name% 1000'
+  'cristales':
+    material: SUGAR
+    slot: 14
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&#00CBF5Polvo misterioso"
+    lore:
+      - "&8Información"
+      - ""
+      - "&fAl cliquear esta opción recibirás"
+      - "&fun polvo misterioso de rareza"
+      - "&fépica"
+      - ""
+      - "&r &8◆ &fPrecio: &b1,000 EXP"
+      - "&r &8◆ &fRareza: &d&lÉPICO"
+      - ""
+      - "&e» ¡Haz clic para comprar! «"
+    click_requirement:
+      requirements:
+        dinero:
+          type: has exp
+          amount: 1000
+          deny_commands:
+            - '[message] &r &4&l» &cExperiencia insuficiente'
+    click_commands:
+      - '[console] serveritem give ae_magic4 1 %player_name%'
+      - '[console] exp take %player_name% 1000'
+  'nivel_isla':
+    material: SUGAR
+    slot: 15
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&#00CBF5Polvo misterioso"
+    lore:
+      - "&8Información"
+      - ""
+      - "&fAl cliquear esta opción recibirás"
+      - "&fun polvo misterioso de rareza"
+      - "&flegendaria"
+      - ""
+      - "&r &8◆ &fPrecio: &b1,000 EXP"
+      - "&r &8◆ &fRareza: &6&lLEGENDARIA"
+      - ""
+      - "&e» ¡Haz clic para comprar! «"
+    click_requirement:
+      requirements:
+        dinero:
+          type: has exp
+          amount: 1000
+          deny_commands:
+            - '[message] &r &4&l» &cExperiencia insuficiente'
+    click_commands:
+      - '[console] serveritem give ae_magic5 1 %player_name%'
+      - '[console] exp take %player_name% 1000'
+  'volver':
+    material: ARROW
+    slot: 30
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&eVolver"
+    lore: []
+    click_commands:
+      - "[player] mench"
+  'cerrar':
+    material: RED_DYE
+    slot: 31
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&cCerrar"
+    lore: []
+    click_commands:
+      - "[close]"

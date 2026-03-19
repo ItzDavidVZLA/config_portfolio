@@ -1,0 +1,146 @@
+menu_title: '&0Menú de &ndrops'
+open_command: 
+- apexmenudrops
+size: 36
+items:
+  'fill':
+    material: BLACK_STAINED_GLASS_PANE
+    slots:
+    - 35
+    - 34
+    - 33
+    - 32
+    - 31
+    - 30
+    - 29
+    - 28
+    - 27
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&b@comugamers"
+    lore: " "
+  'esencia_taterazay':
+    material: ORANGE_DYE
+    slot: 10
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&#FFB900E&#FFBA04s&#FFBB07e&#FFBC0Bn&#FFBD0Fc&#FFBE12i&#FFBF16a&#FFC019 &#FFC11Dd&#FFC221e&#FFC324 &#FFC428T&#FFC52Ca&#FFC62Ft&#FFC733e&#FFC836r&#FFC93Aa&#FFCA3Ez&#FFCB41a&#FFCC45y"
+    lore:
+      - "&8Objeto especial"
+      - ""
+      - "&fVende la esencia de taterazay en"
+      - "&feste menú para ganar dinero."
+      - ""
+      - " &8◆ &fUnidad por objeto: &663,990 ⛁"
+      - ""
+      - "&e» ¡Haz clic para vender! «"
+    click_requirement:
+      requirements:
+        stock:
+          type: javascript
+          expression: '%servervariables_value_apex_drop_esenciadetaterazay% >= 1'
+          deny_commands:
+          - '[message] &4&l» &cNo tienes &nesencia de taterazay&r &cpara vender.'
+          - '[sound] ITEM_BREAK'
+    click_commands:
+      - '[message] &8&l» &fHas vendido &#FFB900E&#FFBA04s&#FFBB07e&#FFBC0Bn&#FFBD0Fc&#FFBE12i&#FFBF16a&#FFC019 &#FFC11Dd&#FFC221e&#FFC324 &#FFC428T&#FFC52Ca&#FFC62Ft&#FFC733e&#FFC836r&#FFC93Aa&#FFCA3Ez&#FFCB41a&#FFCC45y &7[x1] &fpor &663,990 ⛁'
+      - '[console] svar reduce apex_drop_esenciadetaterazay 1 %player_name%'
+      - '[console] eco give %player_name% 63990'
+  'acero_endurecido':
+    material: IRON_INGOT
+    slot: 13
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&#6F6F6FA&#737373c&#777777e&#7B7B7Br&#7F7F7Fo&#838383 &#878787e&#8B8B8Bn&#8E8E8Ed&#929292u&#969696r&#9A9A9Ae&#9E9E9Ec&#A2A2A2i&#A6A6A6d&#AAAAAAo"
+    lore:
+      - "&8Objeto especial"
+      - ""
+      - "&fVende el acero endurecido en"
+      - "&feste menú para ganar dinero."
+      - ""
+      - " &8◆ &fUnidad por objeto: &6113,440 ⛁"
+      - ""
+      - "&e» ¡Haz clic para vender! «"
+    click_requirement:
+      requirements:
+        stock:
+          type: javascript
+          expression: '%servervariables_value_apex_drop_aceroendurecido% >= 1'
+          deny_commands:
+          - '[message] &4&l» &cNo tienes &nacero endurecido&r &cpara vender.'
+          - '[sound] ITEM_BREAK'
+    click_commands:
+      - '[message] &8&l» &fHas vendido &#6F6F6FA&#737373c&#777777e&#7B7B7Br&#7F7F7Fo&#838383 &#878787e&#8B8B8Bn&#8E8E8Ed&#929292u&#969696r&#9A9A9Ae&#9E9E9Ec&#A2A2A2i&#A6A6A6d&#AAAAAAo &7[x1] &fpor &6113,440 ⛁'
+      - '[console] svar reduce apex_drop_aceroendurecido 1 %player_name%'
+      - '[console] eco give %player_name% 113440'
+  'corazon_apex':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTRhZDIyOWQ4MDMwODA1OWZhN2FlZDg2NTQzNzc5Y2Y5MzNmOTFiNmE0Mzc0MzEyOTNkMGJiMzFhMDk1NWI3MSJ9fX0=
+    slot: 16
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&#FF8000C&#FF8408o&#FF8811r&#FF8D19a&#FF9122z&#FF952Aó&#FF9933n&#FF9E3B &#FFA243d&#FFA64Ce&#FFAA54 &#FFAE5DA&#FFB365p&#FFB76Ee&#FFBB76x"
+    lore:
+      - "&8Objeto especial"
+      - ""
+      - "&fVende corazón de apex en"
+      - "&feste menú para ganar dinero."
+      - ""
+      - " &8◆ &fUnidad por objeto: &655,000,000 ⛁"
+      - ""
+      - "&e» ¡Haz clic para vender! «"
+    click_requirement:
+      requirements:
+        stock:
+          type: javascript
+          expression: '%servervariables_value_apex_drop_corazondeapex% >= 1'
+          deny_commands:
+          - '[message] &4&l» &cNo tienes &ncorazón de apex&r &cpara vender.'
+          - '[sound] ITEM_BREAK'
+    click_commands:
+      - '[message] &8&l» &fHas vendido &#FF8000C&#FF8408o&#FF8811r&#FF8D19a&#FF9122z&#FF952Aó&#FF9933n&#FF9E3B &#FFA243d&#FFA64Ce&#FFAA54 &#FFAE5DA&#FFB365p&#FFB76Ee&#FFBB76x &7[x1] &fpor &655,000,000 ⛁'
+      - '[console] svar reduce servervariables_value_apex_drop_corazondeapex 1 %player_name%'
+      - '[console] eco give %player_name% 55000000'
+  'cerrar':
+    material: RED_DYE
+    slot: 31
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&cCerrar"
+    click_commands:
+      - "[close]"
+  'volver':
+    material: ARROW
+    slot: 30
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&eVolver"
+    click_commands:
+      - '[player] menubossesdrops'
+  'info':
+    material: SPYGLASS
+    slot: 34
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&#00BCF5Drops disponibles"
+    lore:
+      - "&8Información"
+      - ""
+      - " &8◆ &fEsencia de taterazay disponible: &b%servervariables_value_apex_drop_esenciadetaterazay%"
+      - " &8◆ &fAcero endurecido disponible: &b%servervariables_value_apex_drop_aceroendurecido%"
+      - " &8◆ &fCorazón de apex disponible: &b%servervariables_value_apex_drop_corazondeapex%"
+      - ""
+      - "&emc.comugamers.com"

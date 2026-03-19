@@ -1,0 +1,338 @@
+menu_title: '&0Menú de &nteletransportes'
+open_command: 
+- menu_teletransportes
+- menuteletransportes
+- teleportmenu
+- menuteleport
+- teleport_menu
+- menu_teleport
+- warps
+- warp
+size: 45
+items:
+  'fill':
+    material: BLACK_STAINED_GLASS_PANE
+    slots:
+    - 36
+    - 37
+    - 38
+    - 39
+    - 40
+    - 41
+    - 42
+    - 43
+    - 44
+    #- 45
+    #- 46
+    #- 47
+    #- 48
+    #- 49
+    #- 50
+    #- 51
+    #- 52
+    #- 53
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: " "
+    lore: " "
+  'crates':
+    material: CHEST
+    slot: 10
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&3🔑 Cajas &8◆ &fWarp"
+    lore:
+      - "&8Teletransporte"
+      - ""
+      - "&fAbre hasta un máximo de siete"
+      - "&fcajas en este lugar"
+      - ""
+      - "&e» ¡Haz clic para teletransportar! «"
+    click_commands:
+      - "[player] warp cajas"
+  'taberna':
+    material: POTION
+    slot: 11
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&9🧪 Taberna &8◆ &fWarp"
+    lore:
+      - "&8Teletransporte"
+      - ""
+      - "&fConsumirás bebidas y comidas"
+      - "&fpersonalizadas que te otorgarán"
+      - "&fbonificaciones y efectos de estado"
+      - ""
+      - "&e» ¡Haz clic para teletransportar! «"
+    click_commands:
+      - "[player] warp taberna"
+  'encantamientos':
+    material: ENCHANTED_BOOK
+    slot: 12
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&d🔥 Encantamientos &8◆ &fWarp"
+    lore:
+      - "&8Teletransporte"
+      - ""
+      - "&fFusiona, intercambia, combina y"
+      - "&fadquiere encantamientos"
+      - "&Fpersonalizados para una mayor"
+      - "&fexperiencia"
+      - ""
+      - "&e» ¡Haz clic para teletransportar! «"
+    click_commands:
+      - "[player] warp encantamientos"
+  'subastas':
+    material: GOLD_BLOCK
+    slot: 13
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&6💰 Subastas &8◆ &fWarp"
+    lore:
+      - "&8Teletransporte"
+      - ""
+      - "&fSubasta y oferta por objetos"
+      - "&fque tengas a tu disposición"
+      - ""
+      - "&c» Requiere Plata III «"
+    priority: 0
+    view_requirement:
+      requirements:
+        has_not_perm:
+          type: "!has permission"
+          permission: "essentials.warps.subastas"
+  'subastas_unlock':
+    material: GOLD_BLOCK
+    slot: 13
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&6💰 Subastas &8◆ &fWarp"
+    lore:
+      - "&8Teletransporte"
+      - ""
+      - "&fSubasta y oferta por objetos"
+      - "&fque tengas a tu disposición"
+      - ""
+      - "&e» ¡Haz clic para teletransportar! «"
+    click_commands:
+      - "[player] warp subastas"
+    priority: 1
+  'pesca':
+    material: FISHING_ROD
+    slot: 14
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&b🎣 Pesca &8◆ &fWarp"
+    lore:
+      - "&8Teletransporte"
+      - ""
+      - "&fPesca y participa en eventos"
+      - "&frelacionados a la pescadería"
+      - ""
+      - "&e» ¡Haz clic para teletransportar! «"
+    click_commands:
+      - "[player] warp pesca"
+  'cueva':
+    material: ZOMBIE_HEAD
+    slot: 15
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&2☠ Cueva &8◆ &fWarp"
+    lore:
+      - "&8Teletransporte"
+      - ""
+      - "&fCombate contra mobs de este lugar"
+      - "&fpara subir tu habilidad de combate"
+      - ""
+      - "&e» ¡Haz clic para teletransportar! «"
+    click_commands:
+      - "[player] warp cueva"
+  'bosses':
+    material: DIAMOND_SWORD
+    slot: 16
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&c☠ Bosses &8◆ &fWarp"
+    lore:
+      - "&8Teletransporte"
+      - ""
+      - "&fLucha contra bosses de gran poder"
+      - ""
+      - "&c» Requiere Oro III «"
+    priority: 0
+    view_requirement:
+      requirements:
+        has_not_perm:
+          type: "!has permission"
+          permission: "essentials.warps.bosses"
+  'bosses_unlock':
+    material: DIAMOND_SWORD
+    slot: 16
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&c☠ Bosses &8◆ &fWarp"
+    lore:
+      - "&8Teletransporte"
+      - ""
+      - "&fLucha contra bosses de gran poder"
+      - ""
+      - "&e» ¡Haz clic para teletransportar! «"
+    click_commands:
+      - "[player] warp bosses"
+    priority: 1
+  'nether':
+    material: NETHERRACK
+    slot: 22
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&c🗡 Nether &8◆ &fWarp"
+    lore:
+      - "&8Teletransporte"
+      - ""
+      - "&fMatarás, capturarás koths y farmearás"
+      - "&fexperiencia de combate en este lugar"
+      - ""
+      - "&c» Requiere Viaje al nether «"
+    priority: 0
+    view_requirement:
+      requirements:
+        has_not_perm:
+          type: "!has permission"
+          permission: "essentials.warps.nether"
+  'nether_unlock':
+    material: NETHERRACK
+    slot: 22
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&c🗡 Nether &8◆ &fWarp"
+    lore:
+      - "&8Teletransporte"
+      - ""
+      - "&fMatarás, capturarás koths y farmearás"
+      - "&fexperiencia de combate en este lugar"
+      - ""
+      - "&e» ¡Haz clic para teletransportar! «"
+    click_commands:
+      - "[player] warp nether"
+    priority: 1
+  'end':
+    material: END_STONE
+    slot: 23
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&d🗡 End &8◆ &fWarp"
+    lore:
+      - "&8Teletransporte"
+      - ""
+      - "&fMatarás, capturarás koths y farmearás"
+      - "&fexperiencia de combate en este lugar"
+      - ""
+      - "&c» Requiere Plata IV «"
+    priority: 0
+    view_requirement:
+      requirements:
+        has_not_perm:
+          type: "!has permission"
+          permission: "essentials.warps.end"
+  'end_unlock':
+    material: END_STONE
+    slot: 23
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&d🗡 End &8◆ &fWarp"
+    lore:
+      - "&8Teletransporte"
+      - ""
+      - "&fMatarás, capturarás koths y farmearás"
+      - "&fexperiencia de combate en este lugar"
+      - ""
+      - "&e» ¡Haz clic para teletransportar! «"
+    click_commands:
+      - "[player] warp end"
+    priority: 1
+  'eventos':
+    material: BLUE_GLAZED_TERRACOTTA
+    slot: 24
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&d🎉 Eventos &8◆ &fWarp"
+    lore:
+      - "&8Teletransporte"
+      - ""
+      - "&fEn este lugar se harán los eventos"
+      - "&fmás importantes"
+      - ""
+      - "&e» ¡Haz clic para teletransportar! «"
+    click_commands:
+      - "[player] warp eventos"
+  'pvp':
+    material: NETHERITE_SWORD
+    slot: 25
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&c🗡 PvP &8◆ &fWarp"
+    lore:
+      - "&8Teletransporte"
+      - ""
+      - "&fEn este lugar podrás entrar en combate"
+      - "&fcon otros jugadores, luchar con clanes"
+      - "&fy dominar koths"
+      - ""
+      - "&e» ¡Haz clic para teletransportar! «"
+    click_commands:
+      - "[player] warp pvp"
+  'volver':
+    material: ARROW
+    slot: 39
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&eVolver"
+    lore: []
+    click_commands:
+      - "[player] menu"
+  'cerrar':
+    material: RED_DYE
+    slot: 40
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&cCerrar"
+    lore: []
+    click_commands:
+      - "[close]"

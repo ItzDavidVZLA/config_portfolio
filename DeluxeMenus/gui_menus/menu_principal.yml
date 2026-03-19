@@ -1,0 +1,324 @@
+menu_title: 'Menú principal'
+open_command: 
+- menu
+- menu_principal
+- menuprincipal
+- mainmenu
+- menumain
+- main_menu
+- menu_main
+size: 54
+items:
+  'fill':
+    material: BLACK_STAINED_GLASS_PANE
+    slots:
+    - 45
+    - 46
+    - 47
+    - 48
+    - 49
+    - 50
+    - 51
+    - 52
+    - 53
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&b@comugamers"
+    lore: " "
+  'isla':
+    material: GRASS_BLOCK
+    slot: 10
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&b🌎 Isla &8◆ &fMenú"
+    lore:
+      - "&8Menú"
+      - ""
+      - "&fEn este menú previsualizarás las"
+      - "&fopciones de teletransportación y"
+      - "&fconfiguración de tu isla"
+      - ""
+      - "&e» ¡Haz clic para ver menú! «"
+    click_commands:
+      - "[player] menu_isla"
+  'tops':
+    material: EMERALD
+    slot: 11
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&a❶ Tops &8◆ &fMenú"
+    lore:
+      - "&8Menú"
+      - ""
+      - "&fEn este menú previsualizarás las"
+      - "&flistas de clasificación que se"
+      - "&fencuentran disponibles"
+      - ""
+      - "&e» ¡Haz clic para ver menú! «"
+    click_commands:
+      - "[player] tops"
+  'recompensas':
+    material: GOLD_INGOT
+    slot: 12
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&e🎁 Recompensas &8◆ &fMenú"
+    lore:
+      - "&8Menú"
+      - ""
+      - "&fEn este menú previsualizarás las"
+      - "&frecompensas disponibles para cada"
+      - "&frango"
+      - ""
+      - "&e» ¡Haz clic para ver menú! «"
+    click_commands:
+      - "[player] rw"
+  'teletransportes':
+    material: COMPASS
+    slot: 13
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&3🌀 Teletransportes &8◆ &fMenú"
+    lore:
+      - "&8Menú"
+      - ""
+      - "&fEn este menú previsualizarás la"
+      - "&flista de teletransportes"
+      - "&fdisponibles"
+      - ""
+      - "&e» ¡Haz clic para ver menú! «"
+    click_commands:
+      - "[player] warps"
+  'encantamientos':
+    material: ENCHANTED_BOOK
+    slot: 14
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&d🔥 Encantamientos &8◆ &fMenú"
+    lore:
+      - "&8Menú"
+      - ""
+      - "&fEn este menú previsualizarás la"
+      - "&flista de encantamientos junto a"
+      - "&fsus rarezas y objetos especiales"
+      - ""
+      - "&e» ¡Haz clic para ver menú! «"
+    click_commands:
+      - "[player] e"
+  'kits':
+    material: DIAMOND_SWORD
+    slot: 15
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&c🛡 Kits &8◆ &fMenú"
+    lore:
+      - "&8Menú"
+      - ""
+      - "&fEn este menú previsualizarás los"
+      - "&fkits disponibles para cada rango"
+      - ""
+      - "&e» ¡Haz clic para ver menú! «"
+    click_commands:
+      - "[player] kits"
+  'subastas':
+    material: GOLD_BLOCK
+    slot: 16
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&6💰 Subastas &8◆ &fMenú"
+    lore:
+      - "&8Menú"
+      - ""
+      - "&fEn este menú previsualizarás las"
+      - "&fsubastas que están vigentes como"
+      - "&ftambién subastar tus propios"
+      - "&fobjetos"
+      - ""
+      - "&e» ¡Haz clic para ver menú! «"
+    click_commands:
+      - "[player] ah menu"
+  'misiones':
+    material: PAPER
+    slot: 19
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&e🔎 Misiones &8◆ &fMenú"
+    lore:
+      - "&8Menú"
+      - ""
+      - "&fEn este menú previsualizarás los"
+      - "&ftipos de misiones actualmente"
+      - "&fdisponibles"
+      - ""
+      - "&e» ¡Haz clic para ver menú! «"
+    click_commands:
+      - "[player] menu_misiones"
+  'mochilas':
+    material: BARREL
+    slot: 20
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&3💼 Mochilas &8◆ &fMenú"
+    lore:
+      - "&8Menú"
+      - ""
+      - "&fEn este menú previsualizarás la"
+      - "&flista de mochilas disponibles"
+      - "&fpara ti pudiendo personalizarla"
+      - "&fa tu gusto"
+      - ""
+      - "&e» ¡Haz clic para ver menú! «"
+    click_commands:
+      - "[player] pv"
+  'rankups':
+    material: loom
+    slot: 21
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&3👑 Rankups &8◆ &fMenú"
+    lore:
+      - "&8Menú"
+      - ""
+      - "&fEn este menú previsualizarás la"
+      - "&flista de rankups disponibles"
+      - ""
+      - "&e» ¡Haz clic para ver menú! «"
+    click_commands:
+      - "[player] ranks"
+  'koths':
+    material: NETHERITE_SWORD
+    slot: 22
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&4🗡 Koths &8◆ &fMenú"
+    lore:
+      - "&8Menú"
+      - ""
+      - "&fEn este menú previsualizarás la"
+      - "&flista de koths disponibles"
+      - ""
+      - "&e» ¡Haz clic para ver menú! «"
+    click_commands:
+      - "[player] menu_koth"
+  'clan':
+    material: NETHERITE_CHESTPLATE 
+    slot: 23
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&c👥 Clanes &8◆ &fMenú"
+    lore:
+      - "&8Menú"
+      - ""
+      - "&fEn este menú previsualizarás la"
+      - "&finformación y estado de tu clan"
+      - ""
+      - "&e» ¡Haz clic para ver menú! «"
+    click_commands:
+      - "[player] clan"
+  'logros':
+    material: DIAMOND_PICKAXE
+    slot: 24
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&d🏆 Trofeos &8◆ &fMenú"
+    lore:
+      - "&8Menú"
+      - ""
+      - "&fEn este menú previsualizarás la"
+      - "&flista de trofeos de oneblock"
+      - ""
+      - "&e» ¡Haz clic para ver menú! «"
+    click_commands:
+      - "[player] logros"
+  'codex':
+    material: MAP
+    slot: 25
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&3📖 Códice &8◆ &fMenú"
+    lore:
+      - "&8Menú"
+      - ""
+      - "&fEn este menú previsualizarás la"
+      - "&flista de lugares y mobs"
+      - "&fdesbloqueados en oneblock"
+      - ""
+      - "&e» ¡Haz clic para ver menú! «"
+    click_commands:
+      - "[player] codex"
+  'tienda':
+    material: DIAMOND
+    slot: 28
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&a🛒 Tienda &8◆ &fMenú"
+    lore:
+      - "&8Menú"
+      - ""
+      - "&fEn este menú previsualizarás la"
+      - "&ftienda de oneblock junto con sus"
+      - "&fcategorias de compra"
+      - ""
+      - "&e» ¡Haz clic para ver menú! «"
+    click_commands:
+      - "[player] shop"
+  'mundos':
+    material: GRASS_BLOCK
+    slot: 29
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&b🌎 Mundos &8◆ &fMenú"
+    lore:
+      - "&8Menú"
+      - ""
+      - "&fEn este menú previsualizarás la"
+      - "&flista de mundos"
+      - ""
+      - "&e» ¡Haz clic para ver menú! «"
+    click_commands:
+      - "[player] menu_mundos"
+  'cerrar':
+    material: RED_DYE
+    slot: 49
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&cCerrar"
+    lore: []
+    click_commands:
+      - "[close]"

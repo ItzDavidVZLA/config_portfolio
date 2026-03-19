@@ -1,0 +1,146 @@
+menu_title: '&0Menú de &ndrops'
+open_command: 
+- evokermenudrops
+size: 36
+items:
+  'fill':
+    material: BLACK_STAINED_GLASS_PANE
+    slots:
+    - 35
+    - 34
+    - 33
+    - 32
+    - 31
+    - 30
+    - 29
+    - 28
+    - 27
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&b@comugamers"
+    lore: " "
+  'piel_mago':
+    material: CYAN_DYE
+    slot: 10
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&3Piel de mago"
+    lore:
+      - "&8Objeto especial"
+      - ""
+      - "&fVende la piel de mago en"
+      - "&feste menú para ganar dinero."
+      - ""
+      - " &8◆ &fUnidad por objeto: &6159,110 ⛁"
+      - ""
+      - "&e» ¡Haz clic para vender! «"
+    click_requirement:
+      requirements:
+        stock:
+          type: javascript
+          expression: '%servervariables_value_mahopon_drop_pieldemago% >= 1'
+          deny_commands:
+          - '[message] &4&l» &cNo tienes &npiel de mago&r &cpara vender.'
+          - '[sound] ITEM_BREAK'
+    click_commands:
+      - '[message] &8&l» &fHas vendido &3Piel de mago &7[x1] &fpor &6159,110 ⛁'
+      - '[console] svar reduce mahopon_drop_pieldemago 1 %player_name%'
+      - '[console] eco give %player_name% 159110'
+  'alma_mago':
+    material: LIGHT_BLUE_DYE
+    slot: 13
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&bAlma de mago"
+    lore:
+      - "&8Objeto especial"
+      - ""
+      - "&fVende el alma de mago en"
+      - "&feste menú para ganar dinero."
+      - ""
+      - " &8◆ &fUnidad por objeto: &6186,350 ⛁"
+      - ""
+      - "&e» ¡Haz clic para vender! «"
+    click_requirement:
+      requirements:
+        stock:
+          type: javascript
+          expression: '%servervariables_value_mahopon_drop_almademago% >= 1'
+          deny_commands:
+          - '[message] &4&l» &cNo tienes &nalma de mago&r &cpara vender.'
+          - '[sound] ITEM_BREAK'
+    click_commands:
+      - '[message] &8&l» &fHas vendido &3Alma de mago &7[x1] &fpor &6186,350 ⛁'
+      - '[console] svar reduce mahopon_drop_almademago 1 %player_name%'
+      - '[console] eco give %player_name% 186350'
+  'remanente_evoker':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjAyMjZkNGMxZDMwZmJlYmVjYWU5MzlkYTkwMDYwM2U0Y2QwZmVkODU5MmExYmIzZTExZjlhYzkyMzkxYTQ1YSJ9fX0=
+    slot: 16
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&#FF7E7ER&#FFA97Ee&#FFD47Em&#FFE67Ea&#FFF77En&#BFFB7Ee&#7EFF7En&#7EFFBFt&#7EFFFFe&#7EBFFF &#7E7EFFd&#947EFFe&#A97EFF &#BC7EFFE&#CF7EFFv&#E77EFFo&#FF7EFFk&#FF7DF7e&#FF7CEEr"
+    lore:
+      - "&8Objeto especial"
+      - ""
+      - "&fVende remanente de evoker en"
+      - "&feste menú para ganar dinero."
+      - ""
+      - " &8◆ &fUnidad por objeto: &6113,000,000 ⛁"
+      - ""
+      - "&e» ¡Haz clic para vender! «"
+    click_requirement:
+      requirements:
+        stock:
+          type: javascript
+          expression: '%servervariables_value_mahopon_drop_remanentedeevoker% >= 1'
+          deny_commands:
+          - '[message] &4&l» &cNo tienes &nremanente de evoker&r &cpara vender.'
+          - '[sound] ITEM_BREAK'
+    click_commands:
+      - '[message] &8&l» &fHas vendido &#FF7E7ER&#FFA97Ee&#FFD47Em&#FFE67Ea&#FFF77En&#BFFB7Ee&#7EFF7En&#7EFFBFt&#7EFFFFe&#7EBFFF &#7E7EFFd&#947EFFe&#A97EFF &#BC7EFFE&#CF7EFFv&#E77EFFo&#FF7EFFk&#FF7DF7e&#FF7CEEr &7[x1] &fpor &6113,000,000 ⛁'
+      - '[console] svar reduce mahopon_drop_remanentedeevoker 1 %player_name%'
+      - '[console] eco give %player_name% 113000000'
+  'cerrar':
+    material: RED_DYE
+    slot: 31
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&cCerrar"
+    click_commands:
+      - "[close]"
+  'volver':
+    material: ARROW
+    slot: 30
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&eVolver"
+    click_commands:
+      - '[player] menubossesdrops'
+  'info':
+    material: SPYGLASS
+    slot: 34
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&#00BCF5Drops disponibles"
+    lore:
+      - "&8Información"
+      - ""
+      - " &8◆ &fPiel de mago disponible: &b%servervariables_value_mahopon_drop_pieldemago%"
+      - " &8◆ &fAlma de mago disponible: &b%servervariables_value_mahopon_drop_almademago%"
+      - " &8◆ &fRemanente de evoker disponible: &b%servervariables_value_mahopon_drop_remanentedeevoker%"
+      - ""
+      - "&emc.comugamers.com"

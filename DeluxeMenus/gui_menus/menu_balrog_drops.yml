@@ -1,0 +1,116 @@
+menu_title: '&0Menú de &ndrops'
+open_command: 
+- balrogmenudrops
+size: 36
+items:
+  'fill':
+    material: BLACK_STAINED_GLASS_PANE
+    slots:
+    - 35
+    - 34
+    - 33
+    - 32
+    - 31
+    - 30
+    - 29
+    - 28
+    - 27
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&b@comugamers"
+    lore: " "
+  'huesos_balrog':
+    material: BONE
+    slot: 12
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&#626262H&#666666u&#6A6A6Ae&#6E6E6Es&#717171o&#757575s&#797979 &#7D7D7Dd&#818181e&#858585 &#898989B&#8D8D8Da&#909090l&#949494r&#989898o&#9C9C9Cg"
+    lore:
+      - "&8Objeto especial"
+      - ""
+      - "&fVende los huesos de balrog en"
+      - "&feste menú para ganar dinero."
+      - ""
+      - " &8◆ &fUnidad por objeto: &64,110 ⛁"
+      - ""
+      - "&e» ¡Haz clic para vender! «"
+    click_requirement:
+      requirements:
+        stock:
+          type: javascript
+          expression: '%servervariables_value_tempest_drop_huesodebalrog% >= 1'
+          deny_commands:
+          - '[message] &4&l» &cNo tienes &nhuesos de balrog&r &cpara vender.'
+          - '[sound] ITEM_BREAK'
+    click_commands:
+      - '[message] &8&l» &fHas vendido &#626262H&#666666u&#6A6A6Ae&#6E6E6Es&#717171o&#757575s&#797979 &#7D7D7Dd&#818181e&#858585 &#898989B&#8D8D8Da&#909090l&#949494r&#989898o&#9C9C9Cg &7[x1] &fpor &64,110 ⛁'
+      - '[console] svar reduce balrog_drop_huesodebalrog 1 %player_name%'
+      - '[console] eco give %player_name% 4110'
+  'costilla_carbonizada':
+    material: COAL
+    slot: 14
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&#232323C&#262626o&#292929s&#2B2B2Bt&#2E2E2Ei&#313131l&#343434l&#373737a&#393939 &#3C3C3Cc&#3F3F3Fa&#424242r&#444444b&#474747o&#4A4A4An&#4D4D4Di&#505050z&#525252a&#555555d&#585858a"
+    lore:
+      - "&8Objeto especial"
+      - ""
+      - "&fVende costilla carbonizada en"
+      - "&feste menú para ganar dinero."
+      - ""
+      - " &8◆ &fUnidad por objeto: &65,790 ⛁"
+      - ""
+      - "&e» ¡Haz clic para vender! «"
+    click_requirement:
+      requirements:
+        stock:
+          type: javascript
+          expression: '%servervariables_value_balrog_drop_costillacarbonizada% >= 1'
+          deny_commands:
+          - '[message] &4&l» &cNo tienes &ncostilla carbonizada&r &cpara vender.'
+          - '[sound] ITEM_BREAK'
+    click_commands:
+      - '[message] &8&l» &fHas vendido &#232323C&#262626o&#292929s&#2B2B2Bt&#2E2E2Ei&#313131l&#343434l&#373737a&#393939 &#3C3C3Cc&#3F3F3Fa&#424242r&#444444b&#474747o&#4A4A4An&#4D4D4Di&#505050z&#525252a&#555555d&#585858a &7[x1] &fpor &65,790 ⛁'
+      - '[console] svar reduce balrog_drop_costillacarbonizada 1 %player_name%'
+      - '[console] eco give %player_name% 5790'
+  'cerrar':
+    material: RED_DYE
+    slot: 31
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&cCerrar"
+    click_commands:
+      - "[close]"
+  'volver':
+    material: ARROW
+    slot: 30
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&eVolver"
+    click_commands:
+      - '[player] menubossesdrops'
+  'info':
+    material: SPYGLASS
+    slot: 34
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&#00BCF5Drops disponibles"
+    lore:
+      - "&8Información"
+      - ""
+      - " &8◆ &fHuesos de balrog disponible: &b%servervariables_value_balrog_drop_huesodebalrog%"
+      - " &8◆ &fCostilla carbonizada disponible: &b%servervariables_value_balrog_drop_costillacarbonizada%"
+      - ""
+      - "&emc.comugamers.com"

@@ -1,0 +1,229 @@
+menu_title: 'Tienda de cristales'
+open_command: tiendacristalesherramientas
+size: 54
+
+items:
+  'azada1':
+    material: DIAMOND_HOE
+    item_flags:
+    - HIDE_ENCHANTS
+    - HIDE_ATTRIBUTES
+    slot: 20
+    display_name: '&9Azada básica de Agricultor'
+    lore:
+      - '&8Objeto especial'
+      - ''
+      - '&fLabrarás la tierra en un radio de 3x3'
+      - ''
+      - ' &8• &fPrecio: &b75 ❖'
+      - ''
+      - '&e» ¡Haz clic para comprar! «'
+    left_click_requirement:
+      requirements:
+        dinero:
+          type: javascript
+          expression: '%ecobits_cristales% >= 75'
+          deny_commands:
+          - '[message] &4&l» &cNo tienes cristales suficiente para comprar esto.'
+          - '[sound] ITEM_BREAK'
+    left_click_commands:
+      - '[console] ecoitems give %player_name% azada3x3'
+      - '[console] ecobits take %player_name% cristales 75'
+  'azada2':
+    material: DIAMOND_HOE
+    item_flags:
+    - HIDE_ENCHANTS
+    - HIDE_ATTRIBUTES
+    slot: 22
+    display_name: '&9Azada intermedia de Agricultor'
+    lore:
+      - '&8Objeto especial'
+      - ''
+      - '&fLabrarás la tierra en un radio de 5x5'
+      - ''
+      - ' &8• &fPrecio: &b85 ❖'
+      - ''
+      - '&e» ¡Haz clic para comprar! «'
+    left_click_requirement:
+      requirements:
+        dinero:
+          type: javascript
+          expression: '%ecobits_cristales% >= 85'
+          deny_commands:
+          - '[message] &4&l» &cNo tienes cristales suficiente para comprar esto.'
+          - '[sound] ITEM_BREAK'
+    left_click_commands:
+      - '[console] ecoitems give %player_name% azada5x5'
+      - '[console] ecobits take %player_name% cristales 85'
+  'azada3':
+    material: DIAMOND_HOE
+    item_flags:
+    - HIDE_ENCHANTS
+    - HIDE_ATTRIBUTES
+    slot: 24
+    display_name: '&5Azada avanzada de Agricultor'
+    lore:
+      - '&8Objeto especial'
+      - ''
+      - '&fLabrarás la tierra en un radio de 7x7'
+      - ''
+      - ' &8• &fPrecio: &b100 ❖'
+      - ''
+      - '&e» ¡Haz clic para comprar! «'
+    left_click_requirement:
+      requirements:
+        dinero:
+          type: javascript
+          expression: '%ecobits_cristales% >= 100'
+          deny_commands:
+          - '[message] &4&l» &cNo tienes cristales suficiente para comprar esto.'
+          - '[sound] ITEM_BREAK'
+    left_click_commands:
+      - '[console] ecoitems give %player_name% azada7x7'
+      - '[console] ecobits take %player_name% cristales 100'
+  'vara1':
+    material: STICK
+    item_flags:
+    - HIDE_ENCHANTS
+    - HIDE_ATTRIBUTES
+    slot: 29
+    display_name: "&#08FB11V&#08FB11a&#08FB11r&#08FB11a &#08FB11d&#08FB11e &#08FB11V&#08FB11e&#08FB11n&#08FB11t&#08FB11a &7[Nivel 1]"
+    lore:
+      - '&8Objeto especial'
+      - ''
+      - '&fVenderás el contenido de tus cofres con esta vara'
+      - ''
+      - ' &8• &fUsos: &b150'
+      - ' &8• &fMultplicador: &b1.3x'
+      - ' &8• &fPrecio: &b200 ❖'
+      - ''
+      - '&e» ¡Haz clic para comprar! «'
+    left_click_requirement:
+      requirements:
+        dinero:
+          type: javascript
+          expression: '%ecobits_cristales% >= 200'
+          deny_commands:
+          - '[message] &4&l» &cNo tienes cristales suficiente para comprar esto.'
+          - '[sound] ITEM_BREAK'
+    left_click_commands:
+      - '[console] dsw sellwand %player_name% varanivel1 1 1.3 150'
+      - '[console] ecobits take %player_name% cristales 200'
+  'vara2':
+    material: STICK
+    item_flags:
+    - HIDE_ENCHANTS
+    - HIDE_ATTRIBUTES
+    slot: 31
+    display_name: "&#FBFA08V&#FBFA08a&#FBFA08r&#FBFA08a &#FBFA08d&#FBFA08e &#FBFA08v&#FBFA08e&#FBFA08n&#FBFA08t&#FBFA08a &7[Nivel 2]"
+    lore:
+      - '&8Objeto especial'
+      - ''
+      - '&fVenderás el contenido de tus cofres con esta vara'
+      - ''
+      - ' &8• &fUsos: &b100'
+      - ' &8• &fMultplicador: &b1.5x'
+      - ' &8• &fPrecio: &b300 ❖'
+      - ''
+      - '&e» ¡Haz clic para comprar! «'
+    left_click_requirement:
+      requirements:
+        dinero:
+          type: javascript
+          expression: '%ecobits_cristales% >= 300'
+          deny_commands:
+          - '[message] &4&l» &cNo tienes cristales suficiente para comprar esto.'
+          - '[sound] ITEM_BREAK'
+    left_click_commands:
+      - '[console] dsw sellwand %player_name% varanivel2 1 1.5 100'
+      - '[console] ecobits take %player_name% cristales 300'
+  'vara3':
+    material: STICK
+    item_flags:
+    - HIDE_ENCHANTS
+    - HIDE_ATTRIBUTES
+    slot: 33
+    display_name: "&#FB0808V&#FB0808a&#FB0808r&#FB0808a &#FB0808d&#FB0808e &#FB0808v&#FB0808e&#FB0808n&#FB0808t&#FB0808a &7[Nivel 3]"
+    lore:
+      - '&8Objeto especial'
+      - ''
+      - '&fVenderás el contenido de tus cofres con esta vara'
+      - ''
+      - ' &8• &fUsos: &b75'
+      - ' &8• &fMultplicador: &b1.7x'
+      - ' &8• &fPrecio: &b450 ❖'
+      - ''
+      - '&e» ¡Haz clic para comprar! «'
+    left_click_requirement:
+      requirements:
+        dinero:
+          type: javascript
+          expression: '%ecobits_cristales% >= 450'
+          deny_commands:
+          - '[message] &4&l» &cNo tienes cristales suficiente para comprar esto.'
+          - '[sound] ITEM_BREAK'
+    left_click_commands:
+      - '[console] dsw sellwand %player_name% varanivel3 1 1.7 75'
+      - '[console] ecobits take %player_name% cristales 450'
+  'template':
+    material: BLACK_STAINED_GLASS_PANE
+    slots:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 17
+    - 18
+    - 26
+    - 27
+    - 35
+    - 36
+    - 44
+    - 45
+    - 46
+    - 47
+    - 48
+    - 49
+    - 50
+    - 51
+    - 52
+    - 53
+  'volver':
+    material: ARROW
+    slot: 48
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&3Vol&bver"
+    lore:
+      - "&8Botón"
+      - ""
+      - "&fVuelve al menú principal"
+      - ""
+      - "&e» ¡Haz clic para volver! «"
+    click_commands:
+      - "[console] dm open tienda_cristales %player_name%"
+  'cerrar':
+    material: RED_DYE
+    slot: 49
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&3Cer&brar"
+    lore:
+      - "&8Botón"
+      - ""
+      - "&fSupongo que no todos tienen una"
+      - "&ftecla de &bEscape &fen su teclado..."
+      - ""
+      - "&e» ¡Haz clic para cerrar! «"
+    click_commands:
+      - "[close]"

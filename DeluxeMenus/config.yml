@@ -1,0 +1,92 @@
+# DeluxeMenus 1.14.0-Release main configuration file
+#
+# A full wiki on how to use this plugin can be found at:
+# https://wiki.helpch.at/clips-plugins/deluxemenus
+
+debug: false
+check_updates: true
+gui_menus:
+  menu_principal:
+    file: menu_principal.yml
+  menu_isla:
+    file: menu_isla.yml
+  menu_top:
+    file: menu_top.yml
+  menu_teletransportes:
+    file: menu_teletransportes.yml
+  menu_end_teleport:
+    file: menu_end_teleport.yml
+  menu_nether_teleport:
+    file: menu_nether_teleport.yml
+  menu_misiones:
+    file: menu_misiones.yml
+  menu_koth:
+    file: menu_koth.yml
+  menu_trofeos:
+    file: menu_trofeos.yml
+  menu_mundos:
+    file: menu_mundos.yml
+  menu_taberna:
+    file: menu_taberna.yml
+  menu_ae:
+    file: menu_ae.yml
+  menu_ae2:
+    file: menu_ae2.yml
+  menu_ae3:
+    file: menu_ae3.yml
+  menu_ae4:
+    file: menu_ae4.yml
+  menunamepe:
+    file: menunamepe.yml
+  menucaramelos1:
+    file: menucaramelos1.yml
+  menucarameloblanco:
+    file: menucarameloblanco.yml
+  menucarameloceleste:
+    file: menucarameloceleste.yml
+  menucarameloverde:
+    file: menucarameloverde.yml
+  menucaramelonaranja:
+    file: menucaramelonaranja.yml
+  menucaramelomorado:
+    file: menucaramelomorado.yml
+  menucaramelorojo:
+    file: menucaramelorojo.yml
+  menucaramelonegro:
+    file: menucaramelonegro.yml
+  menufragmentos:
+    file: menu_fragmentos.yml
+  menufragmentosfenix:
+    file: menu_fragmentosfenix.yml
+  menufragmentosdragon:
+    file: menu_fragmentosdragon.yml
+  menufragmentosleviatan:
+    file: menu_fragmentosleviatan.yml
+  menu_agricultura:
+    file: menu_agricultura.yml
+  menu_farmingmenu:
+    file: menu_farmingmenu.yml
+  menu_farminghoemenu:
+    file: menu_farminghoemenu.yml
+  menu_bosses_drops:
+    file: menu_bosses_drops.yml
+  menu_tempest_drops:
+    file: menu_tempest_drops.yml
+  menu_balrog_drops:
+    file: menu_balrog_drops.yml
+  menu_sentinel_drops:
+    file: menu_sentinel_drops.yml
+  menu_apex_drops:
+    file: menu_apex_drops.yml
+  menu_mahopon_drops:
+    file: menu_mahopon_drops.yml
+  tienda_cristales:
+    file: tienda_cristales.yml
+  tienda_cristales_ench:
+    file: tiendacristalesench.yml
+  tienda_cristales_herramientas:
+    file: tiendacristalesherramientas.yml
+  tienda_cristales_comandos:
+    file: tiendacristalescomandos.yml
+  tienda_mochilas:
+    file: tienda_mochilas.yml

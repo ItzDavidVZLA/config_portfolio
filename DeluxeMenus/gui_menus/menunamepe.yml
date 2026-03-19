@@ -1,0 +1,45 @@
+menuname:
+menu_title: "&aIntercambio de Objetos"
+open_command: intercambiar
+size: 27
+items:
+  'intercambio_objeto':
+    material: DIAMOND_SWORD
+    slot: 13
+    display_name: "&bEspada Legendaria"
+    lore:
+      - "&7Una espada forjada con"
+      - "&7materiales místicos."
+      - ""
+      - "&eRequisitos para obtener:"
+      - "&7- &a10 &6Lingotes de Oro Mágicos"
+      - "&7- &a5 &cRubíes Encantados"
+      - ""
+      - "&e¡Haz clic para intercambiar!"
+    left_click_commands:
+      - "[console] give %player_name% diamond_sword 1"
+      - "[console] clear %player_name% gold_ingot 10 name:&6Lingote de Oro Mágico lore:&7Un_lingote_con_propiedades|&7místicas."
+      - "[console] clear %player_name% diamond 5 name:&cRubí Encantado lore:&7Una_gema_llena_de_energía|&7arcana."
+      - "[message] &a¡Has recibido la &bEspada Legendaria&a!"
+    left_click_requirement:
+      requirements:
+        tiene_oro_magico:
+          type: has item
+          material: GOLD_INGOT
+          amount: 10
+          name: "&6Lingote de Oro Mágico"
+          lore:
+            - "&7Un lingote con propiedades"
+            - "&7místicas."
+          deny_commands:
+            - "[message] &cNo tienes suficientes Lingotes de Oro Mágicos."
+        tiene_rubi_encantado:
+          type: has item
+          material: DIAMOND
+          amount: 5
+          name: "&cRubí Encantado"
+          lore:
+            - "&7Una gema llena de energía"
+            - "&7arcana."
+          deny_commands:
+            - "[message] &cNo tienes suficientes Rubíes Encantados."

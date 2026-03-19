@@ -1,0 +1,323 @@
+menu_title: '&0Menú de azadas'
+open_command: 
+- admin_farminghoemenu
+size: 36
+items:
+  'fill':
+    material: BLACK_STAINED_GLASS_PANE
+    slots:
+    - 27
+    - 28
+    - 29
+    - 30
+    - 31
+    - 32
+    - 33
+    - 34
+    - 35
+    - 36
+    #- 37
+    #- 38
+    #- 39
+    #- 40
+    #- 41
+    #- 42
+    #- 43
+    #- 44
+    #- 45
+    #- 46
+    #- 47
+    #- 48
+    #- 49
+    #- 50
+    #- 51
+    #- 52
+    #- 53
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: " "
+    lore: " "
+  'Azada_1':
+    material: WOODEN_HOE
+    slot: 11
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&#FF0000Azada de agricultura &8◆ &fNivel 1"
+    lore:
+      - "&8Objeto"
+      - ""
+      - "&fCon esta azada recibirás un"
+      - "&e1.5x &fextra de EXP de &3Agricultura"
+      - ""
+      - " &8◆ &fCosto: &e100 granos de trigo ☀"
+      - ""
+      - "&e» ¡Haz clic para comprar! «"
+    click_requirement:
+      requirements:
+        stock:
+          type: javascript
+          expression: '%servervariables_value_granodetrigo% >= 100'
+          deny_commands:
+          - '[message] &4&l» &cNo tienes suficientes &ngranos de trigo&r &cpara comprar esta azada'
+          - '[sound] ITEM_BREAK'
+    click_commands:
+      - "[message] &8&l» &fHas comprado &#FF0000Azada de agricultura &8◆ &fNivel 1 &7[x1] &fpor &e100 granos de trigo ☀"
+      - "[console] serveritem give azadaexp1 1 %player_name%"
+      - "[console] lp user %player_name% permission set comu.azada.niveldos true server=dev-oneblock"
+      - "[console] svar reduce granodetrigo 100 %player_name%"
+  'Azada_2_bloqueada':
+    material: BARRIER
+    slot: 12
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&#FF5500Azada de agricultura &8◆ &fNivel 2"
+    lore:
+      - "&8Objeto"
+      - ""
+      - "&fCon esta azada recibirás un"
+      - "&e2.0x &fextra de EXP de &3Agricultura"
+      - ""
+      - " &8◆ &fCosto: &e250 granos de trigo ☀"
+      - ""
+      - "&c» Azada bloqueada «"
+    priority: 1
+    view_requirement:
+      minimum_requirements: 1
+      stop_at_success: true
+      requirements:
+        permission:
+          type: "!has permission"
+          permission: comu.azada.niveldos
+  'Azada_2':
+    material: STONE_HOE
+    slot: 12
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&#FF5500Azada de agricultura &8◆ &fNivel 2"
+    lore:
+      - "&8Objeto"
+      - ""
+      - "&fCon esta azada recibirás un"
+      - "&e2.0x &fextra de EXP de &3Agricultura"
+      - ""
+      - " &8◆ &fCosto: &e250 granos de trigo ☀"
+      - ""
+      - "&e» ¡Haz clic para comprar! «"
+    priority: 2
+    click_requirement:
+      requirements:
+        stock:
+          type: javascript
+          expression: '%servervariables_value_granodetrigo% >= 250'
+          deny_commands:
+          - '[message] &4&l» &cNo tienes suficientes &ngranos de trigo&r &cpara comprar esta azada'
+          - '[sound] ITEM_BREAK'
+    click_commands:
+      - "[message] &8&l» &fHas comprado &#FF5500Azada de agricultura &8◆ &fNivel 2 &7[x1] &fpor &e250 granos de trigo ☀"
+      - "[console] serveritem give azadaexp2 1 %player_name%"
+      - "[console] lp user %player_name% permission set comu.azada.niveltres true server=dev-oneblock"
+      - "[console] svar reduce granodetrigo 250 %player_name%"
+
+  'Azada_3_bloqueada':
+    material: BARRIER
+    slot: 13
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&#FFEE00Azada de agricultura &8◆ &fNivel 3"
+    lore:
+      - "&8Objeto"
+      - ""
+      - "&fCon esta azada recibirás un"
+      - "&e2.5x &fextra de EXP de &3Agricultura"
+      - ""
+      - " &8◆ &fCosto: &e500 granos de trigo ☀"
+      - ""
+      - "&c» Azada bloqueada «"
+    priority: 1
+    view_requirement:
+      minimum_requirements: 1
+      stop_at_success: true
+      requirements:
+        permission:
+          type: "!has permission"
+          permission: comu.azada.niveltres
+  'Azada_3':
+    material: IRON_HOE
+    slot: 13
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&#FFEE00Azada de agricultura &8◆ &fNivel 3"
+    lore:
+      - "&8Objeto"
+      - ""
+      - "&fCon esta azada recibirás un"
+      - "&e2.5x &fextra de EXP de &3Agricultura"
+      - ""
+      - " &8◆ &fCosto: &e500 granos de trigo ☀"
+      - ""
+      - "&e» ¡Haz clic para comprar! «"
+    priority: 2
+    click_requirement:
+      requirements:
+        stock:
+          type: javascript
+          expression: '%servervariables_value_granodetrigo% >= 500'
+          deny_commands:
+          - '[message] &4&l» &cNo tienes suficientes &ngranos de trigo&r &cpara comprar esta azada'
+          - '[sound] ITEM_BREAK'
+    click_commands:
+      - "[message] &8&l» &fHas comprado &#FFEE00Azada de agricultura &8◆ &fNivel 3 &7[x1] &fpor &e500 granos de trigo ☀"
+      - "[console] serveritem give azadaexp3 1 %player_name%"
+      - "[console] lp user %player_name% permission set comu.azada.nivelcuatro true server=dev-oneblock"
+      - "[console] svar reduce granodetrigo 500 %player_name%"
+  
+  'Azada_4_bloqueada':
+    material: BARRIER
+    slot: 14
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&#00FF00Azada de agricultura &8◆ &fNivel 4"
+    lore:
+      - "&8Objeto"
+      - ""
+      - "&fCon esta azada recibirás un"
+      - "&e3.0x &fextra de EXP de &3Agricultura"
+      - ""
+      - " &8◆ &fCosto: &e1,000 granos de trigo ☀"
+      - ""
+      - "&c» Azada bloqueada «"
+    priority: 1
+    view_requirement:
+      minimum_requirements: 1
+      stop_at_success: true
+      requirements:
+        permission:
+          type: "!has permission"
+          permission: comu.azada.nivelcuatro
+  'Azada_4':
+    material: DIAMOND_HOE
+    slot: 14
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&#00FF00Azada de agricultura &8◆ &fNivel 4"
+    lore:
+      - "&8Objeto"
+      - ""
+      - "&fCon esta azada recibirás un"
+      - "&e3.0x &fextra de EXP de &3Agricultura"
+      - ""
+      - " &8◆ &fCosto: &e1,000 granos de trigo ☀"
+      - ""
+      - "&e» ¡Haz clic para comprar! «"
+    priority: 2
+    click_requirement:
+      requirements:
+        stock:
+          type: javascript
+          expression: '%servervariables_value_granodetrigo% >= 1000'
+          deny_commands:
+          - '[message] &4&l» &cNo tienes suficientes &ngranos de trigo&r &cpara comprar esta azada'
+          - '[sound] ITEM_BREAK'
+    click_commands:
+      - "[message] &8&l» &fHas comprado &#00FF00Azada de agricultura &8◆ &fNivel 4 &7[x1] &fpor &e1,000 granos de trigo ☀"
+      - "[console] serveritem give azadaexp4 1 %player_name%"
+      - "[console] lp user %player_name% permission set comu.azada.nivelcinco true server=dev-oneblock"
+      - "[console] svar reduce granodetrigo 1000 %player_name%"
+
+  'Azada_5_bloqueada':
+    material: BARRIER
+    slot: 15
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&#00FFFFAzada de agricultura &8◆ &fNivel 5"
+    lore:
+      - "&8Objeto"
+      - ""
+      - "&fCon esta azada recibirás un"
+      - "&e3.5x &fextra de EXP de &3Agricultura"
+      - ""
+      - " &8◆ &fCosto: &e2,500 granos de trigo ☀"
+      - ""
+      - "&c» Azada bloqueada «"
+    priority: 1
+    view_requirement:
+      minimum_requirements: 1
+      stop_at_success: true
+      requirements:
+        permission:
+          type: "!has permission"
+          permission: comu.azada.nivelcinco
+  'Azada_5':
+    material: NETHERITE_HOE
+    slot: 15
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&#00FFFFAzada de agricultura &8◆ &fNivel 5"
+    lore:
+      - "&8Objeto"
+      - ""
+      - "&fCon esta azada recibirás un"
+      - "&e3.5x &fextra de EXP de &3Agricultura"
+      - ""
+      - " &8◆ &fCosto: &e2,500 granos de trigo ☀"
+      - ""
+      - "&e» ¡Haz clic para comprar! «"
+    priority: 2
+    click_requirement:
+      requirements:
+        stock:
+          type: javascript
+          expression: '%servervariables_value_granodetrigo% >= 2500'
+          deny_commands:
+          - '[message] &4&l» &cNo tienes suficientes &ngranos de trigo&r &cpara comprar esta azada'
+          - '[sound] ITEM_BREAK'
+    click_commands:
+      - "[message] &8&l» &fHas comprado &#00FFFFAzada de agricultura &8◆ &fNivel 5 &7[x1] &fpor &e2,500 granos de trigo ☀"
+      - "[console] serveritem give azadaexp5 1 %player_name%"
+      - "[console] svar reduce granodetrigo 2500 %player_name%"
+ 
+  'cerrar':
+    material: RED_DYE
+    slot: 31
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&cCerrar"
+    lore:
+    click_commands:
+      - "[close]"
+  'info':
+    material: SPYGLASS
+    slot: 34
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&#00CBF5Granos disponibles"
+    lore:
+      - "&8Información"
+      - ""
+      - " &8◆ &fGranos disponibles: &6%servervariables_value_granodetrigo% &6☀"
+      - ""
+      - "&emc.comugamers.com"

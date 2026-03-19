@@ -1,0 +1,88 @@
+menu_title: '&0Menú de &nmisiones'
+open_command: 
+- menu_mision
+- mision_menu
+- menumision
+- misionmenu
+- menuquest
+- quest_menu
+- menu_quest
+- quest
+- q
+- questmenu
+- menuquest
+- menu_misiones
+size: 36
+items:
+  'fill':
+    material: BLACK_STAINED_GLASS_PANE
+    slots:
+    - 27
+    - 28
+    - 29
+    - 30
+    - 31
+    - 32
+    - 33
+    - 34
+    - 35
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&b@comugamers"
+    lore: " "
+  'misiones_diarias':
+    material: PAPER
+    slot: 12
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&#00CBF5Misiones diarias"
+    lore:
+      - "&8Botón"
+      - ""
+      - "&fMira las misiones diarias"
+      - ""
+      - "&e» ¡Haz clic para ver menú! «"
+    click_commands:
+      - "[player] dq"
+  'misiones_progresivas':
+    material: PAPER
+    slot: 14
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&#00CBF5Misiones progresivas"
+    lore:
+      - "&8Botón"
+      - ""
+      - "&fMira las misiones progresivas"
+      - ""
+      - "&e» ¡Haz clic para ver menú! «"
+    click_commands:
+      - "[player] quests"
+  'volver':
+    material: ARROW
+    slot: 30
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&eVolver"
+    lore: []
+    click_commands:
+      - "[player] menu"
+  'cerrar':
+    material: RED_DYE
+    slot: 31
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&cCerrar"
+    lore: []
+    click_commands:
+      - "[close]"

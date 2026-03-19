@@ -1,0 +1,83 @@
+menu_title: 'Menú de isla'
+open_command: 
+- menu_isla
+- isla_menu
+- menuisla
+- islamenu
+- menuisland
+- island_menu
+- menu_island
+size: 36
+items:
+  'fill':
+    material: BLACK_STAINED_GLASS_PANE
+    slots:
+    - 27
+    - 28
+    - 29
+    - 30
+    - 31
+    - 32
+    - 33
+    - 34
+    - 35
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&b@comugamers"
+    lore: " "
+  'tu_isla':
+    material: GRASS_BLOCK
+    slot: 12
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&#00CBF5Tu isla"
+    lore:
+      - "&8Botón"
+      - ""
+      - "&fVe a tu isla"
+      - ""
+      - "&e» ¡Haz clic para ir a tu isla! «"
+    click_commands:
+      - "[player] ob"
+  'configuracion_isla':
+    material: REPEATER
+    slot: 14
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&#00CBF5Configuración de isla"
+    lore:
+      - "&8Botón"
+      - ""
+      - "&fEstablece las configuraciones de tu isla"
+      - ""
+      - "&e» ¡Haz clic para configurar! «"
+    click_commands:
+      - "[player] ob settings"
+  'volver':
+    material: ARROW
+    slot: 30
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&eVolver"
+    lore: []
+    click_commands:
+      - "[player] menu"
+  'cerrar':
+    material: RED_DYE
+    slot: 31
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&cCerrar"
+    lore: []
+    click_commands:
+      - "[close]"

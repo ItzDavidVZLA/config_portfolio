@@ -1,0 +1,99 @@
+menu_title: 'Menú de teletransporte'
+open_command: 
+- menu_end_teleport
+- met
+register_command: true
+size: 36
+items:
+  'fill':
+    material: BLACK_STAINED_GLASS_PANE
+    slots:
+    - 27
+    - 28
+    - 29
+    - 30
+    - 31
+    - 32
+    - 33
+    - 34
+    - 35
+    - 36
+    #- 37
+    #- 38
+    #- 39
+    #- 40
+    #- 41
+    #- 42
+    #- 43
+    #- 44
+    #- 45
+    #- 46
+    #- 47
+    #- 48
+    #- 49
+    #- 50
+    #- 51
+    #- 52
+    #- 53
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&b@comugamers"
+    lore: " "
+  'nether':
+    material: ANDESITE
+    slot: 12
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&bVolver al spawn"
+    lore:
+      - "&8Teletransporte"
+      - ""
+      - "&fAl cliquear esta opción, volverás"
+      - "&fal spawn principal del modo de juego"
+      - ""
+      - "&e» ¡Haz clic para teletransportar! «"
+    click_commands:
+      - "[player] spawn"
+  'end':
+    material: NETHERITE_SWORD
+    slot: 14
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&dZona PvP"
+    lore:
+      - "&8Teletransporte"
+      - ""
+      - "&fAl cliquear esta opción, te teletransportarás"
+      - "&fa la zona de combate de este mundo"
+      - ""
+      - "&e» ¡Haz clic para teletransportar! «"
+    click_commands:
+      - "[console] etp %player_name% 129.5 126 -571"
+  'volver':
+    material: ARROW
+    slot: 30
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&eVolver"
+    lore: []
+    click_commands:
+      - "[player] menu"
+  'cerrar':
+    material: RED_DYE
+    slot: 31
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&cCerrar"
+    lore: []
+    click_commands:
+      - "[close]"

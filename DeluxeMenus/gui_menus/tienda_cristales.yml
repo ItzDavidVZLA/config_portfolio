@@ -1,0 +1,120 @@
+menu_title: 'Tienda de cristales'
+open_command: 
+- tiendacristales
+- tc
+size: 45
+
+items:
+  'libros':
+    material: ENCHANTED_BOOK
+    item_flags:
+    - HIDE_ENCHANTS
+    - HIDE_ATTRIBUTES
+    slot: 20
+    display_name: '&9Encantamientos'
+    lore:
+      - '&8Categoría'
+      - ''
+      - '&fCompra encantamientos de mayor nivel'
+      - '&fen este menú'
+      - ''
+      - ' &8➡ &dExperiencia VI'
+      - ''
+      - '&e» ¡Haz clic para abrir este menú! «'
+    left_click_commands:
+      - '[console] dm open tienda_cristales_ench %player_name%'
+  'items':
+    material: DIAMOND_HOE
+    item_flags:
+    - HIDE_ENCHANTS
+    - HIDE_ATTRIBUTES
+    slot: 22
+    display_name: '&bHerramientas'
+    lore:
+      - '&8Categoría'
+      - ''
+      - '&fCompra herramientas relacionadas al'
+      - '&ffarmeo'
+      - ''
+      - ' &8➡ &bAzadas'
+      - ' &8➡ &bVaras de venta'
+      - ''
+      - '&e» ¡Haz clic para ver menú! «'
+    left_click_commands:
+      - '[console] dm open tienda_cristales_herramientas %player_name%'
+  'comandos':
+    material: COMMAND_BLOCK
+    item_flags:
+    - HIDE_ENCHANTS
+    - HIDE_ATTRIBUTES
+    slot: 24
+    display_name: '&dComandos'
+    lore:
+      - '&8Categoría'
+      - ''
+      - '&fAdquiere comandos cosméticos en'
+      - '&feste menú'
+      - ''
+      - '&e» ¡Haz clic para ver menú! «'
+    left_click_commands:
+      - '[console] dm open tienda_cristales_comandos %player_name%'
+  'template':
+    material: BLACK_STAINED_GLASS_PANE
+    slots:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 17
+    - 18
+    - 26
+    - 27
+    - 35
+    - 36
+    - 37
+    - 38
+    - 39
+    - 40
+    - 41
+    - 42
+    - 43
+    - 44
+  'volver':
+    material: ARROW
+    slot: 39
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&3Vol&bver"
+    lore:
+      - "&8Botón"
+      - ""
+      - "&fVuelve al menú principal"
+      - ""
+      - "&e» ¡Haz clic para volver! «"
+    click_commands:
+      - "[console] dm open menu_principal %player%"
+  'cerrar':
+    material: RED_DYE
+    slot: 40
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&3Cer&brar"
+    lore:
+      - "&8Botón"
+      - ""
+      - "&fSupongo que no todos tienen una"
+      - "&ftecla de &bEscape &fen su teclado..."
+      - ""
+      - "&e» ¡Haz clic para cerrar! «"
+    click_commands:
+      - "[close]"

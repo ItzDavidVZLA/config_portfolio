@@ -1,0 +1,208 @@
+menu_title: '&0Menú de venta'
+open_command: 
+- admin_sellfarmingmenu
+size: 36
+items:
+  'fill':
+    material: BLACK_STAINED_GLASS_PANE
+    slots:
+    - 27
+    - 28
+    - 29
+    - 30
+    - 31
+    - 32
+    - 33
+    - 34
+    - 35
+    - 36
+    #- 37
+    #- 38
+    #- 39
+    #- 40
+    #- 41
+    #- 42
+    #- 43
+    #- 44
+    #- 45
+    #- 46
+    #- 47
+    #- 48
+    #- 49
+    #- 50
+    #- 51
+    #- 52
+    #- 53
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&b@comugamers"
+    lore: " "
+  'Grano_Trigo':
+    material: WHEAT
+    slot: 11
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&#00BCF51 grano"
+    lore:
+      - "&8Objeto"
+      - ""
+      - " &8◆ &fValor de venta: &6110 ⛁"
+      - ""
+      - "&e» ¡Haz clic para vender! «"
+    click_requirement:
+      requirements:
+        stock:
+          type: javascript
+          expression: '%servervariables_value_granodetrigo% >= 1'
+          deny_commands:
+          - '[message] &4&l» &cNo tienes suficientes &ngranos de trigo&r &cpara vender'
+          - '[sound] ITEM_BREAK'
+    click_commands:
+      - "[message] &8&l» &fHas vendido &e1 grano ☀ &fy recibiste &6110 ⛁"
+      - "[console] eco give %player_name% 110"
+      - "[console] svar reduce granodetrigo 1 %player_name%"
+  'Grano_Trigo2':
+    material: WHEAT
+    slot: 12
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&#00BCF52 granos"
+    lore:
+      - "&8Objeto"
+      - ""
+      - " &8◆ &fValor de venta: &6220 ⛁"
+      - ""
+      - "&e» ¡Haz clic para vender! «"
+    click_requirement:
+      requirements:
+        stock:
+          type: javascript
+          expression: '%servervariables_value_granodetrigo% >= 2'
+          deny_commands:
+          - '[message] &4&l» &cNo tienes suficientes &ngranos de trigo&r &cpara vender'
+          - '[sound] ITEM_BREAK'
+    click_commands:
+      - "[message] &8&l» &fHas vendido &e2 granos ☀ &fy recibiste &620 ⛁"
+      - "[console] eco give %player_name% 220"
+      - "[console] svar reduce granodetrigo 2 %player_name%"
+  'Grano_Trigo3':
+    material: WHEAT
+    slot: 13
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&#00BCF55 granos"
+    lore:
+      - "&8Objeto"
+      - ""
+      - " &8◆ &fValor de venta: &6550 ⛁"
+      - ""
+      - "&e» ¡Haz clic para vender! «"
+    click_requirement:
+      requirements:
+        stock:
+          type: javascript
+          expression: '%servervariables_value_granodetrigo% >= 5'
+          deny_commands:
+          - '[message] &4&l» &cNo tienes suficientes &ngranos de trigo&r &cpara vender'
+          - '[sound] ITEM_BREAK'
+    click_commands:
+      - "[message] &8&l» &fHas vendido &e5 granos ☀ &fy recibiste &6550 ⛁"
+      - "[console] eco give %player_name% 550"
+      - "[console] svar reduce granodetrigo 5 %player_name%"
+  'Grano_Trigo4':
+    material: WHEAT
+    slot: 14
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&#00BCF510 granos"
+    lore:
+      - "&8Objeto"
+      - ""
+      - " &8◆ &fValor de venta: &61100 ⛁"
+      - ""
+      - "&e» ¡Haz clic para vender! «"
+    click_requirement:
+      requirements:
+        stock:
+          type: javascript
+          expression: '%servervariables_value_granodetrigo% >= 10'
+          deny_commands:
+          - '[message] &4&l» &cNo tienes suficientes &ngranos de trigo&r &cpara vender'
+          - '[sound] ITEM_BREAK'
+    click_commands:
+      - "[message] &8&l» &fHas vendido &e10 granos ☀ &fy recibiste &61100 ⛁"
+      - "[console] eco give %player_name% 1100"
+      - "[console] svar reduce granodetrigo 10 %player_name%"
+  'Grano_Trigo5':
+    material: WHEAT
+    slot: 15
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&#00BCF520 granos"
+    lore:
+      - "&8Objeto"
+      - ""
+      - " &8◆ &fValor de venta: &62200 ⛁"
+      - ""
+      - "&e» ¡Haz clic para vender! «"
+    click_requirement:
+      requirements:
+        stock:
+          type: javascript
+          expression: '%servervariables_value_granodetrigo% >= 20'
+          deny_commands:
+          - '[message] &4&l» &cNo tienes suficientes &ngranos de trigo&r &cpara vender'
+          - '[sound] ITEM_BREAK'
+    click_commands:
+      - "[message] &8&l» &fHas vendido &e20 granos ☀ &fy recibiste &62200 ⛁"
+      - "[console] eco give %player_name% 2200"
+      - "[console] svar reduce granodetrigo 20 %player_name%"
+ 
+  'cerrar':
+    material: RED_DYE
+    slot: 31
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&cCerrar"
+    lore:
+    click_commands:
+      - "[close]"
+  'volver':
+    material: ARROW
+    slot: 30
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&eVolver"
+    lore:
+    click_commands:
+      - "[console] dm open menu_agricultura %player_name%"
+  'info':
+    material: SPYGLASS
+    slot: 34
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&#00CBF5Granos disponibles"
+    lore:
+      - "&8Información"
+      - ""
+      - " &8◆ &fGranos disponibles: &6%servervariables_value_granodetrigo% &6☀"
+      - ""
+      - "&emc.comugamers.com"

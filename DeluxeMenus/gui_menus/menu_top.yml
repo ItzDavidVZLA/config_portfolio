@@ -1,0 +1,197 @@
+menu_title: '&0Menú de &ntops'
+open_command: 
+- menu_tops
+- tops_menu
+- menutops
+- topsmenu
+- menutop
+- top_menu
+- menu_top
+- tops
+size: 36
+items:
+  'fill':
+    material: BLACK_STAINED_GLASS_PANE
+    slots:
+    - 27
+    - 28
+    - 29
+    - 30
+    - 31
+    - 32
+    - 33
+    - 34
+    - 35
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: " "
+    lore: " "
+  'asesinatos':
+    material: DIAMOND_SWORD
+    slot: 11
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&#00CBF5Asesinatos"
+    lore:
+      - "&8Clasificación"
+      - ""
+      - "&fLos diez con más asesinatos estarán aquí"
+      - ""
+      - "&r &8&l≡ &f&lTOP 10:"
+      - ""
+      - "&r &8◆ &b#1 &e%topper_kill;top_name;1% &7- &f%topper_kill;top_value;1%"
+      - "&r &8◆ &b#2 &e%topper_kill;top_name;2% &7- &f%topper_kill;top_value;2%"
+      - "&r &8◆ &b#3 &e%topper_kill;top_name;3% &7- &f%topper_kill;top_value;3%"
+      - "&r &8◆ &b#4 &e%topper_kill;top_name;4% &7- &f%topper_kill;top_value;4%"
+      - "&r &8◆ &b#5 &e%topper_kill;top_name;5% &7- &f%topper_kill;top_value;5%"
+      - "&r &8◆ &b#6 &e%topper_kill;top_name;6% &7- &f%topper_kill;top_value;6%"
+      - "&r &8◆ &b#7 &e%topper_kill;top_name;7% &7- &f%topper_kill;top_value;7%"
+      - "&r &8◆ &b#8 &e%topper_kill;top_name;8% &7- &f%topper_kill;top_value;8%"
+      - "&r &8◆ &b#9 &e%topper_kill;top_name;9% &7- &f%topper_kill;top_value;9%"
+      - "&r &8◆ &b#10 &e%topper_kill;top_name;10% &7- &f%topper_kill;top_value;10%"
+      - ""
+      - "&emc.comugamers.com"
+    click_commands:
+      - "[sound] ENTITY_PLAYER_HURT"
+  'monedas':
+    material: GOLD_INGOT
+    slot: 12
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&#00CBF5Patrimonio"
+    lore:
+      - "&8Clasificación"
+      - ""
+      - "&fLos diez con más dinero estarán aquí"
+      - ""
+      - "&r &8&l≡ &f&lTOP 10:"
+      - ""
+      - "&r &8◆ &b#1 &e%topper_balance;top_name;1% &7- &f%topper_balance;top_value;1%"
+      - "&r &8◆ &b#2 &e%topper_balance;top_name;2% &7- &f%topper_balance;top_value;2%"
+      - "&r &8◆ &b#3 &e%topper_balance;top_name;3% &7- &f%topper_balance;top_value;3%"
+      - "&r &8◆ &b#4 &e%topper_balance;top_name;4% &7- &f%topper_balance;top_value;4%"
+      - "&r &8◆ &b#5 &e%topper_balance;top_name;5% &7- &f%topper_balance;top_value;5%"
+      - "&r &8◆ &b#6 &e%topper_balance;top_name;6% &7- &f%topper_balance;top_value;6%"
+      - "&r &8◆ &b#7 &e%topper_balance;top_name;7% &7- &f%topper_balance;top_value;7%"
+      - "&r &8◆ &b#8 &e%topper_balance;top_name;8% &7- &f%topper_balance;top_value;8%"
+      - "&r &8◆ &b#9 &e%topper_balance;top_name;9% &7- &f%topper_balance;top_value;9%"
+      - "&r &8◆ &b#10 &e%topper_balance;top_name;10% &7- &f%topper_balance;top_value;10%"
+      - ""
+      - "&emc.comugamers.com"
+    click_commands:
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+  'tiempo_jugado':
+    material: CLOCK
+    slot: 13
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&#00CBF5Tiempo jugado"
+    lore:
+      - "&8Clasificación"
+      - ""
+      - "&fLos diez con más horas jugadas estarán aquí"
+      - ""
+      - "&r &8&l≡ &f&lTOP 10:"
+      - ""
+      - "&r &8◆ &b#1 &e%topper_playtime;top_name;1% &7- &f%topper_playtime;top_value;1%"
+      - "&r &8◆ &b#2 &e%topper_playtime;top_name;2% &7- &f%topper_playtime;top_value;2%"
+      - "&r &8◆ &b#3 &e%topper_playtime;top_name;3% &7- &f%topper_playtime;top_value;3%"
+      - "&r &8◆ &b#4 &e%topper_playtime;top_name;4% &7- &f%topper_playtime;top_value;4%"
+      - "&r &8◆ &b#5 &e%topper_playtime;top_name;5% &7- &f%topper_playtime;top_value;5%"
+      - "&r &8◆ &b#6 &e%topper_playtime;top_name;6% &7- &f%topper_playtime;top_value;6%"
+      - "&r &8◆ &b#7 &e%topper_playtime;top_name;7% &7- &f%topper_playtime;top_value;7%"
+      - "&r &8◆ &b#8 &e%topper_playtime;top_name;8% &7- &f%topper_playtime;top_value;8%"
+      - "&r &8◆ &b#9 &e%topper_playtime;top_name;9% &7- &f%topper_playtime;top_value;9%"
+      - "&r &8◆ &b#10 &e%topper_playtime;top_name;10% &7- &f%topper_playtime;top_value;10%"
+      - ""
+      - "&emc.comugamers.com"
+    click_commands:
+      - "[sound] BLOCK_AMETHYST_BLOCK_STEP"
+  'cristales':
+    material: DIAMOND
+    slot: 14
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&#00CBF5Cristales"
+    lore:
+      - "&8Clasificación"
+      - ""
+      - "&fLos diez con más cristales estarán aquí"
+      - ""
+      - "&r &8&l≡ &f&lTOP 10:"
+      - ""
+      - "&r &8◆ &b#1 &e%ecobits_top_cristales_1_name% &7- &f%ecobits_top_cristales_1_amount%"
+      - "&r &8◆ &b#2 &e%ecobits_top_cristales_2_name% &7- &f%ecobits_top_cristales_2_amount%"
+      - "&r &8◆ &b#3 &e%ecobits_top_cristales_3_name% &7- &f%ecobits_top_cristales_3_amount%"
+      - "&r &8◆ &b#4 &e%ecobits_top_cristales_4_name% &7- &f%ecobits_top_cristales_4_amount%"
+      - "&r &8◆ &b#5 &e%ecobits_top_cristales_5_name% &7- &f%ecobits_top_cristales_5_amount%"
+      - "&r &8◆ &b#6 &e%ecobits_top_cristales_6_name% &7- &f%ecobits_top_cristales_6_amount%"
+      - "&r &8◆ &b#7 &e%ecobits_top_cristales_7_name% &7- &f%ecobits_top_cristales_7_amount%"
+      - "&r &8◆ &b#8 &e%ecobits_top_cristales_8_name% &7- &f%ecobits_top_cristales_8_amount%"
+      - "&r &8◆ &b#9 &e%ecobits_top_cristales_9_name% &7- &f%ecobits_top_cristales_9_amount%"
+      - "&r &8◆ &b#10 &e%ecobits_top_cristales_10_name% &7- &f%ecobits_top_cristales_10_amount%"
+      - ""
+      - "&emc.comugamers.com"
+    click_commands:
+      - "[sound] ENTITY_EXPERIENCE_ORB_PICKUP"
+  'nivel_isla':
+    material: BEACON
+    slot: 15
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&#00CBF5Nivel de isla"
+    lore:
+      - "&8Clasificación"
+      - ""
+      - "&fLos diez con más nivel de isla estarán aquí"
+      - ""
+      - "&r &8&l≡ &f&lTOP 10:"
+      - ""
+      - "&r &8◆ &b#1 &e%level_aoneblock_top_name_1% &7- &f%level_aoneblock_top_value_1%"
+      - "&r &8◆ &b#2 &e%level_aoneblock_top_name_2% &7- &f%level_aoneblock_top_value_2%"
+      - "&r &8◆ &b#3 &e%level_aoneblock_top_name_3% &7- &f%level_aoneblock_top_value_3%"
+      - "&r &8◆ &b#4 &e%level_aoneblock_top_name_4% &7- &f%level_aoneblock_top_value_4%"
+      - "&r &8◆ &b#5 &e%level_aoneblock_top_name_5% &7- &f%level_aoneblock_top_value_5%"
+      - "&r &8◆ &b#6 &e%level_aoneblock_top_name_6% &7- &f%level_aoneblock_top_value_6%"
+      - "&r &8◆ &b#7 &e%level_aoneblock_top_name_7% &7- &f%level_aoneblock_top_value_7%"
+      - "&r &8◆ &b#8 &e%level_aoneblock_top_name_8% &7- &f%level_aoneblock_top_value_8%"
+      - "&r &8◆ &b#9 &e%level_aoneblock_top_name_9% &7- &f%level_aoneblock_top_value_9%"
+      - "&r &8◆ &b#10 &e%level_aoneblock_top_name_10% &7- &f%level_aoneblock_top_value_10%"
+      - ""
+      - "&emc.comugamers.com"
+    click_commands:
+      - "[sound] BLOCK_BEACON_DEACTIVATE"
+  'volver':
+    material: ARROW
+    slot: 30
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&eVolver"
+    lore: []
+    click_commands:
+      - "[player] menu"
+  'cerrar':
+    material: RED_DYE
+    slot: 31
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&cCerrar"
+    lore: []
+    click_commands:
+      - "[close]"

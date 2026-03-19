@@ -1,0 +1,191 @@
+menu_title: '&0Menú de &ndrops'
+open_command: 
+- menubossesdrops
+size: 36
+items:
+  'fill':
+    material: BLACK_STAINED_GLASS_PANE
+    slots:
+    - 35
+    - 34
+    - 33
+    - 32
+    - 31
+    - 30
+    - 29
+    - 28
+    - 27
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&b@comugamers"
+    lore: " "
+  'tempest_drops':
+    material: ZOMBIE_SPAWN_EGG
+    slot: 11
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&2Tempest ☢"
+    lore:
+      - "&8Boss"
+      - ""
+      - "&fPodrás previsualizar los drops y"
+      - "&frecompensas de este boss en este menú."
+      - ""
+      - "&r &8&l≡ &f&lDROPEOS Y RECOMPENSAS:"
+      - "&r &r &8◆ &61,000,000 ⛁ &7- &f100%"
+      - "&r &r &8◆ &b200 ❖ &7- &f100%"
+      - "&r &r &8◆ &#00FF00C&#0CFF0Ca&#17FF17r&#23FF23n&#2FFF2Fe &#46FF46d&#52FF52e &#69FF69T&#75FF75e&#80FF80m&#8CFF8Cp&#98FF98e&#A3FFA3s&#AFFFAFt &7[4-12] - &f100%"
+      - "&r &r &8◆ &#AAAAAAH&#AEAEAEu&#B2B2B2e&#B6B6B6s&#BBBBBBo &#C3C3C3a&#C7C7C7s&#CBCBCBt&#CFCFCFi&#D3D3D3l&#D8D8D8l&#DCDCDCa&#E0E0E0d&#E4E4E4o &7[4-12] - &f50%"
+      - "&r &r &8◆ &#00FF00P&#0AFF0Ae&#15FF15c&#1FFF1Fh&#29FF29e&#33FF33r&#3EFF3Ea &#52FF52d&#5DFF5De &#71FF71T&#7CFF7Ce&#86FF86m&#90FF90p&#9AFF9Ae&#A5FFA5s&#AFFFAFt &7- &f1%"
+      - "&r &r &8◆ &#00BEBEE&#09C1C1s&#11C4C4p&#1AC7C7a&#23CACAd&#2CCDCDa &#3DD4D4d&#46D7D7e &#57DDDDl&#60E0E0a &#71E6E6T&#7AE9E9e&#83ECECm&#8BF0F0p&#94F3F3e&#9DF6F6s&#A6F9F9t&#AEFCFCa&#B7FFFFd &7- &f0.5%"
+      - ""
+      - "&r &c⚠ Las recompensas aumentarán"
+      - "&r &r &r &r &cconforme mayor sea el daño infligido"
+      - ""
+      - "&e» ¡Haz clic para ver menú! «"
+    click_commands:
+      - "[player] tempestmenudrops"
+  'balrog_drops':
+    material: WITHER_SKELETON_SPAWN_EGG
+    slot: 12
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&cBalrog 💀"
+    lore:
+      - "&8Boss"
+      - ""
+      - "&fPodrás previsualizar los drops y"
+      - "&frecompensas de este boss en este menú."
+      - ""
+      - "&r &8&l≡ &f&lDROPEOS Y RECOMPENSAS:"
+      - "&r &r &8◆ &65,000,000 ⛁ &7- &f100%"
+      - "&r &r &8◆ &b500 ❖ &7- &f100%"
+      - "&r &r &8◆ &#626262H&#666666u&#6A6A6Ae&#6E6E6Es&#717171o&#757575s&#797979 &#7D7D7Dd&#818181e&#858585 &#898989B&#8D8D8Da&#909090l&#949494r&#989898o&#9C9C9Cg &7[2-8] - &f100%"
+      - "&r &r &8◆ &#232323C&#262626o&#292929s&#2B2B2Bt&#2E2E2Ei&#313131l&#343434l&#373737a&#393939 &#3C3C3Cc&#3F3F3Fa&#424242r&#444444b&#474747o&#4A4A4An&#4D4D4Di&#505050z&#525252a&#555555d&#585858a &7[3-9] - &f50%"
+      - "&r &r &8◆ &#FF4545B&#FF4949o&#FF4D4Dt&#FF5151a&#FF5555s&#FF5959 &#FF5D5Dd&#FF6262e&#FF6666 &#FF6A6AB&#FF6E6Ea&#FF7272l&#FF7676r&#FF7A7Ao&#FF7E7Eg &7- &f5%"
+      - "&r &r &8◆ &#FF4545P&#FF4949e&#FF4C4Cc&#FF5050h&#FF5353e&#FF5757r&#FF5A5Aa&#FF5E5E &#FF6262d&#FF6565e&#FF6969 &#FF6C6CB&#FF7070a&#FF7373l&#FF7777r&#FF7A7Ao&#FF7E7Eg &7- &f1%"
+      - "&r &r &8◆ &#FFC624E&#FFC72As&#FFC931p&#FFCA37a&#FFCC3Dd&#FFCD44a&#FFCF4A &#FFD051I&#FFD157n&#FFD35Df&#FFD464e&#FFD66Ar&#FFD770n&#FFD977a&#FFDA7Dl &7- &f0.5%"
+      - ""
+      - "&r &c⚠ Las recompensas aumentarán"
+      - "&r &r &r &r &cconforme mayor sea el daño infligido"
+      - ""
+      - "&e» ¡Haz clic para ver menú! «"
+    click_commands:
+      - "[player] balrogmenudrops"
+  'sentinel_drops':
+    material: ENDERMAN_SPAWN_EGG
+    slot: 13
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&dSentinel ⏣"
+    lore:
+      - "&8Boss"
+      - ""
+      - "&fPodrás previsualizar los drops y"
+      - "&frecompensas de este boss en este menú."
+      - ""
+      - "&r &8&l≡ &f&lDROPEOS Y RECOMPENSAS:"
+      - "&r &r &8◆ &625,000,000 ⛁ &7- &f100%"
+      - "&r &r &8◆ &b1,000 ❖ &7- &f100%"
+      - "&r &r &8◆ &#8F00EEP&#9600EDl&#9C00EDa&#A300ECs&#A900EBm&#B000EBa&#B700EA &#BD00E9d&#C400E9e&#CA00E8 &#D100E8S&#D700E7e&#DE00E6n&#E500E6t&#EB00E5i&#F200E4n&#F800E4e&#FF00E3l &7[2-6] - &f100%"
+      - "&r &r &8◆ &#3C0064M&#3F0069a&#42006Ft&#450074e&#490079r&#4C007Fi&#4F0084a&#520089 &#55008Eo&#580094s&#5C0099c&#5F009Eu&#6200A4r&#6500A9a &7[2-6] - &f50%"
+      - "&r &r &8◆ &#9900FFC&#A209FEa&#AA13FDs&#B31CFBc&#BB25FAo&#C42FF9 &#CC38F8d&#D541F6e&#DD4BF5l&#E654F4 &#EE5DF3F&#F767F1i&#FF70F0n &7- &f2.5%"
+      - "&r &r &8◆ &#9900FFB&#A209FEo&#AA13FDt&#B31CFBa&#BB25FAs&#C42FF9 &#CC38F8d&#D541F6e&#DD4BF5l&#E654F4 &#EE5DF3F&#F767F1i&#FF70F0n &7- &f2.5%"
+      - "&r &r &8◆ &#8000FFE&#860CFFs&#8B18FFp&#9123FFa&#962FFFd&#9C3BFFa&#A247FF &#A752FFd&#AD5EFFe&#B36AFFl&#B876FF &#BE81FFF&#C38DFFi&#C999FFn &7- &f0.5%"
+      - ""
+      - "&r &c⚠ Las recompensas aumentarán"
+      - "&r &r &r &r &cconforme mayor sea el daño infligido"
+      - ""
+      - "&e» ¡Haz clic para ver menú! «"
+    click_commands:
+      - "[player] sentinelmenudrops"  
+  'apex_drops':
+    material: IRON_GOLEM_SPAWN_EGG
+    slot: 14
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&6Apex ᛃ"
+    lore:
+      - "&8Boss"
+      - ""
+      - "&fPodrás previsualizar los drops y"
+      - "&frecompensas de este boss en este menú."
+      - ""
+      - "&r &8&l≡ &f&lDROPEOS Y RECOMPENSAS:"
+      - "&r &r &8◆ &650,000,000 ⛁ &7- &f100%"
+      - "&r &r &8◆ &b2,000 ❖ &7- &f100%"
+      - "&r &r &8◆ &#6F6F6FA&#737373c&#777777e&#7B7B7Br&#7F7F7Fo&#838383 &#878787e&#8B8B8Bn&#8E8E8Ed&#929292u&#969696r&#9A9A9Ae&#9E9E9Ec&#A2A2A2i&#A6A6A6d&#AAAAAAo &7[1-6] - &f100%"
+      - "&r &r &8◆ &#FFB900E&#FFBA04s&#FFBB07e&#FFBC0Bn&#FFBD0Fc&#FFBE12i&#FFBF16a&#FFC019 &#FFC11Dd&#FFC221e&#FFC324 &#FFC428T&#FFC52Ca&#FFC62Ft&#FFC733e&#FFC836r&#FFC93Aa&#FFCA3Ez&#FFCB41a&#FFCC45y &7[2-4] - &f50%"
+      - "&r &r &8◆ &#FFAA00P&#FFAD0Ae&#FFB114c&#FFB41Eh&#FFB729e&#FFBB33r&#FFBE3Da&#FFC247 &#FFC551d&#FFC85Be&#FFCC65 &#FFCF70A&#FFD27Ap&#FFD684e&#FFD98Ex &7- &f10%"
+      - "&r &r &8◆ &#FFAA00H&#FFAE0Ca&#FFB218c&#FFB624h&#FFBA2Fa&#FFBE3B &#FFC247d&#FFC553e&#FFC95F &#FFCD6BA&#FFD176p&#FFD582e&#FFD98Ex &7- &f2.5%"
+      - "&r &r &8◆ &#FFAA00M&#FFAE0Da&#FFB31Az&#FFB727o&#FFBB34 &#FFBF41d&#FFC44De&#FFC85A &#FFCC67A&#FFD074p&#FFD581e&#FFD98Ex &7- &f0.5%"
+      - "&r &r &8◆ &#FF8000C&#FF8408o&#FF8811r&#FF8D19a&#FF9122z&#FF952Aó&#FF9933n&#FF9E3B &#FFA243d&#FFA64Ce&#FFAA54 &#FFAE5DA&#FFB365p&#FFB76Ee&#FFBB76x &7- &f0.1%"
+      - ""
+      - "&r &c⚠ Las recompensas aumentarán"
+      - "&r &r &r &r &cconforme mayor sea el daño infligido"
+      - ""
+      - "&e» ¡Haz clic para ver menú! «"
+    click_commands:
+      - "[player] apexmenudrops"  
+  'evoker_drops':
+    material: EVOKER_SPAWN_EGG
+    slot: 15
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&bEvoker 🔥"
+    lore:
+      - "&8Boss"
+      - ""
+      - "&fPodrás previsualizar los drops y"
+      - "&frecompensas de este boss en este menú."
+      - ""
+      - "&r &8&l≡ &f&lDROPEOS Y RECOMPENSAS:"
+      - "&r &r &8◆ &6100,000,000 ⛁ &7- &f100%"
+      - "&r &r &8◆ &b3,000 ❖ &7- &f100%"
+      - "&r &r &8◆ &bAlma de mago &7[1-6] - &f100%"
+      - "&r &r &8◆ &3Piel de mago &7[2-4] - &f50%"
+      - "&r &r &8◆ &#00AAFFP&#09ADFFe&#11B0FFc&#1AB2FFh&#22B5FFe&#2BB8FFr&#33BBFFa&#3CBEFF &#44C1FFd&#4DC3FFe&#55C6FF &#5EC9FFE&#66CCFFv&#6FCFFFo&#77D1FFk&#80D4FFe&#88D7FFr &7- &f10%"
+      - "&r &r &8◆ &#FF3D3DB&#FF4242a&#FF4747s&#FF4C4Ct&#FF5151ó&#FF5757n&#FF5C5C &#FF6161d&#FF6666e&#FF6B6B &#FF7070V&#FF7575i&#FF7A7At&#FF7F7Fa&#FF8585l&#FF8A8Ai&#FF8F8Fd&#FF9494a&#FF9999d &7- &f5%"
+      - "&r &r &8◆ &#00AAFFP&#07ADFFa&#0EAFFFn&#15B2FFt&#1CB5FFa&#24B7FFl&#2BBAFFo&#32BDFFn&#39BFFFe&#40C2FFs&#47C5FF &#4EC8FFd&#55CAFFe&#5CCDFF &#63D0FFE&#6BD2FFv&#72D5FFo&#79D8FFk&#80DAFFe&#87DDFFr &7- &f2.5%"
+      - "&r &r &8◆ &#5600FFG&#5A06FFu&#5F0DFFa&#6313FFd&#681AFFa&#6C20FFñ&#7126FFa&#752DFF &#7933FFd&#7E39FFe&#8240FF &#8746FFl&#8B4DFFa&#8F53FF &#9459FFT&#9860FFa&#9D66FFu&#A16CFFm&#A673FFa&#AA79FFt&#AE80FFu&#B386FFr&#B78CFFg&#BC93FFí&#C099FFa &7- &f0.5%"
+      - "&r &r &8◆ &#FF7E7ER&#FFA97Ee&#FFD47Em&#FFE67Ea&#FFF77En&#BFFB7Ee&#7EFF7En&#7EFFBFt&#7EFFFFe&#7EBFFF &#7E7EFFd&#947EFFe&#A97EFF &#BC7EFFE&#CF7EFFv&#E77EFFo&#FF7EFFk&#FF7DF7e&#FF7CEEr &7- &f0.1%"
+      - ""
+      - "&r &c⚠ Las recompensas aumentarán"
+      - "&r &r &r &r &cconforme mayor sea el daño infligido"
+      - ""
+      - "&e» ¡Haz clic para ver menú! «"
+    click_commands:
+      - "[player] evokermenudrops"  
+
+  'cerrar':
+    material: RED_DYE
+    slot: 31
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&cCerrar"
+    click_commands:
+      - "[close]"
+  'volver':
+    material: ARROW
+    slot: 30
+    hide_attributes: true
+    hide_effects: true
+    hide_enchantments: true
+    hide_unbreakable: true
+    display_name: "&eVolver"
+    click_commands:
+      - "[player] menu"

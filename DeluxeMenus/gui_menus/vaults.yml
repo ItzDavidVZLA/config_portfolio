@@ -1,0 +1,898 @@
+# Menú creado originalmente por litjisz, pero modifiqué el tema de comprar 1 por 1 con chatgpt pq me daba pereza. ChatGPT te amo.
+items:
+  close:
+    display_name: '&cCerrar'
+    left_click_commands:
+    - '[close]'
+    material: red_dye
+    priority: 0
+    slot: 40
+  filler:
+    display_name: ' '
+    material: BLACK_STAINED_GLASS_PANE
+    slots:
+    - 36-39
+    - 41-44
+  vault1-buy:
+    display_name: "&x&6&b&d&0&f&fB\xF3veda &8\u25C6 &e#1"
+    left_click_commands:
+    - '[sound] ENTITY_FIREWORK_ROCKET_BLAST'
+    - "[message] &8&l \xBB &a\xA1Has comprado una nueva expansi\xF3n de b\xF3vedas!"
+    - '[console] lp user %player_name% permission set axvaults.vault.1 true boxpvp'
+    - '[console] eco take %player_name% 500'
+    - '[refresh]'
+    left_click_requirement:
+      deny_commands:
+      - "[message] &4&l \xBB &cNo tienes suficiente dinero para comprar esta expansi\xF3\
+        n."
+      requirements:
+        balance_check:
+          amount: 500
+          type: has money
+    lore:
+    - ''
+    - "&f\xA1Aumenta tu limite de b\xF3vedas"
+    - '&fhasta 1 inventario diferente!'
+    - ''
+    - "&8&l \xBB &fPrecio: &e500\u20AC"
+    - ''
+    - "&a\xBB \xA1Haz clic aqu\xED para comprar esta expansi\xF3n! \xAB"
+    material: light_blue_shulker_box
+    priority: 1
+    slot: 10
+  vault1-open:
+    display_name: "&x&6&b&d&0&f&fB\xF3veda &8\u25C6 &e#1"
+    left_click_commands:
+    - '[player] pv 1'
+    - '[close]'
+    lore:
+    - ''
+    - "&f\xA1Aumenta tu limite de b\xF3vedas"
+    - '&fhasta 1 inventario diferente!'
+    - ''
+    - "&8&l \xBB &fPrecio: &e500\u20AC"
+    - ''
+    - "&e\xBB \xA1Haz clic aqu\xED para abrir! \xAB"
+    material: light_blue_shulker_box
+    priority: 0
+    slot: 10
+    view_requirement:
+      requirements:
+        shop_perm:
+          permission: axvaults.vault.1
+          type: has permission
+  vault2-buy:
+    display_name: "&x&6&b&d&0&f&fB\xF3veda &8\u25C6 &e#2"
+    left_click_commands:
+    - '[sound] ENTITY_FIREWORK_ROCKET_BLAST'
+    - "[message] &8&l \xBB &a\xA1Has comprado una nueva expansi\xF3n de b\xF3vedas!"
+    - '[console] lp user %player_name% permission set axvaults.vault.2 true boxpvp'
+    - '[console] eco take %player_name% 1000'
+    - '[refresh]'
+    left_click_requirement:
+      deny_commands:
+      - "[message] &4&l \xBB &cNo tienes suficiente dinero para comprar esta expansi\xF3\
+        n."
+      requirements:
+        balance_check:
+          amount: 1000
+          type: has money
+    lore:
+    - ''
+    - "&f\xA1Aumenta tu limite de b\xF3vedas"
+    - '&fhasta 2 inventarios diferentes!'
+    - ''
+    - "&8&l \xBB &fPrecio: &e1.000\u20AC"
+    - ''
+    - "&a\xBB \xA1Haz clic aqu\xED para comprar esta expansi\xF3n! \xAB"
+    material: cyan_shulker_box
+    priority: 1
+    slot: 11
+  vault2-open:
+    display_name: "&x&6&b&d&0&f&fB\xF3veda &8\u25C6 &e#2"
+    left_click_commands:
+    - '[player] pv 2'
+    - '[close]'
+    lore:
+    - ''
+    - "&f\xA1Aumenta tu limite de b\xF3vedas"
+    - '&fhasta 2 inventarios diferentes!'
+    - ''
+    - "&8&l \xBB &fPrecio: &e1.000\u20AC"
+    - ''
+    - "&e\xBB \xA1Haz clic aqu\xED para abrir! \xAB"
+    material: cyan_shulker_box
+    priority: 0
+    slot: 11
+    view_requirement:
+      requirements:
+        shop_perm:
+          permission: axvaults.vault.2
+          type: has permission
+  vault3-buy:
+    display_name: "&x&6&b&d&0&f&fB\xF3veda &8\u25C6 &e#3"
+    left_click_commands:
+    - '[sound] ENTITY_FIREWORK_ROCKET_BLAST'
+    - "[message] &8&l \xBB &a\xA1Has comprado una nueva expansi\xF3n de b\xF3vedas!"
+    - '[console] lp user %player_name% permission set axvaults.vault.3 true boxpvp'
+    - '[console] eco take %player_name% 1500'
+    - '[refresh]'
+    left_click_requirement:
+      deny_commands:
+      - "[message] &4&l \xBB &cNo tienes suficiente dinero para comprar esta expansi\xF3\
+        n."
+      requirements:
+        balance_check:
+          amount: 1500
+          type: has money
+    lore:
+    - ''
+    - "&f\xA1Aumenta tu limite de b\xF3vedas"
+    - '&fhasta 3 inventarios diferentes!'
+    - ''
+    - "&8&l \xBB &fPrecio: &e1.500\u20AC"
+    - ''
+    - "&a\xBB \xA1Haz clic aqu\xED para comprar esta expansi\xF3n! \xAB"
+    material: light_blue_shulker_box
+    priority: 1
+    slot: 12
+    view_requirement:
+      requirements:
+        previous_vault_perm:
+          permission: axvaults.vault.2
+          type: has permission
+  vault3-filler:
+    display_name: "&4☒ &cB\xF3veda Bloqueada"
+    lore:
+    - ''
+    - "&8&l \xBB &fNo tienes acceso a esta b\xF3veda."
+    - "    &fDesbloquea la b\xF3veda anterior para"
+    - "    &fdesbloquear esta expansión."
+    - ''
+    - "&emc.comugamers.com"
+    material: red_shulker_box
+    priority: 2
+    slot: 12
+  vault3-open:
+    display_name: "&x&6&b&d&0&f&fB\xF3veda &8\u25C6 &e#3"
+    left_click_commands:
+    - '[player] pv 3'
+    - '[close]'
+    lore:
+    - ''
+    - "&f\xA1Aumenta tu limite de b\xF3vedas"
+    - '&fhasta 3 inventarios diferentes!'
+    - ''
+    - "&8&l \xBB &fPrecio: &e1.500\u20AC"
+    - ''
+    - "&e\xBB \xA1Haz clic aqu\xED para abrir! \xAB"
+    material: light_blue_shulker_box
+    priority: 0
+    slot: 12
+    view_requirement:
+      requirements:
+        shop_perm:
+          permission: axvaults.vault.3
+          type: has permission
+  vault4-buy:
+    display_name: "&x&6&b&d&0&f&fB\xF3veda &8\u25C6 &e#4"
+    left_click_commands:
+    - '[sound] ENTITY_FIREWORK_ROCKET_BLAST'
+    - "[message] &8&l \xBB &a\xA1Has comprado una nueva expansi\xF3n de b\xF3vedas!"
+    - '[console] lp user %player_name% permission set axvaults.vault.4 true boxpvp'
+    - '[console] eco take %player_name% 2000'
+    - '[refresh]'
+    left_click_requirement:
+      deny_commands:
+      - "[message] &4&l \xBB &cNo tienes suficiente dinero para comprar esta expansi\xF3\
+        n."
+      requirements:
+        balance_check:
+          amount: 2000
+          type: has money
+    lore:
+    - ''
+    - "&f\xA1Aumenta tu limite de b\xF3vedas"
+    - '&fhasta 4 inventarios diferentes!'
+    - ''
+    - "&8&l \xBB &fPrecio: &e2.000\u20AC"
+    - ''
+    - "&a\xBB \xA1Haz clic aqu\xED para comprar esta expansi\xF3n! \xAB"
+    material: cyan_shulker_box
+    priority: 1
+    slot: 13
+    view_requirement:
+      requirements:
+        previous_vault_perm:
+          permission: axvaults.vault.3
+          type: has permission
+  vault4-filler:
+    display_name: "&4☒ &cB\xF3veda Bloqueada"
+    lore:
+    - ''
+    - "&8&l \xBB &fNo tienes acceso a esta b\xF3veda."
+    - "    &fDesbloquea la b\xF3veda anterior para"
+    - "    &fdesbloquear esta expansión."
+    - ''
+    - "&emc.comugamers.com"
+    material: red_shulker_box
+    priority: 2
+    slot: 13
+  vault4-open:
+    display_name: "&x&6&b&d&0&f&fB\xF3veda &8\u25C6 &e#4"
+    left_click_commands:
+    - '[player] pv 4'
+    - '[close]'
+    lore:
+    - ''
+    - "&f\xA1Aumenta tu limite de b\xF3vedas"
+    - '&fhasta 4 inventarios diferentes!'
+    - ''
+    - "&8&l \xBB &fPrecio: &e2.000\u20AC"
+    - ''
+    - "&e\xBB \xA1Haz clic aqu\xED para abrir! \xAB"
+    material: cyan_shulker_box
+    priority: 0
+    slot: 13
+    view_requirement:
+      requirements:
+        shop_perm:
+          permission: axvaults.vault.4
+          type: has permission
+  vault5-buy:
+    display_name: "&x&6&b&d&0&f&fB\xF3veda &8\u25C6 &e#5"
+    left_click_commands:
+    - '[sound] ENTITY_FIREWORK_ROCKET_BLAST'
+    - "[message] &8&l \xBB &a\xA1Has comprado una nueva expansi\xF3n de b\xF3vedas!"
+    - '[console] lp user %player_name% permission set axvaults.vault.5 true boxpvp'
+    - '[console] eco take %player_name% 2500'
+    - '[refresh]'
+    left_click_requirement:
+      deny_commands:
+      - "[message] &4&l \xBB &cNo tienes suficiente dinero para comprar esta expansi\xF3\
+        n."
+      requirements:
+        balance_check:
+          amount: 2500
+          type: has money
+    lore:
+    - ''
+    - "&f\xA1Aumenta tu limite de b\xF3vedas"
+    - '&fhasta 5 inventarios diferentes!'
+    - ''
+    - "&8&l \xBB &fPrecio: &e2.500\u20AC"
+    - ''
+    - "&a\xBB \xA1Haz clic aqu\xED para comprar esta expansi\xF3n! \xAB"
+    material: light_blue_shulker_box
+    priority: 1
+    slot: 14
+    view_requirement:
+      requirements:
+        previous_vault_perm:
+          permission: axvaults.vault.4
+          type: has permission
+  vault5-filler:
+    display_name: "&4☒ &cB\xF3veda Bloqueada"
+    lore:
+    - ''
+    - "&8&l \xBB &fNo tienes acceso a esta b\xF3veda."
+    - "    &fDesbloquea la b\xF3veda anterior para"
+    - "    &fdesbloquear esta expansión."
+    - ''
+    - "&emc.comugamers.com"
+    material: red_shulker_box
+    priority: 2
+    slot: 14
+  vault5-open:
+    display_name: "&x&6&b&d&0&f&fB\xF3veda &8\u25C6 &e#5"
+    left_click_commands:
+    - '[player] pv 5'
+    - '[close]'
+    lore:
+    - ''
+    - "&f\xA1Aumenta tu limite de b\xF3vedas"
+    - '&fhasta 5 inventarios diferentes!'
+    - ''
+    - "&8&l \xBB &fPrecio: &e2.500\u20AC"
+    - ''
+    - "&e\xBB \xA1Haz clic aqu\xED para abrir! \xAB"
+    material: light_blue_shulker_box
+    priority: 0
+    slot: 14
+    view_requirement:
+      requirements:
+        shop_perm:
+          permission: axvaults.vault.5
+          type: has permission
+  vault6-buy:
+    display_name: "&x&6&b&d&0&f&fB\xF3veda &8\u25C6 &e#6"
+    left_click_commands:
+    - '[sound] ENTITY_FIREWORK_ROCKET_BLAST'
+    - "[message] &8&l \xBB &a\xA1Has comprado una nueva expansi\xF3n de b\xF3vedas!"
+    - '[console] lp user %player_name% permission set axvaults.vault.6 true boxpvp'
+    - '[console] eco take %player_name% 4000'
+    - '[refresh]'
+    left_click_requirement:
+      deny_commands:
+      - "[message] &4&l \xBB &cNo tienes suficiente dinero para comprar esta expansi\xF3\
+        n."
+      requirements:
+        balance_check:
+          amount: 4000
+          type: has money
+    lore:
+    - ''
+    - "&f\xA1Aumenta tu limite de b\xF3vedas"
+    - '&fhasta 6 inventarios diferentes!'
+    - ''
+    - "&8&l \xBB &fPrecio: &e4.000\u20AC"
+    - ''
+    - "&a\xBB \xA1Haz clic aqu\xED para comprar esta expansi\xF3n! \xAB"
+    material: cyan_shulker_box
+    priority: 1
+    slot: 15
+    view_requirement:
+      requirements:
+        previous_vault_perm:
+          permission: axvaults.vault.5
+          type: has permission
+  vault6-filler:
+    display_name: "&4☒ &cB\xF3veda Bloqueada"
+    lore:
+    - ''
+    - "&8&l \xBB &fNo tienes acceso a esta b\xF3veda."
+    - "    &fDesbloquea la b\xF3veda anterior para"
+    - "    &fdesbloquear esta expansión."
+    - ''
+    - "&emc.comugamers.com"
+    material: red_shulker_box
+    priority: 2
+    slot: 15
+  vault6-open:
+    display_name: "&x&6&b&d&0&f&fB\xF3veda &8\u25C6 &e#6"
+    left_click_commands:
+    - '[player] pv 6'
+    - '[close]'
+    lore:
+    - ''
+    - "&f\xA1Aumenta tu limite de b\xF3vedas"
+    - '&fhasta 6 inventarios diferentes!'
+    - ''
+    - "&8&l \xBB &fPrecio: &e4.000\u20AC"
+    - ''
+    - "&e\xBB \xA1Haz clic aqu\xED para abrir! \xAB"
+    material: cyan_shulker_box
+    priority: 0
+    slot: 15
+    view_requirement:
+      requirements:
+        shop_perm:
+          permission: axvaults.vault.6
+          type: has permission
+  vault7-buy:
+    display_name: "&x&6&b&d&0&f&fB\xF3veda &8\u25C6 &e#7"
+    left_click_commands:
+    - '[sound] ENTITY_FIREWORK_ROCKET_BLAST'
+    - "[message] &8&l \xBB &a\xA1Has comprado una nueva expansi\xF3n de b\xF3vedas!"
+    - '[console] lp user %player_name% permission set axvaults.vault.7 true boxpvp'
+    - '[console] eco take %player_name% 5000'
+    - '[refresh]'
+    left_click_requirement:
+      deny_commands:
+      - "[message] &4&l \xBB &cNo tienes suficiente dinero para comprar esta expansi\xF3\
+        n."
+      requirements:
+        balance_check:
+          amount: 5000
+          type: has money
+    lore:
+    - ''
+    - "&f\xA1Aumenta tu limite de b\xF3vedas"
+    - '&fhasta 7 inventarios diferentes!'
+    - ''
+    - "&8&l \xBB &fPrecio: &e5.000\u20AC"
+    - ''
+    - "&a\xBB \xA1Haz clic aqu\xED para comprar esta expansi\xF3n! \xAB"
+    material: light_blue_shulker_box
+    priority: 1
+    slot: 16
+    view_requirement:
+      requirements:
+        previous_vault_perm:
+          permission: axvaults.vault.6
+          type: has permission
+  vault7-filler:
+    display_name: "&4☒ &cB\xF3veda Bloqueada"
+    lore:
+    - ''
+    - "&8&l \xBB &fNo tienes acceso a esta b\xF3veda."
+    - "    &fDesbloquea la b\xF3veda anterior para"
+    - "    &fdesbloquear esta expansión."
+    - ''
+    - "&emc.comugamers.com"
+    material: red_shulker_box
+    priority: 2
+    slot: 16
+  vault7-open:
+    display_name: "&x&6&b&d&0&f&fB\xF3veda &8\u25C6 &e#7"
+    left_click_commands:
+    - '[player] pv 7'
+    - '[close]'
+    lore:
+    - ''
+    - "&f\xA1Aumenta tu limite de b\xF3vedas"
+    - '&fhasta 7 inventarios diferentes!'
+    - ''
+    - "&8&l \xBB &fPrecio: &e5.000\u20AC"
+    - ''
+    - "&e\xBB \xA1Haz clic aqu\xED para abrir! \xAB"
+    material: light_blue_shulker_box
+    priority: 0
+    slot: 16
+    view_requirement:
+      requirements:
+        shop_perm:
+          permission: axvaults.vault.7
+          type: has permission
+  vault8-buy:
+    display_name: "&x&6&b&d&0&f&fB\xF3veda &8\u25C6 &e#8"
+    left_click_commands:
+    - '[sound] ENTITY_FIREWORK_ROCKET_BLAST'
+    - "[message] &8&l \xBB &a\xA1Has comprado una nueva expansi\xF3n de b\xF3vedas!"
+    - '[console] lp user %player_name% permission set axvaults.vault.8 true boxpvp'
+    - '[console] eco take %player_name% 10000'
+    - '[refresh]'
+    left_click_requirement:
+      deny_commands:
+      - "[message] &4&l \xBB &cNo tienes suficiente dinero para comprar esta expansi\xF3\
+        n."
+      requirements:
+        balance_check:
+          amount: 10000
+          type: has money
+    lore:
+    - ''
+    - "&f\xA1Aumenta tu limite de b\xF3vedas"
+    - '&fhasta 8 inventarios diferentes!'
+    - ''
+    - "&8&l \xBB &fPrecio: &e10.000\u20AC"
+    - ''
+    - "&a\xBB \xA1Haz clic aqu\xED para comprar esta expansi\xF3n! \xAB"
+    material: cyan_shulker_box
+    priority: 1
+    slot: 19
+    view_requirement:
+      requirements:
+        previous_vault_perm:
+          permission: axvaults.vault.7
+          type: has permission
+  vault8-filler:
+    display_name: "&4☒ &cB\xF3veda Bloqueada"
+    lore:
+    - ''
+    - "&8&l \xBB &fNo tienes acceso a esta b\xF3veda."
+    - "    &fDesbloquea la b\xF3veda anterior para"
+    - "    &fdesbloquear esta expansión."
+    - ''
+    - "&emc.comugamers.com"
+    material: red_shulker_box
+    priority: 2
+    slot: 19
+  vault8-open:
+    display_name: "&x&6&b&d&0&f&fB\xF3veda &8\u25C6 &e#8"
+    left_click_commands:
+    - '[player] pv 8'
+    - '[close]'
+    lore:
+    - ''
+    - "&f\xA1Aumenta tu limite de b\xF3vedas"
+    - '&fhasta 8 inventarios diferentes!'
+    - ''
+    - "&8&l \xBB &fPrecio: &e10.000\u20AC"
+    - ''
+    - "&e\xBB \xA1Haz clic aqu\xED para abrir! \xAB"
+    material: cyan_shulker_box
+    priority: 0
+    slot: 19
+    view_requirement:
+      requirements:
+        shop_perm:
+          permission: axvaults.vault.8
+          type: has permission
+  vault9-buy:
+    display_name: "&x&6&b&d&0&f&fB\xF3veda &8\u25C6 &e#9"
+    left_click_commands:
+    - '[sound] ENTITY_FIREWORK_ROCKET_BLAST'
+    - "[message] &8&l \xBB &a\xA1Has comprado una nueva expansi\xF3n de b\xF3vedas!"
+    - '[console] lp user %player_name% permission set axvaults.vault.9 true boxpvp'
+    - '[console] eco take %player_name% 15000'
+    - '[refresh]'
+    left_click_requirement:
+      deny_commands:
+      - "[message] &4&l \xBB &cNo tienes suficiente dinero para comprar esta expansi\xF3\
+        n."
+      requirements:
+        balance_check:
+          amount: 15000
+          type: has money
+    lore:
+    - ''
+    - "&f\xA1Aumenta tu limite de b\xF3vedas"
+    - '&fhasta 9 inventarios diferentes!'
+    - ''
+    - "&8&l \xBB &fPrecio: &e15.000\u20AC"
+    - ''
+    - "&a\xBB \xA1Haz clic aqu\xED para comprar esta expansi\xF3n! \xAB"
+    material: light_blue_shulker_box
+    priority: 1
+    slot: 20
+    view_requirement:
+      requirements:
+        previous_vault_perm:
+          permission: axvaults.vault.8
+          type: has permission
+  vault9-filler:
+    display_name: "&4☒ &cB\xF3veda Bloqueada"
+    lore:
+    - ''
+    - "&8&l \xBB &fNo tienes acceso a esta b\xF3veda."
+    - "    &fDesbloquea la b\xF3veda anterior para"
+    - "    &fdesbloquear esta expansión."
+    - ''
+    - "&emc.comugamers.com"
+    material: red_shulker_box
+    priority: 2
+    slot: 20
+  vault9-open:
+    display_name: "&x&6&b&d&0&f&fB\xF3veda &8\u25C6 &e#9"
+    left_click_commands:
+    - '[player] pv 9'
+    - '[close]'
+    lore:
+    - ''
+    - "&f\xA1Aumenta tu limite de b\xF3vedas"
+    - '&fhasta 9 inventarios diferentes!'
+    - ''
+    - "&8&l \xBB &fPrecio: &e15.000\u20AC"
+    - ''
+    - "&e\xBB \xA1Haz clic aqu\xED para abrir! \xAB"
+    material: light_blue_shulker_box
+    priority: 0
+    slot: 20
+    view_requirement:
+      requirements:
+        shop_perm:
+          permission: axvaults.vault.9
+          type: has permission
+  vault10-buy:
+    display_name: "&x&6&b&d&0&f&fB\xF3veda &8\u25C6 &e#10"
+    left_click_commands:
+    - '[sound] ENTITY_FIREWORK_ROCKET_BLAST'
+    - "[message] &8&l \xBB &a\xA1Has comprado una nueva expansi\xF3n de b\xF3vedas!"
+    - '[console] lp user %player_name% permission set axvaults.vault.10 true boxpvp'
+    - '[console] eco take %player_name% 25000'
+    - '[refresh]'
+    left_click_requirement:
+      deny_commands:
+      - "[message] &4&l \xBB &cNo tienes suficiente dinero para comprar esta expansi\xF3\
+        n."
+      requirements:
+        balance_check:
+          amount: 25000
+          type: has money
+    lore:
+    - ''
+    - "&f\xA1Aumenta tu limite de b\xF3vedas"
+    - '&fhasta 10 inventarios diferentes!'
+    - ''
+    - "&8&l \xBB &fPrecio: &e25.000\u20AC"
+    - ''
+    - "&a\xBB \xA1Haz clic aqu\xED para comprar esta expansi\xF3n! \xAB"
+    material: cyan_shulker_box
+    priority: 1
+    slot: 21
+    view_requirement:
+      requirements:
+        previous_vault_perm:
+          permission: axvaults.vault.9
+          type: has permission
+  vault10-filler:
+    display_name: "&4☒ &cB\xF3veda Bloqueada"
+    lore:
+    - ''
+    - "&8&l \xBB &fNo tienes acceso a esta b\xF3veda."
+    - "    &fDesbloquea la b\xF3veda anterior para"
+    - "    &fdesbloquear esta expansión."
+    - ''
+    - "&emc.comugamers.com"
+    material: red_shulker_box
+    priority: 2
+    slot: 21
+  vault10-open:
+    display_name: "&x&6&b&d&0&f&fB\xF3veda &8\u25C6 &e#10"
+    left_click_commands:
+    - '[player] pv 10'
+    - '[close]'
+    lore:
+    - ''
+    - "&f\xA1Aumenta tu limite de b\xF3vedas"
+    - '&fhasta 10 inventarios diferentes!'
+    - ''
+    - "&8&l \xBB &fPrecio: &e25.000\u20AC"
+    - ''
+    - "&e\xBB \xA1Haz clic aqu\xED para abrir! \xAB"
+    material: cyan_shulker_box
+    priority: 0
+    slot: 21
+    view_requirement:
+      requirements:
+        shop_perm:
+          permission: axvaults.vault.10
+          type: has permission
+  vault11-buy:
+    display_name: "&x&6&b&d&0&f&fB\xF3veda &8\u25C6 &e#11"
+    left_click_commands:
+    - '[sound] ENTITY_FIREWORK_ROCKET_BLAST'
+    - "[message] &8&l \xBB &a\xA1Has comprado una nueva expansi\xF3n de b\xF3vedas!"
+    - '[console] lp user %player_name% permission set axvaults.vault.11 true boxpvp'
+    - '[console] eco take %player_name% 35000'
+    - '[refresh]'
+    left_click_requirement:
+      deny_commands:
+      - "[message] &4&l \xBB &cNo tienes suficiente dinero para comprar esta expansi\xF3\
+        n."
+      requirements:
+        balance_check:
+          amount: 35000
+          type: has money
+    lore:
+    - ''
+    - "&f\xA1Aumenta tu limite de b\xF3vedas"
+    - '&fhasta 11 inventarios diferentes!'
+    - ''
+    - "&8&l \xBB &fPrecio: &e35.000\u20AC"
+    - ''
+    - "&a\xBB \xA1Haz clic aqu\xED para comprar esta expansi\xF3n! \xAB"
+    material: light_blue_shulker_box
+    priority: 1
+    slot: 22
+    view_requirement:
+      requirements:
+        previous_vault_perm:
+          permission: axvaults.vault.10
+          type: has permission
+  vault11-filler:
+    display_name: "&4☒ &cB\xF3veda Bloqueada"
+    lore:
+    - ''
+    - "&8&l \xBB &fNo tienes acceso a esta b\xF3veda."
+    - "    &fDesbloquea la b\xF3veda anterior para"
+    - "    &fdesbloquear esta expansión."
+    - ''
+    - "&emc.comugamers.com"
+    material: red_shulker_box
+    priority: 2
+    slot: 22
+  vault11-open:
+    display_name: "&x&6&b&d&0&f&fB\xF3veda &8\u25C6 &e#11"
+    left_click_commands:
+    - '[player] pv 11'
+    - '[close]'
+    lore:
+    - ''
+    - "&f\xA1Aumenta tu limite de b\xF3vedas"
+    - '&fhasta 11 inventarios diferentes!'
+    - ''
+    - "&8&l \xBB &fPrecio: &e35.000\u20AC"
+    - ''
+    - "&e\xBB \xA1Haz clic aqu\xED para abrir! \xAB"
+    material: light_blue_shulker_box
+    priority: 0
+    slot: 22
+    view_requirement:
+      requirements:
+        shop_perm:
+          permission: axvaults.vault.11
+          type: has permission
+  vault12-buy:
+    display_name: "&x&6&b&d&0&f&fB\xF3veda &8\u25C6 &e#12"
+    left_click_commands:
+    - '[sound] ENTITY_FIREWORK_ROCKET_BLAST'
+    - "[message] &8&l \xBB &a\xA1Has comprado una nueva expansi\xF3n de b\xF3vedas!"
+    - '[console] lp user %player_name% permission set axvaults.vault.12 true boxpvp'
+    - '[console] eco take %player_name% 45000'
+    - '[refresh]'
+    left_click_requirement:
+      deny_commands:
+      - "[message] &4&l \xBB &cNo tienes suficiente dinero para comprar esta expansi\xF3\
+        n."
+      requirements:
+        balance_check:
+          amount: 45000
+          type: has money
+    lore:
+    - ''
+    - "&f\xA1Aumenta tu limite de b\xF3vedas"
+    - '&fhasta 12 inventarios diferentes!'
+    - ''
+    - "&8&l \xBB &fPrecio: &e45.000\u20AC"
+    - ''
+    - "&a\xBB \xA1Haz clic aqu\xED para comprar esta expansi\xF3n! \xAB"
+    material: cyan_shulker_box
+    priority: 1
+    slot: 23
+    view_requirement:
+      requirements:
+        previous_vault_perm:
+          permission: axvaults.vault.11
+          type: has permission
+  vault12-filler:
+    display_name: "&4☒ &cB\xF3veda Bloqueada"
+    lore:
+    - ''
+    - "&8&l \xBB &fNo tienes acceso a esta b\xF3veda."
+    - "    &fDesbloquea la b\xF3veda anterior para"
+    - "    &fdesbloquear esta expansión."
+    - ''
+    - "&emc.comugamers.com"
+    material: red_shulker_box
+    priority: 2
+    slot: 23
+  vault12-open:
+    display_name: "&x&6&b&d&0&f&fB\xF3veda &8\u25C6 &e#12"
+    left_click_commands:
+    - '[player] pv 12'
+    - '[close]'
+    lore:
+    - ''
+    - "&f\xA1Aumenta tu limite de b\xF3vedas"
+    - '&fhasta 12 inventarios diferentes!'
+    - ''
+    - "&8&l \xBB &fPrecio: &e45.000\u20AC"
+    - ''
+    - "&e\xBB \xA1Haz clic aqu\xED para abrir! \xAB"
+    material: cyan_shulker_box
+    priority: 0
+    slot: 23
+    view_requirement:
+      requirements:
+        shop_perm:
+          permission: axvaults.vault.12
+          type: has permission
+  vault13-buy:
+    display_name: "&x&6&b&d&0&f&fB\xF3veda &8\u25C6 &e#13"
+    left_click_commands:
+    - '[sound] ENTITY_FIREWORK_ROCKET_BLAST'
+    - "[message] &8&l \xBB &a\xA1Has comprado una nueva expansi\xF3n de b\xF3vedas!"
+    - '[console] lp user %player_name% permission set axvaults.vault.13 true boxpvp'
+    - '[console] eco take %player_name% 5500'
+    - '[refresh]'
+    left_click_requirement:
+      deny_commands:
+      - "[message] &4&l \xBB &cNo tienes suficiente dinero para comprar esta expansi\xF3\
+        n."
+      requirements:
+        balance_check:
+          amount: 55000
+          type: has money
+    lore:
+    - ''
+    - "&f\xA1Aumenta tu limite de b\xF3vedas"
+    - '&fhasta 13 inventarios diferentes!'
+    - ''
+    - "&8&l \xBB &fPrecio: &e55.000\u20AC"
+    - ''
+    - "&a\xBB \xA1Haz clic aqu\xED para comprar esta expansi\xF3n! \xAB"
+    material: light_blue_shulker_box
+    priority: 1
+    slot: 24
+    view_requirement:
+      requirements:
+        previous_vault_perm:
+          permission: axvaults.vault.12
+          type: has permission
+  vault13-filler:
+    display_name: "&4☒ &cB\xF3veda Bloqueada"
+    lore:
+    - ''
+    - "&8&l \xBB &fNo tienes acceso a esta b\xF3veda."
+    - "    &fDesbloquea la b\xF3veda anterior para"
+    - "    &fdesbloquear esta expansión."
+    - ''
+    - "&emc.comugamers.com"
+    material: red_shulker_box
+    priority: 2
+    slot: 24
+  vault13-open:
+    display_name: "&x&6&b&d&0&f&fB\xF3veda &8\u25C6 &e#13"
+    left_click_commands:
+    - '[player] pv 13'
+    - '[close]'
+    lore:
+    - ''
+    - "&f\xA1Aumenta tu limite de b\xF3vedas"
+    - '&fhasta 13 inventarios diferentes!'
+    - ''
+    - "&8&l \xBB &fPrecio: &e55.000\u20AC"
+    - ''
+    - "&e\xBB \xA1Haz clic aqu\xED para abrir! \xAB"
+    material: light_blue_shulker_box
+    priority: 0
+    slot: 24
+    view_requirement:
+      requirements:
+        shop_perm:
+          permission: axvaults.vault.13
+          type: has permission
+  vault14-buy:
+    display_name: "&x&6&b&d&0&f&fB\xF3veda &8\u25C6 &e#14"
+    left_click_commands:
+    - '[sound] ENTITY_FIREWORK_ROCKET_BLAST'
+    - "[message] &8&l \xBB &a\xA1Has comprado una nueva expansi\xF3n de b\xF3vedas!"
+    - '[console] lp user %player_name% permission set axvaults.vault.14 true boxpvp'
+    - '[console] eco take %player_name% 65000'
+    - '[refresh]'
+    left_click_requirement:
+      deny_commands:
+      - "[message] &4&l \xBB &cNo tienes suficiente dinero para comprar esta expansi\xF3\
+        n."
+      requirements:
+        balance_check:
+          amount: 65000
+          type: has money
+    lore:
+    - ''
+    - "&f\xA1Aumenta tu limite de b\xF3vedas"
+    - '&fhasta 14 inventarios diferentes!'
+    - ''
+    - "&8&l \xBB &fPrecio: &e65.000\u20AC"
+    - ''
+    - "&a\xBB \xA1Haz clic aqu\xED para comprar esta expansi\xF3n! \xAB"
+    material: cyan_shulker_box
+    priority: 1
+    slot: 25
+    view_requirement:
+      requirements:
+        previous_vault_perm:
+          permission: axvaults.vault.13
+          type: has permission
+  vault14-filler:
+    display_name: "&4☒ &cB\xF3veda Bloqueada"
+    lore:
+    - ''
+    - "&8&l \xBB &fNo tienes acceso a esta b\xF3veda."
+    - "    &fDesbloquea la b\xF3veda anterior para"
+    - "    &fdesbloquear esta expansión."
+    - ''
+    - "&emc.comugamers.com"
+    material: red_shulker_box
+    priority: 2
+    slot: 25
+  vault14-open:
+    display_name: "&x&6&b&d&0&f&fB\xF3veda &8\u25C6 &e#14"
+    left_click_commands:
+    - '[player] pv 14'
+    - '[close]'
+    lore:
+    - ''
+    - "&f\xA1Aumenta tu limite de b\xF3vedas"
+    - '&fhasta 14 inventarios diferentes!'
+    - ''
+    - "&8&l \xBB &fPrecio: &e65.000\u20AC"
+    - ''
+    - "&e\xBB \xA1Haz clic aqu\xED para abrir! \xAB"
+    material: cyan_shulker_box
+    priority: 0
+    slot: 25
+    view_requirement:
+      requirements:
+        shop_perm:
+          permission: axvaults.vault.14
+          type: has permission
+
+menu_title: "&0Tus b\xF3vedas"
+open_command:
+- vault
+- vaults
+- pv
+size: 45
